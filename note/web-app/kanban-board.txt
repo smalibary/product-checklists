@@ -1,0 +1,54 @@
+﻿KANBAN BOARD CHECKLIST: 24 items
+Cards in columns by stage (To do, Doing, Done), moved across as work goes on.
+Backing: 0 Rule, 8 Standard, 5 Research, 11 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+COLUMNS
+ 1. Column name with a count of cards   (Practice)
+ 2. Work-in-progress limit per column, warned when passed   (Practice)
+ 3. Add, rename, reorder and hide columns   (Practice)
+ 4. Collapse a column   (Practice)
+ 5. Swimlanes (rows) by person, priority or project   (Practice)
+
+CARDS
+ 6. Title, assignee photo, due date, labels and a small set of icons (comments, files)   (Research: nng-cards)
+ 7. Overdue shown by icon and word, not only red   (Standard: wcag-color)
+ 8. Labels have text, not only colour   (Standard: wcag-color)
+ 9. Click opens the card detail in a side panel or page with its own address   (Practice)
+10. Quick add at the bottom of each column   (Practice)
+
+MOVING
+11. Drag a card between columns and up and down   (Research: nng-drag)
+12. A clear drop place shown while dragging   (Research: nng-drag)
+13. Every drag has another way: a "Move to" menu or keyboard keys   (Standard: wcag-dragging, apg-menubutton)
+14. Moving to Done may ask for a reason or set fields, only when needed   (Practice)
+15. Undo after a move   (Research: nng-control)
+16. Changes from others appear live without moving the card under the person's hand   (Practice)
+
+FINDING
+17. Filter by person, label and due date; search   (Research: nng-filters)
+18. Quick "Only my cards" filter   (Practice)
+19. Switch to list or table view   (Practice)
+
+ACCESS
+20. Moving by keyboard announced ("Card moved to Doing, position 2")   (Standard: wcag-status)
+21. Columns are lists with headings; cards are list items   (Standard: wcag-info)
+22. Focus visible on cards   (Standard: wcag-focus)
+23. On phones: one column at a time, swipe or tabs between columns   (Standard: wcag-reflow)
+
+SPEED
+24. Smooth with hundreds of cards   (Standard: webdev-inp)
+
+SOURCES
+- nng-cards: https://www.nngroup.com/articles/cards-component/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- nng-drag: https://www.nngroup.com/articles/drag-drop/
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- apg-menubutton: https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- webdev-inp: https://web.dev/articles/inp

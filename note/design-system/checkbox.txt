@@ -1,0 +1,49 @@
+﻿CHECKBOX CHECKLIST: 21 items
+A box that people tick to choose any number of options, or to agree to one thing.
+Backing: 1 Rule, 17 Standard, 2 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. Choosing zero, one or many from a list   (Standard: govuk-checkboxes)
+ 2. One checkbox for a yes/no agreement that takes effect on submit   (Standard: govuk-checkboxes)
+ 3. Use a switch instead for settings that apply at once   (Research: nng-toggle)
+ 4. Use radios when only one choice is allowed   (Standard: govuk-radios)
+
+LOOK
+ 5. Box on the start side of its label; the label is clickable too   (Standard: govuk-checkboxes)
+ 6. Ticked, unticked and mixed (some children ticked) states clearly different   (Standard: apg-checkbox)
+ 7. Box border 3:1 contrast   (Standard: wcag-ui-contrast)
+ 8. Disabled shown clearly, with why if possible   (Practice)
+ 9. Touch area at least 24 px, ideally 44   (Standard: wcag-target)
+
+GROUPS
+10. Grouped in a fieldset with a question as the legend   (Standard: govuk-checkboxes)
+11. Hint text under the legend ("Select all that apply")   (Standard: govuk-checkboxes)
+12. Vertical list, one per line, in a logical order   (Research: nng-checkboxes)
+13. "None of these" option where it helps, which clears the others   (Standard: govuk-checkboxes)
+14. Select all for long lists, using the mixed state   (Standard: apg-checkbox)
+
+BEHAVIOUR
+15. Ticking does not submit or change the page by itself   (Standard: wcag-on-input)
+16. Errors on the group ("Select at least one")   (Standard: govuk-error-message)
+17. Never pre-ticked for marketing consent   (Rule: gdpr-7)
+
+ACCESS
+18. Native checkbox input, or role checkbox with aria-checked   (Standard: apg-checkbox)
+19. Space toggles   (Standard: apg-checkbox)
+20. Focus ring visible   (Standard: wcag-focus)
+21. Label linked to the box   (Standard: wcag-labels)
+
+SOURCES
+- govuk-checkboxes: https://design-system.service.gov.uk/components/checkboxes/
+- nng-toggle: https://www.nngroup.com/articles/toggle-switch-guidelines/
+- govuk-radios: https://design-system.service.gov.uk/components/radios/
+- apg-checkbox: https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- nng-checkboxes: https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/
+- wcag-on-input: https://www.w3.org/WAI/WCAG22/Understanding/on-input
+- govuk-error-message: https://design-system.service.gov.uk/components/error-message/
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions

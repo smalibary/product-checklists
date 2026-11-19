@@ -1,0 +1,24 @@
+title: Canceling subscription (flow)
+about: Stopping a paid plan, from finding the option to confirmation.
+## Finding it
+- "Cancel subscription" easy to find in billing or account settings | L ftc-negative-option
+- Cancel online if you could sign up online; no phone call required | L ftc-negative-option
+- In store-bought plans, link to the store's subscription page | S apple-subscriptions play-subscriptions
+## The steps
+- As few steps as signing up | L ftc-negative-option
+- One optional offer (pause, cheaper plan, discount) is fine; repeated offers or guilt wording are not | L ftc-dark-patterns
+- Optional short "why are you leaving" with skip | R nng-surveys
+- Buttons say what they do ("Cancel subscription", "Keep my plan"), neither hidden | L ftc-dark-patterns
+## What happens
+- Access until the end of the paid period, with the date | S apple-subscriptions
+- What is lost and whether data is kept, and for how long | L gdpr-13
+- Refund rules if any | L eu-consumer-rights
+## Confirmation
+- Confirmation screen and email with the end date | L ftc-negative-option
+- Easy way to come back (resubscribe) | P
+## Rules note
+- The FTC's 2024 click-to-cancel rule was struck down by a US court in 2025; the older negative-option rules and state laws still apply | L ftc-negative-option
+- EU and UK consumer rules also require easy cancelling | L eu-consumer-rights
+## Access
+- Every step works by keyboard and screen reader | S wcag-keyboard
+- No timed offers that pressure | S wcag-timing

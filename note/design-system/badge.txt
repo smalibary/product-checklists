@@ -1,0 +1,43 @@
+﻿BADGE CHECKLIST: 17 items
+A small label or dot that shows a count or a status (3 unread, New, Paid).
+Backing: 0 Rule, 13 Standard, 2 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+KINDS
+ 1. Count badge on an icon (unread messages)   (Standard: m3-badges)
+ 2. Dot badge for "something new" without a number   (Standard: m3-badges)
+ 3. Status badge or tag with text (Paid, Overdue, Draft)   (Standard: govuk-tag)
+
+CONTENT
+ 4. Counts capped (99+)   (Standard: m3-badges)
+ 5. Status text short, one or two words   (Standard: govuk-tag)
+ 6. Same word for the same status everywhere   (Research: nng-consistency)
+
+LOOK
+ 7. Status shown by text, not colour alone   (Standard: wcag-color)
+ 8. A small set of status colours from role tokens   (Standard: dtcg-tokens)
+ 9. Text contrast 4.5:1 against the badge fill   (Standard: wcag-contrast)
+10. Badges not mistaken for buttons (no hover unless clickable)   (Standard: govuk-tag)
+11. Badge position flips in right-to-left   (Standard: w3c-dir)
+
+BEHAVIOUR
+12. Count badges disappear at zero   (Standard: m3-badges)
+13. Dot badges clear when the person sees the new thing   (Practice)
+14. Not overused: too many badges stop meaning anything   (Research: nng-indicators)
+
+ACCESS
+15. The count is part of the control's name ("Messages, 3 unread")   (Standard: wcag-name-role)
+16. Visible badge text hidden from screen readers if the name already includes it   (Practice)
+17. Count changes announced politely only where important   (Standard: wcag-status)
+
+SOURCES
+- m3-badges: https://m3.material.io/components/badges/guidelines
+- govuk-tag: https://design-system.service.gov.uk/components/tag/
+- nng-consistency: https://www.nngroup.com/articles/consistency-and-standards/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- dtcg-tokens: https://tr.designtokens.org/format/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- nng-indicators: https://www.nngroup.com/articles/indicators-validations-notifications/
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages

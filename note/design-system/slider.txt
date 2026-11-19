@@ -1,0 +1,44 @@
+﻿SLIDER CHECKLIST: 18 items
+A control for choosing a value or range by dragging a thumb along a track.
+Backing: 0 Rule, 16 Standard, 1 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. When an approximate value is fine and seeing it change helps (volume, price range)   (Standard: m3-sliders, hig-sliders)
+ 2. Not when an exact number matters: pair with a number field or use one instead   (Research: nng-sliders)
+ 3. Range slider has two thumbs for minimum and maximum   (Standard: apg-slider)
+
+LOOK
+ 4. Track, filled part, thumb and optional tick marks   (Standard: m3-sliders)
+ 5. Current value shown next to it or above the thumb while moving   (Standard: m3-sliders)
+ 6. Minimum and maximum labelled at the ends   (Standard: m3-sliders)
+ 7. Thumb at least 24 px; touch area 44 to 48 px   (Standard: wcag-target, hig-layout)
+ 8. Track and thumb 3:1 contrast with what is around   (Standard: wcag-ui-contrast)
+
+BEHAVIOUR
+ 9. Click on the track moves the thumb there   (Standard: m3-sliders)
+10. Steps for set values; snap to them   (Standard: m3-sliders)
+11. Changing the value never needs dragging alone: arrows or typed value also work   (Standard: wcag-dragging)
+12. Changes apply when released for heavy operations (filters), live for light ones (volume)   (Practice)
+
+KEYBOARD
+13. Arrow keys change by one step; Page Up/Down by larger steps; Home/End to min and max   (Standard: apg-slider)
+14. Focus ring visible on the thumb   (Standard: wcag-focus)
+
+ACCESS
+15. Native range input or role slider with a name   (Standard: apg-slider)
+16. Value, min and max set; value text read in words if needed ("50 SAR")   (Standard: apg-slider)
+17. Two thumbs each have names ("Minimum price", "Maximum price")   (Standard: apg-slider)
+18. Direction flips for right-to-left   (Standard: w3c-dir)
+
+SOURCES
+- m3-sliders: https://m3.material.io/components/sliders/guidelines
+- hig-sliders: https://developer.apple.com/design/human-interface-guidelines/sliders
+- nng-sliders: https://www.nngroup.com/articles/gui-slider-controls/
+- apg-slider: https://www.w3.org/WAI/ARIA/apg/patterns/slider/
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir

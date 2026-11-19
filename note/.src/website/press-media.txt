@@ -1,0 +1,23 @@
+title: Press / Media page
+about: Gives journalists what they need to write about the company quickly: news, facts, images and a contact.
+## Contact first
+- A named press contact with email and phone, near the top | R nng-press
+- Expected reply time | R nng-press
+## Facts
+- Company fact sheet: founded, founders, headquarters, size, funding, what it does | R nng-press
+- Short and long company descriptions ready to copy | R nng-press
+- Leadership names, roles, bios and photos | R nng-press
+## News
+- Press releases listed newest first, each with a date and as HTML (not only PDF) | R nng-press
+- Coverage: links to articles about the company | P
+## Media kit
+- Logos in several formats (SVG, PNG) on light and dark backgrounds | R nng-press
+- Product screenshots and photos at high resolution | R nng-press
+- One download for the whole kit, with its file size | R nng-press
+- Rules for using the logo and the brand name | P
+- Image credits and permission to use stated | P
+## Access
+- Photos and logos have alt text | S wcag-nontext
+- Downloads labelled with type and size | S wcag-link
+- Contrast and headings meet WCAG | S wcag-contrast wcag-headings
+- Reachable from the footer and About page | R nng-footers

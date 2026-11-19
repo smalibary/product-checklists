@@ -1,0 +1,23 @@
+title: Blog (list page)
+about: The blog's front page that lists articles and helps readers find one to read.
+## List
+- Newest posts first, with a featured post at the top if useful | R nng-blog
+- Each card: title, short summary, date, author, reading time and image | R nng-blog
+- The whole card opens the post, with one link inside (not many nested links) | S wcag-link
+- Categories or topics to filter | R nng-blog
+- Search over posts | R nng-blog
+- Pagination with page numbers, or Load more that keeps position on Back | R nng-infinite
+## Subscribe
+- Email sign-up with what and how often | L gdpr-13 can-spam
+- RSS feed linked | P
+## Layout
+- Cards in a grid that becomes one column on phones | S wcag-reflow
+- Images have space reserved so the page does not jump | S webdev-cls
+- Images lazy-loaded below the fold | S webdev-images
+- Dates in a clear format with the year | P
+## Access and search
+- One main heading; card titles as headings | S wcag-headings
+- Card images decorative (empty alt) when the title already says it | S wai-images
+- Contrast meets WCAG, including over images | S wcag-contrast
+- A unique title and description for the list and each category | S google-title
+- Breadcrumbs on category pages | S google-breadcrumb

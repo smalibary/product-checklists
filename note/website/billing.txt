@@ -1,0 +1,45 @@
+﻿BILLING PAGE (WEBSITE) CHECKLIST: 18 items
+The public page that explains how billing works: payment methods, invoices, taxes, refunds and cancelling.
+Backing: 8 Rule, 2 Standard, 2 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+HOW YOU PAY
+ 1. Payment methods accepted, with logos and words (cards, Apple Pay, mada, bank transfer, invoice)   (Practice)
+ 2. Currencies offered and which one the customer will be charged in   (Rule: eu-consumer-rights)
+ 3. When the charge happens: at sign-up, at trial end, monthly or yearly on the same date   (Rule: ftc-negative-option, eu-consumer-rights)
+ 4. Taxes (VAT) explained: whether prices include tax and how tax IDs are added   (Rule: eu-consumer-rights, ftc-junk-fees)
+
+RENEWALS AND CHANGES
+ 5. Auto-renewal stated plainly, with the price after any discount ends   (Rule: ftc-negative-option)
+ 6. What happens on upgrade (charged the difference now) and downgrade (from next period)   (Practice)
+ 7. Reminder email before a yearly renewal or trial end   (Rule: ftc-negative-option)
+ 8. How to cancel, in as few steps as it took to sign up   (Rule: ftc-negative-option, eu-consumer-rights)
+
+REFUNDS
+ 9. Refund policy in plain words, including the EU 14-day right to withdraw where it applies   (Rule: eu-consumer-rights)
+10. How long a refund takes to arrive   (Practice)
+
+INVOICES AND RECEIPTS
+11. Where to find invoices, and that they can be downloaded as PDF   (Practice)
+12. How to add a company name, address and tax ID to invoices   (Practice)
+13. Invoices that meet the local e-invoice rules (for Saudi Arabia, ZATCA)   (Rule: zatca-einvoice)
+
+PROBLEMS
+14. What happens if a payment fails: retries, grace period, when access stops   (Practice)
+15. Card security: card details handled by a PCI-certified payment provider   (Standard: pci-dss)
+16. A contact for billing questions   (Research: nng-contact)
+17. FAQ for common questions   (Research: nng-faq)
+
+ACCESS
+18. Headings, contrast and plain words meet WCAG   (Standard: wcag-headings, wcag-contrast)
+
+SOURCES
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- zatca-einvoice: https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx
+- pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
+- nng-contact: https://www.nngroup.com/articles/contact-us-pages/
+- nng-faq: https://www.nngroup.com/articles/faqs-deliver-value/
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

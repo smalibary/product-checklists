@@ -1,0 +1,70 @@
+﻿CHECKOUT (MOBILE) CHECKLIST: 24 items
+Paying for physical goods or services in a phone app, from cart to confirmation.
+Backing: 4 Rule, 13 Standard, 4 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STEPS
+ 1. As few screens as possible; guest checkout allowed   (Research: baymard-guest)
+ 2. Progress shown for multi-step checkout   (Research: nng-progress)
+ 3. Order summary can be expanded on each step, with the total always visible   (Research: baymard-abandon)
+ 4. Sticky bottom bar with the total and the main button   (Practice)
+
+DELIVERY
+ 5. Address from saved addresses or autofill; map pin for places without clear addresses   (Standard: mdn-autocomplete)
+ 6. Delivery options with price and date   (Rule: eu-consumer-rights)
+ 7. Phone number with country code picker, numeric keyboard   (Standard: mdn-inputmode)
+
+PAYMENT
+ 8. Apple Pay and Google Pay first where available   (Standard: hig-apple-pay, webdev-payment)
+ 9. Local methods (mada, STC Pay, cash on delivery) where they suit   (Practice)
+10. Card fields from a certified provider, card scan with the camera   (Standard: pci-dss)
+11. Strong customer authentication (3-D Secure) opened inside the app   (Rule: psd2-sca, stripe-3ds)
+
+STORE RULES
+12. Physical goods and services may use any payment provider   (Standard: apple-review, play-payments)
+13. Digital goods and subscriptions must use in-app purchase (with regional exceptions)   (Standard: apple-review, play-payments)
+
+COSTS
+14. All fees, delivery and tax shown before the final button   (Rule: ftc-junk-fees, eu-consumer-rights)
+15. Promo code field quiet, not a big empty box   (Research: baymard-coupon)
+
+SUBMITTING
+16. Button names the amount ("Pay 245 SAR")   (Standard: wcag-prevent)
+17. Busy state; no double charge   (Standard: owasp-transaction)
+18. Declined payment explained, details kept   (Standard: wcag-error)
+
+AFTER
+19. Confirmation screen with order number and tracking   (Standard: govuk-confirm)
+20. Receipt and VAT invoice by email   (Rule: zatca-einvoice)
+21. Offer push alerts for delivery here (see Push Opt-in)   (Standard: hig-notifications)
+
+ACCESS
+22. Large text, VoiceOver and TalkBack work on every step   (Standard: hig-accessibility)
+23. Buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+24. Keyboard never hides the active field or the button   (Practice)
+
+SOURCES
+- baymard-guest: https://baymard.com/blog/reduce-cart-abandonment
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- baymard-abandon: https://baymard.com/lists/cart-abandonment-rate
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- mdn-inputmode: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode
+- hig-apple-pay: https://developer.apple.com/design/human-interface-guidelines/apple-pay
+- webdev-payment: https://web.dev/articles/payment-and-address-form-best-practices
+- pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
+- psd2-sca: https://www.ecb.europa.eu/press/intro/mip-online/2018/html/1803_revisedpsd.en.html
+- stripe-3ds: https://docs.stripe.com/payments/3d-secure
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- play-payments: https://support.google.com/googleplay/android-developer/answer/9858738
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- baymard-coupon: https://baymard.com/blog/coupon-code-field
+- wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
+- owasp-transaction: https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- zatca-einvoice: https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx
+- hig-notifications: https://developer.apple.com/design/human-interface-guidelines/notifications
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

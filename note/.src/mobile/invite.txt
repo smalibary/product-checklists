@@ -1,0 +1,26 @@
+title: Invite (mobile)
+about: Inviting people into a shared space in a phone app (a team, household, group or document), not for a reward.
+## Ways to invite
+- Share a link through the system share sheet | S hig-share android-sharesheet
+- Type an email or phone number | P
+- Pick from contacts only after the person chooses it, with a reason | S hig-privacy android-permissions
+- QR code to scan in person | P
+## Roles
+- Choose what the invited person can do (view, edit, admin), with one-line explanations | P
+- Default is the safest useful role | S owasp-authz
+## Invite link
+- Expiry and "reset link" to stop an old link working | S owasp-authz
+- Approval by an admin optional for link joins | P
+## Waiting invites
+- List of sent invites with state (waiting, accepted), resend and cancel | P
+- Accepted invites move to the members list | P
+## The invited person
+- Link opens the app (or the store, then the right screen after install) | S apple-universal-links android-app-links
+- Says who invited them and to what, before they join | P
+- Accept or decline | P
+## Respect
+- No messages sent to contacts without the person's action | S apple-review
+- Contacts not uploaded or kept without consent | L gdpr-6
+## Access
+- Role choices as a list with radio buttons and names | S hig-accessibility
+- Large text supported; buttons at least 44 pt / 48 dp | S hig-layout m3-layout

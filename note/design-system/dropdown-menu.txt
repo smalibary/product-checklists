@@ -1,0 +1,47 @@
+﻿DROPDOWN MENU CHECKLIST: 22 items
+A list of actions or choices that opens from a button (a menu), and the related select for picking a value.
+Backing: 0 Rule, 12 Standard, 5 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHICH ONE
+ 1. Menu of actions (Edit, Duplicate, Delete) opened by a button: the menu button pattern   (Standard: apg-menubutton)
+ 2. Picking one value in a form: a native select or a listbox, not an action menu   (Standard: govuk-select)
+ 3. Long lists of values with typing: a combobox   (Standard: apg-combobox)
+ 4. Short choices (2 to 5) are often better as radios   (Research: nng-dropdown)
+
+CONTENT
+ 5. Items short, start with a verb for actions   (Research: nng-dropdown)
+ 6. Grouped with dividers; dangerous items last and marked   (Research: nng-dropdown)
+ 7. Icons optional, consistent   (Practice)
+ 8. Keyboard shortcuts shown on the right   (Practice)
+ 9. Submenus avoided, at most one level   (Research: nng-dropdown)
+10. Disabled items explained or hidden   (Practice)
+
+LOOK
+11. Opens next to its button, flips to stay on screen   (Practice)
+12. Menu edge and items meet contrast; selected and focused items clear   (Standard: wcag-ui-contrast, wcag-focus)
+13. Item height large enough to tap   (Standard: wcag-target)
+14. Width fits the longest item   (Practice)
+
+BEHAVIOUR
+15. Opens on click or Enter, not on hover alone   (Research: nng-dropdown)
+16. Closes on Escape, on choosing, and on clicking outside   (Standard: apg-menubutton)
+17. Focus returns to the button after closing   (Standard: apg-menubutton)
+18. On phones, long menus open as a bottom sheet   (Standard: m3-bottom-sheets)
+
+KEYBOARD AND ACCESS
+19. Button has aria-haspopup and aria-expanded   (Standard: apg-menubutton)
+20. Menu and menuitem roles; arrow keys move, Home/End jump, typing a letter jumps   (Standard: apg-menubutton)
+21. Checkable items use menuitemcheckbox or menuitemradio   (Standard: apg-menubutton)
+22. Button name says what the menu is for ("More actions for Invoice 104")   (Standard: wcag-name-role)
+
+SOURCES
+- apg-menubutton: https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/
+- govuk-select: https://design-system.service.gov.uk/components/select/
+- apg-combobox: https://www.w3.org/WAI/ARIA/apg/patterns/combobox/
+- nng-dropdown: https://www.nngroup.com/articles/drop-down-menus/
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- m3-bottom-sheets: https://m3.material.io/components/bottom-sheets/guidelines
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value

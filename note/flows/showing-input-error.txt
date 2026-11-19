@@ -1,0 +1,54 @@
+﻿SHOWING INPUT ERROR (FLOW) CHECKLIST: 20 items
+Telling people a field is wrong, and helping them fix it.
+Backing: 0 Rule, 14 Standard, 5 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO CHECK
+ 1. After leaving the field, not on every key press   (Research: baymard-inline)
+ 2. On submit, all fields checked together   (Standard: wcag-error)
+ 3. Once a field shows an error, re-check as they type so it clears when fixed   (Research: baymard-inline)
+ 4. No error for an empty field the person has not reached yet   (Research: baymard-inline)
+
+WHAT THE MESSAGE SAYS
+ 5. What is wrong and how to fix it ("Enter a date like 21/03/2026")   (Standard: wcag-suggest)
+ 6. Plain words; no codes, no blame   (Research: nng-errors)
+ 7. Near the field, under it, tied to it for screen readers (aria-describedby)   (Standard: wcag-error)
+
+HOW IT LOOKS
+ 8. Red border plus an icon and text, not colour alone   (Standard: wcag-color)
+ 9. Contrast at least 3:1 for the border, 4.5:1 for the text   (Standard: wcag-ui-contrast, wcag-contrast)
+10. Layout does not jump much when the message appears   (Practice)
+
+ON SUBMIT
+11. Summary at the top listing errors as links to each field   (Standard: govuk-error-summary)
+12. Focus moves to the summary or the first wrong field   (Standard: wcag-focus-order)
+13. Page title starts with "Error:" on full page forms   (Standard: govuk-error-summary)
+14. Everything typed is kept   (Standard: wcag-error)
+
+PREVENT ERRORS
+15. Accept many formats (spaces in card numbers, +966 or 05)   (Research: baymard-fields)
+16. Hints before typing for format rules   (Standard: wcag-labels)
+17. Right keyboard and autofill   (Standard: mdn-inputmode, mdn-autocomplete)
+
+ACCESS
+18. Field marked invalid (aria-invalid)   (Standard: wcag-name-role)
+19. Errors announced   (Standard: wcag-status)
+20. Arabic and English messages in the right direction   (Standard: w3c-dir)
+
+SOURCES
+- baymard-inline: https://baymard.com/blog/inline-form-validation
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- wcag-suggest: https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- govuk-error-summary: https://design-system.service.gov.uk/components/error-summary/
+- wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- mdn-inputmode: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir

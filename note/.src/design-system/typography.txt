@@ -1,0 +1,31 @@
+title: Typography
+about: The text styles of a design system: fonts, sizes, weights, line heights and how they are used.
+## Type scale
+- A small set of named roles (display, heading, title, body, label, caption) instead of free sizes | S m3-typography hig-typography
+- Sizes from a scale with a steady ratio | R nng-typography
+- Body text at least 16 px on the web | R nng-typography
+- Each role sets font, size, weight, line height and letter spacing together | S m3-typography
+- Styles stored as tokens | S dtcg-tokens
+## Reading comfort
+- Line length about 45 to 80 characters | S butterick-line
+- Line height about 1.4 to 1.6 for body text, tighter for headings | S butterick-line
+- Text still works when people increase spacing (line, letter, word, paragraph) | S wcag-text-spacing
+- Left-aligned (start-aligned) body text, not justified | S butterick-line
+- Few weights; bold for real emphasis only | R nng-typography
+## Sizing and zoom
+- Sizes in rem so they follow the browser's text size | S wcag-resize
+- Text can grow to 200% without cut-off or overlap | S wcag-resize
+- On iOS and Android, follow the system text size (Dynamic Type, font scale) | S hig-typography m3-typography
+## Contrast
+- Body text contrast at least 4.5:1, large text 3:1 | S wcag-contrast
+- APCA checked for thin or small fonts | S apca
+- No light grey text for important information | S wcag-contrast
+## Languages
+- Fonts cover every language used (Arabic and Latin), matched in size and weight | S w3c-dir
+- Arabic needs more line height and should not be letter-spaced | P
+- Numbers in tables use tabular figures | P
+- Fallback fonts listed; fonts load without hiding text (font-display swap) | S webdev-fonts
+## Structure
+- Visual style separate from heading level: a heading role can be any size | S wcag-headings
+- Headings in order on each page | S wcag-headings
+- No text in images | S wcag-images-text

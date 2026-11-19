@@ -1,0 +1,25 @@
+title: Footer
+about: The bottom of every page: a safety net of links, contact and legal information.
+## Content
+- Links grouped under short headings (Product, Company, Resources, Legal) | R nng-footers
+- Contact: email, phone or a link to the contact page | R nng-footers nng-contact
+- Company name, registration and address where the law asks | L eu-consumer-rights
+- Privacy policy, terms and cookie settings links | L gdpr-13 eprivacy
+- "Do not sell or share my personal information" where California law applies | L ccpa
+- Accessibility statement link | L eu-accessibility-act
+- Copyright line with the current year | P
+- Social links with names, not only icons | S wcag-link wcag-nontext
+- Language and region switcher | P
+- Newsletter sign-up, short, with consent rules | L gdpr-7
+- Status page and help centre links | P
+## Consistency
+- The same footer, in the same order, on every page | S wcag-nav
+- Help link in the same place on every page | S wcag-help
+## Structure and access
+- Marked as the page's footer landmark (contentinfo) | S apg-landmarks
+- Link groups are lists with headings | S wcag-info
+- Link text says where it goes, no "click here" | S wcag-link
+- Contrast meets 4.5 to 1, even on dark footers | S wcag-contrast
+- Touch targets at least 24 pixels apart or in size | S wcag-target
+- Groups stack or fold into sections on phones | S wcag-reflow
+- Back to top link on long pages | P

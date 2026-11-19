@@ -1,0 +1,25 @@
+title: Tooltip
+about: A small label that appears near an element on hover or keyboard focus, to name it or add a short hint.
+## When to use
+- Naming icon-only buttons, and short hints that are nice to have | R nng-tooltip
+- Never for information people need to finish a task (put it on the page) | R nng-tooltip
+- Never for interactive content like links or buttons (use a popover) | S apg-tooltip
+- Not on touch screens alone: they have no hover | R nng-tooltip
+## Content
+- A few words; one sentence at most | R nng-tooltip
+- No repetition of the visible label | R nng-tooltip
+## Look and place
+- Close to the element, not covering it or what it relates to | R nng-tooltip
+- Moves to stay on screen | P
+- Contrast meets WCAG | S wcag-contrast
+- An arrow pointing at the element is optional | P
+## Timing
+- Appears after a short delay (about 300 to 500 ms) on hover, at once on focus | R nng-tooltip
+- Stays while the pointer is over the tooltip itself | S wcag-hover
+- Closes with Escape without moving focus | S wcag-hover apg-tooltip
+- Closes when focus or pointer leaves | S apg-tooltip
+## Access
+- role tooltip, linked from the element with aria-describedby (hint) or used as its name (aria-labelledby) | S apg-tooltip
+- Shows on keyboard focus, not only on hover | S wcag-hover
+- The element still has a name without the tooltip for screen readers | S wcag-name-role
+- Disabled buttons: put the tooltip on a wrapper that can take focus, or explain on the page | P

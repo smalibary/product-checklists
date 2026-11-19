@@ -1,0 +1,35 @@
+﻿SPLASH SCREEN CHECKLIST: 14 items
+What shows while the app starts, until its first screen is ready.
+Backing: 0 Rule, 12 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PLATFORM RULES
+ 1. iOS: the launch screen looks like the first screen without content, not a branded ad   (Standard: hig-launching)
+ 2. Android 12 and later: the system splash screen (icon on a colour) is shown for every app   (Standard: android-splash)
+ 3. Use the platform's splash tools; do not add a second splash screen after it   (Standard: android-splash)
+
+CONTENT
+ 4. Only the app icon or logo on a plain background   (Standard: android-splash)
+ 5. No text that needs translating, no ads, no "Loading" messages   (Standard: hig-launching)
+ 6. Background colour matches the first screen, in light and dark mode   (Standard: hig-launching, hig-dark-mode)
+
+SPEED
+ 7. Shown as briefly as possible; start-up work moved to after the first screen   (Standard: android-splash)
+ 8. Kept up only while truly needed data loads, then hand off smoothly   (Standard: android-splash)
+ 9. The first screen comes back to where the person left off   (Standard: hig-launching)
+10. Slow start-ups measured and fixed (cold start under about 2 seconds is a good aim)   (Standard: android-vitals)
+
+MOTION
+11. Optional short icon animation (under a second)   (Standard: android-splash)
+12. Reduced motion respected   (Standard: hig-accessibility)
+
+EDGE CASES
+13. Offline at start: show the app with cached content and a notice, not a stuck splash   (Practice)
+14. Update required: a clear screen with a button to the store   (Practice)
+
+SOURCES
+- hig-launching: https://developer.apple.com/design/human-interface-guidelines/launching
+- android-splash: https://developer.android.com/develop/ui/views/launch/splash-screen
+- hig-dark-mode: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+- android-vitals: https://developer.android.com/topic/performance/vitals/launch-time
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility

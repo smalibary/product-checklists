@@ -1,0 +1,49 @@
+﻿FOOTER CHECKLIST: 20 items
+The bottom of every page: a safety net of links, contact and legal information.
+Backing: 5 Rule, 9 Standard, 2 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. Links grouped under short headings (Product, Company, Resources, Legal)   (Research: nng-footers)
+ 2. Contact: email, phone or a link to the contact page   (Research: nng-footers, nng-contact)
+ 3. Company name, registration and address where the law asks   (Rule: eu-consumer-rights)
+ 4. Privacy policy, terms and cookie settings links   (Rule: gdpr-13, eprivacy)
+ 5. "Do not sell or share my personal information" where California law applies   (Rule: ccpa)
+ 6. Accessibility statement link   (Rule: eu-accessibility-act)
+ 7. Copyright line with the current year   (Practice)
+ 8. Social links with names, not only icons   (Standard: wcag-link, wcag-nontext)
+ 9. Language and region switcher   (Practice)
+10. Newsletter sign-up, short, with consent rules   (Rule: gdpr-7)
+11. Status page and help centre links   (Practice)
+
+CONSISTENCY
+12. The same footer, in the same order, on every page   (Standard: wcag-nav)
+13. Help link in the same place on every page   (Standard: wcag-help)
+
+STRUCTURE AND ACCESS
+14. Marked as the page's footer landmark (contentinfo)   (Standard: apg-landmarks)
+15. Link groups are lists with headings   (Standard: wcag-info)
+16. Link text says where it goes, no "click here"   (Standard: wcag-link)
+17. Contrast meets 4.5 to 1, even on dark footers   (Standard: wcag-contrast)
+18. Touch targets at least 24 pixels apart or in size   (Standard: wcag-target)
+19. Groups stack or fold into sections on phones   (Standard: wcag-reflow)
+20. Back to top link on long pages   (Practice)
+
+SOURCES
+- nng-footers: https://www.nngroup.com/articles/footers/
+- nng-contact: https://www.nngroup.com/articles/contact-us-pages/
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- eprivacy: https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en
+- ccpa: https://oag.ca.gov/privacy/ccpa
+- eu-accessibility-act: https://ec.europa.eu/social/main.jsp?catId=1202
+- wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- wcag-nav: https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation
+- wcag-help: https://www.w3.org/WAI/WCAG22/Understanding/consistent-help
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

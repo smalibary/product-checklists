@@ -1,0 +1,27 @@
+title: Status page
+about: Shows whether the service is working right now, and tells people about problems and planned maintenance.
+## Now
+- One line at the top: "All systems working" or what is broken | R nng-status
+- Each part of the service listed (website, app, API, payments) with its state | P
+- States in words and colour together: Working, Slow, Partly down, Down, Maintenance | S wcag-color
+- Time of the last check, with the time zone | R nng-status
+## Incidents
+- An incident post within minutes of a problem, even before the cause is known | S atlassian-incident
+- Updates on a steady rhythm (for example every 30 minutes) until fixed | S atlassian-incident
+- Each update says what is affected, what users can do, and when the next update comes | S atlassian-incident
+- A short review after big incidents: cause, fix, how it will not happen again | S atlassian-incident
+- Plain words; no blame and no hiding | P
+## History and plans
+- Uptime for the last 90 days per part, with the number | P
+- Past incidents listed by date | P
+- Planned maintenance announced ahead with start, end and what is affected | P
+## Getting told
+- Subscribe by email, text, RSS or a chat app | P
+- Unsubscribe in one step | L can-spam rfc-unsubscribe
+- A machine-readable feed (API or RSS) for customers' own tools | P
+## Reliability of the page itself
+- Hosted apart from the main service, so it stays up when the service is down | P
+- Fast and light; works on a slow phone connection | S webdev-vitals
+- Status changes announced to screen readers without moving focus | S wcag-status
+- Contrast and text size meet WCAG | S wcag-contrast
+- Linked from the footer, the help centre and error pages | P

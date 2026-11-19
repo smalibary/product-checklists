@@ -1,0 +1,43 @@
+﻿TESTIMONIALS PAGE CHECKLIST: 19 items
+Real words from real customers that help a visitor believe the product works for people like them.
+Backing: 7 Rule, 4 Standard, 6 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+HONESTY (THE LAW)
+ 1. Every quote is from a real customer and says what they really think   (Rule: ftc-endorsements, ftc-reviews)
+ 2. No fake, bought or AI-written reviews presented as real   (Rule: ftc-reviews)
+ 3. Paid, gifted or employee testimonials say so clearly beside the quote   (Rule: ftc-endorsements)
+ 4. Results quoted are typical, or the typical result is shown beside them   (Rule: ftc-endorsements)
+ 5. Bad reviews are not hidden from a page that claims to show all reviews   (Rule: ftc-reviews)
+ 6. Written permission kept for each name, photo and logo used   (Rule: gdpr-7)
+
+WHAT MAKES A QUOTE BELIEVABLE
+ 7. Full name, role, company and a real photo   (Research: nng-reviews, nng-trust)
+ 8. A specific result (time saved, money earned) rather than general praise   (Research: nng-reviews)
+ 9. Quotes grouped by customer type or use case so visitors find people like them   (Research: nng-reviews)
+10. A date on each quote, and old ones removed   (Practice)
+11. A link to the full case study or the original review where it lives (G2, App Store)   (Research: nng-reviews)
+12. Video testimonials with captions and a transcript   (Standard: wcag-captions)
+
+LAYOUT
+13. Short quotes in a grid or list; never an auto-moving carousel   (Research: nng-carousel)
+14. Star ratings show the number of reviews behind them   (Research: nng-reviews)
+15. Logos of customers used with permission   (Rule: ftc-endorsements)
+16. Text over photos keeps 4.5 to 1 contrast   (Standard: wcag-contrast)
+17. Photos have alt text with the person's name   (Standard: wcag-nontext)
+18. A call to action after the quotes (start, book a demo)   (Practice)
+
+SEARCH
+19. Review structured data only for real reviews of the item on the page   (Standard: google-review)
+
+SOURCES
+- ftc-endorsements: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking
+- ftc-reviews: https://www.ftc.gov/legal-library/browse/rules/rule-use-consumer-reviews-testimonials
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- nng-reviews: https://www.nngroup.com/articles/social-proof-ux/
+- nng-trust: https://www.nngroup.com/articles/trustworthy-design/
+- wcag-captions: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded
+- nng-carousel: https://www.nngroup.com/articles/auto-forwarding/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- google-review: https://developers.google.com/search/docs/appearance/structured-data/review-snippet

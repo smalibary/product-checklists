@@ -1,0 +1,45 @@
+﻿DELETING ACCOUNT (FLOW) CHECKLIST: 17 items
+Permanently removing an account and its data, by the person's own choice.
+Backing: 6 Rule, 6 Standard, 2 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FINDING IT
+ 1. In account settings, clearly named   (Standard: apple-deletion, play-deletion)
+ 2. Inside the app if accounts are made in the app (App Store); a web page too (Google Play)   (Standard: apple-deletion, play-deletion)
+
+BEFORE DELETING
+ 3. Say what will be deleted, what is kept by law and for how long   (Rule: gdpr-17)
+ 4. Offer to download data first   (Rule: gdpr-20)
+ 5. Active subscriptions: say they must be cancelled, with a link (store plans in the store)   (Standard: apple-deletion)
+ 6. Owned shared spaces: transfer or delete them   (Practice)
+ 7. Alternatives offered once (deactivate, sign out), not pushed   (Rule: ftc-dark-patterns)
+
+CONFIRMING
+ 8. Password or a fresh sign-in   (Standard: owasp-auth)
+ 9. Typed confirmation for big accounts ("type DELETE")   (Research: nng-confirm)
+10. Final button names the action ("Delete my account") in danger style   (Research: nng-confirm)
+
+AFTER
+11. Signed out, confirmation screen and email   (Practice)
+12. Grace period to undo (for example 30 days) said clearly, with how to undo   (Practice)
+13. Data deleted from all systems and backups within a stated time   (Rule: gdpr-17)
+14. Third parties told to delete   (Rule: gdpr-17)
+
+RULES
+15. GDPR right to erasure; Saudi PDPL also gives the right to destruction of personal data   (Rule: gdpr-17, pdpl)
+
+ACCESS
+16. Every step works by keyboard and screen reader   (Standard: wcag-keyboard)
+17. No time limit on the confirmation   (Standard: wcag-timing)
+
+SOURCES
+- apple-deletion: https://developer.apple.com/support/offering-account-deletion-in-your-app
+- play-deletion: https://support.google.com/googleplay/android-developer/answer/13327111
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- gdpr-20: https://gdpr-info.eu/art-20-gdpr/
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- pdpl: https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable

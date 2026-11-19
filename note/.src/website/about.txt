@@ -1,0 +1,27 @@
+title: About page
+about: Tells visitors who the company is, why it exists and why they can trust it.
+## Who and why
+- One sentence on what the company does and for whom, at the top | R nng-about
+- The story: when and why it started, in a few short paragraphs | R nng-about
+- Mission or purpose in plain words, not slogans | R nng-about
+- What makes the company different, with facts | R nng-trust
+## People
+- Founders and leaders with real photos, names and roles | R nng-about nng-trust
+- Team size or a link to the Team page | P
+- Photos of real people and places, not stock images | R nng-trust
+## Proof
+- Numbers that matter: customers, years, countries, with the date they were true | R nng-trust
+- Customer logos or quotes used with permission | L ftc-endorsements
+- Awards, press mentions and partners, linked to the source | P
+- Investors or ownership, if relevant to trust | P
+## Contact and legal
+- Physical address and registered company name | L eu-consumer-rights
+- A way to get in touch from the page | R nng-contact
+- Links to Careers, Press and Contact | P
+## Writing and layout
+- Short paragraphs, headings and lists for scanning | R nng-scanning
+- Headings that say what each part is about | S wcag-headings
+- Images have alt text that describes them; decorative ones are hidden from screen readers | S wcag-nontext wai-images
+- Text contrast meets 4.5 to 1 | S wcag-contrast
+- Organization structured data (name, logo, address, links) | S schema-org
+- Page title that names the company | S wcag-title

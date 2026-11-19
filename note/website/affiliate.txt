@@ -1,0 +1,47 @@
+﻿AFFILIATE PAGE CHECKLIST: 18 items
+Invites people to promote the product for a commission and explains how the programme works.
+Backing: 4 Rule, 2 Standard, 3 Research, 9 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE OFFER
+ 1. Commission stated plainly: percent or amount, one-off or recurring, for how long   (Practice)
+ 2. Cookie window (how long after a click a sale still counts)   (Practice)
+ 3. When and how payouts happen, the minimum payout and the currencies   (Practice)
+ 4. A worked example: "Refer 10 customers on the Pro plan, earn X a month"   (Practice)
+
+JOINING
+ 5. Who can join, and who cannot (for example, no paid search on the brand name)   (Practice)
+ 6. A short application form; tell people how long approval takes   (Research: baymard-fields)
+ 7. A sign-in link for existing affiliates   (Practice)
+ 8. Terms of the programme linked before applying   (Rule: eu-consumer-rights)
+
+RULES AFFILIATES MUST FOLLOW
+ 9. Affiliates must say clearly that they earn a commission   (Rule: ftc-endorsements)
+10. No false claims, fake reviews or spam to promote the product   (Rule: ftc-reviews, can-spam)
+11. Brand guidelines and approved logos to download   (Practice)
+
+TOOLS
+12. Links, banners and text ready to copy   (Practice)
+13. A dashboard showing clicks, sign-ups, sales and money owed   (Practice)
+14. A contact for affiliate questions   (Research: nng-contact)
+
+TRUST
+15. Quotes or numbers from current affiliates (real, with permission)   (Rule: ftc-endorsements)
+16. FAQ on tax forms, payment methods and returns that cancel commission   (Research: nng-faq)
+
+ACCESSIBILITY
+17. Form fields with visible labels and clear errors   (Standard: wcag-labels, wcag-error)
+18. Headings and contrast meet WCAG   (Standard: wcag-headings, wcag-contrast)
+
+SOURCES
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- ftc-endorsements: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking
+- ftc-reviews: https://www.ftc.gov/legal-library/browse/rules/rule-use-consumer-reviews-testimonials
+- can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- nng-contact: https://www.nngroup.com/articles/contact-us-pages/
+- nng-faq: https://www.nngroup.com/articles/faqs-deliver-value/
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

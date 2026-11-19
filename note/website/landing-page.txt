@@ -1,0 +1,68 @@
+﻿LANDING PAGE CHECKLIST: 26 items
+The page people arrive on from an ad, a link or a search; it has one job: get them to take one action.
+Backing: 4 Rule, 10 Standard, 7 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ABOVE THE FOLD
+ 1. A headline that says what the visitor gets, in their words   (Research: nng-scanning)
+ 2. A sub-line that says how, or for whom   (Research: nng-scanning)
+ 3. One main action button with a verb (Start free, Get the guide)   (Practice)
+ 4. A product image or short clip that shows the real thing   (Research: nng-trust)
+ 5. The page matches the ad or link that brought the visitor (same promise, same words)   (Practice)
+
+BODY
+ 6. Three to five benefits, each a short heading, a line and a picture   (Research: nng-scanning)
+ 7. Proof: customer logos, numbers or quotes, with permission   (Rule: ftc-endorsements)
+ 8. How it works in three steps   (Practice)
+ 9. Answers to the main doubts (price, time, risk) in a short FAQ   (Research: nng-faq)
+10. The main action repeated after each big section   (Practice)
+11. Few or no links that lead away from the action   (Practice)
+
+FORMS
+12. Ask only what is needed; every extra field costs sign-ups   (Research: baymard-fields)
+13. Labels above fields, the right keyboard and autofill   (Standard: wcag-labels, mdn-autocomplete, webdev-signup)
+14. Errors in words next to the field   (Standard: wcag-error)
+15. Marketing consent unticked by default where the law needs consent   (Rule: gdpr-7)
+
+SPEED
+16. Largest image or text shows in under 2.5 seconds   (Standard: webdev-lcp)
+17. The page does not jump while loading   (Standard: webdev-cls)
+18. Responds to taps in under 200 milliseconds   (Standard: webdev-inp)
+19. Faster pages convert better (Vodafone, Rakuten and others measured it)   (Research: webdev-vitals-business)
+
+HONESTY
+20. No fake countdowns, fake stock counts or hidden prices   (Rule: ftc-dark-patterns, ftc-junk-fees)
+21. Prices and terms in the page, not only in small print   (Rule: ftc-junk-fees)
+
+ACCESS AND PHONES
+22. Works at phone width with no sideways scroll   (Standard: wcag-reflow)
+23. Contrast and text size meet WCAG   (Standard: wcag-contrast)
+24. Buttons at least 24 by 24 pixels (44 recommended)   (Standard: wcag-target)
+25. Video has captions, starts muted and can be paused   (Standard: wcag-captions, wcag-audio, wcag-pause)
+26. A page title and description written for search and sharing   (Standard: google-title, google-snippet)
+
+SOURCES
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- nng-trust: https://www.nngroup.com/articles/trustworthy-design/
+- ftc-endorsements: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking
+- nng-faq: https://www.nngroup.com/articles/faqs-deliver-value/
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- webdev-signup: https://web.dev/articles/sign-up-form-best-practices
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- webdev-lcp: https://web.dev/articles/lcp
+- webdev-cls: https://web.dev/articles/cls
+- webdev-inp: https://web.dev/articles/inp
+- webdev-vitals-business: https://web.dev/case-studies/vitals-business-impact
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- wcag-captions: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded
+- wcag-audio: https://www.w3.org/WAI/WCAG22/Understanding/audio-control
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- google-title: https://developers.google.com/search/docs/appearance/title-link
+- google-snippet: https://developers.google.com/search/docs/appearance/snippet

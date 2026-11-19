@@ -1,0 +1,25 @@
+title: Contact Us page
+about: Lets visitors reach the right person by the way that suits them.
+## Ways to reach
+- Several ways: form, email, phone, chat, address, each with when it is answered | R nng-contact
+- Phone numbers as tap-to-call links on phones | R nng-contact
+- Opening hours with the time zone | R nng-contact
+- Expected reply time for each way | R nng-contact
+- Routes for common needs: sales, support, press, billing | S govuk-contact
+- Links to self-help (help centre, status page) offered, never forced first | R nng-help
+- Physical address with a map link | L eu-consumer-rights
+## The form
+- Only the fields needed: name, email, topic, message | R baymard-fields
+- Topic as a short list so it reaches the right team | P
+- Labels above fields; autofill for name and email | S wcag-labels wcag-purpose mdn-autocomplete
+- Errors shown next to the field and in a summary at the top | S wcag-error govuk-error-summary
+- File attachment optional, with types and size limit stated | S govuk-file-upload owasp-upload
+- A robot check only if spam is a real problem, and an accessible one | S wcag-auth
+- What happens to the message data, with a privacy link | L gdpr-13
+## After sending
+- A confirmation screen with a reference number and what happens next | R govuk-confirm
+- A copy sent by email | P
+- The message is kept if sending fails, so it is not lost | R nng-control
+## Consistency and access
+- Contact link in the same place on every page | S wcag-help
+- Contrast, target size and phone width meet WCAG | S wcag-contrast wcag-target wcag-reflow

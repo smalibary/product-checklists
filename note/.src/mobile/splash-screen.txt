@@ -1,0 +1,21 @@
+title: Splash Screen
+about: What shows while the app starts, until its first screen is ready.
+## Platform rules
+- iOS: the launch screen looks like the first screen without content, not a branded ad | S hig-launching
+- Android 12 and later: the system splash screen (icon on a colour) is shown for every app | S android-splash
+- Use the platform's splash tools; do not add a second splash screen after it | S android-splash
+## Content
+- Only the app icon or logo on a plain background | S android-splash
+- No text that needs translating, no ads, no "Loading" messages | S hig-launching
+- Background colour matches the first screen, in light and dark mode | S hig-launching hig-dark-mode
+## Speed
+- Shown as briefly as possible; start-up work moved to after the first screen | S android-splash
+- Kept up only while truly needed data loads, then hand off smoothly | S android-splash
+- The first screen comes back to where the person left off | S hig-launching
+- Slow start-ups measured and fixed (cold start under about 2 seconds is a good aim) | S android-vitals
+## Motion
+- Optional short icon animation (under a second) | S android-splash
+- Reduced motion respected | S hig-accessibility
+## Edge cases
+- Offline at start: show the app with cached content and a notice, not a stuck splash | P
+- Update required: a clear screen with a button to the store | P

@@ -1,0 +1,23 @@
+title: Breadcrumb
+about: A short trail of links showing where a page sits in the site's structure, from the top down to here.
+## When to use
+- For sites with three or more levels of pages | R nng-breadcrumbs
+- Shows the place in the structure, not the person's history | R nng-breadcrumbs
+- Not a replacement for the main menu | R nng-breadcrumbs
+## Look
+- Placed above the page title, below the header | R nng-breadcrumbs govuk-breadcrumbs
+- Separators (› or /) drawn by CSS so screen readers do not read them | S apg-breadcrumb
+- Every level a link except the last, which is the current page | S apg-breadcrumb
+- The current page marked (aria-current="page") | S apg-breadcrumb
+- Small but readable text with enough contrast | S wcag-contrast
+## Long trails
+- Middle levels collapse into "..." with a menu on small screens | P
+- On phones, show only the parent as a "Back to X" link | S govuk-breadcrumbs
+- Long names cut with an ellipsis and full name on hover and focus | S wcag-hover
+## Access
+- Inside a nav landmark named "Breadcrumb" | S apg-breadcrumb
+- An ordered list of links | S apg-breadcrumb
+- Separator direction flips for right-to-left languages | S w3c-dir
+- Link targets large enough to tap | S wcag-target
+## Search
+- Breadcrumb structured data so search results show the trail | S google-breadcrumb

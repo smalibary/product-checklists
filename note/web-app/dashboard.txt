@@ -1,0 +1,52 @@
+﻿DASHBOARD (WEB APP) CHECKLIST: 20 items
+The overview screen that shows the state of things at a glance and points to what needs attention.
+Backing: 0 Rule, 7 Standard, 12 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PURPOSE
+ 1. Built for one audience and its questions (an operator watches, a manager reviews)   (Research: nng-dashboards)
+ 2. The few numbers that matter most at the top, largest   (Research: nng-dashboards)
+ 3. Things needing action (overdue, failing, waiting on me) shown clearly   (Research: nng-dashboards)
+ 4. Every card links to the detail behind it   (Research: nng-dashboards)
+
+NUMBERS AND CHARTS
+ 5. Each number with its period, a comparison and a direction   (Research: nng-dashboards)
+ 6. Up and down shown by arrow and word, not only green and red   (Standard: wcag-color)
+ 7. Simple charts: lines for trends, bars for comparison   (Research: nng-dashboards)
+ 8. Units and time zone stated; when the data was last updated   (Research: nng-status)
+ 9. Charts have exact values on hover and on keyboard focus   (Standard: wcag-hover)
+
+LAYOUT
+10. A grid that reflows on smaller screens, in a sensible reading order   (Standard: wcag-reflow, wcag-meaningful-sequence)
+11. Cards the same style and spacing   (Research: nng-cards)
+12. Date range and filters apply to all cards, shown at the top   (Research: nng-filters)
+13. Optional: choose, hide and reorder cards; the layout is remembered   (Practice)
+
+STATES
+14. Skeleton cards while loading, each card loading on its own   (Research: nng-skeleton)
+15. New account with no data: an empty state that helps set up   (Research: nng-empty)
+16. A card that fails shows its own error and Retry; the rest still work   (Research: nng-errors)
+17. Live numbers update without jumping the layout   (Standard: webdev-cls)
+
+ACCESS
+18. Cards have headings; screen readers can jump between them   (Standard: wcag-headings)
+19. Charts have a text summary or a table   (Standard: wcag-nontext)
+20. Auto-refresh can be paused; motion respects reduced motion   (Standard: wcag-pause, mdn-reduced-motion)
+
+SOURCES
+- nng-dashboards: https://www.nngroup.com/articles/dashboards-preattentive/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- nng-status: https://www.nngroup.com/articles/visibility-system-status/
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-meaningful-sequence: https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence
+- nng-cards: https://www.nngroup.com/articles/cards-component/
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- webdev-cls: https://web.dev/articles/cls
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion

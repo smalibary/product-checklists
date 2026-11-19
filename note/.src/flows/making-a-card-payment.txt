@@ -1,0 +1,27 @@
+title: Making a card payment (flow)
+about: Typing card details, passing the bank's check, and getting a result.
+## Fields
+- Card number, expiry, security code, name only if needed | R baymard-card
+- Card fields from a certified provider (hosted fields) so card data never touches your servers | S pci-dss
+- Numbers keyboard and autofill (cc-number, cc-exp, cc-csc) | S mdn-autocomplete mdn-inputmode
+- Spaces in card number added automatically and allowed when pasted | R baymard-card
+- Card brand detected and shown, including mada | P
+- Expiry as MM/YY in one field | R baymard-card
+## Checks
+- Number checked as typed (Luhn), errors on leaving the field | R baymard-inline
+- Security code help: where to find it | R baymard-card
+## Paying
+- Button with the amount ("Pay 245 SAR") | S wcag-prevent
+- Busy state; no double charge (one payment per order key) | S owasp-transaction stripe-idempotency
+- Bank check (3-D Secure) opens in the page, explained | L psd2-sca stripe-3ds
+## Results
+- Declined: a plain reason where known, and what to try (another card) | S wcag-error
+- Details kept except the security code | S pci-dss
+- Success: confirmation with order number; receipt and VAT invoice by email | L govuk-confirm zatca-einvoice
+## Trust
+- Secure checkout signs near the fields, without clutter | R baymard-trust
+- Saved cards only with consent, shown by brand and last 4 | S pci-dss
+## Access
+- Fields have visible names | S wcag-labels
+- Errors announced and linked to fields | S wcag-error
+- The bank page in the check is reachable by keyboard | S wcag-keyboard

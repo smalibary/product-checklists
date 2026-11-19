@@ -1,0 +1,48 @@
+﻿BANNER CHECKLIST: 18 items
+A full-width message across the top of the app or page, about something that affects the whole product (outage, trial ending, cookies).
+Backing: 2 Rule, 12 Standard, 1 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. For product-wide news or problems that persist (trial ends, payment failed, read-only mode)   (Standard: m3-banner)
+ 2. One banner at a time; more wait in line   (Standard: m3-banner)
+ 3. Not for messages about one action (use a toast) or one section (use an alert)   (Research: nng-indicators)
+
+CONTENT
+ 4. One short sentence on what is happening   (Standard: govuk-notification)
+ 5. One or two actions (Update payment, Learn more)   (Standard: m3-banner)
+ 6. Dates and times with time zone where relevant   (Practice)
+
+LOOK
+ 7. Kind shown by colour, icon and words (info, warning, error)   (Standard: wcag-color)
+ 8. Contrast for text and buttons meets WCAG   (Standard: wcag-contrast)
+ 9. Stays at the top of the content, under the header   (Standard: m3-banner)
+
+BEHAVIOUR
+10. Can be closed if not critical; closed stays closed for that message   (Practice)
+11. Critical banners (account suspended) cannot be closed until fixed   (Practice)
+12. Does not cover content; the page moves down once, not while reading   (Standard: webdev-cls)
+13. Does not cover focused items when sticky   (Standard: wcag-obscured)
+
+ACCESS
+14. Region with a name, or role status if it appears after load   (Standard: wcag-status)
+15. Close button has a name ("Dismiss trial notice")   (Standard: wcag-name-role)
+16. Reachable early in the tab order   (Standard: wcag-focus-order)
+
+COOKIE BANNER
+17. Accept and Reject equally easy, no pre-ticked boxes   (Rule: eprivacy, gdpr-7)
+18. Settings link for choices by purpose   (Rule: eprivacy)
+
+SOURCES
+- m3-banner: https://m2.material.io/components/banners
+- nng-indicators: https://www.nngroup.com/articles/indicators-validations-notifications/
+- govuk-notification: https://design-system.service.gov.uk/components/notification-banner/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- webdev-cls: https://web.dev/articles/cls
+- wcag-obscured: https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
+- eprivacy: https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/

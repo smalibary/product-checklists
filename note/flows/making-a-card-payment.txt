@@ -1,0 +1,53 @@
+﻿MAKING A CARD PAYMENT (FLOW) CHECKLIST: 19 items
+Typing card details, passing the bank's check, and getting a result.
+Backing: 2 Rule, 10 Standard, 6 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FIELDS
+ 1. Card number, expiry, security code, name only if needed   (Research: baymard-card)
+ 2. Card fields from a certified provider (hosted fields) so card data never touches your servers   (Standard: pci-dss)
+ 3. Numbers keyboard and autofill (cc-number, cc-exp, cc-csc)   (Standard: mdn-autocomplete, mdn-inputmode)
+ 4. Spaces in card number added automatically and allowed when pasted   (Research: baymard-card)
+ 5. Card brand detected and shown, including mada   (Practice)
+ 6. Expiry as MM/YY in one field   (Research: baymard-card)
+
+CHECKS
+ 7. Number checked as typed (Luhn), errors on leaving the field   (Research: baymard-inline)
+ 8. Security code help: where to find it   (Research: baymard-card)
+
+PAYING
+ 9. Button with the amount ("Pay 245 SAR")   (Standard: wcag-prevent)
+10. Busy state; no double charge (one payment per order key)   (Standard: owasp-transaction, stripe-idempotency)
+11. Bank check (3-D Secure) opens in the page, explained   (Rule: psd2-sca, stripe-3ds)
+
+RESULTS
+12. Declined: a plain reason where known, and what to try (another card)   (Standard: wcag-error)
+13. Details kept except the security code   (Standard: pci-dss)
+14. Success: confirmation with order number; receipt and VAT invoice by email   (Rule: govuk-confirm, zatca-einvoice)
+
+TRUST
+15. Secure checkout signs near the fields, without clutter   (Research: baymard-trust)
+16. Saved cards only with consent, shown by brand and last 4   (Standard: pci-dss)
+
+ACCESS
+17. Fields have visible names   (Standard: wcag-labels)
+18. Errors announced and linked to fields   (Standard: wcag-error)
+19. The bank page in the check is reachable by keyboard   (Standard: wcag-keyboard)
+
+SOURCES
+- baymard-card: https://baymard.com/blog/how-to-format-card-fields
+- pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- mdn-inputmode: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode
+- baymard-inline: https://baymard.com/blog/inline-form-validation
+- wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
+- owasp-transaction: https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html
+- stripe-idempotency: https://docs.stripe.com/api/idempotent_requests
+- psd2-sca: https://www.ecb.europa.eu/press/intro/mip-online/2018/html/1803_revisedpsd.en.html
+- stripe-3ds: https://docs.stripe.com/payments/3d-secure
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- zatca-einvoice: https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx
+- baymard-trust: https://baymard.com/blog/perceived-security-of-payment-form
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

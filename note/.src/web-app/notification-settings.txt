@@ -1,0 +1,26 @@
+title: Notification Settings
+about: Where people choose what they are told about, and how (email, in-app, push, text).
+## Structure
+- Grouped by topic (mentions, comments, billing, security, product news) | P
+- A grid: topics down the side, channels across the top (email, push, in-app) | P
+- Each row says in plain words what triggers it | P
+- Defaults set to what most people want, never to everything | R nng-notifications
+## Controls
+- Switches or checkboxes with clear names that include the topic and channel | S wcag-name-role apg-switch
+- Changes saved at once, with a short "Saved" message announced to screen readers | S wcag-status
+- Pause all for a set time (1 hour, until tomorrow, a week) | P
+- Quiet hours with the time zone | P
+- How often: right away, a daily summary, a weekly summary | P
+## Rules
+- Security and billing alerts cannot be turned off, and say why | P
+- Marketing emails off by default where the law needs consent | L gdpr-7
+- One-click unsubscribe in every marketing email, honoured quickly | L can-spam rfc-unsubscribe
+- Email senders follow the bulk sender rules (one-click unsubscribe, low spam rate) | L google-sender
+- Push asked for only after the person has a reason to want it | S webdev-push
+- If browser push is blocked, explain how to turn it back on | P
+## Per item
+- Follow or mute a single project, thread or item from where it is | P
+- Links in each email to change the setting for that topic | P
+## Access
+- Grid is a real table or list with headers so screen readers read topic and channel | S wai-tables wcag-info
+- Works at phone width (the grid becomes a list) | S wcag-reflow

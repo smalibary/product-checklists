@@ -1,0 +1,50 @@
+﻿COMING SOON PAGE CHECKLIST: 18 items
+A holding page before a launch that says what is coming and collects interest.
+Backing: 5 Rule, 8 Standard, 0 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. What is coming and who it is for, in one line   (Practice)
+ 2. A rough launch date, or "early 2027", only if the team will keep it   (Practice)
+ 3. One clear action: leave an email to be told at launch   (Practice)
+ 4. What the person will get by signing up (early access, a discount)   (Practice)
+ 5. Company name and a way to contact   (Rule: eu-consumer-rights)
+
+THE EMAIL FORM
+ 6. One field: email, with a visible label and the right input type   (Standard: wcag-labels, mdn-autocomplete)
+ 7. Say exactly what emails will be sent and how often   (Rule: gdpr-13, can-spam)
+ 8. Consent box unticked by default where the law needs consent for marketing   (Rule: gdpr-7)
+ 9. A link to the privacy policy beside the form   (Rule: gdpr-13)
+10. Confirmation on screen and by email; double opt-in where required   (Practice)
+11. Errors shown in words next to the field   (Standard: wcag-error)
+
+COUNTDOWN, IF USED
+12. A countdown that is real and never resets   (Rule: ftc-dark-patterns)
+13. Countdown numbers not read aloud every second by screen readers   (Standard: wcag-status)
+
+SEARCH AND STATUS
+14. Returns a normal page (status 200), with a real title and description   (Standard: google-title, google-snippet)
+15. If the main site is down for a short while, use a maintenance page instead (status 503)   (Standard: google-maintenance)
+
+LOOK AND ACCESS
+16. Contrast and text size meet WCAG   (Standard: wcag-contrast)
+17. Any background video or animation can be paused and respects reduced motion   (Standard: wcag-pause, mdn-reduced-motion)
+18. Works at phone width with no sideways scroll   (Standard: wcag-reflow)
+
+SOURCES
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- google-title: https://developers.google.com/search/docs/appearance/title-link
+- google-snippet: https://developers.google.com/search/docs/appearance/snippet
+- google-maintenance: https://developers.google.com/search/blog/2011/01/how-to-deal-with-planned-site-downtime
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

@@ -1,0 +1,25 @@
+title: Testimonials page
+about: Real words from real customers that help a visitor believe the product works for people like them.
+## Honesty (the law)
+- Every quote is from a real customer and says what they really think | L ftc-endorsements ftc-reviews
+- No fake, bought or AI-written reviews presented as real | L ftc-reviews
+- Paid, gifted or employee testimonials say so clearly beside the quote | L ftc-endorsements
+- Results quoted are typical, or the typical result is shown beside them | L ftc-endorsements
+- Bad reviews are not hidden from a page that claims to show all reviews | L ftc-reviews
+- Written permission kept for each name, photo and logo used | L gdpr-7
+## What makes a quote believable
+- Full name, role, company and a real photo | R nng-reviews nng-trust
+- A specific result (time saved, money earned) rather than general praise | R nng-reviews
+- Quotes grouped by customer type or use case so visitors find people like them | R nng-reviews
+- A date on each quote, and old ones removed | P
+- A link to the full case study or the original review where it lives (G2, App Store) | R nng-reviews
+- Video testimonials with captions and a transcript | S wcag-captions
+## Layout
+- Short quotes in a grid or list; never an auto-moving carousel | R nng-carousel
+- Star ratings show the number of reviews behind them | R nng-reviews
+- Logos of customers used with permission | L ftc-endorsements
+- Text over photos keeps 4.5 to 1 contrast | S wcag-contrast
+- Photos have alt text with the person's name | S wcag-nontext
+- A call to action after the quotes (start, book a demo) | P
+## Search
+- Review structured data only for real reviews of the item on the page | S google-review

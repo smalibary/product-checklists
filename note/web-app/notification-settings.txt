@@ -1,0 +1,47 @@
+﻿NOTIFICATION SETTINGS CHECKLIST: 19 items
+Where people choose what they are told about, and how (email, in-app, push, text).
+Backing: 3 Rule, 5 Standard, 1 Research, 10 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STRUCTURE
+ 1. Grouped by topic (mentions, comments, billing, security, product news)   (Practice)
+ 2. A grid: topics down the side, channels across the top (email, push, in-app)   (Practice)
+ 3. Each row says in plain words what triggers it   (Practice)
+ 4. Defaults set to what most people want, never to everything   (Research: nng-notifications)
+
+CONTROLS
+ 5. Switches or checkboxes with clear names that include the topic and channel   (Standard: wcag-name-role, apg-switch)
+ 6. Changes saved at once, with a short "Saved" message announced to screen readers   (Standard: wcag-status)
+ 7. Pause all for a set time (1 hour, until tomorrow, a week)   (Practice)
+ 8. Quiet hours with the time zone   (Practice)
+ 9. How often: right away, a daily summary, a weekly summary   (Practice)
+
+RULES
+10. Security and billing alerts cannot be turned off, and say why   (Practice)
+11. Marketing emails off by default where the law needs consent   (Rule: gdpr-7)
+12. One-click unsubscribe in every marketing email, honoured quickly   (Rule: can-spam, rfc-unsubscribe)
+13. Email senders follow the bulk sender rules (one-click unsubscribe, low spam rate)   (Rule: google-sender)
+14. Push asked for only after the person has a reason to want it   (Standard: webdev-push)
+15. If browser push is blocked, explain how to turn it back on   (Practice)
+
+PER ITEM
+16. Follow or mute a single project, thread or item from where it is   (Practice)
+17. Links in each email to change the setting for that topic   (Practice)
+
+ACCESS
+18. Grid is a real table or list with headers so screen readers read topic and channel   (Standard: wai-tables, wcag-info)
+19. Works at phone width (the grid becomes a list)   (Standard: wcag-reflow)
+
+SOURCES
+- nng-notifications: https://www.nngroup.com/articles/push-notification/
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- apg-switch: https://www.w3.org/WAI/ARIA/apg/patterns/switch/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- rfc-unsubscribe: https://www.rfc-editor.org/rfc/rfc8058
+- google-sender: https://support.google.com/a/answer/81126
+- webdev-push: https://web.dev/articles/push-notifications-permissions-ux
+- wai-tables: https://www.w3.org/WAI/tutorials/tables/
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

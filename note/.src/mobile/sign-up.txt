@@ -1,0 +1,79 @@
+title: Sign up (mobile)
+about: Creating an account in a phone app or mobile site. Started from checklist.design's 8 items, checked 2026-11-19.
+## Before the form
+- One line saying what you get, above the form | P
+- Try before signing up (guest mode) where the product allows it | R baymard-guest
+- Ask for an account at the moment it is needed (save, buy, post), not on first open | R baymard-guest
+- Intro slides skippable, few of them | P
+- Sign up and Log in easy to tell apart | P
+## Ways to sign up
+- Sign up with Apple, Google or a social account | P
+- If any third-party sign-in is offered on iPhone, also offer one that limits data to name and email and can hide the email (Sign in with Apple qualifies) | L apple-4.8
+- Phone number sign-up with a country-code picker (strong in the Gulf) | P
+- Passkey sign-up: email first, say a passkey is part of sign-up before the phone's prompt, keep a fallback | R fido-ux
+- Same email from a social account links to the existing account, no dead end | P
+- Sign-up stays in the app, never sent out to the web browser | L apple-deletion
+## Fields
+- Only the fields needed (each extra one lowers completion) | P
+- Email field brings the email keyboard; phone brings the number pad | S webdev-signup
+- Password manager can fill and save (marked as new password and username) | S webdev-signup
+- Auto-capitalise and auto-correct off on email and username | P
+- Labels stay visible; hint text alone disappears when typing | R nng-placeholder
+- Return key moves to the next field and sends on the last | P
+- Paste allowed everywhere, passwords and codes too | S webdev-signup nist-63b
+- Spaces at the start and end trimmed | P
+- "Did you mean gmail.com?" on a typo | P
+- Name field accepts any name (Arabic, one word, hyphens) | P
+## Password
+- No confirm-password field; a show/hide button instead | R baymard-show govuk-show
+- Length over symbols: no "must have a capital and a symbol" rules | S nist-63b
+- Long passwords allowed (at least 64 characters) | S nist-63b
+- Known leaked or common passwords refused, with a kind message | S nist-63b
+- Rules shown up front and ticked as met; strength shown while typing | P
+## Errors and checking
+- Each field checked when the person leaves it, not while typing | R baymard-inline
+- Error removed as soon as the field is fixed; a tick when it is right | R baymard-inline
+- Error next to the field, saying how to fix it | R baymard-inline
+- Errors never erase what was typed | P
+- No-connection state keeps what was typed and offers retry | P
+- Errors read aloud by screen readers | S
+## Account already exists (a real trade-off)
+- Helpful: "This email has an account" with Log in and Reset right there | P
+- Private: same answer whether the email exists or not, details sent by email | S owasp-auth
+## Legal and consent
+- Terms and privacy accepted before the account is made, readable in the app | P
+- Marketing opt-in separate, off by default, as easy to withdraw | L pdpl
+- Age asked neutrally (type birth month and year, no "I am over 12" box) where children's rules apply | L coppa
+- Tracking asked through the phone's own prompt, before any tracking (iPhone) | L hig-privacy
+## The button and sending
+- Button says what it does: "Create account" | P
+- Loading state; cannot be pressed twice | P
+- Button stays above the keyboard | P
+- A disabled button says why, or it stays enabled and shows the errors | P
+- Robot check only when needed, invisible first | P
+- Limits on repeated tries and code sends | S owasp-auth nist-63b
+## Verification
+- Product usable before the email is confirmed | P
+- Code fills itself from the SMS (iPhone one-time-code; Android SMS Retriever or WebOTP) | S webdev-otp
+- Code boxes take a pasted code, move on by themselves and send on the last digit | P
+- Resend with a countdown, plus "change email or number" | P
+- "Open mail app" button on the check-your-email screen | P
+- Expired code or link: clear message and one tap for a new one | P
+## After sign-up
+- Welcome screen pointing to the first action | P
+- Signed in straight away, never "now log in" | P
+- Permissions asked when each is needed, a reason screen first, no reward for saying yes | L hig-privacy
+- Profile setup optional and skippable | P
+- Already-have-an-account link | P
+- Delete account inside the app (iPhone and Android) plus a web link (Android) | L apple-5.1.1 play-deletion
+## Access and language
+- Touch targets at least 24 px (WCAG AA); 44 recommended, and Apple's own guide uses 44 points | S wcag-target
+- Every field has a name screen readers say | S
+- Contrast passes in light and dark | S
+- Large text setting does not break the layout | S
+- Right-to-left for Arabic, with phone numbers and codes kept left-to-right | P
+- Main actions within thumb reach | P
+## Edge cases
+- Leaving halfway keeps what was typed | P
+- Invite link kept through the whole flow; returns to where they were | P
+- Works on slow mobile data | P

@@ -1,0 +1,28 @@
+title: Login (mobile)
+about: Signing in to a phone app with password, passkey, code, biometrics or another account.
+## Ways in
+- Passkeys offered where supported | S passkeys-dev
+- Sign in with Apple on iOS if other social sign-ins are offered | S hig-sign-in-apple
+- Google sign-in through the system Credential Manager on Android | S android-credential-manager
+- Phone number with SMS code, with the code autofilled from the message | S android-sms-retriever apple-autofill
+## Fields
+- Email or phone field with the right keyboard and autofill type | S apple-autofill mdn-autocomplete
+- Password field works with password managers (no blocked paste) | S nist-63b
+- Show password button | R nng-password
+- Login button stays usable; errors after submit | S wcag-error
+## Remember
+- Stay signed in by default on a personal phone | P
+- Face ID or fingerprint to unlock the app later, as an option | S hig-privacy android-biometric
+- Tokens kept in the Keychain or Keystore, not plain storage | S owasp-masvs
+## Errors and help
+- One general message for wrong email or password | S owasp-auth
+- Forgot password link near the field | R nng-password
+- Too many tries: wait time shown, not a dead end | S owasp-auth
+- Offline: say so, keep what was typed | P
+## Security
+- Two-step check where risk is high | S nist-63b
+- New device sign-in alert by email | S owasp-auth
+## Access
+- Fields have visible names, not placeholders only | S wcag-labels
+- Large text supported; keyboard never covers the button | S hig-layout
+- Buttons at least 44 pt / 48 dp | S hig-layout m3-layout

@@ -1,0 +1,49 @@
+﻿INVITE (MOBILE) CHECKLIST: 17 items
+Inviting people into a shared space in a phone app (a team, household, group or document), not for a reward.
+Backing: 1 Rule, 8 Standard, 0 Research, 8 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WAYS TO INVITE
+ 1. Share a link through the system share sheet   (Standard: hig-share, android-sharesheet)
+ 2. Type an email or phone number   (Practice)
+ 3. Pick from contacts only after the person chooses it, with a reason   (Standard: hig-privacy, android-permissions)
+ 4. QR code to scan in person   (Practice)
+
+ROLES
+ 5. Choose what the invited person can do (view, edit, admin), with one-line explanations   (Practice)
+ 6. Default is the safest useful role   (Standard: owasp-authz)
+
+INVITE LINK
+ 7. Expiry and "reset link" to stop an old link working   (Standard: owasp-authz)
+ 8. Approval by an admin optional for link joins   (Practice)
+
+WAITING INVITES
+ 9. List of sent invites with state (waiting, accepted), resend and cancel   (Practice)
+10. Accepted invites move to the members list   (Practice)
+
+THE INVITED PERSON
+11. Link opens the app (or the store, then the right screen after install)   (Standard: apple-universal-links, android-app-links)
+12. Says who invited them and to what, before they join   (Practice)
+13. Accept or decline   (Practice)
+
+RESPECT
+14. No messages sent to contacts without the person's action   (Standard: apple-review)
+15. Contacts not uploaded or kept without consent   (Rule: gdpr-6)
+
+ACCESS
+16. Role choices as a list with radio buttons and names   (Standard: hig-accessibility)
+17. Large text supported; buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- hig-share: https://developer.apple.com/design/human-interface-guidelines/activity-views
+- android-sharesheet: https://developer.android.com/training/sharing/send
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- android-permissions: https://developer.android.com/training/permissions/requesting
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- apple-universal-links: https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app
+- android-app-links: https://developer.android.com/training/app-links
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- gdpr-6: https://gdpr-info.eu/art-6-gdpr/
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

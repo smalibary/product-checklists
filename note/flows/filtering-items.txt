@@ -1,0 +1,44 @@
+﻿FILTERING ITEMS (FLOW) CHECKLIST: 17 items
+Narrowing a list of products or records with filters, and seeing what is applied.
+Backing: 0 Rule, 6 Standard, 10 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FILTERS
+ 1. Filters that match how people choose (price, size, brand, date, status)   (Research: baymard-filters, nng-filters)
+ 2. Count of results per option   (Research: baymard-filters)
+ 3. Options with no results hidden or marked   (Research: baymard-filters)
+ 4. Price and number ranges with fields, not only a slider   (Research: nng-sliders)
+
+APPLYING
+ 5. Desktop: results update at once on each change   (Research: nng-filters)
+ 6. Phone: filters in a sheet with "Show 42 results" button   (Research: baymard-filters)
+ 7. Loading shown without jumping the page   (Standard: wcag-on-input)
+
+SEEING WHAT IS APPLIED
+ 8. Applied filters as removable chips above results   (Research: baymard-filters)
+ 9. "Clear all"   (Research: nng-filters)
+10. Filters kept in the page address so back, share and refresh keep them   (Practice)
+
+RESULTS
+11. Result count updates and is announced   (Standard: wcag-status)
+12. No results: show which filters to remove   (Research: nng-empty)
+13. Sort kept separate from filters   (Research: nng-filters)
+
+ACCESS
+14. Filter groups as fieldsets with names   (Standard: wcag-info)
+15. Checkboxes and radios are real controls   (Standard: wcag-name-role)
+16. Focus does not jump when results update   (Standard: wcag-on-input)
+17. Targets at least 24 px web / 44 pt iOS / 48 dp Android   (Standard: wcag-target, hig-layout, m3-layout)
+
+SOURCES
+- baymard-filters: https://baymard.com/blog/allow-applying-of-multiple-filter-values
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- nng-sliders: https://www.nngroup.com/articles/gui-slider-controls/
+- wcag-on-input: https://www.w3.org/WAI/WCAG22/Understanding/on-input
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

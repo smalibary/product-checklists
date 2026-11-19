@@ -1,0 +1,113 @@
+﻿SIGN UP (MOBILE) CHECKLIST: 65 items
+Creating an account in a phone app or mobile site. Started from checklist.design's 8 items, checked 2026-11-19.
+Backing: 7 Rule, 14 Standard, 8 Research, 36 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BEFORE THE FORM
+ 1. One line saying what you get, above the form   (Practice)
+ 2. Try before signing up (guest mode) where the product allows it   (Research: baymard-guest)
+ 3. Ask for an account at the moment it is needed (save, buy, post), not on first open   (Research: baymard-guest)
+ 4. Intro slides skippable, few of them   (Practice)
+ 5. Sign up and Log in easy to tell apart   (Practice)
+
+WAYS TO SIGN UP
+ 6. Sign up with Apple, Google or a social account   (Practice)
+ 7. If any third-party sign-in is offered on iPhone, also offer one that limits data to name and email and can hide the email (Sign in with Apple qualifies)   (Rule: apple-4.8)
+ 8. Phone number sign-up with a country-code picker (strong in the Gulf)   (Practice)
+ 9. Passkey sign-up: email first, say a passkey is part of sign-up before the phone's prompt, keep a fallback   (Research: fido-ux)
+10. Same email from a social account links to the existing account, no dead end   (Practice)
+11. Sign-up stays in the app, never sent out to the web browser   (Rule: apple-deletion)
+
+FIELDS
+12. Only the fields needed (each extra one lowers completion)   (Practice)
+13. Email field brings the email keyboard; phone brings the number pad   (Standard: webdev-signup)
+14. Password manager can fill and save (marked as new password and username)   (Standard: webdev-signup)
+15. Auto-capitalise and auto-correct off on email and username   (Practice)
+16. Labels stay visible; hint text alone disappears when typing   (Research: nng-placeholder)
+17. Return key moves to the next field and sends on the last   (Practice)
+18. Paste allowed everywhere, passwords and codes too   (Standard: webdev-signup, nist-63b)
+19. Spaces at the start and end trimmed   (Practice)
+20. "Did you mean gmail.com?" on a typo   (Practice)
+21. Name field accepts any name (Arabic, one word, hyphens)   (Practice)
+
+PASSWORD
+22. No confirm-password field; a show/hide button instead   (Research: baymard-show, govuk-show)
+23. Length over symbols: no "must have a capital and a symbol" rules   (Standard: nist-63b)
+24. Long passwords allowed (at least 64 characters)   (Standard: nist-63b)
+25. Known leaked or common passwords refused, with a kind message   (Standard: nist-63b)
+26. Rules shown up front and ticked as met; strength shown while typing   (Practice)
+
+ERRORS AND CHECKING
+27. Each field checked when the person leaves it, not while typing   (Research: baymard-inline)
+28. Error removed as soon as the field is fixed; a tick when it is right   (Research: baymard-inline)
+29. Error next to the field, saying how to fix it   (Research: baymard-inline)
+30. Errors never erase what was typed   (Practice)
+31. No-connection state keeps what was typed and offers retry   (Practice)
+32. Errors read aloud by screen readers   (Standard)
+
+ACCOUNT ALREADY EXISTS (A REAL TRADE-OFF)
+33. Helpful: "This email has an account" with Log in and Reset right there   (Practice)
+34. Private: same answer whether the email exists or not, details sent by email   (Standard: owasp-auth)
+
+LEGAL AND CONSENT
+35. Terms and privacy accepted before the account is made, readable in the app   (Practice)
+36. Marketing opt-in separate, off by default, as easy to withdraw   (Rule: pdpl)
+37. Age asked neutrally (type birth month and year, no "I am over 12" box) where children's rules apply   (Rule: coppa)
+38. Tracking asked through the phone's own prompt, before any tracking (iPhone)   (Rule: hig-privacy)
+
+THE BUTTON AND SENDING
+39. Button says what it does: "Create account"   (Practice)
+40. Loading state; cannot be pressed twice   (Practice)
+41. Button stays above the keyboard   (Practice)
+42. A disabled button says why, or it stays enabled and shows the errors   (Practice)
+43. Robot check only when needed, invisible first   (Practice)
+44. Limits on repeated tries and code sends   (Standard: owasp-auth, nist-63b)
+
+VERIFICATION
+45. Product usable before the email is confirmed   (Practice)
+46. Code fills itself from the SMS (iPhone one-time-code; Android SMS Retriever or WebOTP)   (Standard: webdev-otp)
+47. Code boxes take a pasted code, move on by themselves and send on the last digit   (Practice)
+48. Resend with a countdown, plus "change email or number"   (Practice)
+49. "Open mail app" button on the check-your-email screen   (Practice)
+50. Expired code or link: clear message and one tap for a new one   (Practice)
+
+AFTER SIGN-UP
+51. Welcome screen pointing to the first action   (Practice)
+52. Signed in straight away, never "now log in"   (Practice)
+53. Permissions asked when each is needed, a reason screen first, no reward for saying yes   (Rule: hig-privacy)
+54. Profile setup optional and skippable   (Practice)
+55. Already-have-an-account link   (Practice)
+56. Delete account inside the app (iPhone and Android) plus a web link (Android)   (Rule: apple-5.1.1, play-deletion)
+
+ACCESS AND LANGUAGE
+57. Touch targets at least 24 px (WCAG AA); 44 recommended, and Apple's own guide uses 44 points   (Standard: wcag-target)
+58. Every field has a name screen readers say   (Standard)
+59. Contrast passes in light and dark   (Standard)
+60. Large text setting does not break the layout   (Standard)
+61. Right-to-left for Arabic, with phone numbers and codes kept left-to-right   (Practice)
+62. Main actions within thumb reach   (Practice)
+
+EDGE CASES
+63. Leaving halfway keeps what was typed   (Practice)
+64. Invite link kept through the whole flow; returns to where they were   (Practice)
+65. Works on slow mobile data   (Practice)
+
+SOURCES
+- baymard-guest: https://baymard.com/blog/reduce-cart-abandonment
+- apple-4.8: https://developer.apple.com/app-store/review/guidelines/#login-services
+- fido-ux: https://fidoalliance.org/ux-guidelines-for-passkey-creation-and-sign-ins/
+- apple-deletion: https://developer.apple.com/support/offering-account-deletion-in-your-app
+- webdev-signup: https://web.dev/articles/sign-up-form-best-practices
+- nng-placeholder: https://www.nngroup.com/articles/form-design-placeholders/
+- nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
+- baymard-show: https://baymard.com/guidelines/665-show-password-feature
+- govuk-show: https://technology.blog.gov.uk/2021/04/19/simple-things-are-complicated-making-a-show-password-option/
+- baymard-inline: https://baymard.com/blog/inline-form-validation
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- pdpl: https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf
+- coppa: https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- webdev-otp: https://web.dev/articles/sms-otp-form
+- apple-5.1.1: https://developer.apple.com/help/app-review/guideline-reference/5-1-1-account-deletion
+- play-deletion: https://support.google.com/googleplay/android-developer/answer/13327111
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

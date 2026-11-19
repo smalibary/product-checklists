@@ -1,0 +1,29 @@
+title: Color System
+about: The set of colours in a design system and the rules for using them, in light and dark themes.
+## Structure
+- Three tiers: raw colours (primitives), colours by job (roles), colours for components | S dtcg-tokens m3-color
+- Primitives as tonal scales (50 to 950) for each hue | S m3-color
+- Roles named by job: background, surface, text, muted text, border, primary, danger, success, warning, focus | S m3-color
+- Components use roles, never primitives | S m3-tokens
+- Each role has a matching "on" colour for text on top (on-primary) | S m3-color
+## Contrast
+- Every text-on-background pair checked: 4.5:1 normal, 3:1 large | S wcag-contrast
+- Borders and icons of controls 3:1 against what is next to them | S wcag-ui-contrast
+- APCA checked as a second view, especially for dark mode | S apca
+- Contrast pairs listed in the documentation | P
+## Meaning
+- Colour never the only signal: add icons, words or patterns | S wcag-color
+- Red and green pairs readable for colour-blind people | S wcag-color
+- Status colours used only for status, not decoration | R nng-consistency
+- Cultural meanings checked for the audience | P
+## Themes
+- Light and dark themes from the same roles | S m3-color hig-dark-mode
+- Dark mode uses dark grey surfaces, not pure black, with less saturated colours | S m3-color hig-dark-mode
+- Follow the system theme by default, with a manual switch | S mdn-color-scheme
+- High-contrast mode and Windows forced colours still work | S mdn-forced-colors
+## Charts
+- A separate set of chart colours that differ in lightness, not only hue | P
+## Process
+- Colours stored as tokens shared by design and code | S dtcg-tokens
+- Brand colours adjusted to pass contrast, not used raw | P
+- Documentation shows each role with do and don't examples | P

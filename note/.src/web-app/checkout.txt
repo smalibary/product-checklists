@@ -1,0 +1,30 @@
+title: Checkout (web app)
+about: Paying inside the app for a plan, credits or an order, from review to confirmation.
+## Order review
+- What is bought, quantity, price, tax, discount and total, before paying | L eu-consumer-rights ftc-junk-fees
+- Recurring charges stated: amount, how often, first charge date, how to cancel | L ftc-negative-option
+- Currency shown and fixed; SAR for Saudi customers | P
+- Promo code field present but quiet (a link that opens it) | R baymard-coupon
+- Edit the order without starting again | R baymard-abandon
+## Details
+- Only the fields needed; company and tax ID optional, for invoices | R baymard-fields
+- Billing address only if the payment provider or tax needs it | R baymard-fields
+- Autofill for name, card and address | S mdn-autocomplete webdev-payment
+- Already-known details filled in | S wcag-redundant
+## Payment
+- Card fields from a PCI-certified provider | S pci-dss
+- Card number with spaces, the brand detected, numeric keyboard | R baymard-card
+- Wallets (Apple Pay, Google Pay) and local methods (mada, STC Pay) where they suit | P
+- Strong customer authentication (3-D Secure) inside the flow | L psd2-sca stripe-3ds
+- Trust signs near the card fields (lock, provider name) | R baymard-trust
+## Submitting
+- Button names the action and amount ("Pay 120 SAR") | S wcag-prevent
+- Busy state; double click never charges twice | S owasp-transaction
+- Declined card: plain reason and what to try, details kept | S wcag-error
+## After
+- Confirmation page with what was bought, a receipt number and next steps | S govuk-confirm
+- Receipt and tax invoice by email | L zatca-einvoice
+- New access available at once | P
+## Honesty and access
+- No pre-ticked extras; terms and refund policy linked | L ftc-dark-patterns eu-consumer-rights
+- Labels, errors in words, keyboard and phone width meet WCAG | S wcag-labels wcag-error wcag-keyboard wcag-reflow

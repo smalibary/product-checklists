@@ -1,0 +1,44 @@
+﻿STATUS PAGE CHECKLIST: 20 items
+Shows whether the service is working right now, and tells people about problems and planned maintenance.
+Backing: 1 Rule, 8 Standard, 2 Research, 9 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+NOW
+ 1. One line at the top: "All systems working" or what is broken   (Research: nng-status)
+ 2. Each part of the service listed (website, app, API, payments) with its state   (Practice)
+ 3. States in words and colour together: Working, Slow, Partly down, Down, Maintenance   (Standard: wcag-color)
+ 4. Time of the last check, with the time zone   (Research: nng-status)
+
+INCIDENTS
+ 5. An incident post within minutes of a problem, even before the cause is known   (Standard: atlassian-incident)
+ 6. Updates on a steady rhythm (for example every 30 minutes) until fixed   (Standard: atlassian-incident)
+ 7. Each update says what is affected, what users can do, and when the next update comes   (Standard: atlassian-incident)
+ 8. A short review after big incidents: cause, fix, how it will not happen again   (Standard: atlassian-incident)
+ 9. Plain words; no blame and no hiding   (Practice)
+
+HISTORY AND PLANS
+10. Uptime for the last 90 days per part, with the number   (Practice)
+11. Past incidents listed by date   (Practice)
+12. Planned maintenance announced ahead with start, end and what is affected   (Practice)
+
+GETTING TOLD
+13. Subscribe by email, text, RSS or a chat app   (Practice)
+14. Unsubscribe in one step   (Rule: can-spam, rfc-unsubscribe)
+15. A machine-readable feed (API or RSS) for customers' own tools   (Practice)
+
+RELIABILITY OF THE PAGE ITSELF
+16. Hosted apart from the main service, so it stays up when the service is down   (Practice)
+17. Fast and light; works on a slow phone connection   (Standard: webdev-vitals)
+18. Status changes announced to screen readers without moving focus   (Standard: wcag-status)
+19. Contrast and text size meet WCAG   (Standard: wcag-contrast)
+20. Linked from the footer, the help centre and error pages   (Practice)
+
+SOURCES
+- nng-status: https://www.nngroup.com/articles/visibility-system-status/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- atlassian-incident: https://www.atlassian.com/incident-management/incident-communication
+- can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- rfc-unsubscribe: https://www.rfc-editor.org/rfc/rfc8058
+- webdev-vitals: https://web.dev/articles/vitals
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

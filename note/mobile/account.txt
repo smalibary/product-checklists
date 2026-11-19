@@ -1,0 +1,50 @@
+﻿ACCOUNT (MOBILE) CHECKLIST: 17 items
+The account area of a phone app: personal details, sign-in, security, data and deleting the account.
+Backing: 3 Rule, 10 Standard, 1 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+DETAILS
+ 1. Name, email, phone, each editable with its own screen   (Practice)
+ 2. Changing email or phone confirmed by a code to the new one   (Standard: owasp-auth)
+ 3. Current password or Face ID asked before sensitive changes   (Standard: owasp-auth)
+
+SIGN-IN AND SECURITY
+ 4. Change password; add a passkey   (Standard: passkeys-dev)
+ 5. Two-step check on and off, with backup codes   (Standard: nist-63b)
+ 6. Signed-in devices with "Sign out" each and "Sign out everywhere"   (Standard: owasp-session)
+ 7. Linked accounts (Apple, Google) with unlink, if another way in remains   (Practice)
+
+DATA
+ 8. Download my data   (Rule: gdpr-15, gdpr-20)
+ 9. Privacy choices (ads, tracking)   (Rule: gdpr-7, apple-att)
+
+DELETE ACCOUNT
+10. Account deletion possible inside the app if the app lets people create accounts   (Standard: apple-deletion, play-deletion)
+11. A web link to delete the account too, for Google Play   (Standard: play-deletion)
+12. Say what is deleted, what is kept by law and how long it takes   (Rule: gdpr-17)
+13. Store subscriptions: remind to cancel in the store, with a link   (Standard: apple-deletion)
+14. Confirm with password or typed word; never a one-tap delete   (Research: nng-confirm)
+
+SIGN OUT
+15. Clear Sign out at the bottom, with a confirmation   (Practice)
+
+ACCESS
+16. Rows named with their value   (Standard: hig-accessibility)
+17. Large text supported; rows at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- passkeys-dev: https://passkeys.dev/
+- nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- gdpr-15: https://gdpr-info.eu/art-15-gdpr/
+- gdpr-20: https://gdpr-info.eu/art-20-gdpr/
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- apple-att: https://developer.apple.com/documentation/apptrackingtransparency
+- apple-deletion: https://developer.apple.com/support/offering-account-deletion-in-your-app
+- play-deletion: https://support.google.com/googleplay/android-developer/answer/13327111
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

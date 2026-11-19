@@ -1,0 +1,26 @@
+title: Report View
+about: One finished report: a set of numbers, charts and tables about a period or a subject, for reading and sharing.
+## Header
+- Report title, the period covered and who made it | P
+- When the data was taken, and the time zone | P
+- Filters applied shown at the top | R nng-filters
+## Content
+- Summary of the key findings first, in words | R nng-scanning
+- Numbers with comparison to a previous period or a target | R nng-dashboards
+- Charts with titles that state the point ("Sales rose 12% in March") | P
+- Tables with totals and subtotals | R nng-tables
+- Notes and definitions for each number | P
+## Sharing
+- Export to PDF and spreadsheet | P
+- Share link with permissions (who can see) | S owasp-authz
+- Schedule by email (weekly, monthly) | P
+- Print layout that fits pages and repeats table headers | P
+## Trust
+- Data sources named | P
+- Partial or missing data marked | P
+- Personal data hidden or grouped unless needed | L gdpr-25
+## Access
+- Headings in order so the report reads as an outline | S wcag-headings
+- Charts have a text summary or data table | S wcag-nontext
+- Exported PDF tagged and readable by screen readers | S wcag
+- Colour not the only way to show good or bad | S wcag-color

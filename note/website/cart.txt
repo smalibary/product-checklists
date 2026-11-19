@@ -1,0 +1,52 @@
+﻿CART PAGE CHECKLIST: 23 items
+Shows what the shopper is about to buy and the full cost, and moves them to checkout.
+Backing: 3 Rule, 4 Standard, 10 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ITEMS
+ 1. Each item: photo, name, chosen options (size, colour), unit price and quantity   (Research: baymard-guest)
+ 2. Change quantity with a field plus minus and plus buttons   (Research: baymard-guest)
+ 3. Remove an item, with Undo instead of a confirmation box   (Research: nng-control)
+ 4. A link back to each product   (Practice)
+ 5. Stock warnings that are true ("Only 2 left" only if real)   (Rule: ftc-dark-patterns)
+ 6. Save for later or move to wishlist   (Practice)
+
+COST
+ 7. Subtotal, shipping, tax and discounts each on their own line   (Research: baymard-guest)
+ 8. Shipping cost or an estimate shown before checkout; hidden costs are the top reason people leave   (Research: baymard-abandon)
+ 9. No surprise fees added later; all mandatory fees in the first price shown   (Rule: ftc-junk-fees, eu-consumer-rights)
+10. Total in the shopper's currency, stating whether tax is included   (Rule: eu-consumer-rights)
+11. Delivery date estimate, not only a speed   (Research: baymard-guest)
+12. Promo code field present but low-key (a link that opens it)   (Research: baymard-coupon)
+
+MOVING ON
+13. One clear Checkout button, at the top and bottom on long carts   (Practice)
+14. Guest checkout offered; forcing an account makes people leave   (Research: baymard-guest, baymard-abandon)
+15. Express pay buttons (Apple Pay, Google Pay) for speed   (Practice)
+16. Continue shopping link   (Practice)
+17. Trust signals near the button: returns policy, secure payment   (Research: baymard-trust)
+
+STATES
+18. An empty cart that suggests where to go next   (Research: nng-empty)
+19. Cart kept across visits and devices for signed-in shoppers   (Practice)
+20. Changes to totals announced to screen readers   (Standard: wcag-status)
+
+ACCESS
+21. Quantity buttons have names ("Increase quantity of Blue mug")   (Standard: wcag-name-role)
+22. Touch targets at least 24 pixels, 44 recommended   (Standard: wcag-target)
+23. Works at phone width with no sideways scroll   (Standard: wcag-reflow)
+
+SOURCES
+- baymard-guest: https://baymard.com/blog/reduce-cart-abandonment
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- baymard-abandon: https://baymard.com/lists/cart-abandonment-rate
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- baymard-coupon: https://baymard.com/blog/coupon-code-field
+- baymard-trust: https://baymard.com/blog/perceived-security-of-payment-form
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

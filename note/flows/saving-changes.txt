@@ -1,0 +1,44 @@
+﻿SAVING CHANGES (FLOW) CHECKLIST: 16 items
+Keeping edits to a form, document or settings, by a Save button or automatically.
+Backing: 0 Rule, 7 Standard, 5 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING THE WAY
+ 1. Autosave for documents and long writing; Save button for forms with checks   (Research: nng-indicators)
+ 2. Toggles and single choices take effect at once   (Research: nng-toggle)
+ 3. Don't mix both ways on one screen   (Research: nng-consistency)
+
+SAVE BUTTON
+ 4. Active only when something changed, or always active with a "no changes" note   (Practice)
+ 5. Busy state while saving; no double save   (Standard: owasp-transaction)
+ 6. Success shown near the button or as a short message   (Standard: wcag-status)
+ 7. Errors on the fields, with a summary at the top   (Standard: wcag-error)
+
+AUTOSAVE
+ 8. "Saving..." then "Saved" with time   (Research: nng-indicators)
+ 9. Works offline with "Will save when online"   (Practice)
+10. Version history or undo for mistakes   (Research: nng-control)
+
+LEAVING UNSAVED
+11. Warn before leaving with unsaved changes; Save, Discard, Cancel   (Standard: wcag-prevent)
+12. Drafts kept if the session ends   (Standard: wcag-timing)
+
+CONFLICTS
+13. If someone else changed it, show both and let the person choose   (Practice)
+
+ACCESS
+14. Save message announced without moving focus   (Standard: wcag-status)
+15. Keyboard shortcut (Ctrl+S) where people expect it   (Practice)
+16. Save button has a clear name   (Standard: wcag-labels)
+
+SOURCES
+- nng-indicators: https://www.nngroup.com/articles/indicators-validations-notifications/
+- nng-toggle: https://www.nngroup.com/articles/toggle-switch-guidelines/
+- nng-consistency: https://www.nngroup.com/articles/consistency-and-standards/
+- owasp-transaction: https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions

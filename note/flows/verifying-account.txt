@@ -1,0 +1,50 @@
+﻿VERIFYING ACCOUNT (FLOW) CHECKLIST: 19 items
+Proving an email, phone number or identity belongs to the person, by link, code or document check.
+Backing: 1 Rule, 11 Standard, 2 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+EMAIL OR PHONE
+ 1. Say where the code or link went, with a way to change it   (Research: nng-errors)
+ 2. Code field: one box, numbers keyboard, autofill from SMS or email (one-time-code)   (Standard: webdev-otp, mdn-autocomplete)
+ 3. Paste works for the whole code   (Standard: webdev-otp)
+ 4. Code expiry shown; Resend after a short wait with a countdown   (Standard: owasp-auth)
+ 5. Link opens in any browser and signs in or continues the flow   (Practice)
+ 6. Code entry tries limited   (Standard: owasp-auth)
+
+WHILE WAITING
+ 7. The person can use the parts of the app that do not need verifying   (Practice)
+ 8. "Check spam" hint and a support link   (Practice)
+
+IDENTITY CHECKS (WHEN THE LAW OR RISK NEEDS THEM)
+ 9. Say why it is needed, what is collected and how long it is kept   (Rule: gdpr-13)
+10. Steps listed first (photo of ID, selfie) with time needed   (Research: nng-wizards)
+11. Camera guides and clear retake   (Standard: hig-camera)
+12. Status shown (checking, approved, needs more) with notifications   (Practice)
+13. Another way for people who cannot use the camera   (Standard: wcag-gestures)
+
+DONE
+14. Clear success and the next step   (Standard: govuk-confirm)
+15. Verified mark explained where shown   (Practice)
+
+SECURITY
+16. Codes random, short-lived and single use   (Standard: nist-63b)
+17. No telling attackers whether an account exists   (Standard: owasp-auth)
+
+ACCESS
+18. Code field has a name and no time pressure that cannot be extended   (Standard: wcag-labels, wcag-timing)
+19. No robot check that blocks screen reader users without another way   (Standard: wcag-auth)
+
+SOURCES
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- webdev-otp: https://web.dev/articles/sms-otp-form
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- nng-wizards: https://www.nngroup.com/articles/wizards/
+- hig-camera: https://developer.apple.com/design/human-interface-guidelines/camera-control
+- wcag-gestures: https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable
+- wcag-auth: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum

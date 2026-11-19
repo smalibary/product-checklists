@@ -1,0 +1,50 @@
+﻿UPLOADING MEDIA (FLOW) CHECKLIST: 19 items
+Choosing, sending and confirming photos, videos or files.
+Backing: 2 Rule, 9 Standard, 2 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING
+ 1. Drop area on desktop and a "Choose files" button   (Standard: wcag-dragging)
+ 2. On phones, the system photo picker (no full library access needed)   (Standard: android-photo-picker, hig-privacy)
+ 3. Allowed types and size limit shown before choosing   (Standard: wcag-help)
+ 4. Multiple files at once where it makes sense   (Practice)
+
+BEFORE SENDING
+ 5. Previews with remove for each   (Practice)
+ 6. Crop, rotate or trim where needed   (Practice)
+ 7. Wrong type or too large caught at once, per file   (Standard: wcag-error)
+ 8. Location and camera details removed from photos unless needed   (Rule: gdpr-25)
+
+SENDING
+ 9. Progress per file with percent and cancel   (Research: nng-progress)
+10. Large files sent in parts and resumed after a dropped connection   (Practice)
+11. Page or app can be used while uploading; warn before leaving if it would stop   (Practice)
+
+AFTER
+12. Each file marked done or failed with Retry   (Standard: wcag-error)
+13. Processing (video conversion) shown as its own state   (Research: nng-indicators)
+14. Uploaded file shown where the person expects it   (Practice)
+
+SAFETY
+15. Server checks type by content, size, and scans for malware   (Standard: owasp-upload)
+16. Files stored privately unless the person shares them   (Rule: gdpr-32)
+
+ACCESS
+17. Progress and results announced   (Standard: wcag-status)
+18. Alt text field for images that will be shown to others   (Standard: wcag-nontext)
+19. Keyboard can reach choose, remove and cancel   (Standard: wcag-keyboard)
+
+SOURCES
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- android-photo-picker: https://developer.android.com/training/data-storage/shared/photopicker
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- wcag-help: https://www.w3.org/WAI/WCAG22/Understanding/consistent-help
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- gdpr-25: https://gdpr-info.eu/art-25-gdpr/
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- nng-indicators: https://www.nngroup.com/articles/indicators-validations-notifications/
+- owasp-upload: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+- gdpr-32: https://gdpr-info.eu/art-32-gdpr/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

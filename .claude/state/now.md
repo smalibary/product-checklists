@@ -1,4 +1,4 @@
-Status: v0.1 recorder + library page + live copies + whole-site explorer / doing: next, board + pattern sweep
+Status: best version 7 of 7 built / 138 checklist notes written in note/ / doing: nothing, waiting for Salem
 
 ## Running
 - Nothing running. Library server on http://127.0.0.1:4477.
@@ -17,6 +17,9 @@ Status: v0.1 recorder + library page + live copies + whole-site explorer / doing
 
 ## Done 2026-11-19
 - Recorder (hidden Chrome, one tab per site, clip per step, screens by short code) and library page (steps timeline, search, filters, screens, checklist). Tested on the-internet.herokuapp.com and linear.app.
+
+## Done 2026-11-19 (evening)
+- Best version part 1: sign-up recording at phone size (commit 5a096ca). Tested on dribbble.com/signup: 5 steps, both errors caught, stopped before the final button.
 
 ## Next
 - Publish the board (session with the Artifact tool), then the first grill round, then the Rust brain (step 8).

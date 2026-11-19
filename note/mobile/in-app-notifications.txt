@@ -1,0 +1,43 @@
+﻿IN-APP NOTIFICATIONS CHECKLIST: 18 items
+Messages shown inside the phone app while it is open: a notifications list, banners at the top, and badges.
+Backing: 0 Rule, 8 Standard, 4 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE LIST
+ 1. A notifications screen reached from a bell or a tab, newest first   (Practice)
+ 2. Each item: who, what, when, with a photo or icon   (Practice)
+ 3. Unread marked by a dot and bold, not only colour   (Standard: wcag-color)
+ 4. Tap opens the right screen and marks it read   (Practice)
+ 5. Swipe to delete or mark read, with buttons too   (Research: nng-swipe, wcag-dragging)
+ 6. Mark all as read   (Practice)
+ 7. Empty state: "You're all caught up"   (Research: nng-empty)
+
+BANNERS WHILE THE APP IS OPEN
+ 8. A short banner at the top for important new things, which goes away by itself   (Standard: hig-notifications)
+ 9. Does not cover the main action or the keyboard   (Practice)
+10. Tap opens it; swipe up dismisses   (Standard: hig-gestures)
+11. Not shown for the conversation the person is already in   (Practice)
+
+VOLUME AND CONTROL
+12. Similar items combined ("Sara and 3 others liked...")   (Research: nng-notifications)
+13. Settings to choose topics, reachable from the list   (Research: nng-notifications)
+14. App icon badge count matches the unread count   (Standard: hig-notifications)
+
+ACCESS
+15. New banners announced by VoiceOver and TalkBack without moving focus   (Standard: hig-accessibility)
+16. Banners stay long enough to read, or can be found again in the list   (Standard: wcag-timing)
+17. Items readable with large text   (Standard: hig-accessibility)
+18. Targets at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- nng-swipe: https://www.nngroup.com/articles/contextual-swipe/
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- hig-notifications: https://developer.apple.com/design/human-interface-guidelines/notifications
+- hig-gestures: https://developer.apple.com/design/human-interface-guidelines/gestures
+- nng-notifications: https://www.nngroup.com/articles/push-notification/
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

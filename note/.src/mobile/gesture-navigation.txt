@@ -1,0 +1,24 @@
+title: Gesture navigation
+about: Moving around an app with swipes and other gestures, alongside the system's own gestures.
+## System gestures come first
+- Do not take over the system's edge swipes (home, back, notifications) | S hig-gestures android-back
+- Android back gesture: use the predictive back so people see where they go | S android-back
+- iOS swipe from the left edge goes back in navigation stacks; keep it working | S hig-gestures
+- Content drawn edge to edge, with controls kept away from gesture areas | S android-edge hig-layout
+## App gestures
+- Use standard gestures with their usual meaning (tap, swipe, pinch, long press, pull to refresh) | S hig-gestures m3-gestures
+- Swipe actions on list rows (archive, delete) shown with colour, icon and text | R nng-swipe
+- Every gesture has a visible alternative (button or menu) | S wcag-dragging wcag-gestures
+- Gestures that need two fingers or a path have a single-tap way too | S wcag-gestures
+- Destructive swipes can be undone | R nng-control
+## Teaching
+- Hint at hidden gestures (a peek of the swipe action, a handle on sheets) | R nng-swipe
+- No reliance on gestures nobody can discover | R nng-swipe
+## Feel
+- Movement follows the finger and can be cancelled mid-way | S hig-gestures
+- Light haptics confirm a completed gesture, where supported | S hig-feedback
+- Reduced motion respected for the animations | S hig-accessibility
+## Access
+- Works with VoiceOver and TalkBack (custom actions for swipe actions) | S hig-accessibility
+- Accidental activation avoided (actions on release, not on touch down) | S wcag-cancel
+- Shake or tilt never the only way to do something | S wcag-motion-act

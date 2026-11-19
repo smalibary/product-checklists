@@ -1,0 +1,25 @@
+title: Billing (mobile)
+about: Seeing and managing subscriptions and payments inside a phone app.
+## Store subscriptions
+- Digital subscriptions bought through Apple or Google in-app purchase (with regional exceptions) | S apple-review play-payments
+- Current plan, price, renewal date and the store it was bought from | S apple-subscriptions play-subscriptions
+- "Manage subscription" opens the store's own subscription page | S apple-subscriptions play-subscriptions
+- Restore purchases button for people on a new phone | S apple-review
+- Upgrades and downgrades through the store, with the price change shown | S apple-subscriptions play-subscriptions
+- Free trial end date and the first charge shown clearly | L apple-subscriptions ftc-negative-option
+## Bought elsewhere
+- If the plan was bought on the web, say so and where to manage it | P
+- Rules on linking to the website for payment differ by country and store; follow the current guideline | S apple-review play-payments
+## Physical goods and services
+- Saved payment methods with brand and last 4 digits | S pci-dss
+- Order and payment history with receipts | P
+- VAT invoices for Saudi customers | L zatca-einvoice
+## Cancelling
+- Cancel as easy as subscribing; the path is clear | L ftc-negative-option
+- What happens after cancelling: access until the period ends | S apple-subscriptions
+## Problems
+- Billing problem (card failed at the store): banner with a link to fix it in the store | S apple-subscriptions play-subscriptions
+- Grace period respected: access continues while the store retries | S apple-subscriptions play-subscriptions
+## Access
+- Prices read clearly with currency by screen readers | S hig-accessibility
+- Large text and buttons at least 44 pt / 48 dp | S hig-layout m3-layout

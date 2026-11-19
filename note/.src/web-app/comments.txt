@@ -1,0 +1,30 @@
+title: Comments
+about: Notes people leave on an item or on a part of it, with replies, mentions and resolving.
+## Writing
+- A box with a clear label and a Send button; Enter behaviour stated (Enter sends or adds a line) | S wcag-labels
+- Mention people with @, with suggestions as you type | S apg-combobox
+- Basic formatting, links, files and emoji | P
+- Draft kept if the person leaves before sending | P
+- Comment on a selection of text or a spot on an image | P
+## Reading
+- Each comment: author, photo, time, text, and actions (reply, edit, delete, react) | P
+- Threads: replies grouped under the comment | P
+- Edited comments marked "edited" | P
+- New comments since last visit marked | P
+- Long threads collapse older replies | P
+- Sort by oldest or newest | P
+## Resolving
+- Resolve a thread to hide it; show resolved ones on demand | P
+- Re-open a resolved thread | P
+## Notifications
+- Mentioned people are told; others can follow or mute the thread | R nng-notifications
+- Email replies post back as comments where supported | P
+## Rules
+- Only the author edits; author and admins delete | S owasp-authz
+- Deleted comment leaves "Comment deleted" so replies make sense | P
+- Report or hide abuse in public comments | L eu-dsa
+- Text escaped so it cannot run code (no script injection) | S owasp-xss
+## Access
+- New comments announced politely | S wcag-status
+- Each comment readable as one unit; the thread works by keyboard | S wcag-keyboard wcag-info
+- Times readable as exact times | P

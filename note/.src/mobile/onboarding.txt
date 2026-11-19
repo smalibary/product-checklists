@@ -1,0 +1,26 @@
+title: Onboarding (mobile)
+about: The first screens of a phone app after install, before the person starts using it.
+## Keep it short
+- Get people into the app fast; onboarding as short as possible | S hig-onboarding
+- Skip button on every intro slide | R nng-onboarding
+- Intro slides only if the app is new in kind; 3 at most | R nng-onboarding
+- Teach in context (hints when a feature is first used) rather than up front | R nng-onboarding
+## Account
+- Let people look around before signing up where the app allows | S hig-onboarding
+- Sign up later, when needed (saving, buying) | S apple-review
+- Sign in with Apple offered if other social sign-ins are offered on iOS | S hig-sign-in-apple
+## Setup questions
+- A few questions only if the answers shape the experience (interests, goals) | P
+- Each skippable with sensible defaults | R nng-onboarding
+- Progress shown | R nng-progress
+## Permissions
+- Ask one at a time, at the moment it is needed, with a pre-permission screen | S hig-privacy webdev-permissions
+- App works if the person says no | S apple-review
+- App Tracking Transparency prompt only if the app tracks across apps | S apple-att
+## Legal
+- Marketing and tracking consent separate, never pre-ticked | L gdpr-7
+- Age checks for apps with age limits | L coppa
+## Access
+- Slides work with VoiceOver and TalkBack (swipe and buttons) | S hig-accessibility
+- Animations respect reduced motion | S hig-accessibility
+- Text readable at large sizes; buttons at least 44 pt / 48 dp | S hig-layout m3-layout

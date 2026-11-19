@@ -1,0 +1,60 @@
+﻿INPUT FIELD CHECKLIST: 25 items
+A text box for typing a value, with its label, hint, error and states.
+Backing: 0 Rule, 19 Standard, 3 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PARTS
+ 1. A visible label above the field, always present   (Standard: wcag-labels, govuk-text-input)
+ 2. Hint text under the label for format or examples   (Standard: govuk-text-input)
+ 3. Placeholder never used as the label   (Standard: wcag-labels)
+ 4. Error message next to the field, in words   (Standard: govuk-error-message, wcag-error)
+ 5. Optional prefix or suffix (SAR, kg, @) outside the typed text   (Standard: govuk-text-input)
+ 6. Character count for limited fields   (Standard: govuk-character)
+
+SIZES
+ 7. Width hints at expected length (postcode short, address long)   (Standard: govuk-text-input)
+ 8. Height and text size large enough on phones (16 px stops iOS zooming)   (Practice)
+ 9. Touch area at least 24 px, ideally 44   (Standard: wcag-target)
+
+STATES
+10. Default, hover, focus, filled, error, disabled, read-only, each clearly different   (Standard: m3-text-fields)
+11. Focus ring visible with 3:1 contrast   (Standard: wcag-focus-appearance)
+12. Error state by border, icon and message, not only red   (Standard: wcag-color)
+13. Field border 3:1 contrast   (Standard: wcag-ui-contrast)
+14. Read-only text still selectable and copyable   (Practice)
+
+HELPING PEOPLE TYPE
+15. Right type and keyboard: email, tel, url, number pads with inputmode   (Standard: mdn-inputmode)
+16. autocomplete set (name, email, address)   (Standard: mdn-autocomplete, wcag-input-purpose)
+17. Paste always allowed   (Standard: wcag-auth)
+18. Spellcheck off for codes and names   (Practice)
+19. Accept spaces and dashes in phone and card numbers   (Research: baymard-fields)
+
+CHECKING
+20. Check when leaving the field or on submit, not on every key   (Research: baymard-inline)
+21. Clear the error once fixed   (Research: baymard-inline)
+
+ACCESS
+22. Label linked with for and id; hint and error linked with aria-describedby   (Standard: wcag-labels)
+23. Invalid fields marked aria-invalid   (Standard: wcag-error)
+24. Required fields marked in words, not only with *   (Standard: wcag-labels)
+25. Direction follows the typed language (dir auto)   (Standard: w3c-dir)
+
+SOURCES
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- govuk-text-input: https://design-system.service.gov.uk/components/text-input/
+- govuk-error-message: https://design-system.service.gov.uk/components/error-message/
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- govuk-character: https://design-system.service.gov.uk/components/character-count/
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- m3-text-fields: https://m3.material.io/components/text-fields/guidelines
+- wcag-focus-appearance: https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- mdn-inputmode: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- wcag-input-purpose: https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose
+- wcag-auth: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- baymard-inline: https://baymard.com/blog/inline-form-validation
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir

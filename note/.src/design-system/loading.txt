@@ -1,0 +1,26 @@
+title: Loading
+about: How the product shows that something is happening: spinners, progress bars, busy buttons and skeletons.
+## Choosing by wait time
+- Under 1 second: show nothing, to avoid a flash | R nng-response
+- 1 to 10 seconds: a spinner or a skeleton | R nng-response nng-skeleton
+- Over 10 seconds: a progress bar with percent or steps, time left, and Cancel | R nng-progress
+- Very long jobs: run in the background and notify when done | R nng-progress
+## Kinds
+- Determinate progress bar when the amount is known | S m3-progress
+- Indeterminate (spinning or moving) when it is not | S m3-progress
+- Busy button: the button shows a spinner, keeps its width, and cannot be pressed twice | P
+- Skeleton for page content (see Skeleton) | R nng-skeleton
+- Pull-to-refresh on phone lists | S hig-loading
+## Messages
+- Say what is happening for longer waits ("Uploading 3 of 10 files") | R nng-progress
+- Never a spinner forever: after a timeout, an error with Retry | R nng-errors
+- Optimistic updates for fast, safe actions (like, tick) with rollback on failure | P
+## Look
+- Size and colour of the spinner consistent across the product | R nng-consistency
+- Spinner and bar meet 3:1 contrast | S wcag-ui-contrast
+- No page-blocking overlays unless the whole page truly cannot be used | P
+## Access
+- Progress bar has role progressbar, a name and its value | S wcag-name-role
+- Loading region marked busy (aria-busy); start and end announced once | S wcag-status
+- Animations calm or still with reduced motion | S mdn-reduced-motion
+- Nothing flashes more than 3 times a second | S wcag-flash

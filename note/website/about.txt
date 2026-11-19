@@ -1,0 +1,48 @@
+﻿ABOUT PAGE CHECKLIST: 20 items
+Tells visitors who the company is, why it exists and why they can trust it.
+Backing: 2 Rule, 5 Standard, 9 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHO AND WHY
+ 1. One sentence on what the company does and for whom, at the top   (Research: nng-about)
+ 2. The story: when and why it started, in a few short paragraphs   (Research: nng-about)
+ 3. Mission or purpose in plain words, not slogans   (Research: nng-about)
+ 4. What makes the company different, with facts   (Research: nng-trust)
+
+PEOPLE
+ 5. Founders and leaders with real photos, names and roles   (Research: nng-about, nng-trust)
+ 6. Team size or a link to the Team page   (Practice)
+ 7. Photos of real people and places, not stock images   (Research: nng-trust)
+
+PROOF
+ 8. Numbers that matter: customers, years, countries, with the date they were true   (Research: nng-trust)
+ 9. Customer logos or quotes used with permission   (Rule: ftc-endorsements)
+10. Awards, press mentions and partners, linked to the source   (Practice)
+11. Investors or ownership, if relevant to trust   (Practice)
+
+CONTACT AND LEGAL
+12. Physical address and registered company name   (Rule: eu-consumer-rights)
+13. A way to get in touch from the page   (Research: nng-contact)
+14. Links to Careers, Press and Contact   (Practice)
+
+WRITING AND LAYOUT
+15. Short paragraphs, headings and lists for scanning   (Research: nng-scanning)
+16. Headings that say what each part is about   (Standard: wcag-headings)
+17. Images have alt text that describes them; decorative ones are hidden from screen readers   (Standard: wcag-nontext, wai-images)
+18. Text contrast meets 4.5 to 1   (Standard: wcag-contrast)
+19. Organization structured data (name, logo, address, links)   (Standard: schema-org)
+20. Page title that names the company   (Standard: wcag-title)
+
+SOURCES
+- nng-about: https://www.nngroup.com/articles/about-us-information-on-websites/
+- nng-trust: https://www.nngroup.com/articles/trustworthy-design/
+- ftc-endorsements: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- nng-contact: https://www.nngroup.com/articles/contact-us-pages/
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wai-images: https://www.w3.org/WAI/tutorials/images/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- schema-org: https://schema.org/Organization
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled

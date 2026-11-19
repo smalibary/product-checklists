@@ -1,0 +1,26 @@
+title: Affiliate page
+about: Invites people to promote the product for a commission and explains how the programme works.
+## The offer
+- Commission stated plainly: percent or amount, one-off or recurring, for how long | P
+- Cookie window (how long after a click a sale still counts) | P
+- When and how payouts happen, the minimum payout and the currencies | P
+- A worked example: "Refer 10 customers on the Pro plan, earn X a month" | P
+## Joining
+- Who can join, and who cannot (for example, no paid search on the brand name) | P
+- A short application form; tell people how long approval takes | R baymard-fields
+- A sign-in link for existing affiliates | P
+- Terms of the programme linked before applying | L eu-consumer-rights
+## Rules affiliates must follow
+- Affiliates must say clearly that they earn a commission | L ftc-endorsements
+- No false claims, fake reviews or spam to promote the product | L ftc-reviews can-spam
+- Brand guidelines and approved logos to download | P
+## Tools
+- Links, banners and text ready to copy | P
+- A dashboard showing clicks, sign-ups, sales and money owed | P
+- A contact for affiliate questions | R nng-contact
+## Trust
+- Quotes or numbers from current affiliates (real, with permission) | L ftc-endorsements
+- FAQ on tax forms, payment methods and returns that cancel commission | R nng-faq
+## Accessibility
+- Form fields with visible labels and clear errors | S wcag-labels wcag-error
+- Headings and contrast meet WCAG | S wcag-headings wcag-contrast

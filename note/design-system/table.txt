@@ -1,0 +1,52 @@
+﻿TABLE CHECKLIST: 22 items
+The table component: rows and columns for comparing data (the Data Table note covers sorting, filtering and bulk actions).
+Backing: 0 Rule, 14 Standard, 5 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. Data people compare across rows and columns   (Research: nng-tables)
+ 2. Not for page layout   (Standard: wai-tables)
+ 3. Simple lists without columns: use a list   (Research: nng-tables)
+
+STRUCTURE
+ 4. Real table markup: table, caption, thead, th, tbody   (Standard: wai-tables)
+ 5. Column headers with scope; row headers when one column names the row   (Standard: wai-tables)
+ 6. Caption or heading names the table   (Standard: wai-tables, govuk-table)
+ 7. Complex headers (two levels) linked properly   (Standard: wai-tables)
+
+LOOK
+ 8. Numbers right-aligned with tabular figures; text start-aligned   (Research: nng-tables, govuk-table)
+ 9. Headers clearly different from data (weight, background)   (Research: nng-tables)
+10. Row lines or zebra stripes with enough contrast   (Standard: wcag-ui-contrast)
+11. Row height options (compact, comfortable)   (Standard: m3-layout)
+12. Units in headers   (Research: nng-tables)
+13. Empty cells show a dash with a screen-reader word ("None")   (Practice)
+
+RESPONSIVE
+14. On small screens: scroll inside its own box, with the first column fixed   (Standard: wcag-reflow)
+15. Or turn rows into stacked cards for simple tables   (Practice)
+16. The scroll box can take focus so keyboard users can scroll it   (Standard: wcag-keyboard)
+
+INTERACTIVE TABLES
+17. Sortable headers are buttons with aria-sort   (Standard: apg-table)
+18. If cells are interactive, use the grid pattern with arrow keys   (Standard: apg-grid)
+19. Row selection with checkboxes that have names ("Select row: Invoice 104")   (Standard: wcag-name-role)
+
+CONTENT
+20. Status in words or icons with names, not only colour   (Standard: wcag-color)
+21. Long text wraps or truncates with full text on hover and focus   (Standard: wcag-hover)
+22. Totals row marked as such   (Practice)
+
+SOURCES
+- nng-tables: https://www.nngroup.com/articles/data-tables/
+- wai-tables: https://www.w3.org/WAI/tutorials/tables/
+- govuk-table: https://design-system.service.gov.uk/components/table/
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- m3-layout: https://m3.material.io/foundations/layout
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- apg-table: https://www.w3.org/WAI/ARIA/apg/patterns/table/
+- apg-grid: https://www.w3.org/WAI/ARIA/apg/patterns/grid/
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus

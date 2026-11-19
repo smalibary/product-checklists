@@ -1,0 +1,25 @@
+title: Account (mobile)
+about: The account area of a phone app: personal details, sign-in, security, data and deleting the account.
+## Details
+- Name, email, phone, each editable with its own screen | P
+- Changing email or phone confirmed by a code to the new one | S owasp-auth
+- Current password or Face ID asked before sensitive changes | S owasp-auth
+## Sign-in and security
+- Change password; add a passkey | S passkeys-dev
+- Two-step check on and off, with backup codes | S nist-63b
+- Signed-in devices with "Sign out" each and "Sign out everywhere" | S owasp-session
+- Linked accounts (Apple, Google) with unlink, if another way in remains | P
+## Data
+- Download my data | L gdpr-15 gdpr-20
+- Privacy choices (ads, tracking) | L gdpr-7 apple-att
+## Delete account
+- Account deletion possible inside the app if the app lets people create accounts | S apple-deletion play-deletion
+- A web link to delete the account too, for Google Play | S play-deletion
+- Say what is deleted, what is kept by law and how long it takes | L gdpr-17
+- Store subscriptions: remind to cancel in the store, with a link | S apple-deletion
+- Confirm with password or typed word; never a one-tap delete | R nng-confirm
+## Sign out
+- Clear Sign out at the bottom, with a confirmation | P
+## Access
+- Rows named with their value | S hig-accessibility
+- Large text supported; rows at least 44 pt / 48 dp | S hig-layout m3-layout

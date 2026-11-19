@@ -1,0 +1,51 @@
+﻿SEARCH (WEBSITE) CHECKLIST: 23 items
+The search box and results on a website, so visitors find a page without browsing.
+Backing: 0 Rule, 4 Standard, 11 Research, 8 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE BOX
+ 1. Shown as an open box, not hidden behind an icon, on sites with lots of content   (Research: nng-search)
+ 2. At least 27 characters wide so queries are visible   (Research: nng-search)
+ 3. A magnifier icon and a label or placeholder that says what can be searched   (Research: nng-search, nng-placeholder)
+ 4. Has an accessible name and sits in a search landmark   (Standard: wcag-name-role, apg-landmarks)
+ 5. Opens with a keyboard shortcut (/ or Ctrl+K) shown in the box   (Practice)
+ 6. Enter submits; a clear button empties the box   (Practice)
+
+SUGGESTIONS WHILE TYPING
+ 7. Suggestions after 1 to 3 letters, at most about 8-10   (Research: baymard-autocomplete)
+ 8. Typed part plain, suggested part bold (or the other way, consistently)   (Research: baymard-autocomplete)
+ 9. Arrow keys move through suggestions, Escape closes them   (Standard: apg-combobox)
+10. Suggestion count announced to screen readers   (Standard: wcag-status)
+11. Recent searches offered when the box is focused   (Practice)
+
+RESULTS
+12. The query stays in the box on the results page   (Research: nng-search)
+13. Number of results shown   (Practice)
+14. Each result: title, a short extract with the matched words highlighted, type and date   (Practice)
+15. Typos forgiven, with "Did you mean ...?"   (Research: baymard-autocomplete)
+16. Filters by type, date or section for large sites   (Research: nng-filters)
+17. Sort by relevance by default   (Practice)
+18. Pagination or "Load more" with the position kept on Back   (Research: nng-infinite)
+
+NO RESULTS
+19. Say so plainly, repeat the query, and offer fixes: spelling, fewer words, popular pages   (Research: nng-empty)
+20. A link to contact or browse   (Practice)
+
+SPEED AND ACCESS
+21. Results in under 1 second; show progress if slower   (Research: nng-response)
+22. Page title includes the query ("Results for pricing")   (Standard: wcag-title)
+23. Results page is not indexed by search engines   (Practice)
+
+SOURCES
+- nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
+- nng-placeholder: https://www.nngroup.com/articles/form-design-placeholders/
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- baymard-autocomplete: https://baymard.com/blog/autocomplete-design
+- apg-combobox: https://www.w3.org/WAI/ARIA/apg/patterns/combobox/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled

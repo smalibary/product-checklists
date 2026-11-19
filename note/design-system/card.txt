@@ -1,0 +1,50 @@
+﻿CARD CHECKLIST: 20 items
+A box that groups the content and actions about one thing (a product, a post, a project).
+Backing: 0 Rule, 13 Standard, 4 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. Browsing collections of mixed content (images, text, actions)   (Research: nng-cards)
+ 2. Not for lists where people compare the same facts (use a table or list)   (Research: nng-cards)
+ 3. Not as decoration for every block of a page   (Research: nng-cards)
+
+PARTS
+ 4. Optional media (image) on top, then title, short text, meta and actions   (Standard: m3-cards)
+ 5. Title is a heading of the right level   (Standard: wcag-headings)
+ 6. Up to two actions; more in a menu   (Standard: m3-cards)
+ 7. All cards in a set have the same structure   (Research: nng-cards)
+
+LOOK
+ 8. Kinds: elevated (shadow), filled, outlined   (Standard: m3-cards)
+ 9. Clear edge against the background (3:1 if the edge carries meaning)   (Standard: wcag-ui-contrast)
+10. Same padding, radius and spacing from tokens   (Standard: dtcg-tokens)
+11. Images with set ratio so cards do not jump while loading   (Standard: webdev-cls)
+
+CLICKABLE CARDS
+12. One main link; the whole card can be clicked by stretching that link   (Practice)
+13. Other buttons inside still work separately   (Practice)
+14. Clear hover and focus state on the whole card   (Standard: wcag-focus)
+15. Do not wrap the whole card in one link with many items inside (screen readers read it all)   (Practice)
+
+RESPONSIVE
+16. Grid of cards reflows from several columns to one   (Standard: wcag-reflow)
+17. Text never cut off without a way to read it all   (Standard: wcag-resize)
+
+ACCESS
+18. Images have alt text, or are decorative if the title says it all   (Standard: wai-images)
+19. Read order inside the card makes sense (title before image in code if needed)   (Standard: wcag-meaningful-sequence)
+20. Touch targets large enough   (Standard: wcag-target)
+
+SOURCES
+- nng-cards: https://www.nngroup.com/articles/cards-component/
+- m3-cards: https://m3.material.io/components/cards/guidelines
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- dtcg-tokens: https://tr.designtokens.org/format/
+- webdev-cls: https://web.dev/articles/cls
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-resize: https://www.w3.org/WAI/WCAG22/Understanding/resize-text
+- wai-images: https://www.w3.org/WAI/tutorials/images/
+- wcag-meaningful-sequence: https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

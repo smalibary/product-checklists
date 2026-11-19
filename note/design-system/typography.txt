@@ -1,0 +1,54 @@
+﻿TYPOGRAPHY CHECKLIST: 23 items
+The text styles of a design system: fonts, sizes, weights, line heights and how they are used.
+Backing: 0 Rule, 18 Standard, 3 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TYPE SCALE
+ 1. A small set of named roles (display, heading, title, body, label, caption) instead of free sizes   (Standard: m3-typography, hig-typography)
+ 2. Sizes from a scale with a steady ratio   (Research: nng-typography)
+ 3. Body text at least 16 px on the web   (Research: nng-typography)
+ 4. Each role sets font, size, weight, line height and letter spacing together   (Standard: m3-typography)
+ 5. Styles stored as tokens   (Standard: dtcg-tokens)
+
+READING COMFORT
+ 6. Line length about 45 to 80 characters   (Standard: butterick-line)
+ 7. Line height about 1.4 to 1.6 for body text, tighter for headings   (Standard: butterick-line)
+ 8. Text still works when people increase spacing (line, letter, word, paragraph)   (Standard: wcag-text-spacing)
+ 9. Left-aligned (start-aligned) body text, not justified   (Standard: butterick-line)
+10. Few weights; bold for real emphasis only   (Research: nng-typography)
+
+SIZING AND ZOOM
+11. Sizes in rem so they follow the browser's text size   (Standard: wcag-resize)
+12. Text can grow to 200% without cut-off or overlap   (Standard: wcag-resize)
+13. On iOS and Android, follow the system text size (Dynamic Type, font scale)   (Standard: hig-typography, m3-typography)
+
+CONTRAST
+14. Body text contrast at least 4.5:1, large text 3:1   (Standard: wcag-contrast)
+15. APCA checked for thin or small fonts   (Standard: apca)
+16. No light grey text for important information   (Standard: wcag-contrast)
+
+LANGUAGES
+17. Fonts cover every language used (Arabic and Latin), matched in size and weight   (Standard: w3c-dir)
+18. Arabic needs more line height and should not be letter-spaced   (Practice)
+19. Numbers in tables use tabular figures   (Practice)
+20. Fallback fonts listed; fonts load without hiding text (font-display swap)   (Standard: webdev-fonts)
+
+STRUCTURE
+21. Visual style separate from heading level: a heading role can be any size   (Standard: wcag-headings)
+22. Headings in order on each page   (Standard: wcag-headings)
+23. No text in images   (Standard: wcag-images-text)
+
+SOURCES
+- m3-typography: https://m3.material.io/styles/typography/overview
+- hig-typography: https://developer.apple.com/design/human-interface-guidelines/typography
+- nng-typography: https://www.nngroup.com/articles/legibility-readability-comprehension/
+- dtcg-tokens: https://tr.designtokens.org/format/
+- butterick-line: https://practicaltypography.com/line-length.html
+- wcag-text-spacing: https://www.w3.org/WAI/WCAG22/Understanding/text-spacing
+- wcag-resize: https://www.w3.org/WAI/WCAG22/Understanding/resize-text
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- apca: https://git.apcacontrast.com/documentation/APCA_in_a_Nutshell
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- webdev-fonts: https://web.dev/articles/font-best-practices
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-images-text: https://www.w3.org/WAI/WCAG22/Understanding/images-of-text

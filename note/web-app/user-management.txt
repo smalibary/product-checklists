@@ -1,0 +1,54 @@
+﻿USER MANAGEMENT CHECKLIST: 24 items
+Where admins invite people, give them roles, and remove them from a workspace.
+Backing: 1 Rule, 10 Standard, 4 Research, 9 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+LIST OF PEOPLE
+ 1. Table: name, email, role, status (active, invited, suspended), last active   (Research: nng-tables)
+ 2. Search and filter by role and status   (Research: nng-filters)
+ 3. Sort by name or last active   (Research: nng-tables)
+ 4. Count of seats used and left   (Practice)
+ 5. Pending invites listed with resend and cancel   (Practice)
+
+INVITING
+ 6. Invite by email, several at once (paste a list)   (Practice)
+ 7. Choose a role while inviting, with what each role can do   (Standard: owasp-authz)
+ 8. Invite links expire and can be turned off   (Standard: owasp-auth)
+ 9. Domain sign-up: anyone with the company email can join, if the admin turns it on   (Practice)
+10. Price change shown before adding a paid seat   (Rule: eu-consumer-rights)
+
+ROLES
+11. Few clear roles (Owner, Admin, Member, Guest), described in plain words   (Standard: owasp-authz)
+12. A table showing what each role can do   (Practice)
+13. Least privilege by default: new people get the smallest role   (Standard: owasp-authz)
+14. Changes take effect at once, including for people already signed in   (Standard: owasp-authz)
+15. There is always at least one owner   (Practice)
+
+REMOVING
+16. Remove or suspend a person, with what happens to their work (kept, moved to someone)   (Practice)
+17. Their sessions end at once   (Standard: owasp-session)
+18. Confirm with the person's name in the message   (Research: nng-confirm)
+19. Bulk actions for many people, with a count in the confirm   (Practice)
+
+SAFETY AND RECORDS
+20. Every change logged: who did what to whom and when   (Standard: owasp-logging)
+21. Single sign-on and automatic user sync (SCIM) for larger plans   (Practice)
+22. Require two-step sign-in for all members   (Standard: owasp-mfa)
+
+ACCESS
+23. Table with headers, row actions in a menu with names   (Standard: wai-tables, apg-menubutton)
+24. Status shown in words, not only colour   (Standard: wcag-color)
+
+SOURCES
+- nng-tables: https://www.nngroup.com/articles/data-tables/
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- owasp-mfa: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
+- wai-tables: https://www.w3.org/WAI/tutorials/tables/
+- apg-menubutton: https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color

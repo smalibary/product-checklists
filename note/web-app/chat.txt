@@ -1,0 +1,59 @@
+﻿CHAT (WEB APP) CHECKLIST: 27 items
+Messaging between people inside the app: one-to-one, groups and channels.
+Backing: 1 Rule, 11 Standard, 2 Research, 13 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONVERSATIONS LIST
+ 1. Each conversation: name, photo, last message preview, time, unread count   (Practice)
+ 2. Unread shown by more than colour (bold plus a number)   (Standard: wcag-color)
+ 3. Search across conversations and messages   (Practice)
+ 4. Pin, mute and archive   (Practice)
+ 5. Start a new conversation   (Practice)
+
+MESSAGES
+ 6. Mine and theirs clearly different (side, colour, label for screen readers)   (Standard: wcag-info)
+ 7. Grouped by sender and time; date dividers   (Practice)
+ 8. Sent, delivered and read states with icons that have names   (Standard: wcag-name-role)
+ 9. Failed messages marked with Retry   (Research: nng-errors)
+10. Edited and deleted messages marked   (Practice)
+11. Reactions, replies to a message, and threads   (Practice)
+12. Links preview; files and images with size and download   (Practice)
+
+WRITING
+13. Box with a label; Enter sends, Shift+Enter new line, stated   (Standard: wcag-labels)
+14. Typing indicator   (Practice)
+15. Draft kept per conversation   (Practice)
+16. Mentions with @ and suggestions   (Standard: apg-combobox)
+17. Attach files with type and size limits stated   (Standard: owasp-upload)
+
+BEHAVIOUR
+18. Opens at the first unread message, with "Jump to latest"   (Practice)
+19. New messages do not scroll the person away while reading older ones   (Practice)
+20. Older messages load when scrolling up, keeping position   (Research: nng-infinite)
+21. Works offline: queued messages send when back online   (Practice)
+
+SAFETY
+22. Block and report in each conversation   (Rule: eu-dsa)
+23. Messages encrypted in transit; end-to-end where the product promises it   (Standard: owasp-secrets)
+24. Message text escaped so it cannot run code   (Standard: owasp-xss)
+
+ACCESS
+25. New messages announced politely, not every keystroke   (Standard: wcag-status)
+26. Message list is a log region; keyboard reaches every message action   (Standard: wcag-keyboard)
+27. Works at phone width   (Standard: wcag-reflow)
+
+SOURCES
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- apg-combobox: https://www.w3.org/WAI/ARIA/apg/patterns/combobox/
+- owasp-upload: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+- nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
+- eu-dsa: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
+- owasp-secrets: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- owasp-xss: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

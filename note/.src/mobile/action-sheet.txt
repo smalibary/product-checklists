@@ -1,0 +1,26 @@
+title: Action Sheet
+about: A list of actions that slides up from the bottom of the phone screen, about the thing just tapped.
+## When to use
+- Choices about one item (Share, Edit, Delete) or confirming a destructive action | S hig-action-sheets
+- Android uses a bottom sheet or a menu for the same job | S m3-bottom-sheets m3-menus
+- Not for long content or forms (use a full sheet or new screen) | R nng-bottom-sheet
+- Not for a simple yes/no that needs explanation (use an alert) | S hig-alerts
+## Content
+- Optional title and message saying what the actions are about | S hig-action-sheets
+- Short action names, verbs first | S hig-writing
+- Destructive action styled red and placed at the top on iOS | S hig-action-sheets
+- A Cancel button at the bottom, separate from the rest | S hig-action-sheets
+- Few actions; long lists scroll | S hig-action-sheets
+## Behaviour
+- Tap outside or swipe down closes it | S m3-bottom-sheets
+- Android back closes it | S android-back
+- On iPad and large screens it shows as a popover next to what was tapped | S hig-action-sheets
+- Destructive actions can be undone, or confirmed | R nng-confirm
+## Look
+- Grabber handle on draggable sheets | S m3-bottom-sheets
+- Dimmed background behind | S m3-bottom-sheets
+- Rows at least 44 pt / 48 dp tall | S hig-layout m3-layout
+## Access
+- Focus moves into the sheet and returns after | S hig-accessibility
+- Screen readers announce it as a menu or dialog with a title | S hig-accessibility
+- Large text grows the rows instead of cutting text | S hig-accessibility

@@ -1,0 +1,26 @@
+title: Push Notification Opt-in
+about: Asking a phone user for permission to send push notifications, and handling yes, no and later.
+## Timing
+- Ask when the person has a reason to want alerts (after ordering: "Get delivery updates?"), not at first launch | S hig-notifications webdev-permissions
+- A pre-permission screen in the app's own words first, then the system prompt only if they say yes | R nng-permissions
+- The system prompt on iOS can be shown only once; a "Not now" on the pre-screen keeps that chance | S hig-notifications
+- Android 13 and later need the runtime permission too | S android-notif-perm
+## The pre-permission screen
+- Says what kinds of alerts and how often ("Only when your order moves") | R nng-permissions
+- One clear yes button and an equal "Not now" | L ftc-dark-patterns
+- An example of a notification | P
+## After the answer
+- Yes: confirm and offer choices of topics in settings | P
+- No: the app works fully without it | S apple-review
+- Later: ask again only at a new, relevant moment, not on every launch | R nng-permissions
+- If turned off in system settings, show how to turn it back on, with a button to the settings page | S hig-notifications
+## iOS options
+- Provisional authorization: quiet notifications delivered without asking, so the person can decide later | S hig-notifications
+- Time-sensitive and critical alerts only for real needs | S hig-notifications
+## Rules
+- Push not used for ads unless the person opted in to marketing | S apple-review
+- Marketing consent separate from service alerts | L gdpr-7
+- Notification channels on Android so people can mute kinds separately | S android-notif-perm
+## Access
+- Pre-screen readable with large text and screen readers | S hig-accessibility
+- Buttons at least 44 pt / 48 dp | S hig-layout m3-layout

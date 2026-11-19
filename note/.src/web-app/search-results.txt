@@ -1,0 +1,31 @@
+title: Search Results (web app)
+about: The page that lists what matches a search inside the app, across one or many kinds of items.
+## The search box
+- The search box stays at the top with the words typed still in it | R nng-search
+- Suggestions and recent searches while typing | R baymard-autocomplete
+- A keyboard shortcut opens search (often / or Ctrl+K) | P
+- The search box has a label and a search role | S apg-landmarks wcag-labels
+## Results
+- Number of results shown | R nng-search
+- Grouped by type (people, files, tasks), with a count per group | P
+- Each result shows its type, title, where it lives and a snippet with the matched words marked | R nng-search
+- Matched words marked in more ways than colour (bold too) | S wcag-color
+- Best match first; the order can be changed (relevance, newest) | R nng-search
+- Results the person cannot open are not shown | S owasp-authz
+## Narrowing
+- Filters for type, owner, date and status, with a count per choice | R nng-filters baymard-filters
+- Active filters shown as chips with remove | R nng-filters
+- Search terms and filters kept in the address, so results can be shared | P
+## No results
+- Say so, show the words searched for, suggest spelling fixes | R nng-empty
+- Offer to clear filters or search everywhere | R nng-empty
+- Forgives typos and common synonyms | R baymard-autocomplete
+## Behaviour
+- Results update as filters change, and the count is announced | S wcag-status
+- Back returns to the same results and scroll position | P
+- Pagination or "Load more" with the total | R nng-infinite
+- Fast; a loading state if it takes over a second | R nng-response
+## Access
+- Results are a list with headings or links that read well alone | S wcag-link
+- Keyboard moves through results | S wcag-keyboard
+- Works at phone width | S wcag-reflow

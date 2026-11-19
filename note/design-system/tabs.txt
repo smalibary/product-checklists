@@ -1,0 +1,40 @@
+﻿TABS CHECKLIST: 19 items
+A row of labels that switch between views of related content in the same place.
+Backing: 0 Rule, 12 Standard, 5 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. Switching between related views of the same thing (Overview, Activity, Settings)   (Standard: apg-tabs, m3-tabs)
+ 2. Not for steps in order (use a stepper) or for main navigation of the app (use a nav bar)   (Research: nng-tabs)
+ 3. Not when people need to compare content across tabs   (Research: nng-tabs)
+
+LOOK
+ 4. Short labels, one or two words, in a single row   (Research: nng-tabs)
+ 5. Selected tab clearly marked by more than colour (underline, weight)   (Standard: wcag-color)
+ 6. Tabs look connected to their content   (Research: nng-tabs)
+ 7. Icons optional; never icons alone without names   (Standard: wcag-name-role)
+ 8. Too many to fit: scroll sideways with visible arrows, or a "More" menu   (Standard: m3-tabs)
+
+BEHAVIOUR
+ 9. Switching is instant; content keeps its state when coming back   (Research: nng-tabs)
+10. Selected tab kept in the address when tabs are big views   (Practice)
+11. Swipe between tabs on phones, with taps too   (Standard: m3-tabs)
+12. Counts or badges on tabs when useful ("Comments 3")   (Practice)
+
+KEYBOARD AND ACCESS
+13. Tab list, tab and tab panel roles; each tab controls its panel   (Standard: apg-tabs)
+14. Arrow keys move between tabs; Tab goes into the panel   (Standard: apg-tabs)
+15. Home and End jump to first and last   (Standard: apg-tabs)
+16. Selected tab marked aria-selected   (Standard: apg-tabs)
+17. Panel labelled by its tab   (Standard: apg-tabs)
+18. Arrows flip for right-to-left   (Standard: w3c-dir)
+19. Targets large enough to tap   (Standard: wcag-target)
+
+SOURCES
+- apg-tabs: https://www.w3.org/WAI/ARIA/apg/patterns/tabs/
+- m3-tabs: https://m3.material.io/components/tabs/guidelines
+- nng-tabs: https://www.nngroup.com/articles/tabs-used-right/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

@@ -1,0 +1,29 @@
+title: Admin Panel
+about: The back office where staff or admins manage users, content, settings and problems across the product.
+## Navigation
+- Side menu grouped by area (Users, Content, Billing, Settings, Logs) | P
+- Global search by user, email, ID or order | P
+- Clear sign that this is the admin area (colour band, label) | P
+- Breadcrumbs for deep pages | R nng-breadcrumbs
+## Lists and records
+- Data tables with search, filter, sort, pagination and export | R nng-tables
+- Bulk actions with a count and a confirm | R nng-confirm
+- Record pages show everything about a user or item in one place | P
+## Powerful actions
+- Each dangerous action (ban, refund, delete) asks for confirmation naming the target | R nng-confirm
+- A reason must be typed for sensitive actions, stored in the log | S owasp-logging
+- Undo where possible; soft delete before hard delete | R nng-control
+- "View as user" clearly marked, logged and read-only by default | S owasp-logging owasp-authz
+## Security
+- Admin roles separated (support, finance, super admin) with least privilege | S owasp-authz
+- Two-step sign-in required for admins | S owasp-mfa
+- Shorter session timeout than the main app | S owasp-session
+- Every admin action logged with who, what, when and from where | S owasp-logging
+- Personal data shown only where needed; masked by default | L gdpr-25 gdpr-32
+- Restricted by network or device for the most sensitive tools | P
+## Overview
+- A home with key numbers and things needing attention | R nng-dashboards
+- Alerts for failures (payments, jobs, errors) | P
+## Access
+- Keyboard shortcuts for frequent tasks, listed | P
+- Tables and forms meet WCAG like any other page | S wai-tables wcag-labels

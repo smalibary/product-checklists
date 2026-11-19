@@ -1,0 +1,55 @@
+﻿FEATURES PAGE CHECKLIST: 20 items
+Shows what the product does, feature by feature, so visitors can judge whether it fits their need.
+Backing: 1 Rule, 6 Standard, 8 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STRUCTURE
+ 1. A headline that names the main outcome, not the technology   (Research: nng-scanning)
+ 2. Features grouped by job or by user type, not a long flat list   (Research: nng-scanning)
+ 3. Each feature: a short name, one benefit line and a real screenshot or clip   (Research: nng-scanning)
+ 4. A jump list or tabs for long pages   (Research: nng-tabs)
+ 5. Headings in order, so the page reads as an outline   (Standard: wcag-headings, wcag-info)
+
+PROOF AND DETAIL
+ 6. Real product screens, not mock art, kept current with the product   (Research: nng-trust)
+ 7. A short customer quote or number next to the key features   (Research: nng-reviews)
+ 8. Which plan includes each feature, linking to Pricing   (Research: nng-pricing)
+ 9. Features still coming marked "Coming soon", never shown as available   (Rule: ftc-dark-patterns)
+10. Integrations listed with logos and a link to the full list   (Practice)
+11. Links to docs or a help article for each feature   (Practice)
+
+ACTION
+12. One main action (Start free, Book a demo) repeated after each few sections   (Practice)
+13. A secondary path for people not ready (watch a tour, see pricing)   (Practice)
+
+MEDIA
+14. Videos have captions, no sound on start, and a pause control   (Standard: wcag-captions, wcag-audio, wcag-pause)
+15. Animated demos can be paused, and respect the reduced-motion setting   (Standard: wcag-pause, wcag-animation, mdn-reduced-motion)
+16. Screenshots have alt text describing what they show   (Standard: wcag-nontext, wai-images)
+17. Images sized and lazy-loaded so the page stays fast   (Standard: webdev-lcp, webdev-images)
+18. Space reserved for images so the page does not jump while loading   (Standard: webdev-cls)
+
+COMPARISON
+19. A feature table for products with many plans or editions   (Research: nng-comparison)
+20. Plain words for each feature, with a short explanation on demand   (Practice)
+
+SOURCES
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- nng-tabs: https://www.nngroup.com/articles/tabs-used-right/
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- nng-trust: https://www.nngroup.com/articles/trustworthy-design/
+- nng-reviews: https://www.nngroup.com/articles/social-proof-ux/
+- nng-pricing: https://www.nngroup.com/articles/show-price/
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- wcag-captions: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded
+- wcag-audio: https://www.w3.org/WAI/WCAG22/Understanding/audio-control
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- wcag-animation: https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wai-images: https://www.w3.org/WAI/tutorials/images/
+- webdev-lcp: https://web.dev/articles/lcp
+- webdev-images: https://web.dev/learn/images
+- webdev-cls: https://web.dev/articles/cls
+- nng-comparison: https://www.nngroup.com/articles/comparison-tables/

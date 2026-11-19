@@ -1,0 +1,24 @@
+title: Filtering items (flow)
+about: Narrowing a list of products or records with filters, and seeing what is applied.
+## Filters
+- Filters that match how people choose (price, size, brand, date, status) | R baymard-filters nng-filters
+- Count of results per option | R baymard-filters
+- Options with no results hidden or marked | R baymard-filters
+- Price and number ranges with fields, not only a slider | R nng-sliders
+## Applying
+- Desktop: results update at once on each change | R nng-filters
+- Phone: filters in a sheet with "Show 42 results" button | R baymard-filters
+- Loading shown without jumping the page | S wcag-on-input
+## Seeing what is applied
+- Applied filters as removable chips above results | R baymard-filters
+- "Clear all" | R nng-filters
+- Filters kept in the page address so back, share and refresh keep them | P
+## Results
+- Result count updates and is announced | S wcag-status
+- No results: show which filters to remove | R nng-empty
+- Sort kept separate from filters | R nng-filters
+## Access
+- Filter groups as fieldsets with names | S wcag-info
+- Checkboxes and radios are real controls | S wcag-name-role
+- Focus does not jump when results update | S wcag-on-input
+- Targets at least 24 px web / 44 pt iOS / 48 dp Android | S wcag-target hig-layout m3-layout

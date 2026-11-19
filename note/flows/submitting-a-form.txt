@@ -1,0 +1,51 @@
+﻿SUBMITTING A FORM (FLOW) CHECKLIST: 18 items
+The moment a form is sent: checking, sending, and telling the person what happened.
+Backing: 0 Rule, 15 Standard, 2 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BEFORE SUBMIT
+ 1. Button always active; checks run on submit   (Research: baymard-inline)
+ 2. Button names the action ("Send request"), not "Submit"   (Research: nng-buttons)
+ 3. For legal, money or data changes: review step or a way to correct   (Standard: wcag-prevent)
+
+ON SUBMIT
+ 4. All fields checked; error summary at the top with links   (Standard: wcag-error, govuk-error-summary)
+ 5. Focus moves to the summary or first wrong field   (Standard: wcag-focus-order)
+ 6. Busy state on the button; no double send   (Standard: owasp-transaction)
+ 7. Works if the connection is slow: what was typed is kept   (Standard: wcag-timing)
+
+SUCCESS
+ 8. Confirmation page or message saying what happens next and when   (Standard: govuk-confirm)
+ 9. Reference number and email copy where useful   (Standard: govuk-confirm)
+10. Form not resent on refresh (redirect after sending)   (Practice)
+
+FAILURE
+11. Server error: plain message, data kept, Try again   (Standard: wcag-error)
+12. Session expired: keep the data and sign in again   (Standard: wcag-timing)
+
+SAFETY
+13. Server checks everything again   (Standard: owasp-authz)
+14. Spam protection without robot puzzles that block people (honeypot, rate limits)   (Standard: wcag-auth)
+15. CSRF protection   (Standard: owasp-csrf)
+
+ACCESS
+16. Enter submits from a text field   (Standard: wcag-on-input)
+17. Result announced   (Standard: wcag-status)
+18. Works without a mouse   (Standard: wcag-keyboard)
+
+SOURCES
+- baymard-inline: https://baymard.com/blog/inline-form-validation
+- nng-buttons: https://www.nngroup.com/articles/button-states-communicate-interaction/
+- wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- govuk-error-summary: https://design-system.service.gov.uk/components/error-summary/
+- wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
+- owasp-transaction: https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- wcag-auth: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum
+- owasp-csrf: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+- wcag-on-input: https://www.w3.org/WAI/WCAG22/Understanding/on-input
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

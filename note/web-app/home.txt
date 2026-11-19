@@ -1,0 +1,49 @@
+﻿HOME (WEB APP) CHECKLIST: 19 items
+The first screen after signing in, which helps people pick up where they left off and see what needs them.
+Backing: 0 Rule, 6 Standard, 4 Research, 9 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHAT IT SHOWS
+ 1. A greeting only if short; the useful parts above the fold   (Research: nng-scanning)
+ 2. Continue where you left off: recent items   (Practice)
+ 3. What needs me: assigned, due soon, mentions, approvals   (Practice)
+ 4. Key numbers for the person's role, if relevant   (Research: nng-dashboards)
+ 5. Quick actions for the most common jobs (New project)   (Practice)
+ 6. Announcements kept small and dismissible   (Practice)
+
+NEW USERS
+ 7. Getting-started checklist until done, then it goes away   (Practice)
+ 8. Templates and sample content   (Practice)
+ 9. Empty sections teach, not just say "nothing here"   (Research: nng-empty)
+
+NAVIGATION
+10. Main menu in the same place as every other screen   (Standard: wcag-consistent)
+11. Workspace or team switch visible if the person is in several   (Practice)
+12. Search reachable from here   (Research: nng-search)
+
+PERSONAL
+13. Order or hide sections; the choice is remembered   (Practice)
+14. Different home for different roles (admin, member)   (Practice)
+
+SPEED
+15. Loads fast; sections load on their own with skeletons   (Standard: webdev-lcp, nng-skeleton)
+16. No layout jumping as sections arrive   (Standard: webdev-cls)
+
+ACCESS
+17. Sections have headings; landmarks for main and navigation   (Standard: wcag-headings, apg-landmarks)
+18. Page title names the app and "Home"   (Standard: wcag-title)
+19. Works at phone width   (Standard: wcag-reflow)
+
+SOURCES
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- nng-dashboards: https://www.nngroup.com/articles/dashboards-preattentive/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- wcag-consistent: https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation
+- nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
+- webdev-lcp: https://web.dev/articles/lcp
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- webdev-cls: https://web.dev/articles/cls
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

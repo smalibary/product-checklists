@@ -1,0 +1,25 @@
+title: Version History
+about: The list of saved versions of a document or item, so people can see changes and go back.
+## The list
+- Versions newest first, with date, time and who made them | P
+- Automatic versions grouped (by hour or session); named versions stand out | P
+- Name a version ("Sent to client") | P
+- Current version marked | P
+## Seeing changes
+- Open any version read-only | P
+- Compare two versions with added and removed parts marked | P
+- Changes marked by more than colour (underline, strike-through, labels) | S wcag-color
+- Who made each change, by colour plus name | S wcag-color
+## Going back
+- Restore a version, which saves the current one as a new version first (nothing lost) | R nng-control
+- Copy a part from an old version without restoring all | P
+- Make a copy from an old version | P
+- Confirm restore with the date and author named | R nng-confirm
+## Rules
+- How long versions are kept, per plan | P
+- Who can see and restore versions follows edit rights | S owasp-authz
+- Deleted items can be restored for a stated time | R nng-control
+## Access
+- History panel opens as a side panel with focus moved in | S apg-dialog
+- The list works by keyboard | S wcag-keyboard
+- Dates readable by screen readers | P

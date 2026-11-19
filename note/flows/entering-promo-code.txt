@@ -1,0 +1,42 @@
+﻿ENTERING PROMO CODE (FLOW) CHECKLIST: 16 items
+Typing a discount code in cart or checkout and seeing the price change.
+Backing: 2 Rule, 8 Standard, 2 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE FIELD
+ 1. Folded behind a quiet link ("Have a code?") so people without one are not sent away to hunt for codes   (Research: baymard-coupon)
+ 2. Field with Apply button; Enter applies too   (Practice)
+ 3. Not case-sensitive; spaces trimmed   (Practice)
+ 4. Paste works   (Standard: wcag-on-input)
+
+APPLYING
+ 5. Busy state on Apply   (Practice)
+ 6. Success: code shown as a removable tag with the saving   (Research: baymard-coupon)
+ 7. Totals update at once, discount on its own line   (Rule: eu-consumer-rights)
+
+ERRORS
+ 8. Say why: expired, wrong code, minimum not reached, not for these items   (Standard: wcag-error)
+ 9. Field keeps the typed code for fixing   (Standard: wcag-error)
+10. Too many tries slowed down   (Standard: owasp-auth)
+
+RULES
+11. Only one code or several: say so   (Practice)
+12. Codes applied in the store's price rules on the server, not only the page   (Standard: owasp-transaction)
+13. Discount shown honestly against the real earlier price   (Rule: eu-omnibus)
+
+ACCESS
+14. Result announced   (Standard: wcag-status)
+15. Field has a visible name   (Standard: wcag-labels)
+16. Remove button named ("Remove code SAVE10")   (Standard: wcag-name-role)
+
+SOURCES
+- baymard-coupon: https://baymard.com/blog/coupon-code-field
+- wcag-on-input: https://www.w3.org/WAI/WCAG22/Understanding/on-input
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- owasp-transaction: https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html
+- eu-omnibus: https://commission.europa.eu/law/law-topic/consumer-protection-law/review-eu-consumer-law_en
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value

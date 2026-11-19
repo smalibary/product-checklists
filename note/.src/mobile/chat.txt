@@ -1,0 +1,32 @@
+title: Chat (mobile)
+about: Messaging inside a phone app: the list of conversations and one conversation with its message box.
+## Conversation list
+- Newest first: photo, name, last message, time, unread count | P
+- Search across conversations | R nng-search
+- Swipe for archive, mute, delete, with a menu too | R nng-swipe wcag-dragging
+- Pinned conversations at the top | P
+## Conversation
+- Messages grouped by sender and day; own messages on one side | P
+- Status per message: sending, sent, delivered, read (with icons and words for screen readers) | S wcag-color
+- Failed message marked with Retry | S wcag-error
+- Typing indicator for the other person | P
+- Opens at the last unread message; "jump to latest" button | P
+- Long press for reply, copy, react, forward, delete | S hig-gestures
+## Message box
+- Grows with text; send button only active with content | P
+- Keyboard never covers the box or the last message | S hig-layout
+- Attach photos, files, voice notes, location | P
+- Draft kept when leaving the conversation | P
+- Right-to-left and mixed Arabic and English text shown in the right direction per message | S w3c-dir
+## Media
+- Photos load as small previews first; tap opens full screen with zoom | P
+- Voice notes with length and a play bar | P
+- Upload progress and cancel | R nng-progress
+## Safety and privacy
+- Block and report from the conversation | S apple-review
+- End-to-end encryption where private messages are expected; say so | S owasp-masvs
+- Notifications can hide message text on the lock screen | S hig-notifications
+## Access
+- New messages announced politely | S wcag-status
+- Each message read with sender and time | S hig-accessibility
+- Large text supported; targets at least 44 pt / 48 dp | S hig-layout m3-layout

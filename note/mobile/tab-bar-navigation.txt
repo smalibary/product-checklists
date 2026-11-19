@@ -1,0 +1,46 @@
+﻿TAB BAR NAVIGATION CHECKLIST: 19 items
+The bar at the bottom of a phone app with the main sections (also called a bottom navigation bar or dock).
+Backing: 0 Rule, 16 Standard, 3 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. 3 to 5 tabs for the main top-level sections   (Standard: hig-tab-bars, m3-nav-bar)
+ 2. Each tab an icon and a short label, always shown   (Standard: hig-tab-bars, m3-nav-bar)
+ 3. Labels one word where possible   (Research: nng-mobile-nav)
+ 4. Tabs are places, not actions (no "New post" tab unless it is a clear exception)   (Standard: hig-tab-bars)
+ 5. "More" tab only if really needed   (Research: nng-mobile-nav)
+
+LOOK
+ 6. Selected tab clear by filled icon, colour and label, not colour alone   (Standard: wcag-color, hig-tab-bars)
+ 7. Badges for counts on tabs   (Standard: m3-badges)
+ 8. Bar sits above the home indicator safe area   (Standard: hig-layout, android-edge)
+ 9. Visible on all top-level screens; hidden only in full-screen tasks   (Standard: hig-tab-bars)
+
+BEHAVIOUR
+10. Tapping a tab opens that section where the person left it   (Standard: hig-tab-bars)
+11. Tapping the current tab again scrolls to top or goes back to its root   (Standard: hig-tab-bars)
+12. No moving tabs around between screens   (Research: nng-consistency)
+13. Each tab keeps its own navigation history   (Standard: hig-tab-bars)
+
+PLATFORM
+14. iOS: tab bar; Android: navigation bar (bottom) or rail on tablets   (Standard: hig-tab-bars, m3-nav-bar)
+15. On tablets and large screens, a side rail or sidebar instead   (Standard: m3-nav-bar)
+
+ACCESS
+16. Each tab has a name and says it is selected ("Home, tab, 1 of 5, selected")   (Standard: hig-accessibility)
+17. Targets at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+18. Labels stay readable with large text (bigger labels shown on long press on iOS)   (Standard: hig-accessibility)
+19. Order flips for right-to-left languages   (Standard: w3c-dir)
+
+SOURCES
+- hig-tab-bars: https://developer.apple.com/design/human-interface-guidelines/tab-bars
+- m3-nav-bar: https://m3.material.io/components/navigation-bar/guidelines
+- nng-mobile-nav: https://www.nngroup.com/articles/mobile-navigation-patterns/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- m3-badges: https://m3.material.io/components/badges/guidelines
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- android-edge: https://developer.android.com/develop/ui/views/layout/edge-to-edge
+- nng-consistency: https://www.nngroup.com/articles/consistency-and-standards/
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- m3-layout: https://m3.material.io/foundations/layout
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir

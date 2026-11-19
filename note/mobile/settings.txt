@@ -1,0 +1,52 @@
+﻿SETTINGS (MOBILE) CHECKLIST: 20 items
+The settings screen of a phone app: grouped lists of options the person can change.
+Backing: 1 Rule, 14 Standard, 0 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STRUCTURE
+ 1. Grouped list with short section titles (Account, Notifications, Privacy, About)   (Standard: hig-settings, m3-lists)
+ 2. Most used first; rarely used in deeper screens   (Practice)
+ 3. Search in settings when there are many   (Practice)
+ 4. App settings in the app, not in the system Settings app (iOS)   (Standard: hig-settings)
+
+ROWS
+ 5. Each row: name, current value, and a chevron or toggle   (Standard: hig-settings)
+ 6. Toggles take effect at once, no Save needed   (Standard: hig-toggles, nng-toggle)
+ 7. Choices with few options open a list with a tick   (Standard: hig-settings)
+ 8. Short help text under rows that need it   (Practice)
+ 9. Destructive rows (Log out, Delete account) at the bottom, styled red   (Standard: hig-action-sheets)
+
+CONTENT
+10. Notifications by kind   (Standard: android-notif-perm)
+11. Language, with Arabic and right-to-left layout   (Standard: w3c-dir)
+12. Appearance: system, light, dark   (Standard: hig-dark-mode)
+13. Privacy, data download and account deletion   (Rule: gdpr-15, gdpr-17, apple-deletion)
+14. App version and build at the bottom   (Practice)
+15. Help, terms, privacy policy links   (Standard: apple-review)
+
+BEHAVIOUR
+16. Changes saved on the device and synced to the account   (Practice)
+17. Settings that need the system (notifications off, location off) link to the system settings page   (Standard: android-permissions)
+
+ACCESS
+18. Toggles read their state ("Dark mode, switch, on")   (Standard: hig-accessibility)
+19. Large text: rows grow and wrap, values move under names   (Standard: hig-accessibility)
+20. Rows at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- hig-settings: https://developer.apple.com/design/human-interface-guidelines/settings
+- m3-lists: https://m3.material.io/components/lists/guidelines
+- hig-toggles: https://developer.apple.com/design/human-interface-guidelines/toggles
+- nng-toggle: https://www.nngroup.com/articles/toggle-switch-guidelines/
+- hig-action-sheets: https://developer.apple.com/design/human-interface-guidelines/action-sheets
+- android-notif-perm: https://developer.android.com/develop/ui/views/notifications/notification-permission
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- hig-dark-mode: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+- gdpr-15: https://gdpr-info.eu/art-15-gdpr/
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- apple-deletion: https://developer.apple.com/support/offering-account-deletion-in-your-app
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- android-permissions: https://developer.android.com/training/permissions/requesting
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

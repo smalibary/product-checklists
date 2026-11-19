@@ -1,0 +1,33 @@
+title: Analytics
+about: Charts and numbers that show how something is performing over time, for people to understand and decide.
+## Overview
+- The few numbers that matter most at the top, each with change from the last period | R nng-dashboards
+- Change shown as number and arrow or word, not only green and red | S wcag-color
+- Date range picker with common presets (7 days, 30 days, this month) and compare to previous | P
+- Time zone of the data stated | P
+- When the data was last updated | R nng-status
+## Charts
+- The right chart for the question: lines for trends, bars for comparison, no 3D or pies with many slices | R nng-dashboards
+- Axes labelled with units; y-axis starts at zero for bars | P
+- Tooltip on hover and focus showing exact values | S wcag-hover
+- Legend near the lines, or labels on the lines | P
+- Colours that work for colour-blind people and in dark mode | S wcag-ui-contrast wcag-color
+- A table view of the same data for screen readers and export | S wcag-nontext
+## Exploring
+- Filter by segment (country, plan, channel) | R nng-filters
+- Click a chart point to see the records behind it | P
+- Filters and range kept in the address, so views can be shared | P
+- Save a view or report | P
+## Trust
+- Definitions of each number on demand ("Active user: signed in within 7 days") | P
+- Incomplete periods (today) marked | P
+- Data gaps or delays shown, not drawn as zero | P
+## States and speed
+- Loading skeletons in chart shapes | R nng-skeleton
+- No data state explains why (no events yet, filter too narrow) | R nng-empty
+- Slow queries show progress and can be cancelled | R nng-response
+## Access and export
+- Export to CSV and image | P
+- Animated charts respect reduced motion | S mdn-reduced-motion wcag-animation
+- Works at phone width (charts scale, tables scroll) | S wcag-reflow
+- Personal data aggregated or anonymised where possible | L gdpr-25

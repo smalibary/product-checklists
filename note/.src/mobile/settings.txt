@@ -1,0 +1,27 @@
+title: Settings (mobile)
+about: The settings screen of a phone app: grouped lists of options the person can change.
+## Structure
+- Grouped list with short section titles (Account, Notifications, Privacy, About) | S hig-settings m3-lists
+- Most used first; rarely used in deeper screens | P
+- Search in settings when there are many | P
+- App settings in the app, not in the system Settings app (iOS) | S hig-settings
+## Rows
+- Each row: name, current value, and a chevron or toggle | S hig-settings
+- Toggles take effect at once, no Save needed | S hig-toggles nng-toggle
+- Choices with few options open a list with a tick | S hig-settings
+- Short help text under rows that need it | P
+- Destructive rows (Log out, Delete account) at the bottom, styled red | S hig-action-sheets
+## Content
+- Notifications by kind | S android-notif-perm
+- Language, with Arabic and right-to-left layout | S w3c-dir
+- Appearance: system, light, dark | S hig-dark-mode
+- Privacy, data download and account deletion | L gdpr-15 gdpr-17 apple-deletion
+- App version and build at the bottom | P
+- Help, terms, privacy policy links | S apple-review
+## Behaviour
+- Changes saved on the device and synced to the account | P
+- Settings that need the system (notifications off, location off) link to the system settings page | S android-permissions
+## Access
+- Toggles read their state ("Dark mode, switch, on") | S hig-accessibility
+- Large text: rows grow and wrap, values move under names | S hig-accessibility
+- Rows at least 44 pt / 48 dp | S hig-layout m3-layout

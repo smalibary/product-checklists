@@ -1,0 +1,24 @@
+title: Alert
+about: A message inside the page that tells people something important about the page or what they just did (also called a callout or inline message).
+## Kinds
+- Info, success, warning and error, each with its own colour and icon | S govuk-notification
+- Error alerts for page-level problems; field errors go next to fields | S govuk-error-summary govuk-error-message
+- Not for urgent questions that need an answer now (use an alert dialog) | S apg-alertdialog
+- Not for passing messages (use a toast) | R nng-indicators
+## Content
+- A short title saying what happened | S govuk-notification
+- A sentence on what to do next, with a link or button if there is an action | R nng-errors
+- Plain words, no blame, no codes alone | R nng-errors
+## Look
+- Kind shown by icon and words as well as colour | S wcag-color
+- Icon has a text name ("Error:") or the title says it | S wcag-nontext
+- Text and icon contrast meet WCAG | S wcag-contrast wcag-ui-contrast
+- Placed near what it is about, usually at the top of the content | R nng-errors
+## Behaviour
+- Stays until the problem is fixed or the person closes it | R nng-indicators
+- Close button only for alerts that can be ignored; it has a name | S wcag-name-role
+- Does not move the page under the person's hand when it appears | S webdev-cls
+## Access
+- Alerts that appear after an action are announced (role alert or status) | S apg-alert wcag-status
+- Do not use role alert for messages that are there on page load | S apg-alert
+- After a form fails, focus moves to the error summary | S govuk-error-summary

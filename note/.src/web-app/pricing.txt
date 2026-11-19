@@ -1,0 +1,27 @@
+title: Pricing (inside the app)
+about: The plans page shown to signed-in users, with their current plan and what changing would cost.
+## Plans
+- Current plan marked clearly | P
+- 2 to 4 plans side by side, one suggested | R nng-comparison
+- Price per month and per year, with the yearly saving | P
+- Prices include or exclude VAT, stated clearly | L eu-consumer-rights ftc-junk-fees
+- Per-seat prices show the total for the team's size | P
+- Currency of the account (SAR for Saudi customers) | P
+## Comparing
+- The features that differ, not a wall of ticks | R nng-comparison
+- Feature names with short explanations on hover or tap | S wcag-hover
+- Limits stated in numbers (projects, storage, members) | P
+- The person's own usage shown next to each plan's limit | P
+## Changing
+- Upgrade shows prorated charge today and the next bill | L ftc-negative-option
+- Downgrade shows what will be lost or locked, and when it takes effect | L ftc-negative-option
+- Owners change plans; members can request | S owasp-authz
+- Contact sales for large plans, without hiding the price of smaller ones | P
+## Honesty
+- No fake countdowns or "only 2 left" | L ftc-dark-patterns
+- Trial terms and auto-renewal stated before payment | L ftc-negative-option
+- Cancellation easy to find from here | L ftc-negative-option
+## Access
+- Comparison table with headers; ticks have text for screen readers | S wai-tables wcag-nontext
+- Works at phone width (plans stack, table scrolls) | S wcag-reflow
+- Monthly/yearly switch is a real switch or radio group | S apg-radio

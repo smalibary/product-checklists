@@ -1,0 +1,85 @@
+﻿SIGN UP PAGE (WEBSITE) CHECKLIST: 31 items
+Creating an account on a website. The phone version (mobile/sign-up) has the full 65 items; this one adds what differs on a website.
+Backing: 4 Rule, 13 Standard, 9 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BEFORE THE FORM
+ 1. What the person gets, in one line above the form   (Practice)
+ 2. Let people try or buy without an account where possible   (Research: baymard-guest, nng-login-walls)
+ 3. Price and trial terms visible before the form if sign-up starts a trial   (Rule: ftc-negative-option)
+
+WAYS TO SIGN UP
+ 4. Sign up with Google, Apple, Microsoft or work single sign-on, matched to the audience   (Practice)
+ 5. Passkey offered at or right after sign-up, with a fallback   (Standard: webauthn, fido-ux)
+ 6. Email and password as the always-there choice   (Practice)
+
+FIELDS
+ 7. Ask only what is needed now; everything else later   (Research: baymard-fields, webdev-signup)
+ 8. One name field ("Full name"), not first and last, for international names   (Standard: w3c-names)
+ 9. Visible labels; placeholders only as examples   (Standard: wcag-labels, nng-placeholder)
+10. autocomplete set: name, email, new-password   (Standard: webdev-signup, mdn-autocomplete, wcag-purpose)
+11. Optional fields marked "(optional)"; required ones not starred   (Research: nng-required, govuk-question)
+12. Email typo hint ("Did you mean gmail.com?")   (Practice)
+
+PASSWORD
+13. At least 8 characters (15 if it is the only factor), up to at least 64, any characters   (Standard: nist-63b)
+14. No rules like "one capital, one symbol"; check against known leaked passwords instead   (Standard: nist-63b)
+15. Requirements shown before typing, ticked as met   (Research: baymard-inline)
+16. Show password button   (Research: baymard-show)
+17. Paste and password managers allowed   (Standard: nist-63b, wcag-auth)
+
+ERRORS
+18. Checked when the person leaves a field, not while typing   (Research: baymard-inline)
+19. Errors next to the field and in a summary at the top after Submit   (Standard: govuk-error-summary, wcag-error)
+20. What was typed is kept after an error   (Standard: wcag-redundant)
+21. Submit is never disabled; it explains what is missing instead   (Research: govuk-button)
+
+LEGAL AND CONSENT
+22. Terms and privacy links beside the button   (Rule: gdpr-13)
+23. Marketing consent separate and unticked   (Rule: gdpr-7)
+24. Age check where children's law applies   (Rule: coppa)
+
+SENDING AND AFTER
+25. The button says what it does ("Create account") and shows progress   (Research: nng-status)
+26. Email verification by code or link, with resend and change-email   (Practice)
+27. Account-exists case handled without revealing which emails have accounts   (Standard: owasp-auth)
+28. A welcome screen that leads to the first useful step   (Research: nng-onboarding)
+
+ACCESS
+29. Keyboard-only sign-up works start to finish   (Standard: wcag-keyboard)
+30. Robot checks accessible, or replaced by invisible checks   (Standard: wcag-auth)
+31. Contrast, target size and phone width meet WCAG   (Standard: wcag-contrast, wcag-target, wcag-reflow)
+
+SOURCES
+- baymard-guest: https://baymard.com/blog/reduce-cart-abandonment
+- nng-login-walls: https://www.nngroup.com/articles/login-walls/
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- webauthn: https://www.w3.org/TR/webauthn-3/
+- fido-ux: https://fidoalliance.org/ux-guidelines-for-passkey-creation-and-sign-ins/
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- webdev-signup: https://web.dev/articles/sign-up-form-best-practices
+- w3c-names: https://www.w3.org/International/questions/qa-personal-names
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- nng-placeholder: https://www.nngroup.com/articles/form-design-placeholders/
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- wcag-purpose: https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose
+- nng-required: https://www.nngroup.com/articles/required-fields/
+- govuk-question: https://design-system.service.gov.uk/patterns/question-pages/
+- nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
+- baymard-inline: https://baymard.com/blog/inline-form-validation
+- baymard-show: https://baymard.com/guidelines/665-show-password-feature
+- wcag-auth: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum
+- govuk-error-summary: https://design-system.service.gov.uk/components/error-summary/
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- wcag-redundant: https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry
+- govuk-button: https://design-system.service.gov.uk/components/button/
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- coppa: https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions
+- nng-status: https://www.nngroup.com/articles/visibility-system-status/
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- nng-onboarding: https://www.nngroup.com/articles/mobile-app-onboarding/
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

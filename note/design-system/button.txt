@@ -1,0 +1,55 @@
+﻿BUTTON CHECKLIST: 21 items
+The control people press to do something: submit, save, open, delete.
+Backing: 0 Rule, 14 Standard, 5 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+KINDS
+ 1. A small set of kinds: primary, secondary, tertiary (text), danger   (Standard: m3-buttons, hig-buttons)
+ 2. One primary button per view or section   (Research: nng-buttons)
+ 3. Danger style only for actions that destroy or cannot be undone   (Research: nng-confirm)
+ 4. Links go somewhere; buttons do something. Use the right element   (Standard: govuk-button)
+
+CONTENT
+ 5. A verb that says what happens ("Save changes", "Send invoice")   (Standard: govuk-button)
+ 6. Short, start with a capital, no "Click here"   (Research: nng-buttons)
+ 7. Icon plus text when it helps; icon-only buttons have a text name   (Standard: wcag-name-role)
+
+SIZES AND LOOK
+ 8. Sizes from tokens (small, medium, large); touch area at least 24 px, ideally 44 to 48   (Standard: wcag-target, hig-layout, m3-buttons)
+ 9. Text 4.5:1 contrast; button edge or fill 3:1 against the background   (Standard: wcag-contrast, wcag-ui-contrast)
+10. Looks pressable: filled or outlined, not plain text for main actions   (Research: nng-buttons)
+
+STATES
+11. Default, hover, focus, pressed, disabled, loading   (Standard: m3-buttons)
+12. Focus ring visible in every theme   (Standard: wcag-focus-appearance)
+13. Loading: spinner inside, same width, cannot be pressed again   (Practice)
+14. Disabled buttons used sparingly; better to allow press and explain what is missing   (Research: nng-buttons)
+
+PLACEMENT
+15. Primary action placed consistently (end of the form or dialog)   (Standard: wcag-consistent)
+16. Order follows the platform: on Windows and web varies; on iOS and Android follow their guides   (Standard: hig-buttons, m3-dialogs)
+17. Full width on phones for main actions   (Practice)
+
+ACCESS
+18. Native button element, or role button with Enter and Space   (Standard: wcag-keyboard)
+19. Toggle buttons say pressed (aria-pressed)   (Standard: wcag-name-role)
+20. Button opening a menu says so (aria-haspopup, aria-expanded)   (Standard: apg-menubutton)
+21. Name matches the visible label   (Standard: wcag-label-in-name)
+
+SOURCES
+- m3-buttons: https://m3.material.io/components/buttons/guidelines
+- hig-buttons: https://developer.apple.com/design/human-interface-guidelines/buttons
+- nng-buttons: https://www.nngroup.com/articles/button-states-communicate-interaction/
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- govuk-button: https://design-system.service.gov.uk/components/button/
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-focus-appearance: https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance
+- wcag-consistent: https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation
+- m3-dialogs: https://m3.material.io/components/dialogs/guidelines
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- apg-menubutton: https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/
+- wcag-label-in-name: https://www.w3.org/WAI/WCAG22/Understanding/label-in-name

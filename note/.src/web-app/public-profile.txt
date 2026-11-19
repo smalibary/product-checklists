@@ -1,0 +1,25 @@
+title: Public Profile
+about: The page other people see about a user: who they are and what they have made or shared.
+## Content
+- Name, photo, short bio and role | P
+- What the person has made or shared (posts, projects, reviews) | P
+- Join date and simple activity numbers | P
+- Links to their other profiles, marked as external | S wcag-link
+- Verified badges explained on hover or tap | S wcag-hover
+## Actions for visitors
+- Follow, message or contact, if the product has them | P
+- Share profile link | P
+- Report or block the person, easy to find | L eu-dsa
+## Privacy for the owner
+- The owner sees what is public, with a "View as visitor" preview | L gdpr-25
+- Choose what is public field by field; private by default for sensitive data | L gdpr-25
+- No email, phone or exact location shown unless the owner chose it | L gdpr-25
+- Hide profile from search engines option | P
+- Children's profiles private by default | L coppa
+## Address and search
+- A readable address (/@name) that does not change silently | P
+- Person structured data where useful | S schema-person
+- Page title with the person's name | S wcag-title
+## Access
+- Photo has alt text with the name, or is decorative beside the name | S wai-images
+- Headings for sections; contrast and phone width meet WCAG | S wcag-headings wcag-contrast wcag-reflow

@@ -1,0 +1,47 @@
+﻿PAYWALL CHECKLIST: 20 items
+The screen that asks people to subscribe or buy to unlock content or features in a phone app.
+Backing: 4 Rule, 10 Standard, 0 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STORE RULES
+ 1. Digital content and features sold through Apple and Google in-app purchase (with regional exceptions)   (Standard: apple-review, play-payments)
+ 2. The price, the billing period and what is included shown clearly near the buy button   (Standard: apple-review, play-subscriptions)
+ 3. Price per period is the most prominent price; any per-week or per-month breakdown is secondary   (Standard: apple-review)
+ 4. Free trial: length, what it turns into, and when the first charge happens   (Rule: apple-subscriptions, ftc-negative-option)
+ 5. Links to terms of use and privacy policy   (Standard: apple-review)
+ 6. Restore purchases button   (Standard: apple-review)
+
+CONTENT
+ 7. What the person gets, in 3 to 5 short benefits   (Practice)
+ 8. Plans side by side (monthly, yearly) with the saving   (Practice)
+ 9. Social proof only if true and current   (Rule: ftc-reviews)
+10. The screen is honest about what stays free   (Practice)
+
+RESPECT
+11. A visible way to close the paywall; no hidden or delayed close button   (Rule: ftc-dark-patterns, apple-review)
+12. Not shown on first launch before the app has shown value, unless the app is paid-only   (Practice)
+13. No fake timers or "only today" prices that are not true   (Rule: ftc-dark-patterns, eu-omnibus)
+14. Not shown repeatedly after being closed   (Practice)
+
+AFTER BUYING
+15. Access unlocked at once, with a thank-you   (Practice)
+16. Receipt from the store   (Standard: apple-subscriptions)
+17. How to manage or cancel shown in settings   (Standard: apple-subscriptions, play-subscriptions)
+
+ACCESS
+18. Prices read clearly by screen readers with the currency   (Standard: hig-accessibility)
+19. Close button has a name and is at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+20. Large text supported without hiding the price or buttons   (Standard: hig-accessibility)
+
+SOURCES
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- play-payments: https://support.google.com/googleplay/android-developer/answer/9858738
+- play-subscriptions: https://support.google.com/googleplay/android-developer/answer/9900533
+- apple-subscriptions: https://developer.apple.com/app-store/subscriptions/
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- ftc-reviews: https://www.ftc.gov/legal-library/browse/rules/rule-use-consumer-reviews-testimonials
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- eu-omnibus: https://commission.europa.eu/law/law-topic/consumer-protection-law/review-eu-consumer-law_en
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

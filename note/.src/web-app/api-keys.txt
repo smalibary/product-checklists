@@ -1,0 +1,27 @@
+title: API Keys
+about: Where developers create, see and revoke the secret keys their code uses to call the product.
+## Creating
+- Create key with a name and an optional expiry date | S github-tokens
+- Choose what the key can do (scopes) and which resources; least power by default | S owasp-authz github-tokens
+- Choose test or live mode, with keys clearly marked (prefix like sk_test_) | S stripe-keys
+- The full key shown once, with a copy button and a warning to store it safely | S stripe-keys owasp-secrets
+- After leaving, only the last 4 characters are shown | S stripe-keys
+## List
+- Table: name, last 4 characters, scopes, created, last used, expiry, created by | S github-tokens
+- Unused and soon-to-expire keys flagged | S github-tokens
+## Changing
+- Revoke (delete) a key at once, with a confirm naming it | R nng-confirm
+- Roll a key: make a new one and keep the old working for a short set time | S stripe-keys
+- Restrict a key to certain addresses (IP list) | P
+## Safety
+- Keys stored hashed on the server where possible | S owasp-secrets
+- Key creation, use from a new place and revoke are logged and emailed | S owasp-logging
+- Keys found leaked on public code (secret scanning) revoked and the owner told | S github-tokens
+- Only admins can create live keys | S owasp-authz
+- Sensitive actions ask for the password again | S owasp-auth
+## Help
+- A quick-start code example using the new key | P
+- Link to the API docs and rate limits | P
+## Access
+- Copy button announces "Copied" | S wcag-status
+- Keys shown in a monospaced font with enough contrast | S wcag-contrast

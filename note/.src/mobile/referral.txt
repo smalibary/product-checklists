@@ -1,0 +1,23 @@
+title: Referral (mobile)
+about: Inviting others with a personal link or code, where both sides may get a reward.
+## The offer
+- What both sides get, in one line ("You both get 25 SAR") | P
+- Conditions short and clear (when the reward comes, limits, expiry) with full terms linked | L ftc-endorsements
+- Reward shown in the person's currency | P
+## Sharing
+- Personal link and code, with Copy (and a confirmation) | P
+- System share sheet so people choose the app themselves | S hig-share android-sharesheet
+- Ready message they can edit; no messages sent without their action | S apple-review
+- Contacts access only if they choose "pick from contacts", with a reason | S hig-privacy android-permissions
+## Tracking
+- List of invited people and the state of each (joined, rewarded) | P
+- Total earned and where to use it | P
+## Store rules
+- Rewards in digital credits follow store payment rules | S apple-review play-payments
+- No rewards for app reviews or ratings | S apple-review
+## Fairness
+- Fraud checks without blocking real users | P
+- Referred person told they came through a referral | L ftc-endorsements
+## Access
+- Code readable by screen readers letter by letter | S hig-accessibility
+- Copy and share buttons named; at least 44 pt / 48 dp | S hig-layout m3-layout

@@ -1,0 +1,55 @@
+﻿DRAWER CHECKLIST: 22 items
+A panel that slides in from the edge of the screen, for navigation or for details and settings beside the page.
+Backing: 0 Rule, 17 Standard, 2 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. Navigation drawer for many destinations on small screens   (Standard: m3-nav-drawer)
+ 2. Side panel (sheet) for details or filters while keeping the page in view   (Standard: m3-side-sheets)
+ 3. Not for short confirmations (use a dialog) or for messages (use a toast)   (Research: nng-modal)
+
+TYPES
+ 4. Modal drawer: covers the page with a dimmed backdrop and blocks it   (Standard: m3-nav-drawer)
+ 5. Non-modal (standard) drawer: sits beside the page, which stays usable   (Standard: m3-side-sheets)
+ 6. Bottom drawer on phones for actions (see Action Sheet)   (Standard: m3-bottom-sheets)
+
+LOOK
+ 7. Width fits the content; on phones up to almost the full width   (Standard: m3-nav-drawer)
+ 8. Title at the top and a close button with a name   (Standard: wcag-name-role)
+ 9. Clear edge or shadow between the drawer and the page   (Standard: wcag-ui-contrast)
+10. Footer for main actions when the drawer holds a form   (Practice)
+
+BEHAVIOUR
+11. Opens from the side that matches reading direction (left in English, right in Arabic)   (Standard: w3c-dir, mdn-logical)
+12. Closes with Escape, the close button and a click on the backdrop (modal)   (Standard: apg-dialog)
+13. Swipe to close on touch screens, with the button as well   (Standard: wcag-dragging)
+14. Unsaved changes warned before closing   (Research: nng-control)
+15. Its open state can be in the address for detail drawers   (Practice)
+16. Motion short and eased; reduced motion respected   (Standard: m3-motion, mdn-reduced-motion)
+
+FOCUS AND ACCESS
+17. Modal drawer: focus moves in, stays inside, and returns to the button that opened it   (Standard: apg-dialog)
+18. Modal drawer marked as a dialog with a name (aria-modal)   (Standard: apg-dialog)
+19. Non-modal drawer: a landmark or region with a name; focus is not trapped   (Standard: apg-landmarks)
+20. The opening button says whether the drawer is open (aria-expanded)   (Standard: wcag-name-role)
+21. Page behind cannot be scrolled while a modal drawer is open   (Practice)
+
+TOKENS
+22. Width, padding, backdrop colour, radius and motion are tokens   (Standard: dtcg-tokens)
+
+SOURCES
+- m3-nav-drawer: https://m3.material.io/components/navigation-drawer/guidelines
+- m3-side-sheets: https://m3.material.io/components/side-sheets/guidelines
+- nng-modal: https://www.nngroup.com/articles/modal-nonmodal-dialog/
+- m3-bottom-sheets: https://m3.material.io/components/bottom-sheets/guidelines
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- mdn-logical: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- m3-motion: https://m3.material.io/styles/motion/overview
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- dtcg-tokens: https://tr.designtokens.org/format/

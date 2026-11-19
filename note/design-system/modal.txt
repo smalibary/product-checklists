@@ -1,0 +1,52 @@
+﻿MODAL CHECKLIST: 24 items
+A window over the page that blocks it until the person finishes or closes it (a dialog).
+Backing: 0 Rule, 14 Standard, 7 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. Short tasks or decisions that must happen before going on (confirm delete, quick edit)   (Research: nng-modal)
+ 2. Not for long forms, complex tasks or content people want to compare with the page   (Research: nng-modal)
+ 3. Not on page load or as a surprise interruption   (Research: nng-modal)
+ 4. Urgent confirmations use the alert dialog pattern   (Standard: apg-alertdialog)
+
+CONTENT
+ 5. A title that says what it is about   (Standard: apg-dialog)
+ 6. Short body; scroll inside if longer   (Practice)
+ 7. Buttons named for the action ("Delete project", "Keep editing"), not just OK and Cancel   (Research: nng-confirm)
+ 8. The safe choice is clear; dangerous action styled as dangerous   (Research: nng-confirm)
+
+LOOK
+ 9. Dimmed backdrop over the page   (Standard: m3-dialogs)
+10. Centred on desktop; full screen or bottom sheet on phones   (Standard: m3-dialogs, hig-sheets)
+11. Close button with a name in the corner   (Standard: wcag-name-role)
+12. Width suits the content, with margins on small screens   (Standard: wcag-reflow)
+
+BEHAVIOUR
+13. Escape closes it (except where data would be lost without warning)   (Standard: apg-dialog)
+14. Click on the backdrop closes non-critical modals   (Practice)
+15. Unsaved changes warned before closing   (Research: nng-control)
+16. No modals on top of modals   (Research: nng-modal)
+17. Page behind does not scroll   (Practice)
+
+FOCUS AND ACCESS
+18. Focus moves into the modal (first field or the title)   (Standard: apg-dialog)
+19. Focus stays inside while open   (Standard: apg-dialog)
+20. Focus returns to the button that opened it   (Standard: apg-dialog)
+21. Role dialog with aria-modal and a name from the title   (Standard: apg-dialog)
+22. The native dialog element with showModal handles much of this   (Standard: mdn-dialog)
+23. Page behind is hidden from screen readers (inert)   (Standard: mdn-inert)
+24. Opening and closing motion respects reduced motion   (Standard: mdn-reduced-motion)
+
+SOURCES
+- nng-modal: https://www.nngroup.com/articles/modal-nonmodal-dialog/
+- apg-alertdialog: https://www.w3.org/WAI/ARIA/apg/patterns/alertdialog/
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- m3-dialogs: https://m3.material.io/components/dialogs/guidelines
+- hig-sheets: https://developer.apple.com/design/human-interface-guidelines/sheets
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- mdn-dialog: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+- mdn-inert: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inert
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion

@@ -1,0 +1,40 @@
+﻿BREADCRUMB CHECKLIST: 16 items
+A short trail of links showing where a page sits in the site's structure, from the top down to here.
+Backing: 0 Rule, 11 Standard, 4 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. For sites with three or more levels of pages   (Research: nng-breadcrumbs)
+ 2. Shows the place in the structure, not the person's history   (Research: nng-breadcrumbs)
+ 3. Not a replacement for the main menu   (Research: nng-breadcrumbs)
+
+LOOK
+ 4. Placed above the page title, below the header   (Research: nng-breadcrumbs, govuk-breadcrumbs)
+ 5. Separators (› or /) drawn by CSS so screen readers do not read them   (Standard: apg-breadcrumb)
+ 6. Every level a link except the last, which is the current page   (Standard: apg-breadcrumb)
+ 7. The current page marked (aria-current="page")   (Standard: apg-breadcrumb)
+ 8. Small but readable text with enough contrast   (Standard: wcag-contrast)
+
+LONG TRAILS
+ 9. Middle levels collapse into "..." with a menu on small screens   (Practice)
+10. On phones, show only the parent as a "Back to X" link   (Standard: govuk-breadcrumbs)
+11. Long names cut with an ellipsis and full name on hover and focus   (Standard: wcag-hover)
+
+ACCESS
+12. Inside a nav landmark named "Breadcrumb"   (Standard: apg-breadcrumb)
+13. An ordered list of links   (Standard: apg-breadcrumb)
+14. Separator direction flips for right-to-left languages   (Standard: w3c-dir)
+15. Link targets large enough to tap   (Standard: wcag-target)
+
+SEARCH
+16. Breadcrumb structured data so search results show the trail   (Standard: google-breadcrumb)
+
+SOURCES
+- nng-breadcrumbs: https://www.nngroup.com/articles/breadcrumbs/
+- govuk-breadcrumbs: https://design-system.service.gov.uk/components/breadcrumbs/
+- apg-breadcrumb: https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- google-breadcrumb: https://developers.google.com/search/docs/appearance/structured-data/breadcrumb

@@ -1,0 +1,31 @@
+title: Modal
+about: A window over the page that blocks it until the person finishes or closes it (a dialog).
+## When to use
+- Short tasks or decisions that must happen before going on (confirm delete, quick edit) | R nng-modal
+- Not for long forms, complex tasks or content people want to compare with the page | R nng-modal
+- Not on page load or as a surprise interruption | R nng-modal
+- Urgent confirmations use the alert dialog pattern | S apg-alertdialog
+## Content
+- A title that says what it is about | S apg-dialog
+- Short body; scroll inside if longer | P
+- Buttons named for the action ("Delete project", "Keep editing"), not just OK and Cancel | R nng-confirm
+- The safe choice is clear; dangerous action styled as dangerous | R nng-confirm
+## Look
+- Dimmed backdrop over the page | S m3-dialogs
+- Centred on desktop; full screen or bottom sheet on phones | S m3-dialogs hig-sheets
+- Close button with a name in the corner | S wcag-name-role
+- Width suits the content, with margins on small screens | S wcag-reflow
+## Behaviour
+- Escape closes it (except where data would be lost without warning) | S apg-dialog
+- Click on the backdrop closes non-critical modals | P
+- Unsaved changes warned before closing | R nng-control
+- No modals on top of modals | R nng-modal
+- Page behind does not scroll | P
+## Focus and access
+- Focus moves into the modal (first field or the title) | S apg-dialog
+- Focus stays inside while open | S apg-dialog
+- Focus returns to the button that opened it | S apg-dialog
+- Role dialog with aria-modal and a name from the title | S apg-dialog
+- The native dialog element with showModal handles much of this | S mdn-dialog
+- Page behind is hidden from screen readers (inert) | S mdn-inert
+- Opening and closing motion respects reduced motion | S mdn-reduced-motion

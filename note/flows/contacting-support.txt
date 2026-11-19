@@ -1,0 +1,45 @@
+﻿CONTACTING SUPPORT (FLOW) CHECKLIST: 18 items
+Getting help from a person or a bot, from the first question to an answer.
+Backing: 2 Rule, 5 Standard, 5 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FINDING HELP
+ 1. Help link in the same place on every page   (Standard: wcag-consistent-help)
+ 2. Search help articles first, but never hide the way to a person   (Research: nng-help)
+ 3. Ways shown with response times (chat now, email in 24 hours)   (Research: nng-contact)
+
+ASKING
+ 4. Choose a topic, then a short form   (Practice)
+ 5. Account details and the page they came from attached automatically, with notice   (Rule: gdpr-13)
+ 6. Attach screenshots   (Practice)
+ 7. Suggested articles as they type, without blocking sending   (Research: nng-help)
+
+CHAT AND BOTS
+ 8. Bot says it is a bot   (Rule: eu-ai-act)
+ 9. "Talk to a person" always available   (Research: nng-chatbots)
+10. Chat history kept, transcript by email   (Practice)
+11. Works when the person leaves and comes back   (Practice)
+
+AFTER SENDING
+12. Confirmation with a ticket number and when to expect a reply   (Standard: govuk-confirm)
+13. Replies by email and in the app, threaded   (Practice)
+14. Status of open requests   (Practice)
+15. Rating after it is solved, short and optional   (Research: nng-surveys)
+
+ACCESS
+16. Chat works with screen readers and keyboard; new messages announced   (Standard: wcag-status, wcag-keyboard)
+17. Phone not the only way   (Standard: wcag-consistent-help)
+18. No time-outs that lose a typed message   (Standard: wcag-timing)
+
+SOURCES
+- wcag-consistent-help: https://www.w3.org/WAI/WCAG22/Understanding/consistent-help
+- nng-help: https://www.nngroup.com/articles/help-and-documentation/
+- nng-contact: https://www.nngroup.com/articles/contact-us-pages/
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- eu-ai-act: https://artificialintelligenceact.eu/article/50/
+- nng-chatbots: https://www.nngroup.com/articles/chatbots/
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- nng-surveys: https://www.nngroup.com/articles/qualitative-surveys/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable

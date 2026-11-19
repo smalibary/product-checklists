@@ -1,0 +1,30 @@
+title: Drawer
+about: A panel that slides in from the edge of the screen, for navigation or for details and settings beside the page.
+## When to use
+- Navigation drawer for many destinations on small screens | S m3-nav-drawer
+- Side panel (sheet) for details or filters while keeping the page in view | S m3-side-sheets
+- Not for short confirmations (use a dialog) or for messages (use a toast) | R nng-modal
+## Types
+- Modal drawer: covers the page with a dimmed backdrop and blocks it | S m3-nav-drawer
+- Non-modal (standard) drawer: sits beside the page, which stays usable | S m3-side-sheets
+- Bottom drawer on phones for actions (see Action Sheet) | S m3-bottom-sheets
+## Look
+- Width fits the content; on phones up to almost the full width | S m3-nav-drawer
+- Title at the top and a close button with a name | S wcag-name-role
+- Clear edge or shadow between the drawer and the page | S wcag-ui-contrast
+- Footer for main actions when the drawer holds a form | P
+## Behaviour
+- Opens from the side that matches reading direction (left in English, right in Arabic) | S w3c-dir mdn-logical
+- Closes with Escape, the close button and a click on the backdrop (modal) | S apg-dialog
+- Swipe to close on touch screens, with the button as well | S wcag-dragging
+- Unsaved changes warned before closing | R nng-control
+- Its open state can be in the address for detail drawers | P
+- Motion short and eased; reduced motion respected | S m3-motion mdn-reduced-motion
+## Focus and access
+- Modal drawer: focus moves in, stays inside, and returns to the button that opened it | S apg-dialog
+- Modal drawer marked as a dialog with a name (aria-modal) | S apg-dialog
+- Non-modal drawer: a landmark or region with a name; focus is not trapped | S apg-landmarks
+- The opening button says whether the drawer is open (aria-expanded) | S wcag-name-role
+- Page behind cannot be scrolled while a modal drawer is open | P
+## Tokens
+- Width, padding, backdrop colour, radius and motion are tokens | S dtcg-tokens

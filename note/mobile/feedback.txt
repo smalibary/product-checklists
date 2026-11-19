@@ -1,0 +1,42 @@
+﻿FEEDBACK (MOBILE) CHECKLIST: 15 items
+Asking for ratings, reviews, bug reports and ideas inside a phone app.
+Backing: 1 Rule, 7 Standard, 3 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STORE RATING
+ 1. Use the system review prompt (SKStoreReviewController / In-App Review API)   (Standard: apple-review-prompt, play-in-app-review)
+ 2. Ask after a success moment, never on first launch or during a task   (Standard: apple-review-prompt)
+ 3. The system limits how often it shows (3 times a year on iOS); do not build your own star prompt that sends only happy users to the store   (Standard: apple-review-prompt, play-in-app-review)
+ 4. No rewards for ratings   (Standard: apple-review)
+
+BUG REPORT AND IDEAS
+ 5. "Send feedback" in Settings and Help   (Practice)
+ 6. Short form: what happened, optional screenshot, optional email   (Research: nng-surveys)
+ 7. Screenshot shake or attach, with the chance to blur private parts   (Practice)
+ 8. Device, app version and system version attached automatically, with notice   (Rule: gdpr-13)
+ 9. Thank-you and what happens next   (Practice)
+
+QUICK IN-APP SURVEYS
+10. One question at a time, at most 2 or 3   (Research: nng-surveys)
+11. Easy to close; not shown again soon after   (Research: nng-modal)
+
+REPLIES
+12. Answers come back in the app or by email; the person can follow their report   (Practice)
+
+ACCESS
+13. Ratings with buttons, not only swipes   (Standard: wcag-gestures)
+14. Form fields named; large text supported   (Standard: wcag-labels, hig-accessibility)
+15. Buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- apple-review-prompt: https://developer.apple.com/documentation/storekit/requesting-app-store-reviews
+- play-in-app-review: https://developer.android.com/guide/playcore/in-app-review
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- nng-surveys: https://www.nngroup.com/articles/qualitative-surveys/
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- nng-modal: https://www.nngroup.com/articles/modal-nonmodal-dialog/
+- wcag-gestures: https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

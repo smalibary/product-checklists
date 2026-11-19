@@ -1,0 +1,47 @@
+﻿SPACING / GRID CHECKLIST: 17 items
+The spacing scale and layout grid that keep every screen evenly spaced and aligned.
+Backing: 0 Rule, 14 Standard, 2 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SPACING SCALE
+ 1. One scale based on 4 or 8 px steps (4, 8, 12, 16, 24, 32, 48, 64)   (Standard: m3-layout)
+ 2. Named tokens (space-1, space-2) or roles (gap-sm), never raw numbers in components   (Standard: dtcg-tokens)
+ 3. Related things closer together than unrelated things   (Research: nng-proximity)
+ 4. Same spacing for the same job across components   (Research: nng-consistency)
+ 5. Spacing grows with screen size where it helps   (Standard: m3-layout)
+
+LAYOUT GRID
+ 6. Columns for each screen size: 4 on phones, 8 on tablets, 12 on desktops   (Standard: m3-layout)
+ 7. Margins and gutters named per breakpoint   (Standard: m3-layout)
+ 8. Breakpoints chosen from the content, a small set, named   (Standard: m3-layout)
+ 9. Maximum content width so lines do not get too long   (Standard: butterick-line)
+10. Safe areas respected on phones with notches   (Standard: hig-layout, android-edge)
+
+RESPONSIVE BEHAVIOUR
+11. Content reflows to one column at 320 px wide without sideways scrolling   (Standard: wcag-reflow)
+12. Layout survives 200% zoom and bigger text   (Standard: wcag-resize)
+13. Logical properties (start, end) so layouts flip for Arabic   (Standard: mdn-logical, w3c-dir)
+
+TOUCH
+14. Touch targets with space between them; at least 24 px, ideally 44 to 48   (Standard: wcag-target, hig-layout, m3-layout)
+
+DENSITY
+15. Comfortable and compact density options for data-heavy screens   (Standard: m3-layout)
+
+PROCESS
+16. Spacing and grid documented with examples   (Practice)
+17. Design and code use the same values (shared tokens)   (Standard: dtcg-tokens)
+
+SOURCES
+- m3-layout: https://m3.material.io/foundations/layout
+- dtcg-tokens: https://tr.designtokens.org/format/
+- nng-proximity: https://www.nngroup.com/articles/gestalt-proximity/
+- nng-consistency: https://www.nngroup.com/articles/consistency-and-standards/
+- butterick-line: https://practicaltypography.com/line-length.html
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- android-edge: https://developer.android.com/develop/ui/views/layout/edge-to-edge
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-resize: https://www.w3.org/WAI/WCAG22/Understanding/resize-text
+- mdn-logical: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

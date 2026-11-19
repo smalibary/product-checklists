@@ -1,0 +1,39 @@
+﻿TOOLTIP CHECKLIST: 18 items
+A small label that appears near an element on hover or keyboard focus, to name it or add a short hint.
+Backing: 0 Rule, 8 Standard, 7 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. Naming icon-only buttons, and short hints that are nice to have   (Research: nng-tooltip)
+ 2. Never for information people need to finish a task (put it on the page)   (Research: nng-tooltip)
+ 3. Never for interactive content like links or buttons (use a popover)   (Standard: apg-tooltip)
+ 4. Not on touch screens alone: they have no hover   (Research: nng-tooltip)
+
+CONTENT
+ 5. A few words; one sentence at most   (Research: nng-tooltip)
+ 6. No repetition of the visible label   (Research: nng-tooltip)
+
+LOOK AND PLACE
+ 7. Close to the element, not covering it or what it relates to   (Research: nng-tooltip)
+ 8. Moves to stay on screen   (Practice)
+ 9. Contrast meets WCAG   (Standard: wcag-contrast)
+10. An arrow pointing at the element is optional   (Practice)
+
+TIMING
+11. Appears after a short delay (about 300 to 500 ms) on hover, at once on focus   (Research: nng-tooltip)
+12. Stays while the pointer is over the tooltip itself   (Standard: wcag-hover)
+13. Closes with Escape without moving focus   (Standard: wcag-hover, apg-tooltip)
+14. Closes when focus or pointer leaves   (Standard: apg-tooltip)
+
+ACCESS
+15. role tooltip, linked from the element with aria-describedby (hint) or used as its name (aria-labelledby)   (Standard: apg-tooltip)
+16. Shows on keyboard focus, not only on hover   (Standard: wcag-hover)
+17. The element still has a name without the tooltip for screen readers   (Standard: wcag-name-role)
+18. Disabled buttons: put the tooltip on a wrapper that can take focus, or explain on the page   (Practice)
+
+SOURCES
+- nng-tooltip: https://www.nngroup.com/articles/tooltip-guidelines/
+- apg-tooltip: https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value

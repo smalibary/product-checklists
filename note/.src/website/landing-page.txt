@@ -1,0 +1,34 @@
+title: Landing page
+about: The page people arrive on from an ad, a link or a search; it has one job: get them to take one action.
+## Above the fold
+- A headline that says what the visitor gets, in their words | R nng-scanning
+- A sub-line that says how, or for whom | R nng-scanning
+- One main action button with a verb (Start free, Get the guide) | P
+- A product image or short clip that shows the real thing | R nng-trust
+- The page matches the ad or link that brought the visitor (same promise, same words) | P
+## Body
+- Three to five benefits, each a short heading, a line and a picture | R nng-scanning
+- Proof: customer logos, numbers or quotes, with permission | L ftc-endorsements
+- How it works in three steps | P
+- Answers to the main doubts (price, time, risk) in a short FAQ | R nng-faq
+- The main action repeated after each big section | P
+- Few or no links that lead away from the action | P
+## Forms
+- Ask only what is needed; every extra field costs sign-ups | R baymard-fields
+- Labels above fields, the right keyboard and autofill | S wcag-labels mdn-autocomplete webdev-signup
+- Errors in words next to the field | S wcag-error
+- Marketing consent unticked by default where the law needs consent | L gdpr-7
+## Speed
+- Largest image or text shows in under 2.5 seconds | S webdev-lcp
+- The page does not jump while loading | S webdev-cls
+- Responds to taps in under 200 milliseconds | S webdev-inp
+- Faster pages convert better (Vodafone, Rakuten and others measured it) | R webdev-vitals-business
+## Honesty
+- No fake countdowns, fake stock counts or hidden prices | L ftc-dark-patterns ftc-junk-fees
+- Prices and terms in the page, not only in small print | L ftc-junk-fees
+## Access and phones
+- Works at phone width with no sideways scroll | S wcag-reflow
+- Contrast and text size meet WCAG | S wcag-contrast
+- Buttons at least 24 by 24 pixels (44 recommended) | S wcag-target
+- Video has captions, starts muted and can be paused | S wcag-captions wcag-audio wcag-pause
+- A page title and description written for search and sharing | S google-title google-snippet

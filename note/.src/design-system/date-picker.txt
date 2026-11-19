@@ -1,0 +1,31 @@
+title: Date Picker
+about: A control for choosing a date or a range of dates, by typing or from a calendar.
+## Choosing the right control
+- Known dates far away (birthday, passport expiry): three text fields or one typed field, not a calendar | S govuk-date
+- Dates near today or tied to weekdays (bookings): a calendar helps | R nng-date
+- A range (from, to): one calendar showing two months | R nng-date
+## Typing
+- A typed field is always possible, with the format shown ("DD/MM/YYYY") | S govuk-date
+- Accept common formats and fix them gently | R nng-date
+- Numeric keyboard on phones | S mdn-inputmode
+- autocomplete bday for birth dates | S mdn-autocomplete
+## The calendar
+- Opens from a button beside the field with a name ("Choose date") | S apg-datepicker
+- Today marked; the chosen date clearly marked by more than colour | S wcag-color
+- Unavailable dates marked and explained | R nng-date
+- Month and year can be changed quickly | R nng-date
+- Week starts on the locale's first day (Sunday in Saudi Arabia, Monday in much of Europe) | P
+- Hijri calendar shown where the audience needs it | P
+## Keyboard and access
+- Arrow keys move by day, Page Up/Down by month, Home/End to week start and end | S apg-datepicker
+- Calendar is a dialog with a grid; focus moves in and back | S apg-datepicker
+- Each day read with full date ("Tuesday 3 March 2026") | S apg-datepicker
+- Escape closes without changing the value | S apg-datepicker
+## Rules and errors
+- Minimum and maximum dates stated | P
+- Errors in words ("Date must be in the future") | S govuk-date wcag-error
+- Time zone stated if the date has a time | P
+- Values stored in ISO 8601 | S iso-8601
+## Platform
+- On phones, the native picker is often the better choice | S hig-pickers m3-date-pickers
+- Direction and numerals follow the language (Arabic) | S w3c-dir

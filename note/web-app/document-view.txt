@@ -1,0 +1,50 @@
+﻿DOCUMENT VIEW CHECKLIST: 22 items
+Reading and editing one document (a page, a note, a file) inside the app, often with others.
+Backing: 0 Rule, 10 Standard, 2 Research, 10 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+READING
+ 1. Title as the main heading, with owner, last edited time and by whom   (Practice)
+ 2. Contents list from headings for long documents   (Standard: wcag-headings)
+ 3. Comfortable line length (about 60 to 80 characters) and line height   (Standard: butterick-line, wcag-text-spacing)
+ 4. Readable at 200% zoom and in dark mode   (Standard: wcag-reflow, mdn-color-scheme)
+ 5. Images, tables and code blocks fit the width or scroll inside their box   (Standard: wcag-reflow)
+
+EDITING
+ 6. Clear difference between view and edit mode, or edit in place with a visible cursor   (Practice)
+ 7. Saving automatic with "Saved" or "Saving..." shown   (Research: nng-status)
+ 8. Offline edits kept and synced later   (Practice)
+ 9. Undo and redo with keyboard shortcuts   (Research: nng-control)
+10. Formatting toolbar with named buttons, also by keyboard shortcut   (Standard: wcag-name-role)
+11. Paste from other apps keeps simple formatting   (Practice)
+
+TOGETHER
+12. Who else is here, with photos and coloured cursors plus names   (Practice)
+13. Comments on selected text   (Practice)
+14. Suggest changes mode for reviewers   (Practice)
+15. Version history   (Practice)
+
+SHARING
+16. Share button showing who has access and their level (view, comment, edit)   (Standard: owasp-authz)
+17. Link sharing off by default, or limited to the workspace   (Standard: owasp-authz)
+18. Export to PDF, Word, Markdown   (Practice)
+19. Print layout   (Practice)
+
+ACCESS
+20. Editor works with screen readers and keyboard only   (Standard: wcag-keyboard)
+21. Headings, lists and tables are real structure, not just bold text   (Standard: wcag-info)
+22. Language of the document set, with right-to-left for Arabic   (Standard: w3c-dir)
+
+SOURCES
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- butterick-line: https://practicaltypography.com/line-length.html
+- wcag-text-spacing: https://www.w3.org/WAI/WCAG22/Understanding/text-spacing
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- mdn-color-scheme: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+- nng-status: https://www.nngroup.com/articles/visibility-system-status/
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir

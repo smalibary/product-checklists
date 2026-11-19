@@ -1,0 +1,45 @@
+﻿BILLING (MOBILE) CHECKLIST: 17 items
+Seeing and managing subscriptions and payments inside a phone app.
+Backing: 3 Rule, 12 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STORE SUBSCRIPTIONS
+ 1. Digital subscriptions bought through Apple or Google in-app purchase (with regional exceptions)   (Standard: apple-review, play-payments)
+ 2. Current plan, price, renewal date and the store it was bought from   (Standard: apple-subscriptions, play-subscriptions)
+ 3. "Manage subscription" opens the store's own subscription page   (Standard: apple-subscriptions, play-subscriptions)
+ 4. Restore purchases button for people on a new phone   (Standard: apple-review)
+ 5. Upgrades and downgrades through the store, with the price change shown   (Standard: apple-subscriptions, play-subscriptions)
+ 6. Free trial end date and the first charge shown clearly   (Rule: apple-subscriptions, ftc-negative-option)
+
+BOUGHT ELSEWHERE
+ 7. If the plan was bought on the web, say so and where to manage it   (Practice)
+ 8. Rules on linking to the website for payment differ by country and store; follow the current guideline   (Standard: apple-review, play-payments)
+
+PHYSICAL GOODS AND SERVICES
+ 9. Saved payment methods with brand and last 4 digits   (Standard: pci-dss)
+10. Order and payment history with receipts   (Practice)
+11. VAT invoices for Saudi customers   (Rule: zatca-einvoice)
+
+CANCELLING
+12. Cancel as easy as subscribing; the path is clear   (Rule: ftc-negative-option)
+13. What happens after cancelling: access until the period ends   (Standard: apple-subscriptions)
+
+PROBLEMS
+14. Billing problem (card failed at the store): banner with a link to fix it in the store   (Standard: apple-subscriptions, play-subscriptions)
+15. Grace period respected: access continues while the store retries   (Standard: apple-subscriptions, play-subscriptions)
+
+ACCESS
+16. Prices read clearly with currency by screen readers   (Standard: hig-accessibility)
+17. Large text and buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- play-payments: https://support.google.com/googleplay/android-developer/answer/9858738
+- apple-subscriptions: https://developer.apple.com/app-store/subscriptions/
+- play-subscriptions: https://support.google.com/googleplay/android-developer/answer/9900533
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
+- zatca-einvoice: https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

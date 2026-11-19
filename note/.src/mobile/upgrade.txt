@@ -1,0 +1,25 @@
+title: Upgrade (mobile)
+about: Moving from free to paid, or from one plan to a higher one, inside a phone app.
+## Moments
+- Offer the upgrade when the person reaches a limit or a paid feature, saying what it unlocks | P
+- A lock icon on paid features, with a short reason on tap | P
+- Not interrupting a task in the middle | R nng-modal
+## Plan screen
+- Current plan marked; higher plans with what is added | P
+- Prices with period and currency from the store | S apple-subscriptions play-subscriptions
+- Yearly saving shown honestly | L eu-omnibus
+- Free trial terms clear (length, price after, first charge date) | L ftc-negative-option apple-subscriptions
+## Buying
+- Through Apple or Google in-app purchase for digital features (with regional exceptions) | S apple-review play-payments
+- Upgrade within a subscription group takes effect at once on iOS; downgrade at renewal | S apple-subscriptions
+- Google Play replacement modes (charge now, prorate) chosen on purpose | S play-subscriptions
+## After
+- Unlocked features available at once with a thank-you | P
+- Show what is new and where to find it | R nng-onboarding
+- Restore purchases for other devices | S apple-review
+## Respect
+- Easy to close; no repeated offers right after "No thanks" | L ftc-dark-patterns
+- Downgrade and cancel explained in settings | L ftc-negative-option
+## Access
+- Price and plan names read clearly | S hig-accessibility
+- Large text supported; buttons at least 44 pt / 48 dp | S hig-layout m3-layout

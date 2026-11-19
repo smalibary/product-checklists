@@ -1,0 +1,40 @@
+﻿COMPARE PAGE CHECKLIST: 16 items
+Compares the product with a competitor or an alternative, to help a visitor choose.
+Backing: 5 Rule, 3 Standard, 5 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+HONESTY (THE LAW)
+ 1. Every claim about a competitor is true, current and can be proven   (Rule: ftc-comparative)
+ 2. Use the competitor's name only to identify them; no logo that suggests they endorse you   (Rule: ftc-comparative)
+ 3. Date of the comparison shown, with the plan or version compared   (Rule: ftc-comparative)
+ 4. Prices compared like for like (same plan level, same billing period, taxes stated)   (Rule: ftc-comparative, ftc-junk-fees)
+ 5. A link to the competitor's own pricing or docs so visitors can check   (Practice)
+
+STRUCTURE
+ 6. A short summary at the top: who should pick which   (Research: nng-comparison)
+ 7. A side-by-side table with the same rows for each product   (Research: nng-comparison)
+ 8. Rows grouped by topic, with the most important first   (Research: nng-comparison)
+ 9. Ticks and crosses also carry words or a screen-reader label, not only icons or colour   (Standard: wcag-color, wcag-nontext)
+10. The header row and first column stay visible while scrolling a long table   (Research: nng-comparison)
+11. Table built with real table headers so screen readers read each cell with its row and column   (Standard: wai-tables, wcag-info)
+12. Where the competitor is better, say so; it builds trust   (Research: nng-trust)
+
+PROOF AND ACTION
+13. Quotes from customers who switched, with permission   (Rule: ftc-endorsements)
+14. Help to switch: import tools, migration guide, contact   (Practice)
+15. One main action at the end (start free, talk to sales)   (Practice)
+
+PHONE WIDTH
+16. The table stays readable on phones: two products side by side, or stacked cards   (Standard: wcag-reflow)
+
+SOURCES
+- ftc-comparative: https://www.ftc.gov/legal-library/browse/statement-policy-regarding-comparative-advertising
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- nng-comparison: https://www.nngroup.com/articles/comparison-tables/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wai-tables: https://www.w3.org/WAI/tutorials/tables/
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- nng-trust: https://www.nngroup.com/articles/trustworthy-design/
+- ftc-endorsements: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

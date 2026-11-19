@@ -1,0 +1,32 @@
+title: Kanban board
+about: Cards in columns by stage (To do, Doing, Done), moved across as work goes on.
+## Columns
+- Column name with a count of cards | P
+- Work-in-progress limit per column, warned when passed | P
+- Add, rename, reorder and hide columns | P
+- Collapse a column | P
+- Swimlanes (rows) by person, priority or project | P
+## Cards
+- Title, assignee photo, due date, labels and a small set of icons (comments, files) | R nng-cards
+- Overdue shown by icon and word, not only red | S wcag-color
+- Labels have text, not only colour | S wcag-color
+- Click opens the card detail in a side panel or page with its own address | P
+- Quick add at the bottom of each column | P
+## Moving
+- Drag a card between columns and up and down | R nng-drag
+- A clear drop place shown while dragging | R nng-drag
+- Every drag has another way: a "Move to" menu or keyboard keys | S wcag-dragging apg-menubutton
+- Moving to Done may ask for a reason or set fields, only when needed | P
+- Undo after a move | R nng-control
+- Changes from others appear live without moving the card under the person's hand | P
+## Finding
+- Filter by person, label and due date; search | R nng-filters
+- Quick "Only my cards" filter | P
+- Switch to list or table view | P
+## Access
+- Moving by keyboard announced ("Card moved to Doing, position 2") | S wcag-status
+- Columns are lists with headings; cards are list items | S wcag-info
+- Focus visible on cards | S wcag-focus
+- On phones: one column at a time, swipe or tabs between columns | S wcag-reflow
+## Speed
+- Smooth with hundreds of cards | S webdev-inp

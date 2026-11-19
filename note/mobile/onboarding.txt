@@ -1,0 +1,49 @@
+﻿ONBOARDING (MOBILE) CHECKLIST: 18 items
+The first screens of a phone app after install, before the person starts using it.
+Backing: 2 Rule, 10 Standard, 5 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+KEEP IT SHORT
+ 1. Get people into the app fast; onboarding as short as possible   (Standard: hig-onboarding)
+ 2. Skip button on every intro slide   (Research: nng-onboarding)
+ 3. Intro slides only if the app is new in kind; 3 at most   (Research: nng-onboarding)
+ 4. Teach in context (hints when a feature is first used) rather than up front   (Research: nng-onboarding)
+
+ACCOUNT
+ 5. Let people look around before signing up where the app allows   (Standard: hig-onboarding)
+ 6. Sign up later, when needed (saving, buying)   (Standard: apple-review)
+ 7. Sign in with Apple offered if other social sign-ins are offered on iOS   (Standard: hig-sign-in-apple)
+
+SETUP QUESTIONS
+ 8. A few questions only if the answers shape the experience (interests, goals)   (Practice)
+ 9. Each skippable with sensible defaults   (Research: nng-onboarding)
+10. Progress shown   (Research: nng-progress)
+
+PERMISSIONS
+11. Ask one at a time, at the moment it is needed, with a pre-permission screen   (Standard: hig-privacy, webdev-permissions)
+12. App works if the person says no   (Standard: apple-review)
+13. App Tracking Transparency prompt only if the app tracks across apps   (Standard: apple-att)
+
+LEGAL
+14. Marketing and tracking consent separate, never pre-ticked   (Rule: gdpr-7)
+15. Age checks for apps with age limits   (Rule: coppa)
+
+ACCESS
+16. Slides work with VoiceOver and TalkBack (swipe and buttons)   (Standard: hig-accessibility)
+17. Animations respect reduced motion   (Standard: hig-accessibility)
+18. Text readable at large sizes; buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- hig-onboarding: https://developer.apple.com/design/human-interface-guidelines/onboarding
+- nng-onboarding: https://www.nngroup.com/articles/mobile-app-onboarding/
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- hig-sign-in-apple: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- webdev-permissions: https://web.dev/articles/permissions-best-practices
+- apple-att: https://developer.apple.com/documentation/apptrackingtransparency
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- coppa: https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

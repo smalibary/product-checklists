@@ -1,0 +1,48 @@
+﻿FEEDBACK (WEB APP) CHECKLIST: 19 items
+Ways for users to tell the team what is wrong or what they want: forms, ratings, bug reports and surveys.
+Backing: 3 Rule, 5 Standard, 5 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHERE AND WHEN
+ 1. A Feedback link always in the same place (help menu or footer)   (Standard: wcag-help)
+ 2. Short in-context asks after a task is done, not in the middle of one   (Research: nng-surveys)
+ 3. Not shown again soon after it was answered or dismissed   (Research: nng-surveys)
+ 4. Scores like NPS or CSAT asked rarely and only to people with enough use   (Research: nng-surveys)
+
+THE FORM
+ 5. Type of feedback first (bug, idea, question, praise)   (Practice)
+ 6. One open text box with a helpful prompt   (Practice)
+ 7. Optional screenshot, with a way to cover private parts   (Practice)
+ 8. Page, browser and app version attached automatically, shown to the person   (Rule: gdpr-13)
+ 9. Contact allowed? checkbox, off by default   (Rule: gdpr-7)
+10. Few required fields   (Research: baymard-fields)
+
+AFTER SENDING
+11. Thank-you message saying what happens next   (Standard: govuk-confirm)
+12. Bug reports get a reference and updates when fixed   (Practice)
+13. Public idea board with votes and status (planned, done), if used   (Practice)
+14. Close the loop: tell people when their request ships   (Practice)
+
+RESPECT
+15. Never block the app until feedback is given   (Research: nng-surveys)
+16. Personal data in feedback handled like any personal data   (Rule: gdpr-5)
+
+ACCESS
+17. The form is a dialog or page with labels and errors in words   (Standard: apg-dialog, wcag-labels, wcag-error)
+18. Rating scales are radio groups with words, not only stars or faces   (Standard: apg-radio, wcag-nontext)
+19. Thank-you message announced   (Standard: wcag-status)
+
+SOURCES
+- wcag-help: https://www.w3.org/WAI/WCAG22/Understanding/consistent-help
+- nng-surveys: https://www.nngroup.com/articles/qualitative-surveys/
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- apg-radio: https://www.w3.org/WAI/ARIA/apg/patterns/radio/
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages

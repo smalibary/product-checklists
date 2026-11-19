@@ -1,0 +1,43 @@
+﻿REFERRAL (MOBILE) CHECKLIST: 15 items
+Inviting others with a personal link or code, where both sides may get a reward.
+Backing: 2 Rule, 7 Standard, 0 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE OFFER
+ 1. What both sides get, in one line ("You both get 25 SAR")   (Practice)
+ 2. Conditions short and clear (when the reward comes, limits, expiry) with full terms linked   (Rule: ftc-endorsements)
+ 3. Reward shown in the person's currency   (Practice)
+
+SHARING
+ 4. Personal link and code, with Copy (and a confirmation)   (Practice)
+ 5. System share sheet so people choose the app themselves   (Standard: hig-share, android-sharesheet)
+ 6. Ready message they can edit; no messages sent without their action   (Standard: apple-review)
+ 7. Contacts access only if they choose "pick from contacts", with a reason   (Standard: hig-privacy, android-permissions)
+
+TRACKING
+ 8. List of invited people and the state of each (joined, rewarded)   (Practice)
+ 9. Total earned and where to use it   (Practice)
+
+STORE RULES
+10. Rewards in digital credits follow store payment rules   (Standard: apple-review, play-payments)
+11. No rewards for app reviews or ratings   (Standard: apple-review)
+
+FAIRNESS
+12. Fraud checks without blocking real users   (Practice)
+13. Referred person told they came through a referral   (Rule: ftc-endorsements)
+
+ACCESS
+14. Code readable by screen readers letter by letter   (Standard: hig-accessibility)
+15. Copy and share buttons named; at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- ftc-endorsements: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking
+- hig-share: https://developer.apple.com/design/human-interface-guidelines/activity-views
+- android-sharesheet: https://developer.android.com/training/sharing/send
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- android-permissions: https://developer.android.com/training/permissions/requesting
+- play-payments: https://support.google.com/googleplay/android-developer/answer/9858738
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

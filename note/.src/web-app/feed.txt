@@ -1,0 +1,27 @@
+title: Feed
+about: A stream of posts or updates from people and things the user follows.
+## Posts
+- Each post: author with photo and name, time, content, and actions (like, comment, share) | P
+- Long posts cut with "Show more" | P
+- Images and video sized before they load, so the feed does not jump | S webdev-cls
+- Video starts muted, with captions and controls | S wcag-captions wcag-audio
+- Links show a preview card | P
+## Order and control
+- Order explained (latest or recommended), with a choice of latest where possible | L eu-dsa
+- Why am I seeing this, on recommended posts | L eu-dsa
+- Hide, mute, unfollow and report from each post | L eu-dsa
+- Ads and sponsored posts labelled clearly | L ftc-endorsements eu-dsa
+## Loading
+- Infinite scroll keeps position on Back and has an end or a pause point | R nng-infinite
+- Footer still reachable (or links moved elsewhere) with infinite scroll | R nng-infinite
+- New posts shown as "5 new posts" button, not pushed in while reading | P
+- Skeleton posts while loading | R nng-skeleton
+- Empty feed suggests people or topics to follow | R nng-empty
+## Access
+- Feed pattern: each post an article, keyboard moves post to post | S apg-feed
+- Images have alt text, with a way for authors to add it | S wcag-nontext
+- Relative times also readable as exact times | P
+- Animations and auto-play respect reduced motion | S mdn-reduced-motion wcag-pause
+## Wellbeing
+- No autoplay of next videos without a way to stop | S wcag-pause
+- Teen accounts get safer defaults | L coppa eu-dsa

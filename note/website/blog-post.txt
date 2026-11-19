@@ -1,0 +1,58 @@
+﻿BLOG POST CHECKLIST: 25 items
+A single article page, built for reading, sharing and finding the next article.
+Backing: 3 Rule, 11 Standard, 6 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TOP OF THE ARTICLE
+ 1. Title as the only top-level heading   (Standard: wcag-headings)
+ 2. Author name with photo and a link to their page   (Research: nng-blog)
+ 3. Date published and date updated   (Research: nng-blog, google-article)
+ 4. Reading time   (Practice)
+ 5. A summary or key points for scanners   (Research: nng-scanning)
+
+READING
+ 6. Body text at least 16 pixels, line height about 1.5   (Standard: wcag-spacing)
+ 7. Lines of about 50 to 75 characters   (Practice: butterick-line)
+ 8. Headings every few paragraphs, in order   (Standard: wcag-headings)
+ 9. Short paragraphs, lists and bold key words   (Research: nng-scanning)
+10. A contents list for long posts, with jump links   (Practice)
+11. Links say where they go   (Standard: wcag-link)
+12. Images with alt text and captions; charts also described in words   (Standard: wcag-nontext)
+13. Code blocks scroll on their own on phones, never the whole page   (Standard: wcag-reflow)
+14. Text resizes to 200% without breaking   (Standard: wcag-resize)
+15. Dark mode respected if the site has one   (Practice: mdn-color-scheme)
+
+AROUND THE ARTICLE
+16. Share buttons that are links, not heavy trackers   (Practice)
+17. Related posts at the end   (Research: nng-blog)
+18. A sign-up for new posts, with consent rules   (Rule: gdpr-7)
+19. Category and tags linking to more   (Research: nng-blog)
+20. Comments, if any, moderated   (Rule: eu-dsa)
+
+SEARCH AND SPEED
+21. Article structured data: headline, author, dates, image   (Standard: google-article)
+22. A unique title and description   (Standard: google-title, google-snippet)
+23. Breadcrumbs for deep sites   (Standard: google-breadcrumb)
+24. Images sized and lazy-loaded; the page does not jump   (Standard: webdev-images, webdev-cls)
+25. Sponsored or affiliate links disclosed   (Rule: ftc-endorsements)
+
+SOURCES
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- nng-blog: https://www.nngroup.com/articles/weblog-usability-top-ten-mistakes/
+- google-article: https://developers.google.com/search/docs/appearance/structured-data/article
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- wcag-spacing: https://www.w3.org/WAI/WCAG22/Understanding/text-spacing
+- butterick-line: https://practicaltypography.com/line-length.html
+- wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-resize: https://www.w3.org/WAI/WCAG22/Understanding/resize-text
+- mdn-color-scheme: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- eu-dsa: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
+- google-title: https://developers.google.com/search/docs/appearance/title-link
+- google-snippet: https://developers.google.com/search/docs/appearance/snippet
+- google-breadcrumb: https://developers.google.com/search/docs/appearance/structured-data/breadcrumb
+- webdev-images: https://web.dev/learn/images
+- webdev-cls: https://web.dev/articles/cls
+- ftc-endorsements: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking

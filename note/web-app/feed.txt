@@ -1,0 +1,49 @@
+﻿FEED CHECKLIST: 20 items
+A stream of posts or updates from people and things the user follows.
+Backing: 5 Rule, 6 Standard, 4 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+POSTS
+ 1. Each post: author with photo and name, time, content, and actions (like, comment, share)   (Practice)
+ 2. Long posts cut with "Show more"   (Practice)
+ 3. Images and video sized before they load, so the feed does not jump   (Standard: webdev-cls)
+ 4. Video starts muted, with captions and controls   (Standard: wcag-captions, wcag-audio)
+ 5. Links show a preview card   (Practice)
+
+ORDER AND CONTROL
+ 6. Order explained (latest or recommended), with a choice of latest where possible   (Rule: eu-dsa)
+ 7. Why am I seeing this, on recommended posts   (Rule: eu-dsa)
+ 8. Hide, mute, unfollow and report from each post   (Rule: eu-dsa)
+ 9. Ads and sponsored posts labelled clearly   (Rule: ftc-endorsements, eu-dsa)
+
+LOADING
+10. Infinite scroll keeps position on Back and has an end or a pause point   (Research: nng-infinite)
+11. Footer still reachable (or links moved elsewhere) with infinite scroll   (Research: nng-infinite)
+12. New posts shown as "5 new posts" button, not pushed in while reading   (Practice)
+13. Skeleton posts while loading   (Research: nng-skeleton)
+14. Empty feed suggests people or topics to follow   (Research: nng-empty)
+
+ACCESS
+15. Feed pattern: each post an article, keyboard moves post to post   (Standard: apg-feed)
+16. Images have alt text, with a way for authors to add it   (Standard: wcag-nontext)
+17. Relative times also readable as exact times   (Practice)
+18. Animations and auto-play respect reduced motion   (Standard: mdn-reduced-motion, wcag-pause)
+
+WELLBEING
+19. No autoplay of next videos without a way to stop   (Standard: wcag-pause)
+20. Teen accounts get safer defaults   (Rule: coppa, eu-dsa)
+
+SOURCES
+- webdev-cls: https://web.dev/articles/cls
+- wcag-captions: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded
+- wcag-audio: https://www.w3.org/WAI/WCAG22/Understanding/audio-control
+- eu-dsa: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
+- ftc-endorsements: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking
+- nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- apg-feed: https://www.w3.org/WAI/ARIA/apg/patterns/feed/
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- coppa: https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions

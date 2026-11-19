@@ -1,0 +1,55 @@
+﻿UPGRADE (WEB APP) CHECKLIST: 21 items
+The moment and screen where a signed-in user moves to a bigger plan.
+Backing: 6 Rule, 4 Standard, 4 Research, 7 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO OFFER IT
+ 1. At the moment of need: when a limit is hit or a paid feature is tried   (Practice)
+ 2. Say which limit was hit and what the upgrade unlocks   (Research: nng-heuristics)
+ 3. Not on every screen; never block work already done   (Research: nng-control)
+ 4. Admins see the offer; members get "Ask your admin" with a one-click request   (Practice)
+
+THE SCREEN
+ 5. Current plan and the suggested plan side by side   (Research: nng-comparison)
+ 6. The exact price, billing period and tax, in the account's currency   (Rule: eu-consumer-rights, ftc-junk-fees)
+ 7. What is charged today (prorated amount) and on the next bill   (Rule: ftc-negative-option)
+ 8. When the new features start (now)   (Practice)
+ 9. Seats or usage that change the price, with a running total   (Practice)
+10. Saved payment method shown, with a way to change it   (Practice)
+
+PAYING
+11. One confirm button that names the action and the amount ("Pay 120 SAR and upgrade")   (Standard: wcag-prevent)
+12. Strong customer authentication (3-D Secure) handled inside the flow where cards need it   (Rule: psd2-sca, stripe-3ds)
+13. Busy state on the button; no double charge on double click   (Practice)
+14. Card details through a PCI-certified provider   (Standard: pci-dss)
+
+AFTER
+15. Success screen and email receipt   (Research: govuk-confirm)
+16. New features visible at once, with a short pointer to them   (Practice)
+17. Downgrade and cancel paths as easy to find as the upgrade   (Rule: ftc-negative-option)
+
+HONESTY
+18. No pre-ticked add-ons or hidden recurring charges   (Rule: ftc-dark-patterns)
+19. Trial-to-paid terms stated before the card is taken   (Rule: ftc-negative-option)
+
+ACCESS
+20. Focus moves to the dialog and back; Escape closes it   (Standard: apg-dialog)
+21. Contrast, keyboard and phone width meet WCAG   (Standard: wcag-contrast, wcag-keyboard, wcag-reflow)
+
+SOURCES
+- nng-heuristics: https://www.nngroup.com/articles/ten-usability-heuristics/
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- nng-comparison: https://www.nngroup.com/articles/comparison-tables/
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
+- psd2-sca: https://www.ecb.europa.eu/press/intro/mip-online/2018/html/1803_revisedpsd.en.html
+- stripe-3ds: https://docs.stripe.com/payments/3d-secure
+- pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

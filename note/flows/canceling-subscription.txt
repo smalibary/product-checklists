@@ -1,0 +1,43 @@
+﻿CANCELING SUBSCRIPTION (FLOW) CHECKLIST: 16 items
+Stopping a paid plan, from finding the option to confirmation.
+Backing: 10 Rule, 4 Standard, 1 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FINDING IT
+ 1. "Cancel subscription" easy to find in billing or account settings   (Rule: ftc-negative-option)
+ 2. Cancel online if you could sign up online; no phone call required   (Rule: ftc-negative-option)
+ 3. In store-bought plans, link to the store's subscription page   (Standard: apple-subscriptions, play-subscriptions)
+
+THE STEPS
+ 4. As few steps as signing up   (Rule: ftc-negative-option)
+ 5. One optional offer (pause, cheaper plan, discount) is fine; repeated offers or guilt wording are not   (Rule: ftc-dark-patterns)
+ 6. Optional short "why are you leaving" with skip   (Research: nng-surveys)
+ 7. Buttons say what they do ("Cancel subscription", "Keep my plan"), neither hidden   (Rule: ftc-dark-patterns)
+
+WHAT HAPPENS
+ 8. Access until the end of the paid period, with the date   (Standard: apple-subscriptions)
+ 9. What is lost and whether data is kept, and for how long   (Rule: gdpr-13)
+10. Refund rules if any   (Rule: eu-consumer-rights)
+
+CONFIRMATION
+11. Confirmation screen and email with the end date   (Rule: ftc-negative-option)
+12. Easy way to come back (resubscribe)   (Practice)
+
+RULES NOTE
+13. The FTC's 2024 click-to-cancel rule was struck down by a US court in 2025; the older negative-option rules and state laws still apply   (Rule: ftc-negative-option)
+14. EU and UK consumer rules also require easy cancelling   (Rule: eu-consumer-rights)
+
+ACCESS
+15. Every step works by keyboard and screen reader   (Standard: wcag-keyboard)
+16. No timed offers that pressure   (Standard: wcag-timing)
+
+SOURCES
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- apple-subscriptions: https://developer.apple.com/app-store/subscriptions/
+- play-subscriptions: https://support.google.com/googleplay/android-developer/answer/9900533
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- nng-surveys: https://www.nngroup.com/articles/qualitative-surveys/
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable

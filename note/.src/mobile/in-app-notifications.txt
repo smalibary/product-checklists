@@ -1,0 +1,24 @@
+title: In-App Notifications
+about: Messages shown inside the phone app while it is open: a notifications list, banners at the top, and badges.
+## The list
+- A notifications screen reached from a bell or a tab, newest first | P
+- Each item: who, what, when, with a photo or icon | P
+- Unread marked by a dot and bold, not only colour | S wcag-color
+- Tap opens the right screen and marks it read | P
+- Swipe to delete or mark read, with buttons too | R nng-swipe wcag-dragging
+- Mark all as read | P
+- Empty state: "You're all caught up" | R nng-empty
+## Banners while the app is open
+- A short banner at the top for important new things, which goes away by itself | S hig-notifications
+- Does not cover the main action or the keyboard | P
+- Tap opens it; swipe up dismisses | S hig-gestures
+- Not shown for the conversation the person is already in | P
+## Volume and control
+- Similar items combined ("Sara and 3 others liked...") | R nng-notifications
+- Settings to choose topics, reachable from the list | R nng-notifications
+- App icon badge count matches the unread count | S hig-notifications
+## Access
+- New banners announced by VoiceOver and TalkBack without moving focus | S hig-accessibility
+- Banners stay long enough to read, or can be found again in the list | S wcag-timing
+- Items readable with large text | S hig-accessibility
+- Targets at least 44 pt / 48 dp | S hig-layout m3-layout

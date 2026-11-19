@@ -1,0 +1,47 @@
+﻿UPGRADE (MOBILE) CHECKLIST: 17 items
+Moving from free to paid, or from one plan to a higher one, inside a phone app.
+Backing: 4 Rule, 7 Standard, 2 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+MOMENTS
+ 1. Offer the upgrade when the person reaches a limit or a paid feature, saying what it unlocks   (Practice)
+ 2. A lock icon on paid features, with a short reason on tap   (Practice)
+ 3. Not interrupting a task in the middle   (Research: nng-modal)
+
+PLAN SCREEN
+ 4. Current plan marked; higher plans with what is added   (Practice)
+ 5. Prices with period and currency from the store   (Standard: apple-subscriptions, play-subscriptions)
+ 6. Yearly saving shown honestly   (Rule: eu-omnibus)
+ 7. Free trial terms clear (length, price after, first charge date)   (Rule: ftc-negative-option, apple-subscriptions)
+
+BUYING
+ 8. Through Apple or Google in-app purchase for digital features (with regional exceptions)   (Standard: apple-review, play-payments)
+ 9. Upgrade within a subscription group takes effect at once on iOS; downgrade at renewal   (Standard: apple-subscriptions)
+10. Google Play replacement modes (charge now, prorate) chosen on purpose   (Standard: play-subscriptions)
+
+AFTER
+11. Unlocked features available at once with a thank-you   (Practice)
+12. Show what is new and where to find it   (Research: nng-onboarding)
+13. Restore purchases for other devices   (Standard: apple-review)
+
+RESPECT
+14. Easy to close; no repeated offers right after "No thanks"   (Rule: ftc-dark-patterns)
+15. Downgrade and cancel explained in settings   (Rule: ftc-negative-option)
+
+ACCESS
+16. Price and plan names read clearly   (Standard: hig-accessibility)
+17. Large text supported; buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- nng-modal: https://www.nngroup.com/articles/modal-nonmodal-dialog/
+- apple-subscriptions: https://developer.apple.com/app-store/subscriptions/
+- play-subscriptions: https://support.google.com/googleplay/android-developer/answer/9900533
+- eu-omnibus: https://commission.europa.eu/law/law-topic/consumer-protection-law/review-eu-consumer-law_en
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- play-payments: https://support.google.com/googleplay/android-developer/answer/9858738
+- nng-onboarding: https://www.nngroup.com/articles/mobile-app-onboarding/
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

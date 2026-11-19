@@ -1,0 +1,43 @@
+﻿ONBOARDING (WEB APP) CHECKLIST: 18 items
+The first minutes in the app after sign-up, getting the person to their first real success.
+Backing: 1 Rule, 4 Standard, 7 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SHAPE
+ 1. Lead to the first useful result fast ("aha moment"), not a tour of every feature   (Research: nng-onboarding)
+ 2. Ask a few setup questions only if the answers change what they see   (Practice)
+ 3. Each question skippable, with a sensible default   (Research: nng-onboarding)
+ 4. A progress indicator for multi-step setup   (Research: nng-progress)
+ 5. A checklist of first tasks that ticks itself as they are done   (Practice)
+
+HELP ALONG THE WAY
+ 6. Hints at the moment a feature is first used, not all at once   (Research: nng-onboarding)
+ 7. Tours short (3 to 5 steps), skippable, and restartable from help   (Research: nng-onboarding)
+ 8. Templates or sample data to start from, easy to delete   (Practice)
+ 9. Empty states that teach (see the Empty State note)   (Research: nng-empty)
+
+TEAM PRODUCTS
+10. Invite teammates offered after the person has done something useful   (Practice)
+11. Import from other tools (CSV, competitors) offered early   (Practice)
+
+RESPECT
+12. No forced long tutorials or video before use   (Research: nng-onboarding)
+13. Permissions (notifications, location) asked only when needed, with why   (Standard: webdev-permissions)
+14. Marketing consent separate from setup   (Rule: gdpr-7)
+15. Onboarding state saved, so leaving and coming back continues where they were   (Practice)
+
+ACCESS
+16. Tour popovers reachable by keyboard, with focus moved in and back out   (Standard: apg-dialog, wcag-focus-order)
+17. Tour highlights do not hide the focused element   (Standard: wcag-obscured)
+18. Animations respect reduced motion   (Standard: mdn-reduced-motion)
+
+SOURCES
+- nng-onboarding: https://www.nngroup.com/articles/mobile-app-onboarding/
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- webdev-permissions: https://web.dev/articles/permissions-best-practices
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
+- wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
+- wcag-obscured: https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion

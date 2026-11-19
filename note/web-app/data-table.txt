@@ -1,0 +1,54 @@
+﻿DATA TABLE CHECKLIST: 24 items
+A table of many records that people scan, compare, sort, filter and act on.
+Backing: 0 Rule, 9 Standard, 11 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STRUCTURE
+ 1. Real table markup with column headers (and row headers where one column names the row)   (Standard: wai-tables, wcag-info)
+ 2. A caption or heading that names the table   (Standard: wai-tables)
+ 3. Numbers right-aligned, text left-aligned, same decimals in a column   (Research: nng-tables)
+ 4. Units in the header, not in every cell   (Research: nng-tables)
+ 5. Header row stays visible while scrolling; first column too on wide tables   (Research: nng-tables)
+ 6. Row height choice (compact, comfortable)   (Research: nng-tables)
+
+FINDING
+ 7. Sort by clicking a header, with the direction shown and announced (aria-sort)   (Standard: apg-table)
+ 8. Filters above the table, with active filters shown as removable chips   (Research: nng-filters)
+ 9. Search within the table   (Research: nng-tables)
+10. Pagination or virtual scrolling for large sets, with the total count   (Research: nng-infinite)
+11. Choose, reorder and resize columns; the choice is remembered   (Research: nng-tables)
+
+ACTING
+12. Select rows with checkboxes, select all on page and select all results   (Research: nng-tables)
+13. Bulk action bar appears with the count selected   (Practice)
+14. Row actions in a menu at the end of the row, also reachable by keyboard   (Standard: apg-menubutton)
+15. Clicking a row opens the item; the row is a link or has one   (Practice)
+16. Inline edit only for quick fields, with save and cancel   (Practice)
+17. Export to CSV or Excel   (Practice)
+
+STATES
+18. Loading rows as skeletons   (Research: nng-skeleton)
+19. Empty and no-results states with next steps   (Research: nng-empty)
+20. Errors per row (failed to save) next to the row   (Standard: wcag-error)
+
+ACCESS
+21. Keyboard moves through cells if the table is interactive (grid pattern)   (Standard: apg-grid)
+22. Status in words, not only colour   (Standard: wcag-color)
+23. On phones: scroll the table sideways inside its box, or show cards   (Standard: wcag-reflow)
+24. Zebra stripes or row lines keep contrast   (Standard: wcag-ui-contrast)
+
+SOURCES
+- wai-tables: https://www.w3.org/WAI/tutorials/tables/
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- nng-tables: https://www.nngroup.com/articles/data-tables/
+- apg-table: https://www.w3.org/WAI/ARIA/apg/patterns/table/
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
+- apg-menubutton: https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- apg-grid: https://www.w3.org/WAI/ARIA/apg/patterns/grid/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast

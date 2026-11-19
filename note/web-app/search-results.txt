@@ -1,0 +1,56 @@
+﻿SEARCH RESULTS (WEB APP) CHECKLIST: 23 items
+The page that lists what matches a search inside the app, across one or many kinds of items.
+Backing: 0 Rule, 7 Standard, 12 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE SEARCH BOX
+ 1. The search box stays at the top with the words typed still in it   (Research: nng-search)
+ 2. Suggestions and recent searches while typing   (Research: baymard-autocomplete)
+ 3. A keyboard shortcut opens search (often / or Ctrl+K)   (Practice)
+ 4. The search box has a label and a search role   (Standard: apg-landmarks, wcag-labels)
+
+RESULTS
+ 5. Number of results shown   (Research: nng-search)
+ 6. Grouped by type (people, files, tasks), with a count per group   (Practice)
+ 7. Each result shows its type, title, where it lives and a snippet with the matched words marked   (Research: nng-search)
+ 8. Matched words marked in more ways than colour (bold too)   (Standard: wcag-color)
+ 9. Best match first; the order can be changed (relevance, newest)   (Research: nng-search)
+10. Results the person cannot open are not shown   (Standard: owasp-authz)
+
+NARROWING
+11. Filters for type, owner, date and status, with a count per choice   (Research: nng-filters, baymard-filters)
+12. Active filters shown as chips with remove   (Research: nng-filters)
+13. Search terms and filters kept in the address, so results can be shared   (Practice)
+
+NO RESULTS
+14. Say so, show the words searched for, suggest spelling fixes   (Research: nng-empty)
+15. Offer to clear filters or search everywhere   (Research: nng-empty)
+16. Forgives typos and common synonyms   (Research: baymard-autocomplete)
+
+BEHAVIOUR
+17. Results update as filters change, and the count is announced   (Standard: wcag-status)
+18. Back returns to the same results and scroll position   (Practice)
+19. Pagination or "Load more" with the total   (Research: nng-infinite)
+20. Fast; a loading state if it takes over a second   (Research: nng-response)
+
+ACCESS
+21. Results are a list with headings or links that read well alone   (Standard: wcag-link)
+22. Keyboard moves through results   (Standard: wcag-keyboard)
+23. Works at phone width   (Standard: wcag-reflow)
+
+SOURCES
+- nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
+- baymard-autocomplete: https://baymard.com/blog/autocomplete-design
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- baymard-filters: https://baymard.com/blog/allow-applying-of-multiple-filter-values
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
+- nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/
+- wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

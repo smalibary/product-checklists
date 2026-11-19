@@ -1,0 +1,39 @@
+﻿ONBOARDING CHECKLIST CHECKLIST: 15 items
+A short list of first tasks in a new account (add photo, invite a friend, turn on alerts) that ticks off as they are done.
+Backing: 0 Rule, 4 Standard, 6 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. 3 to 6 tasks that lead to real value, most important first   (Research: nng-onboarding)
+ 2. Each task: short name, why it helps, and a button that goes straight to it   (Research: nng-onboarding)
+ 3. One task can already be done to start ("Account created")   (Research: nng-progress)
+ 4. Time to do each task, if more than a minute   (Practice)
+
+PROGRESS
+ 5. "2 of 5 done" with a bar   (Research: nng-progress)
+ 6. Tasks tick themselves when done anywhere in the app   (Practice)
+ 7. A small reward or message at the end, then the checklist goes away   (Practice)
+
+PLACEMENT
+ 8. On the home screen as a card, can be collapsed   (Practice)
+ 9. Can be hidden or skipped; reachable again from settings or help   (Research: nng-onboarding)
+10. Never blocks using the app   (Research: nng-onboarding)
+
+PERMISSIONS IN THE LIST
+11. Notifications, contacts or location tasks open a pre-permission screen first   (Standard: hig-privacy, webdev-permissions)
+12. Saying no does not leave the checklist stuck: the task can be skipped   (Practice)
+
+ACCESS
+13. Progress announced in words   (Standard: wcag-status)
+14. Done shown by tick and word, not only colour   (Standard: wcag-color)
+15. Rows at least 44 pt / 48 dp; large text supported   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- nng-onboarding: https://www.nngroup.com/articles/mobile-app-onboarding/
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- webdev-permissions: https://web.dev/articles/permissions-best-practices
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

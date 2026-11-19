@@ -1,0 +1,40 @@
+﻿VERSION HISTORY CHECKLIST: 18 items
+The list of saved versions of a document or item, so people can see changes and go back.
+Backing: 0 Rule, 5 Standard, 3 Research, 10 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE LIST
+ 1. Versions newest first, with date, time and who made them   (Practice)
+ 2. Automatic versions grouped (by hour or session); named versions stand out   (Practice)
+ 3. Name a version ("Sent to client")   (Practice)
+ 4. Current version marked   (Practice)
+
+SEEING CHANGES
+ 5. Open any version read-only   (Practice)
+ 6. Compare two versions with added and removed parts marked   (Practice)
+ 7. Changes marked by more than colour (underline, strike-through, labels)   (Standard: wcag-color)
+ 8. Who made each change, by colour plus name   (Standard: wcag-color)
+
+GOING BACK
+ 9. Restore a version, which saves the current one as a new version first (nothing lost)   (Research: nng-control)
+10. Copy a part from an old version without restoring all   (Practice)
+11. Make a copy from an old version   (Practice)
+12. Confirm restore with the date and author named   (Research: nng-confirm)
+
+RULES
+13. How long versions are kept, per plan   (Practice)
+14. Who can see and restore versions follows edit rights   (Standard: owasp-authz)
+15. Deleted items can be restored for a stated time   (Research: nng-control)
+
+ACCESS
+16. History panel opens as a side panel with focus moved in   (Standard: apg-dialog)
+17. The list works by keyboard   (Standard: wcag-keyboard)
+18. Dates readable by screen readers   (Practice)
+
+SOURCES
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

@@ -1,0 +1,25 @@
+title: Onboarding (web app)
+about: The first minutes in the app after sign-up, getting the person to their first real success.
+## Shape
+- Lead to the first useful result fast ("aha moment"), not a tour of every feature | R nng-onboarding
+- Ask a few setup questions only if the answers change what they see | P
+- Each question skippable, with a sensible default | R nng-onboarding
+- A progress indicator for multi-step setup | R nng-progress
+- A checklist of first tasks that ticks itself as they are done | P
+## Help along the way
+- Hints at the moment a feature is first used, not all at once | R nng-onboarding
+- Tours short (3 to 5 steps), skippable, and restartable from help | R nng-onboarding
+- Templates or sample data to start from, easy to delete | P
+- Empty states that teach (see the Empty State note) | R nng-empty
+## Team products
+- Invite teammates offered after the person has done something useful | P
+- Import from other tools (CSV, competitors) offered early | P
+## Respect
+- No forced long tutorials or video before use | R nng-onboarding
+- Permissions (notifications, location) asked only when needed, with why | S webdev-permissions
+- Marketing consent separate from setup | L gdpr-7
+- Onboarding state saved, so leaving and coming back continues where they were | P
+## Access
+- Tour popovers reachable by keyboard, with focus moved in and back out | S apg-dialog wcag-focus-order
+- Tour highlights do not hide the focused element | S wcag-obscured
+- Animations respect reduced motion | S mdn-reduced-motion

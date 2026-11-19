@@ -1,0 +1,53 @@
+﻿CAREERS PAGE CHECKLIST: 20 items
+Shows open jobs and what it is like to work at the company, and takes applications.
+Backing: 3 Rule, 5 Standard, 11 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+JOBS LIST
+ 1. Open jobs listed with title, team, place (or remote) and type (full time, contract)   (Research: nng-careers)
+ 2. Filters by team, place and type when there are many   (Research: nng-careers)
+ 3. Each job has its own page and address that can be shared   (Research: nng-careers)
+ 4. Closed jobs removed promptly   (Research: nng-careers)
+
+JOB PAGE
+ 5. What the job is, what the person will do in the first months, and must-have versus nice-to-have skills   (Research: nng-careers)
+ 6. Pay range where the law asks for it (many US states, EU from 2026)   (Rule: eu-pay-transparency)
+ 7. Benefits, working hours and leave   (Research: nng-careers)
+ 8. Hiring steps and how long they take   (Research: nng-careers)
+ 9. Job structured data so the post appears in job search   (Standard: google-jobs)
+
+APPLYING
+10. A short form; upload a CV instead of retyping it   (Research: baymard-fields)
+11. No account needed to apply   (Research: nng-login-walls)
+12. File upload accepts common types with size limits stated   (Standard: govuk-file-upload, owasp-upload)
+13. Labels, errors and autofill work   (Standard: wcag-labels, wcag-error, mdn-autocomplete)
+14. What happens to the applicant's data and for how long it is kept   (Rule: gdpr-13)
+15. Confirmation on screen and by email   (Research: govuk-confirm)
+
+CULTURE
+16. Real photos and words from staff, with permission   (Research: nng-trust)
+17. Values, diversity and accessibility commitments, with facts   (Practice)
+18. Adjustments offered for applicants with disabilities   (Rule: ada-web)
+
+ACCESS
+19. Works at phone width   (Standard: wcag-reflow)
+20. Headings and contrast meet WCAG   (Standard: wcag-headings, wcag-contrast)
+
+SOURCES
+- nng-careers: https://www.nngroup.com/topic/corporate-websites/
+- eu-pay-transparency: https://eur-lex.europa.eu/eli/dir/2023/970/oj
+- google-jobs: https://developers.google.com/search/docs/appearance/structured-data/job-posting
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- nng-login-walls: https://www.nngroup.com/articles/login-walls/
+- govuk-file-upload: https://design-system.service.gov.uk/components/file-upload/
+- owasp-upload: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- nng-trust: https://www.nngroup.com/articles/trustworthy-design/
+- ada-web: https://www.ada.gov/resources/web-guidance/
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

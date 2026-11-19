@@ -1,0 +1,25 @@
+title: Radio
+about: A group of round buttons where people choose exactly one option.
+## When to use
+- One choice from a short list (2 to about 7) where seeing all options helps | S govuk-radios
+- Longer lists: a select or a combobox | R nng-dropdown
+- Two options that mean on and off: a switch or one checkbox may be clearer | R nng-toggle
+## Look
+- Circles on the start side of their labels; labels clickable | S govuk-radios
+- Selected state clear by more than colour (filled dot) | S wcag-color
+- Circle border 3:1 contrast | S wcag-ui-contrast
+- Vertical list for most cases; side by side only for two short options | S govuk-radios
+- Touch area at least 24 px, ideally 44 | S wcag-target
+## Content
+- Group has a question as its legend | S govuk-radios
+- Options short, in a logical order, not overlapping | R nng-checkboxes
+- Hint text under an option when needed | S govuk-radios
+- Conditional questions revealed under the chosen option, kept short | S govuk-radios
+## Default
+- Pre-select a default only when it is safe and most people want it | R nng-checkboxes
+- No default when the choice has consequences | S govuk-radios
+## Access
+- Native radio inputs with the same name, in a fieldset with legend | S govuk-radios
+- Or role radiogroup and radio, with aria-checked | S apg-radio
+- Arrow keys move and select within the group; Tab leaves the group | S apg-radio
+- Error on the group, linked from the error summary | S govuk-error-message

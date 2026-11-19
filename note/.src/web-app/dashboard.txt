@@ -1,0 +1,27 @@
+title: Dashboard (web app)
+about: The overview screen that shows the state of things at a glance and points to what needs attention.
+## Purpose
+- Built for one audience and its questions (an operator watches, a manager reviews) | R nng-dashboards
+- The few numbers that matter most at the top, largest | R nng-dashboards
+- Things needing action (overdue, failing, waiting on me) shown clearly | R nng-dashboards
+- Every card links to the detail behind it | R nng-dashboards
+## Numbers and charts
+- Each number with its period, a comparison and a direction | R nng-dashboards
+- Up and down shown by arrow and word, not only green and red | S wcag-color
+- Simple charts: lines for trends, bars for comparison | R nng-dashboards
+- Units and time zone stated; when the data was last updated | R nng-status
+- Charts have exact values on hover and on keyboard focus | S wcag-hover
+## Layout
+- A grid that reflows on smaller screens, in a sensible reading order | S wcag-reflow wcag-meaningful-sequence
+- Cards the same style and spacing | R nng-cards
+- Date range and filters apply to all cards, shown at the top | R nng-filters
+- Optional: choose, hide and reorder cards; the layout is remembered | P
+## States
+- Skeleton cards while loading, each card loading on its own | R nng-skeleton
+- New account with no data: an empty state that helps set up | R nng-empty
+- A card that fails shows its own error and Retry; the rest still work | R nng-errors
+- Live numbers update without jumping the layout | S webdev-cls
+## Access
+- Cards have headings; screen readers can jump between them | S wcag-headings
+- Charts have a text summary or a table | S wcag-nontext
+- Auto-refresh can be paused; motion respects reduced motion | S wcag-pause mdn-reduced-motion

@@ -1,0 +1,20 @@
+title: 404 page
+about: The page shown when an address does not exist; its job is to get the visitor back on track.
+## Message
+- Plain words: "We cannot find that page", without the word "404" as the headline | R nng-404 govuk-404
+- A short reason: the address may be mistyped, or the page moved | R nng-404 govuk-404
+- No blame on the visitor | R nng-errors
+- Calm humour only if it does not hide the message | R nng-404
+## Ways forward
+- A search box | R nng-404
+- Links to the home page and the most used pages | R nng-404
+- A contact link to report a broken link | R nng-404 govuk-404
+- The site's normal header and footer so navigation still works | R nng-404
+## Technical
+- Returns the status 404 (or 410 for gone forever), not 200 | S google-404
+- Moved pages redirect (301) to their new home instead of showing a 404 | S google-404
+- Broken links found in logs and fixed | P
+- The page title says "Page not found" with the site name | S wcag-title
+## Access
+- One main heading, contrast and phone width meet WCAG | S wcag-headings wcag-contrast wcag-reflow
+- Images or illustrations have alt text or are hidden if decorative | S wcag-nontext

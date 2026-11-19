@@ -1,0 +1,33 @@
+title: 2FA (two-step sign-in)
+about: Setting up and using a second check at sign-in (an app code, a security key, a passkey or a text code).
+## Choosing a method
+- Offer the strongest first: passkey or security key, then an authenticator app, then text or email codes | S nist-63b-auth owasp-mfa
+- Explain each method in one line, with what the person needs (a phone, a key) | P
+- Text-message codes allowed only as a fallback; they can be stolen by SIM swap | S nist-63b-auth owasp-mfa
+- More than one method can be added, so losing one is not the end | S owasp-mfa
+## Setting up an authenticator app
+- QR code plus the key as text for people who cannot scan | S rfc-totp wcag-nontext
+- Key shown in groups of 4 characters with a copy button | P
+- Ask for one code to confirm it works before turning it on | S owasp-mfa
+- Name the account so it shows clearly in the app (site name and email) | S rfc-totp
+## Recovery codes
+- Recovery codes shown once, with download, copy and print | S owasp-mfa
+- Ask the person to confirm they saved them | P
+- Each code works once; a way to make new ones (old ones stop) | S owasp-mfa
+## Entering a code at sign-in
+- One field for the whole code, not one box per digit | S webdev-otp
+- autocomplete one-time-code and a number keyboard | S webdev-otp mdn-autocomplete
+- Paste works | S wcag-auth
+- Codes accepted for a short window either side to allow clock drift | S rfc-totp
+- "Remember this device for 30 days" choice | P
+- Other method link ("Use a recovery code instead") | S owasp-mfa
+- Limited tries, then slow down | S owasp-mfa
+## Managing
+- Turning 2FA off or changing it asks for the password or a code again | S owasp-mfa
+- Email sent when 2FA is turned on, off or changed | S owasp-mfa
+- Admins can require 2FA for everyone in a workspace | P
+- Lost-everything recovery through support with identity checks | S owasp-mfa
+## Access
+- Codes can be typed without time pressure, or the time can be extended | S wcag-timing
+- Errors in words next to the field | S wcag-error
+- Copying a code from an app is allowed (no cognitive test) | S wcag-auth

@@ -1,0 +1,46 @@
+﻿ACTIVITY FEED (MOBILE) CHECKLIST: 18 items
+A scrolling list of updates in a phone app: posts, events, or what people and things did.
+Backing: 1 Rule, 6 Standard, 4 Research, 7 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ITEMS
+ 1. Each: who, what, when, with photo or icon and a short preview   (Practice)
+ 2. Times as "5 min ago" with the full date on tap or for screen readers   (Practice)
+ 3. Similar events grouped ("Sara and 4 others...")   (Research: nng-notifications)
+ 4. Tap opens the full item   (Practice)
+
+LOADING
+ 5. Newest first; "New posts" pill at the top instead of jumping the list   (Research: nng-infinite)
+ 6. Pull to refresh   (Standard: hig-loading)
+ 7. Endless scroll with a loading row; position kept when coming back   (Research: nng-infinite)
+ 8. Skeleton rows on first load   (Research: nng-skeleton)
+ 9. Images loaded small first, videos play muted only when visible, if at all   (Standard: hig-accessibility)
+
+CONTROL
+10. Filters (all, mentions, following) as tabs or chips   (Practice)
+11. Hide, mute, or report an item from its menu   (Standard: apple-review)
+12. Chronological option where the order is ranked   (Practice)
+
+HEALTHY USE
+13. No tricks to keep scrolling (fake new items, autoplay chains)   (Rule: ftc-dark-patterns)
+14. "You're all caught up" at the end of new items   (Practice)
+
+OFFLINE
+15. Cached items shown with a notice   (Practice)
+
+ACCESS
+16. Each item a single readable unit with actions as custom actions   (Standard: hig-accessibility)
+17. Autoplay can be turned off; reduced motion respected   (Standard: wcag-pause)
+18. Large text supported; targets at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- nng-notifications: https://www.nngroup.com/articles/push-notification/
+- nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
+- hig-loading: https://developer.apple.com/design/human-interface-guidelines/loading
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

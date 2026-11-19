@@ -1,0 +1,25 @@
+title: Contacting support (flow)
+about: Getting help from a person or a bot, from the first question to an answer.
+## Finding help
+- Help link in the same place on every page | S wcag-consistent-help
+- Search help articles first, but never hide the way to a person | R nng-help
+- Ways shown with response times (chat now, email in 24 hours) | R nng-contact
+## Asking
+- Choose a topic, then a short form | P
+- Account details and the page they came from attached automatically, with notice | L gdpr-13
+- Attach screenshots | P
+- Suggested articles as they type, without blocking sending | R nng-help
+## Chat and bots
+- Bot says it is a bot | L eu-ai-act
+- "Talk to a person" always available | R nng-chatbots
+- Chat history kept, transcript by email | P
+- Works when the person leaves and comes back | P
+## After sending
+- Confirmation with a ticket number and when to expect a reply | S govuk-confirm
+- Replies by email and in the app, threaded | P
+- Status of open requests | P
+- Rating after it is solved, short and optional | R nng-surveys
+## Access
+- Chat works with screen readers and keyboard; new messages announced | S wcag-status wcag-keyboard
+- Phone not the only way | S wcag-consistent-help
+- No time-outs that lose a typed message | S wcag-timing

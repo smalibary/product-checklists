@@ -1,0 +1,25 @@
+title: Camera
+about: Taking photos, videos or scanning (documents, QR codes) inside a phone app.
+## Permission
+- Ask for camera access only when the person taps to use it | S hig-privacy android-permissions
+- A clear purpose string ("To scan your receipt") | S apple-usage
+- If refused: explain and offer a button to settings, plus another way (pick from photos, type the code) | S android-permissions
+- Use the system photo picker to choose photos without asking for full library access | S hig-privacy android-photo-picker
+## Capture screen
+- Large shutter button reachable by thumb | S hig-camera
+- Flash, switch camera and close buttons with names | S hig-accessibility
+- Guides for scanning (a frame for documents, a square for QR) | P
+- Auto-capture when a document or code is steady, with manual capture too | P
+- Feedback on success (sound or haptic and a visual mark) | S hig-feedback
+## After capture
+- Preview with Retake and Use photo | S hig-camera
+- Crop, rotate and simple fixes | P
+- Upload with progress; works again if the connection drops | R nng-progress
+## Privacy
+- Location in photos removed unless needed and stated | L gdpr-25
+- Photos stored only where the person expects; say where | L gdpr-13
+- Camera stops when leaving the screen; system indicator shows when it is on | S hig-privacy
+## Access
+- VoiceOver and TalkBack users get spoken hints ("Document found, hold still") | S hig-accessibility
+- Alternatives for people who cannot use the camera (upload, type) | S wcag-gestures
+- Works in both orientations where it makes sense | S wcag-orientation

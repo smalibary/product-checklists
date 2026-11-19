@@ -1,0 +1,43 @@
+﻿AUDIT LOG CHECKLIST: 19 items
+The record of who did what, when and from where, for admins to check security and changes.
+Backing: 1 Rule, 12 Standard, 2 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHAT IS RECORDED
+ 1. Who (person or key), what action, on which item, when, and from where (IP, device)   (Standard: owasp-logging)
+ 2. Sign-ins, failed sign-ins, password and 2FA changes   (Standard: owasp-logging)
+ 3. Permission and role changes, member added or removed   (Standard: owasp-logging)
+ 4. Settings, billing and data export changes   (Standard: owasp-logging)
+ 5. Before and after values for changes   (Standard: owasp-logging)
+ 6. Admin "view as user" sessions   (Standard: owasp-logging)
+
+READING IT
+ 7. Newest first, with exact time and time zone (ISO 8601 on export)   (Standard: iso-8601)
+ 8. Filters for person, action type, item and date range   (Research: nng-filters)
+ 9. Search   (Research: nng-tables)
+10. Each entry opens to the full detail   (Practice)
+11. Plain-language descriptions ("Sara changed Ali's role from Member to Admin")   (Practice)
+
+TRUST
+12. Entries cannot be edited or deleted by anyone in the app   (Standard: owasp-logging)
+13. Kept for a stated time per plan   (Practice)
+14. Export to CSV and stream to outside tools (SIEM)   (Practice)
+15. No passwords, tokens or full card numbers ever in the log   (Standard: owasp-logging, pci-dss)
+16. Personal data in logs handled like any personal data (retention, access)   (Rule: gdpr-5, gdpr-32)
+
+ACCESS
+17. Only owners and security admins can see it   (Standard: owasp-authz)
+18. Viewing the audit log is itself logged   (Standard: owasp-logging)
+19. Real table with headers, works by keyboard   (Standard: wai-tables, wcag-keyboard)
+
+SOURCES
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- iso-8601: https://www.iso.org/iso-8601-date-and-time-format.html
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- nng-tables: https://www.nngroup.com/articles/data-tables/
+- pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/
+- gdpr-32: https://gdpr-info.eu/art-32-gdpr/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- wai-tables: https://www.w3.org/WAI/tutorials/tables/
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

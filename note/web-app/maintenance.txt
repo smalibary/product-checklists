@@ -1,0 +1,40 @@
+﻿MAINTENANCE CHECKLIST: 18 items
+What people see when the app is down for planned work or an outage, and the warnings before it.
+Backing: 0 Rule, 7 Standard, 0 Research, 11 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BEFORE PLANNED WORK
+ 1. Warned ahead in the app and by email: date, start time with time zone, how long, what stops working   (Practice)
+ 2. Planned at a quiet time for most users   (Practice)
+ 3. A banner a day before and an hour before, which can be closed   (Practice)
+ 4. Listed on the status page   (Standard: atlassian-incident)
+
+THE PAGE ITSELF
+ 5. Says plainly that the app is down for maintenance, and that data is safe   (Practice)
+ 6. When it should be back, with time zone   (Practice)
+ 7. Link to the status page and support contact   (Standard: atlassian-incident)
+ 8. Branded but light: loads without the main app's servers   (Practice)
+ 9. Returns HTTP status 503 with a Retry-After header, so search engines do not drop pages   (Standard: google-maintenance, rfc-retry-after)
+10. Checks by itself and reloads when the app is back   (Practice)
+
+DURING
+11. Work in progress saved before the cutover, or people warned to save   (Practice)
+12. Read-only mode where possible instead of fully down   (Practice)
+13. Sign-ins and payments never half-finished   (Standard: owasp-transaction)
+
+AFTER
+14. Notice that it is done, with what changed   (Practice)
+15. If it ran late, say so honestly   (Standard: atlassian-incident)
+
+ACCESS
+16. Text readable, contrast meets WCAG, no animation-only message   (Standard: wcag-contrast)
+17. Auto reload does not move focus or surprise screen readers   (Standard: wcag-timing)
+18. In the app's languages   (Practice)
+
+SOURCES
+- atlassian-incident: https://www.atlassian.com/incident-management/incident-communication
+- google-maintenance: https://developers.google.com/search/blog/2011/01/how-to-deal-with-planned-site-downtime
+- rfc-retry-after: https://www.rfc-editor.org/rfc/rfc9110#field.retry-after
+- owasp-transaction: https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable

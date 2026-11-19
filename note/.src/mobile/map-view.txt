@@ -1,0 +1,29 @@
+title: Map View
+about: A map inside a phone app showing places, routes or the person's location, often with a list beside it.
+## Location permission
+- Ask only when the map needs the person's location, with a clear reason | S hig-privacy android-permissions apple-usage
+- Ask for "while using the app" first; background location only when truly needed | S android-location hig-privacy
+- Approximate location accepted where exact is not needed | S android-location
+- If refused: the map still works with search or a typed address | S android-permissions
+## Map
+- Standard gestures: drag, pinch, double tap to zoom, two-finger rotate | S hig-maps
+- Zoom buttons or another way for people who cannot pinch | S wcag-gestures
+- "My location" button that centres the map | S hig-maps
+- Pins clear and grouped (clustered) when crowded | S hig-maps
+- Selected pin highlighted, with a card showing details | S hig-maps
+- Map style follows dark mode | S hig-dark-mode
+## List and map together
+- Toggle or bottom sheet to switch between map and list | S m3-bottom-sheets
+- Moving the map offers "Search this area" instead of reloading on every move | P
+- List order matches what is visible on the map | P
+## Routes and places
+- Distance and time shown in local units | P
+- Open in the phone's maps app for directions | S hig-maps
+- Arabic place names and right-to-left labels where relevant | S w3c-dir
+## Speed and cost
+- Map tiles cached; usage of map services counted against limits | P
+- Few markers drawn at once | P
+## Access
+- A list view with the same places for screen readers | S wcag-info
+- Pins have names; selected place announced | S hig-accessibility
+- Controls at least 44 pt / 48 dp | S hig-layout m3-layout

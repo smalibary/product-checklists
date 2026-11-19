@@ -1,0 +1,45 @@
+﻿NOTIFICATIONS (WEB APP) CHECKLIST: 19 items
+The in-app list (often a bell) of things that happened which the person may need to act on.
+Backing: 0 Rule, 6 Standard, 5 Research, 8 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE BELL
+ 1. An icon button with a name and the unread count ("Notifications, 3 unread")   (Standard: wcag-name-role)
+ 2. Count capped (9+) and shown as a badge   (Research: nng-indicators)
+ 3. New notifications announced politely, not interrupting   (Standard: wcag-status)
+
+THE LIST
+ 4. Newest first, grouped by today, this week, older   (Practice)
+ 5. Each item: who, what, on which item, and when (relative time, exact on hover)   (Practice)
+ 6. Unread items marked by more than colour (a dot plus bold)   (Standard: wcag-color)
+ 7. Clicking opens the item and marks it read   (Practice)
+ 8. Mark one or all as read   (Practice)
+ 9. Quick actions inline (approve, reply) for common jobs   (Practice)
+10. Filters: all, mentions, assigned to me   (Practice)
+11. Link to notification settings   (Practice)
+
+VOLUME
+12. Similar notifications combined ("Sara and 4 others commented")   (Research: nng-notifications)
+13. Only things the person cares about; let them mute a thread   (Research: nng-notifications)
+14. Old notifications cleared after a stated time   (Practice)
+
+STATES
+15. Empty state: "You're all caught up"   (Research: nng-empty)
+16. Loading and error states   (Research: nng-skeleton)
+
+ACCESS
+17. The panel is a dialog or popover with focus moved in and Escape to close   (Standard: apg-dialog)
+18. List items reachable by keyboard   (Standard: wcag-keyboard)
+19. Works at phone width (full-screen panel)   (Standard: wcag-reflow)
+
+SOURCES
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- nng-indicators: https://www.nngroup.com/articles/indicators-validations-notifications/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- nng-notifications: https://www.nngroup.com/articles/push-notification/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

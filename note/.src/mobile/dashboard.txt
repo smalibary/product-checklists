@@ -1,0 +1,24 @@
+title: Dashboard (mobile)
+about: The overview screen in a phone app with key numbers, status and things to act on.
+## Content
+- Top 2 to 4 numbers that matter most, large | R nng-dashboards
+- Change from the last period with arrow and word, not only colour | S wcag-color
+- Things needing action at the top (due, overdue, waiting) | R nng-dashboards
+- Every card taps through to its detail | R nng-dashboards
+## Layout
+- One column of cards; a horizontal swipe row only for secondary items | P
+- Simple charts sized for a phone (sparklines, small bars) | R nng-dashboards
+- Period choice (today, week, month) at the top | P
+- Last updated time; pull to refresh | S hig-loading
+## Speed
+- Cached data shown at once, then refreshed | P
+- Cards load on their own with skeletons | R nng-skeleton
+- Works offline with cached numbers marked as old | P
+## Personal
+- Choose and reorder cards | P
+- Home screen widgets for the key number (iOS and Android) | S hig-widgets
+## Access
+- Charts have text summaries for screen readers | S wcag-nontext
+- Cards are headings or buttons with clear names | S hig-accessibility
+- Large text reflows cards instead of cutting numbers | S hig-accessibility
+- Targets at least 44 pt / 48 dp | S hig-layout m3-layout

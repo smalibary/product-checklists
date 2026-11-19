@@ -1,0 +1,30 @@
+title: Integrations
+about: The page where people connect the app to other tools (calendar, chat, storage, payments) and manage those links.
+## Finding
+- A directory of integrations with logo, name and one line on what it does | P
+- Categories and search | R nng-filters
+- Connected ones shown first, with their status | P
+- Which plan includes each integration | P
+## Connecting
+- Before connecting: what data is shared both ways, and what the app can do in the other tool | L gdpr-13
+- Sign in with the other tool (OAuth); never ask for its password | S owasp-auth
+- Ask only for the permissions really needed | S owasp-authz
+- After connecting, set it up: which channel, which folder, what to send | P
+- Test connection button with a clear result | P
+## Managing
+- Status: connected, needs attention, broken, with the last sync time | R nng-status
+- Broken connections explained (token expired) with a "Reconnect" button | R nng-errors
+- Who connected it and when | S owasp-logging
+- Disconnect, with what happens to synced data | R nng-confirm
+- Admins can allow or block integrations for the workspace | S owasp-authz
+## Safety
+- Tokens from other tools stored encrypted, never shown | S owasp-secrets
+- Connections and disconnections logged | S owasp-logging
+- Third-party data handling listed in the privacy policy | L gdpr-13
+## Developers
+- Webhooks: address, events chosen, a signing secret and a test send | P
+- Delivery log with retries and failures | P
+- Link to the API and developer docs | P
+## Access
+- Cards are links or buttons with clear names ("Connect Slack") | S wcag-name-role
+- Status in words, not only colour | S wcag-color

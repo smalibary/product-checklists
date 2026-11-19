@@ -1,0 +1,45 @@
+﻿PUBLIC PROFILE CHECKLIST: 18 items
+The page other people see about a user: who they are and what they have made or shared.
+Backing: 5 Rule, 6 Standard, 0 Research, 7 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. Name, photo, short bio and role   (Practice)
+ 2. What the person has made or shared (posts, projects, reviews)   (Practice)
+ 3. Join date and simple activity numbers   (Practice)
+ 4. Links to their other profiles, marked as external   (Standard: wcag-link)
+ 5. Verified badges explained on hover or tap   (Standard: wcag-hover)
+
+ACTIONS FOR VISITORS
+ 6. Follow, message or contact, if the product has them   (Practice)
+ 7. Share profile link   (Practice)
+ 8. Report or block the person, easy to find   (Rule: eu-dsa)
+
+PRIVACY FOR THE OWNER
+ 9. The owner sees what is public, with a "View as visitor" preview   (Rule: gdpr-25)
+10. Choose what is public field by field; private by default for sensitive data   (Rule: gdpr-25)
+11. No email, phone or exact location shown unless the owner chose it   (Rule: gdpr-25)
+12. Hide profile from search engines option   (Practice)
+13. Children's profiles private by default   (Rule: coppa)
+
+ADDRESS AND SEARCH
+14. A readable address (/@name) that does not change silently   (Practice)
+15. Person structured data where useful   (Standard: schema-person)
+16. Page title with the person's name   (Standard: wcag-title)
+
+ACCESS
+17. Photo has alt text with the name, or is decorative beside the name   (Standard: wai-images)
+18. Headings for sections; contrast and phone width meet WCAG   (Standard: wcag-headings, wcag-contrast, wcag-reflow)
+
+SOURCES
+- wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- eu-dsa: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
+- gdpr-25: https://gdpr-info.eu/art-25-gdpr/
+- coppa: https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions
+- schema-person: https://schema.org/Person
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
+- wai-images: https://www.w3.org/WAI/tutorials/images/
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

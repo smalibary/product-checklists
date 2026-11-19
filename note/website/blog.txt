@@ -1,0 +1,44 @@
+﻿BLOG (LIST PAGE) CHECKLIST: 17 items
+The blog's front page that lists articles and helps readers find one to read.
+Backing: 1 Rule, 9 Standard, 5 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+LIST
+ 1. Newest posts first, with a featured post at the top if useful   (Research: nng-blog)
+ 2. Each card: title, short summary, date, author, reading time and image   (Research: nng-blog)
+ 3. The whole card opens the post, with one link inside (not many nested links)   (Standard: wcag-link)
+ 4. Categories or topics to filter   (Research: nng-blog)
+ 5. Search over posts   (Research: nng-blog)
+ 6. Pagination with page numbers, or Load more that keeps position on Back   (Research: nng-infinite)
+
+SUBSCRIBE
+ 7. Email sign-up with what and how often   (Rule: gdpr-13, can-spam)
+ 8. RSS feed linked   (Practice)
+
+LAYOUT
+ 9. Cards in a grid that becomes one column on phones   (Standard: wcag-reflow)
+10. Images have space reserved so the page does not jump   (Standard: webdev-cls)
+11. Images lazy-loaded below the fold   (Standard: webdev-images)
+12. Dates in a clear format with the year   (Practice)
+
+ACCESS AND SEARCH
+13. One main heading; card titles as headings   (Standard: wcag-headings)
+14. Card images decorative (empty alt) when the title already says it   (Standard: wai-images)
+15. Contrast meets WCAG, including over images   (Standard: wcag-contrast)
+16. A unique title and description for the list and each category   (Standard: google-title)
+17. Breadcrumbs on category pages   (Standard: google-breadcrumb)
+
+SOURCES
+- nng-blog: https://www.nngroup.com/articles/weblog-usability-top-ten-mistakes/
+- wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+- nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- webdev-cls: https://web.dev/articles/cls
+- webdev-images: https://web.dev/learn/images
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wai-images: https://www.w3.org/WAI/tutorials/images/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- google-title: https://developers.google.com/search/docs/appearance/title-link
+- google-breadcrumb: https://developers.google.com/search/docs/appearance/structured-data/breadcrumb

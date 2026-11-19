@@ -1,0 +1,24 @@
+title: Accordion
+about: A stack of headings that each open to show their content, saving space on long pages.
+## When to use
+- Many sections where people need only some of them (FAQ, settings groups) | R nng-accordion
+- Not when most people need all the content: show it open instead | R nng-accordion
+- Not for very short content or for navigation menus | S govuk-accordion
+## Look
+- Each header is a full-width button with the section title | S apg-accordion
+- An icon (chevron or plus) that changes when open | S apg-accordion
+- Header and its content look connected | R nng-accordion
+- "Show all sections" for long accordions | S govuk-accordion
+- Enough space to tap the header | S wcag-target
+## Behaviour
+- Several sections can be open at once by default | R nng-accordion
+- Opening one does not jump the page or move what was being read | S webdev-cls
+- Open sections remembered when coming back, if helpful | S govuk-accordion
+- Content findable with the browser's Find (hidden="until-found") | S mdn-until-found
+- Linking to a section opens it | P
+## Access
+- Header button inside a heading of the right level | S apg-accordion
+- Button says open or closed (aria-expanded) and controls its panel (aria-controls) | S apg-accordion
+- Enter and Space toggle; optional arrow keys between headers | S apg-accordion
+- Animation short and respects reduced motion | S mdn-reduced-motion
+- Native details and summary elements are a good simple choice | S mdn-details

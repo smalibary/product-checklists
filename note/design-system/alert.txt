@@ -1,0 +1,47 @@
+﻿ALERT CHECKLIST: 17 items
+A message inside the page that tells people something important about the page or what they just did (also called a callout or inline message).
+Backing: 0 Rule, 12 Standard, 5 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+KINDS
+ 1. Info, success, warning and error, each with its own colour and icon   (Standard: govuk-notification)
+ 2. Error alerts for page-level problems; field errors go next to fields   (Standard: govuk-error-summary, govuk-error-message)
+ 3. Not for urgent questions that need an answer now (use an alert dialog)   (Standard: apg-alertdialog)
+ 4. Not for passing messages (use a toast)   (Research: nng-indicators)
+
+CONTENT
+ 5. A short title saying what happened   (Standard: govuk-notification)
+ 6. A sentence on what to do next, with a link or button if there is an action   (Research: nng-errors)
+ 7. Plain words, no blame, no codes alone   (Research: nng-errors)
+
+LOOK
+ 8. Kind shown by icon and words as well as colour   (Standard: wcag-color)
+ 9. Icon has a text name ("Error:") or the title says it   (Standard: wcag-nontext)
+10. Text and icon contrast meet WCAG   (Standard: wcag-contrast, wcag-ui-contrast)
+11. Placed near what it is about, usually at the top of the content   (Research: nng-errors)
+
+BEHAVIOUR
+12. Stays until the problem is fixed or the person closes it   (Research: nng-indicators)
+13. Close button only for alerts that can be ignored; it has a name   (Standard: wcag-name-role)
+14. Does not move the page under the person's hand when it appears   (Standard: webdev-cls)
+
+ACCESS
+15. Alerts that appear after an action are announced (role alert or status)   (Standard: apg-alert, wcag-status)
+16. Do not use role alert for messages that are there on page load   (Standard: apg-alert)
+17. After a form fails, focus moves to the error summary   (Standard: govuk-error-summary)
+
+SOURCES
+- govuk-notification: https://design-system.service.gov.uk/components/notification-banner/
+- govuk-error-summary: https://design-system.service.gov.uk/components/error-summary/
+- govuk-error-message: https://design-system.service.gov.uk/components/error-message/
+- apg-alertdialog: https://www.w3.org/WAI/ARIA/apg/patterns/alertdialog/
+- nng-indicators: https://www.nngroup.com/articles/indicators-validations-notifications/
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- webdev-cls: https://web.dev/articles/cls
+- apg-alert: https://www.w3.org/WAI/ARIA/apg/patterns/alert/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages

@@ -1,0 +1,46 @@
+﻿WAITLIST PAGE CHECKLIST: 17 items
+Lets people join a queue for access to a product that is not open to everyone yet.
+Backing: 5 Rule, 6 Standard, 2 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE OFFER
+ 1. What they are joining and what they get when let in   (Practice)
+ 2. How the waitlist works: first come, by invitation, by referral   (Practice)
+ 3. A rough wait time, if the team can keep it   (Practice)
+ 4. Real numbers only; never invent a queue length   (Rule: ftc-dark-patterns)
+
+THE FORM
+ 5. Email only, or email plus one question that helps decide who goes first   (Research: baymard-fields)
+ 6. Visible labels, the right keyboard and autofill   (Standard: wcag-labels, mdn-autocomplete)
+ 7. Errors in words next to the field   (Standard: wcag-error)
+ 8. What emails will be sent and a link to the privacy policy   (Rule: gdpr-13)
+ 9. Consent for marketing separate from joining the list, unticked   (Rule: gdpr-7)
+
+AFTER JOINING
+10. A confirmation screen with the place in line, if shown   (Research: govuk-confirm)
+11. A confirmation email, with a way to leave the list   (Rule: can-spam)
+12. An optional "move up by inviting friends" with the referral rules written out   (Practice)
+13. Rewards for referrals that are honest and delivered   (Rule: ftc-dark-patterns)
+
+WHEN ACCESS OPENS
+14. An email invite with a clear first step and a link that works once   (Standard: owasp-auth)
+15. Invite links expire after a stated time   (Standard: owasp-auth)
+
+ACCESS
+16. Contrast, text size and phone width meet WCAG   (Standard: wcag-contrast, wcag-reflow)
+17. Updates to a place-in-line counter announced without moving focus   (Standard: wcag-status)
+
+SOURCES
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages

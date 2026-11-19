@@ -1,0 +1,45 @@
+﻿REPORT VIEW CHECKLIST: 19 items
+One finished report: a set of numbers, charts and tables about a period or a subject, for reading and sharing.
+Backing: 1 Rule, 5 Standard, 4 Research, 9 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+HEADER
+ 1. Report title, the period covered and who made it   (Practice)
+ 2. When the data was taken, and the time zone   (Practice)
+ 3. Filters applied shown at the top   (Research: nng-filters)
+
+CONTENT
+ 4. Summary of the key findings first, in words   (Research: nng-scanning)
+ 5. Numbers with comparison to a previous period or a target   (Research: nng-dashboards)
+ 6. Charts with titles that state the point ("Sales rose 12% in March")   (Practice)
+ 7. Tables with totals and subtotals   (Research: nng-tables)
+ 8. Notes and definitions for each number   (Practice)
+
+SHARING
+ 9. Export to PDF and spreadsheet   (Practice)
+10. Share link with permissions (who can see)   (Standard: owasp-authz)
+11. Schedule by email (weekly, monthly)   (Practice)
+12. Print layout that fits pages and repeats table headers   (Practice)
+
+TRUST
+13. Data sources named   (Practice)
+14. Partial or missing data marked   (Practice)
+15. Personal data hidden or grouped unless needed   (Rule: gdpr-25)
+
+ACCESS
+16. Headings in order so the report reads as an outline   (Standard: wcag-headings)
+17. Charts have a text summary or data table   (Standard: wcag-nontext)
+18. Exported PDF tagged and readable by screen readers   (Standard: wcag)
+19. Colour not the only way to show good or bad   (Standard: wcag-color)
+
+SOURCES
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- nng-dashboards: https://www.nngroup.com/articles/dashboards-preattentive/
+- nng-tables: https://www.nngroup.com/articles/data-tables/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- gdpr-25: https://gdpr-info.eu/art-25-gdpr/
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag: https://www.w3.org/TR/WCAG22/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color

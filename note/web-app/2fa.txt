@@ -1,0 +1,52 @@
+﻿2FA (TWO-STEP SIGN-IN) CHECKLIST: 25 items
+Setting up and using a second check at sign-in (an app code, a security key, a passkey or a text code).
+Backing: 0 Rule, 20 Standard, 0 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING A METHOD
+ 1. Offer the strongest first: passkey or security key, then an authenticator app, then text or email codes   (Standard: nist-63b-auth, owasp-mfa)
+ 2. Explain each method in one line, with what the person needs (a phone, a key)   (Practice)
+ 3. Text-message codes allowed only as a fallback; they can be stolen by SIM swap   (Standard: nist-63b-auth, owasp-mfa)
+ 4. More than one method can be added, so losing one is not the end   (Standard: owasp-mfa)
+
+SETTING UP AN AUTHENTICATOR APP
+ 5. QR code plus the key as text for people who cannot scan   (Standard: rfc-totp, wcag-nontext)
+ 6. Key shown in groups of 4 characters with a copy button   (Practice)
+ 7. Ask for one code to confirm it works before turning it on   (Standard: owasp-mfa)
+ 8. Name the account so it shows clearly in the app (site name and email)   (Standard: rfc-totp)
+
+RECOVERY CODES
+ 9. Recovery codes shown once, with download, copy and print   (Standard: owasp-mfa)
+10. Ask the person to confirm they saved them   (Practice)
+11. Each code works once; a way to make new ones (old ones stop)   (Standard: owasp-mfa)
+
+ENTERING A CODE AT SIGN-IN
+12. One field for the whole code, not one box per digit   (Standard: webdev-otp)
+13. autocomplete one-time-code and a number keyboard   (Standard: webdev-otp, mdn-autocomplete)
+14. Paste works   (Standard: wcag-auth)
+15. Codes accepted for a short window either side to allow clock drift   (Standard: rfc-totp)
+16. "Remember this device for 30 days" choice   (Practice)
+17. Other method link ("Use a recovery code instead")   (Standard: owasp-mfa)
+18. Limited tries, then slow down   (Standard: owasp-mfa)
+
+MANAGING
+19. Turning 2FA off or changing it asks for the password or a code again   (Standard: owasp-mfa)
+20. Email sent when 2FA is turned on, off or changed   (Standard: owasp-mfa)
+21. Admins can require 2FA for everyone in a workspace   (Practice)
+22. Lost-everything recovery through support with identity checks   (Standard: owasp-mfa)
+
+ACCESS
+23. Codes can be typed without time pressure, or the time can be extended   (Standard: wcag-timing)
+24. Errors in words next to the field   (Standard: wcag-error)
+25. Copying a code from an app is allowed (no cognitive test)   (Standard: wcag-auth)
+
+SOURCES
+- nist-63b-auth: https://pages.nist.gov/800-63-4/sp800-63b.html
+- owasp-mfa: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
+- rfc-totp: https://www.rfc-editor.org/rfc/rfc6238
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- webdev-otp: https://web.dev/articles/sms-otp-form
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- wcag-auth: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification

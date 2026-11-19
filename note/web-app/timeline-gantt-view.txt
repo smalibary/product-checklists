@@ -1,0 +1,48 @@
+﻿TIMELINE / GANTT VIEW CHECKLIST: 22 items
+Shows tasks as bars along a time line, with their dates, overlaps and dependencies.
+Backing: 0 Rule, 7 Standard, 1 Research, 14 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+LAYOUT
+ 1. Task names in a fixed left column, bars on the right along time   (Practice)
+ 2. Today marked with a line   (Practice)
+ 3. Zoom levels: days, weeks, months, quarters   (Practice)
+ 4. Weekends and holidays shaded   (Practice)
+ 5. Grouping by project, person or status, with collapse   (Practice)
+ 6. Milestones as diamonds, distinct from bars   (Practice)
+
+BARS
+ 7. Bar shows start and end; label with name inside or beside   (Practice)
+ 8. Colour by status or owner, with a legend, plus text or pattern   (Standard: wcag-color)
+ 9. Progress inside the bar   (Practice)
+10. Dependencies as arrows; conflicts (task starts before its blocker ends) flagged   (Practice)
+11. Critical path highlight for project plans   (Practice)
+
+EDITING
+12. Drag to move, drag edges to change dates, snapping to days   (Practice)
+13. Every drag has a non-drag way: edit dates in a form or with keys   (Standard: wcag-dragging)
+14. Undo after a move   (Research: nng-control)
+15. Moving a task offers to move its dependents   (Practice)
+
+NAVIGATION
+16. Scroll sideways in time, jump to today, jump to a date   (Practice)
+17. Header with dates stays visible   (Practice)
+
+ACCESS
+18. A list or table view with the same data, for screen readers and phones   (Standard: wcag-info)
+19. Keyboard reaches each bar and shows its dates   (Standard: wcag-keyboard)
+20. Bars' focus is visible   (Standard: wcag-focus)
+21. Tooltips on hover also show on focus   (Standard: wcag-hover)
+
+SPEED
+22. Smooth with thousands of tasks (draw only what is visible)   (Standard: webdev-inp)
+
+SOURCES
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- webdev-inp: https://web.dev/articles/inp

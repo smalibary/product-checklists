@@ -1,0 +1,48 @@
+﻿STEPPER CHECKLIST: 19 items
+Two meanings: a progress stepper showing the steps of a process, and a number stepper with minus and plus buttons.
+Backing: 0 Rule, 12 Standard, 3 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PROGRESS STEPPER: WHEN TO USE
+ 1. Processes with 3 to about 7 steps in a fixed order   (Research: nng-wizards)
+ 2. Not for free-order tasks (use a task list)   (Standard: govuk-task-list)
+
+PROGRESS STEPPER: LOOK
+ 3. Each step has a number and a short name   (Research: nng-progress)
+ 4. Done, current and upcoming steps different by icon and text, not only colour   (Standard: wcag-color)
+ 5. Horizontal on wide screens; vertical or "Step 2 of 5" on phones   (Standard: wcag-reflow)
+ 6. Steps that are done can be clicked to go back; future steps cannot   (Research: nng-wizards)
+ 7. Errors in a step marked on that step   (Practice)
+
+PROGRESS STEPPER: ACCESS
+ 8. An ordered list; the current step marked aria-current="step"   (Standard: wcag-info)
+ 9. Each step's state in words for screen readers ("completed")   (Standard: wcag-name-role)
+10. The page title also says the step   (Standard: wcag-title)
+
+NUMBER STEPPER: LOOK AND BEHAVIOUR
+11. Minus button, a number field and plus button   (Standard: hig-pickers)
+12. The number field can also be typed in   (Standard: wcag-dragging)
+13. Minimum and maximum; buttons disabled at the limits, with a reason   (Practice)
+14. Holding a button repeats, slowly then faster   (Practice)
+15. Step size suits the value (1 for quantity, 0.5 for hours)   (Practice)
+
+NUMBER STEPPER: ACCESS
+16. Buttons have names ("Increase quantity") and target size at least 24 px   (Standard: wcag-name-role, wcag-target)
+17. The field is a spinbutton or number input with min, max and value   (Standard: apg-spinbutton)
+18. Arrow up and down change the value   (Standard: apg-spinbutton)
+19. Value changes announced   (Standard: wcag-status)
+
+SOURCES
+- nng-wizards: https://www.nngroup.com/articles/wizards/
+- govuk-task-list: https://design-system.service.gov.uk/components/task-list/
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
+- hig-pickers: https://developer.apple.com/design/human-interface-guidelines/pickers
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- apg-spinbutton: https://www.w3.org/WAI/ARIA/apg/patterns/spinbutton/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages

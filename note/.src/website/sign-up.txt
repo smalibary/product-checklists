@@ -1,0 +1,41 @@
+title: Sign up page (website)
+about: Creating an account on a website. The phone version (mobile/sign-up) has the full 65 items; this one adds what differs on a website.
+## Before the form
+- What the person gets, in one line above the form | P
+- Let people try or buy without an account where possible | R baymard-guest nng-login-walls
+- Price and trial terms visible before the form if sign-up starts a trial | L ftc-negative-option
+## Ways to sign up
+- Sign up with Google, Apple, Microsoft or work single sign-on, matched to the audience | P
+- Passkey offered at or right after sign-up, with a fallback | S webauthn fido-ux
+- Email and password as the always-there choice | P
+## Fields
+- Ask only what is needed now; everything else later | R baymard-fields webdev-signup
+- One name field ("Full name"), not first and last, for international names | S w3c-names
+- Visible labels; placeholders only as examples | S wcag-labels nng-placeholder
+- autocomplete set: name, email, new-password | S webdev-signup mdn-autocomplete wcag-purpose
+- Optional fields marked "(optional)"; required ones not starred | R nng-required govuk-question
+- Email typo hint ("Did you mean gmail.com?") | P
+## Password
+- At least 8 characters (15 if it is the only factor), up to at least 64, any characters | S nist-63b
+- No rules like "one capital, one symbol"; check against known leaked passwords instead | S nist-63b
+- Requirements shown before typing, ticked as met | R baymard-inline
+- Show password button | R baymard-show
+- Paste and password managers allowed | S nist-63b wcag-auth
+## Errors
+- Checked when the person leaves a field, not while typing | R baymard-inline
+- Errors next to the field and in a summary at the top after Submit | S govuk-error-summary wcag-error
+- What was typed is kept after an error | S wcag-redundant
+- Submit is never disabled; it explains what is missing instead | R govuk-button
+## Legal and consent
+- Terms and privacy links beside the button | L gdpr-13
+- Marketing consent separate and unticked | L gdpr-7
+- Age check where children's law applies | L coppa
+## Sending and after
+- The button says what it does ("Create account") and shows progress | R nng-status
+- Email verification by code or link, with resend and change-email | P
+- Account-exists case handled without revealing which emails have accounts | S owasp-auth
+- A welcome screen that leads to the first useful step | R nng-onboarding
+## Access
+- Keyboard-only sign-up works start to finish | S wcag-keyboard
+- Robot checks accessible, or replaced by invisible checks | S wcag-auth
+- Contrast, target size and phone width meet WCAG | S wcag-contrast wcag-target wcag-reflow

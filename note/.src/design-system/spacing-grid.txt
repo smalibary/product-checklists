@@ -1,0 +1,25 @@
+title: Spacing / Grid
+about: The spacing scale and layout grid that keep every screen evenly spaced and aligned.
+## Spacing scale
+- One scale based on 4 or 8 px steps (4, 8, 12, 16, 24, 32, 48, 64) | S m3-layout
+- Named tokens (space-1, space-2) or roles (gap-sm), never raw numbers in components | S dtcg-tokens
+- Related things closer together than unrelated things | R nng-proximity
+- Same spacing for the same job across components | R nng-consistency
+- Spacing grows with screen size where it helps | S m3-layout
+## Layout grid
+- Columns for each screen size: 4 on phones, 8 on tablets, 12 on desktops | S m3-layout
+- Margins and gutters named per breakpoint | S m3-layout
+- Breakpoints chosen from the content, a small set, named | S m3-layout
+- Maximum content width so lines do not get too long | S butterick-line
+- Safe areas respected on phones with notches | S hig-layout android-edge
+## Responsive behaviour
+- Content reflows to one column at 320 px wide without sideways scrolling | S wcag-reflow
+- Layout survives 200% zoom and bigger text | S wcag-resize
+- Logical properties (start, end) so layouts flip for Arabic | S mdn-logical w3c-dir
+## Touch
+- Touch targets with space between them; at least 24 px, ideally 44 to 48 | S wcag-target hig-layout m3-layout
+## Density
+- Comfortable and compact density options for data-heavy screens | S m3-layout
+## Process
+- Spacing and grid documented with examples | P
+- Design and code use the same values (shared tokens) | S dtcg-tokens

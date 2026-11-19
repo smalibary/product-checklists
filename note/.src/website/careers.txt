@@ -1,0 +1,27 @@
+title: Careers page
+about: Shows open jobs and what it is like to work at the company, and takes applications.
+## Jobs list
+- Open jobs listed with title, team, place (or remote) and type (full time, contract) | R nng-careers
+- Filters by team, place and type when there are many | R nng-careers
+- Each job has its own page and address that can be shared | R nng-careers
+- Closed jobs removed promptly | R nng-careers
+## Job page
+- What the job is, what the person will do in the first months, and must-have versus nice-to-have skills | R nng-careers
+- Pay range where the law asks for it (many US states, EU from 2026) | L eu-pay-transparency
+- Benefits, working hours and leave | R nng-careers
+- Hiring steps and how long they take | R nng-careers
+- Job structured data so the post appears in job search | S google-jobs
+## Applying
+- A short form; upload a CV instead of retyping it | R baymard-fields
+- No account needed to apply | R nng-login-walls
+- File upload accepts common types with size limits stated | S govuk-file-upload owasp-upload
+- Labels, errors and autofill work | S wcag-labels wcag-error mdn-autocomplete
+- What happens to the applicant's data and for how long it is kept | L gdpr-13
+- Confirmation on screen and by email | R govuk-confirm
+## Culture
+- Real photos and words from staff, with permission | R nng-trust
+- Values, diversity and accessibility commitments, with facts | P
+- Adjustments offered for applicants with disabilities | L ada-web
+## Access
+- Works at phone width | S wcag-reflow
+- Headings and contrast meet WCAG | S wcag-headings wcag-contrast

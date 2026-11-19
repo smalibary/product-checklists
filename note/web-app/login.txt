@@ -1,0 +1,55 @@
+﻿LOGIN (WEB APP) CHECKLIST: 23 items
+Signing in to the app itself, including single sign-on for teams, passkeys and staying signed in. The website login note covers the basics.
+Backing: 0 Rule, 15 Standard, 0 Research, 8 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WAYS IN
+ 1. Email or username, then password or passkey   (Standard: nist-63b, webauthn)
+ 2. Passkeys offered and filled in by the browser (autofill on the username field)   (Standard: webauthn, fido-ux)
+ 3. Sign in with Google, Microsoft or Apple, matching how the account was made   (Practice)
+ 4. Single sign-on for companies: type the work email and the company's sign-in opens   (Practice)
+ 5. Magic link by email as an option, with the code too for other devices   (Practice)
+
+FIELDS
+ 6. Labels, autocomplete username and current-password   (Standard: mdn-autocomplete, wcag-labels)
+ 7. Paste and password managers allowed   (Standard: nist-63b, wcag-auth)
+ 8. Show password button   (Standard: nist-63b)
+ 9. Caps Lock warning   (Practice)
+
+ERRORS AND SAFETY
+10. Same message for wrong email or wrong password ("Email or password is wrong")   (Standard: owasp-auth)
+11. Limited tries per account and per address, then slow down; no permanent lockout by others   (Standard: owasp-auth, nist-63b)
+12. Two-step sign-in after the password where turned on   (Standard: owasp-mfa)
+13. Robot checks only after suspicious attempts, never the first time   (Standard: wcag-auth)
+14. Sign-in from a new device emailed   (Standard: owasp-auth)
+15. All over HTTPS, cookies Secure and HttpOnly   (Standard: owasp-session)
+
+STAYING SIGNED IN
+16. "Keep me signed in" for trusted devices   (Practice)
+17. Sessions end after a stated idle time, with a warning before   (Standard: owasp-session, wcag-timing)
+18. After signing in, return to the page the person wanted   (Practice)
+19. Signed out in another tab: the others notice   (Practice)
+
+HELP
+20. Forgot password link next to the password field   (Standard: owasp-forgot)
+21. Link to sign up and to help   (Practice)
+
+ACCESS
+22. Errors next to fields and in a summary, focus moved there   (Standard: wcag-error, govuk-error-summary)
+23. Works at phone width and 200% zoom   (Standard: wcag-reflow)
+
+SOURCES
+- nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
+- webauthn: https://www.w3.org/TR/webauthn-3/
+- fido-ux: https://fidoalliance.org/ux-guidelines-for-passkey-creation-and-sign-ins/
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-auth: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- owasp-mfa: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable
+- owasp-forgot: https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- govuk-error-summary: https://design-system.service.gov.uk/components/error-summary/
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

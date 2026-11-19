@@ -1,0 +1,48 @@
+﻿TOKENS CHECKLIST: 22 items
+Named design values (colours, sizes, spacing, radius, motion) that design and code share as one source.
+Backing: 0 Rule, 13 Standard, 0 Research, 9 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TIERS
+ 1. Primitive tokens: raw values named by what they are (blue-600, space-4)   (Standard: dtcg-tokens)
+ 2. Role (semantic) tokens: named by job (color-primary, space-gap-md), pointing to primitives   (Standard: dtcg-tokens, m3-tokens)
+ 3. Component tokens: named per component (button-bg), pointing to roles   (Standard: m3-tokens)
+ 4. Components use role or component tokens, never primitives   (Standard: m3-tokens)
+
+FORMAT
+ 5. Stored in the W3C design tokens format (JSON with $value and $type)   (Standard: dtcg-tokens)
+ 6. Each token has a type (color, dimension, fontFamily, duration, shadow)   (Standard: dtcg-tokens)
+ 7. References use {group.token} so one change flows everywhere   (Standard: dtcg-tokens)
+ 8. A description on each role token saying when to use it   (Standard: dtcg-tokens)
+
+NAMING
+ 9. Names follow one pattern (category-role-variant-state)   (Practice)
+10. No names that describe looks for role tokens ("blue-button")   (Practice)
+11. Avoid names that clash with tool names (Tailwind sizes)   (Practice)
+
+THEMES AND MODES
+12. Light, dark and high-contrast as sets of role values over the same primitives   (Standard: m3-color)
+13. Brands or products as further sets   (Practice)
+14. Density and size modes (compact, comfortable)   (Standard: m3-layout)
+
+PIPELINE
+15. One source file builds CSS variables, Tailwind config, iOS and Android values   (Practice)
+16. The design tool reads the same file   (Practice)
+17. Changes reviewed and versioned like code (semver)   (Standard: semver)
+18. A check fails the build when a component uses a raw value   (Practice)
+
+COVERAGE
+19. Colour, typography, spacing, size, radius, border, shadow, opacity, motion duration and easing, z-index   (Standard: dtcg-tokens)
+20. Contrast pairs of colour tokens tested automatically   (Standard: wcag-contrast)
+
+DOCUMENTATION
+21. Every token shown with its value, a preview and where it is used   (Practice)
+22. Deprecated tokens marked with what replaces them   (Practice)
+
+SOURCES
+- dtcg-tokens: https://tr.designtokens.org/format/
+- m3-tokens: https://m3.material.io/foundations/design-tokens/overview
+- m3-color: https://m3.material.io/styles/color/system/overview
+- m3-layout: https://m3.material.io/foundations/layout
+- semver: https://semver.org/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

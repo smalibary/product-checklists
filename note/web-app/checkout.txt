@@ -1,0 +1,63 @@
+﻿CHECKOUT (WEB APP) CHECKLIST: 22 items
+Paying inside the app for a plan, credits or an order, from review to confirmation.
+Backing: 5 Rule, 8 Standard, 6 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ORDER REVIEW
+ 1. What is bought, quantity, price, tax, discount and total, before paying   (Rule: eu-consumer-rights, ftc-junk-fees)
+ 2. Recurring charges stated: amount, how often, first charge date, how to cancel   (Rule: ftc-negative-option)
+ 3. Currency shown and fixed; SAR for Saudi customers   (Practice)
+ 4. Promo code field present but quiet (a link that opens it)   (Research: baymard-coupon)
+ 5. Edit the order without starting again   (Research: baymard-abandon)
+
+DETAILS
+ 6. Only the fields needed; company and tax ID optional, for invoices   (Research: baymard-fields)
+ 7. Billing address only if the payment provider or tax needs it   (Research: baymard-fields)
+ 8. Autofill for name, card and address   (Standard: mdn-autocomplete, webdev-payment)
+ 9. Already-known details filled in   (Standard: wcag-redundant)
+
+PAYMENT
+10. Card fields from a PCI-certified provider   (Standard: pci-dss)
+11. Card number with spaces, the brand detected, numeric keyboard   (Research: baymard-card)
+12. Wallets (Apple Pay, Google Pay) and local methods (mada, STC Pay) where they suit   (Practice)
+13. Strong customer authentication (3-D Secure) inside the flow   (Rule: psd2-sca, stripe-3ds)
+14. Trust signs near the card fields (lock, provider name)   (Research: baymard-trust)
+
+SUBMITTING
+15. Button names the action and amount ("Pay 120 SAR")   (Standard: wcag-prevent)
+16. Busy state; double click never charges twice   (Standard: owasp-transaction)
+17. Declined card: plain reason and what to try, details kept   (Standard: wcag-error)
+
+AFTER
+18. Confirmation page with what was bought, a receipt number and next steps   (Standard: govuk-confirm)
+19. Receipt and tax invoice by email   (Rule: zatca-einvoice)
+20. New access available at once   (Practice)
+
+HONESTY AND ACCESS
+21. No pre-ticked extras; terms and refund policy linked   (Rule: ftc-dark-patterns, eu-consumer-rights)
+22. Labels, errors in words, keyboard and phone width meet WCAG   (Standard: wcag-labels, wcag-error, wcag-keyboard, wcag-reflow)
+
+SOURCES
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- baymard-coupon: https://baymard.com/blog/coupon-code-field
+- baymard-abandon: https://baymard.com/lists/cart-abandonment-rate
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- webdev-payment: https://web.dev/articles/payment-and-address-form-best-practices
+- wcag-redundant: https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry
+- pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
+- baymard-card: https://baymard.com/blog/how-to-format-card-fields
+- psd2-sca: https://www.ecb.europa.eu/press/intro/mip-online/2018/html/1803_revisedpsd.en.html
+- stripe-3ds: https://docs.stripe.com/payments/3d-secure
+- baymard-trust: https://baymard.com/blog/perceived-security-of-payment-form
+- wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
+- owasp-transaction: https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- zatca-einvoice: https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

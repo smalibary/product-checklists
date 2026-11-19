@@ -1,0 +1,59 @@
+﻿MULTI-STEP FORM CHECKLIST: 23 items
+A long form split into steps (a wizard), so people answer a few questions at a time.
+Backing: 0 Rule, 17 Standard, 3 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SHAPE
+ 1. Split only when the form is long or later questions depend on earlier answers   (Research: nng-wizards)
+ 2. One topic per step; one question per page for hard or unfamiliar questions   (Standard: govuk-question)
+ 3. Steps named, with "Step 2 of 5" and a progress indicator   (Research: nng-progress)
+ 4. Before starting, say how long it takes and what to have ready   (Standard: govuk-question)
+ 5. A task list for long applications, so steps can be done in any order   (Standard: govuk-task-list)
+
+MOVING
+ 6. Continue and Back buttons in the same places on every step   (Standard: wcag-consistent)
+ 7. Browser Back works and keeps answers   (Practice)
+ 8. Answers saved as people go; leaving and coming back continues   (Practice)
+ 9. Save and come back later, for long forms   (Standard: govuk-question)
+10. Steps that do not apply are skipped, not shown greyed out   (Standard: govuk-question)
+
+CHECKING
+11. Errors checked when leaving a field or on Continue, never while typing the first time   (Research: baymard-inline)
+12. Error summary at the top of the step, linking to each field   (Standard: govuk-error-summary)
+13. Error message next to each field in words   (Standard: govuk-error-message, wcag-error)
+14. Answers already given are never asked again   (Standard: wcag-redundant)
+
+THE END
+15. A check-your-answers page with Change links for each answer   (Standard: govuk-check)
+16. A clear final button naming the action ("Submit application")   (Standard: wcag-prevent)
+17. Confirmation page with a reference number and what happens next   (Standard: govuk-confirm)
+18. Confirmation by email   (Practice)
+
+ACCESS
+19. Focus moves to the step heading after Continue   (Standard: wcag-focus-order)
+20. Page title changes per step ("Step 2 of 5: Address")   (Standard: wcag-title)
+21. Labels, autofill and the right keyboard on every field   (Standard: wcag-labels, mdn-autocomplete, mdn-inputmode)
+22. No time limit, or one that can be extended   (Standard: wcag-timing)
+23. Works at phone width   (Standard: wcag-reflow)
+
+SOURCES
+- nng-wizards: https://www.nngroup.com/articles/wizards/
+- govuk-question: https://design-system.service.gov.uk/patterns/question-pages/
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- govuk-task-list: https://design-system.service.gov.uk/components/task-list/
+- wcag-consistent: https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation
+- baymard-inline: https://baymard.com/blog/inline-form-validation
+- govuk-error-summary: https://design-system.service.gov.uk/components/error-summary/
+- govuk-error-message: https://design-system.service.gov.uk/components/error-message/
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- wcag-redundant: https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry
+- govuk-check: https://design-system.service.gov.uk/patterns/check-answers/
+- wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- mdn-inputmode: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

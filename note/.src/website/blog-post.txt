@@ -1,0 +1,31 @@
+title: Blog post
+about: A single article page, built for reading, sharing and finding the next article.
+## Top of the article
+- Title as the only top-level heading | S wcag-headings
+- Author name with photo and a link to their page | R nng-blog
+- Date published and date updated | R nng-blog google-article
+- Reading time | P
+- A summary or key points for scanners | R nng-scanning
+## Reading
+- Body text at least 16 pixels, line height about 1.5 | S wcag-spacing
+- Lines of about 50 to 75 characters | P butterick-line
+- Headings every few paragraphs, in order | S wcag-headings
+- Short paragraphs, lists and bold key words | R nng-scanning
+- A contents list for long posts, with jump links | P
+- Links say where they go | S wcag-link
+- Images with alt text and captions; charts also described in words | S wcag-nontext
+- Code blocks scroll on their own on phones, never the whole page | S wcag-reflow
+- Text resizes to 200% without breaking | S wcag-resize
+- Dark mode respected if the site has one | P mdn-color-scheme
+## Around the article
+- Share buttons that are links, not heavy trackers | P
+- Related posts at the end | R nng-blog
+- A sign-up for new posts, with consent rules | L gdpr-7
+- Category and tags linking to more | R nng-blog
+- Comments, if any, moderated | L eu-dsa
+## Search and speed
+- Article structured data: headline, author, dates, image | S google-article
+- A unique title and description | S google-title google-snippet
+- Breadcrumbs for deep sites | S google-breadcrumb
+- Images sized and lazy-loaded; the page does not jump | S webdev-images webdev-cls
+- Sponsored or affiliate links disclosed | L ftc-endorsements

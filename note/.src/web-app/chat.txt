@@ -1,0 +1,35 @@
+title: Chat (web app)
+about: Messaging between people inside the app: one-to-one, groups and channels.
+## Conversations list
+- Each conversation: name, photo, last message preview, time, unread count | P
+- Unread shown by more than colour (bold plus a number) | S wcag-color
+- Search across conversations and messages | P
+- Pin, mute and archive | P
+- Start a new conversation | P
+## Messages
+- Mine and theirs clearly different (side, colour, label for screen readers) | S wcag-info
+- Grouped by sender and time; date dividers | P
+- Sent, delivered and read states with icons that have names | S wcag-name-role
+- Failed messages marked with Retry | R nng-errors
+- Edited and deleted messages marked | P
+- Reactions, replies to a message, and threads | P
+- Links preview; files and images with size and download | P
+## Writing
+- Box with a label; Enter sends, Shift+Enter new line, stated | S wcag-labels
+- Typing indicator | P
+- Draft kept per conversation | P
+- Mentions with @ and suggestions | S apg-combobox
+- Attach files with type and size limits stated | S owasp-upload
+## Behaviour
+- Opens at the first unread message, with "Jump to latest" | P
+- New messages do not scroll the person away while reading older ones | P
+- Older messages load when scrolling up, keeping position | R nng-infinite
+- Works offline: queued messages send when back online | P
+## Safety
+- Block and report in each conversation | L eu-dsa
+- Messages encrypted in transit; end-to-end where the product promises it | S owasp-secrets
+- Message text escaped so it cannot run code | S owasp-xss
+## Access
+- New messages announced politely, not every keystroke | S wcag-status
+- Message list is a log region; keyboard reaches every message action | S wcag-keyboard
+- Works at phone width | S wcag-reflow

@@ -1,0 +1,30 @@
+title: Table
+about: The table component: rows and columns for comparing data (the Data Table note covers sorting, filtering and bulk actions).
+## When to use
+- Data people compare across rows and columns | R nng-tables
+- Not for page layout | S wai-tables
+- Simple lists without columns: use a list | R nng-tables
+## Structure
+- Real table markup: table, caption, thead, th, tbody | S wai-tables
+- Column headers with scope; row headers when one column names the row | S wai-tables
+- Caption or heading names the table | S wai-tables govuk-table
+- Complex headers (two levels) linked properly | S wai-tables
+## Look
+- Numbers right-aligned with tabular figures; text start-aligned | R nng-tables govuk-table
+- Headers clearly different from data (weight, background) | R nng-tables
+- Row lines or zebra stripes with enough contrast | S wcag-ui-contrast
+- Row height options (compact, comfortable) | S m3-layout
+- Units in headers | R nng-tables
+- Empty cells show a dash with a screen-reader word ("None") | P
+## Responsive
+- On small screens: scroll inside its own box, with the first column fixed | S wcag-reflow
+- Or turn rows into stacked cards for simple tables | P
+- The scroll box can take focus so keyboard users can scroll it | S wcag-keyboard
+## Interactive tables
+- Sortable headers are buttons with aria-sort | S apg-table
+- If cells are interactive, use the grid pattern with arrow keys | S apg-grid
+- Row selection with checkboxes that have names ("Select row: Invoice 104") | S wcag-name-role
+## Content
+- Status in words or icons with names, not only colour | S wcag-color
+- Long text wraps or truncates with full text on hover and focus | S wcag-hover
+- Totals row marked as such | P

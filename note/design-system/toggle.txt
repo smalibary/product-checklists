@@ -1,0 +1,47 @@
+﻿TOGGLE CHECKLIST: 19 items
+A switch that turns one setting on or off and takes effect at once.
+Backing: 0 Rule, 11 Standard, 7 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. A setting that applies immediately (Notifications on)   (Research: nng-toggle)
+ 2. Not inside a form with a Save button (use a checkbox)   (Research: nng-toggle)
+ 3. Not for choosing between two different things (use radios or a segmented control)   (Research: nng-toggle)
+
+LOOK
+ 4. Track and thumb; on and off clearly different by position and fill, not only colour   (Standard: wcag-color, m3-switch)
+ 5. An optional check icon inside the thumb when on   (Standard: m3-switch)
+ 6. Label on the start side says what is switched, not the state ("Email alerts")   (Research: nng-toggle)
+ 7. Track border and thumb 3:1 contrast in both states   (Standard: wcag-ui-contrast)
+ 8. Touch area at least 24 px, ideally 44 to 48   (Standard: wcag-target, hig-toggles)
+
+BEHAVIOUR
+ 9. Changes apply at once, with a short "Saved" message if it is saved to a server   (Standard: wcag-status)
+10. If saving fails, the toggle goes back and an error says why   (Research: nng-errors)
+11. If the change is slow, a busy state   (Research: nng-response)
+12. Labels never change meaning with the state ("On" text can confuse)   (Research: nng-toggle)
+13. Disabled toggles explain why   (Practice)
+
+ACCESS
+14. role switch with aria-checked, or a native checkbox styled as a switch   (Standard: apg-switch)
+15. Space toggles; Enter may too   (Standard: apg-switch)
+16. Label linked to the switch   (Standard: wcag-labels)
+17. Focus ring visible   (Standard: wcag-focus)
+18. Thumb moves to the other side in right-to-left   (Standard: w3c-dir)
+19. Animation respects reduced motion   (Standard: mdn-reduced-motion)
+
+SOURCES
+- nng-toggle: https://www.nngroup.com/articles/toggle-switch-guidelines/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- m3-switch: https://m3.material.io/components/switch/guidelines
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- hig-toggles: https://developer.apple.com/design/human-interface-guidelines/toggles
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/
+- apg-switch: https://www.w3.org/WAI/ARIA/apg/patterns/switch/
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion

@@ -1,0 +1,53 @@
+﻿SINGLE ITEM DETAIL CHECKLIST: 22 items
+The page for one record (a task, a contact, an order, a file) with all its details and actions.
+Backing: 0 Rule, 5 Standard, 9 Research, 8 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TOP
+ 1. Item name as the main heading, with its type and status   (Standard: wcag-headings)
+ 2. Main actions near the title (Edit, Share, more in a menu)   (Practice)
+ 3. Breadcrumb or back link to the list it came from, keeping the list's filters and scroll   (Research: nng-breadcrumbs)
+ 4. Previous and next item buttons when opened from a list   (Practice)
+
+DETAILS
+ 5. Key facts first in a summary; the rest grouped in sections   (Research: nng-scanning)
+ 6. Labels and values in a clear two-column list   (Standard: govuk-summary)
+ 7. Empty fields show a dash or "Not set", with a way to add   (Research: nng-empty)
+ 8. Dates in the person's time zone and format, exact time on hover or focus   (Practice)
+ 9. People shown with name and avatar, linking to them   (Practice)
+
+EDITING
+10. Edit in place for single fields, or an Edit mode for many   (Practice)
+11. Changes saved with a clear message; conflicts if someone else edited   (Research: nng-status)
+12. Unsaved changes warned before leaving   (Research: nng-control)
+13. Who changed what and when (history)   (Practice)
+
+RELATED
+14. Related items, comments and files in tabs or sections   (Research: nng-tabs)
+15. Activity log of changes   (Practice)
+
+STATES
+16. Loading skeleton shaped like the page   (Research: nng-skeleton)
+17. Not found or no permission shown in words, with a way back   (Research: nng-errors)
+18. Deleted items say so, with restore if possible   (Research: nng-control)
+
+ACCESS
+19. Each item has its own address, shareable and bookmarkable   (Practice)
+20. Page title includes the item name   (Standard: wcag-title)
+21. Keyboard reaches every action   (Standard: wcag-keyboard)
+22. Works at phone width   (Standard: wcag-reflow)
+
+SOURCES
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- nng-breadcrumbs: https://www.nngroup.com/articles/breadcrumbs/
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- govuk-summary: https://design-system.service.gov.uk/components/summary-list/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- nng-status: https://www.nngroup.com/articles/visibility-system-status/
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- nng-tabs: https://www.nngroup.com/articles/tabs-used-right/
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

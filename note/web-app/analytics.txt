@@ -1,0 +1,57 @@
+﻿ANALYTICS CHECKLIST: 25 items
+Charts and numbers that show how something is performing over time, for people to understand and decide.
+Backing: 1 Rule, 6 Standard, 7 Research, 11 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+OVERVIEW
+ 1. The few numbers that matter most at the top, each with change from the last period   (Research: nng-dashboards)
+ 2. Change shown as number and arrow or word, not only green and red   (Standard: wcag-color)
+ 3. Date range picker with common presets (7 days, 30 days, this month) and compare to previous   (Practice)
+ 4. Time zone of the data stated   (Practice)
+ 5. When the data was last updated   (Research: nng-status)
+
+CHARTS
+ 6. The right chart for the question: lines for trends, bars for comparison, no 3D or pies with many slices   (Research: nng-dashboards)
+ 7. Axes labelled with units; y-axis starts at zero for bars   (Practice)
+ 8. Tooltip on hover and focus showing exact values   (Standard: wcag-hover)
+ 9. Legend near the lines, or labels on the lines   (Practice)
+10. Colours that work for colour-blind people and in dark mode   (Standard: wcag-ui-contrast, wcag-color)
+11. A table view of the same data for screen readers and export   (Standard: wcag-nontext)
+
+EXPLORING
+12. Filter by segment (country, plan, channel)   (Research: nng-filters)
+13. Click a chart point to see the records behind it   (Practice)
+14. Filters and range kept in the address, so views can be shared   (Practice)
+15. Save a view or report   (Practice)
+
+TRUST
+16. Definitions of each number on demand ("Active user: signed in within 7 days")   (Practice)
+17. Incomplete periods (today) marked   (Practice)
+18. Data gaps or delays shown, not drawn as zero   (Practice)
+
+STATES AND SPEED
+19. Loading skeletons in chart shapes   (Research: nng-skeleton)
+20. No data state explains why (no events yet, filter too narrow)   (Research: nng-empty)
+21. Slow queries show progress and can be cancelled   (Research: nng-response)
+
+ACCESS AND EXPORT
+22. Export to CSV and image   (Practice)
+23. Animated charts respect reduced motion   (Standard: mdn-reduced-motion, wcag-animation)
+24. Works at phone width (charts scale, tables scroll)   (Standard: wcag-reflow)
+25. Personal data aggregated or anonymised where possible   (Rule: gdpr-25)
+
+SOURCES
+- nng-dashboards: https://www.nngroup.com/articles/dashboards-preattentive/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- nng-status: https://www.nngroup.com/articles/visibility-system-status/
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- wcag-animation: https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- gdpr-25: https://gdpr-info.eu/art-25-gdpr/

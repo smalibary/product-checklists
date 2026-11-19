@@ -1,0 +1,30 @@
+title: Single Item Detail
+about: The page for one record (a task, a contact, an order, a file) with all its details and actions.
+## Top
+- Item name as the main heading, with its type and status | S wcag-headings
+- Main actions near the title (Edit, Share, more in a menu) | P
+- Breadcrumb or back link to the list it came from, keeping the list's filters and scroll | R nng-breadcrumbs
+- Previous and next item buttons when opened from a list | P
+## Details
+- Key facts first in a summary; the rest grouped in sections | R nng-scanning
+- Labels and values in a clear two-column list | S govuk-summary
+- Empty fields show a dash or "Not set", with a way to add | R nng-empty
+- Dates in the person's time zone and format, exact time on hover or focus | P
+- People shown with name and avatar, linking to them | P
+## Editing
+- Edit in place for single fields, or an Edit mode for many | P
+- Changes saved with a clear message; conflicts if someone else edited | R nng-status
+- Unsaved changes warned before leaving | R nng-control
+- Who changed what and when (history) | P
+## Related
+- Related items, comments and files in tabs or sections | R nng-tabs
+- Activity log of changes | P
+## States
+- Loading skeleton shaped like the page | R nng-skeleton
+- Not found or no permission shown in words, with a way back | R nng-errors
+- Deleted items say so, with restore if possible | R nng-control
+## Access
+- Each item has its own address, shareable and bookmarkable | P
+- Page title includes the item name | S wcag-title
+- Keyboard reaches every action | S wcag-keyboard
+- Works at phone width | S wcag-reflow

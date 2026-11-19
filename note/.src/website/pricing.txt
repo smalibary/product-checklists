@@ -1,0 +1,31 @@
+title: Pricing page (website)
+about: Shows the plans and their prices so a visitor can pick one and start.
+## Plans
+- Two to four plans side by side, one marked as most popular | R nng-pricing
+- Each plan: name, who it is for, price, billing period and the main limits | R nng-pricing
+- Price in the visitor's currency, with tax shown or stated | L eu-consumer-rights ftc-junk-fees
+- Monthly and yearly switch, with the yearly saving as an amount, not only a percent | P
+- Yearly price also shown per month only if the full yearly charge is stated beside it | L ftc-negative-option
+- All mandatory fees inside the price shown | L ftc-junk-fees
+- A free trial or free plan stated with what happens at the end | L ftc-negative-option
+- "Contact sales" only for the biggest plan; prices for the rest | R nng-pricing
+## Comparing
+- A full feature table below the plan cards | R nng-comparison
+- Feature names in plain words with a short explanation on demand | R nng-pricing
+- Ticks also have words for screen readers | S wcag-nontext
+- The table header stays visible while scrolling | R nng-comparison
+## Doubts
+- FAQ: changing plans, cancelling, refunds, payment methods, discounts | R nng-faq
+- How to cancel, and that it is as easy as signing up | L ftc-negative-option
+- Money-back promise, if any, with its terms | L eu-consumer-rights
+- Customer logos or quotes near the plans | R nng-trust
+## Action
+- One button per plan with a clear verb (Start free trial, Buy Pro) | P
+- The chosen plan carries into sign-up and checkout | P
+## Honesty
+- No pre-ticked add-ons, no fake discounts with made-up "was" prices | L ftc-dark-patterns eu-omnibus
+- A struck-out old price only if it was the real price in the last 30 days (EU) | L eu-omnibus
+## Access
+- Plan cards stack on phones, the recommended one first | S wcag-reflow
+- The monthly and yearly switch is a real control with a name and state | S apg-switch wcag-name-role
+- Contrast meets WCAG, including the highlighted plan | S wcag-contrast

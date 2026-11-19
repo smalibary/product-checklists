@@ -1,0 +1,51 @@
+﻿SEARCH (MOBILE) CHECKLIST: 20 items
+Searching inside a phone app: the search field, suggestions, results and filters.
+Backing: 0 Rule, 9 Standard, 7 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+GETTING THERE
+ 1. Search in a tab, or a search field at the top of the main list   (Standard: hig-search, m3-search)
+ 2. Tapping it opens a focused search screen with the keyboard up   (Standard: m3-search)
+ 3. Pull-down reveals search on iOS lists where suited   (Standard: hig-search)
+
+BEFORE TYPING
+ 4. Recent searches, with remove and clear all   (Research: nng-search)
+ 5. Popular or suggested searches   (Practice)
+ 6. Categories to browse   (Practice)
+
+TYPING
+ 7. Suggestions after a character or two   (Research: baymard-autocomplete)
+ 8. Typo-tolerant, handles Arabic letter forms and diacritics   (Practice)
+ 9. Search key on the keyboard   (Standard: mdn-inputmode)
+10. Clear button and Cancel (iOS) or back arrow (Android)   (Standard: hig-search, m3-search)
+11. Voice search where it helps   (Practice)
+
+RESULTS
+12. Count of results, grouped by type if mixed   (Research: nng-search)
+13. Matched words highlighted with weight, not only colour   (Standard: wcag-color)
+14. Filters in a sheet or chips above results, with counts   (Research: baymard-filters)
+15. Sort choice   (Research: nng-search)
+16. Infinite scroll keeps position when coming back   (Research: nng-infinite)
+
+NO RESULTS
+17. Say so, show the words, suggest spelling fixes and other searches   (Research: nng-empty)
+
+ACCESS
+18. Field has a name ("Search products")   (Standard: hig-accessibility)
+19. Number of results announced   (Standard: wcag-status)
+20. Large text supported; results rows at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- hig-search: https://developer.apple.com/design/human-interface-guidelines/search-fields
+- m3-search: https://m3.material.io/components/search/guidelines
+- nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
+- baymard-autocomplete: https://baymard.com/blog/autocomplete-design
+- mdn-inputmode: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- baymard-filters: https://baymard.com/blog/allow-applying-of-multiple-filter-values
+- nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

@@ -1,0 +1,25 @@
+title: Coming Soon page
+about: A holding page before a launch that says what is coming and collects interest.
+## Content
+- What is coming and who it is for, in one line | P
+- A rough launch date, or "early 2027", only if the team will keep it | P
+- One clear action: leave an email to be told at launch | P
+- What the person will get by signing up (early access, a discount) | P
+- Company name and a way to contact | L eu-consumer-rights
+## The email form
+- One field: email, with a visible label and the right input type | S wcag-labels mdn-autocomplete
+- Say exactly what emails will be sent and how often | L gdpr-13 can-spam
+- Consent box unticked by default where the law needs consent for marketing | L gdpr-7
+- A link to the privacy policy beside the form | L gdpr-13
+- Confirmation on screen and by email; double opt-in where required | P
+- Errors shown in words next to the field | S wcag-error
+## Countdown, if used
+- A countdown that is real and never resets | L ftc-dark-patterns
+- Countdown numbers not read aloud every second by screen readers | S wcag-status
+## Search and status
+- Returns a normal page (status 200), with a real title and description | S google-title google-snippet
+- If the main site is down for a short while, use a maintenance page instead (status 503) | S google-maintenance
+## Look and access
+- Contrast and text size meet WCAG | S wcag-contrast
+- Any background video or animation can be paused and respects reduced motion | S wcag-pause mdn-reduced-motion
+- Works at phone width with no sideways scroll | S wcag-reflow

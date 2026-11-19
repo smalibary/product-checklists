@@ -1,0 +1,38 @@
+﻿PRESS / MEDIA PAGE CHECKLIST: 16 items
+Gives journalists what they need to write about the company quickly: news, facts, images and a contact.
+Backing: 0 Rule, 3 Standard, 10 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTACT FIRST
+ 1. A named press contact with email and phone, near the top   (Research: nng-press)
+ 2. Expected reply time   (Research: nng-press)
+
+FACTS
+ 3. Company fact sheet: founded, founders, headquarters, size, funding, what it does   (Research: nng-press)
+ 4. Short and long company descriptions ready to copy   (Research: nng-press)
+ 5. Leadership names, roles, bios and photos   (Research: nng-press)
+
+NEWS
+ 6. Press releases listed newest first, each with a date and as HTML (not only PDF)   (Research: nng-press)
+ 7. Coverage: links to articles about the company   (Practice)
+
+MEDIA KIT
+ 8. Logos in several formats (SVG, PNG) on light and dark backgrounds   (Research: nng-press)
+ 9. Product screenshots and photos at high resolution   (Research: nng-press)
+10. One download for the whole kit, with its file size   (Research: nng-press)
+11. Rules for using the logo and the brand name   (Practice)
+12. Image credits and permission to use stated   (Practice)
+
+ACCESS
+13. Photos and logos have alt text   (Standard: wcag-nontext)
+14. Downloads labelled with type and size   (Standard: wcag-link)
+15. Contrast and headings meet WCAG   (Standard: wcag-contrast, wcag-headings)
+16. Reachable from the footer and About page   (Research: nng-footers)
+
+SOURCES
+- nng-press: https://www.nngroup.com/articles/press-area-usability/
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- nng-footers: https://www.nngroup.com/articles/footers/

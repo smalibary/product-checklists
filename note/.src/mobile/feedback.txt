@@ -1,0 +1,22 @@
+title: Feedback (mobile)
+about: Asking for ratings, reviews, bug reports and ideas inside a phone app.
+## Store rating
+- Use the system review prompt (SKStoreReviewController / In-App Review API) | S apple-review-prompt play-in-app-review
+- Ask after a success moment, never on first launch or during a task | S apple-review-prompt
+- The system limits how often it shows (3 times a year on iOS); do not build your own star prompt that sends only happy users to the store | S apple-review-prompt play-in-app-review
+- No rewards for ratings | S apple-review
+## Bug report and ideas
+- "Send feedback" in Settings and Help | P
+- Short form: what happened, optional screenshot, optional email | R nng-surveys
+- Screenshot shake or attach, with the chance to blur private parts | P
+- Device, app version and system version attached automatically, with notice | L gdpr-13
+- Thank-you and what happens next | P
+## Quick in-app surveys
+- One question at a time, at most 2 or 3 | R nng-surveys
+- Easy to close; not shown again soon after | R nng-modal
+## Replies
+- Answers come back in the app or by email; the person can follow their report | P
+## Access
+- Ratings with buttons, not only swipes | S wcag-gestures
+- Form fields named; large text supported | S wcag-labels hig-accessibility
+- Buttons at least 44 pt / 48 dp | S hig-layout m3-layout

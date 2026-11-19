@@ -1,0 +1,29 @@
+title: Document View
+about: Reading and editing one document (a page, a note, a file) inside the app, often with others.
+## Reading
+- Title as the main heading, with owner, last edited time and by whom | P
+- Contents list from headings for long documents | S wcag-headings
+- Comfortable line length (about 60 to 80 characters) and line height | S butterick-line wcag-text-spacing
+- Readable at 200% zoom and in dark mode | S wcag-reflow mdn-color-scheme
+- Images, tables and code blocks fit the width or scroll inside their box | S wcag-reflow
+## Editing
+- Clear difference between view and edit mode, or edit in place with a visible cursor | P
+- Saving automatic with "Saved" or "Saving..." shown | R nng-status
+- Offline edits kept and synced later | P
+- Undo and redo with keyboard shortcuts | R nng-control
+- Formatting toolbar with named buttons, also by keyboard shortcut | S wcag-name-role
+- Paste from other apps keeps simple formatting | P
+## Together
+- Who else is here, with photos and coloured cursors plus names | P
+- Comments on selected text | P
+- Suggest changes mode for reviewers | P
+- Version history | P
+## Sharing
+- Share button showing who has access and their level (view, comment, edit) | S owasp-authz
+- Link sharing off by default, or limited to the workspace | S owasp-authz
+- Export to PDF, Word, Markdown | P
+- Print layout | P
+## Access
+- Editor works with screen readers and keyboard only | S wcag-keyboard
+- Headings, lists and tables are real structure, not just bold text | S wcag-info
+- Language of the document set, with right-to-left for Arabic | S w3c-dir

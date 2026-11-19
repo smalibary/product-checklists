@@ -1,0 +1,52 @@
+﻿DATE PICKER CHECKLIST: 23 items
+A control for choosing a date or a range of dates, by typing or from a calendar.
+Backing: 0 Rule, 14 Standard, 5 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING THE RIGHT CONTROL
+ 1. Known dates far away (birthday, passport expiry): three text fields or one typed field, not a calendar   (Standard: govuk-date)
+ 2. Dates near today or tied to weekdays (bookings): a calendar helps   (Research: nng-date)
+ 3. A range (from, to): one calendar showing two months   (Research: nng-date)
+
+TYPING
+ 4. A typed field is always possible, with the format shown ("DD/MM/YYYY")   (Standard: govuk-date)
+ 5. Accept common formats and fix them gently   (Research: nng-date)
+ 6. Numeric keyboard on phones   (Standard: mdn-inputmode)
+ 7. autocomplete bday for birth dates   (Standard: mdn-autocomplete)
+
+THE CALENDAR
+ 8. Opens from a button beside the field with a name ("Choose date")   (Standard: apg-datepicker)
+ 9. Today marked; the chosen date clearly marked by more than colour   (Standard: wcag-color)
+10. Unavailable dates marked and explained   (Research: nng-date)
+11. Month and year can be changed quickly   (Research: nng-date)
+12. Week starts on the locale's first day (Sunday in Saudi Arabia, Monday in much of Europe)   (Practice)
+13. Hijri calendar shown where the audience needs it   (Practice)
+
+KEYBOARD AND ACCESS
+14. Arrow keys move by day, Page Up/Down by month, Home/End to week start and end   (Standard: apg-datepicker)
+15. Calendar is a dialog with a grid; focus moves in and back   (Standard: apg-datepicker)
+16. Each day read with full date ("Tuesday 3 March 2026")   (Standard: apg-datepicker)
+17. Escape closes without changing the value   (Standard: apg-datepicker)
+
+RULES AND ERRORS
+18. Minimum and maximum dates stated   (Practice)
+19. Errors in words ("Date must be in the future")   (Standard: govuk-date, wcag-error)
+20. Time zone stated if the date has a time   (Practice)
+21. Values stored in ISO 8601   (Standard: iso-8601)
+
+PLATFORM
+22. On phones, the native picker is often the better choice   (Standard: hig-pickers, m3-date-pickers)
+23. Direction and numerals follow the language (Arabic)   (Standard: w3c-dir)
+
+SOURCES
+- govuk-date: https://design-system.service.gov.uk/components/date-input/
+- nng-date: https://www.nngroup.com/articles/date-input/
+- mdn-inputmode: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- apg-datepicker: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/datepicker-dialog/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- iso-8601: https://www.iso.org/iso-8601-date-and-time-format.html
+- hig-pickers: https://developer.apple.com/design/human-interface-guidelines/pickers
+- m3-date-pickers: https://m3.material.io/components/date-pickers/guidelines
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir

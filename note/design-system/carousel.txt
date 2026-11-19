@@ -1,0 +1,50 @@
+﻿CAROUSEL CHECKLIST: 20 items
+A row of slides (images, cards) shown a few at a time, moved by arrows, swipes or dots.
+Backing: 0 Rule, 17 Standard, 3 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. Browsing a set of similar items (photos of a product, related cards)   (Standard: m3-carousel)
+ 2. Not for important messages on a homepage: later slides are rarely seen   (Research: nng-carousel)
+ 3. Show part of the next slide so people know there is more   (Standard: m3-carousel)
+
+CONTROLS
+ 4. Previous and next buttons with names, large enough to tap   (Standard: apg-carousel, wcag-target)
+ 5. Dots or "3 of 8" to show position; dots are buttons with names   (Standard: apg-carousel)
+ 6. Swipe on touch, with buttons too   (Standard: wcag-dragging)
+ 7. Keyboard can reach the controls and each slide   (Standard: apg-carousel)
+
+AUTO-PLAY
+ 8. Avoid auto-play; if used, a visible pause button   (Standard: apg-carousel, wcag-pause)
+ 9. Auto-play stops on hover, on focus, and for reduced motion   (Standard: apg-carousel, mdn-reduced-motion)
+10. Slides stay at least 5 seconds   (Research: nng-carousel)
+
+CONTENT
+11. Each slide makes sense alone   (Research: nng-carousel)
+12. Images have alt text   (Standard: wcag-nontext)
+13. Text on images keeps contrast (overlay)   (Standard: wcag-contrast)
+14. Slides sized before images load, so nothing jumps   (Standard: webdev-cls)
+
+ACCESS
+15. The carousel is a region named by its role ("carousel") and label   (Standard: apg-carousel)
+16. Each slide is a group named "3 of 8"   (Standard: apg-carousel)
+17. Slide changes announced politely only when the person moves it, not during auto-play   (Standard: apg-carousel)
+18. Off-screen slides hidden from keyboard and screen readers   (Standard: apg-carousel)
+19. Direction flips for Arabic   (Standard: w3c-dir)
+
+SPEED
+20. Only the visible and next images load first   (Standard: webdev-lazy)
+
+SOURCES
+- m3-carousel: https://m3.material.io/components/carousel/guidelines
+- nng-carousel: https://www.nngroup.com/articles/auto-forwarding/
+- apg-carousel: https://www.w3.org/WAI/ARIA/apg/patterns/carousel/
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- webdev-cls: https://web.dev/articles/cls
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- webdev-lazy: https://web.dev/articles/browser-level-image-lazy-loading

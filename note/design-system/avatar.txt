@@ -1,0 +1,41 @@
+﻿AVATAR CHECKLIST: 15 items
+A small picture (or initials) that represents a person or an organisation.
+Backing: 0 Rule, 11 Standard, 0 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. Photo when there is one; initials as the fallback; then a generic icon   (Practice)
+ 2. Initials from the first letters of the name, handling one-word and Arabic names   (Standard: w3c-names)
+ 3. Initials background colour from a fixed set, chosen from the name, with text contrast 4.5:1   (Standard: wcag-contrast)
+ 4. Organisations use square avatars, people round, if both appear   (Practice)
+
+SIZES
+ 5. A few sizes from tokens (24, 32, 40, 56, 96)   (Standard: dtcg-tokens)
+ 6. Images served at the right size and cropped to fill   (Standard: webdev-images)
+
+EXTRAS
+ 7. Status dot (online, away) with a text name, not only colour   (Standard: wcag-color)
+ 8. Groups: overlapping avatars with "+5" for more, and the full list on hover or tap   (Practice)
+ 9. Upload: crop to a circle with preview; file type and size limits stated   (Standard: owasp-upload)
+
+BEHAVIOUR
+10. Broken image falls back to initials   (Practice)
+11. Clickable avatars open the person's profile or a menu, with a clear focus state   (Standard: wcag-focus)
+
+ACCESS
+12. Avatar beside the name: decorative (empty alt)   (Standard: wai-images)
+13. Avatar alone: alt text with the name ("Sara Ahmed")   (Standard: wcag-nontext)
+14. Avatar buttons have names ("Account menu for Sara")   (Standard: wcag-name-role)
+15. Status announced in words ("Online")   (Standard: wcag-name-role)
+
+SOURCES
+- w3c-names: https://www.w3.org/International/questions/qa-personal-names
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- dtcg-tokens: https://tr.designtokens.org/format/
+- webdev-images: https://web.dev/learn/images
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- owasp-upload: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+- wai-images: https://www.w3.org/WAI/tutorials/images/
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value

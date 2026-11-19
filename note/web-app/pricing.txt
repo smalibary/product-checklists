@@ -1,0 +1,47 @@
+﻿PRICING (INSIDE THE APP) CHECKLIST: 20 items
+The plans page shown to signed-in users, with their current plan and what changing would cost.
+Backing: 6 Rule, 5 Standard, 2 Research, 7 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PLANS
+ 1. Current plan marked clearly   (Practice)
+ 2. 2 to 4 plans side by side, one suggested   (Research: nng-comparison)
+ 3. Price per month and per year, with the yearly saving   (Practice)
+ 4. Prices include or exclude VAT, stated clearly   (Rule: eu-consumer-rights, ftc-junk-fees)
+ 5. Per-seat prices show the total for the team's size   (Practice)
+ 6. Currency of the account (SAR for Saudi customers)   (Practice)
+
+COMPARING
+ 7. The features that differ, not a wall of ticks   (Research: nng-comparison)
+ 8. Feature names with short explanations on hover or tap   (Standard: wcag-hover)
+ 9. Limits stated in numbers (projects, storage, members)   (Practice)
+10. The person's own usage shown next to each plan's limit   (Practice)
+
+CHANGING
+11. Upgrade shows prorated charge today and the next bill   (Rule: ftc-negative-option)
+12. Downgrade shows what will be lost or locked, and when it takes effect   (Rule: ftc-negative-option)
+13. Owners change plans; members can request   (Standard: owasp-authz)
+14. Contact sales for large plans, without hiding the price of smaller ones   (Practice)
+
+HONESTY
+15. No fake countdowns or "only 2 left"   (Rule: ftc-dark-patterns)
+16. Trial terms and auto-renewal stated before payment   (Rule: ftc-negative-option)
+17. Cancellation easy to find from here   (Rule: ftc-negative-option)
+
+ACCESS
+18. Comparison table with headers; ticks have text for screen readers   (Standard: wai-tables, wcag-nontext)
+19. Works at phone width (plans stack, table scrolls)   (Standard: wcag-reflow)
+20. Monthly/yearly switch is a real switch or radio group   (Standard: apg-radio)
+
+SOURCES
+- nng-comparison: https://www.nngroup.com/articles/comparison-tables/
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- wai-tables: https://www.w3.org/WAI/tutorials/tables/
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- apg-radio: https://www.w3.org/WAI/ARIA/apg/patterns/radio/

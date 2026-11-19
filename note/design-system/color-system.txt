@@ -1,0 +1,50 @@
+﻿COLOR SYSTEM CHECKLIST: 21 items
+The set of colours in a design system and the rules for using them, in light and dark themes.
+Backing: 0 Rule, 15 Standard, 1 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STRUCTURE
+ 1. Three tiers: raw colours (primitives), colours by job (roles), colours for components   (Standard: dtcg-tokens, m3-color)
+ 2. Primitives as tonal scales (50 to 950) for each hue   (Standard: m3-color)
+ 3. Roles named by job: background, surface, text, muted text, border, primary, danger, success, warning, focus   (Standard: m3-color)
+ 4. Components use roles, never primitives   (Standard: m3-tokens)
+ 5. Each role has a matching "on" colour for text on top (on-primary)   (Standard: m3-color)
+
+CONTRAST
+ 6. Every text-on-background pair checked: 4.5:1 normal, 3:1 large   (Standard: wcag-contrast)
+ 7. Borders and icons of controls 3:1 against what is next to them   (Standard: wcag-ui-contrast)
+ 8. APCA checked as a second view, especially for dark mode   (Standard: apca)
+ 9. Contrast pairs listed in the documentation   (Practice)
+
+MEANING
+10. Colour never the only signal: add icons, words or patterns   (Standard: wcag-color)
+11. Red and green pairs readable for colour-blind people   (Standard: wcag-color)
+12. Status colours used only for status, not decoration   (Research: nng-consistency)
+13. Cultural meanings checked for the audience   (Practice)
+
+THEMES
+14. Light and dark themes from the same roles   (Standard: m3-color, hig-dark-mode)
+15. Dark mode uses dark grey surfaces, not pure black, with less saturated colours   (Standard: m3-color, hig-dark-mode)
+16. Follow the system theme by default, with a manual switch   (Standard: mdn-color-scheme)
+17. High-contrast mode and Windows forced colours still work   (Standard: mdn-forced-colors)
+
+CHARTS
+18. A separate set of chart colours that differ in lightness, not only hue   (Practice)
+
+PROCESS
+19. Colours stored as tokens shared by design and code   (Standard: dtcg-tokens)
+20. Brand colours adjusted to pass contrast, not used raw   (Practice)
+21. Documentation shows each role with do and don't examples   (Practice)
+
+SOURCES
+- dtcg-tokens: https://tr.designtokens.org/format/
+- m3-color: https://m3.material.io/styles/color/system/overview
+- m3-tokens: https://m3.material.io/foundations/design-tokens/overview
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- apca: https://git.apcacontrast.com/documentation/APCA_in_a_Nutshell
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- nng-consistency: https://www.nngroup.com/articles/consistency-and-standards/
+- hig-dark-mode: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+- mdn-color-scheme: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+- mdn-forced-colors: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors

@@ -1,0 +1,50 @@
+﻿PRIVACY PAGE CHECKLIST: 24 items
+The privacy policy: what personal data is collected, why, who sees it, and what rights people have.
+Backing: 17 Rule, 3 Standard, 0 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+REQUIRED CONTENT
+ 1. Who is responsible for the data: company name, address and contact   (Rule: gdpr-13, pdpl)
+ 2. Contact for the data protection officer, if one is required   (Rule: gdpr-13)
+ 3. What data is collected, grouped by type (account, payment, usage, device)   (Rule: gdpr-13, ccpa)
+ 4. Why each type is collected and the legal basis for it   (Rule: gdpr-13)
+ 5. Who data is shared with, by category, and whether it is sold   (Rule: gdpr-13, ccpa)
+ 6. Transfers to other countries and how they are protected   (Rule: gdpr-13, pdpl)
+ 7. How long each type is kept   (Rule: gdpr-13)
+ 8. People's rights: see, correct, delete, take away, object, withdraw consent   (Rule: gdpr-15, gdpr-17, gdpr-20, gdpr-21)
+ 9. How to use those rights, with a direct link or form   (Rule: gdpr-12, ccpa)
+10. The right to complain to the data authority   (Rule: gdpr-13)
+11. Whether any decisions are made automatically about people   (Rule: gdpr-13)
+12. Cookies and trackers explained, with a link to change choices   (Rule: eprivacy)
+13. Children: minimum age and how children's data is handled   (Rule: coppa)
+14. A "Do not sell or share my personal information" link where California law applies   (Rule: ccpa)
+
+CLARITY
+15. A short summary at the top in plain words, the full text below   (Rule: gdpr-12)
+16. Written in clear, plain language; no hidden meaning   (Rule: gdpr-12)
+17. Headings and a contents list to jump to a part   (Standard: wcag-headings)
+18. Available in the languages the service is offered in   (Rule: pdpl)
+19. Effective date and a list of changes   (Practice)
+20. People told by email when the policy changes in an important way   (Practice)
+
+ACCESS
+21. Linked from the footer of every page and from sign-up   (Practice)
+22. Readable as plain HTML (not only a PDF)   (Standard: wcag)
+23. Text contrast and size meet WCAG   (Standard: wcag-contrast, wcag-resize)
+24. A printable or downloadable version   (Practice)
+
+SOURCES
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- pdpl: https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf
+- ccpa: https://oag.ca.gov/privacy/ccpa
+- gdpr-15: https://gdpr-info.eu/art-15-gdpr/
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- gdpr-20: https://gdpr-info.eu/art-20-gdpr/
+- gdpr-21: https://gdpr-info.eu/art-21-gdpr/
+- gdpr-12: https://gdpr-info.eu/art-12-gdpr/
+- eprivacy: https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en
+- coppa: https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag: https://www.w3.org/TR/WCAG22/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-resize: https://www.w3.org/WAI/WCAG22/Understanding/resize-text

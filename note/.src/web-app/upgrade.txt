@@ -1,0 +1,29 @@
+title: Upgrade (web app)
+about: The moment and screen where a signed-in user moves to a bigger plan.
+## When to offer it
+- At the moment of need: when a limit is hit or a paid feature is tried | P
+- Say which limit was hit and what the upgrade unlocks | R nng-heuristics
+- Not on every screen; never block work already done | R nng-control
+- Admins see the offer; members get "Ask your admin" with a one-click request | P
+## The screen
+- Current plan and the suggested plan side by side | R nng-comparison
+- The exact price, billing period and tax, in the account's currency | L eu-consumer-rights ftc-junk-fees
+- What is charged today (prorated amount) and on the next bill | L ftc-negative-option
+- When the new features start (now) | P
+- Seats or usage that change the price, with a running total | P
+- Saved payment method shown, with a way to change it | P
+## Paying
+- One confirm button that names the action and the amount ("Pay 120 SAR and upgrade") | S wcag-prevent
+- Strong customer authentication (3-D Secure) handled inside the flow where cards need it | L psd2-sca stripe-3ds
+- Busy state on the button; no double charge on double click | P
+- Card details through a PCI-certified provider | S pci-dss
+## After
+- Success screen and email receipt | R govuk-confirm
+- New features visible at once, with a short pointer to them | P
+- Downgrade and cancel paths as easy to find as the upgrade | L ftc-negative-option
+## Honesty
+- No pre-ticked add-ons or hidden recurring charges | L ftc-dark-patterns
+- Trial-to-paid terms stated before the card is taken | L ftc-negative-option
+## Access
+- Focus moves to the dialog and back; Escape closes it | S apg-dialog
+- Contrast, keyboard and phone width meet WCAG | S wcag-contrast wcag-keyboard wcag-reflow

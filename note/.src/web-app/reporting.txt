@@ -1,0 +1,30 @@
+title: Reporting
+about: The tool for building, saving, scheduling and sharing reports (the Report View note covers reading one).
+## Building a report
+- Start from templates for common questions | P
+- Choose data, measures (sum, count, average) and grouping in plain words | P
+- Preview updates as choices change | R nng-response
+- Filters and date range with presets | R nng-filters
+- Choose the chart type, with a sensible default | R nng-dashboards
+- Calculated fields with a clear formula editor and errors in words | S wcag-error
+## Saving and organising
+- Name, describe and save reports into folders | P
+- Mark favourites; recent reports listed | P
+- Who owns each report and when it was last run | P
+## Sharing and schedules
+- Share with people or teams, with view or edit rights | S owasp-authz
+- Scheduled email or chat delivery, with time zone and format (PDF, CSV) | P
+- Recipients can unsubscribe from scheduled reports | L can-spam
+- Report data follows the viewer's permissions (row-level access) | S owasp-authz
+## Speed and limits
+- Long reports run in the background with progress and a notice when done | R nng-response
+- Large exports emailed as a link | P
+- Limits stated (rows, date range) | P
+## Trust
+- Definitions of each measure visible | P
+- Data freshness shown | R nng-status
+- Personal data limited to who needs it | L gdpr-25
+## Access
+- Builder works by keyboard; drag-and-drop has another way | S wcag-dragging wcag-keyboard
+- Charts with a data table view | S wcag-nontext
+- Works at tablet width at least; reading works at phone width | S wcag-reflow

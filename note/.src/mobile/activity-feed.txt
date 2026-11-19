@@ -1,0 +1,26 @@
+title: Activity Feed (mobile)
+about: A scrolling list of updates in a phone app: posts, events, or what people and things did.
+## Items
+- Each: who, what, when, with photo or icon and a short preview | P
+- Times as "5 min ago" with the full date on tap or for screen readers | P
+- Similar events grouped ("Sara and 4 others...") | R nng-notifications
+- Tap opens the full item | P
+## Loading
+- Newest first; "New posts" pill at the top instead of jumping the list | R nng-infinite
+- Pull to refresh | S hig-loading
+- Endless scroll with a loading row; position kept when coming back | R nng-infinite
+- Skeleton rows on first load | R nng-skeleton
+- Images loaded small first, videos play muted only when visible, if at all | S hig-accessibility
+## Control
+- Filters (all, mentions, following) as tabs or chips | P
+- Hide, mute, or report an item from its menu | S apple-review
+- Chronological option where the order is ranked | P
+## Healthy use
+- No tricks to keep scrolling (fake new items, autoplay chains) | L ftc-dark-patterns
+- "You're all caught up" at the end of new items | P
+## Offline
+- Cached items shown with a notice | P
+## Access
+- Each item a single readable unit with actions as custom actions | S hig-accessibility
+- Autoplay can be turned off; reduced motion respected | S wcag-pause
+- Large text supported; targets at least 44 pt / 48 dp | S hig-layout m3-layout

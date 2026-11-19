@@ -1,0 +1,40 @@
+﻿IN-APP BROWSER CHECKLIST: 14 items
+Opening web pages inside a phone app instead of switching to the phone's browser.
+Backing: 0 Rule, 13 Standard, 1 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHICH KIND
+ 1. Use the system's in-app browser (SFSafariViewController on iOS, Custom Tabs on Android), not a home-made web view, for outside sites   (Standard: hig-web-views, android-custom-tabs)
+ 2. The system kind shares the person's browser sign-ins and autofill, and the app cannot read what they type   (Standard: hig-web-views, android-custom-tabs)
+ 3. Sign-in with an outside provider (OAuth) uses the system sign-in sheet (ASWebAuthenticationSession) or Custom Tabs, never a web view   (Standard: rfc-oauth-native)
+
+CONTROLS
+ 4. Done or close button, address (domain) shown, share, and "Open in browser"   (Standard: hig-web-views)
+ 5. Loading bar   (Research: nng-progress)
+ 6. Back and forward when the page has history   (Standard: hig-web-views)
+
+SECURITY AND PRIVACY
+ 7. The domain is visible so people know where they are   (Standard: owasp-masvs)
+ 8. No injected scripts or tracking in pages that are not the app's own   (Standard: owasp-masvs)
+ 9. Only https   (Standard: owasp-masvs)
+
+WHEN TO USE
+10. Short visits (an article, help page, terms) that should return to the app   (Standard: hig-web-views)
+11. Links to other apps (maps, phone, mail) open those apps   (Standard: hig-maps)
+12. App's own content better built as real screens than web pages   (Standard: apple-review)
+
+ACCESS
+13. Close button named and at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+14. Text size follows the system where the page allows   (Standard: hig-accessibility)
+
+SOURCES
+- hig-web-views: https://developer.apple.com/design/human-interface-guidelines/web-views
+- android-custom-tabs: https://developer.chrome.com/docs/android/custom-tabs
+- rfc-oauth-native: https://www.rfc-editor.org/rfc/rfc8252
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- owasp-masvs: https://mas.owasp.org/MASVS/
+- hig-maps: https://developer.apple.com/design/human-interface-guidelines/maps
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility

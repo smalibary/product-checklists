@@ -1,0 +1,34 @@
+title: Accessibility (design system)
+about: What a design system builds in so every screen made from it is usable by people with disabilities.
+## Target and law
+- Aim at WCAG 2.2 level AA for every component | S wcag
+- Laws that require it: the European Accessibility Act from June 2025, the ADA in the US | L eu-accessibility-act ada-web
+- Each component's page states its accessibility support and known gaps | P
+## Colour and contrast
+- Text 4.5:1, large text 3:1, borders and icons of controls 3:1 | S wcag-contrast wcag-ui-contrast
+- Colour never the only way to show state or meaning | S wcag-color
+- Focus ring visible with 3:1 contrast in every theme | S wcag-focus-appearance
+- Light, dark and high-contrast themes all checked | S mdn-color-scheme
+## Keyboard and focus
+- Every interactive part reachable and usable by keyboard | S wcag-keyboard
+- Keyboard behaviour follows the ARIA patterns (arrows in menus, tabs, radios) | S apg
+- Focus order follows reading order | S wcag-focus-order
+- Focused things are never hidden behind sticky headers | S wcag-obscured
+- Skip link to the main content | S wcag-bypass
+## Names and roles
+- Native HTML elements first; ARIA only when needed | S apg
+- Every control has a name, role and state | S wcag-name-role
+- Icon-only buttons have a text name | S wcag-name-role
+- Status messages announced without moving focus | S wcag-status
+## Touch and motion
+- Targets at least 24 by 24 px (44 recommended on touch) | S wcag-target hig-layout
+- Dragging always has a single-tap alternative | S wcag-dragging
+- Reduced motion respected; nothing flashes more than 3 times a second | S mdn-reduced-motion wcag-flash
+## Content
+- Images: alt text guidance in each component | S wai-images
+- Forms: labels, help text and errors linked to the field | S wcag-labels wcag-error
+- Language and direction set (Arabic right-to-left) | S w3c-dir
+## Process
+- Automatic checks in the build (axe or similar) | P
+- Manual tests with keyboard and a screen reader (NVDA, VoiceOver, TalkBack) | P
+- Tests with disabled users when possible | R nng-accessibility

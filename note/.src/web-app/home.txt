@@ -1,0 +1,27 @@
+title: Home (web app)
+about: The first screen after signing in, which helps people pick up where they left off and see what needs them.
+## What it shows
+- A greeting only if short; the useful parts above the fold | R nng-scanning
+- Continue where you left off: recent items | P
+- What needs me: assigned, due soon, mentions, approvals | P
+- Key numbers for the person's role, if relevant | R nng-dashboards
+- Quick actions for the most common jobs (New project) | P
+- Announcements kept small and dismissible | P
+## New users
+- Getting-started checklist until done, then it goes away | P
+- Templates and sample content | P
+- Empty sections teach, not just say "nothing here" | R nng-empty
+## Navigation
+- Main menu in the same place as every other screen | S wcag-consistent
+- Workspace or team switch visible if the person is in several | P
+- Search reachable from here | R nng-search
+## Personal
+- Order or hide sections; the choice is remembered | P
+- Different home for different roles (admin, member) | P
+## Speed
+- Loads fast; sections load on their own with skeletons | S webdev-lcp nng-skeleton
+- No layout jumping as sections arrive | S webdev-cls
+## Access
+- Sections have headings; landmarks for main and navigation | S wcag-headings apg-landmarks
+- Page title names the app and "Home" | S wcag-title
+- Works at phone width | S wcag-reflow

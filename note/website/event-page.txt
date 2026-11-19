@@ -1,0 +1,62 @@
+﻿EVENT PAGE CHECKLIST: 28 items
+A page for one event (talk, conference, webinar, launch) that tells people what, when and where, and gets them registered.
+Backing: 4 Rule, 7 Standard, 4 Research, 13 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE ESSENTIALS ABOVE THE FOLD
+ 1. Event name and one line on why to attend   (Practice)
+ 2. Date and start and end time with the time zone written out   (Standard: iso-8601)
+ 3. Times shown in the visitor's own time zone for online events, with the original beside it   (Standard: w3c-forms-i18n)
+ 4. Place: venue name and full address for in person, "Online" with the platform for virtual   (Practice)
+ 5. One clear Register or Get tickets button, repeated at the end   (Research: nng-forms)
+ 6. Price, or "Free", visible before the button is pressed   (Rule: ftc-junk-fees, eu-consumer-rights)
+ 7. Seats left or "Sold out" shown honestly; never fake scarcity   (Rule: ftc-dark-patterns)
+
+DETAILS
+ 8. Agenda with times for each part   (Practice)
+ 9. Speakers with photo, name, role and a short bio   (Practice)
+10. Who it is for and what they will take away   (Practice)
+11. Language of the event   (Practice)
+12. Accessibility at the venue: step-free entry, captions, sign language, quiet room   (Rule: ada-web, eu-accessibility-act)
+13. Directions, map, parking and public transport   (Practice)
+14. What to bring and dress code if any   (Practice)
+15. Refund and transfer policy for tickets   (Rule: eu-consumer-rights)
+
+REGISTRATION
+16. A short form: only the fields needed to attend   (Research: baymard-fields)
+17. Confirmation screen and email with the date, place and a calendar file   (Research: govuk-confirm)
+18. Add to calendar for Google, Apple and Outlook   (Practice)
+19. A way to cancel a registration   (Practice)
+20. Reminder email before the event, with the join link for online events   (Practice)
+
+AFTER THE EVENT
+21. The page changes once the event has passed: "This event has ended" with the recording or slides   (Practice)
+22. No Register button on a past event   (Research: nng-heuristics)
+
+SEARCH AND SHARING
+23. Event structured data (name, start date, location, offers, status) so search shows it   (Standard: google-event, schema-event)
+24. Event status marked if cancelled, postponed or moved online   (Standard: google-event)
+25. A share image and title for social links   (Practice)
+
+ACCESSIBILITY
+26. Captions and transcripts for any video   (Standard: wcag-captions)
+27. Colour contrast and readable text sizes   (Standard: wcag-contrast)
+28. Page title includes the event name and date   (Standard: wcag-title)
+
+SOURCES
+- iso-8601: https://www.iso.org/iso-8601-date-and-time-format.html
+- w3c-forms-i18n: https://www.w3.org/International/questions/qa-forms-utf-8
+- nng-forms: https://www.nngroup.com/articles/web-form-design/
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- ada-web: https://www.ada.gov/resources/web-guidance/
+- eu-accessibility-act: https://ec.europa.eu/social/main.jsp?catId=1202
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- nng-heuristics: https://www.nngroup.com/articles/ten-usability-heuristics/
+- google-event: https://developers.google.com/search/docs/appearance/structured-data/event
+- schema-event: https://schema.org/Event
+- wcag-captions: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled

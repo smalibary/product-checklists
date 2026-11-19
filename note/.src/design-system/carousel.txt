@@ -1,0 +1,28 @@
+title: Carousel
+about: A row of slides (images, cards) shown a few at a time, moved by arrows, swipes or dots.
+## When to use
+- Browsing a set of similar items (photos of a product, related cards) | S m3-carousel
+- Not for important messages on a homepage: later slides are rarely seen | R nng-carousel
+- Show part of the next slide so people know there is more | S m3-carousel
+## Controls
+- Previous and next buttons with names, large enough to tap | S apg-carousel wcag-target
+- Dots or "3 of 8" to show position; dots are buttons with names | S apg-carousel
+- Swipe on touch, with buttons too | S wcag-dragging
+- Keyboard can reach the controls and each slide | S apg-carousel
+## Auto-play
+- Avoid auto-play; if used, a visible pause button | S apg-carousel wcag-pause
+- Auto-play stops on hover, on focus, and for reduced motion | S apg-carousel mdn-reduced-motion
+- Slides stay at least 5 seconds | R nng-carousel
+## Content
+- Each slide makes sense alone | R nng-carousel
+- Images have alt text | S wcag-nontext
+- Text on images keeps contrast (overlay) | S wcag-contrast
+- Slides sized before images load, so nothing jumps | S webdev-cls
+## Access
+- The carousel is a region named by its role ("carousel") and label | S apg-carousel
+- Each slide is a group named "3 of 8" | S apg-carousel
+- Slide changes announced politely only when the person moves it, not during auto-play | S apg-carousel
+- Off-screen slides hidden from keyboard and screen readers | S apg-carousel
+- Direction flips for Arabic | S w3c-dir
+## Speed
+- Only the visible and next images load first | S webdev-lazy

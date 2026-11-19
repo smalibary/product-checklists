@@ -1,0 +1,25 @@
+title: Adding to cart (flow)
+about: From choosing a product's options to the item being in the cart, with clear feedback.
+## Before adding
+- Required options (size, colour) chosen first; the button says what is missing | R baymard-cart
+- Price, stock and delivery estimate visible near the button | L eu-consumer-rights
+- Out of stock: button replaced by "Notify me", not hidden | P
+- Quantity choice where it makes sense | P
+## Adding
+- Button shows busy state; no double add on double tap | S owasp-transaction
+- Works without signing in (guest cart) | R baymard-guest
+## Feedback
+- Confirmation without leaving the page: a small panel or message with the item, "View cart" and "Checkout" | R baymard-cart
+- Cart count updates at once | S m3-badges
+- Message announced to screen readers | S wcag-status
+- Haptic on phones | S hig-feedback
+## Problems
+- Failure explained ("Only 2 left") with a way forward | S wcag-error
+- Price changed since the page loaded: say so | P
+## After
+- Person stays where they were to keep shopping | R baymard-cart
+- Cart kept across visits and devices | R baymard-cart
+## Access
+- Option pickers are real buttons or radios with names | S wcag-name-role
+- Focus stays sensible after adding | S wcag-focus-order
+- Targets at least 24 px web / 44 pt iOS / 48 dp Android | S wcag-target hig-layout m3-layout

@@ -1,0 +1,24 @@
+title: Badge
+about: A small label or dot that shows a count or a status (3 unread, New, Paid).
+## Kinds
+- Count badge on an icon (unread messages) | S m3-badges
+- Dot badge for "something new" without a number | S m3-badges
+- Status badge or tag with text (Paid, Overdue, Draft) | S govuk-tag
+## Content
+- Counts capped (99+) | S m3-badges
+- Status text short, one or two words | S govuk-tag
+- Same word for the same status everywhere | R nng-consistency
+## Look
+- Status shown by text, not colour alone | S wcag-color
+- A small set of status colours from role tokens | S dtcg-tokens
+- Text contrast 4.5:1 against the badge fill | S wcag-contrast
+- Badges not mistaken for buttons (no hover unless clickable) | S govuk-tag
+- Badge position flips in right-to-left | S w3c-dir
+## Behaviour
+- Count badges disappear at zero | S m3-badges
+- Dot badges clear when the person sees the new thing | P
+- Not overused: too many badges stop meaning anything | R nng-indicators
+## Access
+- The count is part of the control's name ("Messages, 3 unread") | S wcag-name-role
+- Visible badge text hidden from screen readers if the name already includes it | P
+- Count changes announced politely only where important | S wcag-status

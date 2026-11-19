@@ -1,0 +1,43 @@
+﻿RADIO CHECKLIST: 18 items
+A group of round buttons where people choose exactly one option.
+Backing: 0 Rule, 14 Standard, 4 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. One choice from a short list (2 to about 7) where seeing all options helps   (Standard: govuk-radios)
+ 2. Longer lists: a select or a combobox   (Research: nng-dropdown)
+ 3. Two options that mean on and off: a switch or one checkbox may be clearer   (Research: nng-toggle)
+
+LOOK
+ 4. Circles on the start side of their labels; labels clickable   (Standard: govuk-radios)
+ 5. Selected state clear by more than colour (filled dot)   (Standard: wcag-color)
+ 6. Circle border 3:1 contrast   (Standard: wcag-ui-contrast)
+ 7. Vertical list for most cases; side by side only for two short options   (Standard: govuk-radios)
+ 8. Touch area at least 24 px, ideally 44   (Standard: wcag-target)
+
+CONTENT
+ 9. Group has a question as its legend   (Standard: govuk-radios)
+10. Options short, in a logical order, not overlapping   (Research: nng-checkboxes)
+11. Hint text under an option when needed   (Standard: govuk-radios)
+12. Conditional questions revealed under the chosen option, kept short   (Standard: govuk-radios)
+
+DEFAULT
+13. Pre-select a default only when it is safe and most people want it   (Research: nng-checkboxes)
+14. No default when the choice has consequences   (Standard: govuk-radios)
+
+ACCESS
+15. Native radio inputs with the same name, in a fieldset with legend   (Standard: govuk-radios)
+16. Or role radiogroup and radio, with aria-checked   (Standard: apg-radio)
+17. Arrow keys move and select within the group; Tab leaves the group   (Standard: apg-radio)
+18. Error on the group, linked from the error summary   (Standard: govuk-error-message)
+
+SOURCES
+- govuk-radios: https://design-system.service.gov.uk/components/radios/
+- nng-dropdown: https://www.nngroup.com/articles/drop-down-menus/
+- nng-toggle: https://www.nngroup.com/articles/toggle-switch-guidelines/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- nng-checkboxes: https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/
+- apg-radio: https://www.w3.org/WAI/ARIA/apg/patterns/radio/
+- govuk-error-message: https://design-system.service.gov.uk/components/error-message/

@@ -1,0 +1,21 @@
+title: In-App Browser
+about: Opening web pages inside a phone app instead of switching to the phone's browser.
+## Which kind
+- Use the system's in-app browser (SFSafariViewController on iOS, Custom Tabs on Android), not a home-made web view, for outside sites | S hig-web-views android-custom-tabs
+- The system kind shares the person's browser sign-ins and autofill, and the app cannot read what they type | S hig-web-views android-custom-tabs
+- Sign-in with an outside provider (OAuth) uses the system sign-in sheet (ASWebAuthenticationSession) or Custom Tabs, never a web view | S rfc-oauth-native
+## Controls
+- Done or close button, address (domain) shown, share, and "Open in browser" | S hig-web-views
+- Loading bar | R nng-progress
+- Back and forward when the page has history | S hig-web-views
+## Security and privacy
+- The domain is visible so people know where they are | S owasp-masvs
+- No injected scripts or tracking in pages that are not the app's own | S owasp-masvs
+- Only https | S owasp-masvs
+## When to use
+- Short visits (an article, help page, terms) that should return to the app | S hig-web-views
+- Links to other apps (maps, phone, mail) open those apps | S hig-maps
+- App's own content better built as real screens than web pages | S apple-review
+## Access
+- Close button named and at least 44 pt / 48 dp | S hig-layout m3-layout
+- Text size follows the system where the page allows | S hig-accessibility

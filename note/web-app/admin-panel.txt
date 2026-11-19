@@ -1,0 +1,52 @@
+﻿ADMIN PANEL CHECKLIST: 21 items
+The back office where staff or admins manage users, content, settings and problems across the product.
+Backing: 1 Rule, 7 Standard, 6 Research, 7 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+NAVIGATION
+ 1. Side menu grouped by area (Users, Content, Billing, Settings, Logs)   (Practice)
+ 2. Global search by user, email, ID or order   (Practice)
+ 3. Clear sign that this is the admin area (colour band, label)   (Practice)
+ 4. Breadcrumbs for deep pages   (Research: nng-breadcrumbs)
+
+LISTS AND RECORDS
+ 5. Data tables with search, filter, sort, pagination and export   (Research: nng-tables)
+ 6. Bulk actions with a count and a confirm   (Research: nng-confirm)
+ 7. Record pages show everything about a user or item in one place   (Practice)
+
+POWERFUL ACTIONS
+ 8. Each dangerous action (ban, refund, delete) asks for confirmation naming the target   (Research: nng-confirm)
+ 9. A reason must be typed for sensitive actions, stored in the log   (Standard: owasp-logging)
+10. Undo where possible; soft delete before hard delete   (Research: nng-control)
+11. "View as user" clearly marked, logged and read-only by default   (Standard: owasp-logging, owasp-authz)
+
+SECURITY
+12. Admin roles separated (support, finance, super admin) with least privilege   (Standard: owasp-authz)
+13. Two-step sign-in required for admins   (Standard: owasp-mfa)
+14. Shorter session timeout than the main app   (Standard: owasp-session)
+15. Every admin action logged with who, what, when and from where   (Standard: owasp-logging)
+16. Personal data shown only where needed; masked by default   (Rule: gdpr-25, gdpr-32)
+17. Restricted by network or device for the most sensitive tools   (Practice)
+
+OVERVIEW
+18. A home with key numbers and things needing attention   (Research: nng-dashboards)
+19. Alerts for failures (payments, jobs, errors)   (Practice)
+
+ACCESS
+20. Keyboard shortcuts for frequent tasks, listed   (Practice)
+21. Tables and forms meet WCAG like any other page   (Standard: wai-tables, wcag-labels)
+
+SOURCES
+- nng-breadcrumbs: https://www.nngroup.com/articles/breadcrumbs/
+- nng-tables: https://www.nngroup.com/articles/data-tables/
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-mfa: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- gdpr-25: https://gdpr-info.eu/art-25-gdpr/
+- gdpr-32: https://gdpr-info.eu/art-32-gdpr/
+- nng-dashboards: https://www.nngroup.com/articles/dashboards-preattentive/
+- wai-tables: https://www.w3.org/WAI/tutorials/tables/
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions

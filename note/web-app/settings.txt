@@ -1,0 +1,49 @@
+﻿SETTINGS (WEB APP) CHECKLIST: 20 items
+The place where people change how the app works for them, or for their whole workspace.
+Backing: 0 Rule, 6 Standard, 7 Research, 7 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STRUCTURE
+ 1. Personal settings separate from workspace (team) settings   (Practice)
+ 2. A side menu of sections (General, Account, Notifications, Billing, Members, Security, Integrations)   (Practice)
+ 3. Each section has its own address so it can be linked and bookmarked   (Practice)
+ 4. Search across settings for apps with many   (Practice)
+ 5. Most used settings first; dangerous ones last in a "Danger zone"   (Practice)
+
+CONTROLS
+ 6. One control type per job: switch for on/off taking effect at once, checkbox when a Save button follows   (Research: nng-toggle)
+ 7. Each setting has a label and one line explaining what it changes   (Research: nng-heuristics)
+ 8. Defaults that suit most people   (Research: nng-heuristics)
+ 9. Disabled settings say why (plan, permission)   (Practice)
+
+SAVING
+10. Either save on change (with a "Saved" message) or one Save button per section, not a mix   (Research: nng-heuristics)
+11. Saved message announced to screen readers   (Standard: wcag-status)
+12. Unsaved changes warned before leaving   (Research: nng-control)
+13. Undo, or reset to default   (Research: nng-control)
+14. Failed save says why and keeps what was typed   (Standard: wcag-redundant)
+
+DANGEROUS ACTIONS
+15. Deleting a workspace or transferring ownership needs typing the name or re-entering the password   (Standard: wcag-prevent)
+16. Say exactly what will be lost   (Research: nng-confirm)
+
+ACCESS
+17. Side menu is navigation with the current section marked   (Standard: apg-landmarks)
+18. Headings, labels and keyboard work   (Standard: wcag-headings, wcag-labels, wcag-keyboard)
+19. Works at phone width (menu becomes a list or a drop-down)   (Standard: wcag-reflow)
+20. Dark mode and text size settings respected   (Practice: mdn-color-scheme)
+
+SOURCES
+- nng-toggle: https://www.nngroup.com/articles/toggle-switch-guidelines/
+- nng-heuristics: https://www.nngroup.com/articles/ten-usability-heuristics/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- wcag-redundant: https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry
+- wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- mdn-color-scheme: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme

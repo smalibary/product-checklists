@@ -1,0 +1,52 @@
+﻿MAP VIEW CHECKLIST: 21 items
+A map inside a phone app showing places, routes or the person's location, often with a list beside it.
+Backing: 0 Rule, 16 Standard, 0 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+LOCATION PERMISSION
+ 1. Ask only when the map needs the person's location, with a clear reason   (Standard: hig-privacy, android-permissions, apple-usage)
+ 2. Ask for "while using the app" first; background location only when truly needed   (Standard: android-location, hig-privacy)
+ 3. Approximate location accepted where exact is not needed   (Standard: android-location)
+ 4. If refused: the map still works with search or a typed address   (Standard: android-permissions)
+
+MAP
+ 5. Standard gestures: drag, pinch, double tap to zoom, two-finger rotate   (Standard: hig-maps)
+ 6. Zoom buttons or another way for people who cannot pinch   (Standard: wcag-gestures)
+ 7. "My location" button that centres the map   (Standard: hig-maps)
+ 8. Pins clear and grouped (clustered) when crowded   (Standard: hig-maps)
+ 9. Selected pin highlighted, with a card showing details   (Standard: hig-maps)
+10. Map style follows dark mode   (Standard: hig-dark-mode)
+
+LIST AND MAP TOGETHER
+11. Toggle or bottom sheet to switch between map and list   (Standard: m3-bottom-sheets)
+12. Moving the map offers "Search this area" instead of reloading on every move   (Practice)
+13. List order matches what is visible on the map   (Practice)
+
+ROUTES AND PLACES
+14. Distance and time shown in local units   (Practice)
+15. Open in the phone's maps app for directions   (Standard: hig-maps)
+16. Arabic place names and right-to-left labels where relevant   (Standard: w3c-dir)
+
+SPEED AND COST
+17. Map tiles cached; usage of map services counted against limits   (Practice)
+18. Few markers drawn at once   (Practice)
+
+ACCESS
+19. A list view with the same places for screen readers   (Standard: wcag-info)
+20. Pins have names; selected place announced   (Standard: hig-accessibility)
+21. Controls at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- android-permissions: https://developer.android.com/training/permissions/requesting
+- apple-usage: https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources
+- android-location: https://developer.android.com/develop/sensors-and-location/location/permissions
+- hig-maps: https://developer.apple.com/design/human-interface-guidelines/maps
+- wcag-gestures: https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures
+- hig-dark-mode: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+- m3-bottom-sheets: https://m3.material.io/components/bottom-sheets/guidelines
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

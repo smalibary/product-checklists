@@ -1,0 +1,78 @@
+﻿SECURITY PAGE CHECKLIST: 34 items
+The public page that tells customers, buyers and researchers how the company protects their data and how to report a weakness.
+Backing: 7 Rule, 13 Standard, 2 Research, 12 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TRUST SUMMARY AT THE TOP
+ 1. One plain sentence that says what is protected and how, before any detail   (Practice)
+ 2. Certifications held (SOC 2, ISO 27001, PCI DSS) shown with the year and scope, never a badge for one not held   (Rule: ftc-dark-patterns)
+ 3. A link to request the full audit report (often under a confidentiality agreement)   (Practice)
+ 4. A date showing when the page was last reviewed   (Practice)
+ 5. A link to the live status page   (Practice)
+
+DATA PROTECTION
+ 6. Where data is stored (country or region) and which cloud providers are used   (Rule: gdpr-13, pdpl)
+ 7. Encryption in transit (TLS 1.2 or newer) stated   (Standard: owasp-session)
+ 8. Encryption at rest stated, with who holds the keys   (Standard: gdpr-32)
+ 9. How long data is kept and how it is deleted when an account closes   (Rule: gdpr-13, gdpr-17)
+10. Backups: how often, where, and how often restores are tested   (Practice)
+11. A list of sub-processors (third parties that handle customer data), with a way to be told of changes   (Rule: gdpr-13)
+
+ACCESS AND ACCOUNTS
+12. Customer-side controls listed: two-step sign-in, single sign-on, roles, session timeout   (Standard: owasp-auth, owasp-mfa)
+13. Passkeys or other phishing-resistant sign-in offered or planned   (Standard: nist-63b-auth, webauthn)
+14. Staff access to customer data: least privilege, logged, reviewed   (Standard: owasp-authz, gdpr-32)
+15. How staff are vetted and trained in security   (Practice)
+
+APPLICATION AND INFRASTRUCTURE
+16. How the software is tested: code review, automatic scans, outside penetration tests and how often   (Standard: owasp-masvs)
+17. Network protection named in plain terms (firewalls, DDoS protection) without giving attackers a map   (Practice)
+18. Logging and monitoring of suspicious activity   (Standard: owasp-logging)
+19. Secrets (keys, passwords) kept in a managed vault, never in code   (Standard: owasp-secrets)
+
+INCIDENTS
+20. How customers are told about a breach, and how fast   (Rule: gdpr-33)
+21. A short incident-response outline: detect, contain, inform, review   (Practice)
+22. Past incidents or a link to post-incident reports, if the company publishes them   (Practice)
+
+REPORTING A WEAKNESS
+23. A clear way to report a vulnerability: an email or form, what to include, and what happens next   (Standard: owasp-disclosure)
+24. A security.txt file at /.well-known/security.txt with contact, expiry and policy link   (Standard: rfc-securitytxt)
+25. A safe-harbour statement: good-faith researchers will not be pursued   (Standard: owasp-disclosure)
+26. Response time promise (for example, first reply within 3 working days)   (Practice)
+27. Bug bounty terms and rewards, if one exists, with what is out of scope   (Practice)
+28. A PGP key or other way to send sensitive reports safely   (Standard: rfc-securitytxt)
+
+COMPLIANCE AND LEGAL
+29. Links to the privacy policy, data-processing agreement and terms   (Rule: gdpr-13)
+30. Laws the company follows named by region (GDPR, Saudi PDPL, CCPA)   (Rule: gdpr-13, pdpl, ccpa)
+31. Accessibility of the page itself: headings, contrast, readable without images   (Standard: wcag-headings, wcag-contrast)
+
+WRITING AND LAYOUT
+32. Written for a buyer, not an engineer: short sections, a jump list at the top   (Research: nng-scanning)
+33. No vague claims like "bank-level security" or "military-grade"   (Research: nng-trust)
+34. A contact for security questions from buyers (security questionnaires)   (Practice)
+
+SOURCES
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- pdpl: https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- gdpr-32: https://gdpr-info.eu/art-32-gdpr/
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- owasp-mfa: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
+- nist-63b-auth: https://pages.nist.gov/800-63-4/sp800-63b.html
+- webauthn: https://www.w3.org/TR/webauthn-3/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-masvs: https://mas.owasp.org/MASVS/
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- owasp-secrets: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- gdpr-33: https://gdpr-info.eu/art-33-gdpr/
+- owasp-disclosure: https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html
+- rfc-securitytxt: https://www.rfc-editor.org/rfc/rfc9116
+- ccpa: https://oag.ca.gov/privacy/ccpa
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- nng-trust: https://www.nngroup.com/articles/trustworthy-design/

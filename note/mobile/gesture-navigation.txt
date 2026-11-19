@@ -1,0 +1,46 @@
+﻿GESTURE NAVIGATION CHECKLIST: 17 items
+Moving around an app with swipes and other gestures, alongside the system's own gestures.
+Backing: 0 Rule, 13 Standard, 4 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SYSTEM GESTURES COME FIRST
+ 1. Do not take over the system's edge swipes (home, back, notifications)   (Standard: hig-gestures, android-back)
+ 2. Android back gesture: use the predictive back so people see where they go   (Standard: android-back)
+ 3. iOS swipe from the left edge goes back in navigation stacks; keep it working   (Standard: hig-gestures)
+ 4. Content drawn edge to edge, with controls kept away from gesture areas   (Standard: android-edge, hig-layout)
+
+APP GESTURES
+ 5. Use standard gestures with their usual meaning (tap, swipe, pinch, long press, pull to refresh)   (Standard: hig-gestures, m3-gestures)
+ 6. Swipe actions on list rows (archive, delete) shown with colour, icon and text   (Research: nng-swipe)
+ 7. Every gesture has a visible alternative (button or menu)   (Standard: wcag-dragging, wcag-gestures)
+ 8. Gestures that need two fingers or a path have a single-tap way too   (Standard: wcag-gestures)
+ 9. Destructive swipes can be undone   (Research: nng-control)
+
+TEACHING
+10. Hint at hidden gestures (a peek of the swipe action, a handle on sheets)   (Research: nng-swipe)
+11. No reliance on gestures nobody can discover   (Research: nng-swipe)
+
+FEEL
+12. Movement follows the finger and can be cancelled mid-way   (Standard: hig-gestures)
+13. Light haptics confirm a completed gesture, where supported   (Standard: hig-feedback)
+14. Reduced motion respected for the animations   (Standard: hig-accessibility)
+
+ACCESS
+15. Works with VoiceOver and TalkBack (custom actions for swipe actions)   (Standard: hig-accessibility)
+16. Accidental activation avoided (actions on release, not on touch down)   (Standard: wcag-cancel)
+17. Shake or tilt never the only way to do something   (Standard: wcag-motion-act)
+
+SOURCES
+- hig-gestures: https://developer.apple.com/design/human-interface-guidelines/gestures
+- android-back: https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture
+- android-edge: https://developer.android.com/develop/ui/views/layout/edge-to-edge
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-gestures: https://m3.material.io/foundations/interaction/gestures
+- nng-swipe: https://www.nngroup.com/articles/contextual-swipe/
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- wcag-gestures: https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- hig-feedback: https://developer.apple.com/design/human-interface-guidelines/feedback
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- wcag-cancel: https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation
+- wcag-motion-act: https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation

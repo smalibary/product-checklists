@@ -1,0 +1,54 @@
+﻿LOGIN (MOBILE) CHECKLIST: 20 items
+Signing in to a phone app with password, passkey, code, biometrics or another account.
+Backing: 0 Rule, 16 Standard, 2 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WAYS IN
+ 1. Passkeys offered where supported   (Standard: passkeys-dev)
+ 2. Sign in with Apple on iOS if other social sign-ins are offered   (Standard: hig-sign-in-apple)
+ 3. Google sign-in through the system Credential Manager on Android   (Standard: android-credential-manager)
+ 4. Phone number with SMS code, with the code autofilled from the message   (Standard: android-sms-retriever, apple-autofill)
+
+FIELDS
+ 5. Email or phone field with the right keyboard and autofill type   (Standard: apple-autofill, mdn-autocomplete)
+ 6. Password field works with password managers (no blocked paste)   (Standard: nist-63b)
+ 7. Show password button   (Research: nng-password)
+ 8. Login button stays usable; errors after submit   (Standard: wcag-error)
+
+REMEMBER
+ 9. Stay signed in by default on a personal phone   (Practice)
+10. Face ID or fingerprint to unlock the app later, as an option   (Standard: hig-privacy, android-biometric)
+11. Tokens kept in the Keychain or Keystore, not plain storage   (Standard: owasp-masvs)
+
+ERRORS AND HELP
+12. One general message for wrong email or password   (Standard: owasp-auth)
+13. Forgot password link near the field   (Research: nng-password)
+14. Too many tries: wait time shown, not a dead end   (Standard: owasp-auth)
+15. Offline: say so, keep what was typed   (Practice)
+
+SECURITY
+16. Two-step check where risk is high   (Standard: nist-63b)
+17. New device sign-in alert by email   (Standard: owasp-auth)
+
+ACCESS
+18. Fields have visible names, not placeholders only   (Standard: wcag-labels)
+19. Large text supported; keyboard never covers the button   (Standard: hig-layout)
+20. Buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- passkeys-dev: https://passkeys.dev/
+- hig-sign-in-apple: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+- android-credential-manager: https://developer.android.com/identity/sign-in/credential-manager
+- android-sms-retriever: https://developers.google.com/identity/sms-retriever/overview
+- apple-autofill: https://developer.apple.com/documentation/security/password-autofill
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
+- nng-password: https://www.nngroup.com/articles/password-creation/
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- android-biometric: https://developer.android.com/identity/sign-in/biometric-auth
+- owasp-masvs: https://mas.owasp.org/MASVS/
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

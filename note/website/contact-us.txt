@@ -1,0 +1,53 @@
+﻿CONTACT US PAGE CHECKLIST: 19 items
+Lets visitors reach the right person by the way that suits them.
+Backing: 2 Rule, 7 Standard, 8 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WAYS TO REACH
+ 1. Several ways: form, email, phone, chat, address, each with when it is answered   (Research: nng-contact)
+ 2. Phone numbers as tap-to-call links on phones   (Research: nng-contact)
+ 3. Opening hours with the time zone   (Research: nng-contact)
+ 4. Expected reply time for each way   (Research: nng-contact)
+ 5. Routes for common needs: sales, support, press, billing   (Standard: govuk-contact)
+ 6. Links to self-help (help centre, status page) offered, never forced first   (Research: nng-help)
+ 7. Physical address with a map link   (Rule: eu-consumer-rights)
+
+THE FORM
+ 8. Only the fields needed: name, email, topic, message   (Research: baymard-fields)
+ 9. Topic as a short list so it reaches the right team   (Practice)
+10. Labels above fields; autofill for name and email   (Standard: wcag-labels, wcag-purpose, mdn-autocomplete)
+11. Errors shown next to the field and in a summary at the top   (Standard: wcag-error, govuk-error-summary)
+12. File attachment optional, with types and size limit stated   (Standard: govuk-file-upload, owasp-upload)
+13. A robot check only if spam is a real problem, and an accessible one   (Standard: wcag-auth)
+14. What happens to the message data, with a privacy link   (Rule: gdpr-13)
+
+AFTER SENDING
+15. A confirmation screen with a reference number and what happens next   (Research: govuk-confirm)
+16. A copy sent by email   (Practice)
+17. The message is kept if sending fails, so it is not lost   (Research: nng-control)
+
+CONSISTENCY AND ACCESS
+18. Contact link in the same place on every page   (Standard: wcag-help)
+19. Contrast, target size and phone width meet WCAG   (Standard: wcag-contrast, wcag-target, wcag-reflow)
+
+SOURCES
+- nng-contact: https://www.nngroup.com/articles/contact-us-pages/
+- govuk-contact: https://design-system.service.gov.uk/patterns/
+- nng-help: https://www.nngroup.com/articles/help-and-documentation/
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-purpose: https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- govuk-error-summary: https://design-system.service.gov.uk/components/error-summary/
+- govuk-file-upload: https://design-system.service.gov.uk/components/file-upload/
+- owasp-upload: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+- wcag-auth: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- wcag-help: https://www.w3.org/WAI/WCAG22/Understanding/consistent-help
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

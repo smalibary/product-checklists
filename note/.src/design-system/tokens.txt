@@ -1,0 +1,31 @@
+title: Tokens
+about: Named design values (colours, sizes, spacing, radius, motion) that design and code share as one source.
+## Tiers
+- Primitive tokens: raw values named by what they are (blue-600, space-4) | S dtcg-tokens
+- Role (semantic) tokens: named by job (color-primary, space-gap-md), pointing to primitives | S dtcg-tokens m3-tokens
+- Component tokens: named per component (button-bg), pointing to roles | S m3-tokens
+- Components use role or component tokens, never primitives | S m3-tokens
+## Format
+- Stored in the W3C design tokens format (JSON with $value and $type) | S dtcg-tokens
+- Each token has a type (color, dimension, fontFamily, duration, shadow) | S dtcg-tokens
+- References use {group.token} so one change flows everywhere | S dtcg-tokens
+- A description on each role token saying when to use it | S dtcg-tokens
+## Naming
+- Names follow one pattern (category-role-variant-state) | P
+- No names that describe looks for role tokens ("blue-button") | P
+- Avoid names that clash with tool names (Tailwind sizes) | P
+## Themes and modes
+- Light, dark and high-contrast as sets of role values over the same primitives | S m3-color
+- Brands or products as further sets | P
+- Density and size modes (compact, comfortable) | S m3-layout
+## Pipeline
+- One source file builds CSS variables, Tailwind config, iOS and Android values | P
+- The design tool reads the same file | P
+- Changes reviewed and versioned like code (semver) | S semver
+- A check fails the build when a component uses a raw value | P
+## Coverage
+- Colour, typography, spacing, size, radius, border, shadow, opacity, motion duration and easing, z-index | S dtcg-tokens
+- Contrast pairs of colour tokens tested automatically | S wcag-contrast
+## Documentation
+- Every token shown with its value, a preview and where it is used | P
+- Deprecated tokens marked with what replaces them | P

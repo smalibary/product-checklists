@@ -1,0 +1,35 @@
+﻿TEAM PAGE CHECKLIST: 13 items
+Shows the people behind the company, to build trust and help hiring.
+Backing: 2 Rule, 4 Standard, 3 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PEOPLE
+ 1. Real photos taken in a consistent style   (Research: nng-about, nng-trust)
+ 2. Name, role and a short line about each person   (Research: nng-about)
+ 3. Leaders first, then teams grouped by function   (Practice)
+ 4. Optional links to each person's public profile   (Practice)
+ 5. Each person agreed to be shown; a way to be removed   (Rule: gdpr-7, gdpr-17)
+ 6. No personal email or phone without consent   (Rule: gdpr-25)
+
+CULTURE
+ 7. What the team values, shown with real examples   (Practice)
+ 8. Where the team works (offices, remote)   (Practice)
+ 9. A link to open jobs   (Research: nng-careers)
+
+LAYOUT AND ACCESS
+10. A grid that reflows to one column on phones   (Standard: wcag-reflow)
+11. Each photo has alt text with the person's name; hover-only extra info also works by keyboard and tap   (Standard: wcag-nontext, wcag-hover)
+12. Names and roles are text, not part of an image   (Standard: wcag-nontext)
+13. Person structured data for leaders if useful   (Standard: schema-person)
+
+SOURCES
+- nng-about: https://www.nngroup.com/articles/about-us-information-on-websites/
+- nng-trust: https://www.nngroup.com/articles/trustworthy-design/
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- gdpr-25: https://gdpr-info.eu/art-25-gdpr/
+- nng-careers: https://www.nngroup.com/topic/corporate-websites/
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- schema-person: https://schema.org/Person

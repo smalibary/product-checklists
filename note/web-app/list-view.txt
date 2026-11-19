@@ -1,0 +1,56 @@
+﻿LIST VIEW CHECKLIST: 21 items
+A simple list of items (tasks, files, contacts) for scanning and opening, lighter than a data table.
+Backing: 0 Rule, 8 Standard, 7 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ITEMS
+ 1. Each row: the name first, then two or three key facts   (Research: nng-scanning)
+ 2. Icon or photo to tell types apart   (Practice)
+ 3. Status in words or icons with names, not only colour   (Standard: wcag-color)
+ 4. The whole row opens the item; actions in a menu at the end   (Practice)
+ 5. Hover shows quick actions, which are also reachable by keyboard   (Standard: wcag-hover, wcag-keyboard)
+
+ORDER AND GROUPING
+ 6. Sort choice (name, date, priority), remembered   (Practice)
+ 7. Grouping by date, status or owner, with headings and counts   (Practice)
+ 8. Groups can collapse   (Standard: apg-accordion)
+
+FINDING
+ 9. Filter and search above the list   (Research: nng-filters)
+10. Active filters shown with remove   (Research: nng-filters)
+
+ACTING
+11. Select several with checkboxes, with a bulk action bar   (Practice)
+12. Drag to reorder where order matters, with a keyboard way too   (Standard: wcag-dragging)
+13. Swipe actions on touch screens, with a visible alternative   (Research: nng-swipe)
+
+LOTS OF ITEMS
+14. Pagination or load more, with the total   (Research: nng-infinite)
+15. Back keeps the scroll position   (Practice)
+
+STATES
+16. Skeleton rows while loading   (Research: nng-skeleton)
+17. Empty and no-results states   (Research: nng-empty)
+
+ACCESS
+18. A real list (or table if there are columns)   (Standard: wcag-info)
+19. Row links read well alone   (Standard: wcag-link)
+20. Touch targets at least 24 by 24 pixels   (Standard: wcag-target)
+21. Works at phone width   (Standard: wcag-reflow)
+
+SOURCES
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- apg-accordion: https://www.w3.org/WAI/ARIA/apg/patterns/accordion/
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- nng-swipe: https://www.nngroup.com/articles/contextual-swipe/
+- nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
+- wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

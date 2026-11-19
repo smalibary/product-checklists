@@ -1,0 +1,29 @@
+title: Privacy page
+about: The privacy policy: what personal data is collected, why, who sees it, and what rights people have.
+## Required content
+- Who is responsible for the data: company name, address and contact | L gdpr-13 pdpl
+- Contact for the data protection officer, if one is required | L gdpr-13
+- What data is collected, grouped by type (account, payment, usage, device) | L gdpr-13 ccpa
+- Why each type is collected and the legal basis for it | L gdpr-13
+- Who data is shared with, by category, and whether it is sold | L gdpr-13 ccpa
+- Transfers to other countries and how they are protected | L gdpr-13 pdpl
+- How long each type is kept | L gdpr-13
+- People's rights: see, correct, delete, take away, object, withdraw consent | L gdpr-15 gdpr-17 gdpr-20 gdpr-21
+- How to use those rights, with a direct link or form | L gdpr-12 ccpa
+- The right to complain to the data authority | L gdpr-13
+- Whether any decisions are made automatically about people | L gdpr-13
+- Cookies and trackers explained, with a link to change choices | L eprivacy
+- Children: minimum age and how children's data is handled | L coppa
+- A "Do not sell or share my personal information" link where California law applies | L ccpa
+## Clarity
+- A short summary at the top in plain words, the full text below | L gdpr-12
+- Written in clear, plain language; no hidden meaning | L gdpr-12
+- Headings and a contents list to jump to a part | S wcag-headings
+- Available in the languages the service is offered in | L pdpl
+- Effective date and a list of changes | P
+- People told by email when the policy changes in an important way | P
+## Access
+- Linked from the footer of every page and from sign-up | P
+- Readable as plain HTML (not only a PDF) | S wcag
+- Text contrast and size meet WCAG | S wcag-contrast wcag-resize
+- A printable or downloadable version | P

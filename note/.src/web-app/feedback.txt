@@ -1,0 +1,26 @@
+title: Feedback (web app)
+about: Ways for users to tell the team what is wrong or what they want: forms, ratings, bug reports and surveys.
+## Where and when
+- A Feedback link always in the same place (help menu or footer) | S wcag-help
+- Short in-context asks after a task is done, not in the middle of one | R nng-surveys
+- Not shown again soon after it was answered or dismissed | R nng-surveys
+- Scores like NPS or CSAT asked rarely and only to people with enough use | R nng-surveys
+## The form
+- Type of feedback first (bug, idea, question, praise) | P
+- One open text box with a helpful prompt | P
+- Optional screenshot, with a way to cover private parts | P
+- Page, browser and app version attached automatically, shown to the person | L gdpr-13
+- Contact allowed? checkbox, off by default | L gdpr-7
+- Few required fields | R baymard-fields
+## After sending
+- Thank-you message saying what happens next | S govuk-confirm
+- Bug reports get a reference and updates when fixed | P
+- Public idea board with votes and status (planned, done), if used | P
+- Close the loop: tell people when their request ships | P
+## Respect
+- Never block the app until feedback is given | R nng-surveys
+- Personal data in feedback handled like any personal data | L gdpr-5
+## Access
+- The form is a dialog or page with labels and errors in words | S apg-dialog wcag-labels wcag-error
+- Rating scales are radio groups with words, not only stars or faces | S apg-radio wcag-nontext
+- Thank-you message announced | S wcag-status

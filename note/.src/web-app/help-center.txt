@@ -1,0 +1,29 @@
+title: Help Center
+about: The self-help library of articles that answers how-to questions and fixes problems.
+## Finding
+- A big search box at the top, with suggestions while typing | R nng-help baymard-autocomplete
+- Topics grouped by task (getting started, billing, account), with article counts | R nng-help
+- Popular articles listed | R nng-help
+- Search forgives typos and synonyms | R baymard-autocomplete
+- No-results page offers contact and related topics | R nng-empty
+## Articles
+- Titles that match the task ("Change your email") | R nng-help
+- Steps numbered, one action each, with screenshots kept current | R nng-help
+- Short, focused articles; one task per article | R nng-help
+- Last updated date | P
+- Which plan or platform the article applies to | P
+- Videos with captions and a text version | S wcag-captions
+- Related articles at the end | R nng-help
+- "Was this helpful?" with an optional comment | P
+## Getting more help
+- Contact support easy to find, never hidden behind forced searches | R nng-help
+- Status page link for outages | P
+- Community forum link, if any | P
+- In-app help opens the right article for the screen the person is on | R nng-help
+## Structure and access
+- Breadcrumbs from topic to article | R nng-breadcrumbs
+- Headings in order, contents list on long articles | S wcag-headings
+- Images and GIFs have alt text; animations can be paused | S wcag-nontext wcag-pause
+- Help link in the same place on every page of the app | S wcag-help
+- Available in the app's languages | P
+- Articles indexable by search engines | S google-helpful

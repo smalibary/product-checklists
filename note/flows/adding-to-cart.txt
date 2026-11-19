@@ -1,0 +1,48 @@
+﻿ADDING TO CART (FLOW) CHECKLIST: 17 items
+From choosing a product's options to the item being in the cart, with clear feedback.
+Backing: 1 Rule, 8 Standard, 5 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BEFORE ADDING
+ 1. Required options (size, colour) chosen first; the button says what is missing   (Research: baymard-cart)
+ 2. Price, stock and delivery estimate visible near the button   (Rule: eu-consumer-rights)
+ 3. Out of stock: button replaced by "Notify me", not hidden   (Practice)
+ 4. Quantity choice where it makes sense   (Practice)
+
+ADDING
+ 5. Button shows busy state; no double add on double tap   (Standard: owasp-transaction)
+ 6. Works without signing in (guest cart)   (Research: baymard-guest)
+
+FEEDBACK
+ 7. Confirmation without leaving the page: a small panel or message with the item, "View cart" and "Checkout"   (Research: baymard-cart)
+ 8. Cart count updates at once   (Standard: m3-badges)
+ 9. Message announced to screen readers   (Standard: wcag-status)
+10. Haptic on phones   (Standard: hig-feedback)
+
+PROBLEMS
+11. Failure explained ("Only 2 left") with a way forward   (Standard: wcag-error)
+12. Price changed since the page loaded: say so   (Practice)
+
+AFTER
+13. Person stays where they were to keep shopping   (Research: baymard-cart)
+14. Cart kept across visits and devices   (Research: baymard-cart)
+
+ACCESS
+15. Option pickers are real buttons or radios with names   (Standard: wcag-name-role)
+16. Focus stays sensible after adding   (Standard: wcag-focus-order)
+17. Targets at least 24 px web / 44 pt iOS / 48 dp Android   (Standard: wcag-target, hig-layout, m3-layout)
+
+SOURCES
+- baymard-cart: https://baymard.com/research/checkout-usability
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- owasp-transaction: https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html
+- baymard-guest: https://baymard.com/blog/reduce-cart-abandonment
+- m3-badges: https://m3.material.io/components/badges/guidelines
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- hig-feedback: https://developer.apple.com/design/human-interface-guidelines/feedback
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

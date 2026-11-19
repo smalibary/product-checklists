@@ -1,0 +1,26 @@
+title: Banner
+about: A full-width message across the top of the app or page, about something that affects the whole product (outage, trial ending, cookies).
+## When to use
+- For product-wide news or problems that persist (trial ends, payment failed, read-only mode) | S m3-banner
+- One banner at a time; more wait in line | S m3-banner
+- Not for messages about one action (use a toast) or one section (use an alert) | R nng-indicators
+## Content
+- One short sentence on what is happening | S govuk-notification
+- One or two actions (Update payment, Learn more) | S m3-banner
+- Dates and times with time zone where relevant | P
+## Look
+- Kind shown by colour, icon and words (info, warning, error) | S wcag-color
+- Contrast for text and buttons meets WCAG | S wcag-contrast
+- Stays at the top of the content, under the header | S m3-banner
+## Behaviour
+- Can be closed if not critical; closed stays closed for that message | P
+- Critical banners (account suspended) cannot be closed until fixed | P
+- Does not cover content; the page moves down once, not while reading | S webdev-cls
+- Does not cover focused items when sticky | S wcag-obscured
+## Access
+- Region with a name, or role status if it appears after load | S wcag-status
+- Close button has a name ("Dismiss trial notice") | S wcag-name-role
+- Reachable early in the tab order | S wcag-focus-order
+## Cookie banner
+- Accept and Reject equally easy, no pre-ticked boxes | L eprivacy gdpr-7
+- Settings link for choices by purpose | L eprivacy

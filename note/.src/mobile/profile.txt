@@ -1,0 +1,27 @@
+title: Profile (mobile)
+about: A person's profile screen in a phone app: their own (editable) and other people's (viewed).
+## Header
+- Photo, name, short bio and key counts (posts, followers) | P
+- Verified marks explained on tap | P
+- Main action clear: Edit profile on your own, Follow or Message on others | P
+## Content
+- Tabs for the person's content (posts, saved, likes), each with an empty state | S hig-tab-bars nng-empty
+- Pull to refresh | S hig-loading
+- Long bios cut with "more" | P
+## Editing your own
+- Edit opens a form screen with Save and Cancel | S hig-modality
+- Change photo: take, choose from photos (system picker) or remove | S android-photo-picker hig-privacy
+- Crop to the shape shown | P
+- Username rules shown before saving; checked as typed | S wcag-error
+- What is public is marked; preview "as others see it" | L gdpr-25
+## Others' profiles
+- More menu with Share, Block, Report | S apple-review
+- Blocking explained (what they will and will not see) | S apple-review
+- Private accounts show a clear locked state | P
+## Privacy
+- Only needed details public by default | L gdpr-25
+- Contact details hidden unless chosen | L gdpr-25
+## Access
+- Photo has the person's name as its description | S wcag-nontext
+- Counts read with their meaning ("120 followers") | S hig-accessibility
+- Large text supported; buttons at least 44 pt / 48 dp | S hig-layout m3-layout

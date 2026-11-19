@@ -1,0 +1,30 @@
+title: Cart page
+about: Shows what the shopper is about to buy and the full cost, and moves them to checkout.
+## Items
+- Each item: photo, name, chosen options (size, colour), unit price and quantity | R baymard-guest
+- Change quantity with a field plus minus and plus buttons | R baymard-guest
+- Remove an item, with Undo instead of a confirmation box | R nng-control
+- A link back to each product | P
+- Stock warnings that are true ("Only 2 left" only if real) | L ftc-dark-patterns
+- Save for later or move to wishlist | P
+## Cost
+- Subtotal, shipping, tax and discounts each on their own line | R baymard-guest
+- Shipping cost or an estimate shown before checkout; hidden costs are the top reason people leave | R baymard-abandon
+- No surprise fees added later; all mandatory fees in the first price shown | L ftc-junk-fees eu-consumer-rights
+- Total in the shopper's currency, stating whether tax is included | L eu-consumer-rights
+- Delivery date estimate, not only a speed | R baymard-guest
+- Promo code field present but low-key (a link that opens it) | R baymard-coupon
+## Moving on
+- One clear Checkout button, at the top and bottom on long carts | P
+- Guest checkout offered; forcing an account makes people leave | R baymard-guest baymard-abandon
+- Express pay buttons (Apple Pay, Google Pay) for speed | P
+- Continue shopping link | P
+- Trust signals near the button: returns policy, secure payment | R baymard-trust
+## States
+- An empty cart that suggests where to go next | R nng-empty
+- Cart kept across visits and devices for signed-in shoppers | P
+- Changes to totals announced to screen readers | S wcag-status
+## Access
+- Quantity buttons have names ("Increase quantity of Blue mug") | S wcag-name-role
+- Touch targets at least 24 pixels, 44 recommended | S wcag-target
+- Works at phone width with no sideways scroll | S wcag-reflow

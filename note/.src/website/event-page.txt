@@ -1,0 +1,36 @@
+title: Event page
+about: A page for one event (talk, conference, webinar, launch) that tells people what, when and where, and gets them registered.
+## The essentials above the fold
+- Event name and one line on why to attend | P
+- Date and start and end time with the time zone written out | S iso-8601
+- Times shown in the visitor's own time zone for online events, with the original beside it | S w3c-forms-i18n
+- Place: venue name and full address for in person, "Online" with the platform for virtual | P
+- One clear Register or Get tickets button, repeated at the end | R nng-forms
+- Price, or "Free", visible before the button is pressed | L ftc-junk-fees eu-consumer-rights
+- Seats left or "Sold out" shown honestly; never fake scarcity | L ftc-dark-patterns
+## Details
+- Agenda with times for each part | P
+- Speakers with photo, name, role and a short bio | P
+- Who it is for and what they will take away | P
+- Language of the event | P
+- Accessibility at the venue: step-free entry, captions, sign language, quiet room | L ada-web eu-accessibility-act
+- Directions, map, parking and public transport | P
+- What to bring and dress code if any | P
+- Refund and transfer policy for tickets | L eu-consumer-rights
+## Registration
+- A short form: only the fields needed to attend | R baymard-fields
+- Confirmation screen and email with the date, place and a calendar file | R govuk-confirm
+- Add to calendar for Google, Apple and Outlook | P
+- A way to cancel a registration | P
+- Reminder email before the event, with the join link for online events | P
+## After the event
+- The page changes once the event has passed: "This event has ended" with the recording or slides | P
+- No Register button on a past event | R nng-heuristics
+## Search and sharing
+- Event structured data (name, start date, location, offers, status) so search shows it | S google-event schema-event
+- Event status marked if cancelled, postponed or moved online | S google-event
+- A share image and title for social links | P
+## Accessibility
+- Captions and transcripts for any video | S wcag-captions
+- Colour contrast and readable text sizes | S wcag-contrast
+- Page title includes the event name and date | S wcag-title

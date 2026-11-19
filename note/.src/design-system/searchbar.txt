@@ -1,0 +1,28 @@
+title: Searchbar
+about: The text box where people type to search, with its button, suggestions and clear control.
+## Look
+- A wide box; the width hints at query length (about 27 characters visible) | R nng-search
+- Placed where people expect: top of the page or app | R nng-search
+- Magnifier icon and a Search button, or Enter to search, stated | R nng-search
+- Placeholder can hint scope ("Search orders") but is not the label | S wcag-labels
+- Clear (x) button once something is typed | S m3-search
+## Suggestions
+- Suggestions appear after a character or two, at most about 10 | R baymard-autocomplete
+- Suggestion text highlights what is added, not what was typed | R baymard-autocomplete
+- Recent searches shown when empty, with a way to remove them | R nng-search
+- Arrow keys move through suggestions; Enter picks one | S apg-combobox
+- Typo-tolerant | R baymard-autocomplete
+## Behaviour
+- Scope choice if the product has several kinds of items | R nng-search
+- A shortcut opens it (/ or Ctrl+K), shown in the box | P
+- Search runs on Enter, or live after a short pause for small data sets | P
+- The query stays in the box on the results page | R nng-search
+## Phones
+- Opens full screen with the keyboard ready | S m3-search hig-search
+- Search key on the keyboard (inputmode search, enterkeyhint) | S mdn-inputmode
+- Cancel button returns to where the person was | S hig-search
+## Access
+- Search landmark (role search or the search element) | S apg-landmarks
+- Real label, visible or for screen readers ("Search") | S wcag-labels
+- Suggestion list follows the combobox pattern; number of suggestions announced | S apg-combobox wcag-status
+- type="search" so browsers add their own features | S mdn-input-search

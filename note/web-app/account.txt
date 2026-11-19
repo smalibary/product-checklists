@@ -1,0 +1,57 @@
+﻿ACCOUNT (WEB APP) CHECKLIST: 21 items
+The page where a person manages who they are in the app: name, email, password, sign-in methods, sessions and their data.
+Backing: 2 Rule, 14 Standard, 1 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PROFILE
+ 1. Name, photo and the details others see, with a preview   (Practice)
+ 2. One full-name field, any characters   (Standard: w3c-names)
+ 3. Photo upload with crop, size and type limits stated   (Standard: owasp-upload)
+
+EMAIL AND SIGN-IN
+ 4. Changing email sends a link to the new address and a notice to the old one   (Standard: owasp-auth)
+ 5. Changing password asks for the current one   (Standard: owasp-auth)
+ 6. New password follows the same rules as sign-up (length, leaked-password check)   (Standard: nist-63b)
+ 7. Connected sign-in methods (Google, Apple, passkeys) listed, with add and remove   (Practice)
+ 8. Cannot remove the last way to sign in   (Practice)
+ 9. Two-step sign-in status and a link to set it up   (Standard: owasp-mfa)
+
+SESSIONS AND DEVICES
+10. Active sessions with device, place and last used   (Standard: owasp-session)
+11. Sign out of one session or all others   (Standard: owasp-session)
+12. Email notice on new sign-ins   (Standard: owasp-auth)
+
+YOUR DATA
+13. Download a copy of your data in a common format   (Rule: gdpr-15, gdpr-20)
+14. Delete account, easy to find, with what is deleted and when   (Rule: gdpr-17, apple-5.1.1, play-deletion)
+15. Language, time zone and date format settings   (Practice)
+
+SAVING AND ERRORS
+16. Clear Save for forms, or save on change with a "Saved" message   (Standard: wcag-status)
+17. Unsaved changes warned before leaving   (Research: nng-control)
+18. Sensitive changes ask for the password or a code again   (Standard: owasp-auth)
+19. Errors next to the field in words   (Standard: wcag-error)
+
+ACCESS
+20. Labels, autofill (name, email, new-password) and keyboard work   (Standard: wcag-labels, mdn-autocomplete, wcag-keyboard)
+21. Sections with headings and a side menu for long pages   (Standard: wcag-headings)
+
+SOURCES
+- w3c-names: https://www.w3.org/International/questions/qa-personal-names
+- owasp-upload: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
+- owasp-mfa: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- gdpr-15: https://gdpr-info.eu/art-15-gdpr/
+- gdpr-20: https://gdpr-info.eu/art-20-gdpr/
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- apple-5.1.1: https://developer.apple.com/help/app-review/guideline-reference/5-1-1-account-deletion
+- play-deletion: https://support.google.com/googleplay/android-developer/answer/13327111
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels

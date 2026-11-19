@@ -1,0 +1,50 @@
+﻿PROFILE (MOBILE) CHECKLIST: 19 items
+A person's profile screen in a phone app: their own (editable) and other people's (viewed).
+Backing: 3 Rule, 10 Standard, 0 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+HEADER
+ 1. Photo, name, short bio and key counts (posts, followers)   (Practice)
+ 2. Verified marks explained on tap   (Practice)
+ 3. Main action clear: Edit profile on your own, Follow or Message on others   (Practice)
+
+CONTENT
+ 4. Tabs for the person's content (posts, saved, likes), each with an empty state   (Standard: hig-tab-bars, nng-empty)
+ 5. Pull to refresh   (Standard: hig-loading)
+ 6. Long bios cut with "more"   (Practice)
+
+EDITING YOUR OWN
+ 7. Edit opens a form screen with Save and Cancel   (Standard: hig-modality)
+ 8. Change photo: take, choose from photos (system picker) or remove   (Standard: android-photo-picker, hig-privacy)
+ 9. Crop to the shape shown   (Practice)
+10. Username rules shown before saving; checked as typed   (Standard: wcag-error)
+11. What is public is marked; preview "as others see it"   (Rule: gdpr-25)
+
+OTHERS' PROFILES
+12. More menu with Share, Block, Report   (Standard: apple-review)
+13. Blocking explained (what they will and will not see)   (Standard: apple-review)
+14. Private accounts show a clear locked state   (Practice)
+
+PRIVACY
+15. Only needed details public by default   (Rule: gdpr-25)
+16. Contact details hidden unless chosen   (Rule: gdpr-25)
+
+ACCESS
+17. Photo has the person's name as its description   (Standard: wcag-nontext)
+18. Counts read with their meaning ("120 followers")   (Standard: hig-accessibility)
+19. Large text supported; buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+
+SOURCES
+- hig-tab-bars: https://developer.apple.com/design/human-interface-guidelines/tab-bars
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- hig-loading: https://developer.apple.com/design/human-interface-guidelines/loading
+- hig-modality: https://developer.apple.com/design/human-interface-guidelines/modality
+- android-photo-picker: https://developer.android.com/training/data-storage/shared/photopicker
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- gdpr-25: https://gdpr-info.eu/art-25-gdpr/
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout

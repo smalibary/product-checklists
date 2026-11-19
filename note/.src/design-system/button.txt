@@ -1,0 +1,29 @@
+title: Button
+about: The control people press to do something: submit, save, open, delete.
+## Kinds
+- A small set of kinds: primary, secondary, tertiary (text), danger | S m3-buttons hig-buttons
+- One primary button per view or section | R nng-buttons
+- Danger style only for actions that destroy or cannot be undone | R nng-confirm
+- Links go somewhere; buttons do something. Use the right element | S govuk-button
+## Content
+- A verb that says what happens ("Save changes", "Send invoice") | S govuk-button
+- Short, start with a capital, no "Click here" | R nng-buttons
+- Icon plus text when it helps; icon-only buttons have a text name | S wcag-name-role
+## Sizes and look
+- Sizes from tokens (small, medium, large); touch area at least 24 px, ideally 44 to 48 | S wcag-target hig-layout m3-buttons
+- Text 4.5:1 contrast; button edge or fill 3:1 against the background | S wcag-contrast wcag-ui-contrast
+- Looks pressable: filled or outlined, not plain text for main actions | R nng-buttons
+## States
+- Default, hover, focus, pressed, disabled, loading | S m3-buttons
+- Focus ring visible in every theme | S wcag-focus-appearance
+- Loading: spinner inside, same width, cannot be pressed again | P
+- Disabled buttons used sparingly; better to allow press and explain what is missing | R nng-buttons
+## Placement
+- Primary action placed consistently (end of the form or dialog) | S wcag-consistent
+- Order follows the platform: on Windows and web varies; on iOS and Android follow their guides | S hig-buttons m3-dialogs
+- Full width on phones for main actions | P
+## Access
+- Native button element, or role button with Enter and Space | S wcag-keyboard
+- Toggle buttons say pressed (aria-pressed) | S wcag-name-role
+- Button opening a menu says so (aria-haspopup, aria-expanded) | S apg-menubutton
+- Name matches the visible label | S wcag-label-in-name

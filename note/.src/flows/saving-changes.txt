@@ -1,0 +1,24 @@
+title: Saving changes (flow)
+about: Keeping edits to a form, document or settings, by a Save button or automatically.
+## Choosing the way
+- Autosave for documents and long writing; Save button for forms with checks | R nng-indicators
+- Toggles and single choices take effect at once | R nng-toggle
+- Don't mix both ways on one screen | R nng-consistency
+## Save button
+- Active only when something changed, or always active with a "no changes" note | P
+- Busy state while saving; no double save | S owasp-transaction
+- Success shown near the button or as a short message | S wcag-status
+- Errors on the fields, with a summary at the top | S wcag-error
+## Autosave
+- "Saving..." then "Saved" with time | R nng-indicators
+- Works offline with "Will save when online" | P
+- Version history or undo for mistakes | R nng-control
+## Leaving unsaved
+- Warn before leaving with unsaved changes; Save, Discard, Cancel | S wcag-prevent
+- Drafts kept if the session ends | S wcag-timing
+## Conflicts
+- If someone else changed it, show both and let the person choose | P
+## Access
+- Save message announced without moving focus | S wcag-status
+- Keyboard shortcut (Ctrl+S) where people expect it | P
+- Save button has a clear name | S wcag-labels

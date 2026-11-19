@@ -1,0 +1,28 @@
+title: Search (mobile)
+about: Searching inside a phone app: the search field, suggestions, results and filters.
+## Getting there
+- Search in a tab, or a search field at the top of the main list | S hig-search m3-search
+- Tapping it opens a focused search screen with the keyboard up | S m3-search
+- Pull-down reveals search on iOS lists where suited | S hig-search
+## Before typing
+- Recent searches, with remove and clear all | R nng-search
+- Popular or suggested searches | P
+- Categories to browse | P
+## Typing
+- Suggestions after a character or two | R baymard-autocomplete
+- Typo-tolerant, handles Arabic letter forms and diacritics | P
+- Search key on the keyboard | S mdn-inputmode
+- Clear button and Cancel (iOS) or back arrow (Android) | S hig-search m3-search
+- Voice search where it helps | P
+## Results
+- Count of results, grouped by type if mixed | R nng-search
+- Matched words highlighted with weight, not only colour | S wcag-color
+- Filters in a sheet or chips above results, with counts | R baymard-filters
+- Sort choice | R nng-search
+- Infinite scroll keeps position when coming back | R nng-infinite
+## No results
+- Say so, show the words, suggest spelling fixes and other searches | R nng-empty
+## Access
+- Field has a name ("Search products") | S hig-accessibility
+- Number of results announced | S wcag-status
+- Large text supported; results rows at least 44 pt / 48 dp | S hig-layout m3-layout

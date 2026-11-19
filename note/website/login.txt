@@ -1,0 +1,74 @@
+﻿LOGIN PAGE (WEBSITE) CHECKLIST: 31 items
+Lets returning people sign in quickly and safely, and recover when they cannot.
+Backing: 0 Rule, 22 Standard, 2 Research, 7 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+THE FORM
+ 1. Email (or username) and password on one page, unless the site uses passkeys or single sign-on first   (Standard: webdev-signin)
+ 2. Real form with a form tag and a submit button, so Enter works and password managers save it   (Standard: webdev-signin)
+ 3. Visible labels, not placeholder-only   (Standard: wcag-labels, nng-placeholder)
+ 4. autocomplete set to username and current-password   (Standard: webdev-signin, mdn-autocomplete, wcag-purpose)
+ 5. Email field uses type email; no automatic capitals or spelling fixes   (Standard: webdev-signin)
+ 6. Pasting into the password field is allowed   (Standard: nist-63b, wcag-auth)
+ 7. Password managers and autofill are never blocked   (Standard: nist-63b, wcag-auth)
+ 8. Show password button with a clear name and state   (Research: baymard-show, govuk-show)
+ 9. Remember me (stay signed in) choice, with its length stated   (Practice)
+
+WAYS IN
+10. Passkeys offered, with the browser's passkey autofill on the email field   (Standard: webauthn, fido-ux)
+11. Sign in with Google, Apple or work single sign-on where the audience uses them   (Practice)
+12. Email magic link or one-time code as a choice for people without a password   (Practice)
+13. The same ways shown on sign-up and sign-in, so people remember which they used   (Practice)
+
+ERRORS AND SAFETY
+14. One error for a wrong email or password, never which one was wrong   (Standard: owasp-auth)
+15. Errors shown next to the field and focused, in words   (Standard: wcag-error, govuk-error-message)
+16. Caps Lock warning on the password field   (Practice)
+17. Limits on repeated wrong tries (slow down, then lock) with a message saying what to do   (Standard: owasp-auth, nist-63b)
+18. A robot check only after suspicious tries, and an accessible one   (Standard: wcag-auth)
+19. Two-step check after the password when the account has it   (Standard: owasp-mfa)
+20. Signs in over HTTPS only; session cookie secure and httpOnly   (Standard: owasp-session)
+21. New sign-ins from a new device announced by email   (Standard: owasp-auth)
+
+RECOVERY
+22. Forgot password link right beside the password field   (Standard: webdev-signin)
+23. A link to sign up for people without an account   (Practice)
+24. Help or contact link for locked-out people   (Standard: wcag-help)
+
+AFTER SIGN-IN
+25. Back to the page they were on before signing in   (Practice)
+26. No redirect to an outside address taken from the link   (Standard: owasp-redirect)
+
+ACCESS AND LAYOUT
+27. Focus starts on the first field, not stolen later   (Standard: wcag-focus-order)
+28. Contrast and target size meet WCAG   (Standard: wcag-contrast, wcag-target)
+29. Works at phone width and with 200% text   (Standard: wcag-reflow, wcag-resize)
+30. Page title says "Sign in" with the site name   (Standard: wcag-title)
+31. Use the same words everywhere: either "Sign in" or "Log in", not both   (Research: nng-heuristics)
+
+SOURCES
+- webdev-signin: https://web.dev/articles/sign-in-form-best-practices
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- nng-placeholder: https://www.nngroup.com/articles/form-design-placeholders/
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- wcag-purpose: https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose
+- nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
+- wcag-auth: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum
+- baymard-show: https://baymard.com/guidelines/665-show-password-feature
+- govuk-show: https://technology.blog.gov.uk/2021/04/19/simple-things-are-complicated-making-a-show-password-option/
+- webauthn: https://www.w3.org/TR/webauthn-3/
+- fido-ux: https://fidoalliance.org/ux-guidelines-for-passkey-creation-and-sign-ins/
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- govuk-error-message: https://design-system.service.gov.uk/components/error-message/
+- owasp-mfa: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- wcag-help: https://www.w3.org/WAI/WCAG22/Understanding/consistent-help
+- owasp-redirect: https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html
+- wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- wcag-resize: https://www.w3.org/WAI/WCAG22/Understanding/resize-text
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
+- nng-heuristics: https://www.nngroup.com/articles/ten-usability-heuristics/

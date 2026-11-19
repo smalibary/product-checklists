@@ -1,0 +1,23 @@
+title: Entering promo code (flow)
+about: Typing a discount code in cart or checkout and seeing the price change.
+## The field
+- Folded behind a quiet link ("Have a code?") so people without one are not sent away to hunt for codes | R baymard-coupon
+- Field with Apply button; Enter applies too | P
+- Not case-sensitive; spaces trimmed | P
+- Paste works | S wcag-on-input
+## Applying
+- Busy state on Apply | P
+- Success: code shown as a removable tag with the saving | R baymard-coupon
+- Totals update at once, discount on its own line | L eu-consumer-rights
+## Errors
+- Say why: expired, wrong code, minimum not reached, not for these items | S wcag-error
+- Field keeps the typed code for fixing | S wcag-error
+- Too many tries slowed down | S owasp-auth
+## Rules
+- Only one code or several: say so | P
+- Codes applied in the store's price rules on the server, not only the page | S owasp-transaction
+- Discount shown honestly against the real earlier price | L eu-omnibus
+## Access
+- Result announced | S wcag-status
+- Field has a visible name | S wcag-labels
+- Remove button named ("Remove code SAVE10") | S wcag-name-role

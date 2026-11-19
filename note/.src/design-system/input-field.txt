@@ -1,0 +1,33 @@
+title: Input Field
+about: A text box for typing a value, with its label, hint, error and states.
+## Parts
+- A visible label above the field, always present | S wcag-labels govuk-text-input
+- Hint text under the label for format or examples | S govuk-text-input
+- Placeholder never used as the label | S wcag-labels
+- Error message next to the field, in words | S govuk-error-message wcag-error
+- Optional prefix or suffix (SAR, kg, @) outside the typed text | S govuk-text-input
+- Character count for limited fields | S govuk-character
+## Sizes
+- Width hints at expected length (postcode short, address long) | S govuk-text-input
+- Height and text size large enough on phones (16 px stops iOS zooming) | P
+- Touch area at least 24 px, ideally 44 | S wcag-target
+## States
+- Default, hover, focus, filled, error, disabled, read-only, each clearly different | S m3-text-fields
+- Focus ring visible with 3:1 contrast | S wcag-focus-appearance
+- Error state by border, icon and message, not only red | S wcag-color
+- Field border 3:1 contrast | S wcag-ui-contrast
+- Read-only text still selectable and copyable | P
+## Helping people type
+- Right type and keyboard: email, tel, url, number pads with inputmode | S mdn-inputmode
+- autocomplete set (name, email, address) | S mdn-autocomplete wcag-input-purpose
+- Paste always allowed | S wcag-auth
+- Spellcheck off for codes and names | P
+- Accept spaces and dashes in phone and card numbers | R baymard-fields
+## Checking
+- Check when leaving the field or on submit, not on every key | R baymard-inline
+- Clear the error once fixed | R baymard-inline
+## Access
+- Label linked with for and id; hint and error linked with aria-describedby | S wcag-labels
+- Invalid fields marked aria-invalid | S wcag-error
+- Required fields marked in words, not only with * | S wcag-labels
+- Direction follows the typed language (dir auto) | S w3c-dir

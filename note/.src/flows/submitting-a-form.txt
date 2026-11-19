@@ -1,0 +1,26 @@
+title: Submitting a form (flow)
+about: The moment a form is sent: checking, sending, and telling the person what happened.
+## Before submit
+- Button always active; checks run on submit | R baymard-inline
+- Button names the action ("Send request"), not "Submit" | R nng-buttons
+- For legal, money or data changes: review step or a way to correct | S wcag-prevent
+## On submit
+- All fields checked; error summary at the top with links | S wcag-error govuk-error-summary
+- Focus moves to the summary or first wrong field | S wcag-focus-order
+- Busy state on the button; no double send | S owasp-transaction
+- Works if the connection is slow: what was typed is kept | S wcag-timing
+## Success
+- Confirmation page or message saying what happens next and when | S govuk-confirm
+- Reference number and email copy where useful | S govuk-confirm
+- Form not resent on refresh (redirect after sending) | P
+## Failure
+- Server error: plain message, data kept, Try again | S wcag-error
+- Session expired: keep the data and sign in again | S wcag-timing
+## Safety
+- Server checks everything again | S owasp-authz
+- Spam protection without robot puzzles that block people (honeypot, rate limits) | S wcag-auth
+- CSRF protection | S owasp-csrf
+## Access
+- Enter submits from a text field | S wcag-on-input
+- Result announced | S wcag-status
+- Works without a mouse | S wcag-keyboard

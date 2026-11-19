@@ -1,0 +1,27 @@
+title: Uploading media (flow)
+about: Choosing, sending and confirming photos, videos or files.
+## Choosing
+- Drop area on desktop and a "Choose files" button | S wcag-dragging
+- On phones, the system photo picker (no full library access needed) | S android-photo-picker hig-privacy
+- Allowed types and size limit shown before choosing | S wcag-help
+- Multiple files at once where it makes sense | P
+## Before sending
+- Previews with remove for each | P
+- Crop, rotate or trim where needed | P
+- Wrong type or too large caught at once, per file | S wcag-error
+- Location and camera details removed from photos unless needed | L gdpr-25
+## Sending
+- Progress per file with percent and cancel | R nng-progress
+- Large files sent in parts and resumed after a dropped connection | P
+- Page or app can be used while uploading; warn before leaving if it would stop | P
+## After
+- Each file marked done or failed with Retry | S wcag-error
+- Processing (video conversion) shown as its own state | R nng-indicators
+- Uploaded file shown where the person expects it | P
+## Safety
+- Server checks type by content, size, and scans for malware | S owasp-upload
+- Files stored privately unless the person shares them | L gdpr-32
+## Access
+- Progress and results announced | S wcag-status
+- Alt text field for images that will be shown to others | S wcag-nontext
+- Keyboard can reach choose, remove and cancel | S wcag-keyboard

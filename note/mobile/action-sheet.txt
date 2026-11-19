@@ -1,0 +1,46 @@
+﻿ACTION SHEET CHECKLIST: 19 items
+A list of actions that slides up from the bottom of the phone screen, about the thing just tapped.
+Backing: 0 Rule, 17 Standard, 2 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN TO USE
+ 1. Choices about one item (Share, Edit, Delete) or confirming a destructive action   (Standard: hig-action-sheets)
+ 2. Android uses a bottom sheet or a menu for the same job   (Standard: m3-bottom-sheets, m3-menus)
+ 3. Not for long content or forms (use a full sheet or new screen)   (Research: nng-bottom-sheet)
+ 4. Not for a simple yes/no that needs explanation (use an alert)   (Standard: hig-alerts)
+
+CONTENT
+ 5. Optional title and message saying what the actions are about   (Standard: hig-action-sheets)
+ 6. Short action names, verbs first   (Standard: hig-writing)
+ 7. Destructive action styled red and placed at the top on iOS   (Standard: hig-action-sheets)
+ 8. A Cancel button at the bottom, separate from the rest   (Standard: hig-action-sheets)
+ 9. Few actions; long lists scroll   (Standard: hig-action-sheets)
+
+BEHAVIOUR
+10. Tap outside or swipe down closes it   (Standard: m3-bottom-sheets)
+11. Android back closes it   (Standard: android-back)
+12. On iPad and large screens it shows as a popover next to what was tapped   (Standard: hig-action-sheets)
+13. Destructive actions can be undone, or confirmed   (Research: nng-confirm)
+
+LOOK
+14. Grabber handle on draggable sheets   (Standard: m3-bottom-sheets)
+15. Dimmed background behind   (Standard: m3-bottom-sheets)
+16. Rows at least 44 pt / 48 dp tall   (Standard: hig-layout, m3-layout)
+
+ACCESS
+17. Focus moves into the sheet and returns after   (Standard: hig-accessibility)
+18. Screen readers announce it as a menu or dialog with a title   (Standard: hig-accessibility)
+19. Large text grows the rows instead of cutting text   (Standard: hig-accessibility)
+
+SOURCES
+- hig-action-sheets: https://developer.apple.com/design/human-interface-guidelines/action-sheets
+- m3-bottom-sheets: https://m3.material.io/components/bottom-sheets/guidelines
+- m3-menus: https://m3.material.io/components/menus/guidelines
+- nng-bottom-sheet: https://www.nngroup.com/articles/bottom-sheet/
+- hig-alerts: https://developer.apple.com/design/human-interface-guidelines/alerts
+- hig-writing: https://developer.apple.com/design/human-interface-guidelines/writing
+- android-back: https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- m3-layout: https://m3.material.io/foundations/layout
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility

@@ -1,0 +1,46 @@
+﻿API KEYS CHECKLIST: 19 items
+Where developers create, see and revoke the secret keys their code uses to call the product.
+Backing: 0 Rule, 15 Standard, 1 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CREATING
+ 1. Create key with a name and an optional expiry date   (Standard: github-tokens)
+ 2. Choose what the key can do (scopes) and which resources; least power by default   (Standard: owasp-authz, github-tokens)
+ 3. Choose test or live mode, with keys clearly marked (prefix like sk_test_)   (Standard: stripe-keys)
+ 4. The full key shown once, with a copy button and a warning to store it safely   (Standard: stripe-keys, owasp-secrets)
+ 5. After leaving, only the last 4 characters are shown   (Standard: stripe-keys)
+
+LIST
+ 6. Table: name, last 4 characters, scopes, created, last used, expiry, created by   (Standard: github-tokens)
+ 7. Unused and soon-to-expire keys flagged   (Standard: github-tokens)
+
+CHANGING
+ 8. Revoke (delete) a key at once, with a confirm naming it   (Research: nng-confirm)
+ 9. Roll a key: make a new one and keep the old working for a short set time   (Standard: stripe-keys)
+10. Restrict a key to certain addresses (IP list)   (Practice)
+
+SAFETY
+11. Keys stored hashed on the server where possible   (Standard: owasp-secrets)
+12. Key creation, use from a new place and revoke are logged and emailed   (Standard: owasp-logging)
+13. Keys found leaked on public code (secret scanning) revoked and the owner told   (Standard: github-tokens)
+14. Only admins can create live keys   (Standard: owasp-authz)
+15. Sensitive actions ask for the password again   (Standard: owasp-auth)
+
+HELP
+16. A quick-start code example using the new key   (Practice)
+17. Link to the API docs and rate limits   (Practice)
+
+ACCESS
+18. Copy button announces "Copied"   (Standard: wcag-status)
+19. Keys shown in a monospaced font with enough contrast   (Standard: wcag-contrast)
+
+SOURCES
+- github-tokens: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- stripe-keys: https://docs.stripe.com/keys
+- owasp-secrets: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

@@ -1,0 +1,25 @@
+title: Tabs
+about: A row of labels that switch between views of related content in the same place.
+## When to use
+- Switching between related views of the same thing (Overview, Activity, Settings) | S apg-tabs m3-tabs
+- Not for steps in order (use a stepper) or for main navigation of the app (use a nav bar) | R nng-tabs
+- Not when people need to compare content across tabs | R nng-tabs
+## Look
+- Short labels, one or two words, in a single row | R nng-tabs
+- Selected tab clearly marked by more than colour (underline, weight) | S wcag-color
+- Tabs look connected to their content | R nng-tabs
+- Icons optional; never icons alone without names | S wcag-name-role
+- Too many to fit: scroll sideways with visible arrows, or a "More" menu | S m3-tabs
+## Behaviour
+- Switching is instant; content keeps its state when coming back | R nng-tabs
+- Selected tab kept in the address when tabs are big views | P
+- Swipe between tabs on phones, with taps too | S m3-tabs
+- Counts or badges on tabs when useful ("Comments 3") | P
+## Keyboard and access
+- Tab list, tab and tab panel roles; each tab controls its panel | S apg-tabs
+- Arrow keys move between tabs; Tab goes into the panel | S apg-tabs
+- Home and End jump to first and last | S apg-tabs
+- Selected tab marked aria-selected | S apg-tabs
+- Panel labelled by its tab | S apg-tabs
+- Arrows flip for right-to-left | S w3c-dir
+- Targets large enough to tap | S wcag-target

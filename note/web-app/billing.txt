@@ -1,0 +1,49 @@
+﻿BILLING (WEB APP) CHECKLIST: 21 items
+The in-app page where an account owner sees their plan, payment method, invoices and usage, and changes or cancels.
+Backing: 6 Rule, 7 Standard, 0 Research, 8 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PLAN
+ 1. Current plan, price, billing period and next charge date and amount   (Rule: ftc-negative-option)
+ 2. Usage against limits (seats, storage, calls) with a bar and numbers   (Practice)
+ 3. Change plan, with the price difference shown before confirming   (Rule: eu-consumer-rights)
+ 4. Cancel subscription, as easy to find and do as signing up was   (Rule: ftc-negative-option, apple-subscriptions)
+ 5. What happens on cancel: access until the period ends, data kept for how long   (Rule: ftc-negative-option)
+ 6. Turn auto-renew on again after cancelling   (Practice)
+
+PAYMENT
+ 7. Saved payment method (brand and last 4 digits, expiry), with change and remove   (Standard: pci-dss)
+ 8. Card expiring soon warned ahead   (Practice)
+ 9. Card details collected by a PCI-certified provider, never stored by the app   (Standard: pci-dss)
+10. Strong customer authentication when the bank asks for it   (Rule: psd2-sca, stripe-3ds)
+11. Failed payment: banner with what to do and the date access stops   (Practice)
+
+INVOICES
+12. List of invoices with date, amount, status (paid, failed, refunded) and PDF download   (Practice)
+13. Billing details (company, address, tax ID) editable and shown on invoices   (Practice)
+14. Invoices meet local rules (VAT, Saudi e-invoicing)   (Rule: zatca-einvoice)
+15. Billing email can differ from the account email   (Practice)
+
+PERMISSIONS
+16. Only owners and billing admins see and change billing   (Standard: owasp-authz)
+17. Others see "Ask your admin"   (Practice)
+
+ACCESS
+18. Invoice list is a real table with headers   (Standard: wai-tables)
+19. Amounts read clearly by screen readers (currency named)   (Standard: wcag-name-role)
+20. Confirmations for charges name the amount   (Standard: wcag-prevent)
+21. Works at phone width   (Standard: wcag-reflow)
+
+SOURCES
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- apple-subscriptions: https://developer.apple.com/app-store/subscriptions/
+- pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
+- psd2-sca: https://www.ecb.europa.eu/press/intro/mip-online/2018/html/1803_revisedpsd.en.html
+- stripe-3ds: https://docs.stripe.com/payments/3d-secure
+- zatca-einvoice: https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- wai-tables: https://www.w3.org/WAI/tutorials/tables/
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

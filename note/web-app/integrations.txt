@@ -1,0 +1,51 @@
+﻿INTEGRATIONS CHECKLIST: 22 items
+The page where people connect the app to other tools (calendar, chat, storage, payments) and manage those links.
+Backing: 2 Rule, 8 Standard, 4 Research, 8 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FINDING
+ 1. A directory of integrations with logo, name and one line on what it does   (Practice)
+ 2. Categories and search   (Research: nng-filters)
+ 3. Connected ones shown first, with their status   (Practice)
+ 4. Which plan includes each integration   (Practice)
+
+CONNECTING
+ 5. Before connecting: what data is shared both ways, and what the app can do in the other tool   (Rule: gdpr-13)
+ 6. Sign in with the other tool (OAuth); never ask for its password   (Standard: owasp-auth)
+ 7. Ask only for the permissions really needed   (Standard: owasp-authz)
+ 8. After connecting, set it up: which channel, which folder, what to send   (Practice)
+ 9. Test connection button with a clear result   (Practice)
+
+MANAGING
+10. Status: connected, needs attention, broken, with the last sync time   (Research: nng-status)
+11. Broken connections explained (token expired) with a "Reconnect" button   (Research: nng-errors)
+12. Who connected it and when   (Standard: owasp-logging)
+13. Disconnect, with what happens to synced data   (Research: nng-confirm)
+14. Admins can allow or block integrations for the workspace   (Standard: owasp-authz)
+
+SAFETY
+15. Tokens from other tools stored encrypted, never shown   (Standard: owasp-secrets)
+16. Connections and disconnections logged   (Standard: owasp-logging)
+17. Third-party data handling listed in the privacy policy   (Rule: gdpr-13)
+
+DEVELOPERS
+18. Webhooks: address, events chosen, a signing secret and a test send   (Practice)
+19. Delivery log with retries and failures   (Practice)
+20. Link to the API and developer docs   (Practice)
+
+ACCESS
+21. Cards are links or buttons with clear names ("Connect Slack")   (Standard: wcag-name-role)
+22. Status in words, not only colour   (Standard: wcag-color)
+
+SOURCES
+- nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- nng-status: https://www.nngroup.com/articles/visibility-system-status/
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- owasp-secrets: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color

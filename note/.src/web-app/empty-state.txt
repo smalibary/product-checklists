@@ -1,0 +1,23 @@
+title: Empty State
+about: What a screen shows when there is nothing in it yet, nothing matches, or everything is done.
+## Kinds of empty
+- First use (nothing created yet): explain what goes here and how to start | R nng-empty
+- No results (search or filter): say so and offer to clear filters or change the search | R nng-empty
+- All done (inbox zero): a short positive message | R nng-empty
+- Error (could not load): say what failed and offer Retry; never show an empty list for an error | R nng-errors
+- No permission: say who to ask | P
+## Content
+- A short heading saying what is empty | R nng-empty
+- One line on why it matters or what it will hold | R nng-empty
+- One main action (Create your first project) | R nng-empty
+- A secondary help link or template | R nng-empty
+- Sample data or templates to start from, clearly marked as samples | P
+- A small illustration only if it does not push the action below the fold | P
+## Behaviour
+- Never shown while data is still loading (use loading state first) | R nng-skeleton
+- Search terms and active filters stay visible on no-results | R nng-search
+- Matches the layout of the filled screen, so it does not jump when data arrives | S webdev-cls
+## Access
+- Illustrations decorative (hidden) unless they carry meaning | S wai-images
+- Message announced when a search returns nothing | S wcag-status
+- Text and button contrast meet WCAG | S wcag-contrast

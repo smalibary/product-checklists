@@ -1,0 +1,47 @@
+﻿SEARCHBAR CHECKLIST: 21 items
+The text box where people type to search, with its button, suggestions and clear control.
+Backing: 0 Rule, 10 Standard, 9 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+LOOK
+ 1. A wide box; the width hints at query length (about 27 characters visible)   (Research: nng-search)
+ 2. Placed where people expect: top of the page or app   (Research: nng-search)
+ 3. Magnifier icon and a Search button, or Enter to search, stated   (Research: nng-search)
+ 4. Placeholder can hint scope ("Search orders") but is not the label   (Standard: wcag-labels)
+ 5. Clear (x) button once something is typed   (Standard: m3-search)
+
+SUGGESTIONS
+ 6. Suggestions appear after a character or two, at most about 10   (Research: baymard-autocomplete)
+ 7. Suggestion text highlights what is added, not what was typed   (Research: baymard-autocomplete)
+ 8. Recent searches shown when empty, with a way to remove them   (Research: nng-search)
+ 9. Arrow keys move through suggestions; Enter picks one   (Standard: apg-combobox)
+10. Typo-tolerant   (Research: baymard-autocomplete)
+
+BEHAVIOUR
+11. Scope choice if the product has several kinds of items   (Research: nng-search)
+12. A shortcut opens it (/ or Ctrl+K), shown in the box   (Practice)
+13. Search runs on Enter, or live after a short pause for small data sets   (Practice)
+14. The query stays in the box on the results page   (Research: nng-search)
+
+PHONES
+15. Opens full screen with the keyboard ready   (Standard: m3-search, hig-search)
+16. Search key on the keyboard (inputmode search, enterkeyhint)   (Standard: mdn-inputmode)
+17. Cancel button returns to where the person was   (Standard: hig-search)
+
+ACCESS
+18. Search landmark (role search or the search element)   (Standard: apg-landmarks)
+19. Real label, visible or for screen readers ("Search")   (Standard: wcag-labels)
+20. Suggestion list follows the combobox pattern; number of suggestions announced   (Standard: apg-combobox, wcag-status)
+21. type="search" so browsers add their own features   (Standard: mdn-input-search)
+
+SOURCES
+- nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- m3-search: https://m3.material.io/components/search/guidelines
+- baymard-autocomplete: https://baymard.com/blog/autocomplete-design
+- apg-combobox: https://www.w3.org/WAI/ARIA/apg/patterns/combobox/
+- hig-search: https://developer.apple.com/design/human-interface-guidelines/search-fields
+- mdn-inputmode: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- mdn-input-search: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search

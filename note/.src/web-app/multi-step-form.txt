@@ -1,0 +1,30 @@
+title: Multi-step form
+about: A long form split into steps (a wizard), so people answer a few questions at a time.
+## Shape
+- Split only when the form is long or later questions depend on earlier answers | R nng-wizards
+- One topic per step; one question per page for hard or unfamiliar questions | S govuk-question
+- Steps named, with "Step 2 of 5" and a progress indicator | R nng-progress
+- Before starting, say how long it takes and what to have ready | S govuk-question
+- A task list for long applications, so steps can be done in any order | S govuk-task-list
+## Moving
+- Continue and Back buttons in the same places on every step | S wcag-consistent
+- Browser Back works and keeps answers | P
+- Answers saved as people go; leaving and coming back continues | P
+- Save and come back later, for long forms | S govuk-question
+- Steps that do not apply are skipped, not shown greyed out | S govuk-question
+## Checking
+- Errors checked when leaving a field or on Continue, never while typing the first time | R baymard-inline
+- Error summary at the top of the step, linking to each field | S govuk-error-summary
+- Error message next to each field in words | S govuk-error-message wcag-error
+- Answers already given are never asked again | S wcag-redundant
+## The end
+- A check-your-answers page with Change links for each answer | S govuk-check
+- A clear final button naming the action ("Submit application") | S wcag-prevent
+- Confirmation page with a reference number and what happens next | S govuk-confirm
+- Confirmation by email | P
+## Access
+- Focus moves to the step heading after Continue | S wcag-focus-order
+- Page title changes per step ("Step 2 of 5: Address") | S wcag-title
+- Labels, autofill and the right keyboard on every field | S wcag-labels mdn-autocomplete mdn-inputmode
+- No time limit, or one that can be extended | S wcag-timing
+- Works at phone width | S wcag-reflow

@@ -1,0 +1,30 @@
+title: List View
+about: A simple list of items (tasks, files, contacts) for scanning and opening, lighter than a data table.
+## Items
+- Each row: the name first, then two or three key facts | R nng-scanning
+- Icon or photo to tell types apart | P
+- Status in words or icons with names, not only colour | S wcag-color
+- The whole row opens the item; actions in a menu at the end | P
+- Hover shows quick actions, which are also reachable by keyboard | S wcag-hover wcag-keyboard
+## Order and grouping
+- Sort choice (name, date, priority), remembered | P
+- Grouping by date, status or owner, with headings and counts | P
+- Groups can collapse | S apg-accordion
+## Finding
+- Filter and search above the list | R nng-filters
+- Active filters shown with remove | R nng-filters
+## Acting
+- Select several with checkboxes, with a bulk action bar | P
+- Drag to reorder where order matters, with a keyboard way too | S wcag-dragging
+- Swipe actions on touch screens, with a visible alternative | R nng-swipe
+## Lots of items
+- Pagination or load more, with the total | R nng-infinite
+- Back keeps the scroll position | P
+## States
+- Skeleton rows while loading | R nng-skeleton
+- Empty and no-results states | R nng-empty
+## Access
+- A real list (or table if there are columns) | S wcag-info
+- Row links read well alone | S wcag-link
+- Touch targets at least 24 by 24 pixels | S wcag-target
+- Works at phone width | S wcag-reflow

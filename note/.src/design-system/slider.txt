@@ -1,0 +1,25 @@
+title: Slider
+about: A control for choosing a value or range by dragging a thumb along a track.
+## When to use
+- When an approximate value is fine and seeing it change helps (volume, price range) | S m3-sliders hig-sliders
+- Not when an exact number matters: pair with a number field or use one instead | R nng-sliders
+- Range slider has two thumbs for minimum and maximum | S apg-slider
+## Look
+- Track, filled part, thumb and optional tick marks | S m3-sliders
+- Current value shown next to it or above the thumb while moving | S m3-sliders
+- Minimum and maximum labelled at the ends | S m3-sliders
+- Thumb at least 24 px; touch area 44 to 48 px | S wcag-target hig-layout
+- Track and thumb 3:1 contrast with what is around | S wcag-ui-contrast
+## Behaviour
+- Click on the track moves the thumb there | S m3-sliders
+- Steps for set values; snap to them | S m3-sliders
+- Changing the value never needs dragging alone: arrows or typed value also work | S wcag-dragging
+- Changes apply when released for heavy operations (filters), live for light ones (volume) | P
+## Keyboard
+- Arrow keys change by one step; Page Up/Down by larger steps; Home/End to min and max | S apg-slider
+- Focus ring visible on the thumb | S wcag-focus
+## Access
+- Native range input or role slider with a name | S apg-slider
+- Value, min and max set; value text read in words if needed ("50 SAR") | S apg-slider
+- Two thumbs each have names ("Minimum price", "Maximum price") | S apg-slider
+- Direction flips for right-to-left | S w3c-dir

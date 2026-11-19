@@ -1,0 +1,39 @@
+﻿EMPTY STATE CHECKLIST: 17 items
+What a screen shows when there is nothing in it yet, nothing matches, or everything is done.
+Backing: 0 Rule, 4 Standard, 10 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+KINDS OF EMPTY
+ 1. First use (nothing created yet): explain what goes here and how to start   (Research: nng-empty)
+ 2. No results (search or filter): say so and offer to clear filters or change the search   (Research: nng-empty)
+ 3. All done (inbox zero): a short positive message   (Research: nng-empty)
+ 4. Error (could not load): say what failed and offer Retry; never show an empty list for an error   (Research: nng-errors)
+ 5. No permission: say who to ask   (Practice)
+
+CONTENT
+ 6. A short heading saying what is empty   (Research: nng-empty)
+ 7. One line on why it matters or what it will hold   (Research: nng-empty)
+ 8. One main action (Create your first project)   (Research: nng-empty)
+ 9. A secondary help link or template   (Research: nng-empty)
+10. Sample data or templates to start from, clearly marked as samples   (Practice)
+11. A small illustration only if it does not push the action below the fold   (Practice)
+
+BEHAVIOUR
+12. Never shown while data is still loading (use loading state first)   (Research: nng-skeleton)
+13. Search terms and active filters stay visible on no-results   (Research: nng-search)
+14. Matches the layout of the filled screen, so it does not jump when data arrives   (Standard: webdev-cls)
+
+ACCESS
+15. Illustrations decorative (hidden) unless they carry meaning   (Standard: wai-images)
+16. Message announced when a search returns nothing   (Standard: wcag-status)
+17. Text and button contrast meet WCAG   (Standard: wcag-contrast)
+
+SOURCES
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
+- webdev-cls: https://web.dev/articles/cls
+- wai-images: https://www.w3.org/WAI/tutorials/images/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

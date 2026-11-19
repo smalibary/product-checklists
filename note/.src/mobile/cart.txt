@@ -1,0 +1,27 @@
+title: Cart (mobile)
+about: The shopping cart screen of a phone app, before checkout.
+## Items
+- Each item: photo, name, options (size, colour), price and quantity | R baymard-cart
+- Quantity with minus and plus buttons; removing at zero asks or offers undo | R baymard-cart
+- Remove and Save for later | R baymard-cart
+- Out of stock or price changed items marked clearly at the top | R baymard-cart
+- Tap item opens its product screen | P
+## Totals
+- Subtotal, delivery, discounts, VAT and total, with delivery estimate | L eu-consumer-rights ftc-junk-fees
+- Free delivery threshold progress ("Add 30 SAR for free delivery") | P
+- Promo code field folded, not a big empty box | R baymard-coupon
+## Actions
+- Checkout button sticky at the bottom with the total | P
+- Apple Pay or Google Pay express button where available | S hig-apple-pay
+- Continue shopping link | R baymard-cart
+## Keeping the cart
+- Cart kept across sessions and devices when signed in | R baymard-cart
+- Cart badge on the tab or icon with the count | S m3-badges
+- Empty cart: friendly message and suggestions | R nng-empty
+## Feedback
+- Adding to cart confirms with a small message, haptic and badge change, without leaving the product | S hig-feedback
+- Changes to quantity update the total at once | P
+## Access
+- Quantity buttons named ("Increase quantity of Blue shirt") | S hig-accessibility
+- Total changes announced | S wcag-status
+- Large text supported; buttons at least 44 pt / 48 dp | S hig-layout m3-layout

@@ -1,0 +1,70 @@
+﻿ACCESSIBILITY (DESIGN SYSTEM) CHECKLIST: 25 items
+What a design system builds in so every screen made from it is usable by people with disabilities.
+Backing: 1 Rule, 20 Standard, 1 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TARGET AND LAW
+ 1. Aim at WCAG 2.2 level AA for every component   (Standard: wcag)
+ 2. Laws that require it: the European Accessibility Act from June 2025, the ADA in the US   (Rule: eu-accessibility-act, ada-web)
+ 3. Each component's page states its accessibility support and known gaps   (Practice)
+
+COLOUR AND CONTRAST
+ 4. Text 4.5:1, large text 3:1, borders and icons of controls 3:1   (Standard: wcag-contrast, wcag-ui-contrast)
+ 5. Colour never the only way to show state or meaning   (Standard: wcag-color)
+ 6. Focus ring visible with 3:1 contrast in every theme   (Standard: wcag-focus-appearance)
+ 7. Light, dark and high-contrast themes all checked   (Standard: mdn-color-scheme)
+
+KEYBOARD AND FOCUS
+ 8. Every interactive part reachable and usable by keyboard   (Standard: wcag-keyboard)
+ 9. Keyboard behaviour follows the ARIA patterns (arrows in menus, tabs, radios)   (Standard: apg)
+10. Focus order follows reading order   (Standard: wcag-focus-order)
+11. Focused things are never hidden behind sticky headers   (Standard: wcag-obscured)
+12. Skip link to the main content   (Standard: wcag-bypass)
+
+NAMES AND ROLES
+13. Native HTML elements first; ARIA only when needed   (Standard: apg)
+14. Every control has a name, role and state   (Standard: wcag-name-role)
+15. Icon-only buttons have a text name   (Standard: wcag-name-role)
+16. Status messages announced without moving focus   (Standard: wcag-status)
+
+TOUCH AND MOTION
+17. Targets at least 24 by 24 px (44 recommended on touch)   (Standard: wcag-target, hig-layout)
+18. Dragging always has a single-tap alternative   (Standard: wcag-dragging)
+19. Reduced motion respected; nothing flashes more than 3 times a second   (Standard: mdn-reduced-motion, wcag-flash)
+
+CONTENT
+20. Images: alt text guidance in each component   (Standard: wai-images)
+21. Forms: labels, help text and errors linked to the field   (Standard: wcag-labels, wcag-error)
+22. Language and direction set (Arabic right-to-left)   (Standard: w3c-dir)
+
+PROCESS
+23. Automatic checks in the build (axe or similar)   (Practice)
+24. Manual tests with keyboard and a screen reader (NVDA, VoiceOver, TalkBack)   (Practice)
+25. Tests with disabled users when possible   (Research: nng-accessibility)
+
+SOURCES
+- wcag: https://www.w3.org/TR/WCAG22/
+- eu-accessibility-act: https://ec.europa.eu/social/main.jsp?catId=1202
+- ada-web: https://www.ada.gov/resources/web-guidance/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-focus-appearance: https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance
+- mdn-color-scheme: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- apg: https://www.w3.org/WAI/ARIA/apg/
+- wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
+- wcag-obscured: https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum
+- wcag-bypass: https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- wcag-flash: https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold
+- wai-images: https://www.w3.org/WAI/tutorials/images/
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- nng-accessibility: https://www.nngroup.com/topic/accessibility/
