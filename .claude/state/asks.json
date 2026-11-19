@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 36,
+ "next": 37,
  "asks": [
   {
    "id": 2,
@@ -1031,6 +1031,14 @@
    "status": "done",
    "note": "Accessibility part removed from the 404 example",
    "updated": "2026-11-19T22:10:57.441Z"
+  },
+  {
+   "id": 36,
+   "at": "2026-11-19T22:11:54.898Z",
+   "text": "ok remove the header and footer ..",
+   "status": "done",
+   "note": "Header and footer removed from the 404 example; item 8 marked as not shown",
+   "updated": "2026-11-19T22:12:08.236Z"
   }
  ]
 }
