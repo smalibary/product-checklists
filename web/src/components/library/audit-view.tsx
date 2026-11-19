@@ -3,6 +3,24 @@ import { Badge } from "@/components/ui/badge"
 import type { Grade } from "@/lib/api"
 import { cn } from "@/lib/utils"
 import { Chips } from "./parts"
+import checklist from "../../../../.claude/docs/checklists/sign-up.md?raw"
+
+// the checklist's sources: "- [key] ...: https://..." lines at its end
+const SOURCES: Record<string, string> = Object.fromEntries(
+  [...checklist.matchAll(/^- \[([\w.-]+)\][^\n]*?(https?:\/\/\S+)/gm)].map((m) => [m[1], m[2]])
+)
+function Backing({ text }: { text: string }) {
+  const keys = [...text.matchAll(/\[([\w.-]+)\]/g)].map((m) => m[1]).filter((k) => SOURCES[k])
+  if (!keys.length) return <>{text}</>
+  return (
+    <>
+      {text.replace(/\s*\[[^\]]+\]/g, "")}
+      {keys.map((k) => (
+        <a key={k} href={SOURCES[k]} target="_blank" rel="noreferrer" className="ml-1 underline underline-offset-2 hover:text-foreground">{k}</a>
+      ))}
+    </>
+  )
+}
 
 // The sign-up checklist graded from the recording: measured automatically, or judged by Claude.
 const RESULTS = ["fail", "partly", "pass", "not-offered", "not-reached", "untested", "not-relevant", "for-claude"]
@@ -49,7 +67,10 @@ export function AuditView({ grades }: { grades: Grade[] }) {
                   <p>{g.item}</p>
                   {g.why && <p className="text-xs text-muted-foreground">{g.why}</p>}
                 </div>
-                <span className="shrink-0 text-xs text-muted-foreground">{g.by === "claude" ? "Claude" : "measured"}</span>
+                <span className="flex w-[9rem] shrink-0 flex-col items-end text-right text-xs text-muted-foreground">
+                  <span>{g.by === "claude" ? "Claude" : "measured"}</span>
+                  {g.backing && <span><Backing text={g.backing} /></span>}
+                </span>
               </li>
             ))}
           </ul>
