@@ -1,0 +1,41 @@
+# Termi (helper briefs and local state)
+.termi/
+
+# Dependencies and builds
+node_modules/
+dist/
+build/
+.next/
+out/
+coverage/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log
+
+# Salem's drop folder: contents are transient
+.claude/inbox/*
+!.claude/inbox/.gitkeep
+
+# Hook-written state (now.md is kept)
+.claude/state/words.md
+.claude/state/inbox-seen
+.claude/state/sweep-nagged
+.claude/settings.local.json
+.claude/state/long-run.json
+
+# Rust builds
+target/
+
+# Recorded runs (videos, frames): results, not source. first-test/results is kept as the proof of the first test.
+recordings/
+**/frames/

@@ -1,0 +1,15 @@
+{
+  "_help": "Copy to .claude/docs/services.json. One entry per limit the usage watch checks (.claude/scripts/usage-watch.mjs). probe = a command that prints the amount used so far this period (a usage API, a CLI, or the app's own counter, rule L-4); leave it out when the service has no way to ask, and check by hand. period: monthly (with resetDay) or daily. noLimit: true only when Salem said so. Phone alerts: set the key NTFY_TOPIC in .env.local.",
+  "services": [
+    {
+      "name": "Example backend function calls",
+      "limit": 1000000,
+      "unit": "calls",
+      "period": "monthly",
+      "resetDay": 1,
+      "sharedBy": "dev + test + real",
+      "probe": "node scripts/usage/backend-calls.mjs",
+      "noLimit": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Service limits: make every account last its whole period (loads every session)
+
+Salem, 2026-11-10: a backend's whole monthly allowance was used up in a few days. "By default use most of the
+account I have, not waste it in a few hours", for every service, unless he says "no limit". The cause that time:
+timers firing every minute on three copies of the backend (dev, test, real) sharing one free allowance, plus
+full check runs, a load test and editor tabs polling every 20 seconds against the shared copies.
+
+| ID | Rule |
+|---|---|
+| L-1 | **Know the limits first.** Every metered service (backend, database, AI keys, email, storage, scraping, hosting, maps) has a row in `.claude/docs/services.md` before code uses it: plan, each limit, when it resets, what we use it for, and **which copies share the allowance** (dev, test and real often count against one account). Facts from the official pricing or limits page (link it), never from memory. |
+| L-2 | **Pace, don't sprint.** Daily budget = limit / days in the period, aiming to use about 90% by the reset. Over a day's budget is allowed only if the running total is still under the pace line. "No limit" from Salem for a service lifts this; record it in services.md with the date. |
+| L-3 | **Estimate before building or running.** A feature, scheduled job or heavy run (full check set, load test, parallel helpers, overnight work) gets a line in services.md: calls or volume per day, times every copy it runs on, against the budget. A timer counts as runs per day x copies x calls inside each run. Over budget: redesign first, or ask Salem (his call). |
+| L-4 | **Cap in code.** Anything that spends per call (AI, email, SMS, scraping, paid APIs) goes through one place that counts use and refuses past the daily cap, with a clear message. Retries back off and give up; no endless loops. |
+| L-5 | **Cheap by design.** Jobs start when there is work, not on a fixed timer; any timer runs no more often than the data really changes, and slower everywhere except the real site. Read through indexes, never scan whole tables; paginate; batch writes; no polling (use live updates or a slow poll); no live subscriptions on data that changes every few seconds; cache AI answers and repeated lookups. Repeated write conflicts and retries are a cost signal: spread hot counters across separate records. |
+| L-6 | **Tests and dev never eat production.** Heavy tests and overnight runs go to one separate, cheap place (another account, a local copy or stubs), with a daily cap on runs. Close app tabs and stop servers that helpers opened. |
+| L-7 | **Watch, then report.** `.claude/scripts/usage-watch.mjs` does this from `.claude/docs/services.json` (one probe per service: a command that prints usage so far); it runs once a day at session start and must be run by hand before any heavy run. Give every service a probe where it has a usage API or CLI, or count in the app (L-4). Where the service offers usage numbers (dashboard, CLI, API, tool), check them at the start of a session that touches it, before any heavy run, and in the weekly sweep; write % used vs % of period gone in services.md. Alert Salem at 50% and 80% of a limit when that is ahead of pace. Over pace: say so first, find the cause, fix it before new features. In away mode, stop work that spends on a service past its pace line. |

@@ -1,0 +1,99 @@
+<title>__PROJECT__ Mockups</title>
+<!--FONTS-->
+<style>
+/* Layout: a quiet drafting table. Phone-sized frames sit on a light grid; the page's own colours stay out of the design's way. */
+:root {
+  --ui-bg: #eef0ee; --ui-panel: #ffffff; --ui-fg: #1c211e; --ui-muted: #5c6660; --ui-line: #d5dad6; --ui-accent: #2f5d8a;
+  --ui-font: "IBM Plex Sans", system-ui, sans-serif; --ui-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --ui-bg: #161a18; --ui-panel: #1f2421; --ui-fg: #e7ebe8; --ui-muted: #9aa49e; --ui-line: #343b37; --ui-accent: #8db4dc; color-scheme: dark; } }
+:root[data-theme="dark"] { --ui-bg: #161a18; --ui-panel: #1f2421; --ui-fg: #e7ebe8; --ui-muted: #9aa49e; --ui-line: #343b37; --ui-accent: #8db4dc; color-scheme: dark; }
+body { background: var(--ui-bg); color: var(--ui-fg); font: 14px/1.5 var(--ui-font); }
+.ui-wrap { max-width: 1180px; margin: 0 auto; padding: 20px 16px 96px; display: grid; gap: 18px; }
+.ui-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; }
+.ui-top h1 { font-size: 22px; margin: 0; text-wrap: balance; }
+.ui-top p { margin: 0; color: var(--ui-muted); font-size: 13px; }
+.ui-intro { margin: 0; max-width: 65ch; }
+.ui-hint { background: var(--ui-panel); border: 1px solid var(--ui-line); border-radius: 8px; padding: 10px 12px; font-size: 13px; }
+.ui-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--ui-line); }
+.ui-tabs button { font: 600 13px/1 var(--ui-font); padding: 10px 14px; border: 0; background: none; color: var(--ui-muted);
+  border-bottom: 2px solid transparent; cursor: pointer; }
+.ui-tabs button[aria-selected="true"] { color: var(--ui-fg); border-bottom-color: var(--ui-accent); }
+.ui-tabs button:focus-visible { outline: 2px solid var(--ui-accent); }
+.ui-grid { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
+.ui-phone { margin: 0; display: grid; gap: 8px; width: 360px; max-width: 100%; }
+.ui-phone figcaption { font-weight: 600; } .ui-phone figcaption small, .ui-comp p { display: block; font-weight: 400; color: var(--ui-muted); font-size: 12px; margin: 0; }
+.ui-screen { min-height: 640px; border-radius: 22px; border: 1px solid var(--ui-line); box-shadow: 0 6px 24px rgba(0,0,0,.08);
+  padding: 16px; display: flex; flex-direction: column; gap: 12px; overflow: auto; background: var(--color-background, #fff); }
+.ui-comps { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.ui-comp { background: var(--ui-panel); border: 1px solid var(--ui-line); border-radius: 10px; padding: 14px; display: grid; gap: 10px; min-width: 0; }
+.ui-comp h3, .ui-look h3 { margin: 0; font-size: 15px; }
+.ui-stage { background: var(--color-background, #fff); border-radius: 8px; padding: 16px; }
+.ui-look { display: grid; gap: 22px; }
+.ui-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.ui-swatch { background: var(--ui-panel); border: 1px solid var(--ui-line); border-radius: 8px; overflow: hidden; }
+.ui-swatch i { display: block; height: 56px; border-bottom: 1px solid var(--ui-line); }
+.ui-swatch span, .ui-row code { display: block; padding: 6px 8px; font: 12px/1.4 var(--ui-mono); overflow-wrap: anywhere; }
+.ui-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.ui-row code { padding: 0; color: var(--ui-muted); min-width: 150px; }
+.ui-bar { height: 12px; background: var(--ui-accent); border-radius: 2px; }
+.ui-radius { width: 56px; height: 40px; border: 2px solid var(--ui-accent); }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+/*DESIGN_CSS*/
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+
+<div class="ui-wrap">
+  <div class="ui-top"><h1>__TOPIC__</h1><p>__PROJECT__ mockup · built from DESIGN.md · __BUILT__</p></div>
+  <p class="ui-intro">__INTRO__</p>
+  <div class="ui-hint">To point at something: tap <strong>Point</strong> (bottom right) or press Ctrl+Shift+Space, tap it,
+    add a note, then Send. It goes straight to Claude.</div>
+  <div class="ui-tabs" role="tablist">
+    <button role="tab" id="tab-screens" aria-selected="true">Screens</button>
+    <button role="tab" id="tab-components" aria-selected="false">Components</button>
+    <button role="tab" id="tab-look" aria-selected="false">Look</button>
+  </div>
+  <section id="panel-screens" class="ui-grid"><!--SCREENS--></section>
+  <section id="panel-components" class="ui-comps" hidden><!--COMPONENTS--></section>
+  <section id="panel-look" class="ui-look" hidden><!--LOOK--></section>
+</div>
+
+<script>
+/*INSPECT_JS*/
+</script>
+<script>
+const tabs = ['screens', 'components', 'look'];
+function openTab(name) {
+  for (const t of tabs) {
+    document.getElementById('tab-' + t).setAttribute('aria-selected', t === name);
+    document.getElementById('panel-' + t).hidden = t !== name;
+  }
+  try { localStorage.setItem('design-tab', name); } catch (e) {}
+}
+for (const t of tabs) document.getElementById('tab-' + t).onclick = () => openTab(t);
+try { const saved = localStorage.getItem('design-tab'); if (tabs.includes(saved)) openTab(saved); } catch (e) {}
+
+// Picks are saved on the page (Claude reads them later) and sent to Claude live when this view allows it.
+let db = null, comments = null;
+Inspect.start({ button: true, send: async (text, el) => {
+  let saved = false;
+  if (db) { try { await db.collection('picks').add({ text, at: new Date().toISOString(), status: 'new' }); saved = true; } catch (e) {} }
+  try {
+    if (!comments) throw new Error('open this page signed in');
+    const can = await comments.canSendToClaude();
+    if (can !== 'available') throw new Error(can);
+    await comments.sendToClaude({ anchor: await comments.anchorFor(el), text });
+    return 'Sent to Claude.';
+  } catch (e) {
+    if (saved) return 'Saved. Claude reads it at your next message (' + (e.message || e) + ').';
+    throw e;
+  }
+} });
+(async () => {
+  if (!window.claude) return;
+  db = await window.claude.use('db');
+  comments = await window.claude.use('comments');
+})();
+</script>

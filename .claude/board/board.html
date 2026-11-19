@@ -1,0 +1,256 @@
+<title>agentscreen Board</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: header + two tabs (Questions, Progress); each tab is one column of stacked panels. */
+:root{--bg:#f3f5f2;--panel:#ffffff;--fg:#1d2420;--muted:#5d6a62;--line:#dbe1dc;--accent:#c7731a;--accent-soft:#fbeedf;
+--ok:#2f7d4f;--warn:#b7791f;--bad:#b4412f;--chip:#e8ece9;--on-accent:#ffffff;--sans:"Instrument Sans",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--panel:#1c211e;--fg:#e6ebe7;--muted:#9aa69f;--line:#2c3430;--accent:#f0a24a;--accent-soft:#33261a;--ok:#62b984;--warn:#e0a84a;--bad:#e27a68;--chip:#262d29;--on-accent:#1a1208;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141816;--panel:#1c211e;--fg:#e6ebe7;--muted:#9aa69f;--line:#2c3430;--accent:#f0a24a;--accent-soft:#33261a;--ok:#62b984;--warn:#e0a84a;--bad:#e27a68;--chip:#262d29;--on-accent:#1a1208;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--sans)}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px;display:grid;gap:16px}
+h1{font-size:26px;margin:0;text-wrap:balance}h2{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+h3{margin:0;font-size:18px}.now{display:grid;gap:6px}.now p{margin:0;max-width:65ch}.meta{font:12px var(--mono);color:var(--muted)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0;display:grid;gap:10px}
+.ask{border-color:var(--accent);background:var(--accent-soft)}
+.tabs{display:flex;gap:8px}.tabs button{flex:1}.tabs button[aria-selected="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg);font-weight:600}
+.q{display:grid;gap:8px;padding-block:12px;border-top:1px solid var(--line)}.q:first-of-type{border-top:0;padding-top:0}
+.q p{margin:0;font-weight:600}.opts{display:flex;flex-wrap:wrap;gap:8px}
+button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--fg);padding:7px 12px}
+button:hover{border-color:var(--accent)}:is(button,textarea,input,select):focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.rec{border-color:var(--accent);font-weight:600}button[aria-pressed="true"],button.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-weight:600}
+button:disabled{opacity:.5;cursor:default}button.link{border:0;background:none;padding:0;color:var(--accent);font-size:13px}
+.opt-note{font-size:13px;color:var(--muted)}
+textarea,input,select{font:inherit;width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:8px;padding:9px;background:var(--panel);color:var(--fg)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row>*{min-width:0}
+.req{display:grid;gap:2px;padding-block:8px;border-top:1px solid var(--line)}.req:first-child{border-top:0}
+.ver-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}.ver-goal{margin:0;color:var(--muted);max-width:65ch}
+.bar{height:8px;border-radius:4px;background:var(--chip);overflow:hidden}.bar i{display:block;height:100%;background:var(--ok)}
+.count{font:13px var(--mono);font-variant-numeric:tabular-nums;color:var(--muted)}
+.task{display:grid;grid-template-columns:auto 1fr auto;gap:4px 10px;padding-block:8px;border-top:1px solid var(--line);align-items:start}
+.task b{font-weight:600}.task .d{grid-column:2;color:var(--muted);font-size:14px}
+.chip{font:11px/1 var(--mono);text-transform:uppercase;letter-spacing:.05em;padding:5px 7px;border-radius:5px;background:var(--chip);color:var(--muted);white-space:nowrap}
+.s-doing{background:var(--accent-soft);color:var(--accent)}.s-done{color:var(--ok)}.s-blocked{color:var(--bad)}.s-checking{color:var(--warn)}
+.edit{display:grid;gap:8px;padding:12px;border:1px dashed var(--accent);border-radius:8px;grid-column:1/-1}
+.empty{color:var(--muted);margin:0}.toolbar select{width:auto}
+.feat{grid-template-columns:auto 1fr;width:100%;text-align:left;border:0;border-top:1px solid var(--line);border-radius:0;background:none;padding:8px 0}.feat:hover b{color:var(--accent)}
+.ic{width:1.2em;text-align:center;font-weight:700}.f-done{color:var(--ok)}.f-todo{color:var(--muted)}.f-parked{color:var(--warn)}
+.pill{grid-column:2;justify-self:start;font-size:12px;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.run{display:grid;grid-template-columns:auto 1fr auto;gap:2px 10px;padding-block:8px;border-top:1px solid var(--line);align-items:baseline}.run:first-of-type{border-top:0;padding-top:0}
+.run .who{font:12px/1 var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--accent)}.run .d{grid-column:2/-1;color:var(--muted);font-size:14px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:6px;vertical-align:middle}
+@media (prefers-reduced-motion:no-preference){.dot{animation:pulse 1.6s ease-in-out infinite}@keyframes pulse{50%{opacity:.35}}}
+.stories{grid-column:1/-1;display:grid;gap:2px;padding:0 0 8px 1.7em;margin:0;list-style:none}
+.stories li{display:grid;grid-template-columns:1.2em auto 1fr;gap:6px;font-size:14px;color:var(--muted)}.stories .sid{font:12px var(--mono)}
+.st-passing{color:var(--ok)}.st-failing{color:var(--bad)}.st-todo{color:var(--muted)}
+.arch{display:grid;gap:10px;padding-top:12px;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .4s}}
+</style>
+
+<div class="wrap">
+  <header class="now">
+    <h1 id="project">Project board</h1>
+    <p id="headline">Loading where the project stands…</p>
+    <span class="meta" id="updated"></span>
+  </header>
+  <div class="panel" id="summary" hidden><h2>Last work session</h2><p id="summary-text" style="margin:0;white-space:pre-line"></p><span class="meta" id="summary-at"></span></div>
+  <section class="panel" id="running"><h2 id="running-head">Running now</h2><div id="running-list"><p class="empty">Nothing running right now.</p></div></section>
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-questions" aria-selected="true">Questions</button>
+    <button role="tab" id="tab-progress" aria-selected="false">Progress</button>
+  </div>
+  <p class="meta" id="toast" role="status" style="margin:0"></p>
+
+  <div id="view-questions" style="display:grid;gap:16px">
+    <div id="rounds"><section class="panel"><p class="empty">No questions right now. When Claude needs decisions, a round of questions appears here.</p></section></div>
+    <section class="panel"><h2>Tell Claude</h2>
+      <form id="req-form" class="row"><textarea id="req-text" rows="2" placeholder="e.g. Park dark mode, and start the login screen next"></textarea><button class="primary" type="submit">Send</button></form>
+      <p class="meta" id="req-status"></p><div id="requests"></div>
+    </section>
+  </div>
+
+  <div id="view-progress" hidden style="display:grid;gap:16px">
+    <span class="meta">Open work on top; finished tasks and epics move to the Archive at the bottom. Tap Edit on a task, or tap a feature to change it.</span>
+    <div id="work" style="display:grid;gap:16px"><p class="empty">No epics yet. Claude adds them once the plan is agreed.</p></div>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ago = t => { if (!t) return ''; const m = Math.round((Date.now() - new Date(t)) / 60000);
+  return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : m < 1440 ? Math.round(m / 60) + ' h ago' : Math.round(m / 1440) + ' days ago'; };
+const now = () => new Date().toISOString();
+const ORDER = { doing: 0, blocked: 1, checking: 2, next: 3, idea: 4, done: 5 };   // doing and stuck first
+const LABEL = { doing: 'Doing', checking: 'Checking', blocked: 'Stuck', next: 'Next', idea: 'Idea', done: 'Done' };
+const FEAT = { done: ['✓', 'Done'], todo: ['○', 'To do'], parked: ['⏸', 'Parked'] };
+const qText = q => q.text || q.question;   // some questions were written with a "question" field
+const state = { epics: [], tasks: [], questions: [], requests: [], running: [] };
+const STORY = { passing: ['✓', 'Passing'], failing: ['✗', 'Failing'], todo: ['○', 'Not checked yet'] };
+const draft = {};          // question id -> answer held on this device until "Send all answers"
+let editing = null;        // 'task:<id>' | 'new' | 'feat:<epicId>:<featureId>'
+let db = null, comments = null, firstQuestions = true, archiveOpen = false;
+// Wakes the Claude session watching this board, so Salem never has to type "done" (a push, not polling).
+let lastWhy = '';
+async function notify(text, el) {
+  try {
+    if (!comments) { lastWhy = 'comments not available in this view'; return false; }
+    const can = await comments.canSendToClaude();
+    if (can !== 'available') { lastWhy = 'send to Claude: ' + can; return false; }
+    await comments.sendToClaude({ anchor: await comments.anchorFor(el), text }); return true;
+  } catch (e) { lastWhy = 'error: ' + (e && (e.code || e.message) || e); return false; }
+}
+const alertNote = t => { $('toast').textContent = t; };
+const sentNote = ok => ok ? 'Sent to Claude.' : `Saved, but not sent live (${lastWhy}). Claude sees it when you next message it.`;
+
+function showTab(name) {
+  for (const t of ['questions', 'progress']) { $('tab-' + t).setAttribute('aria-selected', t === name); $('view-' + t).hidden = t !== name; }
+  try { localStorage.setItem('tab', name); } catch {}
+}
+$('tab-questions').onclick = () => showTab('questions'); $('tab-progress').onclick = () => showTab('progress');
+// Opens on Questions when any are waiting, otherwise Progress (Salem's choice, 2026-10-04).
+
+function renderNow(d) {
+  if (!d) { $('headline').textContent = 'Nothing recorded yet. Claude writes a one-line status here as work moves.'; return; }
+  $('project').textContent = d.project || 'Project board'; $('headline').textContent = d.headline || '';
+  $('updated').textContent = d.updated ? 'Updated ' + ago(d.updated) : '';
+  $('summary').hidden = !d.summary; $('summary-text').textContent = d.summary || ''; $('summary-at').textContent = d.summaryAt ? 'Written ' + ago(d.summaryAt) : '';
+}
+
+function renderRounds() {
+  const isOpen = q => !q.status || q.status === 'open';
+  const open = state.questions.filter(isOpen), answered = state.questions.filter(q => !isOpen(q));
+  const groups = {}; for (const q of open) (groups[q.round || 'Questions'] ||= []).push(q);
+  const roundHtml = Object.entries(groups).map(([round, qs]) => {
+    const ready = qs.filter(q => draft[q.id]).length;
+    return `<section class="panel ask" data-round="${esc(round)}"><h2>${esc(round)} · ${qs.length} question${qs.length > 1 ? 's' : ''}</h2>
+    ${qs.map(q => `<div class="q" data-id="${esc(q.id)}"><p>${esc(qText(q))}</p>
+      <div class="opts">${(q.options || []).map((o, i) => `<button data-i="${i}" aria-pressed="${draft[q.id] === o.label}" class="${o.recommended ? 'rec' : ''}">${esc(o.label)}${o.recommended ? ' (Recommended)' : ''}</button>`).join('')}</div>
+      ${(q.options || []).map(o => o.note ? `<span class="opt-note"><b>${esc(o.label)}:</b> ${esc(o.note)}</span>` : '').join('')}
+      <input data-other="1" placeholder="Or answer in your own words" value="${q.options?.some(o => o.label === draft[q.id]) ? '' : esc(draft[q.id] || '')}"></div>`).join('')}
+    <div class="row"><button class="primary" data-send="1" ${ready < qs.length ? 'disabled' : ''}>Send all answers</button>
+      <span class="meta">${ready} of ${qs.length} answered. Nothing reaches Claude until you send.</span></div></section>`;
+  }).join('');
+  const doneHtml = answered.length ? `<section class="panel"><h2>Answered</h2>${answered.sort((a, b) => (b.answeredAt || '').localeCompare(a.answeredAt || '')).slice(0, 8)
+    .map(q => `<div class="req" data-id="${esc(q.id)}"><span>${esc(qText(q))}</span><span class="meta">You chose: <b>${esc(q.answer)}</b> · ${ago(q.answeredAt)} · <button class="link" data-change="1">Change</button></span></div>`).join('')}</section>` : '';
+  $('rounds').innerHTML = roundHtml || doneHtml ? roundHtml + doneHtml : '<section class="panel"><p class="empty">No questions right now. When Claude needs decisions, a round of questions appears here.</p></section>';
+}
+$('rounds').addEventListener('click', async e => {
+  const b = e.target.closest('button'); if (!b) return;
+  const qEl = b.closest('.q'), roundEl = b.closest('[data-round]');
+  if (b.dataset.i !== undefined) { const q = state.questions.find(x => x.id === qEl.dataset.id); draft[q.id] = q.options[+b.dataset.i].label; renderRounds(); return; }
+  if (b.dataset.change && db) { const id = b.closest('[data-id]').dataset.id, q = state.questions.find(x => x.id === id);
+    draft[id] = q.answer; b.disabled = true; await db.doc('questions/' + id).update({ status: 'open', changedFrom: q.answer, changedAt: now() }).catch(() => b.disabled = false); return; }
+  if (b.dataset.send && db) {
+    const ids = [...roundEl.querySelectorAll('.q')].map(el => el.dataset.id); b.disabled = true; b.textContent = 'Sending…';
+    try { const at = now(); for (const id of ids) await db.doc('questions/' + id).update({ answer: draft[id], status: 'answered', answeredAt: at });
+      const lines = ids.map(id => { const q = state.questions.find(x => x.id === id); return `- ${qText(q)} -> ${draft[id]}`; });
+      ids.forEach(id => delete draft[id]);
+      const ok = await notify(`Salem sent the answers for "${roundEl.dataset.round}":\n${lines.join('\n')}`, $('rounds'));
+      $('req-status').textContent = ''; showTab('questions'); alertNote(sentNote(ok)); }
+    catch (err) { b.disabled = false; b.textContent = 'Could not send, try again'; }
+  }
+});
+$('rounds').addEventListener('input', e => { if (!e.target.dataset.other) return; const id = e.target.closest('.q').dataset.id;
+  draft[id] = e.target.value.trim() || undefined; const r = e.target.closest('[data-round]'); const qs = [...r.querySelectorAll('.q')];
+  const ready = qs.filter(el => draft[el.dataset.id]).length; r.querySelector('[data-send]').disabled = ready < qs.length;
+  r.querySelector('.row .meta').textContent = `${ready} of ${qs.length} answered. Nothing reaches Claude until you send.`;
+  e.target.closest('.q').querySelectorAll('[data-i]').forEach(x => x.setAttribute('aria-pressed', false)); });
+
+function renderRequests() {
+  $('requests').innerHTML = [...state.requests].sort((a, b) => (b.at || '').localeCompare(a.at || '')).slice(0, 8).map(r => `<div class="req"><span>${esc(r.text)}</span>
+    <span class="meta">${r.status === 'done' ? 'Done' : r.status === 'seen' ? 'Claude has it' : 'Waiting for Claude'} · ${ago(r.at)}${r.reply ? ' · ' + esc(r.reply) : ''}</span></div>`).join('');
+}
+
+const statusSelect = s => `<select data-f="status">${Object.keys(ORDER).map(k => `<option value="${k}" ${k === s ? 'selected' : ''}>${LABEL[k]}</option>`).join('')}</select>`;
+const taskEditor = (t, key) => `<div class="edit" data-edit="${esc(key)}"><input data-f="title" placeholder="Task" value="${esc(t.title)}">
+  <textarea data-f="detail" rows="2" placeholder="Details (optional)">${esc(t.detail)}</textarea>
+  <div class="row">${statusSelect(t.status || 'next')}</div>
+  <div class="row"><button class="primary" data-save="1">Save</button><button data-cancel="1">Cancel</button>${key.startsWith('task:') ? '<button data-remove="1">Remove task</button>' : ''}</div></div>`;
+const taskRow = t => editing === 'task:' + t.id ? taskEditor(t, 'task:' + t.id) : `<div class="task"><span class="chip s-${esc(t.status)}">${LABEL[t.status] || esc(t.status)}</span><b>${esc(t.title)}</b>
+  <button class="link" data-edit-task="${esc(t.id)}">Edit</button>${t.detail ? `<span class="d">${esc(t.detail)}</span>` : ''}</div>`;
+// One epic = a card of features. Tapping a feature opens its editor (status and the "needs you" note).
+const featEditor = (e, f) => `<div class="edit" data-edit="feat:${esc(e.id)}:${esc(f.id)}"><b>${esc(f.id)} ${esc(f.name)}</b>
+  <div class="row"><select data-f="status">${Object.keys(FEAT).map(k => `<option value="${k}" ${k === f.status ? 'selected' : ''}>${FEAT[k][1]}</option>`).join('')}</select></div>
+  <input data-f="you" placeholder="Needs you: what you have to do (optional)" value="${esc(f.you)}">
+  <div class="row"><button class="primary" data-save="1">Save</button><button data-cancel="1">Cancel</button></div></div>`;
+const featRow = (e, f) => editing === `feat:${e.id}:${f.id}` ? featEditor(e, f) : `<button class="task feat" data-edit-feat="${esc(e.id)}:${esc(f.id)}">
+  <span class="ic f-${esc(f.status)}" title="${FEAT[f.status]?.[1] || esc(f.status)}">${FEAT[f.status]?.[0] || '○'}</span><b>${esc(f.name)}</b>
+  ${f.doneWhen ? `<span class="d">Done when: ${esc(f.doneWhen)}</span>` : ''}${storyCount(f)}${f.you ? `<span class="pill">needs you: ${esc(f.you)}</span>` : ''}</button>${storyList(f)}`;
+// Stories: an array on the feature [{id, name, status: passing|failing|todo, checkedAt}], or just the two counts.
+function storyCount(f) { const ss = f.stories || [], total = ss.length || f.storiesTotal || 0; if (!total) return '';
+  const pass = ss.length ? ss.filter(x => x.status === 'passing').length : (f.storiesPass || 0), fail = ss.filter(x => x.status === 'failing').length;
+  return `<span class="d">Stories: ${pass} of ${total} passing${fail ? ` · ${fail} failing` : ''}</span>`; }
+const storyList = f => (f.stories || []).length && f.status !== 'done' ? `<ul class="stories">${f.stories.map(x => { const k = STORY[x.status] ? x.status : 'todo';
+  return `<li><span class="st-${k}" title="${STORY[k][1]}">${STORY[k][0]}</span><span class="sid">${esc(x.id)}</span><span>${esc(x.name)}${x.checkedAt ? ` · checked ${ago(x.checkedAt)}` : ''}</span></li>`; }).join('')}</ul>` : '';
+const epicDone = e => (e.features || []).length > 0 && e.features.every(f => f.status === 'done');
+const epicBody = e => { const fs = e.features || [], done = fs.filter(f => f.status === 'done').length, pct = fs.length ? Math.round(done / fs.length * 100) : 0;
+  return `<div class="ver-head"><h3>${esc(e.id)} ${esc(e.name)}</h3><span class="count">${done} of ${fs.length} done</span></div>${e.goal ? `<p class="ver-goal">${esc(e.goal)}</p>` : ''}
+    <div class="bar"><i style="width:${pct}%"></i></div>${fs.map(f => featRow(e, f)).join('') || '<p class="empty">No features yet.</p>'}`; };
+// Running now: one line per helper at work (written by the main session when it starts one, removed when it ends).
+function renderRunning() {
+  const rs = [...state.running].sort((a, b) => (a.startedAt || '').localeCompare(b.startedAt || ''));
+  $('running-head').innerHTML = rs.length ? `<span class="dot"></span>Running now · ${rs.length === 1 ? 'one at a time' : rs.length + ' side by side'}` : 'Running now';
+  $('running-list').innerHTML = rs.map(r => `<div class="run"><span class="who">${esc(r.who)}</span><b>${esc(r.what)}</b><span class="count">${ago(r.startedAt).replace('just now', 'started now')}</span>
+    ${r.feature || r.step ? `<span class="d">${[r.feature, r.step].filter(Boolean).map(esc).join(' · ')}</span>` : ''}</div>`).join('') || '<p class="empty">Nothing running right now.</p>';
+}
+setInterval(() => { renderRunning(); if (!editing) renderProgress(); }, 30000);   // keeps "4 min ago" true
+// "Working on now" (open tasks) on top, then open epics; finished tasks and finished epics go to a closed Archive.
+function renderProgress() {
+  const isOpen = t => t.status !== 'done' || editing === 'task:' + t.id;
+  const open = state.tasks.filter(isOpen).sort((a, b) => (ORDER[a.status] ?? 9) - (ORDER[b.status] ?? 9)), doneTasks = state.tasks.filter(t => !isOpen(t));
+  const epics = [...state.epics].sort((a, b) => (a.order ?? 0) - (b.order ?? 0)), openEp = epics.filter(e => !epicDone(e)), doneEp = epics.filter(epicDone);
+  const nowHtml = `<section class="panel"><h2>Working on now</h2>${open.map(taskRow).join('') || '<p class="empty">Nothing in progress right now.</p>'}
+    ${editing === 'new' ? taskEditor({}, 'new') : '<div><button data-add="1">Add a task</button></div>'}</section>`;
+  const epHtml = openEp.map(e => `<section class="panel">${epicBody(e)}</section>`).join('')
+    || `<section class="panel"><p class="empty">${epics.length ? 'Every epic is finished. They are in the Archive.' : 'No epics yet. Claude adds them once the plan is agreed.'}</p></section>`;
+  const archive = doneEp.length + doneTasks.length ? `<details class="panel" id="archive" ${archiveOpen ? 'open' : ''}><summary><h2 style="display:inline">Archive</h2> <span class="count">${doneEp.length} epic${doneEp.length === 1 ? '' : 's'} · ${doneTasks.length} task${doneTasks.length === 1 ? '' : 's'} finished</span></summary>
+    ${doneEp.map(e => `<div class="arch">${epicBody(e)}</div>`).join('')}${doneTasks.length ? `<div class="arch"><h3>Tasks</h3>${doneTasks.map(taskRow).join('')}</div>` : ''}</details>` : '';
+  $('work').innerHTML = nowHtml + epHtml + archive;
+  $('archive')?.addEventListener('toggle', e => { archiveOpen = e.target.open; });
+}
+$('work').addEventListener('click', async e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.editTask) { editing = 'task:' + b.dataset.editTask; return renderProgress(); }
+  if (b.dataset.editFeat) { editing = 'feat:' + b.dataset.editFeat; return renderProgress(); }
+  if (b.dataset.add) { editing = 'new'; return renderProgress(); }
+  if (b.dataset.cancel) { editing = null; return renderProgress(); }
+  const box = b.closest('[data-edit]'); if (!box || !db) return;
+  const [kind, id, fid] = box.dataset.edit.split(':'), val = f => box.querySelector(`[data-f="${f}"]`)?.value.trim() ?? '';
+  const mark = { editedBy: 'Salem', editedAt: now() };
+  if (b.dataset.remove) { if (b.textContent !== 'Tap again to remove') { b.textContent = 'Tap again to remove'; return; } }
+  if (kind !== 'feat' && !b.dataset.remove && !val('title')) { box.querySelector('[data-f="title"]').focus(); return; }
+  b.disabled = true;
+  try {
+    let what;
+    if (b.dataset.remove) { await db.doc('tasks/' + id).delete(); what = 'removed a task'; }
+    else if (kind === 'feat') {
+      const ep = state.epics.find(x => x.id === id), f = ep.features.find(x => x.id === fid), you = val('you'), status = val('status');
+      const nf = { ...f, status, ...mark }; if (you) nf.you = you; else delete nf.you;
+      await db.doc('epics/' + ep._doc).update({ features: ep.features.map(x => x.id === fid ? nf : x), ...mark });
+      what = `set the feature ${fid} "${f.name}" to ${FEAT[status][1].toLowerCase()}${you ? ` (needs you: ${you})` : ''}`;
+    }
+    else if (kind === 'task') { await db.doc('tasks/' + id).update({ title: val('title'), detail: val('detail'), status: val('status'), ...mark });
+      what = `edited the task "${val('title')}" (status: ${LABEL[val('status')]})`; }
+    else { await db.collection('tasks').add({ title: val('title'), detail: val('detail'), status: val('status'), addedBy: 'Salem', ...mark }); what = `added the task "${val('title')}"`; }
+    editing = null; renderProgress();
+    alertNote(sentNote(await notify(`Salem ${what} on the board's Progress tab.`, $('work'))));
+  } catch (err) { b.disabled = false; b.textContent = 'Could not save, try again'; }
+});
+
+(async () => {
+  db = window.claude ? await window.claude.use('db') : null;
+  comments = window.claude ? await window.claude.use('comments') : null;
+  if (!db) { $('headline').textContent = 'Open this board signed in to see the live project.'; $('req-status').textContent = 'Sending needs you to be signed in.'; return; }
+  db.doc('meta/now').onSnapshot(s => renderNow(s.exists ? s.data() : null));
+  const watch = (name, after) => db.collection(name).onSnapshot(s => { state[name] = s.docs.map(d => ({ id: d.id, ...d.data(), _doc: d.id })); after(); });
+  watch('running', renderRunning); watch('epics', renderProgress); watch('tasks', renderProgress); watch('requests', renderRequests);
+  watch('questions', () => { renderRounds(); if (firstQuestions) { firstQuestions = false; showTab(state.questions.some(q => !q.status || q.status === 'open') ? 'questions' : 'progress'); } });
+  $('req-form').addEventListener('submit', async e => {
+    e.preventDefault(); const text = $('req-text').value.trim(); if (!text) return; $('req-status').textContent = 'Sending…';
+    try { await db.collection('requests').add({ text, status: 'new', at: now() }); $('req-text').value = '';
+      $('req-status').textContent = sentNote(await notify('Salem asked on the board: ' + text, $('req-form'))); }
+    catch (err) { $('req-status').textContent = 'Could not send: ' + (err.message || err.code) + '. Try again.'; }
+  });
+})();
+</script>
