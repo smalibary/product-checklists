@@ -1,5 +1,6 @@
 title: Affiliate page
 about: Invites people to promote the product for a commission and explains how the programme works.
+also: design-system/accessibility
 ## The offer
 - Commission stated plainly: percent or amount, one-off or recurring, for how long | P
 - Cookie window (how long after a click a sale still counts) | P
@@ -23,4 +24,3 @@ about: Invites people to promote the product for a commission and explains how t
 - FAQ on tax forms, payment methods and returns that cancel commission | R nng-faq
 ## Accessibility
 - Form fields with visible labels and clear errors | S wcag-labels wcag-error
-- Headings and contrast meet WCAG | S wcag-headings wcag-contrast

@@ -1,5 +1,6 @@
 title: Accordion
 about: A stack of headings that each open to show their content, saving space on long pages.
+also: design-system/accessibility
 ## When to use
 - Many sections where people need only some of them (FAQ, settings groups) | R nng-accordion
 - Not when most people need all the content: show it open instead | R nng-accordion
@@ -20,5 +21,4 @@ about: A stack of headings that each open to show their content, saving space on
 - Header button inside a heading of the right level | S apg-accordion
 - Button says open or closed (aria-expanded) and controls its panel (aria-controls) | S apg-accordion
 - Enter and Space toggle; optional arrow keys between headers | S apg-accordion
-- Animation short and respects reduced motion | S mdn-reduced-motion
 - Native details and summary elements are a good simple choice | S mdn-details

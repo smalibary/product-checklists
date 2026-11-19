@@ -1,5 +1,6 @@
 title: Account (web app)
 about: The page where a person manages who they are in the app: name, email, password, sign-in methods, sessions and their data.
+also: design-system/accessibility
 ## Profile
 - Name, photo and the details others see, with a preview | P
 - One full-name field, any characters | S w3c-names

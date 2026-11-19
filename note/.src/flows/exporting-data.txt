@@ -1,5 +1,6 @@
 title: Exporting data (flow)
 about: Downloading a copy of your data.
+also: design-system/accessibility
 ## Asking
 - Choose what to export and the format | P
 - Personal data export available to every person | L gdpr-20 pdpl

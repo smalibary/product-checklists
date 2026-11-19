@@ -1,6 +1,6 @@
-﻿LOGIN (WEB APP) CHECKLIST: 23 items
+﻿LOGIN (WEB APP) CHECKLIST: 22 items
 Signing in to the app itself, including single sign-on for teams, passkeys and staying signed in. The website login note covers the basics.
-Backing: 0 Rule, 15 Standard, 0 Research, 8 Practice
+Backing: 0 Rule, 14 Standard, 0 Research, 8 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WAYS IN
@@ -36,7 +36,6 @@ HELP
 
 ACCESS
 22. Errors next to fields and in a summary, focus moved there   (Standard: wcag-error, govuk-error-summary)
-23. Works at phone width and 200% zoom   (Standard: wcag-reflow)
 
 SOURCES
 - nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
@@ -52,4 +51,3 @@ SOURCES
 - owasp-forgot: https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html
 - wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
 - govuk-error-summary: https://design-system.service.gov.uk/components/error-summary/
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

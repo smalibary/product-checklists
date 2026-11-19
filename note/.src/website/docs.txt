@@ -1,5 +1,6 @@
 title: Documentation site
 about: The help and how-to pages for a product, organised so people find answers.
+also: design-system/accessibility
 ## Structure
 - Tutorials, how-to guides, reference and explanations kept apart | S diataxis
 - A getting-started page that reaches a first success fast | S diataxis

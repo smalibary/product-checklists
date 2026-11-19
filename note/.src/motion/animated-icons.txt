@@ -1,5 +1,6 @@
 title: Animated icons and illustrations
 about: Icons that move, animated pictures and Lottie files.
+also: design-system/accessibility
 ## Use
 - Animated icons confirm an action or show a state change | S hig-sf-symbols
 - Illustrations animate on empty states and onboarding, not on every screen | R nng-animation-usability

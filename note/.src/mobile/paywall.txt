@@ -1,5 +1,6 @@
 title: Paywall
 about: The screen that asks people to subscribe or buy to unlock content or features in a phone app.
+also: design-system/accessibility
 ## Store rules
 - Digital content and features sold through Apple and Google in-app purchase (with regional exceptions) | S apple-review play-payments
 - The price, the billing period and what is included shown clearly near the buy button | S apple-review play-subscriptions

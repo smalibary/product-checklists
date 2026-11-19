@@ -1,6 +1,6 @@
-﻿LIST VIEW CHECKLIST: 21 items
+﻿LIST VIEW CHECKLIST: 19 items
 A simple list of items (tasks, files, contacts) for scanning and opening, lighter than a data table.
-Backing: 0 Rule, 8 Standard, 7 Research, 6 Practice
+Backing: 0 Rule, 6 Standard, 7 Research, 6 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 ITEMS
@@ -35,8 +35,6 @@ STATES
 ACCESS
 18. A real list (or table if there are columns)   (Standard: wcag-info)
 19. Row links read well alone   (Standard: wcag-link)
-20. Touch targets at least 24 by 24 pixels   (Standard: wcag-target)
-21. Works at phone width   (Standard: wcag-reflow)
 
 SOURCES
 - nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
@@ -52,5 +50,3 @@ SOURCES
 - nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
 - wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
 - wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
-- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

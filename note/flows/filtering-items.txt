@@ -1,6 +1,6 @@
-﻿FILTERING ITEMS (FLOW) CHECKLIST: 17 items
+﻿FILTERING ITEMS (FLOW) CHECKLIST: 16 items
 Narrowing a list of products or records with filters, and seeing what is applied.
-Backing: 0 Rule, 6 Standard, 10 Research, 1 Practice
+Backing: 0 Rule, 5 Standard, 10 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 FILTERS
@@ -28,7 +28,6 @@ ACCESS
 14. Filter groups as fieldsets with names   (Standard: wcag-info)
 15. Checkboxes and radios are real controls   (Standard: wcag-name-role)
 16. Focus does not jump when results update   (Standard: wcag-on-input)
-17. Targets at least 24 px web / 44 pt iOS / 48 dp Android   (Standard: wcag-target, hig-layout, m3-layout)
 
 SOURCES
 - baymard-filters: https://baymard.com/blog/allow-applying-of-multiple-filter-values
@@ -39,6 +38,3 @@ SOURCES
 - nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
 - wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
 - wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
-- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

@@ -1,5 +1,6 @@
 title: Maintenance
 about: What people see when the app is down for planned work or an outage, and the warnings before it.
+also: design-system/accessibility
 ## Before planned work
 - Warned ahead in the app and by email: date, start time with time zone, how long, what stops working | P
 - Planned at a quiet time for most users | P
@@ -20,6 +21,5 @@ about: What people see when the app is down for planned work or an outage, and t
 - Notice that it is done, with what changed | P
 - If it ran late, say so honestly | S atlassian-incident
 ## Access
-- Text readable, contrast meets WCAG, no animation-only message | S wcag-contrast
 - Auto reload does not move focus or surprise screen readers | S wcag-timing
 - In the app's languages | P

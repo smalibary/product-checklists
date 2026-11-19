@@ -1,5 +1,6 @@
 title: Canceling subscription (flow)
 about: Stopping a paid plan, from finding the option to confirmation.
+also: design-system/accessibility
 ## Finding it
 - "Cancel subscription" easy to find in billing or account settings | L ftc-negative-option
 - Cancel online if you could sign up online; no phone call required | L ftc-negative-option
@@ -20,5 +21,4 @@ about: Stopping a paid plan, from finding the option to confirmation.
 - The FTC's 2024 click-to-cancel rule was struck down by a US court in 2025; the older negative-option rules and state laws still apply | L ftc-negative-option
 - EU and UK consumer rules also require easy cancelling | L eu-consumer-rights
 ## Access
-- Every step works by keyboard and screen reader | S wcag-keyboard
 - No timed offers that pressure | S wcag-timing

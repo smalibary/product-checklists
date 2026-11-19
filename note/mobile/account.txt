@@ -1,6 +1,6 @@
-﻿ACCOUNT (MOBILE) CHECKLIST: 17 items
+﻿ACCOUNT (MOBILE) CHECKLIST: 16 items
 The account area of a phone app: personal details, sign-in, security, data and deleting the account.
-Backing: 3 Rule, 10 Standard, 1 Research, 3 Practice
+Backing: 3 Rule, 9 Standard, 1 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 DETAILS
@@ -30,7 +30,6 @@ SIGN OUT
 
 ACCESS
 16. Rows named with their value   (Standard: hig-accessibility)
-17. Large text supported; rows at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
@@ -46,5 +45,3 @@ SOURCES
 - gdpr-17: https://gdpr-info.eu/art-17-gdpr/
 - nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

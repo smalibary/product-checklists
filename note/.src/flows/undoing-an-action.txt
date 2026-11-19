@@ -1,5 +1,6 @@
 title: Undoing an action (flow)
 about: Reversing a mistake right after making it.
+also: design-system/accessibility
 ## Offering undo
 - Undo for deletes, moves and sends instead of asking "Are you sure?" each time | R nng-control
 - An Undo button in a toast for a few seconds | S m3-snackbar

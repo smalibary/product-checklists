@@ -1,5 +1,6 @@
 title: Landing page
 about: The page people arrive on from an ad, a link or a search; it has one job: get them to take one action.
+also: design-system/accessibility
 ## Above the fold
 - A headline that says what the visitor gets, in their words | R nng-scanning
 - A sub-line that says how, or for whom | R nng-scanning
@@ -27,8 +28,5 @@ about: The page people arrive on from an ad, a link or a search; it has one job:
 - No fake countdowns, fake stock counts or hidden prices | L ftc-dark-patterns ftc-junk-fees
 - Prices and terms in the page, not only in small print | L ftc-junk-fees
 ## Access and phones
-- Works at phone width with no sideways scroll | S wcag-reflow
-- Contrast and text size meet WCAG | S wcag-contrast
-- Buttons at least 24 by 24 pixels (44 recommended) | S wcag-target
 - Video has captions, starts muted and can be paused | S wcag-captions wcag-audio wcag-pause
 - A page title and description written for search and sharing | S google-title google-snippet

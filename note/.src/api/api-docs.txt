@@ -1,5 +1,6 @@
 title: API docs
 about: The documentation developers read to start using an API and to fix problems.
+also: design-system/accessibility
 ## Structure
 - Four kinds kept apart: a getting-started tutorial, how-to guides, the reference, and explanations | S diataxis
 - A quick start that reaches a first working call in minutes | S diataxis

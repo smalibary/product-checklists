@@ -1,5 +1,6 @@
 title: Roles and permissions
 about: The screen where admins decide what each person in a workspace may do.
+also: design-system/accessibility
 ## Model
 - A few clear default roles (owner, admin, member, viewer) | S owasp-authz
 - What each role can do shown in a table | R nng-tables
@@ -14,5 +15,3 @@ about: The screen where admins decide what each person in a workspace may do.
 - Least privilege by default for new members | S owasp-authz
 ## Clarity
 - A person can see their own role and what it allows | P
-## Access
-- Tables and controls usable by keyboard and screen reader | S wcag-keyboard

@@ -1,5 +1,6 @@
 title: Entering promo code (flow)
 about: Typing a discount code in cart or checkout and seeing the price change.
+also: design-system/accessibility
 ## The field
 - Folded behind a quiet link ("Have a code?") so people without one are not sent away to hunt for codes | R baymard-coupon
 - Field with Apply button; Enter applies too | P

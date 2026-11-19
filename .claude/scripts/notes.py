@@ -2,6 +2,7 @@
 Source format, one file per checklist (note/.src/<group>/<name>.txt):
     title: Pricing page
     about: one line on what the page is for
+    also: design-system/accessibility   (optional: other checklists this one relies on)
     ## Section name
     - Item text | S wcag-contrast owasp-auth
 Backing letters: L = Rule (a store or a law requires it), S = Standard, R = Research, P = Practice.
@@ -22,10 +23,11 @@ index, missing, records = [], set(), []
 for f in sorted(src.glob("*/*.txt")):
     group = f.parent.name
     title, about, out, used, n, counts = f.stem, "", [], [], 0, {k: 0 for k in NAMES}
-    secs = []
+    secs, also = [], []
     for line in f.read_text(encoding="utf-8").splitlines():
         if line.startswith("title:"): title = line[6:].strip()
         elif line.startswith("about:"): about = line[6:].strip()
+        elif line.startswith("also:"): also = [a.strip() for a in line[5:].split(",") if a.strip()]
         elif line.startswith("## "): out += ["", line[3:].strip().upper()]; secs.append({"name": line[3:].strip(), "items": []})
         elif line.startswith("- "):
             text, _, back = line[2:].partition("|")
@@ -43,12 +45,13 @@ for f in sorted(src.glob("*/*.txt")):
     head = [f"{title.upper()} CHECKLIST: {n} items", about,
             "Backing: " + ", ".join(f"{counts[k]} {NAMES[k]}" for k in NAMES),
             "Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found"]
+    alsotxt = ["", "ALSO MEETS: " + ", ".join(also)] if also else []
     tailsrc = ["", "SOURCES"] + [f"- {k}: {SOURCES[k]}" for k in used] if used else []
     dest = root / group / f.name
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text("\n".join(head + out + tailsrc) + "\n", encoding="utf-8-sig")
     index.append(f"{group}/{f.name}  ({n} items)")
-    records.append({"id": f"{group}-{f.stem}", "group": group, "title": title, "about": about, "sections": secs,
+    records.append({"id": f"{group}-{f.stem}", "group": group, "title": title, "about": about, "sections": secs, "also": [a.replace("/", "-") for a in also],
                     "sources": {k: SOURCES[k] for k in used}})
 (root / "INDEX.txt").write_text(f"{len(index)} checklist notes\n\n" + "\n".join(index) + "\n", encoding="utf-8-sig")
 # one array, a record per line: the data behind the checklists page (note/site/)

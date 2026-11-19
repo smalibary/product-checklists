@@ -1,5 +1,6 @@
 title: Toast
 about: A short message that appears for a few seconds to confirm an action (also called a snackbar), then goes away.
+also: design-system/accessibility
 ## When to use
 - Low-importance confirmations ("Saved", "Message sent") | S m3-snackbar
 - An undo right after an action ("Deleted. Undo") | S m3-snackbar

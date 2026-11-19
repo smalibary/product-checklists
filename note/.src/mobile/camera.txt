@@ -1,5 +1,6 @@
 title: Camera
 about: Taking photos, videos or scanning (documents, QR codes) inside a phone app.
+also: design-system/accessibility
 ## Permission
 - Ask for camera access only when the person taps to use it | S hig-privacy android-permissions
 - A clear purpose string ("To scan your receipt") | S apple-usage

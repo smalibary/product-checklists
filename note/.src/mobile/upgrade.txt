@@ -1,5 +1,6 @@
 title: Upgrade (mobile)
 about: Moving from free to paid, or from one plan to a higher one, inside a phone app.
+also: design-system/accessibility
 ## Moments
 - Offer the upgrade when the person reaches a limit or a paid feature, saying what it unlocks | P
 - A lock icon on paid features, with a short reason on tap | P
@@ -22,4 +23,3 @@ about: Moving from free to paid, or from one plan to a higher one, inside a phon
 - Downgrade and cancel explained in settings | L ftc-negative-option
 ## Access
 - Price and plan names read clearly | S hig-accessibility
-- Large text supported; buttons at least 44 pt / 48 dp | S hig-layout m3-layout

@@ -1,6 +1,6 @@
-﻿404 PAGE CHECKLIST: 14 items
+﻿404 PAGE CHECKLIST: 12 items
 The page shown when an address does not exist; its job is to get the visitor back on track.
-Backing: 0 Rule, 5 Standard, 8 Research, 1 Practice
+Backing: 0 Rule, 3 Standard, 8 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 MESSAGE
@@ -21,17 +21,9 @@ TECHNICAL
 11. Broken links found in logs and fixed   (Practice)
 12. The page title says "Page not found" with the site name   (Standard: wcag-title)
 
-ACCESS
-13. One main heading, contrast and phone width meet WCAG   (Standard: wcag-headings, wcag-contrast, wcag-reflow)
-14. Images or illustrations have alt text or are hidden if decorative   (Standard: wcag-nontext)
-
 SOURCES
 - nng-404: https://www.nngroup.com/articles/improving-dreaded-404-error-message/
 - govuk-404: https://design-system.service.gov.uk/patterns/page-not-found-pages/
 - nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
 - google-404: https://developers.google.com/search/docs/crawling-indexing/http-network-errors
 - wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
-- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
-- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content

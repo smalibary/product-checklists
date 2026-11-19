@@ -1,5 +1,6 @@
 title: File upload
 about: The control for choosing files from the device.
+also: design-system/accessibility
 ## Control
 - A real file input with a visible button and label | S govuk-file-upload
 - Drop area for big screens, with the button as well | S govuk-file-upload wcag-dragging
@@ -13,4 +14,3 @@ about: The control for choosing files from the device.
 - Camera and photo library offered where useful | S android-photo-picker
 ## Access
 - Status changes announced | S wcag-status
-- Works fully by keyboard | S wcag-keyboard

@@ -1,5 +1,6 @@
 title: Cart page
 about: Shows what the shopper is about to buy and the full cost, and moves them to checkout.
+also: design-system/accessibility
 ## Items
 - Each item: photo, name, chosen options (size, colour), unit price and quantity | R baymard-guest
 - Change quantity with a field plus minus and plus buttons | R baymard-guest
@@ -26,5 +27,3 @@ about: Shows what the shopper is about to buy and the full cost, and moves them 
 - Changes to totals announced to screen readers | S wcag-status
 ## Access
 - Quantity buttons have names ("Increase quantity of Blue mug") | S wcag-name-role
-- Touch targets at least 24 pixels, 44 recommended | S wcag-target
-- Works at phone width with no sideways scroll | S wcag-reflow

@@ -1,5 +1,6 @@
 title: Document View
 about: Reading and editing one document (a page, a note, a file) inside the app, often with others.
+also: design-system/accessibility
 ## Reading
 - Title as the main heading, with owner, last edited time and by whom | P
 - Contents list from headings for long documents | S wcag-headings

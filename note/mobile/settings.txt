@@ -1,6 +1,6 @@
-﻿SETTINGS (MOBILE) CHECKLIST: 20 items
+﻿SETTINGS (MOBILE) CHECKLIST: 19 items
 The settings screen of a phone app: grouped lists of options the person can change.
-Backing: 1 Rule, 14 Standard, 0 Research, 5 Practice
+Backing: 1 Rule, 13 Standard, 0 Research, 5 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 STRUCTURE
@@ -31,7 +31,6 @@ BEHAVIOUR
 ACCESS
 18. Toggles read their state ("Dark mode, switch, on")   (Standard: hig-accessibility)
 19. Large text: rows grow and wrap, values move under names   (Standard: hig-accessibility)
-20. Rows at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - hig-settings: https://developer.apple.com/design/human-interface-guidelines/settings
@@ -48,5 +47,3 @@ SOURCES
 - apple-review: https://developer.apple.com/app-store/review/guidelines/
 - android-permissions: https://developer.android.com/training/permissions/requesting
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

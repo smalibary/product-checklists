@@ -1,5 +1,6 @@
 title: File manager
 about: Browsing, organising and sharing files and folders in an app.
+also: design-system/accessibility
 ## Views
 - List and grid views, remembering the choice | R nng-tables
 - Columns for name, owner, size and date, sortable | R nng-tables

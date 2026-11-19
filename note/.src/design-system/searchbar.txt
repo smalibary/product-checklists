@@ -1,5 +1,6 @@
 title: Searchbar
 about: The text box where people type to search, with its button, suggestions and clear control.
+also: design-system/accessibility
 ## Look
 - A wide box; the width hints at query length (about 27 characters visible) | R nng-search
 - Placed where people expect: top of the page or app | R nng-search

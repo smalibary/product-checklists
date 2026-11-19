@@ -1,6 +1,6 @@
-﻿DELETING ACCOUNT (FLOW) CHECKLIST: 17 items
+﻿DELETING ACCOUNT (FLOW) CHECKLIST: 16 items
 Permanently removing an account and its data, by the person's own choice.
-Backing: 6 Rule, 6 Standard, 2 Research, 3 Practice
+Backing: 6 Rule, 5 Standard, 2 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 FINDING IT
@@ -29,8 +29,7 @@ RULES
 15. GDPR right to erasure; Saudi PDPL also gives the right to destruction of personal data   (Rule: gdpr-17, pdpl)
 
 ACCESS
-16. Every step works by keyboard and screen reader   (Standard: wcag-keyboard)
-17. No time limit on the confirmation   (Standard: wcag-timing)
+16. No time limit on the confirmation   (Standard: wcag-timing)
 
 SOURCES
 - apple-deletion: https://developer.apple.com/support/offering-account-deletion-in-your-app
@@ -41,5 +40,4 @@ SOURCES
 - owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
 - nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
 - pdpl: https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf
-- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
 - wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable

@@ -1,5 +1,6 @@
 title: Careers page
 about: Shows open jobs and what it is like to work at the company, and takes applications.
+also: design-system/accessibility
 ## Jobs list
 - Open jobs listed with title, team, place (or remote) and type (full time, contract) | R nng-careers
 - Filters by team, place and type when there are many | R nng-careers
@@ -22,6 +23,3 @@ about: Shows open jobs and what it is like to work at the company, and takes app
 - Real photos and words from staff, with permission | R nng-trust
 - Values, diversity and accessibility commitments, with facts | P
 - Adjustments offered for applicants with disabilities | L ada-web
-## Access
-- Works at phone width | S wcag-reflow
-- Headings and contrast meet WCAG | S wcag-headings wcag-contrast

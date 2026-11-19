@@ -1,6 +1,6 @@
-﻿TIMELINE / GANTT VIEW CHECKLIST: 22 items
+﻿TIMELINE / GANTT VIEW CHECKLIST: 21 items
 Shows tasks as bars along a time line, with their dates, overlaps and dependencies.
-Backing: 0 Rule, 7 Standard, 1 Research, 14 Practice
+Backing: 0 Rule, 6 Standard, 1 Research, 14 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 LAYOUT
@@ -31,11 +31,10 @@ NAVIGATION
 ACCESS
 18. A list or table view with the same data, for screen readers and phones   (Standard: wcag-info)
 19. Keyboard reaches each bar and shows its dates   (Standard: wcag-keyboard)
-20. Bars' focus is visible   (Standard: wcag-focus)
-21. Tooltips on hover also show on focus   (Standard: wcag-hover)
+20. Tooltips on hover also show on focus   (Standard: wcag-hover)
 
 SPEED
-22. Smooth with thousands of tasks (draw only what is visible)   (Standard: webdev-inp)
+21. Smooth with thousands of tasks (draw only what is visible)   (Standard: webdev-inp)
 
 SOURCES
 - wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
@@ -43,6 +42,5 @@ SOURCES
 - nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
 - wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
 - wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
-- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
 - wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
 - webdev-inp: https://web.dev/articles/inp

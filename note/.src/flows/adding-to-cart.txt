@@ -1,5 +1,6 @@
 title: Adding to cart (flow)
 about: From choosing a product's options to the item being in the cart, with clear feedback.
+also: design-system/accessibility
 ## Before adding
 - Required options (size, colour) chosen first; the button says what is missing | R baymard-cart
 - Price, stock and delivery estimate visible near the button | L eu-consumer-rights
@@ -22,4 +23,3 @@ about: From choosing a product's options to the item being in the cart, with cle
 ## Access
 - Option pickers are real buttons or radios with names | S wcag-name-role
 - Focus stays sensible after adding | S wcag-focus-order
-- Targets at least 24 px web / 44 pt iOS / 48 dp Android | S wcag-target hig-layout m3-layout

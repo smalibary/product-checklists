@@ -1,5 +1,6 @@
 title: API Keys
 about: Where developers create, see and revoke the secret keys their code uses to call the product.
+also: design-system/accessibility
 ## Creating
 - Create key with a name and an optional expiry date | S github-tokens
 - Choose what the key can do (scopes) and which resources; least power by default | S owasp-authz github-tokens

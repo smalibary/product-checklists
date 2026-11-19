@@ -1,5 +1,6 @@
 title: Live chat
 about: Real-time help in the product, by a person or a bot.
+also: design-system/accessibility
 ## Finding it
 - Labelled "Chat", in the usual bottom corner | R nng-chat
 - Not the only way to get help | R nng-chat nng-contact

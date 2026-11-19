@@ -1,5 +1,6 @@
 title: Search Results (web app)
 about: The page that lists what matches a search inside the app, across one or many kinds of items.
+also: design-system/accessibility
 ## The search box
 - The search box stays at the top with the words typed still in it | R nng-search
 - Suggestions and recent searches while typing | R baymard-autocomplete
@@ -27,5 +28,3 @@ about: The page that lists what matches a search inside the app, across one or m
 - Fast; a loading state if it takes over a second | R nng-response
 ## Access
 - Results are a list with headings or links that read well alone | S wcag-link
-- Keyboard moves through results | S wcag-keyboard
-- Works at phone width | S wcag-reflow

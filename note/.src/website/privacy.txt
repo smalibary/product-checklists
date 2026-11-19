@@ -1,5 +1,6 @@
 title: Privacy page
 about: The privacy policy: what personal data is collected, why, who sees it, and what rights people have.
+also: design-system/accessibility
 ## Required content
 - Who is responsible for the data: company name, address and contact | L gdpr-13 pdpl
 - Contact for the data protection officer, if one is required | L gdpr-13
@@ -25,5 +26,4 @@ about: The privacy policy: what personal data is collected, why, who sees it, an
 ## Access
 - Linked from the footer of every page and from sign-up | P
 - Readable as plain HTML (not only a PDF) | S wcag
-- Text contrast and size meet WCAG | S wcag-contrast wcag-resize
 - A printable or downloadable version | P

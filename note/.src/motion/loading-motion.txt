@@ -1,5 +1,6 @@
 title: Loading motion
 about: Animation that shows work in progress and makes waiting clearer.
+also: design-system/accessibility
 ## Choosing
 - Under 1 second: no indicator | R nng-progress
 - 1 to 10 seconds: spinner or skeleton | R nng-progress nng-skeleton

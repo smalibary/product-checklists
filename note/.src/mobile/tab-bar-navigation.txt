@@ -1,5 +1,6 @@
 title: Tab Bar Navigation
 about: The bar at the bottom of a phone app with the main sections (also called a bottom navigation bar or dock).
+also: design-system/accessibility
 ## Content
 - 3 to 5 tabs for the main top-level sections | S hig-tab-bars m3-nav-bar
 - Each tab an icon and a short label, always shown | S hig-tab-bars m3-nav-bar
@@ -21,6 +22,5 @@ about: The bar at the bottom of a phone app with the main sections (also called 
 - On tablets and large screens, a side rail or sidebar instead | S m3-nav-bar
 ## Access
 - Each tab has a name and says it is selected ("Home, tab, 1 of 5, selected") | S hig-accessibility
-- Targets at least 44 pt / 48 dp | S hig-layout m3-layout
 - Labels stay readable with large text (bigger labels shown on long press on iOS) | S hig-accessibility
 - Order flips for right-to-left languages | S w3c-dir

@@ -1,5 +1,6 @@
 title: User Management
 about: Where admins invite people, give them roles, and remove them from a workspace.
+also: design-system/accessibility
 ## List of people
 - Table: name, email, role, status (active, invited, suspended), last active | R nng-tables
 - Search and filter by role and status | R nng-filters

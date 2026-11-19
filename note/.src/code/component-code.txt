@@ -1,5 +1,6 @@
 title: Component code
 about: How a reusable screen piece is written so it is easy to use, change and trust.
+also: design-system/accessibility
 ## Shape
 - One component, one job; split when it grows several | S react-thinking
 - Rendering is pure: same inputs, same output, no side effects while drawing | S react-pure react-rules

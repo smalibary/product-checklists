@@ -1,5 +1,6 @@
 title: Onboarding (mobile)
 about: The first screens of a phone app after install, before the person starts using it.
+also: design-system/accessibility
 ## Keep it short
 - Get people into the app fast; onboarding as short as possible | S hig-onboarding
 - Skip button on every intro slide | R nng-onboarding
@@ -22,5 +23,3 @@ about: The first screens of a phone app after install, before the person starts 
 - Age checks for apps with age limits | L coppa
 ## Access
 - Slides work with VoiceOver and TalkBack (swipe and buttons) | S hig-accessibility
-- Animations respect reduced motion | S hig-accessibility
-- Text readable at large sizes; buttons at least 44 pt / 48 dp | S hig-layout m3-layout

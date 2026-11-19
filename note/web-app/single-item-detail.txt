@@ -1,6 +1,6 @@
-﻿SINGLE ITEM DETAIL CHECKLIST: 22 items
+﻿SINGLE ITEM DETAIL CHECKLIST: 20 items
 The page for one record (a task, a contact, an order, a file) with all its details and actions.
-Backing: 0 Rule, 5 Standard, 9 Research, 8 Practice
+Backing: 0 Rule, 3 Standard, 9 Research, 8 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 TOP
@@ -34,8 +34,6 @@ STATES
 ACCESS
 19. Each item has its own address, shareable and bookmarkable   (Practice)
 20. Page title includes the item name   (Standard: wcag-title)
-21. Keyboard reaches every action   (Standard: wcag-keyboard)
-22. Works at phone width   (Standard: wcag-reflow)
 
 SOURCES
 - wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
@@ -49,5 +47,3 @@ SOURCES
 - nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
 - nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
 - wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
-- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

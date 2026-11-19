@@ -1,6 +1,6 @@
-﻿BILLING (MOBILE) CHECKLIST: 17 items
+﻿BILLING (MOBILE) CHECKLIST: 16 items
 Seeing and managing subscriptions and payments inside a phone app.
-Backing: 3 Rule, 12 Standard, 0 Research, 2 Practice
+Backing: 3 Rule, 11 Standard, 0 Research, 2 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 STORE SUBSCRIPTIONS
@@ -30,7 +30,6 @@ PROBLEMS
 
 ACCESS
 16. Prices read clearly with currency by screen readers   (Standard: hig-accessibility)
-17. Large text and buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - apple-review: https://developer.apple.com/app-store/review/guidelines/
@@ -41,5 +40,3 @@ SOURCES
 - pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
 - zatca-einvoice: https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

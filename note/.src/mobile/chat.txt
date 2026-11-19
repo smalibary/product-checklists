@@ -1,5 +1,6 @@
 title: Chat (mobile)
 about: Messaging inside a phone app: the list of conversations and one conversation with its message box.
+also: design-system/accessibility
 ## Conversation list
 - Newest first: photo, name, last message, time, unread count | P
 - Search across conversations | R nng-search
@@ -29,4 +30,3 @@ about: Messaging inside a phone app: the list of conversations and one conversat
 ## Access
 - New messages announced politely | S wcag-status
 - Each message read with sender and time | S hig-accessibility
-- Large text supported; targets at least 44 pt / 48 dp | S hig-layout m3-layout

@@ -1,6 +1,6 @@
-﻿CHECKBOX CHECKLIST: 21 items
+﻿CHECKBOX CHECKLIST: 20 items
 A box that people tick to choose any number of options, or to agree to one thing.
-Backing: 1 Rule, 17 Standard, 2 Research, 1 Practice
+Backing: 1 Rule, 16 Standard, 2 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WHEN TO USE
@@ -31,8 +31,7 @@ BEHAVIOUR
 ACCESS
 18. Native checkbox input, or role checkbox with aria-checked   (Standard: apg-checkbox)
 19. Space toggles   (Standard: apg-checkbox)
-20. Focus ring visible   (Standard: wcag-focus)
-21. Label linked to the box   (Standard: wcag-labels)
+20. Label linked to the box   (Standard: wcag-labels)
 
 SOURCES
 - govuk-checkboxes: https://design-system.service.gov.uk/components/checkboxes/
@@ -45,5 +44,4 @@ SOURCES
 - wcag-on-input: https://www.w3.org/WAI/WCAG22/Understanding/on-input
 - govuk-error-message: https://design-system.service.gov.uk/components/error-message/
 - gdpr-7: https://gdpr-info.eu/art-7-gdpr/
-- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
 - wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions

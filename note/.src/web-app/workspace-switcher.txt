@@ -1,5 +1,6 @@
 title: Workspace switcher
 about: Moving between teams, accounts or organisations in one app.
+also: design-system/accessibility
 ## Showing
 - Current workspace name and logo always visible | R nng-indicators
 - The list shows each workspace with name and role | P

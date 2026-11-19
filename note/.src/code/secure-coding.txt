@@ -1,5 +1,6 @@
 title: Secure coding
 about: Habits in everyday code that stop the common attacks.
+also: design-system/accessibility
 ## Input
 - All input validated on the server, with allow-lists | S owasp-input owasp-scp
 - Database queries use parameters, never joined strings | S owasp-sql

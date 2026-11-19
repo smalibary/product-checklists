@@ -1,6 +1,6 @@
-﻿HOME (WEB APP) CHECKLIST: 19 items
+﻿HOME (WEB APP) CHECKLIST: 17 items
 The first screen after signing in, which helps people pick up where they left off and see what needs them.
-Backing: 0 Rule, 6 Standard, 4 Research, 9 Practice
+Backing: 0 Rule, 4 Standard, 4 Research, 9 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WHAT IT SHOWS
@@ -30,9 +30,7 @@ SPEED
 16. No layout jumping as sections arrive   (Standard: webdev-cls)
 
 ACCESS
-17. Sections have headings; landmarks for main and navigation   (Standard: wcag-headings, apg-landmarks)
-18. Page title names the app and "Home"   (Standard: wcag-title)
-19. Works at phone width   (Standard: wcag-reflow)
+17. Page title names the app and "Home"   (Standard: wcag-title)
 
 SOURCES
 - nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
@@ -43,7 +41,4 @@ SOURCES
 - webdev-lcp: https://web.dev/articles/lcp
 - nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
 - webdev-cls: https://web.dev/articles/cls
-- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
-- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
 - wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

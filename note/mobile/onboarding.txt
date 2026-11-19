@@ -1,6 +1,6 @@
-﻿ONBOARDING (MOBILE) CHECKLIST: 18 items
+﻿ONBOARDING (MOBILE) CHECKLIST: 16 items
 The first screens of a phone app after install, before the person starts using it.
-Backing: 2 Rule, 10 Standard, 5 Research, 1 Practice
+Backing: 2 Rule, 8 Standard, 5 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 KEEP IT SHORT
@@ -30,8 +30,6 @@ LEGAL
 
 ACCESS
 16. Slides work with VoiceOver and TalkBack (swipe and buttons)   (Standard: hig-accessibility)
-17. Animations respect reduced motion   (Standard: hig-accessibility)
-18. Text readable at large sizes; buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - hig-onboarding: https://developer.apple.com/design/human-interface-guidelines/onboarding
@@ -45,5 +43,3 @@ SOURCES
 - gdpr-7: https://gdpr-info.eu/art-7-gdpr/
 - coppa: https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

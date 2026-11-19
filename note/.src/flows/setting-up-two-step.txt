@@ -1,5 +1,6 @@
 title: Setting up two-step sign-in (flow)
 about: Adding a second factor like an authenticator app, passkey or SMS code.
+also: design-system/accessibility
 ## Choosing
 - Options listed: passkey, authenticator app, then SMS as a fallback | S nist-63b-auth owasp-mfa
 ## Authenticator app

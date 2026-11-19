@@ -1,5 +1,6 @@
 title: Pricing (inside the app)
 about: The plans page shown to signed-in users, with their current plan and what changing would cost.
+also: design-system/accessibility
 ## Plans
 - Current plan marked clearly | P
 - 2 to 4 plans side by side, one suggested | R nng-comparison

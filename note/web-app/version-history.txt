@@ -1,6 +1,6 @@
-﻿VERSION HISTORY CHECKLIST: 18 items
+﻿VERSION HISTORY CHECKLIST: 17 items
 The list of saved versions of a document or item, so people can see changes and go back.
-Backing: 0 Rule, 5 Standard, 3 Research, 10 Practice
+Backing: 0 Rule, 4 Standard, 3 Research, 10 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 THE LIST
@@ -28,8 +28,7 @@ RULES
 
 ACCESS
 16. History panel opens as a side panel with focus moved in   (Standard: apg-dialog)
-17. The list works by keyboard   (Standard: wcag-keyboard)
-18. Dates readable by screen readers   (Practice)
+17. Dates readable by screen readers   (Practice)
 
 SOURCES
 - wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
@@ -37,4 +36,3 @@ SOURCES
 - nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
 - owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
 - apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
-- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

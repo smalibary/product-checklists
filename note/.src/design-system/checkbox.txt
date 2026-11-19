@@ -1,5 +1,6 @@
 title: Checkbox
 about: A box that people tick to choose any number of options, or to agree to one thing.
+also: design-system/accessibility
 ## When to use
 - Choosing zero, one or many from a list | S govuk-checkboxes
 - One checkbox for a yes/no agreement that takes effect on submit | S govuk-checkboxes
@@ -24,5 +25,4 @@ about: A box that people tick to choose any number of options, or to agree to on
 ## Access
 - Native checkbox input, or role checkbox with aria-checked | S apg-checkbox
 - Space toggles | S apg-checkbox
-- Focus ring visible | S wcag-focus
 - Label linked to the box | S wcag-labels

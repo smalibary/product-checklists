@@ -1,6 +1,6 @@
-﻿PRIVACY PAGE CHECKLIST: 24 items
+﻿PRIVACY PAGE CHECKLIST: 23 items
 The privacy policy: what personal data is collected, why, who sees it, and what rights people have.
-Backing: 17 Rule, 3 Standard, 0 Research, 4 Practice
+Backing: 17 Rule, 2 Standard, 0 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 REQUIRED CONTENT
@@ -30,8 +30,7 @@ CLARITY
 ACCESS
 21. Linked from the footer of every page and from sign-up   (Practice)
 22. Readable as plain HTML (not only a PDF)   (Standard: wcag)
-23. Text contrast and size meet WCAG   (Standard: wcag-contrast, wcag-resize)
-24. A printable or downloadable version   (Practice)
+23. A printable or downloadable version   (Practice)
 
 SOURCES
 - gdpr-13: https://gdpr-info.eu/art-13-gdpr/
@@ -46,5 +45,3 @@ SOURCES
 - coppa: https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions
 - wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
 - wcag: https://www.w3.org/TR/WCAG22/
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
-- wcag-resize: https://www.w3.org/WAI/WCAG22/Understanding/resize-text

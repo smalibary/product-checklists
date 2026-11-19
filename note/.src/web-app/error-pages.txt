@@ -1,5 +1,6 @@
 title: Error pages
 about: What people see when a page cannot load, they lack access, or the server fails.
+also: design-system/accessibility
 ## Kinds
 - Not found (404), not allowed (403), signed out (401), server error (500), down for maintenance (503) | S rfc-http
 - The right status code sent with each page | S google-404

@@ -1,5 +1,6 @@
 title: Carousel
 about: A row of slides (images, cards) shown a few at a time, moved by arrows, swipes or dots.
+also: design-system/accessibility
 ## When to use
 - Browsing a set of similar items (photos of a product, related cards) | S m3-carousel
 - Not for important messages on a homepage: later slides are rarely seen | R nng-carousel

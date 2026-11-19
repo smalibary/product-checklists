@@ -1,6 +1,6 @@
-﻿SIGN UP (MOBILE) CHECKLIST: 65 items
+﻿SIGN UP (MOBILE) CHECKLIST: 64 items
 Creating an account in a phone app or mobile site. Started from checklist.design's 8 items, checked 2026-11-19.
-Backing: 7 Rule, 14 Standard, 8 Research, 36 Practice
+Backing: 7 Rule, 13 Standard, 8 Research, 36 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 BEFORE THE FORM
@@ -80,17 +80,16 @@ AFTER SIGN-UP
 56. Delete account inside the app (iPhone and Android) plus a web link (Android)   (Rule: apple-5.1.1, play-deletion)
 
 ACCESS AND LANGUAGE
-57. Touch targets at least 24 px (WCAG AA); 44 recommended, and Apple's own guide uses 44 points   (Standard: wcag-target)
-58. Every field has a name screen readers say   (Standard)
-59. Contrast passes in light and dark   (Standard)
-60. Large text setting does not break the layout   (Standard)
-61. Right-to-left for Arabic, with phone numbers and codes kept left-to-right   (Practice)
-62. Main actions within thumb reach   (Practice)
+57. Every field has a name screen readers say   (Standard)
+58. Contrast passes in light and dark   (Standard)
+59. Large text setting does not break the layout   (Standard)
+60. Right-to-left for Arabic, with phone numbers and codes kept left-to-right   (Practice)
+61. Main actions within thumb reach   (Practice)
 
 EDGE CASES
-63. Leaving halfway keeps what was typed   (Practice)
-64. Invite link kept through the whole flow; returns to where they were   (Practice)
-65. Works on slow mobile data   (Practice)
+62. Leaving halfway keeps what was typed   (Practice)
+63. Invite link kept through the whole flow; returns to where they were   (Practice)
+64. Works on slow mobile data   (Practice)
 
 SOURCES
 - baymard-guest: https://baymard.com/blog/reduce-cart-abandonment
@@ -110,4 +109,3 @@ SOURCES
 - webdev-otp: https://web.dev/articles/sms-otp-form
 - apple-5.1.1: https://developer.apple.com/help/app-review/guideline-reference/5-1-1-account-deletion
 - play-deletion: https://support.google.com/googleplay/android-developer/answer/13327111
-- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

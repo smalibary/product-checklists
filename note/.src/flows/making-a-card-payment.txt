@@ -1,5 +1,6 @@
 title: Making a card payment (flow)
 about: Typing card details, passing the bank's check, and getting a result.
+also: design-system/accessibility
 ## Fields
 - Card number, expiry, security code, name only if needed | R baymard-card
 - Card fields from a certified provider (hosted fields) so card data never touches your servers | S pci-dss
@@ -22,6 +23,5 @@ about: Typing card details, passing the bank's check, and getting a result.
 - Secure checkout signs near the fields, without clutter | R baymard-trust
 - Saved cards only with consent, shown by brand and last 4 | S pci-dss
 ## Access
-- Fields have visible names | S wcag-labels
 - Errors announced and linked to fields | S wcag-error
 - The bank page in the check is reachable by keyboard | S wcag-keyboard

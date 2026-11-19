@@ -1,6 +1,6 @@
-﻿MAINTENANCE CHECKLIST: 18 items
+﻿MAINTENANCE CHECKLIST: 17 items
 What people see when the app is down for planned work or an outage, and the warnings before it.
-Backing: 0 Rule, 7 Standard, 0 Research, 11 Practice
+Backing: 0 Rule, 6 Standard, 0 Research, 11 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 BEFORE PLANNED WORK
@@ -27,14 +27,12 @@ AFTER
 15. If it ran late, say so honestly   (Standard: atlassian-incident)
 
 ACCESS
-16. Text readable, contrast meets WCAG, no animation-only message   (Standard: wcag-contrast)
-17. Auto reload does not move focus or surprise screen readers   (Standard: wcag-timing)
-18. In the app's languages   (Practice)
+16. Auto reload does not move focus or surprise screen readers   (Standard: wcag-timing)
+17. In the app's languages   (Practice)
 
 SOURCES
 - atlassian-incident: https://www.atlassian.com/incident-management/incident-communication
 - google-maintenance: https://developers.google.com/search/blog/2011/01/how-to-deal-with-planned-site-downtime
 - rfc-retry-after: https://www.rfc-editor.org/rfc/rfc9110#field.retry-after
 - owasp-transaction: https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
 - wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable

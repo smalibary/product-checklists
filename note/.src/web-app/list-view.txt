@@ -1,5 +1,6 @@
 title: List View
 about: A simple list of items (tasks, files, contacts) for scanning and opening, lighter than a data table.
+also: design-system/accessibility
 ## Items
 - Each row: the name first, then two or three key facts | R nng-scanning
 - Icon or photo to tell types apart | P
@@ -26,5 +27,3 @@ about: A simple list of items (tasks, files, contacts) for scanning and opening,
 ## Access
 - A real list (or table if there are columns) | S wcag-info
 - Row links read well alone | S wcag-link
-- Touch targets at least 24 by 24 pixels | S wcag-target
-- Works at phone width | S wcag-reflow

@@ -1,5 +1,6 @@
 title: Admin Panel
 about: The back office where staff or admins manage users, content, settings and problems across the product.
+also: design-system/accessibility
 ## Navigation
 - Side menu grouped by area (Users, Content, Billing, Settings, Logs) | P
 - Global search by user, email, ID or order | P

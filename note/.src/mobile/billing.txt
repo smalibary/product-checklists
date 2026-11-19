@@ -1,5 +1,6 @@
 title: Billing (mobile)
 about: Seeing and managing subscriptions and payments inside a phone app.
+also: design-system/accessibility
 ## Store subscriptions
 - Digital subscriptions bought through Apple or Google in-app purchase (with regional exceptions) | S apple-review play-payments
 - Current plan, price, renewal date and the store it was bought from | S apple-subscriptions play-subscriptions
@@ -22,4 +23,3 @@ about: Seeing and managing subscriptions and payments inside a phone app.
 - Grace period respected: access continues while the store retries | S apple-subscriptions play-subscriptions
 ## Access
 - Prices read clearly with currency by screen readers | S hig-accessibility
-- Large text and buttons at least 44 pt / 48 dp | S hig-layout m3-layout

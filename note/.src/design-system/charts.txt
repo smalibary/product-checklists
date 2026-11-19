@@ -1,5 +1,6 @@
 title: Charts
 about: Showing numbers as pictures that people read correctly.
+also: design-system/accessibility
 ## Choosing
 - Chart type fits the question: change over time, comparison, part of a whole | R nng-charts
 - Bars start at zero | R nng-charts

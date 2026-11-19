@@ -1,5 +1,6 @@
 title: Profile (mobile)
 about: A person's profile screen in a phone app: their own (editable) and other people's (viewed).
+also: design-system/accessibility
 ## Header
 - Photo, name, short bio and key counts (posts, followers) | P
 - Verified marks explained on tap | P
@@ -24,4 +25,3 @@ about: A person's profile screen in a phone app: their own (editable) and other 
 ## Access
 - Photo has the person's name as its description | S wcag-nontext
 - Counts read with their meaning ("120 followers") | S hig-accessibility
-- Large text supported; buttons at least 44 pt / 48 dp | S hig-layout m3-layout

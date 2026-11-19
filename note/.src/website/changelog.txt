@@ -1,5 +1,6 @@
 title: Changelog
 about: The public list of what changed in each release.
+also: design-system/accessibility
 ## Entries
 - Newest first, with date and version | S keepachangelog
 - Grouped by Added, Changed, Fixed, Removed, Security | S keepachangelog

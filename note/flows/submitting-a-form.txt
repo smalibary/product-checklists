@@ -1,6 +1,6 @@
-﻿SUBMITTING A FORM (FLOW) CHECKLIST: 18 items
+﻿SUBMITTING A FORM (FLOW) CHECKLIST: 17 items
 The moment a form is sent: checking, sending, and telling the person what happened.
-Backing: 0 Rule, 15 Standard, 2 Research, 1 Practice
+Backing: 0 Rule, 14 Standard, 2 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 BEFORE SUBMIT
@@ -31,7 +31,6 @@ SAFETY
 ACCESS
 16. Enter submits from a text field   (Standard: wcag-on-input)
 17. Result announced   (Standard: wcag-status)
-18. Works without a mouse   (Standard: wcag-keyboard)
 
 SOURCES
 - baymard-inline: https://baymard.com/blog/inline-form-validation
@@ -48,4 +47,3 @@ SOURCES
 - owasp-csrf: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
 - wcag-on-input: https://www.w3.org/WAI/WCAG22/Understanding/on-input
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
-- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

@@ -1,5 +1,6 @@
 title: Card
 about: A box that groups the content and actions about one thing (a product, a post, a project).
+also: design-system/accessibility
 ## When to use
 - Browsing collections of mixed content (images, text, actions) | R nng-cards
 - Not for lists where people compare the same facts (use a table or list) | R nng-cards
@@ -25,4 +26,3 @@ about: A box that groups the content and actions about one thing (a product, a p
 ## Access
 - Images have alt text, or are decorative if the title says it all | S wai-images
 - Read order inside the card makes sense (title before image in code if needed) | S wcag-meaningful-sequence
-- Touch targets large enough | S wcag-target

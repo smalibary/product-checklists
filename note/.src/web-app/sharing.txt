@@ -1,5 +1,6 @@
 title: Sharing
 about: Giving other people access to a document, project or file.
+also: design-system/accessibility
 ## Sharing
 - Share by email or name, with a role (view, comment, edit) | P
 - A link option with clear access (anyone with the link, or only people invited) | S owasp-authz

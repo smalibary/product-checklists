@@ -124,6 +124,7 @@ mark{background:var(--accent-soft);color:inherit;border-radius:2px}
   .srclist li{grid-template-columns:minmax(0,1fr)}
 }
 @media (prefers-reduced-motion:no-preference){.grp a,.chip{transition:background .12s}}
+.also{margin:20px 0 0;padding:12px 14px;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;font-size:15px}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -223,6 +224,7 @@ function showList(l){
       <button class="btn main" id="copybtn">Copy as text</button><button class="btn" id="clearbtn" ${d?"":"hidden"}>Clear ticks</button>
       <span id="copymsg" role="status" class="done-n"></span></div><div id="copyarea"></div></div>
     ${secs||`<p class="empty">No items with this backing here.</p>`}
+    ${(l.also||[]).filter(a=>BY[a]).map(a=>`<p class="also">Also meets the <a href="#${a}">${esc(BY[a].title)} checklist</a>: the general items (${count(BY[a])}) that every page needs, kept there so they are not repeated here.</p>`).join("")}
     ${used.length?`<div class="srclist"><h3>Sources</h3><ul>${used.map(([k,u])=>`<li><code>${esc(k)}</code><a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,""))}</a></li>`).join("")}</ul></div>`:""}
     <p class="foot">Rule = a store or a law requires it. Standard = a published standard (WCAG, OWASP, NIST, IETF, platform guidelines). Research = usability studies (Nielsen Norman Group, Baymard). Practice = good practice with no study found. Ticks are kept in this browser only, one set per project name.</p>`;
   $("copybtn").onclick=()=>copy(l);

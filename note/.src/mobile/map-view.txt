@@ -1,5 +1,6 @@
 title: Map View
 about: A map inside a phone app showing places, routes or the person's location, often with a list beside it.
+also: design-system/accessibility
 ## Location permission
 - Ask only when the map needs the person's location, with a clear reason | S hig-privacy android-permissions apple-usage
 - Ask for "while using the app" first; background location only when truly needed | S android-location hig-privacy
@@ -26,4 +27,3 @@ about: A map inside a phone app showing places, routes or the person's location,
 ## Access
 - A list view with the same places for screen readers | S wcag-info
 - Pins have names; selected place announced | S hig-accessibility
-- Controls at least 44 pt / 48 dp | S hig-layout m3-layout

@@ -1,6 +1,6 @@
-﻿NOTIFICATIONS (WEB APP) CHECKLIST: 19 items
+﻿NOTIFICATIONS (WEB APP) CHECKLIST: 18 items
 The in-app list (often a bell) of things that happened which the person may need to act on.
-Backing: 0 Rule, 6 Standard, 5 Research, 8 Practice
+Backing: 0 Rule, 5 Standard, 5 Research, 8 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 THE BELL
@@ -29,8 +29,7 @@ STATES
 
 ACCESS
 17. The panel is a dialog or popover with focus moved in and Escape to close   (Standard: apg-dialog)
-18. List items reachable by keyboard   (Standard: wcag-keyboard)
-19. Works at phone width (full-screen panel)   (Standard: wcag-reflow)
+18. Works at phone width (full-screen panel)   (Standard: wcag-reflow)
 
 SOURCES
 - wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
@@ -41,5 +40,4 @@ SOURCES
 - nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
 - nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
 - apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
-- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
 - wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

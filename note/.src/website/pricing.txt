@@ -1,5 +1,6 @@
 title: Pricing page (website)
 about: Shows the plans and their prices so a visitor can pick one and start.
+also: design-system/accessibility
 ## Plans
 - Two to four plans side by side, one marked as most popular | R nng-pricing
 - Each plan: name, who it is for, price, billing period and the main limits | R nng-pricing

@@ -1,6 +1,6 @@
-﻿INVITE (MOBILE) CHECKLIST: 17 items
+﻿INVITE (MOBILE) CHECKLIST: 16 items
 Inviting people into a shared space in a phone app (a team, household, group or document), not for a reward.
-Backing: 1 Rule, 8 Standard, 0 Research, 8 Practice
+Backing: 1 Rule, 7 Standard, 0 Research, 8 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WAYS TO INVITE
@@ -32,7 +32,6 @@ RESPECT
 
 ACCESS
 16. Role choices as a list with radio buttons and names   (Standard: hig-accessibility)
-17. Large text supported; buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - hig-share: https://developer.apple.com/design/human-interface-guidelines/activity-views
@@ -45,5 +44,3 @@ SOURCES
 - apple-review: https://developer.apple.com/app-store/review/guidelines/
 - gdpr-6: https://gdpr-info.eu/art-6-gdpr/
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

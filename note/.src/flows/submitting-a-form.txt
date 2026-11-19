@@ -1,5 +1,6 @@
 title: Submitting a form (flow)
 about: The moment a form is sent: checking, sending, and telling the person what happened.
+also: design-system/accessibility
 ## Before submit
 - Button always active; checks run on submit | R baymard-inline
 - Button names the action ("Send request"), not "Submit" | R nng-buttons
@@ -23,4 +24,3 @@ about: The moment a form is sent: checking, sending, and telling the person what
 ## Access
 - Enter submits from a text field | S wcag-on-input
 - Result announced | S wcag-status
-- Works without a mouse | S wcag-keyboard

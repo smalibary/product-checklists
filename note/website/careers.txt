@@ -1,6 +1,6 @@
-﻿CAREERS PAGE CHECKLIST: 20 items
+﻿CAREERS PAGE CHECKLIST: 18 items
 Shows open jobs and what it is like to work at the company, and takes applications.
-Backing: 3 Rule, 5 Standard, 11 Research, 1 Practice
+Backing: 3 Rule, 3 Standard, 11 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 JOBS LIST
@@ -29,10 +29,6 @@ CULTURE
 17. Values, diversity and accessibility commitments, with facts   (Practice)
 18. Adjustments offered for applicants with disabilities   (Rule: ada-web)
 
-ACCESS
-19. Works at phone width   (Standard: wcag-reflow)
-20. Headings and contrast meet WCAG   (Standard: wcag-headings, wcag-contrast)
-
 SOURCES
 - nng-careers: https://www.nngroup.com/topic/corporate-websites/
 - eu-pay-transparency: https://eur-lex.europa.eu/eli/dir/2023/970/oj
@@ -48,6 +44,3 @@ SOURCES
 - govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
 - nng-trust: https://www.nngroup.com/articles/trustworthy-design/
 - ada-web: https://www.ada.gov/resources/web-guidance/
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
-- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

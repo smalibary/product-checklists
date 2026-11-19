@@ -1,6 +1,6 @@
-﻿FILE UPLOAD CHECKLIST: 9 items
+﻿FILE UPLOAD CHECKLIST: 8 items
 The control for choosing files from the device.
-Backing: 0 Rule, 8 Standard, 1 Research, 0 Practice
+Backing: 0 Rule, 7 Standard, 1 Research, 0 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CONTROL
@@ -20,7 +20,6 @@ PHONES
 
 ACCESS
  8. Status changes announced   (Standard: wcag-status)
- 9. Works fully by keyboard   (Standard: wcag-keyboard)
 
 SOURCES
 - govuk-file-upload: https://design-system.service.gov.uk/components/file-upload/
@@ -29,4 +28,3 @@ SOURCES
 - govuk-error-message: https://design-system.service.gov.uk/components/error-message/
 - android-photo-picker: https://developer.android.com/training/data-storage/shared/photopicker
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
-- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

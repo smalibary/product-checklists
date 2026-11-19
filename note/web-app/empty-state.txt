@@ -1,6 +1,6 @@
-﻿EMPTY STATE CHECKLIST: 17 items
+﻿EMPTY STATE CHECKLIST: 16 items
 What a screen shows when there is nothing in it yet, nothing matches, or everything is done.
-Backing: 0 Rule, 4 Standard, 10 Research, 3 Practice
+Backing: 0 Rule, 3 Standard, 10 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 KINDS OF EMPTY
@@ -26,7 +26,6 @@ BEHAVIOUR
 ACCESS
 15. Illustrations decorative (hidden) unless they carry meaning   (Standard: wai-images)
 16. Message announced when a search returns nothing   (Standard: wcag-status)
-17. Text and button contrast meet WCAG   (Standard: wcag-contrast)
 
 SOURCES
 - nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
@@ -36,4 +35,3 @@ SOURCES
 - webdev-cls: https://web.dev/articles/cls
 - wai-images: https://www.w3.org/WAI/tutorials/images/
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

@@ -1,6 +1,6 @@
-﻿CART (MOBILE) CHECKLIST: 19 items
+﻿CART (MOBILE) CHECKLIST: 18 items
 The shopping cart screen of a phone app, before checkout.
-Backing: 1 Rule, 6 Standard, 8 Research, 4 Practice
+Backing: 1 Rule, 5 Standard, 8 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 ITEMS
@@ -32,7 +32,6 @@ FEEDBACK
 ACCESS
 17. Quantity buttons named ("Increase quantity of Blue shirt")   (Standard: hig-accessibility)
 18. Total changes announced   (Standard: wcag-status)
-19. Large text supported; buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - baymard-cart: https://baymard.com/research/checkout-usability
@@ -45,5 +44,3 @@ SOURCES
 - hig-feedback: https://developer.apple.com/design/human-interface-guidelines/feedback
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

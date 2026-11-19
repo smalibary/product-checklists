@@ -1,6 +1,6 @@
-﻿MAP VIEW CHECKLIST: 21 items
+﻿MAP VIEW CHECKLIST: 20 items
 A map inside a phone app showing places, routes or the person's location, often with a list beside it.
-Backing: 0 Rule, 16 Standard, 0 Research, 5 Practice
+Backing: 0 Rule, 15 Standard, 0 Research, 5 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 LOCATION PERMISSION
@@ -34,7 +34,6 @@ SPEED AND COST
 ACCESS
 19. A list view with the same places for screen readers   (Standard: wcag-info)
 20. Pins have names; selected place announced   (Standard: hig-accessibility)
-21. Controls at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
@@ -48,5 +47,3 @@ SOURCES
 - w3c-dir: https://www.w3.org/International/questions/qa-html-dir
 - wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

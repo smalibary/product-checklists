@@ -1,5 +1,6 @@
 title: Uploading media (flow)
 about: Choosing, sending and confirming photos, videos or files.
+also: design-system/accessibility
 ## Choosing
 - Drop area on desktop and a "Choose files" button | S wcag-dragging
 - On phones, the system photo picker (no full library access needed) | S android-photo-picker hig-privacy

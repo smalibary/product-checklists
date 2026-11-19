@@ -1,6 +1,6 @@
-﻿TOGGLE CHECKLIST: 19 items
+﻿TOGGLE CHECKLIST: 17 items
 A switch that turns one setting on or off and takes effect at once.
-Backing: 0 Rule, 11 Standard, 7 Research, 1 Practice
+Backing: 0 Rule, 9 Standard, 7 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WHEN TO USE
@@ -26,9 +26,7 @@ ACCESS
 14. role switch with aria-checked, or a native checkbox styled as a switch   (Standard: apg-switch)
 15. Space toggles; Enter may too   (Standard: apg-switch)
 16. Label linked to the switch   (Standard: wcag-labels)
-17. Focus ring visible   (Standard: wcag-focus)
-18. Thumb moves to the other side in right-to-left   (Standard: w3c-dir)
-19. Animation respects reduced motion   (Standard: mdn-reduced-motion)
+17. Thumb moves to the other side in right-to-left   (Standard: w3c-dir)
 
 SOURCES
 - nng-toggle: https://www.nngroup.com/articles/toggle-switch-guidelines/
@@ -42,6 +40,4 @@ SOURCES
 - nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/
 - apg-switch: https://www.w3.org/WAI/ARIA/apg/patterns/switch/
 - wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
-- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
 - w3c-dir: https://www.w3.org/International/questions/qa-html-dir
-- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion

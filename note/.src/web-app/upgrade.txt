@@ -1,5 +1,6 @@
 title: Upgrade (web app)
 about: The moment and screen where a signed-in user moves to a bigger plan.
+also: design-system/accessibility
 ## When to offer it
 - At the moment of need: when a limit is hit or a paid feature is tried | P
 - Say which limit was hit and what the upgrade unlocks | R nng-heuristics
@@ -26,4 +27,3 @@ about: The moment and screen where a signed-in user moves to a bigger plan.
 - Trial-to-paid terms stated before the card is taken | L ftc-negative-option
 ## Access
 - Focus moves to the dialog and back; Escape closes it | S apg-dialog
-- Contrast, keyboard and phone width meet WCAG | S wcag-contrast wcag-keyboard wcag-reflow

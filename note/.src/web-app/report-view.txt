@@ -1,5 +1,6 @@
 title: Report View
 about: One finished report: a set of numbers, charts and tables about a period or a subject, for reading and sharing.
+also: design-system/accessibility
 ## Header
 - Report title, the period covered and who made it | P
 - When the data was taken, and the time zone | P

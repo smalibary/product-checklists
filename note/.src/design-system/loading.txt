@@ -1,5 +1,6 @@
 title: Loading
 about: How the product shows that something is happening: spinners, progress bars, busy buttons and skeletons.
+also: design-system/accessibility
 ## Choosing by wait time
 - Under 1 second: show nothing, to avoid a flash | R nng-response
 - 1 to 10 seconds: a spinner or a skeleton | R nng-response nng-skeleton
@@ -22,5 +23,4 @@ about: How the product shows that something is happening: spinners, progress bar
 ## Access
 - Progress bar has role progressbar, a name and its value | S wcag-name-role
 - Loading region marked busy (aria-busy); start and end announced once | S wcag-status
-- Animations calm or still with reduced motion | S mdn-reduced-motion
 - Nothing flashes more than 3 times a second | S wcag-flash

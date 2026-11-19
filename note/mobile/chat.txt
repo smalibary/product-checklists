@@ -1,6 +1,6 @@
-﻿CHAT (MOBILE) CHECKLIST: 24 items
+﻿CHAT (MOBILE) CHECKLIST: 23 items
 Messaging inside a phone app: the list of conversations and one conversation with its message box.
-Backing: 0 Rule, 11 Standard, 3 Research, 10 Practice
+Backing: 0 Rule, 10 Standard, 3 Research, 10 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CONVERSATION LIST
@@ -37,7 +37,6 @@ SAFETY AND PRIVACY
 ACCESS
 22. New messages announced politely   (Standard: wcag-status)
 23. Each message read with sender and time   (Standard: hig-accessibility)
-24. Large text supported; targets at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
@@ -54,4 +53,3 @@ SOURCES
 - hig-notifications: https://developer.apple.com/design/human-interface-guidelines/notifications
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- m3-layout: https://m3.material.io/foundations/layout

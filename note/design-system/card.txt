@@ -1,6 +1,6 @@
-﻿CARD CHECKLIST: 20 items
+﻿CARD CHECKLIST: 19 items
 A box that groups the content and actions about one thing (a product, a post, a project).
-Backing: 0 Rule, 13 Standard, 4 Research, 3 Practice
+Backing: 0 Rule, 12 Standard, 4 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WHEN TO USE
@@ -33,7 +33,6 @@ RESPONSIVE
 ACCESS
 18. Images have alt text, or are decorative if the title says it all   (Standard: wai-images)
 19. Read order inside the card makes sense (title before image in code if needed)   (Standard: wcag-meaningful-sequence)
-20. Touch targets large enough   (Standard: wcag-target)
 
 SOURCES
 - nng-cards: https://www.nngroup.com/articles/cards-component/
@@ -47,4 +46,3 @@ SOURCES
 - wcag-resize: https://www.w3.org/WAI/WCAG22/Understanding/resize-text
 - wai-images: https://www.w3.org/WAI/tutorials/images/
 - wcag-meaningful-sequence: https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence
-- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

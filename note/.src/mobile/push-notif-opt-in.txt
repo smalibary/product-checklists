@@ -1,5 +1,6 @@
 title: Push Notification Opt-in
 about: Asking a phone user for permission to send push notifications, and handling yes, no and later.
+also: design-system/accessibility
 ## Timing
 - Ask when the person has a reason to want alerts (after ordering: "Get delivery updates?"), not at first launch | S hig-notifications webdev-permissions
 - A pre-permission screen in the app's own words first, then the system prompt only if they say yes | R nng-permissions
@@ -21,6 +22,3 @@ about: Asking a phone user for permission to send push notifications, and handli
 - Push not used for ads unless the person opted in to marketing | S apple-review
 - Marketing consent separate from service alerts | L gdpr-7
 - Notification channels on Android so people can mute kinds separately | S android-notif-perm
-## Access
-- Pre-screen readable with large text and screen readers | S hig-accessibility
-- Buttons at least 44 pt / 48 dp | S hig-layout m3-layout

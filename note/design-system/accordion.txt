@@ -1,6 +1,6 @@
-﻿ACCORDION CHECKLIST: 18 items
+﻿ACCORDION CHECKLIST: 17 items
 A stack of headings that each open to show their content, saving space on long pages.
-Backing: 0 Rule, 13 Standard, 4 Research, 1 Practice
+Backing: 0 Rule, 12 Standard, 4 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WHEN TO USE
@@ -26,8 +26,7 @@ ACCESS
 14. Header button inside a heading of the right level   (Standard: apg-accordion)
 15. Button says open or closed (aria-expanded) and controls its panel (aria-controls)   (Standard: apg-accordion)
 16. Enter and Space toggle; optional arrow keys between headers   (Standard: apg-accordion)
-17. Animation short and respects reduced motion   (Standard: mdn-reduced-motion)
-18. Native details and summary elements are a good simple choice   (Standard: mdn-details)
+17. Native details and summary elements are a good simple choice   (Standard: mdn-details)
 
 SOURCES
 - nng-accordion: https://www.nngroup.com/articles/accordions-complex-content/
@@ -36,5 +35,4 @@ SOURCES
 - wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
 - webdev-cls: https://web.dev/articles/cls
 - mdn-until-found: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden
-- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
 - mdn-details: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details

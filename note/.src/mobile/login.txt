@@ -1,5 +1,6 @@
 title: Login (mobile)
 about: Signing in to a phone app with password, passkey, code, biometrics or another account.
+also: design-system/accessibility
 ## Ways in
 - Passkeys offered where supported | S passkeys-dev
 - Sign in with Apple on iOS if other social sign-ins are offered | S hig-sign-in-apple
@@ -23,6 +24,4 @@ about: Signing in to a phone app with password, passkey, code, biometrics or ano
 - Two-step check where risk is high | S nist-63b
 - New device sign-in alert by email | S owasp-auth
 ## Access
-- Fields have visible names, not placeholders only | S wcag-labels
 - Large text supported; keyboard never covers the button | S hig-layout
-- Buttons at least 44 pt / 48 dp | S hig-layout m3-layout

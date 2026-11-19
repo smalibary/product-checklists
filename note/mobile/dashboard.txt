@@ -1,6 +1,6 @@
-﻿DASHBOARD (MOBILE) CHECKLIST: 17 items
+﻿DASHBOARD (MOBILE) CHECKLIST: 16 items
 The overview screen in a phone app with key numbers, status and things to act on.
-Backing: 0 Rule, 7 Standard, 5 Research, 5 Practice
+Backing: 0 Rule, 6 Standard, 5 Research, 5 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CONTENT
@@ -28,7 +28,6 @@ ACCESS
 14. Charts have text summaries for screen readers   (Standard: wcag-nontext)
 15. Cards are headings or buttons with clear names   (Standard: hig-accessibility)
 16. Large text reflows cards instead of cutting numbers   (Standard: hig-accessibility)
-17. Targets at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - nng-dashboards: https://www.nngroup.com/articles/dashboards-preattentive/
@@ -38,5 +37,3 @@ SOURCES
 - hig-widgets: https://developer.apple.com/design/human-interface-guidelines/widgets
 - wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

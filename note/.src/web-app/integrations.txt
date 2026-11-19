@@ -1,5 +1,6 @@
 title: Integrations
 about: The page where people connect the app to other tools (calendar, chat, storage, payments) and manage those links.
+also: design-system/accessibility
 ## Finding
 - A directory of integrations with logo, name and one line on what it does | P
 - Categories and search | R nng-filters

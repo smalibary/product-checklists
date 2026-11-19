@@ -1,5 +1,6 @@
 title: Settings (mobile)
 about: The settings screen of a phone app: grouped lists of options the person can change.
+also: design-system/accessibility
 ## Structure
 - Grouped list with short section titles (Account, Notifications, Privacy, About) | S hig-settings m3-lists
 - Most used first; rarely used in deeper screens | P
@@ -24,4 +25,3 @@ about: The settings screen of a phone app: grouped lists of options the person c
 ## Access
 - Toggles read their state ("Dark mode, switch, on") | S hig-accessibility
 - Large text: rows grow and wrap, values move under names | S hig-accessibility
-- Rows at least 44 pt / 48 dp | S hig-layout m3-layout

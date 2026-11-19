@@ -1,5 +1,6 @@
 title: Button
 about: The control people press to do something: submit, save, open, delete.
+also: design-system/accessibility
 ## Kinds
 - A small set of kinds: primary, secondary, tertiary (text), danger | S m3-buttons hig-buttons
 - One primary button per view or section | R nng-buttons

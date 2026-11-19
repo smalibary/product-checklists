@@ -1,5 +1,6 @@
 title: Tooltip
 about: A small label that appears near an element on hover or keyboard focus, to name it or add a short hint.
+also: design-system/accessibility
 ## When to use
 - Naming icon-only buttons, and short hints that are nice to have | R nng-tooltip
 - Never for information people need to finish a task (put it on the page) | R nng-tooltip

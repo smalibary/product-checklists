@@ -1,5 +1,5 @@
-title: Accessibility (design system)
-about: What a design system builds in so every screen made from it is usable by people with disabilities.
+title: Accessibility
+about: What every page and screen needs so people with disabilities can use it. Other checklists point here instead of repeating it.
 ## Target and law
 - Aim at WCAG 2.2 level AA for every component | S wcag
 - Laws that require it: the European Accessibility Act from June 2025, the ADA in the US | L eu-accessibility-act ada-web
@@ -21,11 +21,18 @@ about: What a design system builds in so every screen made from it is usable by 
 - Icon-only buttons have a text name | S wcag-name-role
 - Status messages announced without moving focus | S wcag-status
 ## Touch and motion
-- Targets at least 24 by 24 px (44 recommended on touch) | S wcag-target hig-layout
+- Targets at least 24 by 24 px on the web (44 recommended); 44 pt on iPhone, 48 dp on Android | S wcag-target hig-layout m3-layout
 - Dragging always has a single-tap alternative | S wcag-dragging
 - Reduced motion respected; nothing flashes more than 3 times a second | S mdn-reduced-motion wcag-flash
+## Pages
+- Each page has a title that names it and the site ("Sign in · Qanat Books") | S wcag-title
+- One main heading, and headings in order so the page reads as an outline | S wcag-headings
+- Works at phone width (320 px) with no sideways scrolling | S wcag-reflow
+- Text can be enlarged to 200% without cutting anything off | S wcag-resize
+- Phone apps support large system text; rows grow instead of cutting text | S hig-accessibility
+- Every flow works start to finish by keyboard alone and with a screen reader | S wcag-keyboard
 ## Content
-- Images: alt text guidance in each component | S wai-images
+- Pictures that tell something have alt text; decorative ones are hidden from screen readers | S wcag-nontext wai-images
 - Forms: labels, help text and errors linked to the field | S wcag-labels wcag-error
 - Language and direction set (Arabic right-to-left) | S w3c-dir
 ## Process

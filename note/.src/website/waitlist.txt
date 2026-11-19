@@ -1,5 +1,6 @@
 title: Waitlist page
 about: Lets people join a queue for access to a product that is not open to everyone yet.
+also: design-system/accessibility
 ## The offer
 - What they are joining and what they get when let in | P
 - How the waitlist works: first come, by invitation, by referral | P
@@ -20,5 +21,4 @@ about: Lets people join a queue for access to a product that is not open to ever
 - An email invite with a clear first step and a link that works once | S owasp-auth
 - Invite links expire after a stated time | S owasp-auth
 ## Access
-- Contrast, text size and phone width meet WCAG | S wcag-contrast wcag-reflow
 - Updates to a place-in-line counter announced without moving focus | S wcag-status

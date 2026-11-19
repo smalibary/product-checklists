@@ -1,5 +1,6 @@
 title: Cart (mobile)
 about: The shopping cart screen of a phone app, before checkout.
+also: design-system/accessibility
 ## Items
 - Each item: photo, name, options (size, colour), price and quantity | R baymard-cart
 - Quantity with minus and plus buttons; removing at zero asks or offers undo | R baymard-cart
@@ -24,4 +25,3 @@ about: The shopping cart screen of a phone app, before checkout.
 ## Access
 - Quantity buttons named ("Increase quantity of Blue shirt") | S hig-accessibility
 - Total changes announced | S wcag-status
-- Large text supported; buttons at least 44 pt / 48 dp | S hig-layout m3-layout

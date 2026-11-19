@@ -1,5 +1,6 @@
 title: Home (web app)
 about: The first screen after signing in, which helps people pick up where they left off and see what needs them.
+also: design-system/accessibility
 ## What it shows
 - A greeting only if short; the useful parts above the fold | R nng-scanning
 - Continue where you left off: recent items | P
@@ -22,6 +23,4 @@ about: The first screen after signing in, which helps people pick up where they 
 - Loads fast; sections load on their own with skeletons | S webdev-lcp nng-skeleton
 - No layout jumping as sections arrive | S webdev-cls
 ## Access
-- Sections have headings; landmarks for main and navigation | S wcag-headings apg-landmarks
 - Page title names the app and "Home" | S wcag-title
-- Works at phone width | S wcag-reflow

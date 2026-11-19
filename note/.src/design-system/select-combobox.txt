@@ -1,5 +1,6 @@
 title: Select and combobox
 about: Choosing one option from a list, with or without typing to filter.
+also: design-system/accessibility
 ## Choosing the control
 - Up to about 5 options: radio buttons instead | S govuk-select nng-dropdown
 - Long lists: a combobox with typing to filter | S apg-combobox

@@ -1,5 +1,6 @@
 title: Pagination
 about: The control for moving between pages of a long list.
+also: design-system/accessibility
 ## Parts
 - Previous and Next with words, not only arrows | S govuk-pagination
 - Page numbers with the current one marked, and gaps shown with ... | S govuk-pagination

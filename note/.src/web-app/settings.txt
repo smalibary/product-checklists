@@ -1,5 +1,6 @@
 title: Settings (web app)
 about: The place where people change how the app works for them, or for their whole workspace.
+also: design-system/accessibility
 ## Structure
 - Personal settings separate from workspace (team) settings | P
 - A side menu of sections (General, Account, Notifications, Billing, Members, Security, Integrations) | P
@@ -22,6 +23,5 @@ about: The place where people change how the app works for them, or for their wh
 - Say exactly what will be lost | R nng-confirm
 ## Access
 - Side menu is navigation with the current section marked | S apg-landmarks
-- Headings, labels and keyboard work | S wcag-headings wcag-labels wcag-keyboard
 - Works at phone width (menu becomes a list or a drop-down) | S wcag-reflow
 - Dark mode and text size settings respected | P mdn-color-scheme

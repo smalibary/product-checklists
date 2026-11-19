@@ -1,5 +1,6 @@
 title: Customer emails
 about: The emails the product sends to people: receipts, alerts, account messages.
+also: design-system/accessibility
 ## Content
 - Subject says what it is and what to do | R nng-microcontent
 - Plain words; one main action | S govuk-email

@@ -1,5 +1,6 @@
 title: Sharing a link (flow)
 about: Sending a page or item to someone else.
+also: design-system/accessibility
 ## Sharing
 - System share sheet on phones | S android-sharesheet hig-share
 - Copy link button with a confirmation | S wcag-status

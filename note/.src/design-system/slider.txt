@@ -1,5 +1,6 @@
 title: Slider
 about: A control for choosing a value or range by dragging a thumb along a track.
+also: design-system/accessibility
 ## When to use
 - When an approximate value is fine and seeing it change helps (volume, price range) | S m3-sliders hig-sliders
 - Not when an exact number matters: pair with a number field or use one instead | R nng-sliders

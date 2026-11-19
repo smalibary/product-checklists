@@ -1,6 +1,6 @@
-﻿UPGRADE (MOBILE) CHECKLIST: 17 items
+﻿UPGRADE (MOBILE) CHECKLIST: 16 items
 Moving from free to paid, or from one plan to a higher one, inside a phone app.
-Backing: 4 Rule, 7 Standard, 2 Research, 4 Practice
+Backing: 4 Rule, 6 Standard, 2 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 MOMENTS
@@ -30,7 +30,6 @@ RESPECT
 
 ACCESS
 16. Price and plan names read clearly   (Standard: hig-accessibility)
-17. Large text supported; buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - nng-modal: https://www.nngroup.com/articles/modal-nonmodal-dialog/
@@ -43,5 +42,3 @@ SOURCES
 - nng-onboarding: https://www.nngroup.com/articles/mobile-app-onboarding/
 - ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

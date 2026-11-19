@@ -1,6 +1,6 @@
-﻿MAKING A CARD PAYMENT (FLOW) CHECKLIST: 19 items
+﻿MAKING A CARD PAYMENT (FLOW) CHECKLIST: 18 items
 Typing card details, passing the bank's check, and getting a result.
-Backing: 2 Rule, 10 Standard, 6 Research, 1 Practice
+Backing: 2 Rule, 9 Standard, 6 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 FIELDS
@@ -30,9 +30,8 @@ TRUST
 16. Saved cards only with consent, shown by brand and last 4   (Standard: pci-dss)
 
 ACCESS
-17. Fields have visible names   (Standard: wcag-labels)
-18. Errors announced and linked to fields   (Standard: wcag-error)
-19. The bank page in the check is reachable by keyboard   (Standard: wcag-keyboard)
+17. Errors announced and linked to fields   (Standard: wcag-error)
+18. The bank page in the check is reachable by keyboard   (Standard: wcag-keyboard)
 
 SOURCES
 - baymard-card: https://baymard.com/blog/how-to-format-card-fields
@@ -49,5 +48,4 @@ SOURCES
 - govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
 - zatca-einvoice: https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx
 - baymard-trust: https://baymard.com/blog/perceived-security-of-payment-form
-- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
 - wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

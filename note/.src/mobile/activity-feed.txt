@@ -1,5 +1,6 @@
 title: Activity Feed (mobile)
 about: A scrolling list of updates in a phone app: posts, events, or what people and things did.
+also: design-system/accessibility
 ## Items
 - Each: who, what, when, with photo or icon and a short preview | P
 - Times as "5 min ago" with the full date on tap or for screen readers | P
@@ -23,4 +24,3 @@ about: A scrolling list of updates in a phone app: posts, events, or what people
 ## Access
 - Each item a single readable unit with actions as custom actions | S hig-accessibility
 - Autoplay can be turned off; reduced motion respected | S wcag-pause
-- Large text supported; targets at least 44 pt / 48 dp | S hig-layout m3-layout

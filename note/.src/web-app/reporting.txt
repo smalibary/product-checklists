@@ -1,5 +1,6 @@
 title: Reporting
 about: The tool for building, saving, scheduling and sharing reports (the Report View note covers reading one).
+also: design-system/accessibility
 ## Building a report
 - Start from templates for common questions | P
 - Choose data, measures (sum, count, average) and grouping in plain words | P

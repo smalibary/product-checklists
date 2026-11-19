@@ -1,5 +1,6 @@
 title: Kanban board
 about: Cards in columns by stage (To do, Doing, Done), moved across as work goes on.
+also: design-system/accessibility
 ## Columns
 - Column name with a count of cards | P
 - Work-in-progress limit per column, warned when passed | P
@@ -26,7 +27,6 @@ about: Cards in columns by stage (To do, Doing, Done), moved across as work goes
 ## Access
 - Moving by keyboard announced ("Card moved to Doing, position 2") | S wcag-status
 - Columns are lists with headings; cards are list items | S wcag-info
-- Focus visible on cards | S wcag-focus
 - On phones: one column at a time, swipe or tabs between columns | S wcag-reflow
 ## Speed
 - Smooth with hundreds of cards | S webdev-inp

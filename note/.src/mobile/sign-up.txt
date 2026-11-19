@@ -1,5 +1,6 @@
 title: Sign up (mobile)
 about: Creating an account in a phone app or mobile site. Started from checklist.design's 8 items, checked 2026-11-19.
+also: design-system/accessibility
 ## Before the form
 - One line saying what you get, above the form | P
 - Try before signing up (guest mode) where the product allows it | R baymard-guest
@@ -67,7 +68,6 @@ about: Creating an account in a phone app or mobile site. Started from checklist
 - Already-have-an-account link | P
 - Delete account inside the app (iPhone and Android) plus a web link (Android) | L apple-5.1.1 play-deletion
 ## Access and language
-- Touch targets at least 24 px (WCAG AA); 44 recommended, and Apple's own guide uses 44 points | S wcag-target
 - Every field has a name screen readers say | S
 - Contrast passes in light and dark | S
 - Large text setting does not break the layout | S

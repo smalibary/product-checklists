@@ -1,5 +1,6 @@
 title: Onboarding Checklist
 about: A short list of first tasks in a new account (add photo, invite a friend, turn on alerts) that ticks off as they are done.
+also: design-system/accessibility
 ## Content
 - 3 to 6 tasks that lead to real value, most important first | R nng-onboarding
 - Each task: short name, why it helps, and a button that goes straight to it | R nng-onboarding
@@ -19,4 +20,3 @@ about: A short list of first tasks in a new account (add photo, invite a friend,
 ## Access
 - Progress announced in words | S wcag-status
 - Done shown by tick and word, not only colour | S wcag-color
-- Rows at least 44 pt / 48 dp; large text supported | S hig-layout m3-layout

@@ -1,6 +1,6 @@
-﻿KANBAN BOARD CHECKLIST: 24 items
+﻿KANBAN BOARD CHECKLIST: 23 items
 Cards in columns by stage (To do, Doing, Done), moved across as work goes on.
-Backing: 0 Rule, 8 Standard, 5 Research, 11 Practice
+Backing: 0 Rule, 7 Standard, 5 Research, 11 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 COLUMNS
@@ -33,11 +33,10 @@ FINDING
 ACCESS
 20. Moving by keyboard announced ("Card moved to Doing, position 2")   (Standard: wcag-status)
 21. Columns are lists with headings; cards are list items   (Standard: wcag-info)
-22. Focus visible on cards   (Standard: wcag-focus)
-23. On phones: one column at a time, swipe or tabs between columns   (Standard: wcag-reflow)
+22. On phones: one column at a time, swipe or tabs between columns   (Standard: wcag-reflow)
 
 SPEED
-24. Smooth with hundreds of cards   (Standard: webdev-inp)
+23. Smooth with hundreds of cards   (Standard: webdev-inp)
 
 SOURCES
 - nng-cards: https://www.nngroup.com/articles/cards-component/
@@ -49,6 +48,5 @@ SOURCES
 - nng-filters: https://www.nngroup.com/articles/filters-vs-facets/
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
 - wcag-info: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships
-- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
 - wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
 - webdev-inp: https://web.dev/articles/inp

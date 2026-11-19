@@ -1,5 +1,6 @@
 title: Calendar
 about: Showing and planning events by day, week and month.
+also: design-system/accessibility
 ## Views
 - Day, week, month and list views, with today marked | P
 - The person's time zone shown and changeable | S iana-tz

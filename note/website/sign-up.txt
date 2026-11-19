@@ -1,6 +1,6 @@
-﻿SIGN UP PAGE (WEBSITE) CHECKLIST: 31 items
+﻿SIGN UP PAGE (WEBSITE) CHECKLIST: 29 items
 Creating an account on a website. The phone version (mobile/sign-up) has the full 65 items; this one adds what differs on a website.
-Backing: 4 Rule, 13 Standard, 9 Research, 5 Practice
+Backing: 4 Rule, 11 Standard, 9 Research, 5 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 BEFORE THE FORM
@@ -46,9 +46,7 @@ SENDING AND AFTER
 28. A welcome screen that leads to the first useful step   (Research: nng-onboarding)
 
 ACCESS
-29. Keyboard-only sign-up works start to finish   (Standard: wcag-keyboard)
-30. Robot checks accessible, or replaced by invisible checks   (Standard: wcag-auth)
-31. Contrast, target size and phone width meet WCAG   (Standard: wcag-contrast, wcag-target, wcag-reflow)
+29. Robot checks accessible, or replaced by invisible checks   (Standard: wcag-auth)
 
 SOURCES
 - baymard-guest: https://baymard.com/blog/reduce-cart-abandonment
@@ -79,7 +77,3 @@ SOURCES
 - nng-status: https://www.nngroup.com/articles/visibility-system-status/
 - owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
 - nng-onboarding: https://www.nngroup.com/articles/mobile-app-onboarding/
-- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
-- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

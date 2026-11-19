@@ -1,5 +1,6 @@
 title: Product page
 about: The page for one product in a shop: pictures, price, options and the button to buy.
+also: design-system/accessibility
 ## Pictures
 - Several large images, including scale and in-use shots | R baymard-product
 - Zoom on tap or hover | R baymard-product

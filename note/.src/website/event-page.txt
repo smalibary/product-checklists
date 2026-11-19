@@ -1,5 +1,6 @@
 title: Event page
 about: A page for one event (talk, conference, webinar, launch) that tells people what, when and where, and gets them registered.
+also: design-system/accessibility
 ## The essentials above the fold
 - Event name and one line on why to attend | P
 - Date and start and end time with the time zone written out | S iso-8601
@@ -32,5 +33,4 @@ about: A page for one event (talk, conference, webinar, launch) that tells peopl
 - A share image and title for social links | P
 ## Accessibility
 - Captions and transcripts for any video | S wcag-captions
-- Colour contrast and readable text sizes | S wcag-contrast
 - Page title includes the event name and date | S wcag-title

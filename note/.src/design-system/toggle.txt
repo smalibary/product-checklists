@@ -1,5 +1,6 @@
 title: Toggle
 about: A switch that turns one setting on or off and takes effect at once.
+also: design-system/accessibility
 ## When to use
 - A setting that applies immediately (Notifications on) | R nng-toggle
 - Not inside a form with a Save button (use a checkbox) | R nng-toggle
@@ -20,6 +21,4 @@ about: A switch that turns one setting on or off and takes effect at once.
 - role switch with aria-checked, or a native checkbox styled as a switch | S apg-switch
 - Space toggles; Enter may too | S apg-switch
 - Label linked to the switch | S wcag-labels
-- Focus ring visible | S wcag-focus
 - Thumb moves to the other side in right-to-left | S w3c-dir
-- Animation respects reduced motion | S mdn-reduced-motion

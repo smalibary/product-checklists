@@ -1,5 +1,6 @@
 title: Cookie consent
 about: Asking before using cookies and trackers that are not strictly needed.
+also: design-system/accessibility
 ## When
 - Consent before any non-essential cookie or tracker is set | L eprivacy gdpr-7
 - Strictly necessary cookies need no consent | L eprivacy

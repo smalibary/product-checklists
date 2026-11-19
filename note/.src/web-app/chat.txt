@@ -1,5 +1,6 @@
 title: Chat (web app)
 about: Messaging between people inside the app: one-to-one, groups and channels.
+also: design-system/accessibility
 ## Conversations list
 - Each conversation: name, photo, last message preview, time, unread count | P
 - Unread shown by more than colour (bold plus a number) | S wcag-color
@@ -32,4 +33,3 @@ about: Messaging between people inside the app: one-to-one, groups and channels.
 ## Access
 - New messages announced politely, not every keystroke | S wcag-status
 - Message list is a log region; keyboard reaches every message action | S wcag-keyboard
-- Works at phone width | S wcag-reflow

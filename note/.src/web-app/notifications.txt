@@ -1,5 +1,6 @@
 title: Notifications (web app)
 about: The in-app list (often a bell) of things that happened which the person may need to act on.
+also: design-system/accessibility
 ## The bell
 - An icon button with a name and the unread count ("Notifications, 3 unread") | S wcag-name-role
 - Count capped (9+) and shown as a badge | R nng-indicators
@@ -22,5 +23,4 @@ about: The in-app list (often a bell) of things that happened which the person m
 - Loading and error states | R nng-skeleton
 ## Access
 - The panel is a dialog or popover with focus moved in and Escape to close | S apg-dialog
-- List items reachable by keyboard | S wcag-keyboard
 - Works at phone width (full-screen panel) | S wcag-reflow

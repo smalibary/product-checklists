@@ -1,6 +1,6 @@
-﻿ADDING TO CART (FLOW) CHECKLIST: 17 items
+﻿ADDING TO CART (FLOW) CHECKLIST: 16 items
 From choosing a product's options to the item being in the cart, with clear feedback.
-Backing: 1 Rule, 8 Standard, 5 Research, 3 Practice
+Backing: 1 Rule, 7 Standard, 5 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 BEFORE ADDING
@@ -30,7 +30,6 @@ AFTER
 ACCESS
 15. Option pickers are real buttons or radios with names   (Standard: wcag-name-role)
 16. Focus stays sensible after adding   (Standard: wcag-focus-order)
-17. Targets at least 24 px web / 44 pt iOS / 48 dp Android   (Standard: wcag-target, hig-layout, m3-layout)
 
 SOURCES
 - baymard-cart: https://baymard.com/research/checkout-usability
@@ -43,6 +42,3 @@ SOURCES
 - wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
 - wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
 - wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
-- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

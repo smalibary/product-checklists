@@ -1,6 +1,6 @@
-﻿UPGRADE (WEB APP) CHECKLIST: 21 items
+﻿UPGRADE (WEB APP) CHECKLIST: 20 items
 The moment and screen where a signed-in user moves to a bigger plan.
-Backing: 6 Rule, 4 Standard, 4 Research, 7 Practice
+Backing: 6 Rule, 3 Standard, 4 Research, 7 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WHEN TO OFFER IT
@@ -34,7 +34,6 @@ HONESTY
 
 ACCESS
 20. Focus moves to the dialog and back; Escape closes it   (Standard: apg-dialog)
-21. Contrast, keyboard and phone width meet WCAG   (Standard: wcag-contrast, wcag-keyboard, wcag-reflow)
 
 SOURCES
 - nng-heuristics: https://www.nngroup.com/articles/ten-usability-heuristics/
@@ -50,6 +49,3 @@ SOURCES
 - govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
 - ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
 - apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
-- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

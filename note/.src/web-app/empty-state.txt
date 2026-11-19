@@ -1,5 +1,6 @@
 title: Empty State
 about: What a screen shows when there is nothing in it yet, nothing matches, or everything is done.
+also: design-system/accessibility
 ## Kinds of empty
 - First use (nothing created yet): explain what goes here and how to start | R nng-empty
 - No results (search or filter): say so and offer to clear filters or change the search | R nng-empty
@@ -20,4 +21,3 @@ about: What a screen shows when there is nothing in it yet, nothing matches, or 
 ## Access
 - Illustrations decorative (hidden) unless they carry meaning | S wai-images
 - Message announced when a search returns nothing | S wcag-status
-- Text and button contrast meet WCAG | S wcag-contrast

@@ -28,3 +28,4 @@
 
 | 2026-11-20 | The app is the Product Checklists page only; the recorder, its library page and all recordings are deleted (code kept as git tag recorder-last). D1 to D4 no longer apply. | Salem: "i want this app to be this artifact, delete all the rest" | Salem |
 | 2026-11-20 | Project and folder renamed from agentscreen to product-checklists | Matches the page title and covers every group, not only code | Salem |
+| 2026-11-20 | General accessibility items live only in the Accessibility checklist; other lists keep only access items special to them, plus an 'Also meets' link | Salem chose it (ask 33): 123 repeats across 150 lists | Salem |

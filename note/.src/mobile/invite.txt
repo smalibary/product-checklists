@@ -1,5 +1,6 @@
 title: Invite (mobile)
 about: Inviting people into a shared space in a phone app (a team, household, group or document), not for a reward.
+also: design-system/accessibility
 ## Ways to invite
 - Share a link through the system share sheet | S hig-share android-sharesheet
 - Type an email or phone number | P
@@ -23,4 +24,3 @@ about: Inviting people into a shared space in a phone app (a team, household, gr
 - Contacts not uploaded or kept without consent | L gdpr-6
 ## Access
 - Role choices as a list with radio buttons and names | S hig-accessibility
-- Large text supported; buttons at least 44 pt / 48 dp | S hig-layout m3-layout

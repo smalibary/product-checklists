@@ -1,6 +1,6 @@
-﻿CART PAGE CHECKLIST: 23 items
+﻿CART PAGE CHECKLIST: 21 items
 Shows what the shopper is about to buy and the full cost, and moves them to checkout.
-Backing: 3 Rule, 4 Standard, 10 Research, 6 Practice
+Backing: 3 Rule, 2 Standard, 10 Research, 6 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 ITEMS
@@ -33,8 +33,6 @@ STATES
 
 ACCESS
 21. Quantity buttons have names ("Increase quantity of Blue mug")   (Standard: wcag-name-role)
-22. Touch targets at least 24 pixels, 44 recommended   (Standard: wcag-target)
-23. Works at phone width with no sideways scroll   (Standard: wcag-reflow)
 
 SOURCES
 - baymard-guest: https://baymard.com/blog/reduce-cart-abandonment
@@ -48,5 +46,3 @@ SOURCES
 - nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
 - wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
-- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

@@ -1,5 +1,6 @@
 title: Referral (mobile)
 about: Inviting others with a personal link or code, where both sides may get a reward.
+also: design-system/accessibility
 ## The offer
 - What both sides get, in one line ("You both get 25 SAR") | P
 - Conditions short and clear (when the reward comes, limits, expiry) with full terms linked | L ftc-endorsements

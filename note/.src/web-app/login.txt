@@ -1,5 +1,6 @@
 title: Login (web app)
 about: Signing in to the app itself, including single sign-on for teams, passkeys and staying signed in. The website login note covers the basics.
+also: design-system/accessibility
 ## Ways in
 - Email or username, then password or passkey | S nist-63b webauthn
 - Passkeys offered and filled in by the browser (autofill on the username field) | S webauthn fido-ux
@@ -28,4 +29,3 @@ about: Signing in to the app itself, including single sign-on for teams, passkey
 - Link to sign up and to help | P
 ## Access
 - Errors next to fields and in a summary, focus moved there | S wcag-error govuk-error-summary
-- Works at phone width and 200% zoom | S wcag-reflow

@@ -1,5 +1,6 @@
 title: Terms of service
 about: The legal agreement people accept to use the product.
+also: design-system/accessibility
 ## Content
 - Plain-language summary at the top | R nng-scanning
 - Headings and a table of contents | S wcag-headings
@@ -15,5 +16,3 @@ about: The legal agreement people accept to use the product.
 - Old versions kept and reachable | P
 ## Fairness
 - No hidden or surprising terms | L ftc-dark-patterns
-## Access
-- Readable on phones and by screen readers | S wcag-reflow

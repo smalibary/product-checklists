@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 31,
+ "next": 34,
  "asks": [
   {
    "id": 2,
@@ -991,6 +991,30 @@
    "status": "done",
    "note": "Example 404 page published: claude.ai/artifact/SjTEd47W9oL2ybUG2hQi2S",
    "updated": "2026-11-19T21:57:09.026Z"
+  },
+  {
+   "id": 31,
+   "at": "2026-11-19T21:58:35.900Z",
+   "text": "what is : Pictures have alt text or are hidden✓ The book drawing is hidden from screen readers can you show me real\n  pages example",
+   "status": "done",
+   "note": "Explained with GOV.UK and W3C examples",
+   "updated": "2026-11-19T21:58:59.494Z"
+  },
+  {
+   "id": 32,
+   "at": "2026-11-19T21:59:53.198Z",
+   "text": "show me real people using it i still dont understand",
+   "status": "done",
+   "note": "Sent CU Boulder screen reader videos",
+   "updated": "2026-11-19T22:00:45.319Z"
+  },
+  {
+   "id": 33,
+   "at": "2026-11-19T22:02:08.359Z",
+   "text": "shouldnt this be in accessbility or something not inside 404 ?",
+   "status": "done",
+   "note": "82 general repeats moved to the Accessibility checklist; 150 lists link to it",
+   "updated": "2026-11-19T22:05:45.673Z"
   }
  ]
 }

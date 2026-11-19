@@ -1,6 +1,6 @@
-﻿CHECKOUT (MOBILE) CHECKLIST: 24 items
+﻿CHECKOUT (MOBILE) CHECKLIST: 22 items
 Paying for physical goods or services in a phone app, from cart to confirmation.
-Backing: 4 Rule, 13 Standard, 4 Research, 3 Practice
+Backing: 4 Rule, 11 Standard, 4 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 STEPS
@@ -39,9 +39,7 @@ AFTER
 21. Offer push alerts for delivery here (see Push Opt-in)   (Standard: hig-notifications)
 
 ACCESS
-22. Large text, VoiceOver and TalkBack work on every step   (Standard: hig-accessibility)
-23. Buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
-24. Keyboard never hides the active field or the button   (Practice)
+22. Keyboard never hides the active field or the button   (Practice)
 
 SOURCES
 - baymard-guest: https://baymard.com/blog/reduce-cart-abandonment
@@ -65,6 +63,3 @@ SOURCES
 - govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
 - zatca-einvoice: https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx
 - hig-notifications: https://developer.apple.com/design/human-interface-guidelines/notifications
-- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

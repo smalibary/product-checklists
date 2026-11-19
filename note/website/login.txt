@@ -1,6 +1,6 @@
-﻿LOGIN PAGE (WEBSITE) CHECKLIST: 31 items
+﻿LOGIN PAGE (WEBSITE) CHECKLIST: 29 items
 Lets returning people sign in quickly and safely, and recover when they cannot.
-Backing: 0 Rule, 22 Standard, 2 Research, 7 Practice
+Backing: 0 Rule, 20 Standard, 2 Research, 7 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 THE FORM
@@ -41,10 +41,8 @@ AFTER SIGN-IN
 
 ACCESS AND LAYOUT
 27. Focus starts on the first field, not stolen later   (Standard: wcag-focus-order)
-28. Contrast and target size meet WCAG   (Standard: wcag-contrast, wcag-target)
-29. Works at phone width and with 200% text   (Standard: wcag-reflow, wcag-resize)
-30. Page title says "Sign in" with the site name   (Standard: wcag-title)
-31. Use the same words everywhere: either "Sign in" or "Log in", not both   (Research: nng-heuristics)
+28. Page title says "Sign in" with the site name   (Standard: wcag-title)
+29. Use the same words everywhere: either "Sign in" or "Log in", not both   (Research: nng-heuristics)
 
 SOURCES
 - webdev-signin: https://web.dev/articles/sign-in-form-best-practices
@@ -66,9 +64,5 @@ SOURCES
 - wcag-help: https://www.w3.org/WAI/WCAG22/Understanding/consistent-help
 - owasp-redirect: https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html
 - wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
-- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
-- wcag-resize: https://www.w3.org/WAI/WCAG22/Understanding/resize-text
 - wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
 - nng-heuristics: https://www.nngroup.com/articles/ten-usability-heuristics/

@@ -1,5 +1,6 @@
 title: Text area
 about: The box for writing longer text, like comments or descriptions.
+also: design-system/accessibility
 ## Basics
 - A visible label and optional help text | S wcag-labels
 - Height fits the expected answer; grows as you type where possible | S govuk-character

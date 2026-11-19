@@ -1,6 +1,6 @@
-﻿PRESS / MEDIA PAGE CHECKLIST: 16 items
+﻿PRESS / MEDIA PAGE CHECKLIST: 15 items
 Gives journalists what they need to write about the company quickly: news, facts, images and a contact.
-Backing: 0 Rule, 3 Standard, 10 Research, 3 Practice
+Backing: 0 Rule, 2 Standard, 10 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CONTACT FIRST
@@ -26,13 +26,10 @@ MEDIA KIT
 ACCESS
 13. Photos and logos have alt text   (Standard: wcag-nontext)
 14. Downloads labelled with type and size   (Standard: wcag-link)
-15. Contrast and headings meet WCAG   (Standard: wcag-contrast, wcag-headings)
-16. Reachable from the footer and About page   (Research: nng-footers)
+15. Reachable from the footer and About page   (Research: nng-footers)
 
 SOURCES
 - nng-press: https://www.nngroup.com/articles/press-area-usability/
 - wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
 - wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
-- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
 - nng-footers: https://www.nngroup.com/articles/footers/

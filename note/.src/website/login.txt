@@ -1,5 +1,6 @@
 title: Login page (website)
 about: Lets returning people sign in quickly and safely, and recover when they cannot.
+also: design-system/accessibility
 ## The form
 - Email (or username) and password on one page, unless the site uses passkeys or single sign-on first | S webdev-signin
 - Real form with a form tag and a submit button, so Enter works and password managers save it | S webdev-signin
@@ -33,7 +34,5 @@ about: Lets returning people sign in quickly and safely, and recover when they c
 - No redirect to an outside address taken from the link | S owasp-redirect
 ## Access and layout
 - Focus starts on the first field, not stolen later | S wcag-focus-order
-- Contrast and target size meet WCAG | S wcag-contrast wcag-target
-- Works at phone width and with 200% text | S wcag-reflow wcag-resize
 - Page title says "Sign in" with the site name | S wcag-title
 - Use the same words everywhere: either "Sign in" or "Log in", not both | R nng-heuristics

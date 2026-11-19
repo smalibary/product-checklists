@@ -1,5 +1,6 @@
 title: Changing email (flow)
 about: Switching the email address an account signs in with.
+also: design-system/accessibility
 ## Asking
 - Current password or fresh sign-in required | S owasp-auth
 - The new address entered with checks | S govuk-email

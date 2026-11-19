@@ -1,5 +1,6 @@
 title: Account (mobile)
 about: The account area of a phone app: personal details, sign-in, security, data and deleting the account.
+also: design-system/accessibility
 ## Details
 - Name, email, phone, each editable with its own screen | P
 - Changing email or phone confirmed by a code to the new one | S owasp-auth
@@ -22,4 +23,3 @@ about: The account area of a phone app: personal details, sign-in, security, dat
 - Clear Sign out at the bottom, with a confirmation | P
 ## Access
 - Rows named with their value | S hig-accessibility
-- Large text supported; rows at least 44 pt / 48 dp | S hig-layout m3-layout

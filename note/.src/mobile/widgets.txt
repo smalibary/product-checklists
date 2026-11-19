@@ -1,5 +1,6 @@
 title: Home screen widgets
 about: Small views of the app on the home screen.
+also: design-system/accessibility
 ## Content
 - One clear job per widget with glanceable information | S hig-widgets android-widgets
 - Sizes offered that fit the content | S hig-widgets

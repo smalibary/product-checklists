@@ -1,5 +1,6 @@
 title: Timeline / Gantt View
 about: Shows tasks as bars along a time line, with their dates, overlaps and dependencies.
+also: design-system/accessibility
 ## Layout
 - Task names in a fixed left column, bars on the right along time | P
 - Today marked with a line | P
@@ -24,7 +25,6 @@ about: Shows tasks as bars along a time line, with their dates, overlaps and dep
 ## Access
 - A list or table view with the same data, for screen readers and phones | S wcag-info
 - Keyboard reaches each bar and shows its dates | S wcag-keyboard
-- Bars' focus is visible | S wcag-focus
 - Tooltips on hover also show on focus | S wcag-hover
 ## Speed
 - Smooth with thousands of tasks (draw only what is visible) | S webdev-inp

@@ -1,5 +1,6 @@
 title: Single Item Detail
 about: The page for one record (a task, a contact, an order, a file) with all its details and actions.
+also: design-system/accessibility
 ## Top
 - Item name as the main heading, with its type and status | S wcag-headings
 - Main actions near the title (Edit, Share, more in a menu) | P
@@ -26,5 +27,3 @@ about: The page for one record (a task, a contact, an order, a file) with all it
 ## Access
 - Each item has its own address, shareable and bookmarkable | P
 - Page title includes the item name | S wcag-title
-- Keyboard reaches every action | S wcag-keyboard
-- Works at phone width | S wcag-reflow

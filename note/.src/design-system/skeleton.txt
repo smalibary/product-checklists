@@ -1,5 +1,6 @@
 title: Skeleton
 about: Grey placeholder shapes shown where content will appear while it loads.
+also: design-system/accessibility
 ## When to use
 - For loads of about 1 to 10 seconds where the page layout is known | R nng-skeleton
 - For quick loads under a second, show nothing (avoid a flash) | R nng-response

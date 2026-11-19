@@ -1,6 +1,6 @@
-﻿CHAT (WEB APP) CHECKLIST: 27 items
+﻿CHAT (WEB APP) CHECKLIST: 26 items
 Messaging between people inside the app: one-to-one, groups and channels.
-Backing: 1 Rule, 11 Standard, 2 Research, 13 Practice
+Backing: 1 Rule, 10 Standard, 2 Research, 13 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CONVERSATIONS LIST
@@ -40,7 +40,6 @@ SAFETY
 ACCESS
 25. New messages announced politely, not every keystroke   (Standard: wcag-status)
 26. Message list is a log region; keyboard reaches every message action   (Standard: wcag-keyboard)
-27. Works at phone width   (Standard: wcag-reflow)
 
 SOURCES
 - wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
@@ -56,4 +55,3 @@ SOURCES
 - owasp-xss: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
 - wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

@@ -1,5 +1,6 @@
 title: Badge
 about: A small label or dot that shows a count or a status (3 unread, New, Paid).
+also: design-system/accessibility
 ## Kinds
 - Count badge on an icon (unread messages) | S m3-badges
 - Dot badge for "something new" without a number | S m3-badges

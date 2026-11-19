@@ -1,6 +1,6 @@
-﻿SEARCH RESULTS (WEB APP) CHECKLIST: 23 items
+﻿SEARCH RESULTS (WEB APP) CHECKLIST: 21 items
 The page that lists what matches a search inside the app, across one or many kinds of items.
-Backing: 0 Rule, 7 Standard, 12 Research, 4 Practice
+Backing: 0 Rule, 5 Standard, 12 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 THE SEARCH BOX
@@ -35,8 +35,6 @@ BEHAVIOUR
 
 ACCESS
 21. Results are a list with headings or links that read well alone   (Standard: wcag-link)
-22. Keyboard moves through results   (Standard: wcag-keyboard)
-23. Works at phone width   (Standard: wcag-reflow)
 
 SOURCES
 - nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
@@ -52,5 +50,3 @@ SOURCES
 - nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
 - nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/
 - wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
-- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

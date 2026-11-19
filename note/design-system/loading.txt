@@ -1,6 +1,6 @@
-﻿LOADING CHECKLIST: 19 items
+﻿LOADING CHECKLIST: 18 items
 How the product shows that something is happening: spinners, progress bars, busy buttons and skeletons.
-Backing: 0 Rule, 8 Standard, 8 Research, 3 Practice
+Backing: 0 Rule, 7 Standard, 8 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CHOOSING BY WAIT TIME
@@ -29,8 +29,7 @@ LOOK
 ACCESS
 16. Progress bar has role progressbar, a name and its value   (Standard: wcag-name-role)
 17. Loading region marked busy (aria-busy); start and end announced once   (Standard: wcag-status)
-18. Animations calm or still with reduced motion   (Standard: mdn-reduced-motion)
-19. Nothing flashes more than 3 times a second   (Standard: wcag-flash)
+18. Nothing flashes more than 3 times a second   (Standard: wcag-flash)
 
 SOURCES
 - nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/
@@ -43,5 +42,4 @@ SOURCES
 - wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
 - wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
-- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
 - wcag-flash: https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold

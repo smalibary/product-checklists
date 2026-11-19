@@ -1,5 +1,6 @@
 title: Booking a time (flow)
 about: Choosing a date and time slot for an appointment or meeting.
+also: design-system/accessibility
 ## Choosing
 - Available days and times only, in the person's time zone, shown clearly | S iana-tz
 - Time zone changeable | S iana-tz

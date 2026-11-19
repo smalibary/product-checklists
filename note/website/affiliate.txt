@@ -1,6 +1,6 @@
-﻿AFFILIATE PAGE CHECKLIST: 18 items
+﻿AFFILIATE PAGE CHECKLIST: 17 items
 Invites people to promote the product for a commission and explains how the programme works.
-Backing: 4 Rule, 2 Standard, 3 Research, 9 Practice
+Backing: 4 Rule, 1 Standard, 3 Research, 9 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 THE OFFER
@@ -31,7 +31,6 @@ TRUST
 
 ACCESSIBILITY
 17. Form fields with visible labels and clear errors   (Standard: wcag-labels, wcag-error)
-18. Headings and contrast meet WCAG   (Standard: wcag-headings, wcag-contrast)
 
 SOURCES
 - baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
@@ -43,5 +42,3 @@ SOURCES
 - nng-faq: https://www.nngroup.com/articles/faqs-deliver-value/
 - wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
 - wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
-- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

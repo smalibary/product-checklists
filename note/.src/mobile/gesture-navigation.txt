@@ -1,5 +1,6 @@
 title: Gesture navigation
 about: Moving around an app with swipes and other gestures, alongside the system's own gestures.
+also: design-system/accessibility
 ## System gestures come first
 - Do not take over the system's edge swipes (home, back, notifications) | S hig-gestures android-back
 - Android back gesture: use the predictive back so people see where they go | S android-back

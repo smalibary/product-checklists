@@ -1,5 +1,6 @@
 title: Feed
 about: A stream of posts or updates from people and things the user follows.
+also: design-system/accessibility
 ## Posts
 - Each post: author with photo and name, time, content, and actions (like, comment, share) | P
 - Long posts cut with "Show more" | P

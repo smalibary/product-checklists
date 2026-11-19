@@ -1,6 +1,6 @@
-﻿PROFILE (MOBILE) CHECKLIST: 19 items
+﻿PROFILE (MOBILE) CHECKLIST: 18 items
 A person's profile screen in a phone app: their own (editable) and other people's (viewed).
-Backing: 3 Rule, 10 Standard, 0 Research, 6 Practice
+Backing: 3 Rule, 9 Standard, 0 Research, 6 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 HEADER
@@ -32,7 +32,6 @@ PRIVACY
 ACCESS
 17. Photo has the person's name as its description   (Standard: wcag-nontext)
 18. Counts read with their meaning ("120 followers")   (Standard: hig-accessibility)
-19. Large text supported; buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - hig-tab-bars: https://developer.apple.com/design/human-interface-guidelines/tab-bars
@@ -46,5 +45,3 @@ SOURCES
 - apple-review: https://developer.apple.com/app-store/review/guidelines/
 - wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

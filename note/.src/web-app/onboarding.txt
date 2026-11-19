@@ -1,5 +1,6 @@
 title: Onboarding (web app)
 about: The first minutes in the app after sign-up, getting the person to their first real success.
+also: design-system/accessibility
 ## Shape
 - Lead to the first useful result fast ("aha moment"), not a tour of every feature | R nng-onboarding
 - Ask a few setup questions only if the answers change what they see | P

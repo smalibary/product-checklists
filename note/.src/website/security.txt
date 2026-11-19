@@ -1,5 +1,6 @@
 title: Security page
 about: The public page that tells customers, buyers and researchers how the company protects their data and how to report a weakness.
+also: design-system/accessibility
 ## Trust summary at the top
 - One plain sentence that says what is protected and how, before any detail | P
 - Certifications held (SOC 2, ISO 27001, PCI DSS) shown with the year and scope, never a badge for one not held | L ftc-dark-patterns

@@ -1,5 +1,6 @@
 title: Icon
 about: The small symbols in a design system, how they are drawn, sized and labelled.
+also: design-system/accessibility
 ## The set
 - One icon family with one style (line or filled, same stroke and corners) | S m3-icons hig-icons
 - Drawn on one grid (24 px with padding), with sizes 16, 20, 24 | S m3-icons

@@ -1,5 +1,6 @@
 title: Feedback (mobile)
 about: Asking for ratings, reviews, bug reports and ideas inside a phone app.
+also: design-system/accessibility
 ## Store rating
 - Use the system review prompt (SKStoreReviewController / In-App Review API) | S apple-review-prompt play-in-app-review
 - Ask after a success moment, never on first launch or during a task | S apple-review-prompt
@@ -18,5 +19,3 @@ about: Asking for ratings, reviews, bug reports and ideas inside a phone app.
 - Answers come back in the app or by email; the person can follow their report | P
 ## Access
 - Ratings with buttons, not only swipes | S wcag-gestures
-- Form fields named; large text supported | S wcag-labels hig-accessibility
-- Buttons at least 44 pt / 48 dp | S hig-layout m3-layout

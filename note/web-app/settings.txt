@@ -1,6 +1,6 @@
-﻿SETTINGS (WEB APP) CHECKLIST: 20 items
+﻿SETTINGS (WEB APP) CHECKLIST: 19 items
 The place where people change how the app works for them, or for their whole workspace.
-Backing: 0 Rule, 6 Standard, 7 Research, 7 Practice
+Backing: 0 Rule, 5 Standard, 7 Research, 7 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 STRUCTURE
@@ -29,9 +29,8 @@ DANGEROUS ACTIONS
 
 ACCESS
 17. Side menu is navigation with the current section marked   (Standard: apg-landmarks)
-18. Headings, labels and keyboard work   (Standard: wcag-headings, wcag-labels, wcag-keyboard)
-19. Works at phone width (menu becomes a list or a drop-down)   (Standard: wcag-reflow)
-20. Dark mode and text size settings respected   (Practice: mdn-color-scheme)
+18. Works at phone width (menu becomes a list or a drop-down)   (Standard: wcag-reflow)
+19. Dark mode and text size settings respected   (Practice: mdn-color-scheme)
 
 SOURCES
 - nng-toggle: https://www.nngroup.com/articles/toggle-switch-guidelines/
@@ -42,8 +41,5 @@ SOURCES
 - wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
 - nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
 - apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
-- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
-- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
-- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
 - wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
 - mdn-color-scheme: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme

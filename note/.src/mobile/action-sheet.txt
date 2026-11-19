@@ -1,5 +1,6 @@
 title: Action Sheet
 about: A list of actions that slides up from the bottom of the phone screen, about the thing just tapped.
+also: design-system/accessibility
 ## When to use
 - Choices about one item (Share, Edit, Delete) or confirming a destructive action | S hig-action-sheets
 - Android uses a bottom sheet or a menu for the same job | S m3-bottom-sheets m3-menus

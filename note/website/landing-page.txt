@@ -1,6 +1,6 @@
-﻿LANDING PAGE CHECKLIST: 26 items
+﻿LANDING PAGE CHECKLIST: 23 items
 The page people arrive on from an ad, a link or a search; it has one job: get them to take one action.
-Backing: 4 Rule, 10 Standard, 7 Research, 5 Practice
+Backing: 4 Rule, 7 Standard, 7 Research, 5 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 ABOVE THE FOLD
@@ -35,11 +35,8 @@ HONESTY
 21. Prices and terms in the page, not only in small print   (Rule: ftc-junk-fees)
 
 ACCESS AND PHONES
-22. Works at phone width with no sideways scroll   (Standard: wcag-reflow)
-23. Contrast and text size meet WCAG   (Standard: wcag-contrast)
-24. Buttons at least 24 by 24 pixels (44 recommended)   (Standard: wcag-target)
-25. Video has captions, starts muted and can be paused   (Standard: wcag-captions, wcag-audio, wcag-pause)
-26. A page title and description written for search and sharing   (Standard: google-title, google-snippet)
+22. Video has captions, starts muted and can be paused   (Standard: wcag-captions, wcag-audio, wcag-pause)
+23. A page title and description written for search and sharing   (Standard: google-title, google-snippet)
 
 SOURCES
 - nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
@@ -58,9 +55,6 @@ SOURCES
 - webdev-vitals-business: https://web.dev/case-studies/vitals-business-impact
 - ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
 - ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
-- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
 - wcag-captions: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded
 - wcag-audio: https://www.w3.org/WAI/WCAG22/Understanding/audio-control
 - wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide

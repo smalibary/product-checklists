@@ -1,6 +1,6 @@
-﻿BILLING (WEB APP) CHECKLIST: 21 items
+﻿BILLING (WEB APP) CHECKLIST: 20 items
 The in-app page where an account owner sees their plan, payment method, invoices and usage, and changes or cancels.
-Backing: 6 Rule, 7 Standard, 0 Research, 8 Practice
+Backing: 6 Rule, 6 Standard, 0 Research, 8 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 PLAN
@@ -32,7 +32,6 @@ ACCESS
 18. Invoice list is a real table with headers   (Standard: wai-tables)
 19. Amounts read clearly by screen readers (currency named)   (Standard: wcag-name-role)
 20. Confirmations for charges name the amount   (Standard: wcag-prevent)
-21. Works at phone width   (Standard: wcag-reflow)
 
 SOURCES
 - ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
@@ -46,4 +45,3 @@ SOURCES
 - wai-tables: https://www.w3.org/WAI/tutorials/tables/
 - wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
 - wcag-prevent: https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

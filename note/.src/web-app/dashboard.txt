@@ -1,5 +1,6 @@
 title: Dashboard (web app)
 about: The overview screen that shows the state of things at a glance and points to what needs attention.
+also: design-system/accessibility
 ## Purpose
 - Built for one audience and its questions (an operator watches, a manager reviews) | R nng-dashboards
 - The few numbers that matter most at the top, largest | R nng-dashboards

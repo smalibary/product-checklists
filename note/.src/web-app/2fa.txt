@@ -1,5 +1,6 @@
 title: 2FA (two-step sign-in)
 about: Setting up and using a second check at sign-in (an app code, a security key, a passkey or a text code).
+also: design-system/accessibility
 ## Choosing a method
 - Offer the strongest first: passkey or security key, then an authenticator app, then text or email codes | S nist-63b-auth owasp-mfa
 - Explain each method in one line, with what the person needs (a phone, a key) | P

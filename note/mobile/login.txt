@@ -1,6 +1,6 @@
-﻿LOGIN (MOBILE) CHECKLIST: 20 items
+﻿LOGIN (MOBILE) CHECKLIST: 18 items
 Signing in to a phone app with password, passkey, code, biometrics or another account.
-Backing: 0 Rule, 16 Standard, 2 Research, 2 Practice
+Backing: 0 Rule, 14 Standard, 2 Research, 2 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WAYS IN
@@ -31,9 +31,7 @@ SECURITY
 17. New device sign-in alert by email   (Standard: owasp-auth)
 
 ACCESS
-18. Fields have visible names, not placeholders only   (Standard: wcag-labels)
-19. Large text supported; keyboard never covers the button   (Standard: hig-layout)
-20. Buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
+18. Large text supported; keyboard never covers the button   (Standard: hig-layout)
 
 SOURCES
 - passkeys-dev: https://passkeys.dev/
@@ -49,6 +47,4 @@ SOURCES
 - android-biometric: https://developer.android.com/identity/sign-in/biometric-auth
 - owasp-masvs: https://mas.owasp.org/MASVS/
 - owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
-- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
 - hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

@@ -1,5 +1,6 @@
 title: Data and chart animation
 about: Animating charts, numbers and lists so changes are easy to follow.
+also: design-system/accessibility
 ## Charts
 - Animate from old values to new so people see what changed | R heer-transitions
 - One kind of change at a time (axes, then data) | R heer-transitions

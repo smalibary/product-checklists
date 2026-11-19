@@ -1,6 +1,6 @@
-﻿EVENT PAGE CHECKLIST: 28 items
+﻿EVENT PAGE CHECKLIST: 27 items
 A page for one event (talk, conference, webinar, launch) that tells people what, when and where, and gets them registered.
-Backing: 4 Rule, 7 Standard, 4 Research, 13 Practice
+Backing: 4 Rule, 6 Standard, 4 Research, 13 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 THE ESSENTIALS ABOVE THE FOLD
@@ -40,8 +40,7 @@ SEARCH AND SHARING
 
 ACCESSIBILITY
 26. Captions and transcripts for any video   (Standard: wcag-captions)
-27. Colour contrast and readable text sizes   (Standard: wcag-contrast)
-28. Page title includes the event name and date   (Standard: wcag-title)
+27. Page title includes the event name and date   (Standard: wcag-title)
 
 SOURCES
 - iso-8601: https://www.iso.org/iso-8601-date-and-time-format.html
@@ -58,5 +57,4 @@ SOURCES
 - google-event: https://developers.google.com/search/docs/appearance/structured-data/event
 - schema-event: https://schema.org/Event
 - wcag-captions: https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
 - wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled

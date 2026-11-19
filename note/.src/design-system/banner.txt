@@ -1,5 +1,6 @@
 title: Banner
 about: A full-width message across the top of the app or page, about something that affects the whole product (outage, trial ending, cookies).
+also: design-system/accessibility
 ## When to use
 - For product-wide news or problems that persist (trial ends, payment failed, read-only mode) | S m3-banner
 - One banner at a time; more wait in line | S m3-banner

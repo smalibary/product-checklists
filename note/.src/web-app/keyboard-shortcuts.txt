@@ -1,5 +1,6 @@
 title: Keyboard shortcuts
 about: Key combinations that let regular users work faster.
+also: design-system/accessibility
 ## Design
 - Shortcuts for the most frequent actions only | R nng-shortcuts
 - Platform conventions followed (Ctrl on Windows, Cmd on Mac) | S hig-keyboards

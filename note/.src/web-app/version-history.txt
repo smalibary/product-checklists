@@ -1,5 +1,6 @@
 title: Version History
 about: The list of saved versions of a document or item, so people can see changes and go back.
+also: design-system/accessibility
 ## The list
 - Versions newest first, with date, time and who made them | P
 - Automatic versions grouped (by hour or session); named versions stand out | P
@@ -21,5 +22,4 @@ about: The list of saved versions of a document or item, so people can see chang
 - Deleted items can be restored for a stated time | R nng-control
 ## Access
 - History panel opens as a side panel with focus moved in | S apg-dialog
-- The list works by keyboard | S wcag-keyboard
 - Dates readable by screen readers | P

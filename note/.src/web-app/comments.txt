@@ -1,5 +1,6 @@
 title: Comments
 about: Notes people leave on an item or on a part of it, with replies, mentions and resolving.
+also: design-system/accessibility
 ## Writing
 - A box with a clear label and a Send button; Enter behaviour stated (Enter sends or adds a line) | S wcag-labels
 - Mention people with @, with suggestions as you type | S apg-combobox

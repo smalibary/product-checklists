@@ -1,5 +1,6 @@
 title: Deleting account (flow)
 about: Permanently removing an account and its data, by the person's own choice.
+also: design-system/accessibility
 ## Finding it
 - In account settings, clearly named | S apple-deletion play-deletion
 - Inside the app if accounts are made in the app (App Store); a web page too (Google Play) | S apple-deletion play-deletion
@@ -21,5 +22,4 @@ about: Permanently removing an account and its data, by the person's own choice.
 ## Rules
 - GDPR right to erasure; Saudi PDPL also gives the right to destruction of personal data | L gdpr-17 pdpl
 ## Access
-- Every step works by keyboard and screen reader | S wcag-keyboard
 - No time limit on the confirmation | S wcag-timing

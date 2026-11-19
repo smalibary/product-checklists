@@ -1,5 +1,6 @@
 title: Notification Settings
 about: Where people choose what they are told about, and how (email, in-app, push, text).
+also: design-system/accessibility
 ## Structure
 - Grouped by topic (mentions, comments, billing, security, product news) | P
 - A grid: topics down the side, channels across the top (email, push, in-app) | P

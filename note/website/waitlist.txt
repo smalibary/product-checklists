@@ -1,6 +1,6 @@
-﻿WAITLIST PAGE CHECKLIST: 17 items
+﻿WAITLIST PAGE CHECKLIST: 16 items
 Lets people join a queue for access to a product that is not open to everyone yet.
-Backing: 5 Rule, 6 Standard, 2 Research, 4 Practice
+Backing: 5 Rule, 5 Standard, 2 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 THE OFFER
@@ -27,8 +27,7 @@ WHEN ACCESS OPENS
 15. Invite links expire after a stated time   (Standard: owasp-auth)
 
 ACCESS
-16. Contrast, text size and phone width meet WCAG   (Standard: wcag-contrast, wcag-reflow)
-17. Updates to a place-in-line counter announced without moving focus   (Standard: wcag-status)
+16. Updates to a place-in-line counter announced without moving focus   (Standard: wcag-status)
 
 SOURCES
 - ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
@@ -41,6 +40,4 @@ SOURCES
 - govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
 - can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
 - owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages

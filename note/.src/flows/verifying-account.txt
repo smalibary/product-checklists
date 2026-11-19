@@ -1,5 +1,6 @@
 title: Verifying account (flow)
 about: Proving an email, phone number or identity belongs to the person, by link, code or document check.
+also: design-system/accessibility
 ## Email or phone
 - Say where the code or link went, with a way to change it | R nng-errors
 - Code field: one box, numbers keyboard, autofill from SMS or email (one-time-code) | S webdev-otp mdn-autocomplete

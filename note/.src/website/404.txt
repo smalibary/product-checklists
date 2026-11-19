@@ -1,5 +1,6 @@
 title: 404 page
 about: The page shown when an address does not exist; its job is to get the visitor back on track.
+also: design-system/accessibility
 ## Message
 - Plain words: "We cannot find that page", without the word "404" as the headline | R nng-404 govuk-404
 - A short reason: the address may be mistyped, or the page moved | R nng-404 govuk-404
@@ -15,6 +16,3 @@ about: The page shown when an address does not exist; its job is to get the visi
 - Moved pages redirect (301) to their new home instead of showing a 404 | S google-404
 - Broken links found in logs and fixed | P
 - The page title says "Page not found" with the site name | S wcag-title
-## Access
-- One main heading, contrast and phone width meet WCAG | S wcag-headings wcag-contrast wcag-reflow
-- Images or illustrations have alt text or are hidden if decorative | S wcag-nontext

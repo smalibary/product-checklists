@@ -1,5 +1,6 @@
 title: Blog (list page)
 about: The blog's front page that lists articles and helps readers find one to read.
+also: design-system/accessibility
 ## List
 - Newest posts first, with a featured post at the top if useful | R nng-blog
 - Each card: title, short summary, date, author, reading time and image | R nng-blog

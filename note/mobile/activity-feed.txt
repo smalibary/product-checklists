@@ -1,6 +1,6 @@
-﻿ACTIVITY FEED (MOBILE) CHECKLIST: 18 items
+﻿ACTIVITY FEED (MOBILE) CHECKLIST: 17 items
 A scrolling list of updates in a phone app: posts, events, or what people and things did.
-Backing: 1 Rule, 6 Standard, 4 Research, 7 Practice
+Backing: 1 Rule, 5 Standard, 4 Research, 7 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 ITEMS
@@ -31,7 +31,6 @@ OFFLINE
 ACCESS
 16. Each item a single readable unit with actions as custom actions   (Standard: hig-accessibility)
 17. Autoplay can be turned off; reduced motion respected   (Standard: wcag-pause)
-18. Large text supported; targets at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - nng-notifications: https://www.nngroup.com/articles/push-notification/
@@ -42,5 +41,3 @@ SOURCES
 - apple-review: https://developer.apple.com/app-store/review/guidelines/
 - ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
 - wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

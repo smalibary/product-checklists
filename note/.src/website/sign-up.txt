@@ -1,5 +1,6 @@
 title: Sign up page (website)
 about: Creating an account on a website. The phone version (mobile/sign-up) has the full 65 items; this one adds what differs on a website.
+also: design-system/accessibility
 ## Before the form
 - What the person gets, in one line above the form | P
 - Let people try or buy without an account where possible | R baymard-guest nng-login-walls
@@ -36,6 +37,4 @@ about: Creating an account on a website. The phone version (mobile/sign-up) has 
 - Account-exists case handled without revealing which emails have accounts | S owasp-auth
 - A welcome screen that leads to the first useful step | R nng-onboarding
 ## Access
-- Keyboard-only sign-up works start to finish | S wcag-keyboard
 - Robot checks accessible, or replaced by invisible checks | S wcag-auth
-- Contrast, target size and phone width meet WCAG | S wcag-contrast wcag-target wcag-reflow

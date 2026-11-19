@@ -1,6 +1,6 @@
-﻿ONBOARDING CHECKLIST CHECKLIST: 15 items
+﻿ONBOARDING CHECKLIST CHECKLIST: 14 items
 A short list of first tasks in a new account (add photo, invite a friend, turn on alerts) that ticks off as they are done.
-Backing: 0 Rule, 4 Standard, 6 Research, 5 Practice
+Backing: 0 Rule, 3 Standard, 6 Research, 5 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CONTENT
@@ -26,7 +26,6 @@ PERMISSIONS IN THE LIST
 ACCESS
 13. Progress announced in words   (Standard: wcag-status)
 14. Done shown by tick and word, not only colour   (Standard: wcag-color)
-15. Rows at least 44 pt / 48 dp; large text supported   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - nng-onboarding: https://www.nngroup.com/articles/mobile-app-onboarding/
@@ -35,5 +34,3 @@ SOURCES
 - webdev-permissions: https://web.dev/articles/permissions-best-practices
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
 - wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

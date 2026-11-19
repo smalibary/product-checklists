@@ -1,6 +1,6 @@
-﻿BILLING PAGE (WEBSITE) CHECKLIST: 18 items
+﻿BILLING PAGE (WEBSITE) CHECKLIST: 17 items
 The public page that explains how billing works: payment methods, invoices, taxes, refunds and cancelling.
-Backing: 8 Rule, 2 Standard, 2 Research, 6 Practice
+Backing: 8 Rule, 1 Standard, 2 Research, 6 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 HOW YOU PAY
@@ -30,9 +30,6 @@ PROBLEMS
 16. A contact for billing questions   (Research: nng-contact)
 17. FAQ for common questions   (Research: nng-faq)
 
-ACCESS
-18. Headings, contrast and plain words meet WCAG   (Standard: wcag-headings, wcag-contrast)
-
 SOURCES
 - eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
 - ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
@@ -41,5 +38,3 @@ SOURCES
 - pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
 - nng-contact: https://www.nngroup.com/articles/contact-us-pages/
 - nng-faq: https://www.nngroup.com/articles/faqs-deliver-value/
-- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum

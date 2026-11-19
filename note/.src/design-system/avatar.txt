@@ -1,5 +1,6 @@
 title: Avatar
 about: A small picture (or initials) that represents a person or an organisation.
+also: design-system/accessibility
 ## Content
 - Photo when there is one; initials as the fallback; then a generic icon | P
 - Initials from the first letters of the name, handling one-word and Arabic names | S w3c-names

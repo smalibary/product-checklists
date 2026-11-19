@@ -1,5 +1,6 @@
 title: Checkout (mobile)
 about: Paying for physical goods or services in a phone app, from cart to confirmation.
+also: design-system/accessibility
 ## Steps
 - As few screens as possible; guest checkout allowed | R baymard-guest
 - Progress shown for multi-step checkout | R nng-progress
@@ -29,6 +30,4 @@ about: Paying for physical goods or services in a phone app, from cart to confir
 - Receipt and VAT invoice by email | L zatca-einvoice
 - Offer push alerts for delivery here (see Push Opt-in) | S hig-notifications
 ## Access
-- Large text, VoiceOver and TalkBack work on every step | S hig-accessibility
-- Buttons at least 44 pt / 48 dp | S hig-layout m3-layout
 - Keyboard never hides the active field or the button | P

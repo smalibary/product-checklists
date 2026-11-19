@@ -1,5 +1,6 @@
 title: Radio
 about: A group of round buttons where people choose exactly one option.
+also: design-system/accessibility
 ## When to use
 - One choice from a short list (2 to about 7) where seeing all options helps | S govuk-radios
 - Longer lists: a select or a combobox | R nng-dropdown

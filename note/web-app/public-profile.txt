@@ -1,6 +1,6 @@
-﻿PUBLIC PROFILE CHECKLIST: 18 items
+﻿PUBLIC PROFILE CHECKLIST: 17 items
 The page other people see about a user: who they are and what they have made or shared.
-Backing: 5 Rule, 6 Standard, 0 Research, 7 Practice
+Backing: 5 Rule, 5 Standard, 0 Research, 7 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CONTENT
@@ -29,7 +29,6 @@ ADDRESS AND SEARCH
 
 ACCESS
 17. Photo has alt text with the name, or is decorative beside the name   (Standard: wai-images)
-18. Headings for sections; contrast and phone width meet WCAG   (Standard: wcag-headings, wcag-contrast, wcag-reflow)
 
 SOURCES
 - wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
@@ -40,6 +39,3 @@ SOURCES
 - schema-person: https://schema.org/Person
 - wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
 - wai-images: https://www.w3.org/WAI/tutorials/images/
-- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
-- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
-- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

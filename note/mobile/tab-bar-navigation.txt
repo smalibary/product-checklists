@@ -1,6 +1,6 @@
-﻿TAB BAR NAVIGATION CHECKLIST: 19 items
+﻿TAB BAR NAVIGATION CHECKLIST: 18 items
 The bar at the bottom of a phone app with the main sections (also called a bottom navigation bar or dock).
-Backing: 0 Rule, 16 Standard, 3 Research, 0 Practice
+Backing: 0 Rule, 15 Standard, 3 Research, 0 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CONTENT
@@ -28,9 +28,8 @@ PLATFORM
 
 ACCESS
 16. Each tab has a name and says it is selected ("Home, tab, 1 of 5, selected")   (Standard: hig-accessibility)
-17. Targets at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
-18. Labels stay readable with large text (bigger labels shown on long press on iOS)   (Standard: hig-accessibility)
-19. Order flips for right-to-left languages   (Standard: w3c-dir)
+17. Labels stay readable with large text (bigger labels shown on long press on iOS)   (Standard: hig-accessibility)
+18. Order flips for right-to-left languages   (Standard: w3c-dir)
 
 SOURCES
 - hig-tab-bars: https://developer.apple.com/design/human-interface-guidelines/tab-bars
@@ -42,5 +41,4 @@ SOURCES
 - android-edge: https://developer.android.com/develop/ui/views/layout/edge-to-edge
 - nng-consistency: https://www.nngroup.com/articles/consistency-and-standards/
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- m3-layout: https://m3.material.io/foundations/layout
 - w3c-dir: https://www.w3.org/International/questions/qa-html-dir

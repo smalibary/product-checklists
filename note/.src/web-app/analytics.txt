@@ -1,5 +1,6 @@
 title: Analytics
 about: Charts and numbers that show how something is performing over time, for people to understand and decide.
+also: design-system/accessibility
 ## Overview
 - The few numbers that matter most at the top, each with change from the last period | R nng-dashboards
 - Change shown as number and arrow or word, not only green and red | S wcag-color

@@ -1,5 +1,6 @@
 title: Billing page (website)
 about: The public page that explains how billing works: payment methods, invoices, taxes, refunds and cancelling.
+also: design-system/accessibility
 ## How you pay
 - Payment methods accepted, with logos and words (cards, Apple Pay, mada, bank transfer, invoice) | P
 - Currencies offered and which one the customer will be charged in | L eu-consumer-rights
@@ -22,5 +23,3 @@ about: The public page that explains how billing works: payment methods, invoice
 - Card security: card details handled by a PCI-certified payment provider | S pci-dss
 - A contact for billing questions | R nng-contact
 - FAQ for common questions | R nng-faq
-## Access
-- Headings, contrast and plain words meet WCAG | S wcag-headings wcag-contrast

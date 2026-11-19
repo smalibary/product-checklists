@@ -1,6 +1,6 @@
-﻿FEEDBACK (MOBILE) CHECKLIST: 15 items
+﻿FEEDBACK (MOBILE) CHECKLIST: 13 items
 Asking for ratings, reviews, bug reports and ideas inside a phone app.
-Backing: 1 Rule, 7 Standard, 3 Research, 4 Practice
+Backing: 1 Rule, 5 Standard, 3 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 STORE RATING
@@ -25,8 +25,6 @@ REPLIES
 
 ACCESS
 13. Ratings with buttons, not only swipes   (Standard: wcag-gestures)
-14. Form fields named; large text supported   (Standard: wcag-labels, hig-accessibility)
-15. Buttons at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - apple-review-prompt: https://developer.apple.com/documentation/storekit/requesting-app-store-reviews
@@ -36,7 +34,3 @@ SOURCES
 - gdpr-13: https://gdpr-info.eu/art-13-gdpr/
 - nng-modal: https://www.nngroup.com/articles/modal-nonmodal-dialog/
 - wcag-gestures: https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures
-- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
-- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

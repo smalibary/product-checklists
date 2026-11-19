@@ -1,5 +1,6 @@
 title: Press / Media page
 about: Gives journalists what they need to write about the company quickly: news, facts, images and a contact.
+also: design-system/accessibility
 ## Contact first
 - A named press contact with email and phone, near the top | R nng-press
 - Expected reply time | R nng-press
@@ -19,5 +20,4 @@ about: Gives journalists what they need to write about the company quickly: news
 ## Access
 - Photos and logos have alt text | S wcag-nontext
 - Downloads labelled with type and size | S wcag-link
-- Contrast and headings meet WCAG | S wcag-contrast wcag-headings
 - Reachable from the footer and About page | R nng-footers

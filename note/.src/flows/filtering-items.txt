@@ -1,5 +1,6 @@
 title: Filtering items (flow)
 about: Narrowing a list of products or records with filters, and seeing what is applied.
+also: design-system/accessibility
 ## Filters
 - Filters that match how people choose (price, size, brand, date, status) | R baymard-filters nng-filters
 - Count of results per option | R baymard-filters
@@ -21,4 +22,3 @@ about: Narrowing a list of products or records with filters, and seeing what is 
 - Filter groups as fieldsets with names | S wcag-info
 - Checkboxes and radios are real controls | S wcag-name-role
 - Focus does not jump when results update | S wcag-on-input
-- Targets at least 24 px web / 44 pt iOS / 48 dp Android | S wcag-target hig-layout m3-layout

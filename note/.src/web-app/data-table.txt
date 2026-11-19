@@ -1,5 +1,6 @@
 title: Data Table
 about: A table of many records that people scan, compare, sort, filter and act on.
+also: design-system/accessibility
 ## Structure
 - Real table markup with column headers (and row headers where one column names the row) | S wai-tables wcag-info
 - A caption or heading that names the table | S wai-tables

@@ -1,6 +1,6 @@
-﻿SEARCH (MOBILE) CHECKLIST: 20 items
+﻿SEARCH (MOBILE) CHECKLIST: 19 items
 Searching inside a phone app: the search field, suggestions, results and filters.
-Backing: 0 Rule, 9 Standard, 7 Research, 4 Practice
+Backing: 0 Rule, 8 Standard, 7 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 GETTING THERE
@@ -33,7 +33,6 @@ NO RESULTS
 ACCESS
 18. Field has a name ("Search products")   (Standard: hig-accessibility)
 19. Number of results announced   (Standard: wcag-status)
-20. Large text supported; results rows at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - hig-search: https://developer.apple.com/design/human-interface-guidelines/search-fields
@@ -47,5 +46,3 @@ SOURCES
 - nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
 - wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

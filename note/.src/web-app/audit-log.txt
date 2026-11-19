@@ -1,5 +1,6 @@
 title: Audit Log
 about: The record of who did what, when and from where, for admins to check security and changes.
+also: design-system/accessibility
 ## What is recorded
 - Who (person or key), what action, on which item, when, and from where (IP, device) | S owasp-logging
 - Sign-ins, failed sign-ins, password and 2FA changes | S owasp-logging

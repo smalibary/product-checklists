@@ -1,6 +1,6 @@
-﻿IN-APP NOTIFICATIONS CHECKLIST: 18 items
+﻿IN-APP NOTIFICATIONS CHECKLIST: 16 items
 Messages shown inside the phone app while it is open: a notifications list, banners at the top, and badges.
-Backing: 0 Rule, 8 Standard, 4 Research, 6 Practice
+Backing: 0 Rule, 6 Standard, 4 Research, 6 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 THE LIST
@@ -26,8 +26,6 @@ VOLUME AND CONTROL
 ACCESS
 15. New banners announced by VoiceOver and TalkBack without moving focus   (Standard: hig-accessibility)
 16. Banners stay long enough to read, or can be found again in the list   (Standard: wcag-timing)
-17. Items readable with large text   (Standard: hig-accessibility)
-18. Targets at least 44 pt / 48 dp   (Standard: hig-layout, m3-layout)
 
 SOURCES
 - wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
@@ -39,5 +37,3 @@ SOURCES
 - nng-notifications: https://www.nngroup.com/articles/push-notification/
 - hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
 - wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable
-- hig-layout: https://developer.apple.com/design/human-interface-guidelines/layout
-- m3-layout: https://m3.material.io/foundations/layout

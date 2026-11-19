@@ -1,5 +1,6 @@
 title: Inviting a teammate (flow)
 about: Adding someone to a workspace by email or link.
+also: design-system/accessibility
 ## Inviting
 - Enter one or many email addresses, with checks | S govuk-email
 - Pick a role, with what each role can do | S owasp-authz

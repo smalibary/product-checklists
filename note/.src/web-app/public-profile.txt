@@ -1,5 +1,6 @@
 title: Public Profile
 about: The page other people see about a user: who they are and what they have made or shared.
+also: design-system/accessibility
 ## Content
 - Name, photo, short bio and role | P
 - What the person has made or shared (posts, projects, reviews) | P
@@ -22,4 +23,3 @@ about: The page other people see about a user: who they are and what they have m
 - Page title with the person's name | S wcag-title
 ## Access
 - Photo has alt text with the name, or is decorative beside the name | S wai-images
-- Headings for sections; contrast and phone width meet WCAG | S wcag-headings wcag-contrast wcag-reflow

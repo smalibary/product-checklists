@@ -1,5 +1,6 @@
 title: Billing (web app)
 about: The in-app page where an account owner sees their plan, payment method, invoices and usage, and changes or cancels.
+also: design-system/accessibility
 ## Plan
 - Current plan, price, billing period and next charge date and amount | L ftc-negative-option
 - Usage against limits (seats, storage, calls) with a bar and numbers | P
@@ -25,4 +26,3 @@ about: The in-app page where an account owner sees their plan, payment method, i
 - Invoice list is a real table with headers | S wai-tables
 - Amounts read clearly by screen readers (currency named) | S wcag-name-role
 - Confirmations for charges name the amount | S wcag-prevent
-- Works at phone width | S wcag-reflow
