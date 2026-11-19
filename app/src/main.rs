@@ -32,11 +32,21 @@ async fn main() -> anyhow::Result<()> {
             let run = record_signup(&lib, url, None, real).await?;
             report(&run);
         }
+        Some("audit") => {
+            // grades an existing sign-up recording again (after the checklist or the grading changes)
+            let id = args.get(1).ok_or_else(|| anyhow::anyhow!("usage: agentscreen audit <run id>"))?;
+            let mut run = lib.load(id)?;
+            run.audit = agentscreen_core::audit::audit(&run);
+            lib.save(&run)?;
+            for g in &run.audit {
+                println!("{:<12} {} | {}", g.result, g.item.chars().take(60).collect::<String>(), g.why);
+            }
+        }
         Some("serve") | None => {
             let port: u16 = args.get(1).and_then(|s| s.parse().ok()).unwrap_or(4477);
             serve(lib, port).await?;
         }
-        Some(other) => anyhow::bail!("unknown command {other}; use: record <url> [steps] | signup <url> [--real] | serve [port]"),
+        Some(other) => anyhow::bail!("unknown command {other}; use: record <url> [steps] | signup <url> [--real] | audit <run id> | serve [port]"),
     }
     Ok(())
 }

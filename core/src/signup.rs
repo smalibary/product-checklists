@@ -50,6 +50,7 @@ pub async fn record_signup(lib: &Library, url: &str, run_id: Option<String>, rea
     }
     .await;
     run.finished_at = Some(chrono::Local::now().to_rfc3339());
+    run.audit = crate::audit::audit(&run);
     match result {
         Ok(()) => run.status = "done".into(),
         Err(e) => {

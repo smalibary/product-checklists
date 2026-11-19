@@ -59,7 +59,16 @@
   const challenge = frames.some((f) => robotFrame.test(f.src) && !f.badge && f.w >= 250 && f.h >= 60)
     || /verify you are human|are you a robot|not a robot|complete the security check/i.test(document.body?.innerText || "");
   const background_check = !!document.querySelector("script[src*=recaptcha],script[src*=hcaptcha],script[src*=turnstile],.grecaptcha-badge");
-  return JSON.stringify({
+  // other ways to sign up on screen (Google's own button is often a frame with no text)
+  const clickable = [...document.querySelectorAll("a,button,[role=button]")].filter(shown).map((e) => (e.innerText || e.getAttribute("aria-label") || "").toLowerCase());
+  const social = ["google", "apple", "facebook", "github", "microsoft", "linkedin", "x"].filter((p) =>
+    clickable.some((t) => p === "x" ? /continue with x|sign (in|up) with x/.test(t) : t.includes(p))
+    || (p === "google" && frames.some((f) => /accounts\.google\.com/.test(f.src))));
+  const body = (document.body?.innerText || "").toLowerCase();
+  const passkey = /passkey/.test(body);
+  const terms = /(agree|accept).{0,60}(terms|privacy)|(terms|privacy).{0,60}(agree|accept)/.test(body);
+  const login_link = clickable.some((t) => /^(sign in|log in|login)$/.test(t.trim()));
+  return JSON.stringify({ social, passkey, terms, login_link,
     url: location.href, fields, submit, errors: [...new Set(errors)].slice(0, 12), challenge, background_check,
     rtl: getComputedStyle(document.documentElement).direction === "rtl",
   });

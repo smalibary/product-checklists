@@ -133,6 +133,9 @@ pub struct Run {
     /// what was measured on each form screen (fields, the send button, errors shown), for the audit
     #[serde(default)]
     pub forms: Vec<serde_json::Value>,
+    /// the sign-up checklist graded from the recording (see audit.rs)
+    #[serde(default)]
+    pub audit: Vec<crate::audit::Grade>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

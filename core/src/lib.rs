@@ -1,4 +1,5 @@
 //! agentscreen brain: records websites in a hidden Chrome and keeps every step in a library on disk.
+pub mod audit;
 pub mod chrome;
 pub mod components;
 pub mod describe;
