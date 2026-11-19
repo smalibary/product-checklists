@@ -34,8 +34,12 @@ desktop.ini
 .claude/state/long-run.json
 
 # Rust builds
-target/
+/target/
 
 # Recorded runs (videos, frames): results, not source. first-test/results is kept as the proof of the first test.
 recordings/
 **/frames/
+
+# agentscreen
+/target/
+/library/

@@ -1,4 +1,4 @@
-Status: v0 How we work / 4 of 6 done / doing: setup (board not published yet)
+Status: v0.1 recorder + library page working / doing: next, Claude controls + deeper exploring
 
 ## Running
 - Nothing running.
@@ -14,6 +14,9 @@ Status: v0 How we work / 4 of 6 done / doing: setup (board not published yet)
   Android apps next.
 - "We will be working here": all work in C:\CLI\products\agentscreen, not in lab.
 - No first-test folder. "No need to work with subagents": the main session does the work itself.
+
+## Done 2026-11-19
+- Recorder (hidden Chrome, one tab per site, clip per step, screens by short code) and library page (steps timeline, search, filters, screens, checklist). Tested on the-internet.herokuapp.com and linear.app.
 
 ## Next
 - Publish the board (session with the Artifact tool), then the first grill round, then the Rust brain (step 8).

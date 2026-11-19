@@ -13,3 +13,5 @@ This file only points. It holds nothing that changes (R-01).
 - Services and limits: `.claude/docs/services.md`
 - Skills: `.claude/skills/` (grill, long-run, mockup, pattern-sweep; helpers builder, scout, checker)
 - Inspect mode: `.claude/inspect/`
+- App: Rust brain `core/` (hidden-Chrome recorder, library on disk), `app/` (record + serve), page `web/`
+- Run: `cargo build --release`, `pnpm -C web build`, then `target/release/agentscreen serve` → http://127.0.0.1:4477
