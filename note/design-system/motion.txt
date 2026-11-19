@@ -9,12 +9,12 @@ PURPOSE
  3. Easing curves from a shared set (tokens)   (Standard: m3-motion, dtcg-tokens)
 
 SAFETY
- 4. Reduced motion setting respected: swap movement for fades or nothing   (Standard: mdn-reduced-motion, wcag-animation)
+ 4. Reduced motion setting respected: swap movement for fades or nothing   (Standard: mdn-reduced-motion, wcag-animation)  -> see motion/motion-accessibility
  5. Nothing flashes more than 3 times a second   (Standard: wcag-flash)
  6. Moving content over 5 seconds can be paused   (Standard: wcag-pause)
 
 BEHAVIOUR
- 7. Animations never block input   (Research: nng-response)
+ 7. Animations never block input   (Research: nng-response)  -> see motion/motion-system
  8. The same motion for the same job everywhere   (Standard: m3-motion)
 
 SOURCES

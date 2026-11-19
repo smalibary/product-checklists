@@ -6,11 +6,11 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 VIEWS
  1. List and grid views, remembering the choice   (Research: nng-tables)
  2. Columns for name, owner, size and date, sortable   (Research: nng-tables)
- 3. Breadcrumbs for the folder path   (Research: nng-breadcrumbs)
+ 3. Breadcrumbs for the folder path   (Research: nng-breadcrumbs)  -> see design-system/breadcrumb
 
 ACTIONS
- 4. Upload by button and by dropping files, with progress   (Standard: govuk-file-upload)
- 5. Select many with checkboxes, Shift-click and keyboard   (Standard: apg-grid)
+ 4. Upload by button and by dropping files, with progress   (Standard: govuk-file-upload)  -> see design-system/file-upload
+ 5. Select many with checkboxes, Shift-click and keyboard   (Standard: apg-grid)  -> see design-system/checkbox
  6. Rename, move, copy, delete and share from a menu and from shortcuts   (Standard: apg-menu)
  7. Delete goes to a bin that can be restored   (Research: nng-control)
 
@@ -19,7 +19,7 @@ FEEDBACK
  9. Long tasks show progress and can be cancelled   (Research: nng-progress)
 
 SHARING
-10. Clear who can see each file   (Standard: owasp-authz)
+10. Clear who can see each file   (Standard: owasp-authz)  -> see web-app/roles-permissions
 
 ACCESS
 11. Drag and drop has a keyboard or menu alternative   (Standard: wcag-dragging)

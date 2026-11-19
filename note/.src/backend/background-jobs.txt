@@ -2,7 +2,7 @@ title: Background jobs
 about: Work done outside the request (emails, exports, processing), safely and in order.
 ## Queue
 - A queue that keeps jobs if a server restarts | P
-- Each job safe to run twice (idempotent) | S aws-idempotent
+- Each job safe to run twice (idempotent) | S aws-idempotent >api/idempotency
 - Jobs created in the same transaction as the change that needs them (outbox) | S outbox
 ## Running
 - A timeout per job | S sre-overload
@@ -13,7 +13,7 @@ about: Work done outside the request (emails, exports, processing), safely and i
 - Progress saved so a restart continues instead of starting over | P
 - A status the person can see (queued, running, done, failed) with a result link | S google-aip-lro
 ## Watching
-- Queue length, age of the oldest job and failure rate measured with alerts | S sre-monitoring sre-alerting
-- Each job logged with its id, tries and result | S otel
+- Queue length, age of the oldest job and failure rate measured with alerts | S sre-monitoring sre-alerting >operations/monitoring-alerts
+- Each job logged with its id, tries and result | S otel >operations/logging
 ## Safety
 - Jobs run with only the rights they need | S owasp-authz

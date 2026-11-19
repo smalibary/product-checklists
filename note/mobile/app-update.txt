@@ -13,10 +13,10 @@ SERVER SIDE
  5. APIs keep working for older app versions for a set time   (Standard: fowler-parallel-change)
 
 AFTER
- 6. What's new shown once, briefly, skippable   (Research: nng-onboarding)
+ 6. What's new shown once, briefly, skippable   (Research: nng-onboarding)  -> see website/changelog
 
 STORE
- 7. Release notes in the store listing   (Standard: apple-review)
+ 7. Release notes in the store listing   (Standard: apple-review)  -> see website/changelog, growth/app-store-listing
 
 SOURCES
 - android-in-app-updates: https://developer.android.com/guide/playcore/in-app-updates

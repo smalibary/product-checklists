@@ -11,7 +11,7 @@ TIERS
 
 FORMAT
  5. Stored in the W3C design tokens format (JSON with $value and $type)   (Standard: dtcg-tokens)
- 6. Each token has a type (color, dimension, fontFamily, duration, shadow)   (Standard: dtcg-tokens)
+ 6. Each token has a type (color, dimension, fontFamily, duration, shadow)   (Standard: dtcg-tokens)  -> see design-system/elevation
  7. References use {group.token} so one change flows everywhere   (Standard: dtcg-tokens)
  8. A description on each role token saying when to use it   (Standard: dtcg-tokens)
 
@@ -32,8 +32,8 @@ PIPELINE
 18. A check fails the build when a component uses a raw value   (Practice)
 
 COVERAGE
-19. Colour, typography, spacing, size, radius, border, shadow, opacity, motion duration and easing, z-index   (Standard: dtcg-tokens)
-20. Contrast pairs of colour tokens tested automatically   (Standard: wcag-contrast)
+19. Colour, typography, spacing, size, radius, border, shadow, opacity, motion duration and easing, z-index   (Standard: dtcg-tokens)  -> see design-system/typography, design-system/elevation
+20. Contrast pairs of colour tokens tested automatically   (Standard: wcag-contrast)  -> see design-system/accessibility
 
 DOCUMENTATION
 21. Every token shown with its value, a preview and where it is used   (Practice)

@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 WHEN TO USE
  1. Switching between related views of the same thing (Overview, Activity, Settings)   (Standard: apg-tabs, m3-tabs)
- 2. Not for steps in order (use a stepper) or for main navigation of the app (use a nav bar)   (Research: nng-tabs)
+ 2. Not for steps in order (use a stepper) or for main navigation of the app (use a nav bar)   (Research: nng-tabs)  -> see design-system/stepper
  3. Not when people need to compare content across tabs   (Research: nng-tabs)
 
 LOOK
@@ -18,8 +18,8 @@ LOOK
 BEHAVIOUR
  9. Switching is instant; content keeps its state when coming back   (Research: nng-tabs)
 10. Selected tab kept in the address when tabs are big views   (Practice)
-11. Swipe between tabs on phones, with taps too   (Standard: m3-tabs)
-12. Counts or badges on tabs when useful ("Comments 3")   (Practice)
+11. Swipe between tabs on phones, with taps too   (Standard: m3-tabs)  -> see mobile/gesture-navigation
+12. Counts or badges on tabs when useful ("Comments 3")   (Practice)  -> see design-system/badge
 
 KEYBOARD AND ACCESS
 13. Tab list, tab and tab panel roles; each tab controls its panel   (Standard: apg-tabs)
@@ -27,8 +27,8 @@ KEYBOARD AND ACCESS
 15. Home and End jump to first and last   (Standard: apg-tabs)
 16. Selected tab marked aria-selected   (Standard: apg-tabs)
 17. Panel labelled by its tab   (Standard: apg-tabs)
-18. Arrows flip for right-to-left   (Standard: w3c-dir)
-19. Targets large enough to tap   (Standard: wcag-target)
+18. Arrows flip for right-to-left   (Standard: w3c-dir)  -> see design-system/rtl-localisation
+19. Targets large enough to tap   (Standard: wcag-target)  -> see design-system/accessibility
 
 SOURCES
 - apg-tabs: https://www.w3.org/WAI/ARIA/apg/patterns/tabs/

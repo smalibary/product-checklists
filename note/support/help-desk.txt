@@ -15,7 +15,7 @@ HANDLING
 
 RECORDS
  7. History kept so nobody has to repeat themselves   (Research: nng-chat)
- 8. Personal data limited and deleted on schedule   (Rule: gdpr-5)
+ 8. Personal data limited and deleted on schedule   (Rule: gdpr-5)  -> see backend/data-privacy
 
 LEARNING
  9. Common questions turned into help articles   (Research: nng-help)

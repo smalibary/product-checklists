@@ -11,19 +11,19 @@ STRUCTURE
 REFERENCE
  4. Every address with its method, fields, types, required marks, example request and response   (Standard: openapi)
  5. Every error code with its meaning and fix   (Standard: rfc-problem)
- 6. Authentication, paging, rate limits and versioning explained once and linked from each address   (Standard: google-aip)
+ 6. Authentication, paging, rate limits and versioning explained once and linked from each address   (Standard: google-aip)  -> see api/rate-limits
 
 EXAMPLES
  7. Copyable examples in curl and the main languages, with test keys filled in for signed-in readers   (Standard: stripe-keys)
  8. Examples that are run in tests so they keep working   (Practice)
 
 CHANGE
- 9. A changelog with dates and what callers must do   (Standard: keepachangelog)
-10. Deprecated items marked with their retire date   (Standard: rfc-deprecation, rfc-sunset)
+ 9. A changelog with dates and what callers must do   (Standard: keepachangelog)  -> see website/changelog
+10. Deprecated items marked with their retire date   (Standard: rfc-deprecation, rfc-sunset)  -> see api/versioning
 
 FINDING THINGS
 11. Search across all pages   (Practice)
-12. A status page and a support contact linked from the docs   (Practice)
+12. A status page and a support contact linked from the docs   (Practice)  -> see website/status
 
 ACCESS
 13. Docs pages meet WCAG: headings, keyboard use, contrast, readable code blocks   (Standard: wcag)

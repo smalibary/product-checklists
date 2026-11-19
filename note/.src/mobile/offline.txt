@@ -5,11 +5,11 @@ about: What an app does with no connection or a weak one.
 - Changes saved on the device and sent when back online | S android-offline
 - Conflicts resolved by a clear rule | S android-offline
 ## Telling people
-- A quiet banner when offline, not an error on every screen | P
+- A quiet banner when offline, not an error on every screen | P >design-system/banner
 - Actions that need a connection say so | R nng-errors
 - Items waiting to send are marked | P
 ## Behaviour
 - Retries with growing waits when the connection returns | S aws-backoff
 - No data lost when the app closes while offline | S android-offline
 ## Web
-- Service worker caches the shell and key data | S mdn-service-worker
+- Service worker caches the shell and key data | S mdn-service-worker >backend/caching

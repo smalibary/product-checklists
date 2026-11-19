@@ -3,7 +3,7 @@ about: Text that takes people to another page or place.
 ## Look
 - Looks like a link: underlined or otherwise clear, not by colour alone | R nng-links
 - Visited links look different where it helps | R nng-links
-- Focus style clear | S wcag-focus
+- Focus style clear | S wcag-focus >design-system/accessibility
 ## Words
 - Link text says where it goes; no "click here" | S wcag-link
 - Links to files say type and size | S wcag-link
@@ -11,5 +11,5 @@ about: Text that takes people to another page or place.
 - Opens in the same tab unless there is a strong reason; new tabs announced | S wcag-on-input
 - Links go to places; buttons do actions | S apg-button
 ## Look
-- Contrast against text and background | S wcag-contrast
-- Big enough to tap on phones | S wcag-target
+- Contrast against text and background | S wcag-contrast >design-system/accessibility
+- Big enough to tap on phones | S wcag-target >design-system/accessibility

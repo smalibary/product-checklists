@@ -10,6 +10,6 @@ about: Making it easy to report problems and turning reports into fixes.
 - Security problems sent to a private channel, not public | S iso-29147 rfc-securitytxt
 ## Fixing
 - A failing test written before the fix | S fowler-test-pyramid
-- Fix noted in the release notes | S keepachangelog
+- Fix noted in the release notes | S keepachangelog >website/changelog
 ## Trends
 - Crash and error rates watched alongside reports | S sre-monitoring

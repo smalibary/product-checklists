@@ -4,7 +4,7 @@ Backing: 0 Rule, 5 Standard, 12 Research, 6 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 FINDING
- 1. A big search box at the top, with suggestions while typing   (Research: nng-help, baymard-autocomplete)
+ 1. A big search box at the top, with suggestions while typing   (Research: nng-help, baymard-autocomplete)  -> see web-app/search-results
  2. Topics grouped by task (getting started, billing, account), with article counts   (Research: nng-help)
  3. Popular articles listed   (Research: nng-help)
  4. Search forgives typos and synonyms   (Research: baymard-autocomplete)
@@ -21,15 +21,15 @@ ARTICLES
 13. "Was this helpful?" with an optional comment   (Practice)
 
 GETTING MORE HELP
-14. Contact support easy to find, never hidden behind forced searches   (Research: nng-help)
-15. Status page link for outages   (Practice)
-16. Community forum link, if any   (Practice)
+14. Contact support easy to find, never hidden behind forced searches   (Research: nng-help)  -> see flows/contacting-support
+15. Status page link for outages   (Practice)  -> see website/status, operations/incident-response
+16. Community forum link, if any   (Practice)  -> see support/community-forum
 17. In-app help opens the right article for the screen the person is on   (Research: nng-help)
 
 STRUCTURE AND ACCESS
-18. Breadcrumbs from topic to article   (Research: nng-breadcrumbs)
-19. Headings in order, contents list on long articles   (Standard: wcag-headings)
-20. Images and GIFs have alt text; animations can be paused   (Standard: wcag-nontext, wcag-pause)
+18. Breadcrumbs from topic to article   (Research: nng-breadcrumbs)  -> see design-system/breadcrumb
+19. Headings in order, contents list on long articles   (Standard: wcag-headings)  -> see design-system/accessibility
+20. Images and GIFs have alt text; animations can be paused   (Standard: wcag-nontext, wcag-pause)  -> see motion/motion-system, design-system/accessibility
 21. Help link in the same place on every page of the app   (Standard: wcag-help)
 22. Available in the app's languages   (Practice)
 23. Articles indexable by search engines   (Standard: google-helpful)

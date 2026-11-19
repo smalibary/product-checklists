@@ -5,7 +5,7 @@ also: design-system/accessibility
 - Filters that match how people choose (price, size, brand, date, status) | R baymard-filters nng-filters
 - Count of results per option | R baymard-filters
 - Options with no results hidden or marked | R baymard-filters
-- Price and number ranges with fields, not only a slider | R nng-sliders
+- Price and number ranges with fields, not only a slider | R nng-sliders >design-system/slider
 ## Applying
 - Desktop: results update at once on each change | R nng-filters
 - Phone: filters in a sheet with "Show 42 results" button | R baymard-filters
@@ -19,6 +19,6 @@ also: design-system/accessibility
 - No results: show which filters to remove | R nng-empty
 - Sort kept separate from filters | R nng-filters
 ## Access
-- Filter groups as fieldsets with names | S wcag-info
-- Checkboxes and radios are real controls | S wcag-name-role
+- Filter groups as fieldsets with names | S wcag-info >design-system/accessibility
+- Checkboxes and radios are real controls | S wcag-name-role >design-system/checkbox >design-system/radio
 - Focus does not jump when results update | S wcag-on-input

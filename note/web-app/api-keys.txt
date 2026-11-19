@@ -11,7 +11,7 @@ CREATING
  5. After leaving, only the last 4 characters are shown   (Standard: stripe-keys)
 
 LIST
- 6. Table: name, last 4 characters, scopes, created, last used, expiry, created by   (Standard: github-tokens)
+ 6. Table: name, last 4 characters, scopes, created, last used, expiry, created by   (Standard: github-tokens)  -> see web-app/data-table
  7. Unused and soon-to-expire keys flagged   (Standard: github-tokens)
 
 CHANGING
@@ -21,18 +21,18 @@ CHANGING
 
 SAFETY
 11. Keys stored hashed on the server where possible   (Standard: owasp-secrets)
-12. Key creation, use from a new place and revoke are logged and emailed   (Standard: owasp-logging)
-13. Keys found leaked on public code (secret scanning) revoked and the owner told   (Standard: github-tokens)
+12. Key creation, use from a new place and revoke are logged and emailed   (Standard: owasp-logging)  -> see operations/logging
+13. Keys found leaked on public code (secret scanning) revoked and the owner told   (Standard: github-tokens)  -> see operations/secrets
 14. Only admins can create live keys   (Standard: owasp-authz)
 15. Sensitive actions ask for the password again   (Standard: owasp-auth)
 
 HELP
 16. A quick-start code example using the new key   (Practice)
-17. Link to the API docs and rate limits   (Practice)
+17. Link to the API docs and rate limits   (Practice)  -> see api/rate-limits
 
 ACCESS
 18. Copy button announces "Copied"   (Standard: wcag-status)
-19. Keys shown in a monospaced font with enough contrast   (Standard: wcag-contrast)
+19. Keys shown in a monospaced font with enough contrast   (Standard: wcag-contrast)  -> see design-system/accessibility
 
 SOURCES
 - github-tokens: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens

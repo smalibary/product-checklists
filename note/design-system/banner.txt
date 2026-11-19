@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 WHEN TO USE
  1. For product-wide news or problems that persist (trial ends, payment failed, read-only mode)   (Standard: m3-banner)
  2. One banner at a time; more wait in line   (Standard: m3-banner)
- 3. Not for messages about one action (use a toast) or one section (use an alert)   (Research: nng-indicators)
+ 3. Not for messages about one action (use a toast) or one section (use an alert)   (Research: nng-indicators)  -> see design-system/toast
 
 CONTENT
  4. One short sentence on what is happening   (Standard: govuk-notification)
@@ -15,7 +15,7 @@ CONTENT
 
 LOOK
  7. Kind shown by colour, icon and words (info, warning, error)   (Standard: wcag-color)
- 8. Contrast for text and buttons meets WCAG   (Standard: wcag-contrast)
+ 8. Contrast for text and buttons meets WCAG   (Standard: wcag-contrast)  -> see design-system/accessibility
  9. Stays at the top of the content, under the header   (Standard: m3-banner)
 
 BEHAVIOUR

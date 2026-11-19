@@ -5,9 +5,9 @@ about: Animation rules: when things move, how fast, and for whom motion is turne
 - Short: about 100 to 300 ms for small changes, up to about 500 ms for big ones | S m3-motion
 - Easing curves from a shared set (tokens) | S m3-motion dtcg-tokens
 ## Safety
-- Reduced motion setting respected: swap movement for fades or nothing | S mdn-reduced-motion wcag-animation
+- Reduced motion setting respected: swap movement for fades or nothing | S mdn-reduced-motion wcag-animation >motion/motion-accessibility
 - Nothing flashes more than 3 times a second | S wcag-flash
 - Moving content over 5 seconds can be paused | S wcag-pause
 ## Behaviour
-- Animations never block input | R nng-response
+- Animations never block input | R nng-response >motion/motion-system
 - The same motion for the same job everywhere | S m3-motion

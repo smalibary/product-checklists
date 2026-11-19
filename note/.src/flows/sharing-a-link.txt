@@ -4,7 +4,7 @@ also: design-system/accessibility
 ## Sharing
 - System share sheet on phones | S android-sharesheet hig-share
 - Copy link button with a confirmation | S wcag-status
-- Link previews look right (title, image, description) | P
+- Link previews look right (title, image, description) | P >growth/link-previews
 ## Access level
 - Clear who can open it | S owasp-authz
 - Private items ask before making a public link | P

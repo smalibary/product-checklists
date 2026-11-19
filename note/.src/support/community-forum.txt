@@ -11,6 +11,6 @@ about: A place where users help each other, with clear rules and moderation.
 ## Safety
 - User links marked ugc | L gsc-qualify
 - Spam and abuse filters | L gsc-spam
-- Personal data not shown publicly by default | L gdpr-25
+- Personal data not shown publicly by default | L gdpr-25 >backend/data-privacy
 ## Search
-- Question and answer structured data on threads | S schema-org
+- Question and answer structured data on threads | S schema-org >growth/technical-seo

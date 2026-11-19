@@ -15,11 +15,11 @@ INPUTS (PROPS)
  7. Passes through standard attributes (id, aria, className) to the main element   (Practice)
 
 LOOK
- 8. Colours, spacing and type from tokens, never typed-in values   (Standard: dtcg-tokens)
+ 8. Colours, spacing and type from tokens, never typed-in values   (Standard: dtcg-tokens)  -> see design-system/tokens
 
 ACCESS
  9. Real buttons, links and inputs, not clickable divs   (Standard: wcag-name-role, apg-button)
-10. Keyboard and focus behaviour match the pattern it copies   (Standard: apg-landmarks, wcag-keyboard)
+10. Keyboard and focus behaviour match the pattern it copies   (Standard: apg-landmarks, wcag-keyboard)  -> see design-system/accessibility
 
 PROOF
 11. Each state (default, hover, disabled, loading, error) shown in a story or demo page   (Standard: storybook)

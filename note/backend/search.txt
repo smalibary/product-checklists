@@ -4,14 +4,14 @@ Backing: 0 Rule, 10 Standard, 0 Research, 2 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 INDEX
- 1. A full-text index rather than LIKE scans   (Standard: pg-fts)
+ 1. A full-text index rather than LIKE scans   (Standard: pg-fts)  -> see backend/database-design
  2. Arabic and English handled: language rules, letter forms and diacritics   (Standard: pg-fts, unicode-normalization)
- 3. The index updated when records change   (Standard: pg-fts)
+ 3. The index updated when records change   (Standard: pg-fts)  -> see backend/database-design
 
 QUERIES
  4. Typos forgiven where possible   (Practice)
  5. Results ranked by match and then by freshness or popularity   (Standard: pg-fts)
- 6. Filters use indexes too   (Standard: pg-indexes)
+ 6. Filters use indexes too   (Standard: pg-indexes)  -> see backend/database-design
  7. Results paged with a maximum   (Standard: google-aip-pagination)
 
 SAFETY
@@ -20,7 +20,7 @@ SAFETY
 10. Search input passed as a parameter, never joined into a query   (Standard: owasp-sql)
 
 QUALITY
-11. Searches with no results logged to improve the index   (Practice)
+11. Searches with no results logged to improve the index   (Practice)  -> see backend/database-design, operations/logging
 12. Slow searches measured   (Standard: pg-explain)
 
 SOURCES

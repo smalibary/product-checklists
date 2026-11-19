@@ -9,7 +9,7 @@ about: The settings a web server sends that tell browsers how to protect its pag
 - Referrer-Policy set (strict-origin-when-cross-origin) | S owasp-headers
 - Permissions-Policy turns off unused features (camera, location) | S owasp-headers
 ## Cookies
-- Secure, HttpOnly and SameSite on session cookies | S mdn-cookies
+- Secure, HttpOnly and SameSite on session cookies | S mdn-cookies >backend/sessions
 ## Cross-site
 - CORS allows only known sites | S mdn-cors
 ## Hiding

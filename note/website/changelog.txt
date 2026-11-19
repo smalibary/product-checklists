@@ -10,7 +10,7 @@ ENTRIES
  4. Screenshots or short clips for visible changes   (Practice)
 
 FINDING
- 5. Linked from the product and the footer   (Practice)
+ 5. Linked from the product and the footer   (Practice)  -> see website/footer
  6. Each entry has its own address to share   (Practice)
  7. RSS or email for people who want updates   (Practice)
 
@@ -19,7 +19,7 @@ HONESTY
  9. Security fixes listed   (Standard: keepachangelog)
 
 ACCESS
-10. Headings per release and readable images   (Standard: wcag-headings, wcag-nontext)
+10. Headings per release and readable images   (Standard: wcag-headings, wcag-nontext)  -> see design-system/accessibility
 
 SOURCES
 - keepachangelog: https://keepachangelog.com/en/1.1.0/

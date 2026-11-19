@@ -6,12 +6,12 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 FOLDERS
  1. Grouped by feature, with shared pieces in one common place   (Practice)
  2. A short guide in the README says what each top-level folder holds   (Standard: github-readme)
- 3. Settings in environment variables, not in code   (Standard: twelve-factor)
+ 3. Settings in environment variables, not in code   (Standard: twelve-factor)  -> see operations/environments, operations/secrets
 
 BOUNDARIES
  4. Screens call a data layer; they never talk to the database directly   (Practice)
  5. Shared code has no imports back from features   (Practice)
- 6. Secrets and generated files kept out of git   (Standard: owasp-secrets)
+ 6. Secrets and generated files kept out of git   (Standard: owasp-secrets)  -> see operations/secrets
 
 SIZE
  7. Files kept small; split by topic when they grow   (Practice)

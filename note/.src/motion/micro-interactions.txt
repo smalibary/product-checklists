@@ -11,4 +11,4 @@ about: The small animated responses to a single action: press, toggle, like, cop
 - Hover and focus states animate, not jump | S mdn-transitions
 ## Restraint
 - Delight only where it helps; never slows a repeated task | R nng-animation-usability
-- Focus state always visible, even mid-animation | S wcag-focus
+- Focus state always visible, even mid-animation | S wcag-focus >design-system/accessibility

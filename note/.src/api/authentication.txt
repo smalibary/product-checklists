@@ -9,11 +9,11 @@ about: How programs and apps prove who they are when they call an API.
 - Separate keys for test and live | S stripe-keys
 - Scopes: each key gets only the permissions it needs | S rfc-oauth owasp-api-top10
 - Rotation without downtime: two keys can work while switching | S owasp-secrets
-- Leaked keys found by secret scanning and revoked | S github-tokens
+- Leaked keys found by secret scanning and revoked | S github-tokens >operations/secrets
 ## Tokens
 - Short-lived access tokens; refresh tokens that change on each use | S rfc-oauth-security
 - JWTs fully checked: signature, an allowed algorithm (never "none"), issuer, audience, expiry | S rfc-jwt rfc-jwt-bcp owasp-jwt
-- Tokens never in addresses, because addresses end up in logs | S owasp-rest
+- Tokens never in addresses, because addresses end up in logs | S owasp-rest >operations/logging
 - Revoking a token or key works quickly everywhere | S owasp-session
 ## Every request
 - Every address checks identity unless deliberately public; the public list is short and reviewed | S owasp-api-top10

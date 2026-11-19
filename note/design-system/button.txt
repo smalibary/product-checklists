@@ -12,26 +12,26 @@ KINDS
 CONTENT
  5. A verb that says what happens ("Save changes", "Send invoice")   (Standard: govuk-button)
  6. Short, start with a capital, no "Click here"   (Research: nng-buttons)
- 7. Icon plus text when it helps; icon-only buttons have a text name   (Standard: wcag-name-role)
+ 7. Icon plus text when it helps; icon-only buttons have a text name   (Standard: wcag-name-role)  -> see design-system/icon
 
 SIZES AND LOOK
- 8. Sizes from tokens (small, medium, large); touch area at least 24 px, ideally 44 to 48   (Standard: wcag-target, hig-layout, m3-buttons)
- 9. Text 4.5:1 contrast; button edge or fill 3:1 against the background   (Standard: wcag-contrast, wcag-ui-contrast)
+ 8. Sizes from tokens (small, medium, large); touch area at least 24 px, ideally 44 to 48   (Standard: wcag-target, hig-layout, m3-buttons)  -> see design-system/tokens, design-system/accessibility
+ 9. Text 4.5:1 contrast; button edge or fill 3:1 against the background   (Standard: wcag-contrast, wcag-ui-contrast)  -> see design-system/accessibility
 10. Looks pressable: filled or outlined, not plain text for main actions   (Research: nng-buttons)
 
 STATES
 11. Default, hover, focus, pressed, disabled, loading   (Standard: m3-buttons)
 12. Focus ring visible in every theme   (Standard: wcag-focus-appearance)
-13. Loading: spinner inside, same width, cannot be pressed again   (Practice)
+13. Loading: spinner inside, same width, cannot be pressed again   (Practice)  -> see design-system/loading
 14. Disabled buttons used sparingly; better to allow press and explain what is missing   (Research: nng-buttons)
 
 PLACEMENT
-15. Primary action placed consistently (end of the form or dialog)   (Standard: wcag-consistent)
+15. Primary action placed consistently (end of the form or dialog)   (Standard: wcag-consistent)  -> see design-system/modal
 16. Order follows the platform: on Windows and web varies; on iOS and Android follow their guides   (Standard: hig-buttons, m3-dialogs)
 17. Full width on phones for main actions   (Practice)
 
 ACCESS
-18. Native button element, or role button with Enter and Space   (Standard: wcag-keyboard)
+18. Native button element, or role button with Enter and Space   (Standard: wcag-keyboard)  -> see design-system/accessibility
 19. Toggle buttons say pressed (aria-pressed)   (Standard: wcag-name-role)
 20. Button opening a menu says so (aria-haspopup, aria-expanded)   (Standard: apg-menubutton)
 21. Name matches the visible label   (Standard: wcag-label-in-name)

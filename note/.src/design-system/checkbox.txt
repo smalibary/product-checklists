@@ -4,14 +4,14 @@ also: design-system/accessibility
 ## When to use
 - Choosing zero, one or many from a list | S govuk-checkboxes
 - One checkbox for a yes/no agreement that takes effect on submit | S govuk-checkboxes
-- Use a switch instead for settings that apply at once | R nng-toggle
-- Use radios when only one choice is allowed | S govuk-radios
+- Use a switch instead for settings that apply at once | R nng-toggle >design-system/toggle
+- Use radios when only one choice is allowed | S govuk-radios >design-system/radio
 ## Look
 - Box on the start side of its label; the label is clickable too | S govuk-checkboxes
 - Ticked, unticked and mixed (some children ticked) states clearly different | S apg-checkbox
 - Box border 3:1 contrast | S wcag-ui-contrast
 - Disabled shown clearly, with why if possible | P
-- Touch area at least 24 px, ideally 44 | S wcag-target
+- Touch area at least 24 px, ideally 44 | S wcag-target >design-system/accessibility
 ## Groups
 - Grouped in a fieldset with a question as the legend | S govuk-checkboxes
 - Hint text under the legend ("Select all that apply") | S govuk-checkboxes
@@ -25,4 +25,4 @@ also: design-system/accessibility
 ## Access
 - Native checkbox input, or role checkbox with aria-checked | S apg-checkbox
 - Space toggles | S apg-checkbox
-- Label linked to the box | S wcag-labels
+- Label linked to the box | S wcag-labels >design-system/accessibility

@@ -11,7 +11,7 @@ TAGS
 
 CONTENT
  5. Title and description written for sharing, not just search   (Research: nng-microcontent)
- 6. Private pages show a generic preview, never personal data   (Rule: gdpr-5)
+ 6. Private pages show a generic preview, never personal data   (Rule: gdpr-5)  -> see backend/data-privacy
 
 CHECKS
  7. Previews tested in the main apps people share to   (Practice)

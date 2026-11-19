@@ -5,21 +5,21 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 PIPELINE
  1. Every change goes through the same automatic build, test and release steps   (Standard: sre-release)
- 2. Builds are repeatable and produce one package used in every environment   (Standard: twelve-factor, slsa)
- 3. Settings come from the environment, not from code   (Standard: twelve-factor)
+ 2. Builds are repeatable and produce one package used in every environment   (Standard: twelve-factor, slsa)  -> see operations/environments
+ 3. Settings come from the environment, not from code   (Standard: twelve-factor)  -> see operations/environments
 
 RELEASING
  4. Small, frequent releases   (Standard: dora)
  5. Canary or gradual rollouts, watched before going wider   (Standard: sre-canary)
  6. One click or command to roll back   (Standard: sre-release)
- 7. Database changes made compatible with old and new code   (Standard: fowler-parallel-change)
+ 7. Database changes made compatible with old and new code   (Standard: fowler-parallel-change)  -> see backend/database-design
 
 CHECKS
  8. Health checks before traffic reaches a new version   (Standard: sre-release)
- 9. Release notes and the version number visible   (Standard: keepachangelog)
+ 9. Release notes and the version number visible   (Standard: keepachangelog)  -> see website/changelog
 
 SECURITY
-10. Pipeline secrets kept in the secret store; steps run with least privilege   (Standard: owasp-cicd)
+10. Pipeline secrets kept in the secret store; steps run with least privilege   (Standard: owasp-cicd)  -> see operations/secrets
 11. Only reviewed changes to main can deploy   (Standard: owasp-cicd)
 
 MEASURE

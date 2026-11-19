@@ -11,24 +11,24 @@ BEFORE ADDING
 
 ADDING
  5. Button shows busy state; no double add on double tap   (Standard: owasp-transaction)
- 6. Works without signing in (guest cart)   (Research: baymard-guest)
+ 6. Works without signing in (guest cart)   (Research: baymard-guest)  -> see web-app/login, website/cart
 
 FEEDBACK
- 7. Confirmation without leaving the page: a small panel or message with the item, "View cart" and "Checkout"   (Research: baymard-cart)
- 8. Cart count updates at once   (Standard: m3-badges)
+ 7. Confirmation without leaving the page: a small panel or message with the item, "View cart" and "Checkout"   (Research: baymard-cart)  -> see web-app/checkout, website/cart
+ 8. Cart count updates at once   (Standard: m3-badges)  -> see website/cart
  9. Message announced to screen readers   (Standard: wcag-status)
 10. Haptic on phones   (Standard: hig-feedback)
 
 PROBLEMS
 11. Failure explained ("Only 2 left") with a way forward   (Standard: wcag-error)
-12. Price changed since the page loaded: say so   (Practice)
+12. Price changed since the page loaded: say so   (Practice)  -> see product/pricing-changes
 
 AFTER
 13. Person stays where they were to keep shopping   (Research: baymard-cart)
-14. Cart kept across visits and devices   (Research: baymard-cart)
+14. Cart kept across visits and devices   (Research: baymard-cart)  -> see website/cart
 
 ACCESS
-15. Option pickers are real buttons or radios with names   (Standard: wcag-name-role)
+15. Option pickers are real buttons or radios with names   (Standard: wcag-name-role)  -> see design-system/radio
 16. Focus stays sensible after adding   (Standard: wcag-focus-order)
 
 SOURCES

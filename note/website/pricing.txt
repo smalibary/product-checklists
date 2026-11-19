@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 PLANS
  1. Two to four plans side by side, one marked as most popular   (Research: nng-pricing)
- 2. Each plan: name, who it is for, price, billing period and the main limits   (Research: nng-pricing)
+ 2. Each plan: name, who it is for, price, billing period and the main limits   (Research: nng-pricing)  -> see website/billing
  3. Price in the visitor's currency, with tax shown or stated   (Rule: eu-consumer-rights, ftc-junk-fees)
  4. Monthly and yearly switch, with the yearly saving as an amount, not only a percent   (Practice)
  5. Yearly price also shown per month only if the full yearly charge is stated beside it   (Rule: ftc-negative-option)
@@ -14,29 +14,29 @@ PLANS
  8. "Contact sales" only for the biggest plan; prices for the rest   (Research: nng-pricing)
 
 COMPARING
- 9. A full feature table below the plan cards   (Research: nng-comparison)
-10. Feature names in plain words with a short explanation on demand   (Research: nng-pricing)
-11. Ticks also have words for screen readers   (Standard: wcag-nontext)
-12. The table header stays visible while scrolling   (Research: nng-comparison)
+ 9. A full feature table below the plan cards   (Research: nng-comparison)  -> see design-system/table
+10. Feature names in plain words with a short explanation on demand   (Research: nng-pricing)  -> see design-system/content-voice
+11. Ticks also have words for screen readers   (Standard: wcag-nontext)  -> see design-system/accessibility
+12. The table header stays visible while scrolling   (Research: nng-comparison)  -> see design-system/table
 
 DOUBTS
-13. FAQ: changing plans, cancelling, refunds, payment methods, discounts   (Research: nng-faq)
+13. FAQ: changing plans, cancelling, refunds, payment methods, discounts   (Research: nng-faq)  -> see website/faq, flows/requesting-a-refund, web-app/upgrade
 14. How to cancel, and that it is as easy as signing up   (Rule: ftc-negative-option)
 15. Money-back promise, if any, with its terms   (Rule: eu-consumer-rights)
 16. Customer logos or quotes near the plans   (Research: nng-trust)
 
 ACTION
 17. One button per plan with a clear verb (Start free trial, Buy Pro)   (Practice)
-18. The chosen plan carries into sign-up and checkout   (Practice)
+18. The chosen plan carries into sign-up and checkout   (Practice)  -> see website/sign-up, web-app/checkout
 
 HONESTY
 19. No pre-ticked add-ons, no fake discounts with made-up "was" prices   (Rule: ftc-dark-patterns, eu-omnibus)
 20. A struck-out old price only if it was the real price in the last 30 days (EU)   (Rule: eu-omnibus)
 
 ACCESS
-21. Plan cards stack on phones, the recommended one first   (Standard: wcag-reflow)
+21. Plan cards stack on phones, the recommended one first   (Standard: wcag-reflow)  -> see design-system/accessibility
 22. The monthly and yearly switch is a real control with a name and state   (Standard: apg-switch, wcag-name-role)
-23. Contrast meets WCAG, including the highlighted plan   (Standard: wcag-contrast)
+23. Contrast meets WCAG, including the highlighted plan   (Standard: wcag-contrast)  -> see design-system/accessibility
 
 SOURCES
 - nng-pricing: https://www.nngroup.com/articles/show-price/

@@ -13,12 +13,12 @@ KEYS
  5. Separate keys for test and live   (Standard: stripe-keys)
  6. Scopes: each key gets only the permissions it needs   (Standard: rfc-oauth, owasp-api-top10)
  7. Rotation without downtime: two keys can work while switching   (Standard: owasp-secrets)
- 8. Leaked keys found by secret scanning and revoked   (Standard: github-tokens)
+ 8. Leaked keys found by secret scanning and revoked   (Standard: github-tokens)  -> see operations/secrets
 
 TOKENS
  9. Short-lived access tokens; refresh tokens that change on each use   (Standard: rfc-oauth-security)
 10. JWTs fully checked: signature, an allowed algorithm (never "none"), issuer, audience, expiry   (Standard: rfc-jwt, rfc-jwt-bcp, owasp-jwt)
-11. Tokens never in addresses, because addresses end up in logs   (Standard: owasp-rest)
+11. Tokens never in addresses, because addresses end up in logs   (Standard: owasp-rest)  -> see operations/logging
 12. Revoking a token or key works quickly everywhere   (Standard: owasp-session)
 
 EVERY REQUEST

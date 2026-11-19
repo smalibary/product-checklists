@@ -4,9 +4,9 @@ about: Keeping the service fast as use grows, and knowing what fast means.
 - Speed targets per action (for example 95% of searches under 300 ms) | S sre-slo
 - Web pages meet Core Web Vitals (LCP, INP, CLS) | S webdev-vitals
 ## Server
-- Slow database queries found and fixed with EXPLAIN | S pg-explain
-- Indexes for every common filter and sort | S pg-indexes
-- Caching for repeated reads | S rfc-caching
+- Slow database queries found and fixed with EXPLAIN | S pg-explain >backend/database-design
+- Indexes for every common filter and sort | S pg-indexes >backend/database-design
+- Caching for repeated reads | S rfc-caching >backend/caching
 - No one-call-per-item loops to the database | P
 ## Load
 - Load tests before big launches, on a separate copy | P

@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 LOOK
  1. Looks like a link: underlined or otherwise clear, not by colour alone   (Research: nng-links)
  2. Visited links look different where it helps   (Research: nng-links)
- 3. Focus style clear   (Standard: wcag-focus)
+ 3. Focus style clear   (Standard: wcag-focus)  -> see design-system/accessibility
 
 WORDS
  4. Link text says where it goes; no "click here"   (Standard: wcag-link)
@@ -17,8 +17,8 @@ BEHAVIOUR
  7. Links go to places; buttons do actions   (Standard: apg-button)
 
 LOOK
- 8. Contrast against text and background   (Standard: wcag-contrast)
- 9. Big enough to tap on phones   (Standard: wcag-target)
+ 8. Contrast against text and background   (Standard: wcag-contrast)  -> see design-system/accessibility
+ 9. Big enough to tap on phones   (Standard: wcag-target)  -> see design-system/accessibility
 
 SOURCES
 - nng-links: https://www.nngroup.com/articles/guidelines-for-visualizing-links/

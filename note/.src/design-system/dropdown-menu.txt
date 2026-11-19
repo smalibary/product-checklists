@@ -3,25 +3,25 @@ about: A list of actions or choices that opens from a button (a menu), and the r
 ## Which one
 - Menu of actions (Edit, Duplicate, Delete) opened by a button: the menu button pattern | S apg-menubutton
 - Picking one value in a form: a native select or a listbox, not an action menu | S govuk-select
-- Long lists of values with typing: a combobox | S apg-combobox
-- Short choices (2 to 5) are often better as radios | R nng-dropdown
+- Long lists of values with typing: a combobox | S apg-combobox >design-system/select-combobox
+- Short choices (2 to 5) are often better as radios | R nng-dropdown >design-system/radio
 ## Content
 - Items short, start with a verb for actions | R nng-dropdown
 - Grouped with dividers; dangerous items last and marked | R nng-dropdown
 - Icons optional, consistent | P
-- Keyboard shortcuts shown on the right | P
+- Keyboard shortcuts shown on the right | P >web-app/keyboard-shortcuts
 - Submenus avoided, at most one level | R nng-dropdown
 - Disabled items explained or hidden | P
 ## Look
 - Opens next to its button, flips to stay on screen | P
-- Menu edge and items meet contrast; selected and focused items clear | S wcag-ui-contrast wcag-focus
-- Item height large enough to tap | S wcag-target
+- Menu edge and items meet contrast; selected and focused items clear | S wcag-ui-contrast wcag-focus >design-system/accessibility
+- Item height large enough to tap | S wcag-target >design-system/accessibility
 - Width fits the longest item | P
 ## Behaviour
 - Opens on click or Enter, not on hover alone | R nng-dropdown
 - Closes on Escape, on choosing, and on clicking outside | S apg-menubutton
 - Focus returns to the button after closing | S apg-menubutton
-- On phones, long menus open as a bottom sheet | S m3-bottom-sheets
+- On phones, long menus open as a bottom sheet | S m3-bottom-sheets >design-system/drawer
 ## Keyboard and access
 - Button has aria-haspopup and aria-expanded | S apg-menubutton
 - Menu and menuitem roles; arrow keys move, Home/End jump, typing a letter jumps | S apg-menubutton

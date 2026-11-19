@@ -10,6 +10,6 @@ about: Improving code without changing what it does, and paying down shortcuts o
 - Time set aside each cycle to pay some back | P
 ## Big changes
 - Old and new run side by side until the switch is safe | S fowler-parallel-change
-- Feature flags hide unfinished work | S fowler-flags
+- Feature flags hide unfinished work | S fowler-flags >backend/feature-flags
 ## Measure
 - Change failure rate and time to restore watched | S dora

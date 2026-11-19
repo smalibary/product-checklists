@@ -4,7 +4,7 @@ Backing: 0 Rule, 7 Standard, 0 Research, 2 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 BASICS
- 1. A visible label and optional help text   (Standard: wcag-labels)
+ 1. A visible label and optional help text   (Standard: wcag-labels)  -> see design-system/accessibility
  2. Height fits the expected answer; grows as you type where possible   (Standard: govuk-character)
 
 LIMITS
@@ -20,7 +20,7 @@ SAFETY
 
 ACCESS
  8. Errors linked to the field   (Standard: wcag-error)
- 9. Resizable and not clipped when text is enlarged   (Standard: wcag-resize)
+ 9. Resizable and not clipped when text is enlarged   (Standard: wcag-resize)  -> see design-system/accessibility
 
 SOURCES
 - wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions

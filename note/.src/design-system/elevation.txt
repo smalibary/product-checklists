@@ -2,10 +2,10 @@ title: Elevation and shadows
 about: How layers sit above each other: shadows, surfaces and stacking.
 ## Levels
 - A small fixed set of levels (for example 0 to 5) as tokens | S m3-elevation dtcg-tokens
-- Each level has one job (cards, menus, dialogs) | S m3-elevation
+- Each level has one job (cards, menus, dialogs) | S m3-elevation >design-system/modal
 ## Look
-- Dark mode shows height with lighter surfaces, not only shadows | S m3-elevation hig-dark-mode
+- Dark mode shows height with lighter surfaces, not only shadows | S m3-elevation hig-dark-mode >design-system/dark-mode
 - Borders as well as shadows where contrast is low | S wcag-ui-contrast
 ## Stacking
-- A fixed order of layers (page, sticky bars, menus, dialogs, toasts) | P
+- A fixed order of layers (page, sticky bars, menus, dialogs, toasts) | P >design-system/toast >design-system/modal
 - Overlays dim and block what is beneath | S apg-dialog

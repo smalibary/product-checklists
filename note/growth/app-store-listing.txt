@@ -16,7 +16,7 @@ PICTURES
 TRUST
  7. Privacy details filled in truthfully   (Rule: apple-privacy-labels, play-data-safety)
  8. Age rating answered honestly   (Rule: apple-age-rating)
- 9. Support and privacy policy addresses working   (Rule: apple-review)
+ 9. Support and privacy policy addresses working   (Rule: apple-review)  -> see website/privacy
 
 UPKEEP
 10. Replies to reviews   (Standard: apple-review)

@@ -14,7 +14,7 @@ IN PRODUCT
 
 OTHER CHANNELS
  6. Email only to people who opted in   (Rule: gdpr-7, can-spam)
- 7. Store "what's new" text updated each release   (Standard: apple-product-page, play-listing)
+ 7. Store "what's new" text updated each release   (Standard: apple-product-page, play-listing)  -> see website/changelog
 
 TIMING
  8. Announced after the rollout is complete   (Standard: sre-canary)

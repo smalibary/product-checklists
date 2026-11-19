@@ -16,10 +16,10 @@ also: design-system/accessibility
 - Final button names the action ("Delete my account") in danger style | R nng-confirm
 ## After
 - Signed out, confirmation screen and email | P
-- Grace period to undo (for example 30 days) said clearly, with how to undo | P
-- Data deleted from all systems and backups within a stated time | L gdpr-17
+- Grace period to undo (for example 30 days) said clearly, with how to undo | P >flows/undoing-an-action
+- Data deleted from all systems and backups within a stated time | L gdpr-17 >operations/backups
 - Third parties told to delete | L gdpr-17
 ## Rules
-- GDPR right to erasure; Saudi PDPL also gives the right to destruction of personal data | L gdpr-17 pdpl
+- GDPR right to erasure; Saudi PDPL also gives the right to destruction of personal data | L gdpr-17 pdpl >backend/data-privacy
 ## Access
 - No time limit on the confirmation | S wcag-timing

@@ -15,13 +15,13 @@ BARS
  7. Bar shows start and end; label with name inside or beside   (Practice)
  8. Colour by status or owner, with a legend, plus text or pattern   (Standard: wcag-color)
  9. Progress inside the bar   (Practice)
-10. Dependencies as arrows; conflicts (task starts before its blocker ends) flagged   (Practice)
+10. Dependencies as arrows; conflicts (task starts before its blocker ends) flagged   (Practice)  -> see operations/dependencies
 11. Critical path highlight for project plans   (Practice)
 
 EDITING
 12. Drag to move, drag edges to change dates, snapping to days   (Practice)
 13. Every drag has a non-drag way: edit dates in a form or with keys   (Standard: wcag-dragging)
-14. Undo after a move   (Research: nng-control)
+14. Undo after a move   (Research: nng-control)  -> see flows/undoing-an-action
 15. Moving a task offers to move its dependents   (Practice)
 
 NAVIGATION
@@ -29,9 +29,9 @@ NAVIGATION
 17. Header with dates stays visible   (Practice)
 
 ACCESS
-18. A list or table view with the same data, for screen readers and phones   (Standard: wcag-info)
-19. Keyboard reaches each bar and shows its dates   (Standard: wcag-keyboard)
-20. Tooltips on hover also show on focus   (Standard: wcag-hover)
+18. A list or table view with the same data, for screen readers and phones   (Standard: wcag-info)  -> see web-app/data-table, design-system/accessibility
+19. Keyboard reaches each bar and shows its dates   (Standard: wcag-keyboard)  -> see design-system/accessibility
+20. Tooltips on hover also show on focus   (Standard: wcag-hover)  -> see design-system/tooltip
 
 SPEED
 21. Smooth with thousands of tasks (draw only what is visible)   (Standard: webdev-inp)

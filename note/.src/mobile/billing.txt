@@ -6,7 +6,7 @@ also: design-system/accessibility
 - Current plan, price, renewal date and the store it was bought from | S apple-subscriptions play-subscriptions
 - "Manage subscription" opens the store's own subscription page | S apple-subscriptions play-subscriptions
 - Restore purchases button for people on a new phone | S apple-review
-- Upgrades and downgrades through the store, with the price change shown | S apple-subscriptions play-subscriptions
+- Upgrades and downgrades through the store, with the price change shown | S apple-subscriptions play-subscriptions >mobile/upgrade >product/pricing-changes
 - Free trial end date and the first charge shown clearly | L apple-subscriptions ftc-negative-option
 ## Bought elsewhere
 - If the plan was bought on the web, say so and where to manage it | P
@@ -19,7 +19,7 @@ also: design-system/accessibility
 - Cancel as easy as subscribing; the path is clear | L ftc-negative-option
 - What happens after cancelling: access until the period ends | S apple-subscriptions
 ## Problems
-- Billing problem (card failed at the store): banner with a link to fix it in the store | S apple-subscriptions play-subscriptions
+- Billing problem (card failed at the store): banner with a link to fix it in the store | S apple-subscriptions play-subscriptions >design-system/banner
 - Grace period respected: access continues while the store retries | S apple-subscriptions play-subscriptions
 ## Access
 - Prices read clearly with currency by screen readers | S hig-accessibility

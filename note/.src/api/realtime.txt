@@ -7,7 +7,7 @@ about: Pushing live updates to apps over WebSockets or server-sent events.
 - Secure connections only (wss) | S owasp-websocket
 - The Origin header checked when the connection opens | S owasp-websocket
 - The user signed in when connecting, and checked again for each private channel | S owasp-websocket owasp-authz
-- Every incoming message validated and size-limited | S owasp-websocket
+- Every incoming message validated and size-limited | S owasp-websocket >backend/input-validation
 ## Connections
 - Heartbeats close dead connections | S rfc-websocket
 - Clients reconnect with growing waits and a random spread | S aws-backoff

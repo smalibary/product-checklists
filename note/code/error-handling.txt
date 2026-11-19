@@ -9,12 +9,12 @@ CATCHING
  3. Errors never swallowed silently   (Standard: owasp-errors)
 
 SHOWING
- 4. People see plain words and a next step, never raw error text   (Research: nng-errors)
+ 4. People see plain words and a next step, never raw error text   (Research: nng-errors)  -> see design-system/content-voice
  5. Retry offered for temporary failures, with growing waits   (Standard: aws-backoff)
 
 RECORDING
- 6. Every unexpected error logged with context and a request id   (Standard: owasp-logging, otel)
- 7. No passwords or personal data in error reports   (Standard: owasp-logging)
+ 6. Every unexpected error logged with context and a request id   (Standard: owasp-logging, otel)  -> see operations/logging
+ 7. No passwords or personal data in error reports   (Standard: owasp-logging)  -> see backend/data-privacy
 
 SAFETY
  8. Failures fail closed: access denied when a check errors   (Standard: owasp-scp)

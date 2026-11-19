@@ -8,7 +8,7 @@ about: How long each animation takes and how it speeds up and slows down.
 - Bigger distance, slightly longer time | S m3-easing carbon-motion
 ## Easing
 - Ease-out for things entering, ease-in for things leaving, standard for moves on screen | S m3-easing mdn-easing
-- No linear easing for movement, except progress and spinners | S mdn-easing carbon-motion
+- No linear easing for movement, except progress and spinners | S mdn-easing carbon-motion >motion/loading-motion
 - A small named set of curves used everywhere | S m3-easing fluent-motion
 ## Testing
 - Timing checked slowed down, then at real speed | P

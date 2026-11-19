@@ -4,8 +4,8 @@ Backing: 10 Rule, 3 Standard, 1 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 FINDING IT
- 1. "Cancel subscription" easy to find in billing or account settings   (Rule: ftc-negative-option)
- 2. Cancel online if you could sign up online; no phone call required   (Rule: ftc-negative-option)
+ 1. "Cancel subscription" easy to find in billing or account settings   (Rule: ftc-negative-option)  -> see web-app/billing
+ 2. Cancel online if you could sign up online; no phone call required   (Rule: ftc-negative-option)  -> see website/sign-up
  3. In store-bought plans, link to the store's subscription page   (Standard: apple-subscriptions, play-subscriptions)
 
 THE STEPS
@@ -17,7 +17,7 @@ THE STEPS
 WHAT HAPPENS
  8. Access until the end of the paid period, with the date   (Standard: apple-subscriptions)
  9. What is lost and whether data is kept, and for how long   (Rule: gdpr-13)
-10. Refund rules if any   (Rule: eu-consumer-rights)
+10. Refund rules if any   (Rule: eu-consumer-rights)  -> see flows/requesting-a-refund
 
 CONFIRMATION
 11. Confirmation screen and email with the end date   (Rule: ftc-negative-option)

@@ -3,7 +3,7 @@ about: The written guide that lets a new person run, change and trust the projec
 ## README
 - What it is and who it is for, in the first lines | S github-readme
 - How to install, run and test, as copyable commands | S github-readme
-- Settings and environment variables listed | S twelve-factor
+- Settings and environment variables listed | S twelve-factor >operations/environments >operations/secrets
 - How to get help and how to contribute | S github-readme
 - The licence named | S choose-license
 ## Docs
@@ -12,4 +12,4 @@ about: The written guide that lets a new person run, change and trust the projec
 - Comments explain why, not what | S google-style
 - API reference generated from the code or spec | S openapi
 ## Upkeep
-- Docs changed in the same commit as the code | P
+- Docs changed in the same commit as the code | P >code/commits-branches

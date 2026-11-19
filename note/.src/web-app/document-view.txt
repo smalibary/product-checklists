@@ -3,28 +3,28 @@ about: Reading and editing one document (a page, a note, a file) inside the app,
 also: design-system/accessibility
 ## Reading
 - Title as the main heading, with owner, last edited time and by whom | P
-- Contents list from headings for long documents | S wcag-headings
-- Comfortable line length (about 60 to 80 characters) and line height | S butterick-line wcag-text-spacing
-- Readable at 200% zoom and in dark mode | S wcag-reflow mdn-color-scheme
-- Images, tables and code blocks fit the width or scroll inside their box | S wcag-reflow
+- Contents list from headings for long documents | S wcag-headings >design-system/accessibility
+- Comfortable line length (about 60 to 80 characters) and line height | S butterick-line wcag-text-spacing >design-system/typography
+- Readable at 200% zoom and in dark mode | S wcag-reflow mdn-color-scheme >design-system/dark-mode >design-system/accessibility
+- Images, tables and code blocks fit the width or scroll inside their box | S wcag-reflow >web-app/data-table >design-system/accessibility
 ## Editing
 - Clear difference between view and edit mode, or edit in place with a visible cursor | P
 - Saving automatic with "Saved" or "Saving..." shown | R nng-status
-- Offline edits kept and synced later | P
-- Undo and redo with keyboard shortcuts | R nng-control
-- Formatting toolbar with named buttons, also by keyboard shortcut | S wcag-name-role
+- Offline edits kept and synced later | P >mobile/offline
+- Undo and redo with keyboard shortcuts | R nng-control >flows/undoing-an-action >web-app/keyboard-shortcuts
+- Formatting toolbar with named buttons, also by keyboard shortcut | S wcag-name-role >web-app/keyboard-shortcuts
 - Paste from other apps keeps simple formatting | P
 ## Together
 - Who else is here, with photos and coloured cursors plus names | P
-- Comments on selected text | P
+- Comments on selected text | P >web-app/comments
 - Suggest changes mode for reviewers | P
-- Version history | P
+- Version history | P >web-app/version-history
 ## Sharing
-- Share button showing who has access and their level (view, comment, edit) | S owasp-authz
-- Link sharing off by default, or limited to the workspace | S owasp-authz
-- Export to PDF, Word, Markdown | P
+- Share button showing who has access and their level (view, comment, edit) | S owasp-authz >flows/sharing-a-link >web-app/comments
+- Link sharing off by default, or limited to the workspace | S owasp-authz >web-app/workspace-switcher
+- Export to PDF, Word, Markdown | P >web-app/import-export
 - Print layout | P
 ## Access
-- Editor works with screen readers and keyboard only | S wcag-keyboard
-- Headings, lists and tables are real structure, not just bold text | S wcag-info
-- Language of the document set, with right-to-left for Arabic | S w3c-dir
+- Editor works with screen readers and keyboard only | S wcag-keyboard >design-system/accessibility
+- Headings, lists and tables are real structure, not just bold text | S wcag-info >web-app/data-table >design-system/accessibility
+- Language of the document set, with right-to-left for Arabic | S w3c-dir >design-system/rtl-localisation

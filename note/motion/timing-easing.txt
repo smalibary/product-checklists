@@ -12,7 +12,7 @@ DURATION
 
 EASING
  6. Ease-out for things entering, ease-in for things leaving, standard for moves on screen   (Standard: m3-easing, mdn-easing)
- 7. No linear easing for movement, except progress and spinners   (Standard: mdn-easing, carbon-motion)
+ 7. No linear easing for movement, except progress and spinners   (Standard: mdn-easing, carbon-motion)  -> see motion/loading-motion
  8. A small named set of curves used everywhere   (Standard: m3-easing, fluent-motion)
 
 TESTING

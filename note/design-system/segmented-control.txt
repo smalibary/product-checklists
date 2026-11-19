@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 USE
  1. For 2 to 5 related choices that switch a view at once   (Standard: hig-segmented, m3-segmented)
- 2. Not for navigation between pages; use tabs instead   (Standard: hig-segmented)
+ 2. Not for navigation between pages; use tabs instead   (Standard: hig-segmented)  -> see design-system/tabs
 
 LABELS
  3. Short text or icons with names, all the same kind   (Standard: hig-segmented)
@@ -15,11 +15,11 @@ BEHAVIOUR
  5. Selection clear by more than colour   (Standard: wcag-color)
 
 SEMANTICS
- 6. Built as a radio group or toggle buttons   (Standard: apg-radio)
+ 6. Built as a radio group or toggle buttons   (Standard: apg-radio)  -> see design-system/radio
 
 LOOK
  7. Equal widths; text does not wrap   (Standard: hig-segmented)
- 8. Tap targets large enough   (Standard: wcag-target)
+ 8. Tap targets large enough   (Standard: wcag-target)  -> see design-system/accessibility
 
 SOURCES
 - hig-segmented: https://developer.apple.com/design/human-interface-guidelines/segmented-controls

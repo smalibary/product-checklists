@@ -5,13 +5,13 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 BEFORE
  1. Rollback plan written and tested   (Standard: sre-release)
- 2. Monitoring, alerts and on-call in place   (Standard: sre-monitoring, sre-alerting)
+ 2. Monitoring, alerts and on-call in place   (Standard: sre-monitoring, sre-alerting)  -> see operations/monitoring-alerts
  3. Load expected and tested   (Standard: sre-overload)
- 4. Status page ready   (Practice)
+ 4. Status page ready   (Practice)  -> see website/status
 
 CONTENT
- 5. Launch post, help articles and release notes ready   (Standard: keepachangelog)
- 6. Link previews set on the launch page   (Standard: ogp)
+ 5. Launch post, help articles and release notes ready   (Standard: keepachangelog)  -> see website/changelog
+ 6. Link previews set on the launch page   (Standard: ogp)  -> see growth/link-previews
  7. Launch page listed (Product Hunt, community sites) following each site's rules   (Practice: ph-launch)
 
 DURING

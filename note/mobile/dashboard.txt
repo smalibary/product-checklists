@@ -10,22 +10,22 @@ CONTENT
  4. Every card taps through to its detail   (Research: nng-dashboards)
 
 LAYOUT
- 5. One column of cards; a horizontal swipe row only for secondary items   (Practice)
- 6. Simple charts sized for a phone (sparklines, small bars)   (Research: nng-dashboards)
+ 5. One column of cards; a horizontal swipe row only for secondary items   (Practice)  -> see mobile/gesture-navigation
+ 6. Simple charts sized for a phone (sparklines, small bars)   (Research: nng-dashboards)  -> see design-system/charts
  7. Period choice (today, week, month) at the top   (Practice)
- 8. Last updated time; pull to refresh   (Standard: hig-loading)
+ 8. Last updated time; pull to refresh   (Standard: hig-loading)  -> see mobile/pull-to-refresh
 
 SPEED
- 9. Cached data shown at once, then refreshed   (Practice)
-10. Cards load on their own with skeletons   (Research: nng-skeleton)
-11. Works offline with cached numbers marked as old   (Practice)
+ 9. Cached data shown at once, then refreshed   (Practice)  -> see backend/caching
+10. Cards load on their own with skeletons   (Research: nng-skeleton)  -> see design-system/skeleton
+11. Works offline with cached numbers marked as old   (Practice)  -> see mobile/offline, backend/caching
 
 PERSONAL
 12. Choose and reorder cards   (Practice)
-13. Home screen widgets for the key number (iOS and Android)   (Standard: hig-widgets)
+13. Home screen widgets for the key number (iOS and Android)   (Standard: hig-widgets)  -> see mobile/widgets
 
 ACCESS
-14. Charts have text summaries for screen readers   (Standard: wcag-nontext)
+14. Charts have text summaries for screen readers   (Standard: wcag-nontext)  -> see design-system/charts, design-system/accessibility
 15. Cards are headings or buttons with clear names   (Standard: hig-accessibility)
 16. Large text reflows cards instead of cutting numbers   (Standard: hig-accessibility)
 

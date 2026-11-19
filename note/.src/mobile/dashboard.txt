@@ -7,18 +7,18 @@ also: design-system/accessibility
 - Things needing action at the top (due, overdue, waiting) | R nng-dashboards
 - Every card taps through to its detail | R nng-dashboards
 ## Layout
-- One column of cards; a horizontal swipe row only for secondary items | P
-- Simple charts sized for a phone (sparklines, small bars) | R nng-dashboards
+- One column of cards; a horizontal swipe row only for secondary items | P >mobile/gesture-navigation
+- Simple charts sized for a phone (sparklines, small bars) | R nng-dashboards >design-system/charts
 - Period choice (today, week, month) at the top | P
-- Last updated time; pull to refresh | S hig-loading
+- Last updated time; pull to refresh | S hig-loading >mobile/pull-to-refresh
 ## Speed
-- Cached data shown at once, then refreshed | P
-- Cards load on their own with skeletons | R nng-skeleton
-- Works offline with cached numbers marked as old | P
+- Cached data shown at once, then refreshed | P >backend/caching
+- Cards load on their own with skeletons | R nng-skeleton >design-system/skeleton
+- Works offline with cached numbers marked as old | P >mobile/offline >backend/caching
 ## Personal
 - Choose and reorder cards | P
-- Home screen widgets for the key number (iOS and Android) | S hig-widgets
+- Home screen widgets for the key number (iOS and Android) | S hig-widgets >mobile/widgets
 ## Access
-- Charts have text summaries for screen readers | S wcag-nontext
+- Charts have text summaries for screen readers | S wcag-nontext >design-system/charts >design-system/accessibility
 - Cards are headings or buttons with clear names | S hig-accessibility
 - Large text reflows cards instead of cutting numbers | S hig-accessibility

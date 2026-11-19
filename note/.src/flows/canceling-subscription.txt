@@ -2,8 +2,8 @@ title: Canceling subscription (flow)
 about: Stopping a paid plan, from finding the option to confirmation.
 also: design-system/accessibility
 ## Finding it
-- "Cancel subscription" easy to find in billing or account settings | L ftc-negative-option
-- Cancel online if you could sign up online; no phone call required | L ftc-negative-option
+- "Cancel subscription" easy to find in billing or account settings | L ftc-negative-option >web-app/billing
+- Cancel online if you could sign up online; no phone call required | L ftc-negative-option >website/sign-up
 - In store-bought plans, link to the store's subscription page | S apple-subscriptions play-subscriptions
 ## The steps
 - As few steps as signing up | L ftc-negative-option
@@ -13,7 +13,7 @@ also: design-system/accessibility
 ## What happens
 - Access until the end of the paid period, with the date | S apple-subscriptions
 - What is lost and whether data is kept, and for how long | L gdpr-13
-- Refund rules if any | L eu-consumer-rights
+- Refund rules if any | L eu-consumer-rights >flows/requesting-a-refund
 ## Confirmation
 - Confirmation screen and email with the end date | L ftc-negative-option
 - Easy way to come back (resubscribe) | P

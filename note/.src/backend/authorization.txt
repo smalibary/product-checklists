@@ -10,10 +10,10 @@ about: Deciding what each signed-in person may see and do, checked on the server
 - Field-level checks: some fields only some roles may read or change | S owasp-api-top10 owasp-mass-assignment
 - Admin actions behind separate checks and, ideally, a separate address | S owasp-api-top10
 ## In the database
-- Row-level security as a second guard for shared tables | S pg-rls
-- The app's database user cannot change the schema | S owasp-authz
+- Row-level security as a second guard for shared tables | S pg-rls >backend/database-design
+- The app's database user cannot change the schema | S owasp-authz >backend/database-design
 ## Changes
 - Role changes take effect immediately | S owasp-authz
-- Every grant, removal and admin action written to the audit trail | S owasp-logging
+- Every grant, removal and admin action written to the audit trail | S owasp-logging >backend/audit-trail
 ## Testing
 - Tests that try each action as each role, including "should be refused" cases | S owasp-asvs

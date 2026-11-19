@@ -1,4 +1,4 @@
-﻿292 checklist notes
+﻿293 checklist notes
 
 api/api-docs.txt  (13 items)
 api/authentication.txt  (17 items)
@@ -277,6 +277,7 @@ website/event-page.txt  (27 items)
 website/faq.txt  (18 items)
 website/features.txt  (20 items)
 website/footer.txt  (20 items)
+website/header.txt  (18 items)
 website/landing-page.txt  (23 items)
 website/login.txt  (29 items)
 website/newsletter-signup.txt  (11 items)

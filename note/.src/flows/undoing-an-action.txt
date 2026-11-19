@@ -3,11 +3,11 @@ about: Reversing a mistake right after making it.
 also: design-system/accessibility
 ## Offering undo
 - Undo for deletes, moves and sends instead of asking "Are you sure?" each time | R nng-control
-- An Undo button in a toast for a few seconds | S m3-snackbar
+- An Undo button in a toast for a few seconds | S m3-snackbar >design-system/toast
 - Time long enough to read and act, or until dismissed | S wcag-timing
 ## Behaviour
 - Undo restores everything exactly | R nng-control
 - Ctrl+Z works where people expect it | R nng-shortcuts
 - A bin or history for later undo | R nng-control
 ## Access
-- Toast announced and reachable by keyboard | S wcag-status wcag-keyboard
+- Toast announced and reachable by keyboard | S wcag-status wcag-keyboard >design-system/toast >design-system/accessibility

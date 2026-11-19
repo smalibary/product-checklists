@@ -3,19 +3,19 @@ about: What an API sends back when something goes wrong, so both a program and a
 ## Format
 - One error format for the whole API, such as Problem Details (type, title, status, detail) | S rfc-problem
 - A stable machine code per error ("card_declined") that never changes | S google-aip-errors
-- A human message in plain words that says what to do next | S google-aip-errors
-- Field errors list each field and its problem, so a form can show them in place | S rfc-problem
-- A request id in every response and every error, also written to the logs | S otel
+- A human message in plain words that says what to do next | S google-aip-errors >design-system/content-voice
+- Field errors list each field and its problem, so a form can show them in place | S rfc-problem >flows/showing-input-error
+- A request id in every response and every error, also written to the logs | S otel >operations/logging
 ## Status codes
 - The status code matches the error: 4xx for the caller, 5xx for the server | S rfc-http
 - 401 means not signed in; 403 means signed in but not allowed | S rfc-http
 - 404 instead of 403 where saying "it exists" would leak information | S owasp-api-top10
-- 429 and 503 carry a Retry-After header | S rfc-429 rfc-retry-after
+- 429 and 503 carry a Retry-After header | S rfc-429 rfc-retry-after >api/rate-limits
 ## Safety
 - No stack traces, database errors, file paths or library versions in responses | S owasp-errors owasp-disclosure
 - The same message for "wrong password" and "no such user" | S owasp-auth
 - Unexpected errors caught in one place, logged in detail, answered with a general message | S owasp-errors
 ## For callers
 - Each error says whether trying again can help | S google-aip-errors
-- Every error code listed in the docs with its cause and fix | S openapi
+- Every error code listed in the docs with its cause and fix | S openapi >api/api-docs
 - Messages in the caller's language when the API serves people directly | S rfc-http

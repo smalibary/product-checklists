@@ -17,10 +17,10 @@ also: design-system/accessibility
 - Accessibility at the venue: step-free entry, captions, sign language, quiet room | L ada-web eu-accessibility-act
 - Directions, map, parking and public transport | P
 - What to bring and dress code if any | P
-- Refund and transfer policy for tickets | L eu-consumer-rights
+- Refund and transfer policy for tickets | L eu-consumer-rights >flows/requesting-a-refund
 ## Registration
 - A short form: only the fields needed to attend | R baymard-fields
-- Confirmation screen and email with the date, place and a calendar file | R govuk-confirm
+- Confirmation screen and email with the date, place and a calendar file | R govuk-confirm >web-app/calendar
 - Add to calendar for Google, Apple and Outlook | P
 - A way to cancel a registration | P
 - Reminder email before the event, with the join link for online events | P
@@ -28,9 +28,9 @@ also: design-system/accessibility
 - The page changes once the event has passed: "This event has ended" with the recording or slides | P
 - No Register button on a past event | R nng-heuristics
 ## Search and sharing
-- Event structured data (name, start date, location, offers, status) so search shows it | S google-event schema-event
+- Event structured data (name, start date, location, offers, status) so search shows it | S google-event schema-event >growth/technical-seo
 - Event status marked if cancelled, postponed or moved online | S google-event
-- A share image and title for social links | P
+- A share image and title for social links | P >growth/social-links
 ## Accessibility
 - Captions and transcripts for any video | S wcag-captions
 - Page title includes the event name and date | S wcag-title

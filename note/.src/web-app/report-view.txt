@@ -4,24 +4,24 @@ also: design-system/accessibility
 ## Header
 - Report title, the period covered and who made it | P
 - When the data was taken, and the time zone | P
-- Filters applied shown at the top | R nng-filters
+- Filters applied shown at the top | R nng-filters >flows/filtering-items
 ## Content
 - Summary of the key findings first, in words | R nng-scanning
 - Numbers with comparison to a previous period or a target | R nng-dashboards
-- Charts with titles that state the point ("Sales rose 12% in March") | P
-- Tables with totals and subtotals | R nng-tables
+- Charts with titles that state the point ("Sales rose 12% in March") | P >design-system/charts
+- Tables with totals and subtotals | R nng-tables >web-app/data-table
 - Notes and definitions for each number | P
 ## Sharing
-- Export to PDF and spreadsheet | P
-- Share link with permissions (who can see) | S owasp-authz
+- Export to PDF and spreadsheet | P >web-app/import-export
+- Share link with permissions (who can see) | S owasp-authz >flows/sharing-a-link >web-app/roles-permissions
 - Schedule by email (weekly, monthly) | P
-- Print layout that fits pages and repeats table headers | P
+- Print layout that fits pages and repeats table headers | P >web-app/data-table
 ## Trust
 - Data sources named | P
 - Partial or missing data marked | P
-- Personal data hidden or grouped unless needed | L gdpr-25
+- Personal data hidden or grouped unless needed | L gdpr-25 >backend/data-privacy
 ## Access
-- Headings in order so the report reads as an outline | S wcag-headings
-- Charts have a text summary or data table | S wcag-nontext
+- Headings in order so the report reads as an outline | S wcag-headings >design-system/accessibility
+- Charts have a text summary or data table | S wcag-nontext >web-app/data-table >design-system/charts >design-system/accessibility
 - Exported PDF tagged and readable by screen readers | S wcag
 - Colour not the only way to show good or bad | S wcag-color

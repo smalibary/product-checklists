@@ -17,7 +17,7 @@ LISTS
  7. Sorting animates once; filtering does not jump the page   (Research: nng-animation-usability)
 
 ACCESS
- 8. Reduced motion shows the final state directly   (Standard: mdn-reduced-motion)
+ 8. Reduced motion shows the final state directly   (Standard: mdn-reduced-motion)  -> see motion/motion-accessibility
 
 SOURCES
 - heer-transitions: https://doi.org/10.1109/TVCG.2007.70539

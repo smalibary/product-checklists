@@ -8,15 +8,15 @@ also: design-system/accessibility
 ## Reference
 - Every address with its method, fields, types, required marks, example request and response | S openapi
 - Every error code with its meaning and fix | S rfc-problem
-- Authentication, paging, rate limits and versioning explained once and linked from each address | S google-aip
+- Authentication, paging, rate limits and versioning explained once and linked from each address | S google-aip >api/rate-limits
 ## Examples
 - Copyable examples in curl and the main languages, with test keys filled in for signed-in readers | S stripe-keys
 - Examples that are run in tests so they keep working | P
 ## Change
-- A changelog with dates and what callers must do | S keepachangelog
-- Deprecated items marked with their retire date | S rfc-deprecation rfc-sunset
+- A changelog with dates and what callers must do | S keepachangelog >website/changelog
+- Deprecated items marked with their retire date | S rfc-deprecation rfc-sunset >api/versioning
 ## Finding things
 - Search across all pages | P
-- A status page and a support contact linked from the docs | P
+- A status page and a support contact linked from the docs | P >website/status
 ## Access
 - Docs pages meet WCAG: headings, keyboard use, contrast, readable code blocks | S wcag

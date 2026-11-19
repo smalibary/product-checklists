@@ -6,9 +6,9 @@ also: design-system/accessibility
 - The new address entered with checks | S govuk-email
 ## Confirming
 - A link or code sent to the new address; the change only applies after it | S owasp-auth
-- A notice sent to the old address with a way to undo | S owasp-auth
+- A notice sent to the old address with a way to undo | S owasp-auth >flows/undoing-an-action
 ## After
-- Sessions on other devices reviewed | S owasp-session
+- Sessions on other devices reviewed | S owasp-session >backend/sessions
 - Marketing consent carried over only when right | L gdpr-7
 ## Errors
 - Address already used: say so without leaking other accounts | S owasp-auth

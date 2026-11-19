@@ -9,7 +9,7 @@ VOICE
 
 WORDS
  3. Plain words people use, not internal names   (Standard: hig-writing)
- 4. Buttons say what they do (Save changes, not OK)   (Research: nng-buttons)
+ 4. Buttons say what they do (Save changes, not OK)   (Research: nng-buttons)  -> see flows/saving-changes
  5. Sentence case for labels   (Standard: hig-writing)
  6. Numbers, dates and money formatted by locale   (Standard: cldr)
 
@@ -20,7 +20,7 @@ CONSISTENCY
  8. One word for one thing across the product (a glossary)   (Research: nng-consistency)
 
 LANGUAGES
- 9. Text written to translate well, with room for longer words   (Standard: w3c-forms-i18n)
+ 9. Text written to translate well, with room for longer words   (Standard: w3c-forms-i18n)  -> see design-system/rtl-localisation
 
 SOURCES
 - nng-voice: https://www.nngroup.com/articles/tone-of-voice-dimensions/

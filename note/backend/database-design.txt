@@ -10,8 +10,8 @@ STRUCTURE
  4. NOT NULL, UNIQUE and CHECK rules for what must always be true   (Standard: pg-constraints)
 
 TYPES
- 5. Times stored as UTC timestamps with time zone   (Standard: rfc-datetime, iana-tz)
- 6. Money as whole numbers in the smallest unit, or exact decimals, never floating point   (Standard: iso-4217)
+ 5. Times stored as UTC timestamps with time zone   (Standard: rfc-datetime, iana-tz)  -> see backend/dates-money
+ 6. Money as whole numbers in the smallest unit, or exact decimals, never floating point   (Standard: iso-4217)  -> see backend/dates-money
  7. Fixed lists as enums or lookup tables   (Practice)
 
 SPEED
@@ -24,11 +24,11 @@ CORRECTNESS
 12. The right isolation level for money and stock   (Standard: pg-isolation)
 
 PRIVACY
-13. Personal data in clearly marked columns, so it can be exported and deleted   (Rule: gdpr-15, gdpr-17)
+13. Personal data in clearly marked columns, so it can be exported and deleted   (Rule: gdpr-15, gdpr-17)  -> see backend/data-privacy
 14. Sensitive columns encrypted   (Rule: gdpr-32)
 
 SHARED DATA
-15. Each customer's rows marked by tenant and guarded by row rules   (Standard: pg-rls, owasp-multitenant)
+15. Each customer's rows marked by tenant and guarded by row rules   (Standard: pg-rls, owasp-multitenant)  -> see backend/multi-tenancy
 
 SOURCES
 - rfc-uuid: https://www.rfc-editor.org/rfc/rfc9562

@@ -2,7 +2,7 @@ title: Live chat
 about: Real-time help in the product, by a person or a bot.
 also: design-system/accessibility
 ## Finding it
-- Labelled "Chat", in the usual bottom corner | R nng-chat
+- Labelled "Chat", in the usual bottom corner | R nng-chat >web-app/chat
 - Not the only way to get help | R nng-chat nng-contact
 ## Starting
 - Says if a bot or a person is answering | R nng-chat nng-chatbots
@@ -15,4 +15,4 @@ also: design-system/accessibility
 - A copy of the conversation offered | R nng-chat
 - Can resume after a disconnect | R nng-chat
 ## Access
-- Works with keyboard and screen readers; new messages announced | S wcag-status wcag-keyboard
+- Works with keyboard and screen readers; new messages announced | S wcag-status wcag-keyboard >design-system/accessibility

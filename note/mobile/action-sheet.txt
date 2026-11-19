@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 WHEN TO USE
  1. Choices about one item (Share, Edit, Delete) or confirming a destructive action   (Standard: hig-action-sheets)
- 2. Android uses a bottom sheet or a menu for the same job   (Standard: m3-bottom-sheets, m3-menus)
+ 2. Android uses a bottom sheet or a menu for the same job   (Standard: m3-bottom-sheets, m3-menus)  -> see design-system/drawer
  3. Not for long content or forms (use a full sheet or new screen)   (Research: nng-bottom-sheet)
  4. Not for a simple yes/no that needs explanation (use an alert)   (Standard: hig-alerts)
 
@@ -17,9 +17,9 @@ CONTENT
  9. Few actions; long lists scroll   (Standard: hig-action-sheets)
 
 BEHAVIOUR
-10. Tap outside or swipe down closes it   (Standard: m3-bottom-sheets)
+10. Tap outside or swipe down closes it   (Standard: m3-bottom-sheets)  -> see mobile/gesture-navigation
 11. Android back closes it   (Standard: android-back)
-12. On iPad and large screens it shows as a popover next to what was tapped   (Standard: hig-action-sheets)
+12. On iPad and large screens it shows as a popover next to what was tapped   (Standard: hig-action-sheets)  -> see design-system/popover
 13. Destructive actions can be undone, or confirmed   (Research: nng-confirm)
 
 LOOK
@@ -29,7 +29,7 @@ LOOK
 
 ACCESS
 17. Focus moves into the sheet and returns after   (Standard: hig-accessibility)
-18. Screen readers announce it as a menu or dialog with a title   (Standard: hig-accessibility)
+18. Screen readers announce it as a menu or dialog with a title   (Standard: hig-accessibility)  -> see design-system/modal
 19. Large text grows the rows instead of cutting text   (Standard: hig-accessibility)
 
 SOURCES

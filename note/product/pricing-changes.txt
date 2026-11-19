@@ -18,7 +18,7 @@ CHOICES
 
 DISPLAY
  8. Former prices shown honestly in sales   (Rule: eu-omnibus)
- 9. Pricing page clear and comparable   (Research: nng-pricing)
+ 9. Pricing page clear and comparable   (Research: nng-pricing)  -> see website/pricing
 
 SOURCES
 - eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en

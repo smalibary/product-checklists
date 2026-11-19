@@ -23,7 +23,7 @@ TYPING
 RESULTS
 12. Count of results, grouped by type if mixed   (Research: nng-search)
 13. Matched words highlighted with weight, not only colour   (Standard: wcag-color)
-14. Filters in a sheet or chips above results, with counts   (Research: baymard-filters)
+14. Filters in a sheet or chips above results, with counts   (Research: baymard-filters)  -> see flows/filtering-items
 15. Sort choice   (Research: nng-search)
 16. Infinite scroll keeps position when coming back   (Research: nng-infinite)
 

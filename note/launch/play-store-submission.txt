@@ -12,11 +12,11 @@ LISTING
  4. Title, short and full description, icon, screenshots   (Rule: play-listing)
  5. Data safety form answered truthfully   (Rule: play-data-safety)
  6. Content rating questionnaire done   (Rule: play-policy)
- 7. Privacy policy link working   (Rule: play-user-data)
+ 7. Privacy policy link working   (Rule: play-user-data)  -> see website/privacy
 
 RULES
- 8. Account deletion offered in the app and on the web   (Rule: play-deletion)
- 9. Digital goods through Play billing   (Rule: play-billing)
+ 8. Account deletion offered in the app and on the web   (Rule: play-deletion)  -> see flows/deleting-account
+ 9. Digital goods through Play billing   (Rule: play-billing)  -> see mobile/billing
 10. Permissions asked only when needed   (Standard: hig-privacy, webdev-permissions)
 
 RELEASE

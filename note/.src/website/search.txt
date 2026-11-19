@@ -5,7 +5,7 @@ about: The search box and results on a website, so visitors find a page without 
 - At least 27 characters wide so queries are visible | R nng-search
 - A magnifier icon and a label or placeholder that says what can be searched | R nng-search nng-placeholder
 - Has an accessible name and sits in a search landmark | S wcag-name-role apg-landmarks
-- Opens with a keyboard shortcut (/ or Ctrl+K) shown in the box | P
+- Opens with a keyboard shortcut (/ or Ctrl+K) shown in the box | P >web-app/keyboard-shortcuts
 - Enter submits; a clear button empties the box | P
 ## Suggestions while typing
 - Suggestions after 1 to 3 letters, at most about 8-10 | R baymard-autocomplete
@@ -18,13 +18,13 @@ about: The search box and results on a website, so visitors find a page without 
 - Number of results shown | P
 - Each result: title, a short extract with the matched words highlighted, type and date | P
 - Typos forgiven, with "Did you mean ...?" | R baymard-autocomplete
-- Filters by type, date or section for large sites | R nng-filters
+- Filters by type, date or section for large sites | R nng-filters >flows/filtering-items
 - Sort by relevance by default | P
-- Pagination or "Load more" with the position kept on Back | R nng-infinite
+- Pagination or "Load more" with the position kept on Back | R nng-infinite >design-system/pagination
 ## No results
 - Say so plainly, repeat the query, and offer fixes: spelling, fewer words, popular pages | R nng-empty
 - A link to contact or browse | P
 ## Speed and access
 - Results in under 1 second; show progress if slower | R nng-response
 - Page title includes the query ("Results for pricing") | S wcag-title
-- Results page is not indexed by search engines | P
+- Results page is not indexed by search engines | P >growth/technical-seo

@@ -21,7 +21,7 @@ PAYING
 11. One confirm button that names the action and the amount ("Pay 120 SAR and upgrade")   (Standard: wcag-prevent)
 12. Strong customer authentication (3-D Secure) handled inside the flow where cards need it   (Rule: psd2-sca, stripe-3ds)
 13. Busy state on the button; no double charge on double click   (Practice)
-14. Card details through a PCI-certified provider   (Standard: pci-dss)
+14. Card details through a PCI-certified provider   (Standard: pci-dss)  -> see flows/making-a-card-payment
 
 AFTER
 15. Success screen and email receipt   (Research: govuk-confirm)
@@ -33,7 +33,7 @@ HONESTY
 19. Trial-to-paid terms stated before the card is taken   (Rule: ftc-negative-option)
 
 ACCESS
-20. Focus moves to the dialog and back; Escape closes it   (Standard: apg-dialog)
+20. Focus moves to the dialog and back; Escape closes it   (Standard: apg-dialog)  -> see design-system/modal
 
 SOURCES
 - nng-heuristics: https://www.nngroup.com/articles/ten-usability-heuristics/

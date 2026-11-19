@@ -17,7 +17,7 @@ also: design-system/accessibility
 - One confirm button that names the action and the amount ("Pay 120 SAR and upgrade") | S wcag-prevent
 - Strong customer authentication (3-D Secure) handled inside the flow where cards need it | L psd2-sca stripe-3ds
 - Busy state on the button; no double charge on double click | P
-- Card details through a PCI-certified provider | S pci-dss
+- Card details through a PCI-certified provider | S pci-dss >flows/making-a-card-payment
 ## After
 - Success screen and email receipt | R govuk-confirm
 - New features visible at once, with a short pointer to them | P
@@ -26,4 +26,4 @@ also: design-system/accessibility
 - No pre-ticked add-ons or hidden recurring charges | L ftc-dark-patterns
 - Trial-to-paid terms stated before the card is taken | L ftc-negative-option
 ## Access
-- Focus moves to the dialog and back; Escape closes it | S apg-dialog
+- Focus moves to the dialog and back; Escape closes it | S apg-dialog >design-system/modal

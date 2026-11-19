@@ -4,8 +4,8 @@ Backing: 0 Rule, 11 Standard, 0 Research, 0 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 INPUT
- 1. All input validated on the server, with allow-lists   (Standard: owasp-input, owasp-scp)
- 2. Database queries use parameters, never joined strings   (Standard: owasp-sql)
+ 1. All input validated on the server, with allow-lists   (Standard: owasp-input, owasp-scp)  -> see backend/input-validation
+ 2. Database queries use parameters, never joined strings   (Standard: owasp-sql)  -> see backend/database-design
  3. Output escaped for where it goes (HTML, URL, script)   (Standard: owasp-xss)
  4. No building code or commands from user text   (Standard: owasp-scp)
 
@@ -15,12 +15,12 @@ ACCESS
  7. Redirects only to known addresses   (Standard: owasp-redirect)
 
 DATA
- 8. Secrets from the secret store, never in code   (Standard: owasp-secrets)
+ 8. Secrets from the secret store, never in code   (Standard: owasp-secrets)  -> see operations/secrets
  9. Untrusted data never turned back into objects without checks   (Standard: owasp-deserialization)
 
 HABITS
 10. Security libraries from the framework, not home-made crypto   (Standard: owasp-proactive)
-11. Dependencies scanned on every change   (Standard: owasp-dependencies)
+11. Dependencies scanned on every change   (Standard: owasp-dependencies)  -> see operations/dependencies
 
 SOURCES
 - owasp-input: https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html

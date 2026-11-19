@@ -11,7 +11,7 @@ about: Changing an API without breaking the programs that already use it.
 - Old versions translated at the edge, so the core code has one model | S stripe-versioning
 ## Retiring
 - Deprecation and Sunset headers with the date on anything being retired | S rfc-deprecation rfc-sunset
-- Notice sent well ahead (often 6 to 12 months) by email and in the changelog | S zalando-api
+- Notice sent well ahead (often 6 to 12 months) by email and in the changelog | S zalando-api >website/changelog
 - Use of old versions measured, so you know who to contact | P
 ## Changelog
 - Every change listed with its date, version and what callers must do | S keepachangelog

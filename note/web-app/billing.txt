@@ -6,17 +6,17 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 PLAN
  1. Current plan, price, billing period and next charge date and amount   (Rule: ftc-negative-option)
  2. Usage against limits (seats, storage, calls) with a bar and numbers   (Practice)
- 3. Change plan, with the price difference shown before confirming   (Rule: eu-consumer-rights)
- 4. Cancel subscription, as easy to find and do as signing up was   (Rule: ftc-negative-option, apple-subscriptions)
+ 3. Change plan, with the price difference shown before confirming   (Rule: eu-consumer-rights)  -> see web-app/upgrade
+ 4. Cancel subscription, as easy to find and do as signing up was   (Rule: ftc-negative-option, apple-subscriptions)  -> see flows/canceling-subscription
  5. What happens on cancel: access until the period ends, data kept for how long   (Rule: ftc-negative-option)
  6. Turn auto-renew on again after cancelling   (Practice)
 
 PAYMENT
  7. Saved payment method (brand and last 4 digits, expiry), with change and remove   (Standard: pci-dss)
  8. Card expiring soon warned ahead   (Practice)
- 9. Card details collected by a PCI-certified provider, never stored by the app   (Standard: pci-dss)
+ 9. Card details collected by a PCI-certified provider, never stored by the app   (Standard: pci-dss)  -> see flows/making-a-card-payment
 10. Strong customer authentication when the bank asks for it   (Rule: psd2-sca, stripe-3ds)
-11. Failed payment: banner with what to do and the date access stops   (Practice)
+11. Failed payment: banner with what to do and the date access stops   (Practice)  -> see design-system/banner
 
 INVOICES
 12. List of invoices with date, amount, status (paid, failed, refunded) and PDF download   (Practice)
@@ -29,7 +29,7 @@ PERMISSIONS
 17. Others see "Ask your admin"   (Practice)
 
 ACCESS
-18. Invoice list is a real table with headers   (Standard: wai-tables)
+18. Invoice list is a real table with headers   (Standard: wai-tables)  -> see web-app/data-table
 19. Amounts read clearly by screen readers (currency named)   (Standard: wcag-name-role)
 20. Confirmations for charges name the amount   (Standard: wcag-prevent)
 

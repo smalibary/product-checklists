@@ -2,26 +2,26 @@ title: Settings (web app)
 about: The place where people change how the app works for them, or for their whole workspace.
 also: design-system/accessibility
 ## Structure
-- Personal settings separate from workspace (team) settings | P
-- A side menu of sections (General, Account, Notifications, Billing, Members, Security, Integrations) | P
+- Personal settings separate from workspace (team) settings | P >web-app/workspace-switcher
+- A side menu of sections (General, Account, Notifications, Billing, Members, Security, Integrations) | P >web-app/notifications
 - Each section has its own address so it can be linked and bookmarked | P
 - Search across settings for apps with many | P
 - Most used settings first; dangerous ones last in a "Danger zone" | P
 ## Controls
-- One control type per job: switch for on/off taking effect at once, checkbox when a Save button follows | R nng-toggle
+- One control type per job: switch for on/off taking effect at once, checkbox when a Save button follows | R nng-toggle >design-system/checkbox
 - Each setting has a label and one line explaining what it changes | R nng-heuristics
 - Defaults that suit most people | R nng-heuristics
 - Disabled settings say why (plan, permission) | P
 ## Saving
 - Either save on change (with a "Saved" message) or one Save button per section, not a mix | R nng-heuristics
 - Saved message announced to screen readers | S wcag-status
-- Unsaved changes warned before leaving | R nng-control
-- Undo, or reset to default | R nng-control
+- Unsaved changes warned before leaving | R nng-control >flows/saving-changes
+- Undo, or reset to default | R nng-control >flows/undoing-an-action
 - Failed save says why and keeps what was typed | S wcag-redundant
 ## Dangerous actions
-- Deleting a workspace or transferring ownership needs typing the name or re-entering the password | S wcag-prevent
+- Deleting a workspace or transferring ownership needs typing the name or re-entering the password | S wcag-prevent >web-app/workspace-switcher
 - Say exactly what will be lost | R nng-confirm
 ## Access
 - Side menu is navigation with the current section marked | S apg-landmarks
-- Works at phone width (menu becomes a list or a drop-down) | S wcag-reflow
-- Dark mode and text size settings respected | P mdn-color-scheme
+- Works at phone width (menu becomes a list or a drop-down) | S wcag-reflow >design-system/dropdown-menu >design-system/accessibility
+- Dark mode and text size settings respected | P mdn-color-scheme >design-system/dark-mode

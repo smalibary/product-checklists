@@ -11,7 +11,7 @@ PLATFORM RULES
 CONTENT
  4. Only the app icon or logo on a plain background   (Standard: android-splash)
  5. No text that needs translating, no ads, no "Loading" messages   (Standard: hig-launching)
- 6. Background colour matches the first screen, in light and dark mode   (Standard: hig-launching, hig-dark-mode)
+ 6. Background colour matches the first screen, in light and dark mode   (Standard: hig-launching, hig-dark-mode)  -> see design-system/dark-mode
 
 SPEED
  7. Shown as briefly as possible; start-up work moved to after the first screen   (Standard: android-splash)
@@ -20,11 +20,11 @@ SPEED
 10. Slow start-ups measured and fixed (cold start under about 2 seconds is a good aim)   (Standard: android-vitals)
 
 MOTION
-11. Optional short icon animation (under a second)   (Standard: android-splash)
-12. Reduced motion respected   (Standard: hig-accessibility)
+11. Optional short icon animation (under a second)   (Standard: android-splash)  -> see motion/motion-system
+12. Reduced motion respected   (Standard: hig-accessibility)  -> see motion/motion-accessibility
 
 EDGE CASES
-13. Offline at start: show the app with cached content and a notice, not a stuck splash   (Practice)
+13. Offline at start: show the app with cached content and a notice, not a stuck splash   (Practice)  -> see mobile/offline, backend/caching
 14. Update required: a clear screen with a button to the store   (Practice)
 
 SOURCES

@@ -11,5 +11,5 @@ about: Small labels for status or category, and small buttons for filters and ch
 - Pressable chips are buttons with a pressed state | S apg-button
 - Remove buttons named ("Remove Riyadh") | S wcag-label-name
 ## Look
-- Text contrast meets 4.5:1 | S wcag-contrast
-- Tap targets at least 24 by 24 pixels | S wcag-target
+- Text contrast meets 4.5:1 | S wcag-contrast >design-system/accessibility
+- Tap targets at least 24 by 24 pixels | S wcag-target >design-system/accessibility

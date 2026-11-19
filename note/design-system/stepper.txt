@@ -10,12 +10,12 @@ PROGRESS STEPPER: WHEN TO USE
 PROGRESS STEPPER: LOOK
  3. Each step has a number and a short name   (Research: nng-progress)
  4. Done, current and upcoming steps different by icon and text, not only colour   (Standard: wcag-color)
- 5. Horizontal on wide screens; vertical or "Step 2 of 5" on phones   (Standard: wcag-reflow)
+ 5. Horizontal on wide screens; vertical or "Step 2 of 5" on phones   (Standard: wcag-reflow)  -> see design-system/accessibility
  6. Steps that are done can be clicked to go back; future steps cannot   (Research: nng-wizards)
  7. Errors in a step marked on that step   (Practice)
 
 PROGRESS STEPPER: ACCESS
- 8. An ordered list; the current step marked aria-current="step"   (Standard: wcag-info)
+ 8. An ordered list; the current step marked aria-current="step"   (Standard: wcag-info)  -> see design-system/accessibility
  9. Each step's state in words for screen readers ("completed")   (Standard: wcag-name-role)
 10. The page title also says the step   (Standard: wcag-title)
 
@@ -27,7 +27,7 @@ NUMBER STEPPER: LOOK AND BEHAVIOUR
 15. Step size suits the value (1 for quantity, 0.5 for hours)   (Practice)
 
 NUMBER STEPPER: ACCESS
-16. Buttons have names ("Increase quantity") and target size at least 24 px   (Standard: wcag-name-role, wcag-target)
+16. Buttons have names ("Increase quantity") and target size at least 24 px   (Standard: wcag-name-role, wcag-target)  -> see design-system/accessibility
 17. The field is a spinbutton or number input with min, max and value   (Standard: apg-spinbutton)
 18. Arrow up and down change the value   (Standard: apg-spinbutton)
 19. Value changes announced   (Standard: wcag-status)

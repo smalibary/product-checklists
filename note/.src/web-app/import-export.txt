@@ -6,12 +6,12 @@ about: Bringing data in from files or other tools, and taking it out.
 - Errors listed by row and field, with a way to fix and retry | S govuk-error-summary
 - Large imports run in the background with progress | R nng-progress
 - A summary at the end: added, updated, skipped | S govuk-confirm
-- Undo or delete the whole import | R nng-control
+- Undo or delete the whole import | R nng-control >flows/undoing-an-action
 ## Export
 - Common formats (CSV, JSON, PDF) | P
-- Exports of all personal data available to the person | L gdpr-20
+- Exports of all personal data available to the person | L gdpr-20 >backend/data-privacy
 - Large exports emailed or ready to download later | P
-- CSV safe against formula injection | P
+- CSV safe against formula injection | P >code/secure-coding
 ## Safety
 - Only data the person may see is exported | S owasp-authz
-- Exports logged in the audit trail | S owasp-logging
+- Exports logged in the audit trail | S owasp-logging >web-app/audit-log

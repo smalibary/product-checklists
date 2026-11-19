@@ -12,7 +12,7 @@ LOOK
  4. Track, filled part, thumb and optional tick marks   (Standard: m3-sliders)
  5. Current value shown next to it or above the thumb while moving   (Standard: m3-sliders)
  6. Minimum and maximum labelled at the ends   (Standard: m3-sliders)
- 7. Thumb at least 24 px; touch area 44 to 48 px   (Standard: wcag-target, hig-layout)
+ 7. Thumb at least 24 px; touch area 44 to 48 px   (Standard: wcag-target, hig-layout)  -> see design-system/accessibility
  8. Track and thumb 3:1 contrast with what is around   (Standard: wcag-ui-contrast)
 
 BEHAVIOUR
@@ -23,13 +23,13 @@ BEHAVIOUR
 
 KEYBOARD
 13. Arrow keys change by one step; Page Up/Down by larger steps; Home/End to min and max   (Standard: apg-slider)
-14. Focus ring visible on the thumb   (Standard: wcag-focus)
+14. Focus ring visible on the thumb   (Standard: wcag-focus)  -> see design-system/accessibility
 
 ACCESS
 15. Native range input or role slider with a name   (Standard: apg-slider)
 16. Value, min and max set; value text read in words if needed ("50 SAR")   (Standard: apg-slider)
 17. Two thumbs each have names ("Minimum price", "Maximum price")   (Standard: apg-slider)
-18. Direction flips for right-to-left   (Standard: w3c-dir)
+18. Direction flips for right-to-left   (Standard: w3c-dir)  -> see design-system/rtl-localisation
 
 SOURCES
 - m3-sliders: https://m3.material.io/components/sliders/guidelines

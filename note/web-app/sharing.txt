@@ -19,10 +19,10 @@ TELLING PEOPLE
 
 SAFETY
  9. Sharing outside the organisation can be limited by admins   (Practice)
-10. Shares and removals logged   (Standard: owasp-logging)
+10. Shares and removals logged   (Standard: owasp-logging)  -> see operations/logging
 
 ACCESS
-11. The sharing dialog follows dialog rules (focus, Escape, labels)   (Standard: apg-dialog)
+11. The sharing dialog follows dialog rules (focus, Escape, labels)   (Standard: apg-dialog)  -> see design-system/modal
 
 SOURCES
 - owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html

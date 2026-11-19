@@ -11,7 +11,7 @@ THE FIELD
 
 APPLYING
  5. Busy state on Apply   (Practice)
- 6. Success: code shown as a removable tag with the saving   (Research: baymard-coupon)
+ 6. Success: code shown as a removable tag with the saving   (Research: baymard-coupon)  -> see design-system/tag-chip
  7. Totals update at once, discount on its own line   (Rule: eu-consumer-rights)
 
 ERRORS
@@ -26,7 +26,7 @@ RULES
 
 ACCESS
 14. Result announced   (Standard: wcag-status)
-15. Field has a visible name   (Standard: wcag-labels)
+15. Field has a visible name   (Standard: wcag-labels)  -> see design-system/accessibility
 16. Remove button named ("Remove code SAVE10")   (Standard: wcag-name-role)
 
 SOURCES

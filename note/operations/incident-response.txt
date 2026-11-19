@@ -12,10 +12,10 @@ DURING
  4. One incident lead; roles for talking, fixing and writing down   (Standard: sre-incident)
  5. Stop the harm first, find the cause later   (Standard: sre-incident)
  6. A running timeline of what was done   (Standard: sre-incident)
- 7. Customers told on the status page early and updated regularly   (Standard: atlassian-incident)
+ 7. Customers told on the status page early and updated regularly   (Standard: atlassian-incident)  -> see website/status
 
 DATA BREACHES
- 8. Personal data breaches reported to the authority within 72 hours where required   (Rule: gdpr-33, pdpl)
+ 8. Personal data breaches reported to the authority within 72 hours where required   (Rule: gdpr-33, pdpl)  -> see backend/data-privacy
  9. Affected people told when the risk is high   (Rule: gdpr-33)
 
 AFTER

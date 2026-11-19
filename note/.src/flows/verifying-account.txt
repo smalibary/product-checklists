@@ -10,13 +10,13 @@ also: design-system/accessibility
 - Code entry tries limited | S owasp-auth
 ## While waiting
 - The person can use the parts of the app that do not need verifying | P
-- "Check spam" hint and a support link | P
+- "Check spam" hint and a support link | P >flows/contacting-support
 ## Identity checks (when the law or risk needs them)
 - Say why it is needed, what is collected and how long it is kept | L gdpr-13
 - Steps listed first (photo of ID, selfie) with time needed | R nng-wizards
-- Camera guides and clear retake | S hig-camera
-- Status shown (checking, approved, needs more) with notifications | P
-- Another way for people who cannot use the camera | S wcag-gestures
+- Camera guides and clear retake | S hig-camera >mobile/camera
+- Status shown (checking, approved, needs more) with notifications | P >web-app/notifications
+- Another way for people who cannot use the camera | S wcag-gestures >mobile/camera
 ## Done
 - Clear success and the next step | S govuk-confirm
 - Verified mark explained where shown | P
@@ -24,5 +24,5 @@ also: design-system/accessibility
 - Codes random, short-lived and single use | S nist-63b
 - No telling attackers whether an account exists | S owasp-auth
 ## Access
-- Code field has a name and no time pressure that cannot be extended | S wcag-labels wcag-timing
+- Code field has a name and no time pressure that cannot be extended | S wcag-labels wcag-timing >design-system/accessibility
 - No robot check that blocks screen reader users without another way | S wcag-auth

@@ -6,7 +6,7 @@ about: Animation that says success, error or "look here".
 - Errors never shown by motion or colour alone | S wcag-color wcag-error
 ## Attention
 - New items or changes highlighted once, briefly | R nng-animation-usability
-- Badges and dots animate in once, not forever | P
+- Badges and dots animate in once, not forever | P >design-system/badge
 - Nothing blinks; anything moving over 5 seconds can be stopped | S wcag-pause
 ## Reading aloud
 - The message behind the motion is announced to screen readers | S wcag-status

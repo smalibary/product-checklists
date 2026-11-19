@@ -5,28 +5,28 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 ITEMS
  1. Each item: photo, name, options (size, colour), price and quantity   (Research: baymard-cart)
- 2. Quantity with minus and plus buttons; removing at zero asks or offers undo   (Research: baymard-cart)
+ 2. Quantity with minus and plus buttons; removing at zero asks or offers undo   (Research: baymard-cart)  -> see flows/undoing-an-action
  3. Remove and Save for later   (Research: baymard-cart)
- 4. Out of stock or price changed items marked clearly at the top   (Research: baymard-cart)
+ 4. Out of stock or price changed items marked clearly at the top   (Research: baymard-cart)  -> see product/pricing-changes
  5. Tap item opens its product screen   (Practice)
 
 TOTALS
  6. Subtotal, delivery, discounts, VAT and total, with delivery estimate   (Rule: eu-consumer-rights, ftc-junk-fees)
  7. Free delivery threshold progress ("Add 30 SAR for free delivery")   (Practice)
- 8. Promo code field folded, not a big empty box   (Research: baymard-coupon)
+ 8. Promo code field folded, not a big empty box   (Research: baymard-coupon)  -> see flows/entering-promo-code
 
 ACTIONS
- 9. Checkout button sticky at the bottom with the total   (Practice)
+ 9. Checkout button sticky at the bottom with the total   (Practice)  -> see mobile/checkout
 10. Apple Pay or Google Pay express button where available   (Standard: hig-apple-pay)
 11. Continue shopping link   (Research: baymard-cart)
 
 KEEPING THE CART
-12. Cart kept across sessions and devices when signed in   (Research: baymard-cart)
-13. Cart badge on the tab or icon with the count   (Standard: m3-badges)
+12. Cart kept across sessions and devices when signed in   (Research: baymard-cart)  -> see backend/sessions
+13. Cart badge on the tab or icon with the count   (Standard: m3-badges)  -> see design-system/badge
 14. Empty cart: friendly message and suggestions   (Research: nng-empty)
 
 FEEDBACK
-15. Adding to cart confirms with a small message, haptic and badge change, without leaving the product   (Standard: hig-feedback)
+15. Adding to cart confirms with a small message, haptic and badge change, without leaving the product   (Standard: hig-feedback)  -> see design-system/badge
 16. Changes to quantity update the total at once   (Practice)
 
 ACCESS

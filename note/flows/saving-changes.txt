@@ -16,20 +16,20 @@ SAVE BUTTON
 
 AUTOSAVE
  8. "Saving..." then "Saved" with time   (Research: nng-indicators)
- 9. Works offline with "Will save when online"   (Practice)
-10. Version history or undo for mistakes   (Research: nng-control)
+ 9. Works offline with "Will save when online"   (Practice)  -> see mobile/offline
+10. Version history or undo for mistakes   (Research: nng-control)  -> see flows/undoing-an-action, web-app/version-history
 
 LEAVING UNSAVED
 11. Warn before leaving with unsaved changes; Save, Discard, Cancel   (Standard: wcag-prevent)
-12. Drafts kept if the session ends   (Standard: wcag-timing)
+12. Drafts kept if the session ends   (Standard: wcag-timing)  -> see backend/sessions
 
 CONFLICTS
 13. If someone else changed it, show both and let the person choose   (Practice)
 
 ACCESS
 14. Save message announced without moving focus   (Standard: wcag-status)
-15. Keyboard shortcut (Ctrl+S) where people expect it   (Practice)
-16. Save button has a clear name   (Standard: wcag-labels)
+15. Keyboard shortcut (Ctrl+S) where people expect it   (Practice)  -> see web-app/keyboard-shortcuts
+16. Save button has a clear name   (Standard: wcag-labels)  -> see design-system/accessibility
 
 SOURCES
 - nng-indicators: https://www.nngroup.com/articles/indicators-validations-notifications/

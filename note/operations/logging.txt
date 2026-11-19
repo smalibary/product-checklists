@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 FORMAT
  1. Structured logs (JSON) with time, level, message, service and request id   (Standard: otel, otel-semconv)
  2. One request id carried through every service and job   (Standard: otel)
- 3. Times in UTC   (Standard: rfc-datetime)
+ 3. Times in UTC   (Standard: rfc-datetime)  -> see backend/dates-money
 
 WHAT
  4. Errors with enough detail to fix them   (Standard: owasp-logging)
@@ -14,7 +14,7 @@ WHAT
  6. Each request: route, status, time taken   (Standard: otel-semconv)
 
 WHAT NOT
- 7. No passwords, tokens, keys, card numbers or full personal data   (Standard: owasp-logging, pci-dss)
+ 7. No passwords, tokens, keys, card numbers or full personal data   (Standard: owasp-logging, pci-dss)  -> see backend/payments, backend/data-privacy
  8. User input cleaned before logging so it cannot fake log lines   (Standard: owasp-logging)
 
 KEEPING

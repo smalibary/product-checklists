@@ -2,14 +2,14 @@ title: Sidebar navigation
 about: The side menu in apps for moving between sections.
 ## Structure
 - Sections grouped with headings | R nng-vertical-nav
-- Icons with text labels; icons alone only when collapsed, with tooltips | R nng-icons
+- Icons with text labels; icons alone only when collapsed, with tooltips | R nng-icons >design-system/tooltip
 - Current page marked | R nng-indicators
 ## Behaviour
 - Collapsible, remembering the choice | R nng-vertical-nav
 - Nested items expand in place | S apg-disclosure
 - Scrolls on its own when long | P
 ## Phones
-- Becomes a drawer on small screens | S m3-nav-drawer
+- Becomes a drawer on small screens | S m3-nav-drawer >design-system/drawer
 ## Semantics
 - nav landmark; current link with aria-current | S apg-landmarks
 ## Direction

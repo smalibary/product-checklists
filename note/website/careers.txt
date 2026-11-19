@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 JOBS LIST
  1. Open jobs listed with title, team, place (or remote) and type (full time, contract)   (Research: nng-careers)
- 2. Filters by team, place and type when there are many   (Research: nng-careers)
+ 2. Filters by team, place and type when there are many   (Research: nng-careers)  -> see flows/filtering-items
  3. Each job has its own page and address that can be shared   (Research: nng-careers)
  4. Closed jobs removed promptly   (Research: nng-careers)
 
@@ -14,13 +14,13 @@ JOB PAGE
  6. Pay range where the law asks for it (many US states, EU from 2026)   (Rule: eu-pay-transparency)
  7. Benefits, working hours and leave   (Research: nng-careers)
  8. Hiring steps and how long they take   (Research: nng-careers)
- 9. Job structured data so the post appears in job search   (Standard: google-jobs)
+ 9. Job structured data so the post appears in job search   (Standard: google-jobs)  -> see growth/technical-seo
 
 APPLYING
-10. A short form; upload a CV instead of retyping it   (Research: baymard-fields)
+10. A short form; upload a CV instead of retyping it   (Research: baymard-fields)  -> see design-system/file-upload
 11. No account needed to apply   (Research: nng-login-walls)
-12. File upload accepts common types with size limits stated   (Standard: govuk-file-upload, owasp-upload)
-13. Labels, errors and autofill work   (Standard: wcag-labels, wcag-error, mdn-autocomplete)
+12. File upload accepts common types with size limits stated   (Standard: govuk-file-upload, owasp-upload)  -> see design-system/file-upload
+13. Labels, errors and autofill work   (Standard: wcag-labels, wcag-error, mdn-autocomplete)  -> see design-system/accessibility
 14. What happens to the applicant's data and for how long it is kept   (Rule: gdpr-13)
 15. Confirmation on screen and by email   (Research: govuk-confirm)
 

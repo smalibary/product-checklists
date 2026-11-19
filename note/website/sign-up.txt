@@ -16,7 +16,7 @@ WAYS TO SIGN UP
 FIELDS
  7. Ask only what is needed now; everything else later   (Research: baymard-fields, webdev-signup)
  8. One name field ("Full name"), not first and last, for international names   (Standard: w3c-names)
- 9. Visible labels; placeholders only as examples   (Standard: wcag-labels, nng-placeholder)
+ 9. Visible labels; placeholders only as examples   (Standard: wcag-labels, nng-placeholder)  -> see design-system/accessibility
 10. autocomplete set: name, email, new-password   (Standard: webdev-signup, mdn-autocomplete, wcag-purpose)
 11. Optional fields marked "(optional)"; required ones not starred   (Research: nng-required, govuk-question)
 12. Email typo hint ("Did you mean gmail.com?")   (Practice)
@@ -35,7 +35,7 @@ ERRORS
 21. Submit is never disabled; it explains what is missing instead   (Research: govuk-button)
 
 LEGAL AND CONSENT
-22. Terms and privacy links beside the button   (Rule: gdpr-13)
+22. Terms and privacy links beside the button   (Rule: gdpr-13)  -> see website/terms
 23. Marketing consent separate and unticked   (Rule: gdpr-7)
 24. Age check where children's law applies   (Rule: coppa)
 

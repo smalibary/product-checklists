@@ -11,7 +11,7 @@ METHOD
 
 SIZE
  5. A default page size and a maximum; larger requests are cut to the maximum   (Standard: google-aip-pagination)
- 6. No "give me everything" option on big tables   (Standard: owasp-api-top10)
+ 6. No "give me everything" option on big tables   (Standard: owasp-api-top10)  -> see backend/database-design
 
 RESPONSE
  7. A next-page token, empty on the last page   (Standard: google-aip-pagination)
@@ -20,7 +20,7 @@ RESPONSE
 
 BEHAVIOUR
 10. An expired token gives a clear error, not an empty page   (Standard: google-aip-errors)
-11. Every list reads through an index that matches its sort, never a full table scan   (Standard: pg-indexes)
+11. Every list reads through an index that matches its sort, never a full table scan   (Standard: pg-indexes)  -> see backend/database-design
 12. Deep numbered pages avoided: they get slower the further you go   (Standard: pg-explain)
 
 DOCS

@@ -6,13 +6,13 @@ about: Automatic checks that catch mistakes before people see them.
 ## What
 - Every bug fixed gets a test that would have caught it | P
 - Permission tests for each role, including refused cases | S owasp-asvs
-- Edge cases: empty, very long, Arabic and right-to-left text, time zones | P
+- Edge cases: empty, very long, Arabic and right-to-left text, time zones | P >design-system/rtl-localisation >backend/dates-money
 - Accessibility checks on key screens | S wcag
 ## Running
 - Tests run on every change and block merging when they fail | S sre-release
 - Flaky tests fixed or removed, not ignored | P
 - Tests use their own data and clean up after themselves | P
 ## Data
-- No real personal data in test environments | L gdpr-5
+- No real personal data in test environments | L gdpr-5 >backend/data-privacy >operations/environments
 ## Security
-- Dependency and code scanning in the pipeline | S owasp-dependencies nist-ssdf
+- Dependency and code scanning in the pipeline | S owasp-dependencies nist-ssdf >operations/dependencies

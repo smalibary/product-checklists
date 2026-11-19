@@ -6,33 +6,33 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 WHEN TO USE
  1. Navigation drawer for many destinations on small screens   (Standard: m3-nav-drawer)
  2. Side panel (sheet) for details or filters while keeping the page in view   (Standard: m3-side-sheets)
- 3. Not for short confirmations (use a dialog) or for messages (use a toast)   (Research: nng-modal)
+ 3. Not for short confirmations (use a dialog) or for messages (use a toast)   (Research: nng-modal)  -> see design-system/toast, design-system/modal
 
 TYPES
- 4. Modal drawer: covers the page with a dimmed backdrop and blocks it   (Standard: m3-nav-drawer)
+ 4. Modal drawer: covers the page with a dimmed backdrop and blocks it   (Standard: m3-nav-drawer)  -> see design-system/modal
  5. Non-modal (standard) drawer: sits beside the page, which stays usable   (Standard: m3-side-sheets)
- 6. Bottom drawer on phones for actions (see Action Sheet)   (Standard: m3-bottom-sheets)
+ 6. Bottom drawer on phones for actions (see Action Sheet)   (Standard: m3-bottom-sheets)  -> see mobile/action-sheet
 
 LOOK
  7. Width fits the content; on phones up to almost the full width   (Standard: m3-nav-drawer)
  8. Title at the top and a close button with a name   (Standard: wcag-name-role)
- 9. Clear edge or shadow between the drawer and the page   (Standard: wcag-ui-contrast)
+ 9. Clear edge or shadow between the drawer and the page   (Standard: wcag-ui-contrast)  -> see design-system/elevation
 10. Footer for main actions when the drawer holds a form   (Practice)
 
 BEHAVIOUR
 11. Opens from the side that matches reading direction (left in English, right in Arabic)   (Standard: w3c-dir, mdn-logical)
-12. Closes with Escape, the close button and a click on the backdrop (modal)   (Standard: apg-dialog)
-13. Swipe to close on touch screens, with the button as well   (Standard: wcag-dragging)
-14. Unsaved changes warned before closing   (Research: nng-control)
+12. Closes with Escape, the close button and a click on the backdrop (modal)   (Standard: apg-dialog)  -> see design-system/modal
+13. Swipe to close on touch screens, with the button as well   (Standard: wcag-dragging)  -> see mobile/gesture-navigation
+14. Unsaved changes warned before closing   (Research: nng-control)  -> see flows/saving-changes
 15. Its open state can be in the address for detail drawers   (Practice)
-16. Motion short and eased; reduced motion respected   (Standard: m3-motion, mdn-reduced-motion)
+16. Motion short and eased; reduced motion respected   (Standard: m3-motion, mdn-reduced-motion)  -> see motion/motion-accessibility
 
 FOCUS AND ACCESS
-17. Modal drawer: focus moves in, stays inside, and returns to the button that opened it   (Standard: apg-dialog)
-18. Modal drawer marked as a dialog with a name (aria-modal)   (Standard: apg-dialog)
-19. Non-modal drawer: a landmark or region with a name; focus is not trapped   (Standard: apg-landmarks)
+17. Modal drawer: focus moves in, stays inside, and returns to the button that opened it   (Standard: apg-dialog)  -> see design-system/modal
+18. Modal drawer marked as a dialog with a name (aria-modal)   (Standard: apg-dialog)  -> see design-system/modal
+19. Non-modal drawer: a landmark or region with a name; focus is not trapped   (Standard: apg-landmarks)  -> see design-system/modal
 20. The opening button says whether the drawer is open (aria-expanded)   (Standard: wcag-name-role)
-21. Page behind cannot be scrolled while a modal drawer is open   (Practice)
+21. Page behind cannot be scrolled while a modal drawer is open   (Practice)  -> see design-system/modal
 
 TOKENS
 22. Width, padding, backdrop colour, radius and motion are tokens   (Standard: dtcg-tokens)

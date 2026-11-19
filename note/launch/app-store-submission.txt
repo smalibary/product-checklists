@@ -11,11 +11,11 @@ LISTING
  3. Name, subtitle, description, keywords and screenshots   (Rule: apple-screenshots, apple-product-page)
  4. Privacy details answered truthfully   (Rule: apple-privacy-labels)
  5. Age rating set   (Rule: apple-age-rating)
- 6. Privacy policy and support addresses working   (Rule: apple-review)
+ 6. Privacy policy and support addresses working   (Rule: apple-review)  -> see website/privacy
 
 REVIEW RULES
  7. Demo account and notes for the reviewer   (Rule: apple-review)
- 8. Account deletion inside the app if sign-up exists   (Rule: apple-deletion)
+ 8. Account deletion inside the app if sign-up exists   (Rule: apple-deletion)  -> see website/sign-up, flows/deleting-account
  9. Sign in with Apple offered when other social sign-ins are   (Rule: apple-4.8)
 10. Purchases of digital goods through Apple's system   (Rule: apple-subscriptions)
 11. Tracking permission asked before tracking   (Rule: apple-att)

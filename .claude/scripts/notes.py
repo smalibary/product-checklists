@@ -4,7 +4,7 @@ Source format, one file per checklist (note/.src/<group>/<name>.txt):
     about: one line on what the page is for
     also: design-system/accessibility   (optional: other checklists this one relies on)
     ## Section name
-    - Item text | S wcag-contrast owasp-auth
+    - Item text | S wcag-contrast owasp-auth >website/footer   (">group/name" links the item to another checklist)
 Backing letters: L = Rule (a store or a law requires it), S = Standard, R = Research, P = Practice.
 Keys after the letter are looked up in note/.src/sources.txt ("key  url" per line).
 Run: python .claude/scripts/notes.py   (writes note/<group>/<name>.txt and note/INDEX.txt)"""
@@ -31,7 +31,10 @@ for f in sorted(src.glob("*/*.txt")):
         elif line.startswith("## "): out += ["", line[3:].strip().upper()]; secs.append({"name": line[3:].strip(), "items": []})
         elif line.startswith("- "):
             text, _, back = line[2:].partition("|")
-            parts = back.split()
+            parts = [p for p in back.split() if not p.startswith(">")]
+            links = [p[1:] for p in back.split() if p.startswith(">")]
+            for k in links:
+                if not (src / (k + ".txt")).exists(): missing.add(f"{f.name}: link {k}")
             letter = parts[0] if parts and parts[0] in NAMES else "P"
             keys = parts[1:] if parts and parts[0] in NAMES else parts
             for k in keys:
@@ -39,9 +42,9 @@ for f in sorted(src.glob("*/*.txt")):
                 elif k not in used: used.append(k)
             n += 1; counts[letter] += 1
             tail = NAMES[letter] + (f": {', '.join(keys)}" if keys else "")
-            out.append(f"{n:>2}. {text.strip()}   ({tail})")
+            out.append(f"{n:>2}. {text.strip()}   ({tail})" + (f"  -> see {', '.join(links)}" if links else ""))
             if not secs: secs.append({"name": "Items", "items": []})
-            secs[-1]["items"].append({"t": text.strip(), "b": letter, "k": keys})
+            secs[-1]["items"].append({"t": text.strip(), "b": letter, "k": keys, **({"x": [k.replace("/", "-") for k in links]} if links else {})})
     head = [f"{title.upper()} CHECKLIST: {n} items", about,
             "Backing: " + ", ".join(f"{counts[k]} {NAMES[k]}" for k in NAMES),
             "Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found"]

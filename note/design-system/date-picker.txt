@@ -24,7 +24,7 @@ THE CALENDAR
 
 KEYBOARD AND ACCESS
 14. Arrow keys move by day, Page Up/Down by month, Home/End to week start and end   (Standard: apg-datepicker)
-15. Calendar is a dialog with a grid; focus moves in and back   (Standard: apg-datepicker)
+15. Calendar is a dialog with a grid; focus moves in and back   (Standard: apg-datepicker)  -> see design-system/modal
 16. Each day read with full date ("Tuesday 3 March 2026")   (Standard: apg-datepicker)
 17. Escape closes without changing the value   (Standard: apg-datepicker)
 

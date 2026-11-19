@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 CONTENT
  1. The standard aimed for (for example WCAG 2.2 AA)   (Standard: w3c-a11y-statement)
  2. Known problems listed, with plans and dates   (Standard: govuk-a11y-statement)
- 3. How to report a problem or ask for another format   (Standard: w3c-a11y-statement)
+ 3. How to report a problem or ask for another format   (Standard: w3c-a11y-statement)  -> see support/bug-reports
  4. Date of the last check and how it was checked   (Standard: govuk-a11y-statement)
 
 LAW
@@ -14,7 +14,7 @@ LAW
  6. Products and services under the European Accessibility Act need accessibility information   (Rule: eu-accessibility-act)
 
 UPKEEP
- 7. Linked from the footer   (Standard: w3c-a11y-statement)
+ 7. Linked from the footer   (Standard: w3c-a11y-statement)  -> see website/footer
  8. Updated after each audit   (Standard: govuk-a11y-statement)
 
 SOURCES

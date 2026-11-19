@@ -5,16 +5,16 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 CONTENT
  1. Links grouped under short headings (Product, Company, Resources, Legal)   (Research: nng-footers)
- 2. Contact: email, phone or a link to the contact page   (Research: nng-footers, nng-contact)
+ 2. Contact: email, phone or a link to the contact page   (Research: nng-footers, nng-contact)  -> see website/contact-us
  3. Company name, registration and address where the law asks   (Rule: eu-consumer-rights)
- 4. Privacy policy, terms and cookie settings links   (Rule: gdpr-13, eprivacy)
+ 4. Privacy policy, terms and cookie settings links   (Rule: gdpr-13, eprivacy)  -> see website/cookie-consent, website/privacy, website/terms
  5. "Do not sell or share my personal information" where California law applies   (Rule: ccpa)
- 6. Accessibility statement link   (Rule: eu-accessibility-act)
+ 6. Accessibility statement link   (Rule: eu-accessibility-act)  -> see launch/accessibility-statement
  7. Copyright line with the current year   (Practice)
- 8. Social links with names, not only icons   (Standard: wcag-link, wcag-nontext)
+ 8. Social links with names, not only icons   (Standard: wcag-link, wcag-nontext)  -> see growth/social-links, design-system/accessibility
  9. Language and region switcher   (Practice)
-10. Newsletter sign-up, short, with consent rules   (Rule: gdpr-7)
-11. Status page and help centre links   (Practice)
+10. Newsletter sign-up, short, with consent rules   (Rule: gdpr-7)  -> see website/newsletter-signup
+11. Status page and help centre links   (Practice)  -> see website/status, web-app/help-center
 
 CONSISTENCY
 12. The same footer, in the same order, on every page   (Standard: wcag-nav)
@@ -22,11 +22,11 @@ CONSISTENCY
 
 STRUCTURE AND ACCESS
 14. Marked as the page's footer landmark (contentinfo)   (Standard: apg-landmarks)
-15. Link groups are lists with headings   (Standard: wcag-info)
+15. Link groups are lists with headings   (Standard: wcag-info)  -> see design-system/accessibility
 16. Link text says where it goes, no "click here"   (Standard: wcag-link)
-17. Contrast meets 4.5 to 1, even on dark footers   (Standard: wcag-contrast)
-18. Touch targets at least 24 pixels apart or in size   (Standard: wcag-target)
-19. Groups stack or fold into sections on phones   (Standard: wcag-reflow)
+17. Contrast meets 4.5 to 1, even on dark footers   (Standard: wcag-contrast)  -> see design-system/accessibility
+18. Touch targets at least 24 pixels apart or in size   (Standard: wcag-target)  -> see design-system/accessibility
+19. Groups stack or fold into sections on phones   (Standard: wcag-reflow)  -> see design-system/accessibility
 20. Back to top link on long pages   (Practice)
 
 SOURCES

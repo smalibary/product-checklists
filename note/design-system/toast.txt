@@ -5,30 +5,30 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 WHEN TO USE
  1. Low-importance confirmations ("Saved", "Message sent")   (Standard: m3-snackbar)
- 2. An undo right after an action ("Deleted. Undo")   (Standard: m3-snackbar)
+ 2. An undo right after an action ("Deleted. Undo")   (Standard: m3-snackbar)  -> see flows/undoing-an-action
  3. Not for errors that need action or anything the person must read   (Research: nng-indicators)
  4. Not for the result of a form submit that fails (show errors in the form)   (Standard: govuk-error-summary)
 
 CONTENT
  5. One short line; at most one action   (Standard: m3-snackbar)
- 6. The action is never the only way to do it (undo is also in a menu)   (Standard: wcag-timing)
+ 6. The action is never the only way to do it (undo is also in a menu)   (Standard: wcag-timing)  -> see flows/undoing-an-action
 
 LOOK
  7. Fixed place (bottom centre or bottom start) across the product   (Standard: m3-snackbar)
- 8. Above the tab bar on phones   (Standard: m3-snackbar)
- 9. Contrast meets WCAG   (Standard: wcag-contrast)
+ 8. Above the tab bar on phones   (Standard: m3-snackbar)  -> see mobile/tab-bar-navigation
+ 9. Contrast meets WCAG   (Standard: wcag-contrast)  -> see design-system/accessibility
 10. One at a time; later ones wait   (Standard: m3-snackbar)
 
 TIMING
 11. Stays long enough to read: about 4 to 10 seconds, longer with an action   (Standard: m3-snackbar)
 12. Pauses on hover and focus   (Standard: wcag-timing)
 13. Can be closed   (Standard: m3-snackbar)
-14. With reduced motion, appears without sliding   (Standard: mdn-reduced-motion)
+14. With reduced motion, appears without sliding   (Standard: mdn-reduced-motion)  -> see motion/motion-accessibility
 
 ACCESS
 15. Announced by screen readers with a status region (polite)   (Standard: wcag-status)
 16. Does not take focus from what the person was doing   (Standard: wcag-status)
-17. Action reachable by keyboard (a shortcut to jump to it helps)   (Standard: wcag-keyboard)
+17. Action reachable by keyboard (a shortcut to jump to it helps)   (Standard: wcag-keyboard)  -> see design-system/accessibility
 18. Does not cover focused content or buttons   (Standard: wcag-obscured)
 
 SOURCES

@@ -9,7 +9,7 @@ also: design-system/accessibility
 - Track, filled part, thumb and optional tick marks | S m3-sliders
 - Current value shown next to it or above the thumb while moving | S m3-sliders
 - Minimum and maximum labelled at the ends | S m3-sliders
-- Thumb at least 24 px; touch area 44 to 48 px | S wcag-target hig-layout
+- Thumb at least 24 px; touch area 44 to 48 px | S wcag-target hig-layout >design-system/accessibility
 - Track and thumb 3:1 contrast with what is around | S wcag-ui-contrast
 ## Behaviour
 - Click on the track moves the thumb there | S m3-sliders
@@ -18,9 +18,9 @@ also: design-system/accessibility
 - Changes apply when released for heavy operations (filters), live for light ones (volume) | P
 ## Keyboard
 - Arrow keys change by one step; Page Up/Down by larger steps; Home/End to min and max | S apg-slider
-- Focus ring visible on the thumb | S wcag-focus
+- Focus ring visible on the thumb | S wcag-focus >design-system/accessibility
 ## Access
 - Native range input or role slider with a name | S apg-slider
 - Value, min and max set; value text read in words if needed ("50 SAR") | S apg-slider
 - Two thumbs each have names ("Minimum price", "Maximum price") | S apg-slider
-- Direction flips for right-to-left | S w3c-dir
+- Direction flips for right-to-left | S w3c-dir >design-system/rtl-localisation

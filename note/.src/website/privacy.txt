@@ -17,13 +17,13 @@ also: design-system/accessibility
 - Children: minimum age and how children's data is handled | L coppa
 - A "Do not sell or share my personal information" link where California law applies | L ccpa
 ## Clarity
-- A short summary at the top in plain words, the full text below | L gdpr-12
-- Written in clear, plain language; no hidden meaning | L gdpr-12
-- Headings and a contents list to jump to a part | S wcag-headings
+- A short summary at the top in plain words, the full text below | L gdpr-12 >design-system/content-voice
+- Written in clear, plain language; no hidden meaning | L gdpr-12 >design-system/content-voice
+- Headings and a contents list to jump to a part | S wcag-headings >design-system/accessibility
 - Available in the languages the service is offered in | L pdpl
 - Effective date and a list of changes | P
 - People told by email when the policy changes in an important way | P
 ## Access
-- Linked from the footer of every page and from sign-up | P
+- Linked from the footer of every page and from sign-up | P >website/sign-up
 - Readable as plain HTML (not only a PDF) | S wcag
 - A printable or downloadable version | P

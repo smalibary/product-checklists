@@ -16,7 +16,7 @@ COMMON ONES
 
 RESTRAINT
  8. Delight only where it helps; never slows a repeated task   (Research: nng-animation-usability)
- 9. Focus state always visible, even mid-animation   (Standard: wcag-focus)
+ 9. Focus state always visible, even mid-animation   (Standard: wcag-focus)  -> see design-system/accessibility
 
 SOURCES
 - nng-microinteractions: https://www.nngroup.com/articles/microinteractions/

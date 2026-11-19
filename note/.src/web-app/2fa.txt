@@ -7,7 +7,7 @@ also: design-system/accessibility
 - Text-message codes allowed only as a fallback; they can be stolen by SIM swap | S nist-63b-auth owasp-mfa
 - More than one method can be added, so losing one is not the end | S owasp-mfa
 ## Setting up an authenticator app
-- QR code plus the key as text for people who cannot scan | S rfc-totp wcag-nontext
+- QR code plus the key as text for people who cannot scan | S rfc-totp wcag-nontext >design-system/accessibility
 - Key shown in groups of 4 characters with a copy button | P
 - Ask for one code to confirm it works before turning it on | S owasp-mfa
 - Name the account so it shows clearly in the app (site name and email) | S rfc-totp
@@ -26,7 +26,7 @@ also: design-system/accessibility
 ## Managing
 - Turning 2FA off or changing it asks for the password or a code again | S owasp-mfa
 - Email sent when 2FA is turned on, off or changed | S owasp-mfa
-- Admins can require 2FA for everyone in a workspace | P
+- Admins can require 2FA for everyone in a workspace | P >web-app/workspace-switcher
 - Lost-everything recovery through support with identity checks | S owasp-mfa
 ## Access
 - Codes can be typed without time pressure, or the time can be extended | S wcag-timing

@@ -3,7 +3,7 @@ about: The in-app list (often a bell) of things that happened which the person m
 also: design-system/accessibility
 ## The bell
 - An icon button with a name and the unread count ("Notifications, 3 unread") | S wcag-name-role
-- Count capped (9+) and shown as a badge | R nng-indicators
+- Count capped (9+) and shown as a badge | R nng-indicators >design-system/badge
 - New notifications announced politely, not interrupting | S wcag-status
 ## The list
 - Newest first, grouped by today, this week, older | P
@@ -12,15 +12,15 @@ also: design-system/accessibility
 - Clicking opens the item and marks it read | P
 - Mark one or all as read | P
 - Quick actions inline (approve, reply) for common jobs | P
-- Filters: all, mentions, assigned to me | P
-- Link to notification settings | P
+- Filters: all, mentions, assigned to me | P >flows/filtering-items
+- Link to notification settings | P >web-app/notification-settings
 ## Volume
 - Similar notifications combined ("Sara and 4 others commented") | R nng-notifications
 - Only things the person cares about; let them mute a thread | R nng-notifications
 - Old notifications cleared after a stated time | P
 ## States
-- Empty state: "You're all caught up" | R nng-empty
+- Empty state: "You're all caught up" | R nng-empty >web-app/empty-state
 - Loading and error states | R nng-skeleton
 ## Access
-- The panel is a dialog or popover with focus moved in and Escape to close | S apg-dialog
-- Works at phone width (full-screen panel) | S wcag-reflow
+- The panel is a dialog or popover with focus moved in and Escape to close | S apg-dialog >design-system/modal >design-system/popover
+- Works at phone width (full-screen panel) | S wcag-reflow >design-system/accessibility

@@ -4,7 +4,7 @@ about: Shows the people behind the company, to build trust and help hiring.
 - Real photos taken in a consistent style | R nng-about nng-trust
 - Name, role and a short line about each person | R nng-about
 - Leaders first, then teams grouped by function | P
-- Optional links to each person's public profile | P
+- Optional links to each person's public profile | P >web-app/public-profile
 - Each person agreed to be shown; a way to be removed | L gdpr-7 gdpr-17
 - No personal email or phone without consent | L gdpr-25
 ## Culture
@@ -12,7 +12,7 @@ about: Shows the people behind the company, to build trust and help hiring.
 - Where the team works (offices, remote) | P
 - A link to open jobs | R nng-careers
 ## Layout and access
-- A grid that reflows to one column on phones | S wcag-reflow
-- Each photo has alt text with the person's name; hover-only extra info also works by keyboard and tap | S wcag-nontext wcag-hover
-- Names and roles are text, not part of an image | S wcag-nontext
-- Person structured data for leaders if useful | S schema-person
+- A grid that reflows to one column on phones | S wcag-reflow >design-system/accessibility
+- Each photo has alt text with the person's name; hover-only extra info also works by keyboard and tap | S wcag-nontext wcag-hover >design-system/accessibility
+- Names and roles are text, not part of an image | S wcag-nontext >design-system/accessibility
+- Person structured data for leaders if useful | S schema-person >growth/technical-seo

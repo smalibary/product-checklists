@@ -17,7 +17,7 @@ AFTER A NO
  7. No repeated nagging   (Research: nng-permissions)
 
 NOTIFICATIONS
- 8. Android 13 and later need the notification permission   (Standard: android-notif-perm)
+ 8. Android 13 and later need the notification permission   (Standard: android-notif-perm)  -> see mobile/in-app-notifications
 
 TRACKING
  9. App Tracking Transparency before tracking on iPhone   (Rule: apple-att)

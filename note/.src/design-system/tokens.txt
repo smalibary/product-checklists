@@ -7,7 +7,7 @@ about: Named design values (colours, sizes, spacing, radius, motion) that design
 - Components use role or component tokens, never primitives | S m3-tokens
 ## Format
 - Stored in the W3C design tokens format (JSON with $value and $type) | S dtcg-tokens
-- Each token has a type (color, dimension, fontFamily, duration, shadow) | S dtcg-tokens
+- Each token has a type (color, dimension, fontFamily, duration, shadow) | S dtcg-tokens >design-system/elevation
 - References use {group.token} so one change flows everywhere | S dtcg-tokens
 - A description on each role token saying when to use it | S dtcg-tokens
 ## Naming
@@ -24,8 +24,8 @@ about: Named design values (colours, sizes, spacing, radius, motion) that design
 - Changes reviewed and versioned like code (semver) | S semver
 - A check fails the build when a component uses a raw value | P
 ## Coverage
-- Colour, typography, spacing, size, radius, border, shadow, opacity, motion duration and easing, z-index | S dtcg-tokens
-- Contrast pairs of colour tokens tested automatically | S wcag-contrast
+- Colour, typography, spacing, size, radius, border, shadow, opacity, motion duration and easing, z-index | S dtcg-tokens >design-system/typography >design-system/elevation
+- Contrast pairs of colour tokens tested automatically | S wcag-contrast >design-system/accessibility
 ## Documentation
 - Every token shown with its value, a preview and where it is used | P
 - Deprecated tokens marked with what replaces them | P

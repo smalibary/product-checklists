@@ -2,12 +2,12 @@ title: Launch day
 about: The checklist for the day a product or big feature goes public.
 ## Before
 - Rollback plan written and tested | S sre-release
-- Monitoring, alerts and on-call in place | S sre-monitoring sre-alerting
+- Monitoring, alerts and on-call in place | S sre-monitoring sre-alerting >operations/monitoring-alerts
 - Load expected and tested | S sre-overload
-- Status page ready | P
+- Status page ready | P >website/status
 ## Content
-- Launch post, help articles and release notes ready | S keepachangelog
-- Link previews set on the launch page | S ogp
+- Launch post, help articles and release notes ready | S keepachangelog >website/changelog
+- Link previews set on the launch page | S ogp >growth/link-previews
 - Launch page listed (Product Hunt, community sites) following each site's rules | P ph-launch
 ## During
 - Rollout in stages, watching errors | S sre-canary

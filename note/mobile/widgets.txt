@@ -14,7 +14,7 @@ DATA
  6. No private data shown without the person choosing it   (Standard: hig-privacy)
 
 LOOK
- 7. Follows system light and dark mode   (Standard: hig-dark-mode)
+ 7. Follows system light and dark mode   (Standard: hig-dark-mode)  -> see design-system/dark-mode
 
 ACCESS
  8. Text scales with system settings   (Standard: hig-accessibility)

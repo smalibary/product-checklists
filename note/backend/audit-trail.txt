@@ -4,14 +4,14 @@ Backing: 1 Rule, 7 Standard, 0 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WHAT
- 1. Sign-ins, permission changes, data exports, deletes and admin actions recorded   (Standard: owasp-logging)
+ 1. Sign-ins, permission changes, data exports, deletes and admin actions recorded   (Standard: owasp-logging)  -> see flows/exporting-data
  2. Each entry: who, what, which record, when, from where, and the result   (Standard: owasp-logging)
  3. Before and after values for important changes   (Practice)
 
 INTEGRITY
  4. Entries cannot be changed or deleted by the app   (Standard: owasp-logging)
  5. Stored apart from normal data, with its own access rules   (Standard: owasp-logging)
- 6. Times in UTC from a synced clock   (Standard: rfc-datetime)
+ 6. Times in UTC from a synced clock   (Standard: rfc-datetime)  -> see backend/dates-money
 
 PRIVACY
  7. No passwords, tokens or full card numbers in entries   (Standard: owasp-logging, pci-dss)
@@ -20,7 +20,7 @@ PRIVACY
 USE
  9. Customers can see their own account's trail where it helps   (Practice)
 10. Searchable by user, record and time   (Practice)
-11. Alerts on suspicious patterns   (Standard: owasp-logging)
+11. Alerts on suspicious patterns   (Standard: owasp-logging)  -> see operations/monitoring-alerts
 
 SOURCES
 - owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html

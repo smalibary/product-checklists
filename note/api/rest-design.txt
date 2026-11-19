@@ -16,8 +16,8 @@ METHODS
  8. Actions that are not create, read, change or delete get their own sub-address with POST (/orders/123:cancel)   (Standard: google-aip)
 
 BODIES
- 9. JSON with a declared content type; dates as RFC 3339 text with a time zone   (Standard: rfc-datetime)
-10. Money as an amount in the smallest unit plus a currency code (24500 and "SAR")   (Standard: iso-4217)
+ 9. JSON with a declared content type; dates as RFC 3339 text with a time zone   (Standard: rfc-datetime)  -> see backend/dates-money
+10. Money as an amount in the smallest unit plus a currency code (24500 and "SAR")   (Standard: iso-4217)  -> see backend/dates-money
 11. Only fields a caller may set are accepted; unknown or protected fields are refused   (Standard: owasp-mass-assignment)
 12. Responses never include fields the caller may not see (password hashes, other customers)   (Standard: owasp-api-top10)
 
@@ -33,7 +33,7 @@ READING EFFICIENTLY
 
 DESCRIPTION
 19. The whole API described in an OpenAPI file kept in step with the code   (Standard: openapi)
-20. Security reviewed against the OWASP API Top 10 before launch   (Standard: owasp-api-top10)
+20. Security reviewed against the OWASP API Top 10 before launch   (Standard: owasp-api-top10)  -> see code/secure-coding
 
 SOURCES
 - google-aip: https://google.aip.dev/

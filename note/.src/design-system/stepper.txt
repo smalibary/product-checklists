@@ -6,11 +6,11 @@ about: Two meanings: a progress stepper showing the steps of a process, and a nu
 ## Progress stepper: look
 - Each step has a number and a short name | R nng-progress
 - Done, current and upcoming steps different by icon and text, not only colour | S wcag-color
-- Horizontal on wide screens; vertical or "Step 2 of 5" on phones | S wcag-reflow
+- Horizontal on wide screens; vertical or "Step 2 of 5" on phones | S wcag-reflow >design-system/accessibility
 - Steps that are done can be clicked to go back; future steps cannot | R nng-wizards
 - Errors in a step marked on that step | P
 ## Progress stepper: access
-- An ordered list; the current step marked aria-current="step" | S wcag-info
+- An ordered list; the current step marked aria-current="step" | S wcag-info >design-system/accessibility
 - Each step's state in words for screen readers ("completed") | S wcag-name-role
 - The page title also says the step | S wcag-title
 ## Number stepper: look and behaviour
@@ -20,7 +20,7 @@ about: Two meanings: a progress stepper showing the steps of a process, and a nu
 - Holding a button repeats, slowly then faster | P
 - Step size suits the value (1 for quantity, 0.5 for hours) | P
 ## Number stepper: access
-- Buttons have names ("Increase quantity") and target size at least 24 px | S wcag-name-role wcag-target
+- Buttons have names ("Increase quantity") and target size at least 24 px | S wcag-name-role wcag-target >design-system/accessibility
 - The field is a spinbutton or number input with min, max and value | S apg-spinbutton
 - Arrow up and down change the value | S apg-spinbutton
 - Value changes announced | S wcag-status

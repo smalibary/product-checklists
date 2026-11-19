@@ -11,17 +11,17 @@ OVERVIEW
  5. When the data was last updated   (Research: nng-status)
 
 CHARTS
- 6. The right chart for the question: lines for trends, bars for comparison, no 3D or pies with many slices   (Research: nng-dashboards)
+ 6. The right chart for the question: lines for trends, bars for comparison, no 3D or pies with many slices   (Research: nng-dashboards)  -> see design-system/charts
  7. Axes labelled with units; y-axis starts at zero for bars   (Practice)
- 8. Tooltip on hover and focus showing exact values   (Standard: wcag-hover)
+ 8. Tooltip on hover and focus showing exact values   (Standard: wcag-hover)  -> see design-system/tooltip
  9. Legend near the lines, or labels on the lines   (Practice)
-10. Colours that work for colour-blind people and in dark mode   (Standard: wcag-ui-contrast, wcag-color)
-11. A table view of the same data for screen readers and export   (Standard: wcag-nontext)
+10. Colours that work for colour-blind people and in dark mode   (Standard: wcag-ui-contrast, wcag-color)  -> see design-system/dark-mode
+11. A table view of the same data for screen readers and export   (Standard: wcag-nontext)  -> see web-app/import-export, web-app/data-table, design-system/accessibility
 
 EXPLORING
-12. Filter by segment (country, plan, channel)   (Research: nng-filters)
-13. Click a chart point to see the records behind it   (Practice)
-14. Filters and range kept in the address, so views can be shared   (Practice)
+12. Filter by segment (country, plan, channel)   (Research: nng-filters)  -> see flows/filtering-items
+13. Click a chart point to see the records behind it   (Practice)  -> see design-system/charts
+14. Filters and range kept in the address, so views can be shared   (Practice)  -> see flows/filtering-items
 15. Save a view or report   (Practice)
 
 TRUST
@@ -30,15 +30,15 @@ TRUST
 18. Data gaps or delays shown, not drawn as zero   (Practice)
 
 STATES AND SPEED
-19. Loading skeletons in chart shapes   (Research: nng-skeleton)
-20. No data state explains why (no events yet, filter too narrow)   (Research: nng-empty)
+19. Loading skeletons in chart shapes   (Research: nng-skeleton)  -> see design-system/skeleton, design-system/charts
+20. No data state explains why (no events yet, filter too narrow)   (Research: nng-empty)  -> see flows/filtering-items
 21. Slow queries show progress and can be cancelled   (Research: nng-response)
 
 ACCESS AND EXPORT
-22. Export to CSV and image   (Practice)
-23. Animated charts respect reduced motion   (Standard: mdn-reduced-motion, wcag-animation)
-24. Works at phone width (charts scale, tables scroll)   (Standard: wcag-reflow)
-25. Personal data aggregated or anonymised where possible   (Rule: gdpr-25)
+22. Export to CSV and image   (Practice)  -> see web-app/import-export
+23. Animated charts respect reduced motion   (Standard: mdn-reduced-motion, wcag-animation)  -> see design-system/charts, motion/motion-accessibility, motion/motion-system
+24. Works at phone width (charts scale, tables scroll)   (Standard: wcag-reflow)  -> see web-app/data-table, design-system/charts, design-system/accessibility
+25. Personal data aggregated or anonymised where possible   (Rule: gdpr-25)  -> see backend/data-privacy
 
 SOURCES
 - nng-dashboards: https://www.nngroup.com/articles/dashboards-preattentive/

@@ -12,10 +12,10 @@ also: design-system/accessibility
 - A small reward or message at the end, then the checklist goes away | P
 ## Placement
 - On the home screen as a card, can be collapsed | P
-- Can be hidden or skipped; reachable again from settings or help | R nng-onboarding
+- Can be hidden or skipped; reachable again from settings or help | R nng-onboarding >mobile/settings
 - Never blocks using the app | R nng-onboarding
 ## Permissions in the list
-- Notifications, contacts or location tasks open a pre-permission screen first | S hig-privacy webdev-permissions
+- Notifications, contacts or location tasks open a pre-permission screen first | S hig-privacy webdev-permissions >mobile/permission-prompts
 - Saying no does not leave the checklist stuck: the task can be skipped | P
 ## Access
 - Progress announced in words | S wcag-status

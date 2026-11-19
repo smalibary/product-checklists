@@ -4,19 +4,19 @@ about: Compares the product with a competitor or an alternative, to help a visit
 - Every claim about a competitor is true, current and can be proven | L ftc-comparative
 - Use the competitor's name only to identify them; no logo that suggests they endorse you | L ftc-comparative
 - Date of the comparison shown, with the plan or version compared | L ftc-comparative
-- Prices compared like for like (same plan level, same billing period, taxes stated) | L ftc-comparative ftc-junk-fees
+- Prices compared like for like (same plan level, same billing period, taxes stated) | L ftc-comparative ftc-junk-fees >website/billing
 - A link to the competitor's own pricing or docs so visitors can check | P
 ## Structure
 - A short summary at the top: who should pick which | R nng-comparison
-- A side-by-side table with the same rows for each product | R nng-comparison
+- A side-by-side table with the same rows for each product | R nng-comparison >design-system/table
 - Rows grouped by topic, with the most important first | R nng-comparison
-- Ticks and crosses also carry words or a screen-reader label, not only icons or colour | S wcag-color wcag-nontext
-- The header row and first column stay visible while scrolling a long table | R nng-comparison
-- Table built with real table headers so screen readers read each cell with its row and column | S wai-tables wcag-info
+- Ticks and crosses also carry words or a screen-reader label, not only icons or colour | S wcag-color wcag-nontext >design-system/accessibility
+- The header row and first column stay visible while scrolling a long table | R nng-comparison >design-system/table
+- Table built with real table headers so screen readers read each cell with its row and column | S wai-tables wcag-info >design-system/table >design-system/accessibility
 - Where the competitor is better, say so; it builds trust | R nng-trust
 ## Proof and action
 - Quotes from customers who switched, with permission | L ftc-endorsements
-- Help to switch: import tools, migration guide, contact | P
+- Help to switch: import tools, migration guide, contact | P >web-app/import-export
 - One main action at the end (start free, talk to sales) | P
 ## Phone width
-- The table stays readable on phones: two products side by side, or stacked cards | S wcag-reflow
+- The table stays readable on phones: two products side by side, or stacked cards | S wcag-reflow >design-system/table >design-system/accessibility

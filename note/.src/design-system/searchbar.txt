@@ -5,7 +5,7 @@ also: design-system/accessibility
 - A wide box; the width hints at query length (about 27 characters visible) | R nng-search
 - Placed where people expect: top of the page or app | R nng-search
 - Magnifier icon and a Search button, or Enter to search, stated | R nng-search
-- Placeholder can hint scope ("Search orders") but is not the label | S wcag-labels
+- Placeholder can hint scope ("Search orders") but is not the label | S wcag-labels >design-system/accessibility
 - Clear (x) button once something is typed | S m3-search
 ## Suggestions
 - Suggestions appear after a character or two, at most about 10 | R baymard-autocomplete
@@ -24,6 +24,6 @@ also: design-system/accessibility
 - Cancel button returns to where the person was | S hig-search
 ## Access
 - Search landmark (role search or the search element) | S apg-landmarks
-- Real label, visible or for screen readers ("Search") | S wcag-labels
-- Suggestion list follows the combobox pattern; number of suggestions announced | S apg-combobox wcag-status
+- Real label, visible or for screen readers ("Search") | S wcag-labels >design-system/accessibility
+- Suggestion list follows the combobox pattern; number of suggestions announced | S apg-combobox wcag-status >design-system/select-combobox
 - type="search" so browsers add their own features | S mdn-input-search

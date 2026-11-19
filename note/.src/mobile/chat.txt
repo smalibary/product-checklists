@@ -4,7 +4,7 @@ also: design-system/accessibility
 ## Conversation list
 - Newest first: photo, name, last message, time, unread count | P
 - Search across conversations | R nng-search
-- Swipe for archive, mute, delete, with a menu too | R nng-swipe wcag-dragging
+- Swipe for archive, mute, delete, with a menu too | R nng-swipe wcag-dragging >mobile/gesture-navigation
 - Pinned conversations at the top | P
 ## Conversation
 - Messages grouped by sender and day; own messages on one side | P
@@ -18,15 +18,15 @@ also: design-system/accessibility
 - Keyboard never covers the box or the last message | S hig-layout
 - Attach photos, files, voice notes, location | P
 - Draft kept when leaving the conversation | P
-- Right-to-left and mixed Arabic and English text shown in the right direction per message | S w3c-dir
+- Right-to-left and mixed Arabic and English text shown in the right direction per message | S w3c-dir >design-system/rtl-localisation
 ## Media
 - Photos load as small previews first; tap opens full screen with zoom | P
 - Voice notes with length and a play bar | P
-- Upload progress and cancel | R nng-progress
+- Upload progress and cancel | R nng-progress >design-system/file-upload
 ## Safety and privacy
 - Block and report from the conversation | S apple-review
 - End-to-end encryption where private messages are expected; say so | S owasp-masvs
-- Notifications can hide message text on the lock screen | S hig-notifications
+- Notifications can hide message text on the lock screen | S hig-notifications >mobile/in-app-notifications
 ## Access
 - New messages announced politely | S wcag-status
 - Each message read with sender and time | S hig-accessibility

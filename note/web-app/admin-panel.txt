@@ -7,25 +7,25 @@ NAVIGATION
  1. Side menu grouped by area (Users, Content, Billing, Settings, Logs)   (Practice)
  2. Global search by user, email, ID or order   (Practice)
  3. Clear sign that this is the admin area (colour band, label)   (Practice)
- 4. Breadcrumbs for deep pages   (Research: nng-breadcrumbs)
+ 4. Breadcrumbs for deep pages   (Research: nng-breadcrumbs)  -> see design-system/breadcrumb
 
 LISTS AND RECORDS
- 5. Data tables with search, filter, sort, pagination and export   (Research: nng-tables)
+ 5. Data tables with search, filter, sort, pagination and export   (Research: nng-tables)  -> see web-app/import-export, flows/filtering-items, design-system/pagination
  6. Bulk actions with a count and a confirm   (Research: nng-confirm)
  7. Record pages show everything about a user or item in one place   (Practice)
 
 POWERFUL ACTIONS
  8. Each dangerous action (ban, refund, delete) asks for confirmation naming the target   (Research: nng-confirm)
  9. A reason must be typed for sensitive actions, stored in the log   (Standard: owasp-logging)
-10. Undo where possible; soft delete before hard delete   (Research: nng-control)
-11. "View as user" clearly marked, logged and read-only by default   (Standard: owasp-logging, owasp-authz)
+10. Undo where possible; soft delete before hard delete   (Research: nng-control)  -> see flows/undoing-an-action
+11. "View as user" clearly marked, logged and read-only by default   (Standard: owasp-logging, owasp-authz)  -> see operations/logging
 
 SECURITY
-12. Admin roles separated (support, finance, super admin) with least privilege   (Standard: owasp-authz)
-13. Two-step sign-in required for admins   (Standard: owasp-mfa)
-14. Shorter session timeout than the main app   (Standard: owasp-session)
-15. Every admin action logged with who, what, when and from where   (Standard: owasp-logging)
-16. Personal data shown only where needed; masked by default   (Rule: gdpr-25, gdpr-32)
+12. Admin roles separated (support, finance, super admin) with least privilege   (Standard: owasp-authz)  -> see web-app/roles-permissions
+13. Two-step sign-in required for admins   (Standard: owasp-mfa)  -> see web-app/2fa
+14. Shorter session timeout than the main app   (Standard: owasp-session)  -> see backend/sessions
+15. Every admin action logged with who, what, when and from where   (Standard: owasp-logging)  -> see operations/logging
+16. Personal data shown only where needed; masked by default   (Rule: gdpr-25, gdpr-32)  -> see backend/data-privacy
 17. Restricted by network or device for the most sensitive tools   (Practice)
 
 OVERVIEW
@@ -33,8 +33,8 @@ OVERVIEW
 19. Alerts for failures (payments, jobs, errors)   (Practice)
 
 ACCESS
-20. Keyboard shortcuts for frequent tasks, listed   (Practice)
-21. Tables and forms meet WCAG like any other page   (Standard: wai-tables, wcag-labels)
+20. Keyboard shortcuts for frequent tasks, listed   (Practice)  -> see web-app/keyboard-shortcuts
+21. Tables and forms meet WCAG like any other page   (Standard: wai-tables, wcag-labels)  -> see web-app/data-table, design-system/accessibility
 
 SOURCES
 - nng-breadcrumbs: https://www.nngroup.com/articles/breadcrumbs/

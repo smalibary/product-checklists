@@ -7,25 +7,25 @@ HONESTY (THE LAW)
  1. Every claim about a competitor is true, current and can be proven   (Rule: ftc-comparative)
  2. Use the competitor's name only to identify them; no logo that suggests they endorse you   (Rule: ftc-comparative)
  3. Date of the comparison shown, with the plan or version compared   (Rule: ftc-comparative)
- 4. Prices compared like for like (same plan level, same billing period, taxes stated)   (Rule: ftc-comparative, ftc-junk-fees)
+ 4. Prices compared like for like (same plan level, same billing period, taxes stated)   (Rule: ftc-comparative, ftc-junk-fees)  -> see website/billing
  5. A link to the competitor's own pricing or docs so visitors can check   (Practice)
 
 STRUCTURE
  6. A short summary at the top: who should pick which   (Research: nng-comparison)
- 7. A side-by-side table with the same rows for each product   (Research: nng-comparison)
+ 7. A side-by-side table with the same rows for each product   (Research: nng-comparison)  -> see design-system/table
  8. Rows grouped by topic, with the most important first   (Research: nng-comparison)
- 9. Ticks and crosses also carry words or a screen-reader label, not only icons or colour   (Standard: wcag-color, wcag-nontext)
-10. The header row and first column stay visible while scrolling a long table   (Research: nng-comparison)
-11. Table built with real table headers so screen readers read each cell with its row and column   (Standard: wai-tables, wcag-info)
+ 9. Ticks and crosses also carry words or a screen-reader label, not only icons or colour   (Standard: wcag-color, wcag-nontext)  -> see design-system/accessibility
+10. The header row and first column stay visible while scrolling a long table   (Research: nng-comparison)  -> see design-system/table
+11. Table built with real table headers so screen readers read each cell with its row and column   (Standard: wai-tables, wcag-info)  -> see design-system/table, design-system/accessibility
 12. Where the competitor is better, say so; it builds trust   (Research: nng-trust)
 
 PROOF AND ACTION
 13. Quotes from customers who switched, with permission   (Rule: ftc-endorsements)
-14. Help to switch: import tools, migration guide, contact   (Practice)
+14. Help to switch: import tools, migration guide, contact   (Practice)  -> see web-app/import-export
 15. One main action at the end (start free, talk to sales)   (Practice)
 
 PHONE WIDTH
-16. The table stays readable on phones: two products side by side, or stacked cards   (Standard: wcag-reflow)
+16. The table stays readable on phones: two products side by side, or stacked cards   (Standard: wcag-reflow)  -> see design-system/table, design-system/accessibility
 
 SOURCES
 - ftc-comparative: https://www.ftc.gov/legal-library/browse/statement-policy-regarding-comparative-advertising

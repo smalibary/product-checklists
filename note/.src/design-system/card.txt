@@ -3,26 +3,26 @@ about: A box that groups the content and actions about one thing (a product, a p
 also: design-system/accessibility
 ## When to use
 - Browsing collections of mixed content (images, text, actions) | R nng-cards
-- Not for lists where people compare the same facts (use a table or list) | R nng-cards
+- Not for lists where people compare the same facts (use a table or list) | R nng-cards >design-system/table
 - Not as decoration for every block of a page | R nng-cards
 ## Parts
 - Optional media (image) on top, then title, short text, meta and actions | S m3-cards
-- Title is a heading of the right level | S wcag-headings
+- Title is a heading of the right level | S wcag-headings >design-system/accessibility
 - Up to two actions; more in a menu | S m3-cards
 - All cards in a set have the same structure | R nng-cards
 ## Look
-- Kinds: elevated (shadow), filled, outlined | S m3-cards
+- Kinds: elevated (shadow), filled, outlined | S m3-cards >design-system/elevation
 - Clear edge against the background (3:1 if the edge carries meaning) | S wcag-ui-contrast
-- Same padding, radius and spacing from tokens | S dtcg-tokens
+- Same padding, radius and spacing from tokens | S dtcg-tokens >design-system/tokens
 - Images with set ratio so cards do not jump while loading | S webdev-cls
 ## Clickable cards
 - One main link; the whole card can be clicked by stretching that link | P
 - Other buttons inside still work separately | P
-- Clear hover and focus state on the whole card | S wcag-focus
+- Clear hover and focus state on the whole card | S wcag-focus >design-system/accessibility
 - Do not wrap the whole card in one link with many items inside (screen readers read it all) | P
 ## Responsive
-- Grid of cards reflows from several columns to one | S wcag-reflow
-- Text never cut off without a way to read it all | S wcag-resize
+- Grid of cards reflows from several columns to one | S wcag-reflow >design-system/accessibility
+- Text never cut off without a way to read it all | S wcag-resize >design-system/accessibility
 ## Access
 - Images have alt text, or are decorative if the title says it all | S wai-images
 - Read order inside the card makes sense (title before image in code if needed) | S wcag-meaningful-sequence

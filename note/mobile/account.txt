@@ -5,12 +5,12 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 DETAILS
  1. Name, email, phone, each editable with its own screen   (Practice)
- 2. Changing email or phone confirmed by a code to the new one   (Standard: owasp-auth)
+ 2. Changing email or phone confirmed by a code to the new one   (Standard: owasp-auth)  -> see flows/changing-email
  3. Current password or Face ID asked before sensitive changes   (Standard: owasp-auth)
 
 SIGN-IN AND SECURITY
  4. Change password; add a passkey   (Standard: passkeys-dev)
- 5. Two-step check on and off, with backup codes   (Standard: nist-63b)
+ 5. Two-step check on and off, with backup codes   (Standard: nist-63b)  -> see web-app/2fa
  6. Signed-in devices with "Sign out" each and "Sign out everywhere"   (Standard: owasp-session)
  7. Linked accounts (Apple, Google) with unlink, if another way in remains   (Practice)
 
@@ -19,8 +19,8 @@ DATA
  9. Privacy choices (ads, tracking)   (Rule: gdpr-7, apple-att)
 
 DELETE ACCOUNT
-10. Account deletion possible inside the app if the app lets people create accounts   (Standard: apple-deletion, play-deletion)
-11. A web link to delete the account too, for Google Play   (Standard: play-deletion)
+10. Account deletion possible inside the app if the app lets people create accounts   (Standard: apple-deletion, play-deletion)  -> see flows/deleting-account
+11. A web link to delete the account too, for Google Play   (Standard: play-deletion)  -> see flows/deleting-account
 12. Say what is deleted, what is kept by law and how long it takes   (Rule: gdpr-17)
 13. Store subscriptions: remind to cancel in the store, with a link   (Standard: apple-deletion)
 14. Confirm with password or typed word; never a one-tap delete   (Research: nng-confirm)

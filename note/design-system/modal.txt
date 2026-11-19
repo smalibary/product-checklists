@@ -17,14 +17,14 @@ CONTENT
 
 LOOK
  9. Dimmed backdrop over the page   (Standard: m3-dialogs)
-10. Centred on desktop; full screen or bottom sheet on phones   (Standard: m3-dialogs, hig-sheets)
+10. Centred on desktop; full screen or bottom sheet on phones   (Standard: m3-dialogs, hig-sheets)  -> see design-system/drawer
 11. Close button with a name in the corner   (Standard: wcag-name-role)
-12. Width suits the content, with margins on small screens   (Standard: wcag-reflow)
+12. Width suits the content, with margins on small screens   (Standard: wcag-reflow)  -> see design-system/accessibility
 
 BEHAVIOUR
 13. Escape closes it (except where data would be lost without warning)   (Standard: apg-dialog)
 14. Click on the backdrop closes non-critical modals   (Practice)
-15. Unsaved changes warned before closing   (Research: nng-control)
+15. Unsaved changes warned before closing   (Research: nng-control)  -> see flows/saving-changes
 16. No modals on top of modals   (Research: nng-modal)
 17. Page behind does not scroll   (Practice)
 
@@ -35,7 +35,7 @@ FOCUS AND ACCESS
 21. Role dialog with aria-modal and a name from the title   (Standard: apg-dialog)
 22. The native dialog element with showModal handles much of this   (Standard: mdn-dialog)
 23. Page behind is hidden from screen readers (inert)   (Standard: mdn-inert)
-24. Opening and closing motion respects reduced motion   (Standard: mdn-reduced-motion)
+24. Opening and closing motion respects reduced motion   (Standard: mdn-reduced-motion)  -> see motion/motion-accessibility
 
 SOURCES
 - nng-modal: https://www.nngroup.com/articles/modal-nonmodal-dialog/

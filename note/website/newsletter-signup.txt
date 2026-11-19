@@ -4,25 +4,25 @@ Backing: 5 Rule, 5 Standard, 1 Research, 0 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 FORM
- 1. One email field with a clear label and type email   (Standard: wcag-labels, mdn-autocomplete)
+ 1. One email field with a clear label and type email   (Standard: wcag-labels, mdn-autocomplete)  -> see design-system/accessibility
  2. Says what they will get and how often   (Research: nng-forms)
  3. Consent wording clear, not hidden in terms   (Rule: gdpr-7, eprivacy)
  4. Separate from other consent (no bundled boxes)   (Rule: gdpr-7)
 
 AFTER
- 5. Double opt-in by confirmation email where the law or deliverability needs it   (Standard: google-sender)
+ 5. Double opt-in by confirmation email where the law or deliverability needs it   (Standard: google-sender)  -> see backend/email-sending
  6. A success message in the page   (Standard: wcag-status)
 
 EMAILS
- 7. An unsubscribe link in every email, working with one click   (Rule: can-spam, rfc-unsubscribe)
+ 7. An unsubscribe link in every email, working with one click   (Rule: can-spam, rfc-unsubscribe)  -> see flows/unsubscribing-from-emails
  8. The sender's name and postal address   (Rule: can-spam)
 
 ABUSE
  9. Protection against bots without hard puzzles   (Standard: wcag-auth)
-10. Rate-limited by address   (Standard: owasp-dos)
+10. Rate-limited by address   (Standard: owasp-dos)  -> see api/rate-limits
 
 PRIVACY
-11. Link to the privacy notice   (Rule: gdpr-13)
+11. Link to the privacy notice   (Rule: gdpr-13)  -> see website/privacy
 
 SOURCES
 - wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions

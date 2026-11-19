@@ -16,7 +16,7 @@ ERRORS
  6. Wrong type or too big explained per file   (Standard: govuk-error-message)
 
 PHONES
- 7. Camera and photo library offered where useful   (Standard: android-photo-picker)
+ 7. Camera and photo library offered where useful   (Standard: android-photo-picker)  -> see mobile/camera
 
 ACCESS
  8. Status changes announced   (Standard: wcag-status)

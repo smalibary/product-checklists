@@ -5,20 +5,20 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 USE
  1. Animated icons confirm an action or show a state change   (Standard: hig-sf-symbols)
- 2. Illustrations animate on empty states and onboarding, not on every screen   (Research: nng-animation-usability)
+ 2. Illustrations animate on empty states and onboarding, not on every screen   (Research: nng-animation-usability)  -> see web-app/onboarding, web-app/empty-state
 
 FILES
  3. Vector animation files (for example Lottie) instead of video or GIF where possible   (Standard: lottie)
  4. File size checked; large ones loaded later   (Standard: webdev-lazy)
- 5. A still frame shown before loading and for reduced motion   (Standard: mdn-reduced-motion)
+ 5. A still frame shown before loading and for reduced motion   (Standard: mdn-reduced-motion)  -> see motion/motion-accessibility
 
 ACCESS
- 6. Decorative animations hidden from screen readers   (Standard: wcag-nontext)
- 7. Meaningful ones have a text alternative   (Standard: wcag-nontext)
+ 6. Decorative animations hidden from screen readers   (Standard: wcag-nontext)  -> see design-system/accessibility
+ 7. Meaningful ones have a text alternative   (Standard: wcag-nontext)  -> see design-system/accessibility
  8. Loops stop after a few seconds or can be paused   (Standard: wcag-pause)
 
 LOOK
- 9. Same stroke, colour and timing as the static icon set   (Standard: hig-icons, m3-icons)
+ 9. Same stroke, colour and timing as the static icon set   (Standard: hig-icons, m3-icons)  -> see design-system/icon
 
 SOURCES
 - hig-sf-symbols: https://developer.apple.com/design/human-interface-guidelines/sf-symbols

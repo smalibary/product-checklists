@@ -6,20 +6,20 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 SCHEMA
  1. One schema with clear type and field names, descriptions on every type and field   (Standard: graphql-spec, graphql-best)
  2. Nullable fields by default where parts can fail; required only when always present   (Standard: graphql-best)
- 3. Changes are added rather than versioned; old fields marked @deprecated with a reason   (Standard: graphql-best)
+ 3. Changes are added rather than versioned; old fields marked @deprecated with a reason   (Standard: graphql-best)  -> see api/versioning
 
 LISTS
  4. Connection-style paging (edges, cursors, pageInfo) with a maximum page size   (Standard: graphql-pagination)
 
 SAFETY
- 5. Query depth and cost limited, so one query cannot ask for millions of rows   (Standard: owasp-graphql)
+ 5. Query depth and cost limited, so one query cannot ask for millions of rows   (Standard: owasp-graphql)  -> see operations/cost-limits
  6. Introspection and the query explorer switched off for the public in production, unless the API is public by design   (Standard: owasp-graphql)
- 7. Authorization checked in every field resolver or the data layer, not only at the top   (Standard: owasp-graphql, owasp-authz)
+ 7. Authorization checked in every field resolver or the data layer, not only at the top   (Standard: owasp-graphql, owasp-authz)  -> see backend/authorization
  8. Batching and aliases limited, so they cannot be used to guess passwords   (Standard: owasp-graphql)
- 9. Inputs validated like any API; errors without internal details   (Standard: owasp-input, owasp-errors)
+ 9. Inputs validated like any API; errors without internal details   (Standard: owasp-input, owasp-errors)  -> see backend/input-validation
 
 SPEED
-10. Data loaded in batches to avoid one database call per item   (Standard: graphql-best)
+10. Data loaded in batches to avoid one database call per item   (Standard: graphql-best)  -> see backend/database-design, api/rate-limits
 11. Known queries can be stored and called by id (persisted queries)   (Standard: graphql-best)
 
 ERRORS

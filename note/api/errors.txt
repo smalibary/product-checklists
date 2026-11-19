@@ -6,15 +6,15 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 FORMAT
  1. One error format for the whole API, such as Problem Details (type, title, status, detail)   (Standard: rfc-problem)
  2. A stable machine code per error ("card_declined") that never changes   (Standard: google-aip-errors)
- 3. A human message in plain words that says what to do next   (Standard: google-aip-errors)
- 4. Field errors list each field and its problem, so a form can show them in place   (Standard: rfc-problem)
- 5. A request id in every response and every error, also written to the logs   (Standard: otel)
+ 3. A human message in plain words that says what to do next   (Standard: google-aip-errors)  -> see design-system/content-voice
+ 4. Field errors list each field and its problem, so a form can show them in place   (Standard: rfc-problem)  -> see flows/showing-input-error
+ 5. A request id in every response and every error, also written to the logs   (Standard: otel)  -> see operations/logging
 
 STATUS CODES
  6. The status code matches the error: 4xx for the caller, 5xx for the server   (Standard: rfc-http)
  7. 401 means not signed in; 403 means signed in but not allowed   (Standard: rfc-http)
  8. 404 instead of 403 where saying "it exists" would leak information   (Standard: owasp-api-top10)
- 9. 429 and 503 carry a Retry-After header   (Standard: rfc-429, rfc-retry-after)
+ 9. 429 and 503 carry a Retry-After header   (Standard: rfc-429, rfc-retry-after)  -> see api/rate-limits
 
 SAFETY
 10. No stack traces, database errors, file paths or library versions in responses   (Standard: owasp-errors, owasp-disclosure)
@@ -23,7 +23,7 @@ SAFETY
 
 FOR CALLERS
 13. Each error says whether trying again can help   (Standard: google-aip-errors)
-14. Every error code listed in the docs with its cause and fix   (Standard: openapi)
+14. Every error code listed in the docs with its cause and fix   (Standard: openapi)  -> see api/api-docs
 15. Messages in the caller's language when the API serves people directly   (Standard: rfc-http)
 
 SOURCES

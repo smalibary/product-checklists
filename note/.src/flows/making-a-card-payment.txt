@@ -18,10 +18,10 @@ also: design-system/accessibility
 ## Results
 - Declined: a plain reason where known, and what to try (another card) | S wcag-error
 - Details kept except the security code | S pci-dss
-- Success: confirmation with order number; receipt and VAT invoice by email | L govuk-confirm zatca-einvoice
+- Success: confirmation with order number; receipt and VAT invoice by email | L govuk-confirm zatca-einvoice >web-app/billing
 ## Trust
-- Secure checkout signs near the fields, without clutter | R baymard-trust
+- Secure checkout signs near the fields, without clutter | R baymard-trust >web-app/checkout
 - Saved cards only with consent, shown by brand and last 4 | S pci-dss
 ## Access
 - Errors announced and linked to fields | S wcag-error
-- The bank page in the check is reachable by keyboard | S wcag-keyboard
+- The bank page in the check is reachable by keyboard | S wcag-keyboard >design-system/accessibility

@@ -17,13 +17,13 @@ about: The table component: rows and columns for comparing data (the Data Table 
 - Units in headers | R nng-tables
 - Empty cells show a dash with a screen-reader word ("None") | P
 ## Responsive
-- On small screens: scroll inside its own box, with the first column fixed | S wcag-reflow
+- On small screens: scroll inside its own box, with the first column fixed | S wcag-reflow >design-system/accessibility
 - Or turn rows into stacked cards for simple tables | P
-- The scroll box can take focus so keyboard users can scroll it | S wcag-keyboard
+- The scroll box can take focus so keyboard users can scroll it | S wcag-keyboard >design-system/accessibility
 ## Interactive tables
 - Sortable headers are buttons with aria-sort | S apg-table
 - If cells are interactive, use the grid pattern with arrow keys | S apg-grid
-- Row selection with checkboxes that have names ("Select row: Invoice 104") | S wcag-name-role
+- Row selection with checkboxes that have names ("Select row: Invoice 104") | S wcag-name-role >design-system/checkbox
 ## Content
 - Status in words or icons with names, not only colour | S wcag-color
 - Long text wraps or truncates with full text on hover and focus | S wcag-hover

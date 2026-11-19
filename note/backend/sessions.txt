@@ -15,16 +15,16 @@ LIFETIME
  7. Password change ends all other sessions   (Standard: owasp-session)
 
 PROTECTION
- 8. Forms that change things protected against cross-site requests (SameSite plus tokens)   (Standard: owasp-csrf)
+ 8. Forms that change things protected against cross-site requests (SameSite plus tokens)   (Standard: owasp-csrf)  -> see code/secure-coding
  9. Sensitive actions ask for the password again   (Standard: owasp-session)
-10. Session data stored server-side; nothing secret in the cookie   (Standard: owasp-session)
+10. Session data stored server-side; nothing secret in the cookie   (Standard: owasp-session)  -> see operations/secrets
 
 TOKENS IN APPS
 11. Phone apps keep tokens in the system's secure storage   (Standard: owasp-masvs)
 12. Refresh tokens change on each use; reuse of an old one ends the session   (Standard: rfc-oauth-security)
 
 RECORDS
-13. Session starts and ends logged with device and place   (Standard: owasp-logging)
+13. Session starts and ends logged with device and place   (Standard: owasp-logging)  -> see operations/logging
 
 SOURCES
 - owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html

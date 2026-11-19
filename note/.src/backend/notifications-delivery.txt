@@ -6,8 +6,8 @@ about: Getting push, email and in-app messages to the right person once, at the 
 - Each person's channel choices stored and respected | S nng-notifications
 ## Sending
 - One place decides what to send on which channel | P
-- Sent from a queue with retries; never twice for one event | S aws-idempotent
-- Quiet hours and the person's time zone respected | S iana-tz
+- Sent from a queue with retries; never twice for one event | S aws-idempotent >api/idempotency >backend/background-jobs
+- Quiet hours and the person's time zone respected | S iana-tz >backend/dates-money
 - Similar messages grouped instead of many in a row | S nng-notifications
 ## Content
 - No private details on lock-screen text unless the person allows it | S hig-notifications

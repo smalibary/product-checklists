@@ -6,20 +6,20 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 WHEN TO USE
  1. For loads of about 1 to 10 seconds where the page layout is known   (Research: nng-skeleton)
  2. For quick loads under a second, show nothing (avoid a flash)   (Research: nng-response)
- 3. For long or unknown waits, add a progress indicator or message   (Research: nng-progress)
+ 3. For long or unknown waits, add a progress indicator or message   (Research: nng-progress)  -> see design-system/progress
  4. Not for buttons or actions, only content   (Research: nng-skeleton)
 
 LOOK
- 5. Shapes match the real content's size and layout (text lines, images, avatars)   (Research: nng-skeleton)
- 6. Neutral colour with low contrast, in both light and dark themes   (Practice)
- 7. Optional slow shimmer; static when reduced motion is on   (Standard: mdn-reduced-motion)
+ 5. Shapes match the real content's size and layout (text lines, images, avatars)   (Research: nng-skeleton)  -> see design-system/avatar
+ 6. Neutral colour with low contrast, in both light and dark themes   (Practice)  -> see design-system/dark-mode
+ 7. Optional slow shimmer; static when reduced motion is on   (Standard: mdn-reduced-motion)  -> see motion/motion-accessibility
  8. The same skeleton style across the product   (Research: nng-consistency)
 
 BEHAVIOUR
  9. Real content replaces it in the same place, with no layout jump   (Standard: webdev-cls)
 10. Parts load on their own (each card replaces its own skeleton)   (Research: nng-skeleton)
 11. Turns into an error with Retry if loading fails   (Research: nng-errors)
-12. Turns into an empty state if there is no data   (Research: nng-empty)
+12. Turns into an empty state if there is no data   (Research: nng-empty)  -> see web-app/empty-state
 
 ACCESS
 13. Skeleton shapes hidden from screen readers   (Standard: wai-images)

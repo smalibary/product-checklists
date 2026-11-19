@@ -3,13 +3,13 @@ about: Hearing from people while they use the product, and acting on it.
 ## Channels
 - A feedback link on every page or screen | S govuk-feedback
 - Short in-product surveys at natural moments, never during a task | R nng-surveys nng-feedback
-- In-app review prompts only after a success, within store limits | L apple-review-prompt play-in-app-review
+- In-app review prompts only after a success, within store limits | L apple-review-prompt play-in-app-review >launch/app-store-submission
 ## Asking well
 - One or two questions, the rating scale kept the same | R nng-surveys
 - An open box for "what would make this better" | S govuk-feedback
 ## Using it
 - Feedback read on a schedule and sorted into themes | R nng-feedback
-- Paired with analytics and research before acting | R nng-analytics
+- Paired with analytics and research before acting | R nng-analytics >growth/analytics-tracking
 - Results told back to the people who gave them | P
 ## Measures
 - A standard satisfaction or ease score tracked over time | R sus heart

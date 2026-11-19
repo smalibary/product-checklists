@@ -15,8 +15,8 @@ EVENTS
  7. Repeating events with "this one or all" when changing   (Standard: rfc-icalendar)
 
 SHARING
- 8. Export and subscribe through iCalendar   (Standard: rfc-icalendar)
- 9. Invites show who is coming   (Practice)
+ 8. Export and subscribe through iCalendar   (Standard: rfc-icalendar)  -> see web-app/import-export
+ 9. Invites show who is coming   (Practice)  -> see flows/inviting-a-teammate
 
 ACCESS
 10. Keyboard moves between days and events   (Standard: apg-grid)

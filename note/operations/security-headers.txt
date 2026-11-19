@@ -14,7 +14,7 @@ CONTENT
  6. Permissions-Policy turns off unused features (camera, location)   (Standard: owasp-headers)
 
 COOKIES
- 7. Secure, HttpOnly and SameSite on session cookies   (Standard: mdn-cookies)
+ 7. Secure, HttpOnly and SameSite on session cookies   (Standard: mdn-cookies)  -> see backend/sessions
 
 CROSS-SITE
  8. CORS allows only known sites   (Standard: mdn-cors)

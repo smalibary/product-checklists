@@ -10,7 +10,7 @@ about: Receiving, answering and tracking every support question.
 - Customers told who is helping and what happens next | S iso-10002
 ## Records
 - History kept so nobody has to repeat themselves | R nng-chat
-- Personal data limited and deleted on schedule | L gdpr-5
+- Personal data limited and deleted on schedule | L gdpr-5 >backend/data-privacy
 ## Learning
 - Common questions turned into help articles | R nng-help
 - Complaints counted and reviewed for root causes | S iso-10002

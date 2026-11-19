@@ -2,7 +2,7 @@ title: Text area
 about: The box for writing longer text, like comments or descriptions.
 also: design-system/accessibility
 ## Basics
-- A visible label and optional help text | S wcag-labels
+- A visible label and optional help text | S wcag-labels >design-system/accessibility
 - Height fits the expected answer; grows as you type where possible | S govuk-character
 ## Limits
 - A character count when there is a limit, updated politely to screen readers | S govuk-character
@@ -14,4 +14,4 @@ also: design-system/accessibility
 - Drafts saved for long text | P
 ## Access
 - Errors linked to the field | S wcag-error
-- Resizable and not clipped when text is enlarged | S wcag-resize
+- Resizable and not clipped when text is enlarged | S wcag-resize >design-system/accessibility

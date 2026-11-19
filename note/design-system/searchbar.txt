@@ -7,7 +7,7 @@ LOOK
  1. A wide box; the width hints at query length (about 27 characters visible)   (Research: nng-search)
  2. Placed where people expect: top of the page or app   (Research: nng-search)
  3. Magnifier icon and a Search button, or Enter to search, stated   (Research: nng-search)
- 4. Placeholder can hint scope ("Search orders") but is not the label   (Standard: wcag-labels)
+ 4. Placeholder can hint scope ("Search orders") but is not the label   (Standard: wcag-labels)  -> see design-system/accessibility
  5. Clear (x) button once something is typed   (Standard: m3-search)
 
 SUGGESTIONS
@@ -30,8 +30,8 @@ PHONES
 
 ACCESS
 18. Search landmark (role search or the search element)   (Standard: apg-landmarks)
-19. Real label, visible or for screen readers ("Search")   (Standard: wcag-labels)
-20. Suggestion list follows the combobox pattern; number of suggestions announced   (Standard: apg-combobox, wcag-status)
+19. Real label, visible or for screen readers ("Search")   (Standard: wcag-labels)  -> see design-system/accessibility
+20. Suggestion list follows the combobox pattern; number of suggestions announced   (Standard: apg-combobox, wcag-status)  -> see design-system/select-combobox
 21. type="search" so browsers add their own features   (Standard: mdn-input-search)
 
 SOURCES

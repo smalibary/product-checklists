@@ -4,7 +4,7 @@ Backing: 5 Rule, 6 Standard, 4 Research, 5 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 POSTS
- 1. Each post: author with photo and name, time, content, and actions (like, comment, share)   (Practice)
+ 1. Each post: author with photo and name, time, content, and actions (like, comment, share)   (Practice)  -> see web-app/comments
  2. Long posts cut with "Show more"   (Practice)
  3. Images and video sized before they load, so the feed does not jump   (Standard: webdev-cls)
  4. Video starts muted, with captions and controls   (Standard: wcag-captions, wcag-audio)
@@ -18,16 +18,16 @@ ORDER AND CONTROL
 
 LOADING
 10. Infinite scroll keeps position on Back and has an end or a pause point   (Research: nng-infinite)
-11. Footer still reachable (or links moved elsewhere) with infinite scroll   (Research: nng-infinite)
+11. Footer still reachable (or links moved elsewhere) with infinite scroll   (Research: nng-infinite)  -> see website/footer
 12. New posts shown as "5 new posts" button, not pushed in while reading   (Practice)
-13. Skeleton posts while loading   (Research: nng-skeleton)
+13. Skeleton posts while loading   (Research: nng-skeleton)  -> see design-system/skeleton
 14. Empty feed suggests people or topics to follow   (Research: nng-empty)
 
 ACCESS
 15. Feed pattern: each post an article, keyboard moves post to post   (Standard: apg-feed)
-16. Images have alt text, with a way for authors to add it   (Standard: wcag-nontext)
+16. Images have alt text, with a way for authors to add it   (Standard: wcag-nontext)  -> see design-system/accessibility
 17. Relative times also readable as exact times   (Practice)
-18. Animations and auto-play respect reduced motion   (Standard: mdn-reduced-motion, wcag-pause)
+18. Animations and auto-play respect reduced motion   (Standard: mdn-reduced-motion, wcag-pause)  -> see motion/motion-accessibility, motion/motion-system
 
 WELLBEING
 19. No autoplay of next videos without a way to stop   (Standard: wcag-pause)

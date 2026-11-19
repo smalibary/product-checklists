@@ -7,18 +7,18 @@ ORDER REVIEW
  1. What is bought, quantity, price, tax, discount and total, before paying   (Rule: eu-consumer-rights, ftc-junk-fees)
  2. Recurring charges stated: amount, how often, first charge date, how to cancel   (Rule: ftc-negative-option)
  3. Currency shown and fixed; SAR for Saudi customers   (Practice)
- 4. Promo code field present but quiet (a link that opens it)   (Research: baymard-coupon)
+ 4. Promo code field present but quiet (a link that opens it)   (Research: baymard-coupon)  -> see flows/entering-promo-code
  5. Edit the order without starting again   (Research: baymard-abandon)
 
 DETAILS
- 6. Only the fields needed; company and tax ID optional, for invoices   (Research: baymard-fields)
- 7. Billing address only if the payment provider or tax needs it   (Research: baymard-fields)
+ 6. Only the fields needed; company and tax ID optional, for invoices   (Research: baymard-fields)  -> see web-app/billing
+ 7. Billing address only if the payment provider or tax needs it   (Research: baymard-fields)  -> see web-app/billing
  8. Autofill for name, card and address   (Standard: mdn-autocomplete, webdev-payment)
  9. Already-known details filled in   (Standard: wcag-redundant)
 
 PAYMENT
 10. Card fields from a PCI-certified provider   (Standard: pci-dss)
-11. Card number with spaces, the brand detected, numeric keyboard   (Research: baymard-card)
+11. Card number with spaces, the brand detected, numeric keyboard   (Research: baymard-card)  -> see flows/making-a-card-payment
 12. Wallets (Apple Pay, Google Pay) and local methods (mada, STC Pay) where they suit   (Practice)
 13. Strong customer authentication (3-D Secure) inside the flow   (Rule: psd2-sca, stripe-3ds)
 14. Trust signs near the card fields (lock, provider name)   (Research: baymard-trust)
@@ -29,13 +29,13 @@ SUBMITTING
 17. Declined card: plain reason and what to try, details kept   (Standard: wcag-error)
 
 AFTER
-18. Confirmation page with what was bought, a receipt number and next steps   (Standard: govuk-confirm)
-19. Receipt and tax invoice by email   (Rule: zatca-einvoice)
+18. Confirmation page with what was bought, a receipt number and next steps   (Standard: govuk-confirm)  -> see web-app/billing
+19. Receipt and tax invoice by email   (Rule: zatca-einvoice)  -> see web-app/billing
 20. New access available at once   (Practice)
 
 HONESTY AND ACCESS
-21. No pre-ticked extras; terms and refund policy linked   (Rule: ftc-dark-patterns, eu-consumer-rights)
-22. Labels, errors in words, keyboard and phone width meet WCAG   (Standard: wcag-labels, wcag-error, wcag-keyboard, wcag-reflow)
+21. No pre-ticked extras; terms and refund policy linked   (Rule: ftc-dark-patterns, eu-consumer-rights)  -> see flows/requesting-a-refund
+22. Labels, errors in words, keyboard and phone width meet WCAG   (Standard: wcag-labels, wcag-error, wcag-keyboard, wcag-reflow)  -> see design-system/accessibility
 
 SOURCES
 - eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en

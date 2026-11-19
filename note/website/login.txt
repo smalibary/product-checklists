@@ -5,8 +5,8 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 THE FORM
  1. Email (or username) and password on one page, unless the site uses passkeys or single sign-on first   (Standard: webdev-signin)
- 2. Real form with a form tag and a submit button, so Enter works and password managers save it   (Standard: webdev-signin)
- 3. Visible labels, not placeholder-only   (Standard: wcag-labels, nng-placeholder)
+ 2. Real form with a form tag and a submit button, so Enter works and password managers save it   (Standard: webdev-signin)  -> see design-system/tag-chip
+ 3. Visible labels, not placeholder-only   (Standard: wcag-labels, nng-placeholder)  -> see design-system/accessibility
  4. autocomplete set to username and current-password   (Standard: webdev-signin, mdn-autocomplete, wcag-purpose)
  5. Email field uses type email; no automatic capitals or spelling fixes   (Standard: webdev-signin)
  6. Pasting into the password field is allowed   (Standard: nist-63b, wcag-auth)
@@ -17,8 +17,8 @@ THE FORM
 WAYS IN
 10. Passkeys offered, with the browser's passkey autofill on the email field   (Standard: webauthn, fido-ux)
 11. Sign in with Google, Apple or work single sign-on where the audience uses them   (Practice)
-12. Email magic link or one-time code as a choice for people without a password   (Practice)
-13. The same ways shown on sign-up and sign-in, so people remember which they used   (Practice)
+12. Email magic link or one-time code as a choice for people without a password   (Practice)  -> see web-app/2fa
+13. The same ways shown on sign-up and sign-in, so people remember which they used   (Practice)  -> see website/sign-up
 
 ERRORS AND SAFETY
 14. One error for a wrong email or password, never which one was wrong   (Standard: owasp-auth)
@@ -26,13 +26,13 @@ ERRORS AND SAFETY
 16. Caps Lock warning on the password field   (Practice)
 17. Limits on repeated wrong tries (slow down, then lock) with a message saying what to do   (Standard: owasp-auth, nist-63b)
 18. A robot check only after suspicious tries, and an accessible one   (Standard: wcag-auth)
-19. Two-step check after the password when the account has it   (Standard: owasp-mfa)
-20. Signs in over HTTPS only; session cookie secure and httpOnly   (Standard: owasp-session)
+19. Two-step check after the password when the account has it   (Standard: owasp-mfa)  -> see web-app/2fa
+20. Signs in over HTTPS only; session cookie secure and httpOnly   (Standard: owasp-session)  -> see backend/sessions
 21. New sign-ins from a new device announced by email   (Standard: owasp-auth)
 
 RECOVERY
-22. Forgot password link right beside the password field   (Standard: webdev-signin)
-23. A link to sign up for people without an account   (Practice)
+22. Forgot password link right beside the password field   (Standard: webdev-signin)  -> see flows/resetting-password
+23. A link to sign up for people without an account   (Practice)  -> see website/sign-up
 24. Help or contact link for locked-out people   (Standard: wcag-help)
 
 AFTER SIGN-IN

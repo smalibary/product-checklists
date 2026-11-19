@@ -10,6 +10,6 @@ also: design-system/accessibility
 - Placeholder content while loading | S hig-widgets
 - No private data shown without the person choosing it | S hig-privacy
 ## Look
-- Follows system light and dark mode | S hig-dark-mode
+- Follows system light and dark mode | S hig-dark-mode >design-system/dark-mode
 ## Access
 - Text scales with system settings | S hig-accessibility

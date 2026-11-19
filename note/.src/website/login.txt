@@ -3,8 +3,8 @@ about: Lets returning people sign in quickly and safely, and recover when they c
 also: design-system/accessibility
 ## The form
 - Email (or username) and password on one page, unless the site uses passkeys or single sign-on first | S webdev-signin
-- Real form with a form tag and a submit button, so Enter works and password managers save it | S webdev-signin
-- Visible labels, not placeholder-only | S wcag-labels nng-placeholder
+- Real form with a form tag and a submit button, so Enter works and password managers save it | S webdev-signin >design-system/tag-chip
+- Visible labels, not placeholder-only | S wcag-labels nng-placeholder >design-system/accessibility
 - autocomplete set to username and current-password | S webdev-signin mdn-autocomplete wcag-purpose
 - Email field uses type email; no automatic capitals or spelling fixes | S webdev-signin
 - Pasting into the password field is allowed | S nist-63b wcag-auth
@@ -14,20 +14,20 @@ also: design-system/accessibility
 ## Ways in
 - Passkeys offered, with the browser's passkey autofill on the email field | S webauthn fido-ux
 - Sign in with Google, Apple or work single sign-on where the audience uses them | P
-- Email magic link or one-time code as a choice for people without a password | P
-- The same ways shown on sign-up and sign-in, so people remember which they used | P
+- Email magic link or one-time code as a choice for people without a password | P >web-app/2fa
+- The same ways shown on sign-up and sign-in, so people remember which they used | P >website/sign-up
 ## Errors and safety
 - One error for a wrong email or password, never which one was wrong | S owasp-auth
 - Errors shown next to the field and focused, in words | S wcag-error govuk-error-message
 - Caps Lock warning on the password field | P
 - Limits on repeated wrong tries (slow down, then lock) with a message saying what to do | S owasp-auth nist-63b
 - A robot check only after suspicious tries, and an accessible one | S wcag-auth
-- Two-step check after the password when the account has it | S owasp-mfa
-- Signs in over HTTPS only; session cookie secure and httpOnly | S owasp-session
+- Two-step check after the password when the account has it | S owasp-mfa >web-app/2fa
+- Signs in over HTTPS only; session cookie secure and httpOnly | S owasp-session >backend/sessions
 - New sign-ins from a new device announced by email | S owasp-auth
 ## Recovery
-- Forgot password link right beside the password field | S webdev-signin
-- A link to sign up for people without an account | P
+- Forgot password link right beside the password field | S webdev-signin >flows/resetting-password
+- A link to sign up for people without an account | P >website/sign-up
 - Help or contact link for locked-out people | S wcag-help
 ## After sign-in
 - Back to the page they were on before signing in | P

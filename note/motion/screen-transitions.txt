@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 CHOOSING THE PATTERN
  1. Container transform when an item grows into its detail screen   (Standard: m3-transitions)
- 2. Shared axis for steps and tabs side by side   (Standard: m3-transitions)
+ 2. Shared axis for steps and tabs side by side   (Standard: m3-transitions)  -> see design-system/tabs
  3. Fade through for unrelated screens   (Standard: m3-transitions)
  4. Push and pop direction matches going deeper and coming back   (Standard: hig-motion)
 
@@ -17,8 +17,8 @@ WEB
  7. Entry animations for newly shown elements set with starting styles   (Standard: mdn-starting-style)
 
 BACK
- 8. Back gesture previews the screen underneath   (Standard: android-predictive-back)
- 9. Right-to-left languages flip the direction   (Standard: hig-right-to-left)
+ 8. Back gesture previews the screen underneath   (Standard: android-predictive-back)  -> see motion/gesture-motion
+ 9. Right-to-left languages flip the direction   (Standard: hig-right-to-left)  -> see design-system/rtl-localisation
 
 EVIDENCE
 10. Animated transitions help people track what changed   (Research: heer-transitions, chang-ungar)

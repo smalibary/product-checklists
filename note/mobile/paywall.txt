@@ -5,10 +5,10 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 STORE RULES
  1. Digital content and features sold through Apple and Google in-app purchase (with regional exceptions)   (Standard: apple-review, play-payments)
- 2. The price, the billing period and what is included shown clearly near the buy button   (Standard: apple-review, play-subscriptions)
+ 2. The price, the billing period and what is included shown clearly near the buy button   (Standard: apple-review, play-subscriptions)  -> see mobile/billing
  3. Price per period is the most prominent price; any per-week or per-month breakdown is secondary   (Standard: apple-review)
  4. Free trial: length, what it turns into, and when the first charge happens   (Rule: apple-subscriptions, ftc-negative-option)
- 5. Links to terms of use and privacy policy   (Standard: apple-review)
+ 5. Links to terms of use and privacy policy   (Standard: apple-review)  -> see website/privacy, website/terms
  6. Restore purchases button   (Standard: apple-review)
 
 CONTENT
@@ -25,8 +25,8 @@ RESPECT
 
 AFTER BUYING
 15. Access unlocked at once, with a thank-you   (Practice)
-16. Receipt from the store   (Standard: apple-subscriptions)
-17. How to manage or cancel shown in settings   (Standard: apple-subscriptions, play-subscriptions)
+16. Receipt from the store   (Standard: apple-subscriptions)  -> see mobile/billing
+17. How to manage or cancel shown in settings   (Standard: apple-subscriptions, play-subscriptions)  -> see mobile/settings
 
 ACCESS
 18. Prices read clearly by screen readers with the currency   (Standard: hig-accessibility)

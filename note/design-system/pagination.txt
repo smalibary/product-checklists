@@ -15,7 +15,7 @@ BEHAVIOUR
  7. Infinite scroll avoided where people need to find things again   (Research: nng-infinite)
 
 LOOK
- 8. Targets big enough to tap   (Standard: wcag-target)
+ 8. Targets big enough to tap   (Standard: wcag-target)  -> see design-system/accessibility
  9. Inside a nav landmark with a name ("Pagination")   (Standard: apg-landmarks)
 
 ACCESS

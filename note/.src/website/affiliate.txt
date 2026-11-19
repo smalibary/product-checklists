@@ -17,10 +17,10 @@ also: design-system/accessibility
 - Brand guidelines and approved logos to download | P
 ## Tools
 - Links, banners and text ready to copy | P
-- A dashboard showing clicks, sign-ups, sales and money owed | P
+- A dashboard showing clicks, sign-ups, sales and money owed | P >web-app/dashboard
 - A contact for affiliate questions | R nng-contact
 ## Trust
 - Quotes or numbers from current affiliates (real, with permission) | L ftc-endorsements
-- FAQ on tax forms, payment methods and returns that cancel commission | R nng-faq
+- FAQ on tax forms, payment methods and returns that cancel commission | R nng-faq >website/faq
 ## Accessibility
-- Form fields with visible labels and clear errors | S wcag-labels wcag-error
+- Form fields with visible labels and clear errors | S wcag-labels wcag-error >design-system/accessibility

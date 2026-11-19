@@ -18,12 +18,12 @@ LAYOUT GRID
 10. Safe areas respected on phones with notches   (Standard: hig-layout, android-edge)
 
 RESPONSIVE BEHAVIOUR
-11. Content reflows to one column at 320 px wide without sideways scrolling   (Standard: wcag-reflow)
-12. Layout survives 200% zoom and bigger text   (Standard: wcag-resize)
+11. Content reflows to one column at 320 px wide without sideways scrolling   (Standard: wcag-reflow)  -> see design-system/accessibility
+12. Layout survives 200% zoom and bigger text   (Standard: wcag-resize)  -> see design-system/accessibility
 13. Logical properties (start, end) so layouts flip for Arabic   (Standard: mdn-logical, w3c-dir)
 
 TOUCH
-14. Touch targets with space between them; at least 24 px, ideally 44 to 48   (Standard: wcag-target, hig-layout, m3-layout)
+14. Touch targets with space between them; at least 24 px, ideally 44 to 48   (Standard: wcag-target, hig-layout, m3-layout)  -> see design-system/accessibility
 
 DENSITY
 15. Comfortable and compact density options for data-heavy screens   (Standard: m3-layout)

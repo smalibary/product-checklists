@@ -4,18 +4,18 @@ also: design-system/accessibility
 ## When to use
 - For loads of about 1 to 10 seconds where the page layout is known | R nng-skeleton
 - For quick loads under a second, show nothing (avoid a flash) | R nng-response
-- For long or unknown waits, add a progress indicator or message | R nng-progress
+- For long or unknown waits, add a progress indicator or message | R nng-progress >design-system/progress
 - Not for buttons or actions, only content | R nng-skeleton
 ## Look
-- Shapes match the real content's size and layout (text lines, images, avatars) | R nng-skeleton
-- Neutral colour with low contrast, in both light and dark themes | P
-- Optional slow shimmer; static when reduced motion is on | S mdn-reduced-motion
+- Shapes match the real content's size and layout (text lines, images, avatars) | R nng-skeleton >design-system/avatar
+- Neutral colour with low contrast, in both light and dark themes | P >design-system/dark-mode
+- Optional slow shimmer; static when reduced motion is on | S mdn-reduced-motion >motion/motion-accessibility
 - The same skeleton style across the product | R nng-consistency
 ## Behaviour
 - Real content replaces it in the same place, with no layout jump | S webdev-cls
 - Parts load on their own (each card replaces its own skeleton) | R nng-skeleton
 - Turns into an error with Retry if loading fails | R nng-errors
-- Turns into an empty state if there is no data | R nng-empty
+- Turns into an empty state if there is no data | R nng-empty >web-app/empty-state
 ## Access
 - Skeleton shapes hidden from screen readers | S wai-images
 - The loading region marked busy (aria-busy), and a short "Loading" message announced | S wcag-status

@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 KINDS
  1. Count badge on an icon (unread messages)   (Standard: m3-badges)
  2. Dot badge for "something new" without a number   (Standard: m3-badges)
- 3. Status badge or tag with text (Paid, Overdue, Draft)   (Standard: govuk-tag)
+ 3. Status badge or tag with text (Paid, Overdue, Draft)   (Standard: govuk-tag)  -> see design-system/tag-chip
 
 CONTENT
  4. Counts capped (99+)   (Standard: m3-badges)
@@ -15,10 +15,10 @@ CONTENT
 
 LOOK
  7. Status shown by text, not colour alone   (Standard: wcag-color)
- 8. A small set of status colours from role tokens   (Standard: dtcg-tokens)
- 9. Text contrast 4.5:1 against the badge fill   (Standard: wcag-contrast)
+ 8. A small set of status colours from role tokens   (Standard: dtcg-tokens)  -> see design-system/tokens
+ 9. Text contrast 4.5:1 against the badge fill   (Standard: wcag-contrast)  -> see design-system/accessibility
 10. Badges not mistaken for buttons (no hover unless clickable)   (Standard: govuk-tag)
-11. Badge position flips in right-to-left   (Standard: w3c-dir)
+11. Badge position flips in right-to-left   (Standard: w3c-dir)  -> see design-system/rtl-localisation
 
 BEHAVIOUR
 12. Count badges disappear at zero   (Standard: m3-badges)

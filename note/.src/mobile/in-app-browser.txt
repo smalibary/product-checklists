@@ -14,8 +14,8 @@ also: design-system/accessibility
 - No injected scripts or tracking in pages that are not the app's own | S owasp-masvs
 - Only https | S owasp-masvs
 ## When to use
-- Short visits (an article, help page, terms) that should return to the app | S hig-web-views
-- Links to other apps (maps, phone, mail) open those apps | S hig-maps
+- Short visits (an article, help page, terms) that should return to the app | S hig-web-views >website/terms
+- Links to other apps (maps, phone, mail) open those apps | S hig-maps >mobile/map-view
 - App's own content better built as real screens than web pages | S apple-review
 ## Access
 - Close button named and at least 44 pt / 48 dp | S hig-layout m3-layout

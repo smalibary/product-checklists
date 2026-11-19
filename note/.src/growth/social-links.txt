@@ -3,11 +3,11 @@ about: Linking the product to its social accounts and letting people share.
 ## Profiles
 - Same name, logo and bio on every account | P
 - Profile links back to the site | P
-- Site links to accounts in the footer with clear labels | S wcag-link
+- Site links to accounts in the footer with clear labels | S wcag-link >website/footer
 ## Sharing
-- Share buttons use the system share sheet on phones | S webshare
-- Link previews set on shared pages | S ogp x-cards
+- Share buttons use the system share sheet on phones | S webshare >flows/sharing-a-link
+- Link previews set on shared pages | S ogp x-cards >growth/link-previews
 - No tracking scripts from social buttons before consent | L eprivacy
 ## Rules
 - Paid posts and partnerships disclosed | L ftc-endorsements
-- Reviews and testimonials real | L ftc-reviews
+- Reviews and testimonials real | L ftc-reviews >website/testimonials

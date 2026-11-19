@@ -3,10 +3,10 @@ about: The screen that asks people to subscribe or buy to unlock content or feat
 also: design-system/accessibility
 ## Store rules
 - Digital content and features sold through Apple and Google in-app purchase (with regional exceptions) | S apple-review play-payments
-- The price, the billing period and what is included shown clearly near the buy button | S apple-review play-subscriptions
+- The price, the billing period and what is included shown clearly near the buy button | S apple-review play-subscriptions >mobile/billing
 - Price per period is the most prominent price; any per-week or per-month breakdown is secondary | S apple-review
 - Free trial: length, what it turns into, and when the first charge happens | L apple-subscriptions ftc-negative-option
-- Links to terms of use and privacy policy | S apple-review
+- Links to terms of use and privacy policy | S apple-review >website/privacy >website/terms
 - Restore purchases button | S apple-review
 ## Content
 - What the person gets, in 3 to 5 short benefits | P
@@ -20,8 +20,8 @@ also: design-system/accessibility
 - Not shown repeatedly after being closed | P
 ## After buying
 - Access unlocked at once, with a thank-you | P
-- Receipt from the store | S apple-subscriptions
-- How to manage or cancel shown in settings | S apple-subscriptions play-subscriptions
+- Receipt from the store | S apple-subscriptions >mobile/billing
+- How to manage or cancel shown in settings | S apple-subscriptions play-subscriptions >mobile/settings
 ## Access
 - Prices read clearly by screen readers with the currency | S hig-accessibility
 - Close button has a name and is at least 44 pt / 48 dp | S hig-layout m3-layout

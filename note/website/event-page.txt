@@ -20,11 +20,11 @@ DETAILS
 12. Accessibility at the venue: step-free entry, captions, sign language, quiet room   (Rule: ada-web, eu-accessibility-act)
 13. Directions, map, parking and public transport   (Practice)
 14. What to bring and dress code if any   (Practice)
-15. Refund and transfer policy for tickets   (Rule: eu-consumer-rights)
+15. Refund and transfer policy for tickets   (Rule: eu-consumer-rights)  -> see flows/requesting-a-refund
 
 REGISTRATION
 16. A short form: only the fields needed to attend   (Research: baymard-fields)
-17. Confirmation screen and email with the date, place and a calendar file   (Research: govuk-confirm)
+17. Confirmation screen and email with the date, place and a calendar file   (Research: govuk-confirm)  -> see web-app/calendar
 18. Add to calendar for Google, Apple and Outlook   (Practice)
 19. A way to cancel a registration   (Practice)
 20. Reminder email before the event, with the join link for online events   (Practice)
@@ -34,9 +34,9 @@ AFTER THE EVENT
 22. No Register button on a past event   (Research: nng-heuristics)
 
 SEARCH AND SHARING
-23. Event structured data (name, start date, location, offers, status) so search shows it   (Standard: google-event, schema-event)
+23. Event structured data (name, start date, location, offers, status) so search shows it   (Standard: google-event, schema-event)  -> see growth/technical-seo
 24. Event status marked if cancelled, postponed or moved online   (Standard: google-event)
-25. A share image and title for social links   (Practice)
+25. A share image and title for social links   (Practice)  -> see growth/social-links
 
 ACCESSIBILITY
 26. Captions and transcripts for any video   (Standard: wcag-captions)

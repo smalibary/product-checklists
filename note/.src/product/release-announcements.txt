@@ -9,6 +9,6 @@ about: Telling people what changed, in places they will see it.
 - No pop-ups that block the task | R nng-modal
 ## Other channels
 - Email only to people who opted in | L gdpr-7 can-spam
-- Store "what's new" text updated each release | S apple-product-page play-listing
+- Store "what's new" text updated each release | S apple-product-page play-listing >website/changelog
 ## Timing
 - Announced after the rollout is complete | S sre-canary

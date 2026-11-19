@@ -11,20 +11,20 @@ PLAN
 SAFETY
  4. Backups encrypted   (Rule: gdpr-32)
  5. At least one copy cannot be changed or deleted by the app's accounts   (Standard: nist-contingency)
- 6. Access to backups limited and logged   (Standard: owasp-logging)
+ 6. Access to backups limited and logged   (Standard: owasp-logging)  -> see operations/logging
 
 TESTING
  7. Restores tested on a schedule, timed, and written up   (Standard: nist-contingency)
  8. A full disaster-recovery practice at least yearly   (Standard: nist-contingency)
 
 SCOPE
- 9. Files, settings and secrets covered, not only the database   (Standard: nist-contingency)
+ 9. Files, settings and secrets covered, not only the database   (Standard: nist-contingency)  -> see operations/secrets
 
 PRIVACY
-10. Deleted personal data removed from backups within a stated time   (Rule: gdpr-17)
+10. Deleted personal data removed from backups within a stated time   (Rule: gdpr-17)  -> see backend/data-privacy
 
 WATCHING
-11. An alert when a backup fails or is late   (Standard: sre-alerting)
+11. An alert when a backup fails or is late   (Standard: sre-alerting)  -> see operations/monitoring-alerts
 
 SOURCES
 - nist-contingency: https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final

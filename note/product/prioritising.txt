@@ -9,8 +9,8 @@ METHOD
  3. Value against effort shown on a simple grid   (Research: nng-prioritization)
 
 INPUTS
- 4. Goals and roadmap themes come first   (Research: nng-roadmaps)
- 5. Research and feedback, not the loudest voice   (Research: nng-feedback)
+ 4. Goals and roadmap themes come first   (Research: nng-roadmaps)  -> see product/roadmap
+ 5. Research and feedback, not the loudest voice   (Research: nng-feedback)  -> see product/user-feedback
  6. Risk, legal and security work counted, not crowded out   (Practice)
 
 OUTPUT

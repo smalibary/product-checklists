@@ -12,10 +12,10 @@ KINDS
  4. First use, no results, cleared and error states each handled   (Research: nng-empty)
 
 LAYOUT
- 5. Fits small screens and large text without scrolling far   (Standard: wcag-reflow)
+ 5. Fits small screens and large text without scrolling far   (Standard: wcag-reflow)  -> see design-system/accessibility
 
 ACCESS
- 6. Pictures marked as decorative or described   (Standard: wcag-nontext)
+ 6. Pictures marked as decorative or described   (Standard: wcag-nontext)  -> see design-system/accessibility
 
 SOURCES
 - nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/

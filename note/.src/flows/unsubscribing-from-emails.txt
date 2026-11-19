@@ -2,11 +2,11 @@ title: Unsubscribing from emails (flow)
 about: Stopping marketing emails in one step.
 ## Unsubscribing
 - One click from the email (List-Unsubscribe) | L rfc-unsubscribe google-sender
-- Works without signing in | L can-spam
+- Works without signing in | L can-spam >web-app/login
 - Honoured quickly (within 2 days for bulk senders) | L google-sender yahoo-sender
 ## Page
 - Confirms it is done | P
 - Optional: choose which emails to keep | P
 - No guilt wording or tricks | L ftc-dark-patterns
 ## Account emails
-- Security and receipt emails still sent; this is explained | P
+- Security and receipt emails still sent; this is explained | P >web-app/billing >backend/email-sending

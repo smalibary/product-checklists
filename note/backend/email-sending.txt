@@ -5,24 +5,24 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 DOMAIN
  1. SPF, DKIM and DMARC set up for the sending domain   (Standard: rfc-spf, rfc-dkim, rfc-dmarc)
- 2. Gmail and Yahoo rules met: alignment, low spam rate, one-click unsubscribe for bulk mail   (Rule: google-sender, yahoo-sender)
- 3. Account emails and marketing emails sent from separate addresses or streams   (Standard: google-sender)
+ 2. Gmail and Yahoo rules met: alignment, low spam rate, one-click unsubscribe for bulk mail   (Rule: google-sender, yahoo-sender)  -> see flows/unsubscribing-from-emails
+ 3. Account emails and marketing emails sent from separate addresses or streams   (Standard: google-sender)  -> see growth/email-marketing
 
 CONTENT
  4. A plain-text version with every HTML email   (Practice)
- 5. The sender's name and postal address in marketing emails   (Rule: can-spam)
+ 5. The sender's name and postal address in marketing emails   (Rule: can-spam)  -> see growth/email-marketing
 
 CONSENT
  6. Marketing only with consent where the law needs it   (Rule: eprivacy, gdpr-6)
- 7. One-click unsubscribe header and a working link, honoured quickly   (Rule: rfc-unsubscribe, can-spam)
+ 7. One-click unsubscribe header and a working link, honoured quickly   (Rule: rfc-unsubscribe, can-spam)  -> see flows/unsubscribing-from-emails
 
 DELIVERY
- 8. Sending through a queue with retries   (Standard: aws-backoff)
+ 8. Sending through a queue with retries   (Standard: aws-backoff)  -> see backend/background-jobs
  9. Bounces and complaints handled: stop sending to bad addresses   (Standard: google-sender)
 10. Daily caps per user and in total   (Standard: aws-cost)
 
 SAFETY
-11. No secrets or full card numbers in emails   (Standard: pci-dss)
+11. No secrets or full card numbers in emails   (Standard: pci-dss)  -> see operations/secrets
 12. Links in emails expire when they sign someone in   (Standard: owasp-forgot)
 
 WATCHING

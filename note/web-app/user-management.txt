@@ -4,39 +4,39 @@ Backing: 1 Rule, 10 Standard, 4 Research, 9 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 LIST OF PEOPLE
- 1. Table: name, email, role, status (active, invited, suspended), last active   (Research: nng-tables)
- 2. Search and filter by role and status   (Research: nng-filters)
+ 1. Table: name, email, role, status (active, invited, suspended), last active   (Research: nng-tables)  -> see web-app/data-table
+ 2. Search and filter by role and status   (Research: nng-filters)  -> see flows/filtering-items
  3. Sort by name or last active   (Research: nng-tables)
  4. Count of seats used and left   (Practice)
- 5. Pending invites listed with resend and cancel   (Practice)
+ 5. Pending invites listed with resend and cancel   (Practice)  -> see flows/inviting-a-teammate
 
 INVITING
- 6. Invite by email, several at once (paste a list)   (Practice)
- 7. Choose a role while inviting, with what each role can do   (Standard: owasp-authz)
- 8. Invite links expire and can be turned off   (Standard: owasp-auth)
- 9. Domain sign-up: anyone with the company email can join, if the admin turns it on   (Practice)
-10. Price change shown before adding a paid seat   (Rule: eu-consumer-rights)
+ 6. Invite by email, several at once (paste a list)   (Practice)  -> see flows/inviting-a-teammate
+ 7. Choose a role while inviting, with what each role can do   (Standard: owasp-authz)  -> see flows/inviting-a-teammate
+ 8. Invite links expire and can be turned off   (Standard: owasp-auth)  -> see flows/inviting-a-teammate
+ 9. Domain sign-up: anyone with the company email can join, if the admin turns it on   (Practice)  -> see website/sign-up
+10. Price change shown before adding a paid seat   (Rule: eu-consumer-rights)  -> see product/pricing-changes
 
 ROLES
-11. Few clear roles (Owner, Admin, Member, Guest), described in plain words   (Standard: owasp-authz)
-12. A table showing what each role can do   (Practice)
+11. Few clear roles (Owner, Admin, Member, Guest), described in plain words   (Standard: owasp-authz)  -> see design-system/content-voice
+12. A table showing what each role can do   (Practice)  -> see web-app/data-table
 13. Least privilege by default: new people get the smallest role   (Standard: owasp-authz)
 14. Changes take effect at once, including for people already signed in   (Standard: owasp-authz)
 15. There is always at least one owner   (Practice)
 
 REMOVING
 16. Remove or suspend a person, with what happens to their work (kept, moved to someone)   (Practice)
-17. Their sessions end at once   (Standard: owasp-session)
+17. Their sessions end at once   (Standard: owasp-session)  -> see backend/sessions
 18. Confirm with the person's name in the message   (Research: nng-confirm)
 19. Bulk actions for many people, with a count in the confirm   (Practice)
 
 SAFETY AND RECORDS
-20. Every change logged: who did what to whom and when   (Standard: owasp-logging)
+20. Every change logged: who did what to whom and when   (Standard: owasp-logging)  -> see operations/logging
 21. Single sign-on and automatic user sync (SCIM) for larger plans   (Practice)
-22. Require two-step sign-in for all members   (Standard: owasp-mfa)
+22. Require two-step sign-in for all members   (Standard: owasp-mfa)  -> see web-app/2fa
 
 ACCESS
-23. Table with headers, row actions in a menu with names   (Standard: wai-tables, apg-menubutton)
+23. Table with headers, row actions in a menu with names   (Standard: wai-tables, apg-menubutton)  -> see web-app/data-table
 24. Status shown in words, not only colour   (Standard: wcag-color)
 
 SOURCES

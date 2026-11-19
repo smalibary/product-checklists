@@ -3,14 +3,14 @@ about: Icons that move, animated pictures and Lottie files.
 also: design-system/accessibility
 ## Use
 - Animated icons confirm an action or show a state change | S hig-sf-symbols
-- Illustrations animate on empty states and onboarding, not on every screen | R nng-animation-usability
+- Illustrations animate on empty states and onboarding, not on every screen | R nng-animation-usability >web-app/onboarding >web-app/empty-state
 ## Files
 - Vector animation files (for example Lottie) instead of video or GIF where possible | S lottie
 - File size checked; large ones loaded later | S webdev-lazy
-- A still frame shown before loading and for reduced motion | S mdn-reduced-motion
+- A still frame shown before loading and for reduced motion | S mdn-reduced-motion >motion/motion-accessibility
 ## Access
-- Decorative animations hidden from screen readers | S wcag-nontext
-- Meaningful ones have a text alternative | S wcag-nontext
+- Decorative animations hidden from screen readers | S wcag-nontext >design-system/accessibility
+- Meaningful ones have a text alternative | S wcag-nontext >design-system/accessibility
 - Loops stop after a few seconds or can be paused | S wcag-pause
 ## Look
-- Same stroke, colour and timing as the static icon set | S hig-icons m3-icons
+- Same stroke, colour and timing as the static icon set | S hig-icons m3-icons >design-system/icon

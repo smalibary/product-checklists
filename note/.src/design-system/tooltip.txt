@@ -2,9 +2,9 @@ title: Tooltip
 about: A small label that appears near an element on hover or keyboard focus, to name it or add a short hint.
 also: design-system/accessibility
 ## When to use
-- Naming icon-only buttons, and short hints that are nice to have | R nng-tooltip
+- Naming icon-only buttons, and short hints that are nice to have | R nng-tooltip >design-system/icon
 - Never for information people need to finish a task (put it on the page) | R nng-tooltip
-- Never for interactive content like links or buttons (use a popover) | S apg-tooltip
+- Never for interactive content like links or buttons (use a popover) | S apg-tooltip >design-system/popover
 - Not on touch screens alone: they have no hover | R nng-tooltip
 ## Content
 - A few words; one sentence at most | R nng-tooltip
@@ -12,7 +12,7 @@ also: design-system/accessibility
 ## Look and place
 - Close to the element, not covering it or what it relates to | R nng-tooltip
 - Moves to stay on screen | P
-- Contrast meets WCAG | S wcag-contrast
+- Contrast meets WCAG | S wcag-contrast >design-system/accessibility
 - An arrow pointing at the element is optional | P
 ## Timing
 - Appears after a short delay (about 300 to 500 ms) on hover, at once on focus | R nng-tooltip

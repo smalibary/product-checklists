@@ -8,7 +8,7 @@ BEFORE THE FORM
  2. Try before signing up (guest mode) where the product allows it   (Research: baymard-guest)
  3. Ask for an account at the moment it is needed (save, buy, post), not on first open   (Research: baymard-guest)
  4. Intro slides skippable, few of them   (Practice)
- 5. Sign up and Log in easy to tell apart   (Practice)
+ 5. Sign up and Log in easy to tell apart   (Practice)  -> see mobile/login
 
 WAYS TO SIGN UP
  6. Sign up with Apple, Google or a social account   (Practice)
@@ -46,18 +46,18 @@ ERRORS AND CHECKING
 32. Errors read aloud by screen readers   (Standard)
 
 ACCOUNT ALREADY EXISTS (A REAL TRADE-OFF)
-33. Helpful: "This email has an account" with Log in and Reset right there   (Practice)
+33. Helpful: "This email has an account" with Log in and Reset right there   (Practice)  -> see mobile/login
 34. Private: same answer whether the email exists or not, details sent by email   (Standard: owasp-auth)
 
 LEGAL AND CONSENT
-35. Terms and privacy accepted before the account is made, readable in the app   (Practice)
+35. Terms and privacy accepted before the account is made, readable in the app   (Practice)  -> see website/terms
 36. Marketing opt-in separate, off by default, as easy to withdraw   (Rule: pdpl)
 37. Age asked neutrally (type birth month and year, no "I am over 12" box) where children's rules apply   (Rule: coppa)
 38. Tracking asked through the phone's own prompt, before any tracking (iPhone)   (Rule: hig-privacy)
 
 THE BUTTON AND SENDING
 39. Button says what it does: "Create account"   (Practice)
-40. Loading state; cannot be pressed twice   (Practice)
+40. Loading state; cannot be pressed twice   (Practice)  -> see design-system/loading
 41. Button stays above the keyboard   (Practice)
 42. A disabled button says why, or it stays enabled and shows the errors   (Practice)
 43. Robot check only when needed, invisible first   (Practice)
@@ -67,28 +67,28 @@ VERIFICATION
 45. Product usable before the email is confirmed   (Practice)
 46. Code fills itself from the SMS (iPhone one-time-code; Android SMS Retriever or WebOTP)   (Standard: webdev-otp)
 47. Code boxes take a pasted code, move on by themselves and send on the last digit   (Practice)
-48. Resend with a countdown, plus "change email or number"   (Practice)
+48. Resend with a countdown, plus "change email or number"   (Practice)  -> see flows/changing-email
 49. "Open mail app" button on the check-your-email screen   (Practice)
 50. Expired code or link: clear message and one tap for a new one   (Practice)
 
 AFTER SIGN-UP
 51. Welcome screen pointing to the first action   (Practice)
-52. Signed in straight away, never "now log in"   (Practice)
+52. Signed in straight away, never "now log in"   (Practice)  -> see mobile/login
 53. Permissions asked when each is needed, a reason screen first, no reward for saying yes   (Rule: hig-privacy)
 54. Profile setup optional and skippable   (Practice)
 55. Already-have-an-account link   (Practice)
-56. Delete account inside the app (iPhone and Android) plus a web link (Android)   (Rule: apple-5.1.1, play-deletion)
+56. Delete account inside the app (iPhone and Android) plus a web link (Android)   (Rule: apple-5.1.1, play-deletion)  -> see flows/deleting-account
 
 ACCESS AND LANGUAGE
 57. Every field has a name screen readers say   (Standard)
 58. Contrast passes in light and dark   (Standard)
 59. Large text setting does not break the layout   (Standard)
-60. Right-to-left for Arabic, with phone numbers and codes kept left-to-right   (Practice)
+60. Right-to-left for Arabic, with phone numbers and codes kept left-to-right   (Practice)  -> see design-system/rtl-localisation
 61. Main actions within thumb reach   (Practice)
 
 EDGE CASES
 62. Leaving halfway keeps what was typed   (Practice)
-63. Invite link kept through the whole flow; returns to where they were   (Practice)
+63. Invite link kept through the whole flow; returns to where they were   (Practice)  -> see mobile/invite
 64. Works on slow mobile data   (Practice)
 
 SOURCES

@@ -16,24 +16,24 @@ COLOUR AND CONTRAST
 
 KEYBOARD AND FOCUS
  8. Every interactive part reachable and usable by keyboard   (Standard: wcag-keyboard)
- 9. Keyboard behaviour follows the ARIA patterns (arrows in menus, tabs, radios)   (Standard: apg)
+ 9. Keyboard behaviour follows the ARIA patterns (arrows in menus, tabs, radios)   (Standard: apg)  -> see design-system/tabs, design-system/radio
 10. Focus order follows reading order   (Standard: wcag-focus-order)
-11. Focused things are never hidden behind sticky headers   (Standard: wcag-obscured)
+11. Focused things are never hidden behind sticky headers   (Standard: wcag-obscured)  -> see website/header
 12. Skip link to the main content   (Standard: wcag-bypass)
 
 NAMES AND ROLES
 13. Native HTML elements first; ARIA only when needed   (Standard: apg)
 14. Every control has a name, role and state   (Standard: wcag-name-role)
-15. Icon-only buttons have a text name   (Standard: wcag-name-role)
+15. Icon-only buttons have a text name   (Standard: wcag-name-role)  -> see design-system/icon
 16. Status messages announced without moving focus   (Standard: wcag-status)
 
 TOUCH AND MOTION
 17. Targets at least 24 by 24 px on the web (44 recommended); 44 pt on iPhone, 48 dp on Android   (Standard: wcag-target, hig-layout, m3-layout)
 18. Dragging always has a single-tap alternative   (Standard: wcag-dragging)
-19. Reduced motion respected; nothing flashes more than 3 times a second   (Standard: mdn-reduced-motion, wcag-flash)
+19. Reduced motion respected; nothing flashes more than 3 times a second   (Standard: mdn-reduced-motion, wcag-flash)  -> see motion/motion-accessibility
 
 PAGES
-20. Each page has a title that names it and the site ("Sign in · Qanat Books")   (Standard: wcag-title)
+20. Each page has a title that names it and the site ("Sign in · Qanat Books")   (Standard: wcag-title)  -> see web-app/login
 21. One main heading, and headings in order so the page reads as an outline   (Standard: wcag-headings)
 22. Works at phone width (320 px) with no sideways scrolling   (Standard: wcag-reflow)
 23. Text can be enlarged to 200% without cutting anything off   (Standard: wcag-resize)
@@ -43,7 +43,7 @@ PAGES
 CONTENT
 26. Pictures that tell something have alt text; decorative ones are hidden from screen readers   (Standard: wcag-nontext, wai-images)
 27. Forms: labels, help text and errors linked to the field   (Standard: wcag-labels, wcag-error)
-28. Language and direction set (Arabic right-to-left)   (Standard: w3c-dir)
+28. Language and direction set (Arabic right-to-left)   (Standard: w3c-dir)  -> see design-system/rtl-localisation
 
 PROCESS
 29. Automatic checks in the build (axe or similar)   (Practice)

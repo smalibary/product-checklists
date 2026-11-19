@@ -1,0 +1,51 @@
+﻿HEADER CHECKLIST: 18 items
+The top of every page: who the site is, where you can go, and the few tools people reach for first.
+Backing: 0 Rule, 11 Standard, 6 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. Logo at the top left, linking to the home page   (Research: nng-logo, nng-homepage-link)
+ 2. Main menu with a few short, plain labels   (Research: nng-dropdown, nng-mobile-nav)
+ 3. The current section marked in the menu   (Standard: wcag-nav)
+ 4. Search box or search button where the site has search   (Research: nng-search)  -> see website/search
+ 5. Small utility links (sign in, account, cart, language) kept apart from the main menu   (Research: nng-utility-nav)  -> see website/login, website/cart
+ 6. One clear main action at most (for example "Start free")   (Practice)
+
+CONSISTENCY
+ 7. The same header, in the same order, on every page   (Standard: wcag-nav)
+ 8. Help or contact link in the same place on every page   (Standard: wcag-help)
+
+PHONES
+ 9. Menu folds into a menu button on small screens, with the most used links still visible   (Research: nng-hamburger, nng-mobile-nav)
+10. The menu button has a visible label or a clear name for screen readers   (Standard: apg-menubutton)
+11. Nothing scrolls sideways at 320 px   (Standard: wcag-reflow)  -> see design-system/accessibility
+
+STICKY HEADERS
+12. Sticky only if it stays small, and shrinks or hides on scroll down   (Research: nng-sticky)
+13. Never covers the item that has keyboard focus   (Standard: wcag-obscured)
+
+STRUCTURE AND ACCESS
+14. Marked as the page's header landmark (banner) with the menu inside a nav landmark   (Standard: apg-landmarks)
+15. A "Skip to content" link as the first thing a keyboard reaches   (Standard: wcag-bypass)
+16. Drop-down menus open by click or Enter, not only on hover   (Standard: apg-menubutton, nng-dropdown)  -> see design-system/dropdown-menu
+17. Visible focus on every link and button   (Standard: wcag-focus)  -> see design-system/accessibility
+18. Touch targets at least 24 pixels apart or in size   (Standard: wcag-target)  -> see design-system/accessibility
+
+SOURCES
+- nng-logo: https://www.nngroup.com/articles/logo-placement-brand-recall/
+- nng-homepage-link: https://www.nngroup.com/articles/homepage-links/
+- nng-dropdown: https://www.nngroup.com/articles/drop-down-menus/
+- nng-mobile-nav: https://www.nngroup.com/articles/mobile-navigation-patterns/
+- wcag-nav: https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation
+- nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
+- nng-utility-nav: https://www.nngroup.com/articles/utility-navigation/
+- wcag-help: https://www.w3.org/WAI/WCAG22/Understanding/consistent-help
+- nng-hamburger: https://www.nngroup.com/articles/hamburger-menus/
+- apg-menubutton: https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- nng-sticky: https://www.nngroup.com/articles/sticky-headers/
+- wcag-obscured: https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- wcag-bypass: https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

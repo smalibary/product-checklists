@@ -4,21 +4,21 @@ Backing: 0 Rule, 3 Standard, 8 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 MESSAGE
- 1. Plain words: "We cannot find that page", without the word "404" as the headline   (Research: nng-404, govuk-404)
+ 1. Plain words: "We cannot find that page", without the word "404" as the headline   (Research: nng-404, govuk-404)  -> see design-system/content-voice
  2. A short reason: the address may be mistyped, or the page moved   (Research: nng-404, govuk-404)
  3. No blame on the visitor   (Research: nng-errors)
  4. Calm humour only if it does not hide the message   (Research: nng-404)
 
 WAYS FORWARD
- 5. A search box   (Research: nng-404)
+ 5. A search box   (Research: nng-404)  -> see website/search
  6. Links to the home page and the most used pages   (Research: nng-404)
  7. A contact link to report a broken link   (Research: nng-404, govuk-404)
- 8. The site's normal header and footer so navigation still works   (Research: nng-404)
+ 8. The site's normal header and footer so navigation still works   (Research: nng-404)  -> see website/header, website/footer
 
 TECHNICAL
  9. Returns the status 404 (or 410 for gone forever), not 200   (Standard: google-404)
 10. Moved pages redirect (301) to their new home instead of showing a 404   (Standard: google-404)
-11. Broken links found in logs and fixed   (Practice)
+11. Broken links found in logs and fixed   (Practice)  -> see operations/logging
 12. The page title says "Page not found" with the site name   (Standard: wcag-title)
 
 SOURCES

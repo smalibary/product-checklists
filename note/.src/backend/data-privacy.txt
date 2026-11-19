@@ -7,7 +7,7 @@ about: Handling personal data the way GDPR and Saudi PDPL require.
 - Privacy built into the design from the start | L gdpr-25
 ## People's rights
 - Access and a copy of their data | L gdpr-15 gdpr-20
-- Correction and deletion, including from backups within a stated time | L gdpr-17 pdpl
+- Correction and deletion, including from backups within a stated time | L gdpr-17 pdpl >operations/backups
 - Objection to marketing and profiling | L gdpr-21
 ## Security
 - Encryption in transit and at rest, access limited by role | L gdpr-32

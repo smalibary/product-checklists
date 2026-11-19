@@ -7,10 +7,10 @@ about: Getting an iPhone or iPad app through Apple's review.
 - Name, subtitle, description, keywords and screenshots | L apple-screenshots apple-product-page
 - Privacy details answered truthfully | L apple-privacy-labels
 - Age rating set | L apple-age-rating
-- Privacy policy and support addresses working | L apple-review
+- Privacy policy and support addresses working | L apple-review >website/privacy
 ## Review rules
 - Demo account and notes for the reviewer | L apple-review
-- Account deletion inside the app if sign-up exists | L apple-deletion
+- Account deletion inside the app if sign-up exists | L apple-deletion >website/sign-up >flows/deleting-account
 - Sign in with Apple offered when other social sign-ins are | L apple-4.8
 - Purchases of digital goods through Apple's system | L apple-subscriptions
 - Tracking permission asked before tracking | L apple-att

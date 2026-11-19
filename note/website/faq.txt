@@ -4,7 +4,7 @@ Backing: 0 Rule, 4 Standard, 10 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CONTENT
- 1. Questions taken from real support tickets and searches, not marketing points   (Research: nng-faq)
+ 1. Questions taken from real support tickets and searches, not marketing points   (Research: nng-faq)  -> see support/help-desk
  2. Written in the customer's words   (Research: nng-faq)
  3. Short, direct answers; the first sentence answers the question   (Research: nng-faq)
  4. Links to longer help articles where needed   (Research: nng-faq)
@@ -13,23 +13,23 @@ CONTENT
  7. Reviewed and dated; out-of-date answers removed   (Practice)
 
 FINDING AN ANSWER
- 8. A search box over the questions on long pages   (Research: nng-faq)
+ 8. A search box over the questions on long pages   (Research: nng-faq)  -> see website/search
  9. A list of all questions at the top that jumps to each answer   (Research: nng-faq)
 10. Each question has its own link that can be shared   (Practice)
 
 LAYOUT
-11. Short lists may show all answers; long lists can fold into an accordion   (Research: nng-accordion)
-12. Accordions are buttons with expanded and collapsed state   (Standard: apg-accordion)
+11. Short lists may show all answers; long lists can fold into an accordion   (Research: nng-accordion)  -> see design-system/accordion
+12. Accordions are buttons with expanded and collapsed state   (Standard: apg-accordion)  -> see design-system/accordion
 13. Find-in-page still works with folded answers (hidden="until-found" or all open)   (Practice)
-14. Headings in order   (Standard: wcag-headings)
+14. Headings in order   (Standard: wcag-headings)  -> see design-system/accessibility
 
 NEXT STEP
 15. "Still need help?" with a contact link at the end   (Research: nng-help)
 16. "Was this helpful?" on each answer to find weak ones   (Practice)
 
 SEARCH
-17. FAQ structured data where it still applies (Google now shows it mainly for government and health sites)   (Standard: google-faq)
-18. Contrast and phone width meet WCAG   (Standard: wcag-contrast, wcag-reflow)
+17. FAQ structured data where it still applies (Google now shows it mainly for government and health sites)   (Standard: google-faq)  -> see growth/technical-seo
+18. Contrast and phone width meet WCAG   (Standard: wcag-contrast, wcag-reflow)  -> see design-system/accessibility
 
 SOURCES
 - nng-faq: https://www.nngroup.com/articles/faqs-deliver-value/

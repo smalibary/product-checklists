@@ -3,17 +3,17 @@ about: A message inside the page that tells people something important about the
 also: design-system/accessibility
 ## Kinds
 - Info, success, warning and error, each with its own colour and icon | S govuk-notification
-- Error alerts for page-level problems; field errors go next to fields | S govuk-error-summary govuk-error-message
-- Not for urgent questions that need an answer now (use an alert dialog) | S apg-alertdialog
-- Not for passing messages (use a toast) | R nng-indicators
+- Error alerts for page-level problems; field errors go next to fields | S govuk-error-summary govuk-error-message >flows/showing-input-error
+- Not for urgent questions that need an answer now (use an alert dialog) | S apg-alertdialog >design-system/modal
+- Not for passing messages (use a toast) | R nng-indicators >design-system/toast
 ## Content
 - A short title saying what happened | S govuk-notification
 - A sentence on what to do next, with a link or button if there is an action | R nng-errors
-- Plain words, no blame, no codes alone | R nng-errors
+- Plain words, no blame, no codes alone | R nng-errors >design-system/content-voice
 ## Look
 - Kind shown by icon and words as well as colour | S wcag-color
-- Icon has a text name ("Error:") or the title says it | S wcag-nontext
-- Text and icon contrast meet WCAG | S wcag-contrast wcag-ui-contrast
+- Icon has a text name ("Error:") or the title says it | S wcag-nontext >design-system/accessibility
+- Text and icon contrast meet WCAG | S wcag-contrast wcag-ui-contrast >design-system/accessibility
 - Placed near what it is about, usually at the top of the content | R nng-errors
 ## Behaviour
 - Stays until the problem is fixed or the person closes it | R nng-indicators

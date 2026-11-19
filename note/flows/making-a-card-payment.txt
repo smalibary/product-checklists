@@ -23,15 +23,15 @@ PAYING
 RESULTS
 12. Declined: a plain reason where known, and what to try (another card)   (Standard: wcag-error)
 13. Details kept except the security code   (Standard: pci-dss)
-14. Success: confirmation with order number; receipt and VAT invoice by email   (Rule: govuk-confirm, zatca-einvoice)
+14. Success: confirmation with order number; receipt and VAT invoice by email   (Rule: govuk-confirm, zatca-einvoice)  -> see web-app/billing
 
 TRUST
-15. Secure checkout signs near the fields, without clutter   (Research: baymard-trust)
+15. Secure checkout signs near the fields, without clutter   (Research: baymard-trust)  -> see web-app/checkout
 16. Saved cards only with consent, shown by brand and last 4   (Standard: pci-dss)
 
 ACCESS
 17. Errors announced and linked to fields   (Standard: wcag-error)
-18. The bank page in the check is reachable by keyboard   (Standard: wcag-keyboard)
+18. The bank page in the check is reachable by keyboard   (Standard: wcag-keyboard)  -> see design-system/accessibility
 
 SOURCES
 - baymard-card: https://baymard.com/blog/how-to-format-card-fields

@@ -11,8 +11,8 @@ also: design-system/accessibility
 - Overlapping events stay readable | P
 - Repeating events with "this one or all" when changing | S rfc-icalendar
 ## Sharing
-- Export and subscribe through iCalendar | S rfc-icalendar
-- Invites show who is coming | P
+- Export and subscribe through iCalendar | S rfc-icalendar >web-app/import-export
+- Invites show who is coming | P >flows/inviting-a-teammate
 ## Access
 - Keyboard moves between days and events | S apg-grid
 - Each event has an accessible name with its date and time | S wcag-name-role

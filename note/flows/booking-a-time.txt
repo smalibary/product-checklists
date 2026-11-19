@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 CHOOSING
  1. Available days and times only, in the person's time zone, shown clearly   (Standard: iana-tz)
  2. Time zone changeable   (Standard: iana-tz)
- 3. Date picker that works by keyboard   (Standard: apg-datepicker)
+ 3. Date picker that works by keyboard   (Standard: apg-datepicker)  -> see design-system/date-picker
 
 DETAILS
  4. Only the fields needed   (Rule: gdpr-5)
@@ -14,7 +14,7 @@ DETAILS
 
 CONFIRMING
  6. Slot held while finishing, with a clear time limit that can be extended   (Standard: wcag-timing)
- 7. Confirmation page and email with a calendar file   (Standard: govuk-confirm, rfc-icalendar)
+ 7. Confirmation page and email with a calendar file   (Standard: govuk-confirm, rfc-icalendar)  -> see web-app/calendar
 
 CHANGING
  8. Reschedule and cancel links in the email   (Practice)

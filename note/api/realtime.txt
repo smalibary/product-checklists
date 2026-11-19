@@ -11,7 +11,7 @@ SECURITY
  3. Secure connections only (wss)   (Standard: owasp-websocket)
  4. The Origin header checked when the connection opens   (Standard: owasp-websocket)
  5. The user signed in when connecting, and checked again for each private channel   (Standard: owasp-websocket, owasp-authz)
- 6. Every incoming message validated and size-limited   (Standard: owasp-websocket)
+ 6. Every incoming message validated and size-limited   (Standard: owasp-websocket)  -> see backend/input-validation
 
 CONNECTIONS
  7. Heartbeats close dead connections   (Standard: rfc-websocket)

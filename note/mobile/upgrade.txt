@@ -26,7 +26,7 @@ AFTER
 
 RESPECT
 14. Easy to close; no repeated offers right after "No thanks"   (Rule: ftc-dark-patterns)
-15. Downgrade and cancel explained in settings   (Rule: ftc-negative-option)
+15. Downgrade and cancel explained in settings   (Rule: ftc-negative-option)  -> see mobile/settings
 
 ACCESS
 16. Price and plan names read clearly   (Standard: hig-accessibility)

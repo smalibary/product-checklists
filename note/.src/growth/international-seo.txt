@@ -5,10 +5,10 @@ about: Serving the right language version of each page to each searcher.
 - hreflang links between all versions, each pointing back | S gsc-hreflang
 - An x-default for the language chooser | S gsc-hreflang
 ## Content
-- Whole pages translated, not just menus | S gsc-hreflang
+- Whole pages translated, not just menus | S gsc-hreflang >design-system/rtl-localisation
 - Language set in the page's lang attribute | S wcag-lang
-- Right-to-left pages mirrored for Arabic | S w3c-dir
+- Right-to-left pages mirrored for Arabic | S w3c-dir >design-system/rtl-localisation
 - Dates, numbers and money in local formats | S mdn-intl
 ## Choice
-- No forced redirects by location; offer a switch | S gsc-hreflang
-- Each version listed in the sitemap | S gsc-sitemaps
+- No forced redirects by location; offer a switch | S gsc-hreflang >flows/switching-language
+- Each version listed in the sitemap | S gsc-sitemaps >growth/technical-seo

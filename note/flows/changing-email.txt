@@ -9,10 +9,10 @@ ASKING
 
 CONFIRMING
  3. A link or code sent to the new address; the change only applies after it   (Standard: owasp-auth)
- 4. A notice sent to the old address with a way to undo   (Standard: owasp-auth)
+ 4. A notice sent to the old address with a way to undo   (Standard: owasp-auth)  -> see flows/undoing-an-action
 
 AFTER
- 5. Sessions on other devices reviewed   (Standard: owasp-session)
+ 5. Sessions on other devices reviewed   (Standard: owasp-session)  -> see backend/sessions
  6. Marketing consent carried over only when right   (Rule: gdpr-7)
 
 ERRORS

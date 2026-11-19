@@ -10,7 +10,7 @@ SYSTEM GESTURES COME FIRST
  4. Content drawn edge to edge, with controls kept away from gesture areas   (Standard: android-edge, hig-layout)
 
 APP GESTURES
- 5. Use standard gestures with their usual meaning (tap, swipe, pinch, long press, pull to refresh)   (Standard: hig-gestures, m3-gestures)
+ 5. Use standard gestures with their usual meaning (tap, swipe, pinch, long press, pull to refresh)   (Standard: hig-gestures, m3-gestures)  -> see mobile/pull-to-refresh
  6. Swipe actions on list rows (archive, delete) shown with colour, icon and text   (Research: nng-swipe)
  7. Every gesture has a visible alternative (button or menu)   (Standard: wcag-dragging, wcag-gestures)
  8. Gestures that need two fingers or a path have a single-tap way too   (Standard: wcag-gestures)
@@ -23,7 +23,7 @@ TEACHING
 FEEL
 12. Movement follows the finger and can be cancelled mid-way   (Standard: hig-gestures)
 13. Light haptics confirm a completed gesture, where supported   (Standard: hig-feedback)
-14. Reduced motion respected for the animations   (Standard: hig-accessibility)
+14. Reduced motion respected for the animations   (Standard: hig-accessibility)  -> see motion/motion-accessibility, motion/motion-system
 
 ACCESS
 15. Works with VoiceOver and TalkBack (custom actions for swipe actions)   (Standard: hig-accessibility)

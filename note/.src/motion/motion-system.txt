@@ -11,6 +11,6 @@ about: Writing motion down so every screen moves the same way.
 - A recording or live demo beside each spec | S storybook
 ## Principles
 - Two or three motion principles written in plain words | S fluent-motion carbon-motion
-- Reduced motion version defined for every pattern | S mdn-reduced-motion
+- Reduced motion version defined for every pattern | S mdn-reduced-motion >motion/motion-accessibility
 ## Review
 - Motion reviewed in design review, like colour and type | P

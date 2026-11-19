@@ -4,7 +4,7 @@ Backing: 3 Rule, 11 Standard, 6 Research, 5 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 TOP OF THE ARTICLE
- 1. Title as the only top-level heading   (Standard: wcag-headings)
+ 1. Title as the only top-level heading   (Standard: wcag-headings)  -> see design-system/accessibility
  2. Author name with photo and a link to their page   (Research: nng-blog)
  3. Date published and date updated   (Research: nng-blog, google-article)
  4. Reading time   (Practice)
@@ -13,26 +13,26 @@ TOP OF THE ARTICLE
 READING
  6. Body text at least 16 pixels, line height about 1.5   (Standard: wcag-spacing)
  7. Lines of about 50 to 75 characters   (Practice: butterick-line)
- 8. Headings every few paragraphs, in order   (Standard: wcag-headings)
+ 8. Headings every few paragraphs, in order   (Standard: wcag-headings)  -> see design-system/accessibility
  9. Short paragraphs, lists and bold key words   (Research: nng-scanning)
 10. A contents list for long posts, with jump links   (Practice)
 11. Links say where they go   (Standard: wcag-link)
-12. Images with alt text and captions; charts also described in words   (Standard: wcag-nontext)
-13. Code blocks scroll on their own on phones, never the whole page   (Standard: wcag-reflow)
-14. Text resizes to 200% without breaking   (Standard: wcag-resize)
+12. Images with alt text and captions; charts also described in words   (Standard: wcag-nontext)  -> see design-system/charts, design-system/accessibility
+13. Code blocks scroll on their own on phones, never the whole page   (Standard: wcag-reflow)  -> see design-system/accessibility
+14. Text resizes to 200% without breaking   (Standard: wcag-resize)  -> see design-system/accessibility
 15. Dark mode respected if the site has one   (Practice: mdn-color-scheme)
 
 AROUND THE ARTICLE
-16. Share buttons that are links, not heavy trackers   (Practice)
+16. Share buttons that are links, not heavy trackers   (Practice)  -> see flows/sharing-a-link
 17. Related posts at the end   (Research: nng-blog)
-18. A sign-up for new posts, with consent rules   (Rule: gdpr-7)
-19. Category and tags linking to more   (Research: nng-blog)
+18. A sign-up for new posts, with consent rules   (Rule: gdpr-7)  -> see website/newsletter-signup
+19. Category and tags linking to more   (Research: nng-blog)  -> see design-system/tag-chip
 20. Comments, if any, moderated   (Rule: eu-dsa)
 
 SEARCH AND SPEED
-21. Article structured data: headline, author, dates, image   (Standard: google-article)
+21. Article structured data: headline, author, dates, image   (Standard: google-article)  -> see growth/technical-seo
 22. A unique title and description   (Standard: google-title, google-snippet)
-23. Breadcrumbs for deep sites   (Standard: google-breadcrumb)
+23. Breadcrumbs for deep sites   (Standard: google-breadcrumb)  -> see design-system/breadcrumb
 24. Images sized and lazy-loaded; the page does not jump   (Standard: webdev-images, webdev-cls)
 25. Sponsored or affiliate links disclosed   (Rule: ftc-endorsements)
 

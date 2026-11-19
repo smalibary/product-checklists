@@ -23,7 +23,7 @@ GOING BACK
 
 RULES
 13. How long versions are kept, per plan   (Practice)
-14. Who can see and restore versions follows edit rights   (Standard: owasp-authz)
+14. Who can see and restore versions follows edit rights   (Standard: owasp-authz)  -> see web-app/roles-permissions
 15. Deleted items can be restored for a stated time   (Research: nng-control)
 
 ACCESS

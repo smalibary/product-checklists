@@ -11,16 +11,16 @@ also: design-system/accessibility
 ## New users
 - Getting-started checklist until done, then it goes away | P
 - Templates and sample content | P
-- Empty sections teach, not just say "nothing here" | R nng-empty
+- Empty sections teach, not just say "nothing here" | R nng-empty >web-app/empty-state
 ## Navigation
 - Main menu in the same place as every other screen | S wcag-consistent
-- Workspace or team switch visible if the person is in several | P
+- Workspace or team switch visible if the person is in several | P >web-app/workspace-switcher
 - Search reachable from here | R nng-search
 ## Personal
 - Order or hide sections; the choice is remembered | P
 - Different home for different roles (admin, member) | P
 ## Speed
-- Loads fast; sections load on their own with skeletons | S webdev-lcp nng-skeleton
+- Loads fast; sections load on their own with skeletons | S webdev-lcp nng-skeleton >design-system/skeleton >operations/performance
 - No layout jumping as sections arrive | S webdev-cls
 ## Access
 - Page title names the app and "Home" | S wcag-title

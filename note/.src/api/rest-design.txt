@@ -11,8 +11,8 @@ about: The shape of an HTTP API: addresses, methods, bodies and status codes tha
 - PUT and DELETE give the same result when repeated | S rfc-http
 - Actions that are not create, read, change or delete get their own sub-address with POST (/orders/123:cancel) | S google-aip
 ## Bodies
-- JSON with a declared content type; dates as RFC 3339 text with a time zone | S rfc-datetime
-- Money as an amount in the smallest unit plus a currency code (24500 and "SAR") | S iso-4217
+- JSON with a declared content type; dates as RFC 3339 text with a time zone | S rfc-datetime >backend/dates-money
+- Money as an amount in the smallest unit plus a currency code (24500 and "SAR") | S iso-4217 >backend/dates-money
 - Only fields a caller may set are accepted; unknown or protected fields are refused | S owasp-mass-assignment
 - Responses never include fields the caller may not see (password hashes, other customers) | S owasp-api-top10
 ## Status codes
@@ -25,4 +25,4 @@ about: The shape of an HTTP API: addresses, methods, bodies and status codes tha
 - ETag on reads so a client can ask "changed since?" and get 304 Not Modified | S mdn-etag rfc-caching
 ## Description
 - The whole API described in an OpenAPI file kept in step with the code | S openapi
-- Security reviewed against the OWASP API Top 10 before launch | S owasp-api-top10
+- Security reviewed against the OWASP API Top 10 before launch | S owasp-api-top10 >code/secure-coding

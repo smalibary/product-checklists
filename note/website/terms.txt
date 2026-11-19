@@ -5,13 +5,13 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 CONTENT
  1. Plain-language summary at the top   (Research: nng-scanning)
- 2. Headings and a table of contents   (Standard: wcag-headings)
+ 2. Headings and a table of contents   (Standard: wcag-headings)  -> see design-system/accessibility
  3. Who you are, how to contact you, and which law applies   (Rule: eu-consumer-rights)
- 4. Payment, renewal and cancellation terms spelled out   (Rule: ftc-negative-option)
+ 4. Payment, renewal and cancellation terms spelled out   (Rule: ftc-negative-option)  -> see flows/canceling-subscription
  5. How accounts can be closed and data deleted   (Rule: gdpr-17)
 
 ACCEPTANCE
- 6. Shown before accepting, with a link at sign-up   (Rule: eu-consumer-rights)
+ 6. Shown before accepting, with a link at sign-up   (Rule: eu-consumer-rights)  -> see website/sign-up
  7. Acceptance recorded with the version and time   (Practice)
 
 CHANGES

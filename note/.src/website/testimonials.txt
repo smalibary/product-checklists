@@ -15,11 +15,11 @@ about: Real words from real customers that help a visitor believe the product wo
 - A link to the full case study or the original review where it lives (G2, App Store) | R nng-reviews
 - Video testimonials with captions and a transcript | S wcag-captions
 ## Layout
-- Short quotes in a grid or list; never an auto-moving carousel | R nng-carousel
+- Short quotes in a grid or list; never an auto-moving carousel | R nng-carousel >design-system/carousel
 - Star ratings show the number of reviews behind them | R nng-reviews
 - Logos of customers used with permission | L ftc-endorsements
-- Text over photos keeps 4.5 to 1 contrast | S wcag-contrast
-- Photos have alt text with the person's name | S wcag-nontext
+- Text over photos keeps 4.5 to 1 contrast | S wcag-contrast >design-system/accessibility
+- Photos have alt text with the person's name | S wcag-nontext >design-system/accessibility
 - A call to action after the quotes (start, book a demo) | P
 ## Search
-- Review structured data only for real reviews of the item on the page | S google-review
+- Review structured data only for real reviews of the item on the page | S google-review >growth/technical-seo

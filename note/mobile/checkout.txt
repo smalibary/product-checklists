@@ -5,19 +5,19 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 STEPS
  1. As few screens as possible; guest checkout allowed   (Research: baymard-guest)
- 2. Progress shown for multi-step checkout   (Research: nng-progress)
+ 2. Progress shown for multi-step checkout   (Research: nng-progress)  -> see web-app/multi-step-form
  3. Order summary can be expanded on each step, with the total always visible   (Research: baymard-abandon)
  4. Sticky bottom bar with the total and the main button   (Practice)
 
 DELIVERY
- 5. Address from saved addresses or autofill; map pin for places without clear addresses   (Standard: mdn-autocomplete)
+ 5. Address from saved addresses or autofill; map pin for places without clear addresses   (Standard: mdn-autocomplete)  -> see mobile/map-view
  6. Delivery options with price and date   (Rule: eu-consumer-rights)
  7. Phone number with country code picker, numeric keyboard   (Standard: mdn-inputmode)
 
 PAYMENT
  8. Apple Pay and Google Pay first where available   (Standard: hig-apple-pay, webdev-payment)
  9. Local methods (mada, STC Pay, cash on delivery) where they suit   (Practice)
-10. Card fields from a certified provider, card scan with the camera   (Standard: pci-dss)
+10. Card fields from a certified provider, card scan with the camera   (Standard: pci-dss)  -> see mobile/camera
 11. Strong customer authentication (3-D Secure) opened inside the app   (Rule: psd2-sca, stripe-3ds)
 
 STORE RULES
@@ -26,7 +26,7 @@ STORE RULES
 
 COSTS
 14. All fees, delivery and tax shown before the final button   (Rule: ftc-junk-fees, eu-consumer-rights)
-15. Promo code field quiet, not a big empty box   (Research: baymard-coupon)
+15. Promo code field quiet, not a big empty box   (Research: baymard-coupon)  -> see flows/entering-promo-code
 
 SUBMITTING
 16. Button names the amount ("Pay 245 SAR")   (Standard: wcag-prevent)
@@ -35,8 +35,8 @@ SUBMITTING
 
 AFTER
 19. Confirmation screen with order number and tracking   (Standard: govuk-confirm)
-20. Receipt and VAT invoice by email   (Rule: zatca-einvoice)
-21. Offer push alerts for delivery here (see Push Opt-in)   (Standard: hig-notifications)
+20. Receipt and VAT invoice by email   (Rule: zatca-einvoice)  -> see mobile/billing
+21. Offer push alerts for delivery here (see Push Opt-in)   (Standard: hig-notifications)  -> see mobile/push-notif-opt-in
 
 ACCESS
 22. Keyboard never hides the active field or the button   (Practice)

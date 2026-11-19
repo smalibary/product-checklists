@@ -11,13 +11,13 @@ HOW YOU PAY
 
 RENEWALS AND CHANGES
  5. Auto-renewal stated plainly, with the price after any discount ends   (Rule: ftc-negative-option)
- 6. What happens on upgrade (charged the difference now) and downgrade (from next period)   (Practice)
+ 6. What happens on upgrade (charged the difference now) and downgrade (from next period)   (Practice)  -> see web-app/upgrade
  7. Reminder email before a yearly renewal or trial end   (Rule: ftc-negative-option)
  8. How to cancel, in as few steps as it took to sign up   (Rule: ftc-negative-option, eu-consumer-rights)
 
 REFUNDS
- 9. Refund policy in plain words, including the EU 14-day right to withdraw where it applies   (Rule: eu-consumer-rights)
-10. How long a refund takes to arrive   (Practice)
+ 9. Refund policy in plain words, including the EU 14-day right to withdraw where it applies   (Rule: eu-consumer-rights)  -> see flows/requesting-a-refund, design-system/content-voice
+10. How long a refund takes to arrive   (Practice)  -> see flows/requesting-a-refund
 
 INVOICES AND RECEIPTS
 11. Where to find invoices, and that they can be downloaded as PDF   (Practice)
@@ -26,9 +26,9 @@ INVOICES AND RECEIPTS
 
 PROBLEMS
 14. What happens if a payment fails: retries, grace period, when access stops   (Practice)
-15. Card security: card details handled by a PCI-certified payment provider   (Standard: pci-dss)
+15. Card security: card details handled by a PCI-certified payment provider   (Standard: pci-dss)  -> see flows/making-a-card-payment
 16. A contact for billing questions   (Research: nng-contact)
-17. FAQ for common questions   (Research: nng-faq)
+17. FAQ for common questions   (Research: nng-faq)  -> see website/faq
 
 SOURCES
 - eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en

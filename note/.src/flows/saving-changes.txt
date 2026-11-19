@@ -12,14 +12,14 @@ also: design-system/accessibility
 - Errors on the fields, with a summary at the top | S wcag-error
 ## Autosave
 - "Saving..." then "Saved" with time | R nng-indicators
-- Works offline with "Will save when online" | P
-- Version history or undo for mistakes | R nng-control
+- Works offline with "Will save when online" | P >mobile/offline
+- Version history or undo for mistakes | R nng-control >flows/undoing-an-action >web-app/version-history
 ## Leaving unsaved
 - Warn before leaving with unsaved changes; Save, Discard, Cancel | S wcag-prevent
-- Drafts kept if the session ends | S wcag-timing
+- Drafts kept if the session ends | S wcag-timing >backend/sessions
 ## Conflicts
 - If someone else changed it, show both and let the person choose | P
 ## Access
 - Save message announced without moving focus | S wcag-status
-- Keyboard shortcut (Ctrl+S) where people expect it | P
-- Save button has a clear name | S wcag-labels
+- Keyboard shortcut (Ctrl+S) where people expect it | P >web-app/keyboard-shortcuts
+- Save button has a clear name | S wcag-labels >design-system/accessibility

@@ -21,15 +21,15 @@ MANAGING
 11. Broken connections explained (token expired) with a "Reconnect" button   (Research: nng-errors)
 12. Who connected it and when   (Standard: owasp-logging)
 13. Disconnect, with what happens to synced data   (Research: nng-confirm)
-14. Admins can allow or block integrations for the workspace   (Standard: owasp-authz)
+14. Admins can allow or block integrations for the workspace   (Standard: owasp-authz)  -> see web-app/workspace-switcher
 
 SAFETY
 15. Tokens from other tools stored encrypted, never shown   (Standard: owasp-secrets)
-16. Connections and disconnections logged   (Standard: owasp-logging)
-17. Third-party data handling listed in the privacy policy   (Rule: gdpr-13)
+16. Connections and disconnections logged   (Standard: owasp-logging)  -> see operations/logging
+17. Third-party data handling listed in the privacy policy   (Rule: gdpr-13)  -> see website/privacy
 
 DEVELOPERS
-18. Webhooks: address, events chosen, a signing secret and a test send   (Practice)
+18. Webhooks: address, events chosen, a signing secret and a test send   (Practice)  -> see api/webhooks-sending, operations/secrets
 19. Delivery log with retries and failures   (Practice)
 20. Link to the API and developer docs   (Practice)
 

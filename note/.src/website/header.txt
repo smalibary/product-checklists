@@ -1,0 +1,26 @@
+title: Header
+about: The top of every page: who the site is, where you can go, and the few tools people reach for first.
+also: design-system/accessibility
+## Content
+- Logo at the top left, linking to the home page | R nng-logo nng-homepage-link
+- Main menu with a few short, plain labels | R nng-dropdown nng-mobile-nav
+- The current section marked in the menu | S wcag-nav
+- Search box or search button where the site has search | R nng-search >website/search
+- Small utility links (sign in, account, cart, language) kept apart from the main menu | R nng-utility-nav >website/login >website/cart
+- One clear main action at most (for example "Start free") | P
+## Consistency
+- The same header, in the same order, on every page | S wcag-nav
+- Help or contact link in the same place on every page | S wcag-help
+## Phones
+- Menu folds into a menu button on small screens, with the most used links still visible | R nng-hamburger nng-mobile-nav
+- The menu button has a visible label or a clear name for screen readers | S apg-menubutton
+- Nothing scrolls sideways at 320 px | S wcag-reflow >design-system/accessibility
+## Sticky headers
+- Sticky only if it stays small, and shrinks or hides on scroll down | R nng-sticky
+- Never covers the item that has keyboard focus | S wcag-obscured
+## Structure and access
+- Marked as the page's header landmark (banner) with the menu inside a nav landmark | S apg-landmarks
+- A "Skip to content" link as the first thing a keyboard reaches | S wcag-bypass
+- Drop-down menus open by click or Enter, not only on hover | S apg-menubutton nng-dropdown >design-system/dropdown-menu
+- Visible focus on every link and button | S wcag-focus >design-system/accessibility
+- Touch targets at least 24 pixels apart or in size | S wcag-target >design-system/accessibility

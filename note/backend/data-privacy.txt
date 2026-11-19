@@ -11,7 +11,7 @@ BASICS
 
 PEOPLE'S RIGHTS
  5. Access and a copy of their data   (Rule: gdpr-15, gdpr-20)
- 6. Correction and deletion, including from backups within a stated time   (Rule: gdpr-17, pdpl)
+ 6. Correction and deletion, including from backups within a stated time   (Rule: gdpr-17, pdpl)  -> see operations/backups
  7. Objection to marketing and profiling   (Rule: gdpr-21)
 
 SECURITY

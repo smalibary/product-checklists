@@ -12,7 +12,7 @@ CHOOSING
  4. Fewer dependencies where a small amount of own code will do   (Practice)
 
 UPDATING
- 5. Automatic alerts for known vulnerabilities   (Standard: owasp-dependencies)
+ 5. Automatic alerts for known vulnerabilities   (Standard: owasp-dependencies)  -> see operations/monitoring-alerts
  6. Updates applied regularly in small steps, with tests   (Standard: owasp-dependencies)
  7. Critical fixes applied within days   (Standard: owasp-dependencies)
 

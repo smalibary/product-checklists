@@ -14,12 +14,12 @@ UPLOADS
 
 SERVING
  6. Served from a separate domain with safe headers   (Standard: owasp-file-upload, owasp-headers)
- 7. Thumbnails and sizes made once and cached   (Standard: mdn-cache-control)
+ 7. Thumbnails and sizes made once and cached   (Standard: mdn-cache-control)  -> see backend/caching
 
 LIFE
  8. Old and unfinished uploads cleaned up by rule   (Practice)
  9. Files deleted when their owner deletes them, including copies   (Rule: gdpr-17)
-10. Backups of important files, tested   (Standard: pg-backup, nist-contingency)
+10. Backups of important files, tested   (Standard: pg-backup, nist-contingency)  -> see operations/backups
 
 COSTS
 11. Storage and transfer measured against the plan's limits   (Standard: aws-cost)

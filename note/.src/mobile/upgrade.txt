@@ -20,6 +20,6 @@ also: design-system/accessibility
 - Restore purchases for other devices | S apple-review
 ## Respect
 - Easy to close; no repeated offers right after "No thanks" | L ftc-dark-patterns
-- Downgrade and cancel explained in settings | L ftc-negative-option
+- Downgrade and cancel explained in settings | L ftc-negative-option >mobile/settings
 ## Access
 - Price and plan names read clearly | S hig-accessibility

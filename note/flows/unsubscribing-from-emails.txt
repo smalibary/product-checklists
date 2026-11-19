@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 UNSUBSCRIBING
  1. One click from the email (List-Unsubscribe)   (Rule: rfc-unsubscribe, google-sender)
- 2. Works without signing in   (Rule: can-spam)
+ 2. Works without signing in   (Rule: can-spam)  -> see web-app/login
  3. Honoured quickly (within 2 days for bulk senders)   (Rule: google-sender, yahoo-sender)
 
 PAGE
@@ -14,7 +14,7 @@ PAGE
  6. No guilt wording or tricks   (Rule: ftc-dark-patterns)
 
 ACCOUNT EMAILS
- 7. Security and receipt emails still sent; this is explained   (Practice)
+ 7. Security and receipt emails still sent; this is explained   (Practice)  -> see web-app/billing, backend/email-sending
 
 SOURCES
 - rfc-unsubscribe: https://www.rfc-editor.org/rfc/rfc8058

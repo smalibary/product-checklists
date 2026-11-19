@@ -16,7 +16,7 @@ HOW
 
 RETIRING
  8. Deprecation and Sunset headers with the date on anything being retired   (Standard: rfc-deprecation, rfc-sunset)
- 9. Notice sent well ahead (often 6 to 12 months) by email and in the changelog   (Standard: zalando-api)
+ 9. Notice sent well ahead (often 6 to 12 months) by email and in the changelog   (Standard: zalando-api)  -> see website/changelog
 10. Use of old versions measured, so you know who to contact   (Practice)
 
 CHANGELOG

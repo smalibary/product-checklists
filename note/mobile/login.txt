@@ -22,12 +22,12 @@ REMEMBER
 
 ERRORS AND HELP
 12. One general message for wrong email or password   (Standard: owasp-auth)
-13. Forgot password link near the field   (Research: nng-password)
+13. Forgot password link near the field   (Research: nng-password)  -> see flows/resetting-password
 14. Too many tries: wait time shown, not a dead end   (Standard: owasp-auth)
-15. Offline: say so, keep what was typed   (Practice)
+15. Offline: say so, keep what was typed   (Practice)  -> see mobile/offline
 
 SECURITY
-16. Two-step check where risk is high   (Standard: nist-63b)
+16. Two-step check where risk is high   (Standard: nist-63b)  -> see web-app/2fa
 17. New device sign-in alert by email   (Standard: owasp-auth)
 
 ACCESS

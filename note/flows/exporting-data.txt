@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 ASKING
  1. Choose what to export and the format   (Practice)
- 2. Personal data export available to every person   (Rule: gdpr-20, pdpl)
+ 2. Personal data export available to every person   (Rule: gdpr-20, pdpl)  -> see backend/data-privacy
 
 WAITING
  3. Large exports prepared in the background with a notice when ready   (Research: nng-progress)
@@ -16,7 +16,7 @@ GETTING IT
 
 SAFETY
  6. Fresh sign-in for full account exports   (Standard: owasp-session)
- 7. The export logged   (Standard: owasp-logging)
+ 7. The export logged   (Standard: owasp-logging)  -> see operations/logging
 
 ACCESS
  8. Status and errors announced   (Standard: wcag-status)

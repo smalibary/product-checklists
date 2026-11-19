@@ -15,7 +15,7 @@ DEBT
 
 BIG CHANGES
  7. Old and new run side by side until the switch is safe   (Standard: fowler-parallel-change)
- 8. Feature flags hide unfinished work   (Standard: fowler-flags)
+ 8. Feature flags hide unfinished work   (Standard: fowler-flags)  -> see backend/feature-flags
 
 MEASURE
  9. Change failure rate and time to restore watched   (Standard: dora)

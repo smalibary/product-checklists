@@ -11,7 +11,7 @@ KEEP IT SHORT
 
 ACCOUNT
  5. Let people look around before signing up where the app allows   (Standard: hig-onboarding)
- 6. Sign up later, when needed (saving, buying)   (Standard: apple-review)
+ 6. Sign up later, when needed (saving, buying)   (Standard: apple-review)  -> see mobile/sign-up
  7. Sign in with Apple offered if other social sign-ins are offered on iOS   (Standard: hig-sign-in-apple)
 
 SETUP QUESTIONS
@@ -29,7 +29,7 @@ LEGAL
 15. Age checks for apps with age limits   (Rule: coppa)
 
 ACCESS
-16. Slides work with VoiceOver and TalkBack (swipe and buttons)   (Standard: hig-accessibility)
+16. Slides work with VoiceOver and TalkBack (swipe and buttons)   (Standard: hig-accessibility)  -> see mobile/gesture-navigation
 
 SOURCES
 - hig-onboarding: https://developer.apple.com/design/human-interface-guidelines/onboarding

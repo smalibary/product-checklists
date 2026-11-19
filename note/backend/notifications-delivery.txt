@@ -10,8 +10,8 @@ CHANNELS
 
 SENDING
  4. One place decides what to send on which channel   (Practice)
- 5. Sent from a queue with retries; never twice for one event   (Standard: aws-idempotent)
- 6. Quiet hours and the person's time zone respected   (Standard: iana-tz)
+ 5. Sent from a queue with retries; never twice for one event   (Standard: aws-idempotent)  -> see api/idempotency, backend/background-jobs
+ 6. Quiet hours and the person's time zone respected   (Standard: iana-tz)  -> see backend/dates-money
  7. Similar messages grouped instead of many in a row   (Standard: nng-notifications)
 
 CONTENT

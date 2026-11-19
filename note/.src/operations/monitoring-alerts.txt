@@ -7,12 +7,12 @@ about: Knowing the service is healthy, and waking someone only when people are a
 ## Alerts
 - Alert on user pain (SLO burn rate), not on every high number | S sre-alerting
 - Every alert can be acted on and links to a runbook | S sre-alerting sre-incident
-- Urgent alerts page someone; the rest go to a ticket | S sre-monitoring
+- Urgent alerts page someone; the rest go to a ticket | S sre-monitoring >support/help-desk
 - Noisy alerts fixed or removed | S sre-alerting
 ## Dashboards
 - One overview page per service | S sre-monitoring
 - Traces across services | S otel
 ## Users
-- A public status page during problems | S atlassian-incident
+- A public status page during problems | S atlassian-incident >website/status
 ## Costs
 - Usage of paid services watched against limits, with alerts at 50% and 80% | S aws-cost

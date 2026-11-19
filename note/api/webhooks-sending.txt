@@ -5,12 +5,12 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 PAYLOAD
  1. One envelope for every event: id, type, time, and the data or a link to it   (Standard: standard-webhooks)
- 2. Event types named object.action (invoice.paid) and listed in the docs   (Standard: stripe-webhooks)
+ 2. Event types named object.action (invoice.paid) and listed in the docs   (Standard: stripe-webhooks)  -> see api/api-docs
  3. Small payloads; the receiver fetches full details when needed   (Standard: standard-webhooks)
 
 SECURITY
- 4. Every message signed with a secret per endpoint and a timestamp   (Standard: standard-webhooks, stripe-webhooks)
- 5. Secrets can be rotated with two valid at once during the switch   (Standard: standard-webhooks)
+ 4. Every message signed with a secret per endpoint and a timestamp   (Standard: standard-webhooks, stripe-webhooks)  -> see operations/secrets
+ 5. Secrets can be rotated with two valid at once during the switch   (Standard: standard-webhooks)  -> see operations/secrets
  6. Only HTTPS addresses accepted; private and internal addresses blocked   (Standard: owasp-ssrf)
 
 DELIVERY

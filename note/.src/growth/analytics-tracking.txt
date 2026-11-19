@@ -9,8 +9,8 @@ about: Measuring what people do so decisions use evidence, with their consent.
 - Consent mode passes the choice to every tag | S ga4-consent
 - Global Privacy Control respected | L gpc
 ## Data
-- No personal data (names, emails) in events | L gdpr-5
+- No personal data (names, emails) in events | L gdpr-5 >backend/data-privacy
 - Internal and test traffic filtered out | P
 ## Use
 - Numbers paired with research before big changes | R nng-analytics
-- Each dashboard names its owner and question | P
+- Each dashboard names its owner and question | P >web-app/dashboard

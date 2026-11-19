@@ -4,14 +4,14 @@ Backing: 3 Rule, 10 Standard, 0 Research, 0 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 RISKS
- 1. Prompt injection planned for: model output never trusted to take actions alone   (Standard: owasp-llm)
+ 1. Prompt injection planned for: model output never trusted to take actions alone   (Standard: owasp-llm)  -> see code/secure-coding
  2. Model output checked and encoded before showing or using it   (Standard: owasp-llm, owasp-xss)
- 3. No secrets or other users' data in prompts   (Standard: owasp-llm)
+ 3. No secrets or other users' data in prompts   (Standard: owasp-llm)  -> see operations/secrets
  4. Tools the model can call are limited, and risky ones need a person's yes   (Standard: owasp-llm)
 
 COST
  5. A daily cap per user and in total, counted in one place   (Standard: owasp-llm, aws-cost)
- 6. Repeated answers cached   (Standard: aws-cost)
+ 6. Repeated answers cached   (Standard: aws-cost)  -> see backend/caching
  7. Input and output size limited   (Standard: owasp-llm)
 
 QUALITY
@@ -23,7 +23,7 @@ PEOPLE
 11. A way to report a bad answer   (Standard: nist-ai-rmf)
 
 DATA
-12. What is sent to the model provider is stated in the privacy notice   (Rule: gdpr-13)
+12. What is sent to the model provider is stated in the privacy notice   (Rule: gdpr-13)  -> see website/privacy
 13. Provider settings checked so your data is not used for their training without consent   (Rule: gdpr-28)
 
 SOURCES

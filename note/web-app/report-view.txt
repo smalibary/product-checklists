@@ -6,29 +6,29 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 HEADER
  1. Report title, the period covered and who made it   (Practice)
  2. When the data was taken, and the time zone   (Practice)
- 3. Filters applied shown at the top   (Research: nng-filters)
+ 3. Filters applied shown at the top   (Research: nng-filters)  -> see flows/filtering-items
 
 CONTENT
  4. Summary of the key findings first, in words   (Research: nng-scanning)
  5. Numbers with comparison to a previous period or a target   (Research: nng-dashboards)
- 6. Charts with titles that state the point ("Sales rose 12% in March")   (Practice)
- 7. Tables with totals and subtotals   (Research: nng-tables)
+ 6. Charts with titles that state the point ("Sales rose 12% in March")   (Practice)  -> see design-system/charts
+ 7. Tables with totals and subtotals   (Research: nng-tables)  -> see web-app/data-table
  8. Notes and definitions for each number   (Practice)
 
 SHARING
- 9. Export to PDF and spreadsheet   (Practice)
-10. Share link with permissions (who can see)   (Standard: owasp-authz)
+ 9. Export to PDF and spreadsheet   (Practice)  -> see web-app/import-export
+10. Share link with permissions (who can see)   (Standard: owasp-authz)  -> see flows/sharing-a-link, web-app/roles-permissions
 11. Schedule by email (weekly, monthly)   (Practice)
-12. Print layout that fits pages and repeats table headers   (Practice)
+12. Print layout that fits pages and repeats table headers   (Practice)  -> see web-app/data-table
 
 TRUST
 13. Data sources named   (Practice)
 14. Partial or missing data marked   (Practice)
-15. Personal data hidden or grouped unless needed   (Rule: gdpr-25)
+15. Personal data hidden or grouped unless needed   (Rule: gdpr-25)  -> see backend/data-privacy
 
 ACCESS
-16. Headings in order so the report reads as an outline   (Standard: wcag-headings)
-17. Charts have a text summary or data table   (Standard: wcag-nontext)
+16. Headings in order so the report reads as an outline   (Standard: wcag-headings)  -> see design-system/accessibility
+17. Charts have a text summary or data table   (Standard: wcag-nontext)  -> see web-app/data-table, design-system/charts, design-system/accessibility
 18. Exported PDF tagged and readable by screen readers   (Standard: wcag)
 19. Colour not the only way to show good or bad   (Standard: wcag-color)
 

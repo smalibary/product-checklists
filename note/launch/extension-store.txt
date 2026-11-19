@@ -11,7 +11,7 @@ BUILD
 LISTING
  4. One clear purpose in the description   (Rule: cws-policy)
  5. Screenshots and icon in the required sizes   (Standard: cws-best)
- 6. Privacy practices declared; a privacy policy if data is handled   (Rule: cws-policy, amo-policy)
+ 6. Privacy practices declared; a privacy policy if data is handled   (Rule: cws-policy, amo-policy)  -> see website/privacy
 
 RULES
  7. Data used only for the stated purpose   (Rule: cws-policy)

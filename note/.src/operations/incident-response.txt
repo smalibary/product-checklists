@@ -8,9 +8,9 @@ about: What happens when the service breaks: who leads, how people are told, and
 - One incident lead; roles for talking, fixing and writing down | S sre-incident
 - Stop the harm first, find the cause later | S sre-incident
 - A running timeline of what was done | S sre-incident
-- Customers told on the status page early and updated regularly | S atlassian-incident
+- Customers told on the status page early and updated regularly | S atlassian-incident >website/status
 ## Data breaches
-- Personal data breaches reported to the authority within 72 hours where required | L gdpr-33 pdpl
+- Personal data breaches reported to the authority within 72 hours where required | L gdpr-33 pdpl >backend/data-privacy
 - Affected people told when the risk is high | L gdpr-33
 ## After
 - A blameless postmortem with causes and actions | S sre-postmortem

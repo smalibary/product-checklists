@@ -2,7 +2,7 @@ title: Comments
 about: Notes people leave on an item or on a part of it, with replies, mentions and resolving.
 also: design-system/accessibility
 ## Writing
-- A box with a clear label and a Send button; Enter behaviour stated (Enter sends or adds a line) | S wcag-labels
+- A box with a clear label and a Send button; Enter behaviour stated (Enter sends or adds a line) | S wcag-labels >design-system/accessibility
 - Mention people with @, with suggestions as you type | S apg-combobox
 - Basic formatting, links, files and emoji | P
 - Draft kept if the person leaves before sending | P
@@ -24,8 +24,8 @@ also: design-system/accessibility
 - Only the author edits; author and admins delete | S owasp-authz
 - Deleted comment leaves "Comment deleted" so replies make sense | P
 - Report or hide abuse in public comments | L eu-dsa
-- Text escaped so it cannot run code (no script injection) | S owasp-xss
+- Text escaped so it cannot run code (no script injection) | S owasp-xss >code/secure-coding
 ## Access
 - New comments announced politely | S wcag-status
-- Each comment readable as one unit; the thread works by keyboard | S wcag-keyboard wcag-info
+- Each comment readable as one unit; the thread works by keyboard | S wcag-keyboard wcag-info >design-system/accessibility
 - Times readable as exact times | P

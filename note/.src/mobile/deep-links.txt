@@ -5,10 +5,10 @@ about: Links that open a specific screen in the app.
 - The same address works on the web when the app is not installed | S apple-universal-links
 ## Behaviour
 - Opens the exact screen, with a back path that makes sense | S android-back
-- Sign-in required? Sign in, then continue to the linked screen | P
+- Sign-in required? Sign in, then continue to the linked screen | P >mobile/login
 - Missing or deleted content: a clear message, not a crash | R nng-errors
 ## Safety
 - Every linked screen checks permission | S owasp-authz
-- Parameters validated like any input | S owasp-input
+- Parameters validated like any input | S owasp-input >backend/input-validation
 ## Testing
 - Each link tested installed, not installed and signed out | P

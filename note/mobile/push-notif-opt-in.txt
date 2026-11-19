@@ -12,22 +12,22 @@ TIMING
 THE PRE-PERMISSION SCREEN
  5. Says what kinds of alerts and how often ("Only when your order moves")   (Research: nng-permissions)
  6. One clear yes button and an equal "Not now"   (Rule: ftc-dark-patterns)
- 7. An example of a notification   (Practice)
+ 7. An example of a notification   (Practice)  -> see mobile/in-app-notifications
 
 AFTER THE ANSWER
- 8. Yes: confirm and offer choices of topics in settings   (Practice)
+ 8. Yes: confirm and offer choices of topics in settings   (Practice)  -> see mobile/settings
  9. No: the app works fully without it   (Standard: apple-review)
 10. Later: ask again only at a new, relevant moment, not on every launch   (Research: nng-permissions)
-11. If turned off in system settings, show how to turn it back on, with a button to the settings page   (Standard: hig-notifications)
+11. If turned off in system settings, show how to turn it back on, with a button to the settings page   (Standard: hig-notifications)  -> see mobile/settings
 
 IOS OPTIONS
-12. Provisional authorization: quiet notifications delivered without asking, so the person can decide later   (Standard: hig-notifications)
+12. Provisional authorization: quiet notifications delivered without asking, so the person can decide later   (Standard: hig-notifications)  -> see mobile/in-app-notifications
 13. Time-sensitive and critical alerts only for real needs   (Standard: hig-notifications)
 
 RULES
 14. Push not used for ads unless the person opted in to marketing   (Standard: apple-review)
 15. Marketing consent separate from service alerts   (Rule: gdpr-7)
-16. Notification channels on Android so people can mute kinds separately   (Standard: android-notif-perm)
+16. Notification channels on Android so people can mute kinds separately   (Standard: android-notif-perm)  -> see mobile/in-app-notifications
 
 SOURCES
 - hig-notifications: https://developer.apple.com/design/human-interface-guidelines/notifications

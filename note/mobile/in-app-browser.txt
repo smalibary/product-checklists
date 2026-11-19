@@ -19,8 +19,8 @@ SECURITY AND PRIVACY
  9. Only https   (Standard: owasp-masvs)
 
 WHEN TO USE
-10. Short visits (an article, help page, terms) that should return to the app   (Standard: hig-web-views)
-11. Links to other apps (maps, phone, mail) open those apps   (Standard: hig-maps)
+10. Short visits (an article, help page, terms) that should return to the app   (Standard: hig-web-views)  -> see website/terms
+11. Links to other apps (maps, phone, mail) open those apps   (Standard: hig-maps)  -> see mobile/map-view
 12. App's own content better built as real screens than web pages   (Standard: apple-review)
 
 ACCESS

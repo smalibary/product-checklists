@@ -8,7 +8,7 @@ about: Removing a feature or product without leaving people stranded.
 - In-product notices where the feature lives | P
 - API users told with Deprecation and Sunset headers | S rfc-deprecation rfc-sunset
 ## Leaving
-- A way to export their data | L gdpr-20
+- A way to export their data | L gdpr-20 >flows/exporting-data
 - An alternative suggested, or help to move | S govuk-retire
 - Paid plans adjusted or refunded fairly | L eu-consumer-rights
 ## After

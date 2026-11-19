@@ -4,7 +4,7 @@ Backing: 0 Rule, 4 Standard, 0 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 FINDING
- 1. Language choice easy to find (header, footer or settings)   (Practice)
+ 1. Language choice easy to find (header, footer or settings)   (Practice)  -> see website/footer
  2. Each language named in itself (العربية, English)   (Standard: w3c-names)
  3. No flags for languages   (Practice)
 

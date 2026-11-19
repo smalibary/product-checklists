@@ -11,7 +11,7 @@ CONVERSATIONS LIST
  5. Start a new conversation   (Practice)
 
 MESSAGES
- 6. Mine and theirs clearly different (side, colour, label for screen readers)   (Standard: wcag-info)
+ 6. Mine and theirs clearly different (side, colour, label for screen readers)   (Standard: wcag-info)  -> see design-system/accessibility
  7. Grouped by sender and time; date dividers   (Practice)
  8. Sent, delivered and read states with icons that have names   (Standard: wcag-name-role)
  9. Failed messages marked with Retry   (Research: nng-errors)
@@ -20,7 +20,7 @@ MESSAGES
 12. Links preview; files and images with size and download   (Practice)
 
 WRITING
-13. Box with a label; Enter sends, Shift+Enter new line, stated   (Standard: wcag-labels)
+13. Box with a label; Enter sends, Shift+Enter new line, stated   (Standard: wcag-labels)  -> see design-system/accessibility
 14. Typing indicator   (Practice)
 15. Draft kept per conversation   (Practice)
 16. Mentions with @ and suggestions   (Standard: apg-combobox)
@@ -30,7 +30,7 @@ BEHAVIOUR
 18. Opens at the first unread message, with "Jump to latest"   (Practice)
 19. New messages do not scroll the person away while reading older ones   (Practice)
 20. Older messages load when scrolling up, keeping position   (Research: nng-infinite)
-21. Works offline: queued messages send when back online   (Practice)
+21. Works offline: queued messages send when back online   (Practice)  -> see mobile/offline
 
 SAFETY
 22. Block and report in each conversation   (Rule: eu-dsa)
@@ -39,7 +39,7 @@ SAFETY
 
 ACCESS
 25. New messages announced politely, not every keystroke   (Standard: wcag-status)
-26. Message list is a log region; keyboard reaches every message action   (Standard: wcag-keyboard)
+26. Message list is a log region; keyboard reaches every message action   (Standard: wcag-keyboard)  -> see design-system/accessibility
 
 SOURCES
 - wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color

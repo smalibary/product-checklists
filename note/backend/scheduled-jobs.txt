@@ -4,13 +4,13 @@ Backing: 0 Rule, 8 Standard, 0 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 TIMING
- 1. Times kept in UTC; local times turned into UTC with the time-zone database   (Standard: iana-tz)
+ 1. Times kept in UTC; local times turned into UTC with the time-zone database   (Standard: iana-tz)  -> see backend/dates-money
  2. Daylight-saving gaps and repeats handled for local schedules   (Standard: iana-tz)
  3. Runs no more often than the data really changes   (Practice)
 
 RUNNING ONCE
- 4. A lock so only one server runs each job   (Standard: pg-locking)
- 5. Safe to run twice and safe to skip a run   (Standard: aws-idempotent)
+ 4. A lock so only one server runs each job   (Standard: pg-locking)  -> see backend/concurrency
+ 5. Safe to run twice and safe to skip a run   (Standard: aws-idempotent)  -> see api/idempotency
  6. Missed runs (server down) caught up or skipped by a clear rule   (Practice)
 
 WORK SIZE
@@ -18,8 +18,8 @@ WORK SIZE
  8. Large jobs spread over time so they do not overload the database   (Standard: sre-overload)
 
 WATCHING
- 9. Each run logged with its start, end and result   (Standard: otel)
-10. An alert when a job fails or does not run at all   (Standard: sre-alerting)
+ 9. Each run logged with its start, end and result   (Standard: otel)  -> see operations/logging
+10. An alert when a job fails or does not run at all   (Standard: sre-alerting)  -> see operations/monitoring-alerts
 
 COSTS
 11. Copies in test and dev run less often, or not at all   (Standard: aws-cost)

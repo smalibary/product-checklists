@@ -7,7 +7,7 @@ FILTERS
  1. Filters that match how people choose (price, size, brand, date, status)   (Research: baymard-filters, nng-filters)
  2. Count of results per option   (Research: baymard-filters)
  3. Options with no results hidden or marked   (Research: baymard-filters)
- 4. Price and number ranges with fields, not only a slider   (Research: nng-sliders)
+ 4. Price and number ranges with fields, not only a slider   (Research: nng-sliders)  -> see design-system/slider
 
 APPLYING
  5. Desktop: results update at once on each change   (Research: nng-filters)
@@ -25,8 +25,8 @@ RESULTS
 13. Sort kept separate from filters   (Research: nng-filters)
 
 ACCESS
-14. Filter groups as fieldsets with names   (Standard: wcag-info)
-15. Checkboxes and radios are real controls   (Standard: wcag-name-role)
+14. Filter groups as fieldsets with names   (Standard: wcag-info)  -> see design-system/accessibility
+15. Checkboxes and radios are real controls   (Standard: wcag-name-role)  -> see design-system/checkbox, design-system/radio
 16. Focus does not jump when results update   (Standard: wcag-on-input)
 
 SOURCES

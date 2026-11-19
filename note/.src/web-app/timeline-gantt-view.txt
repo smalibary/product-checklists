@@ -12,19 +12,19 @@ also: design-system/accessibility
 - Bar shows start and end; label with name inside or beside | P
 - Colour by status or owner, with a legend, plus text or pattern | S wcag-color
 - Progress inside the bar | P
-- Dependencies as arrows; conflicts (task starts before its blocker ends) flagged | P
+- Dependencies as arrows; conflicts (task starts before its blocker ends) flagged | P >operations/dependencies
 - Critical path highlight for project plans | P
 ## Editing
 - Drag to move, drag edges to change dates, snapping to days | P
 - Every drag has a non-drag way: edit dates in a form or with keys | S wcag-dragging
-- Undo after a move | R nng-control
+- Undo after a move | R nng-control >flows/undoing-an-action
 - Moving a task offers to move its dependents | P
 ## Navigation
 - Scroll sideways in time, jump to today, jump to a date | P
 - Header with dates stays visible | P
 ## Access
-- A list or table view with the same data, for screen readers and phones | S wcag-info
-- Keyboard reaches each bar and shows its dates | S wcag-keyboard
-- Tooltips on hover also show on focus | S wcag-hover
+- A list or table view with the same data, for screen readers and phones | S wcag-info >web-app/data-table >design-system/accessibility
+- Keyboard reaches each bar and shows its dates | S wcag-keyboard >design-system/accessibility
+- Tooltips on hover also show on focus | S wcag-hover >design-system/tooltip
 ## Speed
 - Smooth with thousands of tasks (draw only what is visible) | S webdev-inp

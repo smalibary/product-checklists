@@ -18,14 +18,14 @@ OTHER WAYS IN
 ATTACKS
  9. Attempts limited per account and per network address, with growing delays   (Standard: owasp-auth)
 10. The same answer whether or not the account exists   (Standard: owasp-auth)
-11. Password reset links random, single-use and short-lived   (Standard: owasp-forgot)
+11. Password reset links random, single-use and short-lived   (Standard: owasp-forgot)  -> see flows/resetting-password
 
 RECORDS
-12. Sign-ins, failures, resets and factor changes logged without the secrets   (Standard: owasp-logging)
+12. Sign-ins, failures, resets and factor changes logged without the secrets   (Standard: owasp-logging)  -> see operations/logging, operations/secrets
 13. The user told by email about a new device or a changed password   (Standard: owasp-auth)
 
 CHECKS
-14. The design checked against OWASP ASVS level 2   (Standard: owasp-asvs)
+14. The design checked against OWASP ASVS level 2   (Standard: owasp-asvs)  -> see code/secure-coding
 
 SOURCES
 - nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords

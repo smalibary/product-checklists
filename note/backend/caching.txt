@@ -10,7 +10,7 @@ HTTP CACHING
  4. Static files with content hashes in their names, cached for a year   (Standard: mdn-cache-control)
 
 APP CACHING
- 5. Cache keys include everything that changes the answer (user, language, tenant)   (Practice)
+ 5. Cache keys include everything that changes the answer (user, language, tenant)   (Practice)  -> see backend/multi-tenancy
  6. A time limit on every cached item   (Practice)
  7. Clear invalidation when the source changes   (Practice)
  8. Protection against many requests rebuilding the same item at once   (Practice)
@@ -20,7 +20,7 @@ SAFETY
 10. The app still works when the cache is empty or down   (Standard: sre-cascading)
 
 COSTS
-11. Expensive results (AI answers, outside lookups) cached   (Standard: aws-cost)
+11. Expensive results (AI answers, outside lookups) cached   (Standard: aws-cost)  -> see backend/ai-features
 
 WATCHING
 12. Hit rate and size measured   (Standard: sre-monitoring)

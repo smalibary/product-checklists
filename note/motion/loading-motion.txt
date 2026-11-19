@@ -6,14 +6,14 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 CHOOSING
  1. Under 1 second: no indicator   (Research: nng-progress)
  2. 1 to 10 seconds: spinner or skeleton   (Research: nng-progress, nng-skeleton)
- 3. Over 10 seconds: a progress bar with percent or time left   (Research: nng-progress)
+ 3. Over 10 seconds: a progress bar with percent or time left   (Research: nng-progress)  -> see design-system/progress
 
 SKELETONS
  4. Shapes match the real layout, so nothing jumps when content arrives   (Research: nng-skeleton, webdev-cls)
- 5. A gentle shimmer, paused for reduced motion   (Standard: mdn-reduced-motion)
+ 5. A gentle shimmer, paused for reduced motion   (Standard: mdn-reduced-motion)  -> see motion/motion-accessibility
 
 PROGRESS
- 6. Progress bars move steadily, never backwards   (Research: nng-progress)
+ 6. Progress bars move steadily, never backwards   (Research: nng-progress)  -> see design-system/progress
  7. Determinate when the length is known   (Standard: m3-progress, hig-progress-indicators)
 
 ACCESS

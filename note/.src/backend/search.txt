@@ -1,18 +1,18 @@
 title: Search (server)
 about: Finding records by words quickly and fairly.
 ## Index
-- A full-text index rather than LIKE scans | S pg-fts
+- A full-text index rather than LIKE scans | S pg-fts >backend/database-design
 - Arabic and English handled: language rules, letter forms and diacritics | S pg-fts unicode-normalization
-- The index updated when records change | S pg-fts
+- The index updated when records change | S pg-fts >backend/database-design
 ## Queries
 - Typos forgiven where possible | P
 - Results ranked by match and then by freshness or popularity | S pg-fts
-- Filters use indexes too | S pg-indexes
+- Filters use indexes too | S pg-indexes >backend/database-design
 - Results paged with a maximum | S google-aip-pagination
 ## Safety
 - Each person sees only results they may open | S owasp-authz
 - Query length and complexity limited | S owasp-dos
 - Search input passed as a parameter, never joined into a query | S owasp-sql
 ## Quality
-- Searches with no results logged to improve the index | P
+- Searches with no results logged to improve the index | P >backend/database-design >operations/logging
 - Slow searches measured | S pg-explain

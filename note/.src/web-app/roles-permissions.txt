@@ -3,14 +3,14 @@ about: The screen where admins decide what each person in a workspace may do.
 also: design-system/accessibility
 ## Model
 - A few clear default roles (owner, admin, member, viewer) | S owasp-authz
-- What each role can do shown in a table | R nng-tables
+- What each role can do shown in a table | R nng-tables >web-app/data-table
 - Custom roles only when the product needs them | P
 ## Changing
 - Role chosen from a list with a short description of each | S apg-listbox
 - Changes take effect at once and the person is told | S owasp-authz
 - The last owner cannot be removed | P
 ## Safety
-- Every change recorded in the audit trail | S owasp-logging
+- Every change recorded in the audit trail | S owasp-logging >web-app/audit-log
 - Only admins see this screen; checks happen on the server | S owasp-authz
 - Least privilege by default for new members | S owasp-authz
 ## Clarity

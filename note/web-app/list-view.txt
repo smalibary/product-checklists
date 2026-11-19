@@ -8,7 +8,7 @@ ITEMS
  2. Icon or photo to tell types apart   (Practice)
  3. Status in words or icons with names, not only colour   (Standard: wcag-color)
  4. The whole row opens the item; actions in a menu at the end   (Practice)
- 5. Hover shows quick actions, which are also reachable by keyboard   (Standard: wcag-hover, wcag-keyboard)
+ 5. Hover shows quick actions, which are also reachable by keyboard   (Standard: wcag-hover, wcag-keyboard)  -> see design-system/accessibility
 
 ORDER AND GROUPING
  6. Sort choice (name, date, priority), remembered   (Practice)
@@ -16,24 +16,24 @@ ORDER AND GROUPING
  8. Groups can collapse   (Standard: apg-accordion)
 
 FINDING
- 9. Filter and search above the list   (Research: nng-filters)
-10. Active filters shown with remove   (Research: nng-filters)
+ 9. Filter and search above the list   (Research: nng-filters)  -> see flows/filtering-items
+10. Active filters shown with remove   (Research: nng-filters)  -> see flows/filtering-items
 
 ACTING
-11. Select several with checkboxes, with a bulk action bar   (Practice)
+11. Select several with checkboxes, with a bulk action bar   (Practice)  -> see design-system/checkbox
 12. Drag to reorder where order matters, with a keyboard way too   (Standard: wcag-dragging)
-13. Swipe actions on touch screens, with a visible alternative   (Research: nng-swipe)
+13. Swipe actions on touch screens, with a visible alternative   (Research: nng-swipe)  -> see mobile/gesture-navigation
 
 LOTS OF ITEMS
-14. Pagination or load more, with the total   (Research: nng-infinite)
+14. Pagination or load more, with the total   (Research: nng-infinite)  -> see design-system/pagination
 15. Back keeps the scroll position   (Practice)
 
 STATES
-16. Skeleton rows while loading   (Research: nng-skeleton)
+16. Skeleton rows while loading   (Research: nng-skeleton)  -> see design-system/skeleton
 17. Empty and no-results states   (Research: nng-empty)
 
 ACCESS
-18. A real list (or table if there are columns)   (Standard: wcag-info)
+18. A real list (or table if there are columns)   (Standard: wcag-info)  -> see web-app/data-table, design-system/accessibility
 19. Row links read well alone   (Standard: wcag-link)
 
 SOURCES

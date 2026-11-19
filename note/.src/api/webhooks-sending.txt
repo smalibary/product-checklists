@@ -2,11 +2,11 @@ title: Sending webhooks
 about: Telling other systems when something happens, by calling an address they gave you.
 ## Payload
 - One envelope for every event: id, type, time, and the data or a link to it | S standard-webhooks
-- Event types named object.action (invoice.paid) and listed in the docs | S stripe-webhooks
+- Event types named object.action (invoice.paid) and listed in the docs | S stripe-webhooks >api/api-docs
 - Small payloads; the receiver fetches full details when needed | S standard-webhooks
 ## Security
-- Every message signed with a secret per endpoint and a timestamp | S standard-webhooks stripe-webhooks
-- Secrets can be rotated with two valid at once during the switch | S standard-webhooks
+- Every message signed with a secret per endpoint and a timestamp | S standard-webhooks stripe-webhooks >operations/secrets
+- Secrets can be rotated with two valid at once during the switch | S standard-webhooks >operations/secrets
 - Only HTTPS addresses accepted; private and internal addresses blocked | S owasp-ssrf
 ## Delivery
 - Retries with growing waits for about 3 days; a 2xx answer means delivered | S stripe-webhooks aws-backoff

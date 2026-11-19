@@ -10,28 +10,28 @@ NOW
  4. Time of the last check, with the time zone   (Research: nng-status)
 
 INCIDENTS
- 5. An incident post within minutes of a problem, even before the cause is known   (Standard: atlassian-incident)
+ 5. An incident post within minutes of a problem, even before the cause is known   (Standard: atlassian-incident)  -> see operations/incident-response
  6. Updates on a steady rhythm (for example every 30 minutes) until fixed   (Standard: atlassian-incident)
  7. Each update says what is affected, what users can do, and when the next update comes   (Standard: atlassian-incident)
- 8. A short review after big incidents: cause, fix, how it will not happen again   (Standard: atlassian-incident)
- 9. Plain words; no blame and no hiding   (Practice)
+ 8. A short review after big incidents: cause, fix, how it will not happen again   (Standard: atlassian-incident)  -> see operations/incident-response
+ 9. Plain words; no blame and no hiding   (Practice)  -> see design-system/content-voice
 
 HISTORY AND PLANS
 10. Uptime for the last 90 days per part, with the number   (Practice)
-11. Past incidents listed by date   (Practice)
+11. Past incidents listed by date   (Practice)  -> see operations/incident-response
 12. Planned maintenance announced ahead with start, end and what is affected   (Practice)
 
 GETTING TOLD
 13. Subscribe by email, text, RSS or a chat app   (Practice)
-14. Unsubscribe in one step   (Rule: can-spam, rfc-unsubscribe)
+14. Unsubscribe in one step   (Rule: can-spam, rfc-unsubscribe)  -> see flows/unsubscribing-from-emails
 15. A machine-readable feed (API or RSS) for customers' own tools   (Practice)
 
 RELIABILITY OF THE PAGE ITSELF
 16. Hosted apart from the main service, so it stays up when the service is down   (Practice)
 17. Fast and light; works on a slow phone connection   (Standard: webdev-vitals)
 18. Status changes announced to screen readers without moving focus   (Standard: wcag-status)
-19. Contrast and text size meet WCAG   (Standard: wcag-contrast)
-20. Linked from the footer, the help centre and error pages   (Practice)
+19. Contrast and text size meet WCAG   (Standard: wcag-contrast)  -> see design-system/accessibility
+20. Linked from the footer, the help centre and error pages   (Practice)  -> see website/footer, web-app/help-center, web-app/error-pages
 
 SOURCES
 - nng-status: https://www.nngroup.com/articles/visibility-system-status/

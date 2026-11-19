@@ -13,14 +13,14 @@ EMAIL OR PHONE
 
 WHILE WAITING
  7. The person can use the parts of the app that do not need verifying   (Practice)
- 8. "Check spam" hint and a support link   (Practice)
+ 8. "Check spam" hint and a support link   (Practice)  -> see flows/contacting-support
 
 IDENTITY CHECKS (WHEN THE LAW OR RISK NEEDS THEM)
  9. Say why it is needed, what is collected and how long it is kept   (Rule: gdpr-13)
 10. Steps listed first (photo of ID, selfie) with time needed   (Research: nng-wizards)
-11. Camera guides and clear retake   (Standard: hig-camera)
-12. Status shown (checking, approved, needs more) with notifications   (Practice)
-13. Another way for people who cannot use the camera   (Standard: wcag-gestures)
+11. Camera guides and clear retake   (Standard: hig-camera)  -> see mobile/camera
+12. Status shown (checking, approved, needs more) with notifications   (Practice)  -> see web-app/notifications
+13. Another way for people who cannot use the camera   (Standard: wcag-gestures)  -> see mobile/camera
 
 DONE
 14. Clear success and the next step   (Standard: govuk-confirm)
@@ -31,7 +31,7 @@ SECURITY
 17. No telling attackers whether an account exists   (Standard: owasp-auth)
 
 ACCESS
-18. Code field has a name and no time pressure that cannot be extended   (Standard: wcag-labels, wcag-timing)
+18. Code field has a name and no time pressure that cannot be extended   (Standard: wcag-labels, wcag-timing)  -> see design-system/accessibility
 19. No robot check that blocks screen reader users without another way   (Standard: wcag-auth)
 
 SOURCES

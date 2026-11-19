@@ -8,18 +8,18 @@ also: design-system/accessibility
 - Quantity choice where it makes sense | P
 ## Adding
 - Button shows busy state; no double add on double tap | S owasp-transaction
-- Works without signing in (guest cart) | R baymard-guest
+- Works without signing in (guest cart) | R baymard-guest >web-app/login >website/cart
 ## Feedback
-- Confirmation without leaving the page: a small panel or message with the item, "View cart" and "Checkout" | R baymard-cart
-- Cart count updates at once | S m3-badges
+- Confirmation without leaving the page: a small panel or message with the item, "View cart" and "Checkout" | R baymard-cart >web-app/checkout >website/cart
+- Cart count updates at once | S m3-badges >website/cart
 - Message announced to screen readers | S wcag-status
 - Haptic on phones | S hig-feedback
 ## Problems
 - Failure explained ("Only 2 left") with a way forward | S wcag-error
-- Price changed since the page loaded: say so | P
+- Price changed since the page loaded: say so | P >product/pricing-changes
 ## After
 - Person stays where they were to keep shopping | R baymard-cart
-- Cart kept across visits and devices | R baymard-cart
+- Cart kept across visits and devices | R baymard-cart >website/cart
 ## Access
-- Option pickers are real buttons or radios with names | S wcag-name-role
+- Option pickers are real buttons or radios with names | S wcag-name-role >design-system/radio
 - Focus stays sensible after adding | S wcag-focus-order

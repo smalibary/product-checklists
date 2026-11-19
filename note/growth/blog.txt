@@ -6,21 +6,21 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 ARTICLE PAGE
  1. A clear title and summary at the top   (Research: nng-microcontent)
  2. Author, publish date and update date shown   (Standard: gsc-date)
- 3. Article structured data   (Standard: google-article)
+ 3. Article structured data   (Standard: google-article)  -> see growth/technical-seo
  4. Headings, short paragraphs and a table of contents for long posts   (Research: nng-web-writing)
- 5. Images with alt text and sizes set   (Standard: wcag-nontext, webdev-images)
+ 5. Images with alt text and sizes set   (Standard: wcag-nontext, webdev-images)  -> see design-system/accessibility
 
 LISTING
  6. Posts by topic or tag, with page-by-page lists   (Standard: gsc-links)
  7. Related posts at the end   (Practice)
 
 SHARING
- 8. Link preview tags on every post   (Standard: ogp)
- 9. An RSS or Atom feed   (Standard: rfc-atom)
+ 8. Link preview tags on every post   (Standard: ogp)  -> see growth/link-previews
+ 9. An RSS or Atom feed   (Standard: rfc-atom)  -> see web-app/feed
 
 UPKEEP
 10. Old posts reviewed; out-of-date ones updated or redirected   (Standard: google-helpful, gsc-redirects)
-11. Comments, if any, moderated and marked ugc   (Rule: gsc-qualify)
+11. Comments, if any, moderated and marked ugc   (Rule: gsc-qualify)  -> see web-app/comments
 
 SOURCES
 - nng-microcontent: https://www.nngroup.com/articles/microcontent-how-to-write-headlines-page-titles-and-subject-lines/

@@ -7,13 +7,13 @@ about: Copies of data you can actually restore when something goes wrong.
 ## Safety
 - Backups encrypted | L gdpr-32
 - At least one copy cannot be changed or deleted by the app's accounts | S nist-contingency
-- Access to backups limited and logged | S owasp-logging
+- Access to backups limited and logged | S owasp-logging >operations/logging
 ## Testing
 - Restores tested on a schedule, timed, and written up | S nist-contingency
 - A full disaster-recovery practice at least yearly | S nist-contingency
 ## Scope
-- Files, settings and secrets covered, not only the database | S nist-contingency
+- Files, settings and secrets covered, not only the database | S nist-contingency >operations/secrets
 ## Privacy
-- Deleted personal data removed from backups within a stated time | L gdpr-17
+- Deleted personal data removed from backups within a stated time | L gdpr-17 >backend/data-privacy
 ## Watching
-- An alert when a backup fails or is late | S sre-alerting
+- An alert when a backup fails or is late | S sre-alerting >operations/monitoring-alerts

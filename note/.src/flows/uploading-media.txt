@@ -10,7 +10,7 @@ also: design-system/accessibility
 - Previews with remove for each | P
 - Crop, rotate or trim where needed | P
 - Wrong type or too large caught at once, per file | S wcag-error
-- Location and camera details removed from photos unless needed | L gdpr-25
+- Location and camera details removed from photos unless needed | L gdpr-25 >mobile/camera
 ## Sending
 - Progress per file with percent and cancel | R nng-progress
 - Large files sent in parts and resumed after a dropped connection | P
@@ -24,5 +24,5 @@ also: design-system/accessibility
 - Files stored privately unless the person shares them | L gdpr-32
 ## Access
 - Progress and results announced | S wcag-status
-- Alt text field for images that will be shown to others | S wcag-nontext
-- Keyboard can reach choose, remove and cancel | S wcag-keyboard
+- Alt text field for images that will be shown to others | S wcag-nontext >design-system/accessibility
+- Keyboard can reach choose, remove and cancel | S wcag-keyboard >design-system/accessibility

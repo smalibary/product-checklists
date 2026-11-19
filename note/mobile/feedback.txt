@@ -4,13 +4,13 @@ Backing: 1 Rule, 5 Standard, 3 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 STORE RATING
- 1. Use the system review prompt (SKStoreReviewController / In-App Review API)   (Standard: apple-review-prompt, play-in-app-review)
+ 1. Use the system review prompt (SKStoreReviewController / In-App Review API)   (Standard: apple-review-prompt, play-in-app-review)  -> see launch/app-store-submission
  2. Ask after a success moment, never on first launch or during a task   (Standard: apple-review-prompt)
  3. The system limits how often it shows (3 times a year on iOS); do not build your own star prompt that sends only happy users to the store   (Standard: apple-review-prompt, play-in-app-review)
  4. No rewards for ratings   (Standard: apple-review)
 
 BUG REPORT AND IDEAS
- 5. "Send feedback" in Settings and Help   (Practice)
+ 5. "Send feedback" in Settings and Help   (Practice)  -> see mobile/settings
  6. Short form: what happened, optional screenshot, optional email   (Research: nng-surveys)
  7. Screenshot shake or attach, with the chance to blur private parts   (Practice)
  8. Device, app version and system version attached automatically, with notice   (Rule: gdpr-13)
@@ -24,7 +24,7 @@ REPLIES
 12. Answers come back in the app or by email; the person can follow their report   (Practice)
 
 ACCESS
-13. Ratings with buttons, not only swipes   (Standard: wcag-gestures)
+13. Ratings with buttons, not only swipes   (Standard: wcag-gestures)  -> see mobile/gesture-navigation
 
 SOURCES
 - apple-review-prompt: https://developer.apple.com/documentation/storekit/requesting-app-store-reviews

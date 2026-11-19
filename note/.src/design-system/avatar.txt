@@ -4,20 +4,20 @@ also: design-system/accessibility
 ## Content
 - Photo when there is one; initials as the fallback; then a generic icon | P
 - Initials from the first letters of the name, handling one-word and Arabic names | S w3c-names
-- Initials background colour from a fixed set, chosen from the name, with text contrast 4.5:1 | S wcag-contrast
+- Initials background colour from a fixed set, chosen from the name, with text contrast 4.5:1 | S wcag-contrast >design-system/accessibility
 - Organisations use square avatars, people round, if both appear | P
 ## Sizes
-- A few sizes from tokens (24, 32, 40, 56, 96) | S dtcg-tokens
+- A few sizes from tokens (24, 32, 40, 56, 96) | S dtcg-tokens >design-system/tokens
 - Images served at the right size and cropped to fill | S webdev-images
 ## Extras
 - Status dot (online, away) with a text name, not only colour | S wcag-color
 - Groups: overlapping avatars with "+5" for more, and the full list on hover or tap | P
-- Upload: crop to a circle with preview; file type and size limits stated | S owasp-upload
+- Upload: crop to a circle with preview; file type and size limits stated | S owasp-upload >design-system/file-upload
 ## Behaviour
 - Broken image falls back to initials | P
-- Clickable avatars open the person's profile or a menu, with a clear focus state | S wcag-focus
+- Clickable avatars open the person's profile or a menu, with a clear focus state | S wcag-focus >design-system/accessibility
 ## Access
 - Avatar beside the name: decorative (empty alt) | S wai-images
-- Avatar alone: alt text with the name ("Sara Ahmed") | S wcag-nontext
+- Avatar alone: alt text with the name ("Sara Ahmed") | S wcag-nontext >design-system/accessibility
 - Avatar buttons have names ("Account menu for Sara") | S wcag-name-role
 - Status announced in words ("Online") | S wcag-name-role

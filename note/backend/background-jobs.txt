@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 QUEUE
  1. A queue that keeps jobs if a server restarts   (Practice)
- 2. Each job safe to run twice (idempotent)   (Standard: aws-idempotent)
+ 2. Each job safe to run twice (idempotent)   (Standard: aws-idempotent)  -> see api/idempotency
  3. Jobs created in the same transaction as the change that needs them (outbox)   (Standard: outbox)
 
 RUNNING
@@ -19,8 +19,8 @@ LONG JOBS
  9. A status the person can see (queued, running, done, failed) with a result link   (Standard: google-aip-lro)
 
 WATCHING
-10. Queue length, age of the oldest job and failure rate measured with alerts   (Standard: sre-monitoring, sre-alerting)
-11. Each job logged with its id, tries and result   (Standard: otel)
+10. Queue length, age of the oldest job and failure rate measured with alerts   (Standard: sre-monitoring, sre-alerting)  -> see operations/monitoring-alerts
+11. Each job logged with its id, tries and result   (Standard: otel)  -> see operations/logging
 
 SAFETY
 12. Jobs run with only the rights they need   (Standard: owasp-authz)

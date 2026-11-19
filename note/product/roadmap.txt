@@ -7,10 +7,10 @@ CONTENT
  1. Themes and problems, not a list of features with dates   (Research: nng-roadmaps)
  2. Columns by time horizon: now, next, later   (Research: nng-roadmaps)
  3. Each theme tied to a goal and how success is measured   (Research: nng-roadmaps, govuk-measure)
- 4. Evidence behind each item (research, feedback, numbers)   (Research: nng-roadmaps)
+ 4. Evidence behind each item (research, feedback, numbers)   (Research: nng-roadmaps)  -> see product/user-feedback
 
 MAKING IT
- 5. Built from goals, research and feedback, then prioritised   (Research: nng-roadmaps, nng-prioritization)
+ 5. Built from goals, research and feedback, then prioritised   (Research: nng-roadmaps, nng-prioritization)  -> see product/user-feedback
  6. Priority method written down (for example reach, impact, confidence, effort)   (Practice: rice)
 
 SHARING

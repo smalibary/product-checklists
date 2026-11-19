@@ -11,10 +11,10 @@ CONTENT
  5. Company name and a way to contact   (Rule: eu-consumer-rights)
 
 THE EMAIL FORM
- 6. One field: email, with a visible label and the right input type   (Standard: wcag-labels, mdn-autocomplete)
+ 6. One field: email, with a visible label and the right input type   (Standard: wcag-labels, mdn-autocomplete)  -> see design-system/accessibility
  7. Say exactly what emails will be sent and how often   (Rule: gdpr-13, can-spam)
  8. Consent box unticked by default where the law needs consent for marketing   (Rule: gdpr-7)
- 9. A link to the privacy policy beside the form   (Rule: gdpr-13)
+ 9. A link to the privacy policy beside the form   (Rule: gdpr-13)  -> see website/privacy
 10. Confirmation on screen and by email; double opt-in where required   (Practice)
 11. Errors shown in words next to the field   (Standard: wcag-error)
 
@@ -24,12 +24,12 @@ COUNTDOWN, IF USED
 
 SEARCH AND STATUS
 14. Returns a normal page (status 200), with a real title and description   (Standard: google-title, google-snippet)
-15. If the main site is down for a short while, use a maintenance page instead (status 503)   (Standard: google-maintenance)
+15. If the main site is down for a short while, use a maintenance page instead (status 503)   (Standard: google-maintenance)  -> see web-app/maintenance
 
 LOOK AND ACCESS
-16. Contrast and text size meet WCAG   (Standard: wcag-contrast)
-17. Any background video or animation can be paused and respects reduced motion   (Standard: wcag-pause, mdn-reduced-motion)
-18. Works at phone width with no sideways scroll   (Standard: wcag-reflow)
+16. Contrast and text size meet WCAG   (Standard: wcag-contrast)  -> see design-system/accessibility
+17. Any background video or animation can be paused and respects reduced motion   (Standard: wcag-pause, mdn-reduced-motion)  -> see motion/motion-accessibility, motion/motion-system
+18. Works at phone width with no sideways scroll   (Standard: wcag-reflow)  -> see design-system/accessibility
 
 SOURCES
 - eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en

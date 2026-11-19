@@ -12,4 +12,4 @@ also: design-system/accessibility
 - Added, removed and reordered items move so people can track them | S m3-transitions android-animation
 - Sorting animates once; filtering does not jump the page | R nng-animation-usability
 ## Access
-- Reduced motion shows the final state directly | S mdn-reduced-motion
+- Reduced motion shows the final state directly | S mdn-reduced-motion >motion/motion-accessibility

@@ -7,14 +7,14 @@ about: Returning long lists in pages so neither the server nor the caller has to
 - The same filters must come with each next page; changed filters are refused | S google-aip-pagination
 ## Size
 - A default page size and a maximum; larger requests are cut to the maximum | S google-aip-pagination
-- No "give me everything" option on big tables | S owasp-api-top10
+- No "give me everything" option on big tables | S owasp-api-top10 >backend/database-design
 ## Response
 - A next-page token, empty on the last page | S google-aip-pagination
 - Optionally a Link header with next and previous addresses | S rfc-link
 - Total count only when it is cheap; otherwise only "has more" | S google-aip-pagination
 ## Behaviour
 - An expired token gives a clear error, not an empty page | S google-aip-errors
-- Every list reads through an index that matches its sort, never a full table scan | S pg-indexes
+- Every list reads through an index that matches its sort, never a full table scan | S pg-indexes >backend/database-design
 - Deep numbered pages avoided: they get slower the further you go | S pg-explain
 ## Docs
 - Paging explained once and identical on every list | S openapi

@@ -10,7 +10,7 @@ SUCCESS AND ERROR
 
 ATTENTION
  4. New items or changes highlighted once, briefly   (Research: nng-animation-usability)
- 5. Badges and dots animate in once, not forever   (Practice)
+ 5. Badges and dots animate in once, not forever   (Practice)  -> see design-system/badge
  6. Nothing blinks; anything moving over 5 seconds can be stopped   (Standard: wcag-pause)
 
 READING ALOUD

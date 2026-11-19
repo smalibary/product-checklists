@@ -15,7 +15,7 @@ HOW
 
 CHECKING
  7. Tested on a low-end phone with the frame counter on   (Practice)
- 8. Interaction speed (INP) not hurt by animations   (Standard: webdev-inp)
+ 8. Interaction speed (INP) not hurt by animations   (Standard: webdev-inp)  -> see operations/performance
  9. No layout shift caused by animation   (Standard: webdev-cls)
 
 SOURCES

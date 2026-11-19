@@ -13,7 +13,7 @@ LOOK
  5. Separators (› or /) drawn by CSS so screen readers do not read them   (Standard: apg-breadcrumb)
  6. Every level a link except the last, which is the current page   (Standard: apg-breadcrumb)
  7. The current page marked (aria-current="page")   (Standard: apg-breadcrumb)
- 8. Small but readable text with enough contrast   (Standard: wcag-contrast)
+ 8. Small but readable text with enough contrast   (Standard: wcag-contrast)  -> see design-system/accessibility
 
 LONG TRAILS
  9. Middle levels collapse into "..." with a menu on small screens   (Practice)
@@ -23,11 +23,11 @@ LONG TRAILS
 ACCESS
 12. Inside a nav landmark named "Breadcrumb"   (Standard: apg-breadcrumb)
 13. An ordered list of links   (Standard: apg-breadcrumb)
-14. Separator direction flips for right-to-left languages   (Standard: w3c-dir)
-15. Link targets large enough to tap   (Standard: wcag-target)
+14. Separator direction flips for right-to-left languages   (Standard: w3c-dir)  -> see design-system/rtl-localisation
+15. Link targets large enough to tap   (Standard: wcag-target)  -> see design-system/accessibility
 
 SEARCH
-16. Breadcrumb structured data so search results show the trail   (Standard: google-breadcrumb)
+16. Breadcrumb structured data so search results show the trail   (Standard: google-breadcrumb)  -> see growth/technical-seo
 
 SOURCES
 - nng-breadcrumbs: https://www.nngroup.com/articles/breadcrumbs/

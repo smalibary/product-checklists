@@ -10,7 +10,7 @@ also: design-system/accessibility
 - Separators (› or /) drawn by CSS so screen readers do not read them | S apg-breadcrumb
 - Every level a link except the last, which is the current page | S apg-breadcrumb
 - The current page marked (aria-current="page") | S apg-breadcrumb
-- Small but readable text with enough contrast | S wcag-contrast
+- Small but readable text with enough contrast | S wcag-contrast >design-system/accessibility
 ## Long trails
 - Middle levels collapse into "..." with a menu on small screens | P
 - On phones, show only the parent as a "Back to X" link | S govuk-breadcrumbs
@@ -18,7 +18,7 @@ also: design-system/accessibility
 ## Access
 - Inside a nav landmark named "Breadcrumb" | S apg-breadcrumb
 - An ordered list of links | S apg-breadcrumb
-- Separator direction flips for right-to-left languages | S w3c-dir
-- Link targets large enough to tap | S wcag-target
+- Separator direction flips for right-to-left languages | S w3c-dir >design-system/rtl-localisation
+- Link targets large enough to tap | S wcag-target >design-system/accessibility
 ## Search
-- Breadcrumb structured data so search results show the trail | S google-breadcrumb
+- Breadcrumb structured data so search results show the trail | S google-breadcrumb >growth/technical-seo

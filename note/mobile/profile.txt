@@ -9,8 +9,8 @@ HEADER
  3. Main action clear: Edit profile on your own, Follow or Message on others   (Practice)
 
 CONTENT
- 4. Tabs for the person's content (posts, saved, likes), each with an empty state   (Standard: hig-tab-bars, nng-empty)
- 5. Pull to refresh   (Standard: hig-loading)
+ 4. Tabs for the person's content (posts, saved, likes), each with an empty state   (Standard: hig-tab-bars, nng-empty)  -> see mobile/empty-state, design-system/tabs
+ 5. Pull to refresh   (Standard: hig-loading)  -> see mobile/pull-to-refresh
  6. Long bios cut with "more"   (Practice)
 
 EDITING YOUR OWN
@@ -30,7 +30,7 @@ PRIVACY
 16. Contact details hidden unless chosen   (Rule: gdpr-25)
 
 ACCESS
-17. Photo has the person's name as its description   (Standard: wcag-nontext)
+17. Photo has the person's name as its description   (Standard: wcag-nontext)  -> see design-system/accessibility
 18. Counts read with their meaning ("120 followers")   (Standard: hig-accessibility)
 
 SOURCES

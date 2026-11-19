@@ -7,7 +7,7 @@ about: Publishing an extension to the Chrome, Firefox or Edge store.
 ## Listing
 - One clear purpose in the description | L cws-policy
 - Screenshots and icon in the required sizes | S cws-best
-- Privacy practices declared; a privacy policy if data is handled | L cws-policy amo-policy
+- Privacy practices declared; a privacy policy if data is handled | L cws-policy amo-policy >website/privacy
 ## Rules
 - Data used only for the stated purpose | L cws-policy
 - Firefox add-on rules met for that store | L amo-policy

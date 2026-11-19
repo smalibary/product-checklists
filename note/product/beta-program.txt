@@ -9,12 +9,12 @@ SETUP
  3. Testers told what is unfinished and what data is collected   (Rule: gdpr-13)
 
 RUNNING
- 4. An easy way to send feedback and screenshots   (Standard: apple-testflight)
+ 4. An easy way to send feedback and screenshots   (Standard: apple-testflight)  -> see product/user-feedback
  5. Crash and error reports collected   (Standard: sre-monitoring)
  6. Features behind flags so they can be turned off   (Standard: fowler-flags)
 
 CLOSING
- 7. Feedback answered and testers thanked   (Practice)
+ 7. Feedback answered and testers thanked   (Practice)  -> see product/user-feedback
  8. Readiness checked against the goal before release   (Standard: govuk-beta)
  9. Staged rollout after the beta   (Standard: play-staged, apple-phased)
 

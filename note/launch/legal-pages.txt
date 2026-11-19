@@ -4,21 +4,21 @@ Backing: 6 Rule, 2 Standard, 0 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 MUST-HAVES
- 1. Privacy policy: what is collected, why, how long, who it is shared with   (Rule: gdpr-13, pdpl)
- 2. Terms of use   (Practice)
- 3. Cookie notice and choices where cookies need consent   (Rule: eprivacy)
+ 1. Privacy policy: what is collected, why, how long, who it is shared with   (Rule: gdpr-13, pdpl)  -> see website/privacy
+ 2. Terms of use   (Practice)  -> see website/terms
+ 3. Cookie notice and choices where cookies need consent   (Rule: eprivacy)  -> see website/cookie-consent
 
 WHEN THEY APPLY
- 4. Refund and cancellation policy for paid products   (Rule: eu-consumer-rights, ftc-negative-option)
- 5. Accessibility statement   (Standard: w3c-a11y-statement)
+ 4. Refund and cancellation policy for paid products   (Rule: eu-consumer-rights, ftc-negative-option)  -> see flows/canceling-subscription, flows/requesting-a-refund
+ 5. Accessibility statement   (Standard: w3c-a11y-statement)  -> see launch/accessibility-statement
  6. Imprint or company details in the EU   (Rule: eu-consumer-rights)
  7. Security contact (security.txt)   (Standard: rfc-securitytxt)
- 8. Community rules for user content   (Rule: eu-dsa)
- 9. Notice of AI use where people talk to an AI   (Rule: eu-ai-act)
+ 8. Community rules for user content   (Rule: eu-dsa)  -> see support/community-forum
+ 9. Notice of AI use where people talk to an AI   (Rule: eu-ai-act)  -> see backend/ai-features
 
 UPKEEP
 10. Dated, with changes announced before they apply   (Practice)
-11. Linked from the footer and the sign-up screen   (Practice)
+11. Linked from the footer and the sign-up screen   (Practice)  -> see website/footer, website/sign-up
 
 SOURCES
 - gdpr-13: https://gdpr-info.eu/art-13-gdpr/

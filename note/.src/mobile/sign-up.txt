@@ -6,7 +6,7 @@ also: design-system/accessibility
 - Try before signing up (guest mode) where the product allows it | R baymard-guest
 - Ask for an account at the moment it is needed (save, buy, post), not on first open | R baymard-guest
 - Intro slides skippable, few of them | P
-- Sign up and Log in easy to tell apart | P
+- Sign up and Log in easy to tell apart | P >mobile/login
 ## Ways to sign up
 - Sign up with Apple, Google or a social account | P
 - If any third-party sign-in is offered on iPhone, also offer one that limits data to name and email and can hide the email (Sign in with Apple qualifies) | L apple-4.8
@@ -39,16 +39,16 @@ also: design-system/accessibility
 - No-connection state keeps what was typed and offers retry | P
 - Errors read aloud by screen readers | S
 ## Account already exists (a real trade-off)
-- Helpful: "This email has an account" with Log in and Reset right there | P
+- Helpful: "This email has an account" with Log in and Reset right there | P >mobile/login
 - Private: same answer whether the email exists or not, details sent by email | S owasp-auth
 ## Legal and consent
-- Terms and privacy accepted before the account is made, readable in the app | P
+- Terms and privacy accepted before the account is made, readable in the app | P >website/terms
 - Marketing opt-in separate, off by default, as easy to withdraw | L pdpl
 - Age asked neutrally (type birth month and year, no "I am over 12" box) where children's rules apply | L coppa
 - Tracking asked through the phone's own prompt, before any tracking (iPhone) | L hig-privacy
 ## The button and sending
 - Button says what it does: "Create account" | P
-- Loading state; cannot be pressed twice | P
+- Loading state; cannot be pressed twice | P >design-system/loading
 - Button stays above the keyboard | P
 - A disabled button says why, or it stays enabled and shows the errors | P
 - Robot check only when needed, invisible first | P
@@ -57,23 +57,23 @@ also: design-system/accessibility
 - Product usable before the email is confirmed | P
 - Code fills itself from the SMS (iPhone one-time-code; Android SMS Retriever or WebOTP) | S webdev-otp
 - Code boxes take a pasted code, move on by themselves and send on the last digit | P
-- Resend with a countdown, plus "change email or number" | P
+- Resend with a countdown, plus "change email or number" | P >flows/changing-email
 - "Open mail app" button on the check-your-email screen | P
 - Expired code or link: clear message and one tap for a new one | P
 ## After sign-up
 - Welcome screen pointing to the first action | P
-- Signed in straight away, never "now log in" | P
+- Signed in straight away, never "now log in" | P >mobile/login
 - Permissions asked when each is needed, a reason screen first, no reward for saying yes | L hig-privacy
 - Profile setup optional and skippable | P
 - Already-have-an-account link | P
-- Delete account inside the app (iPhone and Android) plus a web link (Android) | L apple-5.1.1 play-deletion
+- Delete account inside the app (iPhone and Android) plus a web link (Android) | L apple-5.1.1 play-deletion >flows/deleting-account
 ## Access and language
 - Every field has a name screen readers say | S
 - Contrast passes in light and dark | S
 - Large text setting does not break the layout | S
-- Right-to-left for Arabic, with phone numbers and codes kept left-to-right | P
+- Right-to-left for Arabic, with phone numbers and codes kept left-to-right | P >design-system/rtl-localisation
 - Main actions within thumb reach | P
 ## Edge cases
 - Leaving halfway keeps what was typed | P
-- Invite link kept through the whole flow; returns to where they were | P
+- Invite link kept through the whole flow; returns to where they were | P >mobile/invite
 - Works on slow mobile data | P

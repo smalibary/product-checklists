@@ -7,8 +7,8 @@ STRUCTURE
  1. A headline that names the main outcome, not the technology   (Research: nng-scanning)
  2. Features grouped by job or by user type, not a long flat list   (Research: nng-scanning)
  3. Each feature: a short name, one benefit line and a real screenshot or clip   (Research: nng-scanning)
- 4. A jump list or tabs for long pages   (Research: nng-tabs)
- 5. Headings in order, so the page reads as an outline   (Standard: wcag-headings, wcag-info)
+ 4. A jump list or tabs for long pages   (Research: nng-tabs)  -> see design-system/tabs
+ 5. Headings in order, so the page reads as an outline   (Standard: wcag-headings, wcag-info)  -> see design-system/accessibility
 
 PROOF AND DETAIL
  6. Real product screens, not mock art, kept current with the product   (Research: nng-trust)
@@ -16,7 +16,7 @@ PROOF AND DETAIL
  8. Which plan includes each feature, linking to Pricing   (Research: nng-pricing)
  9. Features still coming marked "Coming soon", never shown as available   (Rule: ftc-dark-patterns)
 10. Integrations listed with logos and a link to the full list   (Practice)
-11. Links to docs or a help article for each feature   (Practice)
+11. Links to docs or a help article for each feature   (Practice)  -> see website/docs
 
 ACTION
 12. One main action (Start free, Book a demo) repeated after each few sections   (Practice)
@@ -24,14 +24,14 @@ ACTION
 
 MEDIA
 14. Videos have captions, no sound on start, and a pause control   (Standard: wcag-captions, wcag-audio, wcag-pause)
-15. Animated demos can be paused, and respect the reduced-motion setting   (Standard: wcag-pause, wcag-animation, mdn-reduced-motion)
-16. Screenshots have alt text describing what they show   (Standard: wcag-nontext, wai-images)
+15. Animated demos can be paused, and respect the reduced-motion setting   (Standard: wcag-pause, wcag-animation, mdn-reduced-motion)  -> see motion/motion-accessibility, motion/motion-system
+16. Screenshots have alt text describing what they show   (Standard: wcag-nontext, wai-images)  -> see design-system/accessibility
 17. Images sized and lazy-loaded so the page stays fast   (Standard: webdev-lcp, webdev-images)
 18. Space reserved for images so the page does not jump while loading   (Standard: webdev-cls)
 
 COMPARISON
-19. A feature table for products with many plans or editions   (Research: nng-comparison)
-20. Plain words for each feature, with a short explanation on demand   (Practice)
+19. A feature table for products with many plans or editions   (Research: nng-comparison)  -> see design-system/table
+20. Plain words for each feature, with a short explanation on demand   (Practice)  -> see design-system/content-voice
 
 SOURCES
 - nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/

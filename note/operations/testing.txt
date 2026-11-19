@@ -10,7 +10,7 @@ SHAPE
 WHAT
  3. Every bug fixed gets a test that would have caught it   (Practice)
  4. Permission tests for each role, including refused cases   (Standard: owasp-asvs)
- 5. Edge cases: empty, very long, Arabic and right-to-left text, time zones   (Practice)
+ 5. Edge cases: empty, very long, Arabic and right-to-left text, time zones   (Practice)  -> see design-system/rtl-localisation, backend/dates-money
  6. Accessibility checks on key screens   (Standard: wcag)
 
 RUNNING
@@ -19,10 +19,10 @@ RUNNING
  9. Tests use their own data and clean up after themselves   (Practice)
 
 DATA
-10. No real personal data in test environments   (Rule: gdpr-5)
+10. No real personal data in test environments   (Rule: gdpr-5)  -> see backend/data-privacy, operations/environments
 
 SECURITY
-11. Dependency and code scanning in the pipeline   (Standard: owasp-dependencies, nist-ssdf)
+11. Dependency and code scanning in the pipeline   (Standard: owasp-dependencies, nist-ssdf)  -> see operations/dependencies
 
 SOURCES
 - fowler-test-pyramid: https://martinfowler.com/articles/practical-test-pyramid.html

@@ -7,23 +7,23 @@ also: design-system/accessibility
 - Approximate location accepted where exact is not needed | S android-location
 - If refused: the map still works with search or a typed address | S android-permissions
 ## Map
-- Standard gestures: drag, pinch, double tap to zoom, two-finger rotate | S hig-maps
+- Standard gestures: drag, pinch, double tap to zoom, two-finger rotate | S hig-maps >mobile/gesture-navigation
 - Zoom buttons or another way for people who cannot pinch | S wcag-gestures
 - "My location" button that centres the map | S hig-maps
 - Pins clear and grouped (clustered) when crowded | S hig-maps
 - Selected pin highlighted, with a card showing details | S hig-maps
-- Map style follows dark mode | S hig-dark-mode
+- Map style follows dark mode | S hig-dark-mode >design-system/dark-mode
 ## List and map together
-- Toggle or bottom sheet to switch between map and list | S m3-bottom-sheets
+- Toggle or bottom sheet to switch between map and list | S m3-bottom-sheets >design-system/drawer
 - Moving the map offers "Search this area" instead of reloading on every move | P
 - List order matches what is visible on the map | P
 ## Routes and places
 - Distance and time shown in local units | P
 - Open in the phone's maps app for directions | S hig-maps
-- Arabic place names and right-to-left labels where relevant | S w3c-dir
+- Arabic place names and right-to-left labels where relevant | S w3c-dir >design-system/rtl-localisation
 ## Speed and cost
-- Map tiles cached; usage of map services counted against limits | P
+- Map tiles cached; usage of map services counted against limits | P >backend/caching
 - Few markers drawn at once | P
 ## Access
-- A list view with the same places for screen readers | S wcag-info
+- A list view with the same places for screen readers | S wcag-info >design-system/accessibility
 - Pins have names; selected place announced | S hig-accessibility

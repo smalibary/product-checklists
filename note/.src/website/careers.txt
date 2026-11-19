@@ -3,7 +3,7 @@ about: Shows open jobs and what it is like to work at the company, and takes app
 also: design-system/accessibility
 ## Jobs list
 - Open jobs listed with title, team, place (or remote) and type (full time, contract) | R nng-careers
-- Filters by team, place and type when there are many | R nng-careers
+- Filters by team, place and type when there are many | R nng-careers >flows/filtering-items
 - Each job has its own page and address that can be shared | R nng-careers
 - Closed jobs removed promptly | R nng-careers
 ## Job page
@@ -11,12 +11,12 @@ also: design-system/accessibility
 - Pay range where the law asks for it (many US states, EU from 2026) | L eu-pay-transparency
 - Benefits, working hours and leave | R nng-careers
 - Hiring steps and how long they take | R nng-careers
-- Job structured data so the post appears in job search | S google-jobs
+- Job structured data so the post appears in job search | S google-jobs >growth/technical-seo
 ## Applying
-- A short form; upload a CV instead of retyping it | R baymard-fields
+- A short form; upload a CV instead of retyping it | R baymard-fields >design-system/file-upload
 - No account needed to apply | R nng-login-walls
-- File upload accepts common types with size limits stated | S govuk-file-upload owasp-upload
-- Labels, errors and autofill work | S wcag-labels wcag-error mdn-autocomplete
+- File upload accepts common types with size limits stated | S govuk-file-upload owasp-upload >design-system/file-upload
+- Labels, errors and autofill work | S wcag-labels wcag-error mdn-autocomplete >design-system/accessibility
 - What happens to the applicant's data and for how long it is kept | L gdpr-13
 - Confirmation on screen and by email | R govuk-confirm
 ## Culture

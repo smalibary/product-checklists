@@ -5,10 +5,10 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 BUILDING A REPORT
  1. Start from templates for common questions   (Practice)
- 2. Choose data, measures (sum, count, average) and grouping in plain words   (Practice)
+ 2. Choose data, measures (sum, count, average) and grouping in plain words   (Practice)  -> see design-system/content-voice
  3. Preview updates as choices change   (Research: nng-response)
- 4. Filters and date range with presets   (Research: nng-filters)
- 5. Choose the chart type, with a sensible default   (Research: nng-dashboards)
+ 4. Filters and date range with presets   (Research: nng-filters)  -> see flows/filtering-items
+ 5. Choose the chart type, with a sensible default   (Research: nng-dashboards)  -> see design-system/charts
  6. Calculated fields with a clear formula editor and errors in words   (Standard: wcag-error)
 
 SAVING AND ORGANISING
@@ -19,23 +19,23 @@ SAVING AND ORGANISING
 SHARING AND SCHEDULES
 10. Share with people or teams, with view or edit rights   (Standard: owasp-authz)
 11. Scheduled email or chat delivery, with time zone and format (PDF, CSV)   (Practice)
-12. Recipients can unsubscribe from scheduled reports   (Rule: can-spam)
+12. Recipients can unsubscribe from scheduled reports   (Rule: can-spam)  -> see flows/unsubscribing-from-emails
 13. Report data follows the viewer's permissions (row-level access)   (Standard: owasp-authz)
 
 SPEED AND LIMITS
 14. Long reports run in the background with progress and a notice when done   (Research: nng-response)
-15. Large exports emailed as a link   (Practice)
+15. Large exports emailed as a link   (Practice)  -> see web-app/import-export
 16. Limits stated (rows, date range)   (Practice)
 
 TRUST
 17. Definitions of each measure visible   (Practice)
 18. Data freshness shown   (Research: nng-status)
-19. Personal data limited to who needs it   (Rule: gdpr-25)
+19. Personal data limited to who needs it   (Rule: gdpr-25)  -> see backend/data-privacy
 
 ACCESS
-20. Builder works by keyboard; drag-and-drop has another way   (Standard: wcag-dragging, wcag-keyboard)
-21. Charts with a data table view   (Standard: wcag-nontext)
-22. Works at tablet width at least; reading works at phone width   (Standard: wcag-reflow)
+20. Builder works by keyboard; drag-and-drop has another way   (Standard: wcag-dragging, wcag-keyboard)  -> see design-system/accessibility
+21. Charts with a data table view   (Standard: wcag-nontext)  -> see web-app/data-table, design-system/charts, design-system/accessibility
+22. Works at tablet width at least; reading works at phone width   (Standard: wcag-reflow)  -> see design-system/accessibility
 
 SOURCES
 - nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/

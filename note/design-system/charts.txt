@@ -18,7 +18,7 @@ INTERACTION
  8. Hover or tap shows exact values, also by keyboard   (Standard: wcag-hover)
 
 ACCESS
- 9. A text summary or data table alternative   (Standard: wcag-nontext, hig-charts)
+ 9. A text summary or data table alternative   (Standard: wcag-nontext, hig-charts)  -> see design-system/table, design-system/accessibility
 
 SOURCES
 - nng-charts: https://www.nngroup.com/articles/choosing-chart-types/

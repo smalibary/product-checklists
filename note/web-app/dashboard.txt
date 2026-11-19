@@ -12,26 +12,26 @@ PURPOSE
 NUMBERS AND CHARTS
  5. Each number with its period, a comparison and a direction   (Research: nng-dashboards)
  6. Up and down shown by arrow and word, not only green and red   (Standard: wcag-color)
- 7. Simple charts: lines for trends, bars for comparison   (Research: nng-dashboards)
+ 7. Simple charts: lines for trends, bars for comparison   (Research: nng-dashboards)  -> see design-system/charts
  8. Units and time zone stated; when the data was last updated   (Research: nng-status)
- 9. Charts have exact values on hover and on keyboard focus   (Standard: wcag-hover)
+ 9. Charts have exact values on hover and on keyboard focus   (Standard: wcag-hover)  -> see design-system/charts
 
 LAYOUT
-10. A grid that reflows on smaller screens, in a sensible reading order   (Standard: wcag-reflow, wcag-meaningful-sequence)
+10. A grid that reflows on smaller screens, in a sensible reading order   (Standard: wcag-reflow, wcag-meaningful-sequence)  -> see design-system/accessibility
 11. Cards the same style and spacing   (Research: nng-cards)
-12. Date range and filters apply to all cards, shown at the top   (Research: nng-filters)
+12. Date range and filters apply to all cards, shown at the top   (Research: nng-filters)  -> see flows/filtering-items
 13. Optional: choose, hide and reorder cards; the layout is remembered   (Practice)
 
 STATES
-14. Skeleton cards while loading, each card loading on its own   (Research: nng-skeleton)
-15. New account with no data: an empty state that helps set up   (Research: nng-empty)
+14. Skeleton cards while loading, each card loading on its own   (Research: nng-skeleton)  -> see design-system/skeleton
+15. New account with no data: an empty state that helps set up   (Research: nng-empty)  -> see web-app/empty-state
 16. A card that fails shows its own error and Retry; the rest still work   (Research: nng-errors)
 17. Live numbers update without jumping the layout   (Standard: webdev-cls)
 
 ACCESS
-18. Cards have headings; screen readers can jump between them   (Standard: wcag-headings)
-19. Charts have a text summary or a table   (Standard: wcag-nontext)
-20. Auto-refresh can be paused; motion respects reduced motion   (Standard: wcag-pause, mdn-reduced-motion)
+18. Cards have headings; screen readers can jump between them   (Standard: wcag-headings)  -> see design-system/accessibility
+19. Charts have a text summary or a table   (Standard: wcag-nontext)  -> see web-app/data-table, design-system/charts, design-system/accessibility
+20. Auto-refresh can be paused; motion respects reduced motion   (Standard: wcag-pause, mdn-reduced-motion)  -> see motion/motion-accessibility
 
 SOURCES
 - nng-dashboards: https://www.nngroup.com/articles/dashboards-preattentive/

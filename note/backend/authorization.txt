@@ -15,12 +15,12 @@ EVERY REQUEST
  7. Admin actions behind separate checks and, ideally, a separate address   (Standard: owasp-api-top10)
 
 IN THE DATABASE
- 8. Row-level security as a second guard for shared tables   (Standard: pg-rls)
- 9. The app's database user cannot change the schema   (Standard: owasp-authz)
+ 8. Row-level security as a second guard for shared tables   (Standard: pg-rls)  -> see backend/database-design
+ 9. The app's database user cannot change the schema   (Standard: owasp-authz)  -> see backend/database-design
 
 CHANGES
 10. Role changes take effect immediately   (Standard: owasp-authz)
-11. Every grant, removal and admin action written to the audit trail   (Standard: owasp-logging)
+11. Every grant, removal and admin action written to the audit trail   (Standard: owasp-logging)  -> see backend/audit-trail
 
 TESTING
 12. Tests that try each action as each role, including "should be refused" cases   (Standard: owasp-asvs)

@@ -6,8 +6,8 @@ also: design-system/accessibility
 - Verified marks explained on tap | P
 - Main action clear: Edit profile on your own, Follow or Message on others | P
 ## Content
-- Tabs for the person's content (posts, saved, likes), each with an empty state | S hig-tab-bars nng-empty
-- Pull to refresh | S hig-loading
+- Tabs for the person's content (posts, saved, likes), each with an empty state | S hig-tab-bars nng-empty >mobile/empty-state >design-system/tabs
+- Pull to refresh | S hig-loading >mobile/pull-to-refresh
 - Long bios cut with "more" | P
 ## Editing your own
 - Edit opens a form screen with Save and Cancel | S hig-modality
@@ -23,5 +23,5 @@ also: design-system/accessibility
 - Only needed details public by default | L gdpr-25
 - Contact details hidden unless chosen | L gdpr-25
 ## Access
-- Photo has the person's name as its description | S wcag-nontext
+- Photo has the person's name as its description | S wcag-nontext >design-system/accessibility
 - Counts read with their meaning ("120 followers") | S hig-accessibility

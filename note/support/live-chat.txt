@@ -4,7 +4,7 @@ Backing: 0 Rule, 1 Standard, 9 Research, 0 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 FINDING IT
- 1. Labelled "Chat", in the usual bottom corner   (Research: nng-chat)
+ 1. Labelled "Chat", in the usual bottom corner   (Research: nng-chat)  -> see web-app/chat
  2. Not the only way to get help   (Research: nng-chat, nng-contact)
 
 STARTING
@@ -21,7 +21,7 @@ AFTER
  9. Can resume after a disconnect   (Research: nng-chat)
 
 ACCESS
-10. Works with keyboard and screen readers; new messages announced   (Standard: wcag-status, wcag-keyboard)
+10. Works with keyboard and screen readers; new messages announced   (Standard: wcag-status, wcag-keyboard)  -> see design-system/accessibility
 
 SOURCES
 - nng-chat: https://www.nngroup.com/articles/chat-ux/

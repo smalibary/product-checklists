@@ -17,7 +17,7 @@ HANDOFF
 
 PRINCIPLES
  7. Two or three motion principles written in plain words   (Standard: fluent-motion, carbon-motion)
- 8. Reduced motion version defined for every pattern   (Standard: mdn-reduced-motion)
+ 8. Reduced motion version defined for every pattern   (Standard: mdn-reduced-motion)  -> see motion/motion-accessibility
 
 REVIEW
  9. Motion reviewed in design review, like colour and type   (Practice)

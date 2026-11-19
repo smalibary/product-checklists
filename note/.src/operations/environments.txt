@@ -4,12 +4,12 @@ also: design-system/accessibility
 ## Separation
 - Dev, test and production in separate accounts or projects | S twelve-factor aws-wa
 - No production data in dev or test; fake or masked data instead | L gdpr-5
-- Different secrets and keys in each | S owasp-secrets
+- Different secrets and keys in each | S owasp-secrets >operations/secrets
 ## Sameness
 - The same build runs in every environment; only settings differ | S twelve-factor
 - Infrastructure described as code | S aws-wa
 ## Access
-- Production access limited to few people, logged, and time-limited | S owasp-authz
+- Production access limited to few people, logged, and time-limited | S owasp-authz >operations/logging
 - Test copies not open to the public, or protected by sign-in | P
 ## Costs
 - Test copies scaled down or switched off when not used | S aws-cost

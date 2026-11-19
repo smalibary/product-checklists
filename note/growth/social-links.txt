@@ -6,16 +6,16 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 PROFILES
  1. Same name, logo and bio on every account   (Practice)
  2. Profile links back to the site   (Practice)
- 3. Site links to accounts in the footer with clear labels   (Standard: wcag-link)
+ 3. Site links to accounts in the footer with clear labels   (Standard: wcag-link)  -> see website/footer
 
 SHARING
- 4. Share buttons use the system share sheet on phones   (Standard: webshare)
- 5. Link previews set on shared pages   (Standard: ogp, x-cards)
+ 4. Share buttons use the system share sheet on phones   (Standard: webshare)  -> see flows/sharing-a-link
+ 5. Link previews set on shared pages   (Standard: ogp, x-cards)  -> see growth/link-previews
  6. No tracking scripts from social buttons before consent   (Rule: eprivacy)
 
 RULES
  7. Paid posts and partnerships disclosed   (Rule: ftc-endorsements)
- 8. Reviews and testimonials real   (Rule: ftc-reviews)
+ 8. Reviews and testimonials real   (Rule: ftc-reviews)  -> see website/testimonials
 
 SOURCES
 - wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context

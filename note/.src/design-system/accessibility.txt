@@ -11,21 +11,21 @@ about: What every page and screen needs so people with disabilities can use it. 
 - Light, dark and high-contrast themes all checked | S mdn-color-scheme
 ## Keyboard and focus
 - Every interactive part reachable and usable by keyboard | S wcag-keyboard
-- Keyboard behaviour follows the ARIA patterns (arrows in menus, tabs, radios) | S apg
+- Keyboard behaviour follows the ARIA patterns (arrows in menus, tabs, radios) | S apg >design-system/tabs >design-system/radio
 - Focus order follows reading order | S wcag-focus-order
-- Focused things are never hidden behind sticky headers | S wcag-obscured
+- Focused things are never hidden behind sticky headers | S wcag-obscured >website/header
 - Skip link to the main content | S wcag-bypass
 ## Names and roles
 - Native HTML elements first; ARIA only when needed | S apg
 - Every control has a name, role and state | S wcag-name-role
-- Icon-only buttons have a text name | S wcag-name-role
+- Icon-only buttons have a text name | S wcag-name-role >design-system/icon
 - Status messages announced without moving focus | S wcag-status
 ## Touch and motion
 - Targets at least 24 by 24 px on the web (44 recommended); 44 pt on iPhone, 48 dp on Android | S wcag-target hig-layout m3-layout
 - Dragging always has a single-tap alternative | S wcag-dragging
-- Reduced motion respected; nothing flashes more than 3 times a second | S mdn-reduced-motion wcag-flash
+- Reduced motion respected; nothing flashes more than 3 times a second | S mdn-reduced-motion wcag-flash >motion/motion-accessibility
 ## Pages
-- Each page has a title that names it and the site ("Sign in · Qanat Books") | S wcag-title
+- Each page has a title that names it and the site ("Sign in · Qanat Books") | S wcag-title >web-app/login
 - One main heading, and headings in order so the page reads as an outline | S wcag-headings
 - Works at phone width (320 px) with no sideways scrolling | S wcag-reflow
 - Text can be enlarged to 200% without cutting anything off | S wcag-resize
@@ -34,7 +34,7 @@ about: What every page and screen needs so people with disabilities can use it. 
 ## Content
 - Pictures that tell something have alt text; decorative ones are hidden from screen readers | S wcag-nontext wai-images
 - Forms: labels, help text and errors linked to the field | S wcag-labels wcag-error
-- Language and direction set (Arabic right-to-left) | S w3c-dir
+- Language and direction set (Arabic right-to-left) | S w3c-dir >design-system/rtl-localisation
 ## Process
 - Automatic checks in the build (axe or similar) | P
 - Manual tests with keyboard and a screen reader (NVDA, VoiceOver, TalkBack) | P

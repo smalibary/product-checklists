@@ -4,17 +4,17 @@ Backing: 0 Rule, 19 Standard, 3 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 PARTS
- 1. A visible label above the field, always present   (Standard: wcag-labels, govuk-text-input)
+ 1. A visible label above the field, always present   (Standard: wcag-labels, govuk-text-input)  -> see design-system/form-layout, design-system/accessibility
  2. Hint text under the label for format or examples   (Standard: govuk-text-input)
- 3. Placeholder never used as the label   (Standard: wcag-labels)
- 4. Error message next to the field, in words   (Standard: govuk-error-message, wcag-error)
+ 3. Placeholder never used as the label   (Standard: wcag-labels)  -> see design-system/accessibility
+ 4. Error message next to the field, in words   (Standard: govuk-error-message, wcag-error)  -> see flows/showing-input-error
  5. Optional prefix or suffix (SAR, kg, @) outside the typed text   (Standard: govuk-text-input)
  6. Character count for limited fields   (Standard: govuk-character)
 
 SIZES
  7. Width hints at expected length (postcode short, address long)   (Standard: govuk-text-input)
  8. Height and text size large enough on phones (16 px stops iOS zooming)   (Practice)
- 9. Touch area at least 24 px, ideally 44   (Standard: wcag-target)
+ 9. Touch area at least 24 px, ideally 44   (Standard: wcag-target)  -> see design-system/accessibility
 
 STATES
 10. Default, hover, focus, filled, error, disabled, read-only, each clearly different   (Standard: m3-text-fields)
@@ -28,16 +28,16 @@ HELPING PEOPLE TYPE
 16. autocomplete set (name, email, address)   (Standard: mdn-autocomplete, wcag-input-purpose)
 17. Paste always allowed   (Standard: wcag-auth)
 18. Spellcheck off for codes and names   (Practice)
-19. Accept spaces and dashes in phone and card numbers   (Research: baymard-fields)
+19. Accept spaces and dashes in phone and card numbers   (Research: baymard-fields)  -> see flows/making-a-card-payment
 
 CHECKING
 20. Check when leaving the field or on submit, not on every key   (Research: baymard-inline)
 21. Clear the error once fixed   (Research: baymard-inline)
 
 ACCESS
-22. Label linked with for and id; hint and error linked with aria-describedby   (Standard: wcag-labels)
+22. Label linked with for and id; hint and error linked with aria-describedby   (Standard: wcag-labels)  -> see design-system/accessibility
 23. Invalid fields marked aria-invalid   (Standard: wcag-error)
-24. Required fields marked in words, not only with *   (Standard: wcag-labels)
+24. Required fields marked in words, not only with *   (Standard: wcag-labels)  -> see design-system/form-layout, design-system/accessibility
 25. Direction follows the typed language (dir auto)   (Standard: w3c-dir)
 
 SOURCES

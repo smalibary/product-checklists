@@ -11,12 +11,12 @@ also: design-system/accessibility
 - Three to five benefits, each a short heading, a line and a picture | R nng-scanning
 - Proof: customer logos, numbers or quotes, with permission | L ftc-endorsements
 - How it works in three steps | P
-- Answers to the main doubts (price, time, risk) in a short FAQ | R nng-faq
+- Answers to the main doubts (price, time, risk) in a short FAQ | R nng-faq >website/faq
 - The main action repeated after each big section | P
 - Few or no links that lead away from the action | P
 ## Forms
-- Ask only what is needed; every extra field costs sign-ups | R baymard-fields
-- Labels above fields, the right keyboard and autofill | S wcag-labels mdn-autocomplete webdev-signup
+- Ask only what is needed; every extra field costs sign-ups | R baymard-fields >website/sign-up
+- Labels above fields, the right keyboard and autofill | S wcag-labels mdn-autocomplete webdev-signup >design-system/form-layout >design-system/accessibility
 - Errors in words next to the field | S wcag-error
 - Marketing consent unticked by default where the law needs consent | L gdpr-7
 ## Speed

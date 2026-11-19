@@ -3,31 +3,31 @@ about: Paying for physical goods or services in a phone app, from cart to confir
 also: design-system/accessibility
 ## Steps
 - As few screens as possible; guest checkout allowed | R baymard-guest
-- Progress shown for multi-step checkout | R nng-progress
+- Progress shown for multi-step checkout | R nng-progress >web-app/multi-step-form
 - Order summary can be expanded on each step, with the total always visible | R baymard-abandon
 - Sticky bottom bar with the total and the main button | P
 ## Delivery
-- Address from saved addresses or autofill; map pin for places without clear addresses | S mdn-autocomplete
+- Address from saved addresses or autofill; map pin for places without clear addresses | S mdn-autocomplete >mobile/map-view
 - Delivery options with price and date | L eu-consumer-rights
 - Phone number with country code picker, numeric keyboard | S mdn-inputmode
 ## Payment
 - Apple Pay and Google Pay first where available | S hig-apple-pay webdev-payment
 - Local methods (mada, STC Pay, cash on delivery) where they suit | P
-- Card fields from a certified provider, card scan with the camera | S pci-dss
+- Card fields from a certified provider, card scan with the camera | S pci-dss >mobile/camera
 - Strong customer authentication (3-D Secure) opened inside the app | L psd2-sca stripe-3ds
 ## Store rules
 - Physical goods and services may use any payment provider | S apple-review play-payments
 - Digital goods and subscriptions must use in-app purchase (with regional exceptions) | S apple-review play-payments
 ## Costs
 - All fees, delivery and tax shown before the final button | L ftc-junk-fees eu-consumer-rights
-- Promo code field quiet, not a big empty box | R baymard-coupon
+- Promo code field quiet, not a big empty box | R baymard-coupon >flows/entering-promo-code
 ## Submitting
 - Button names the amount ("Pay 245 SAR") | S wcag-prevent
 - Busy state; no double charge | S owasp-transaction
 - Declined payment explained, details kept | S wcag-error
 ## After
 - Confirmation screen with order number and tracking | S govuk-confirm
-- Receipt and VAT invoice by email | L zatca-einvoice
-- Offer push alerts for delivery here (see Push Opt-in) | S hig-notifications
+- Receipt and VAT invoice by email | L zatca-einvoice >mobile/billing
+- Offer push alerts for delivery here (see Push Opt-in) | S hig-notifications >mobile/push-notif-opt-in
 ## Access
 - Keyboard never hides the active field or the button | P

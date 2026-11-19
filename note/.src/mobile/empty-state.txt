@@ -8,6 +8,6 @@ also: design-system/accessibility
 ## Kinds
 - First use, no results, cleared and error states each handled | R nng-empty
 ## Layout
-- Fits small screens and large text without scrolling far | S wcag-reflow
+- Fits small screens and large text without scrolling far | S wcag-reflow >design-system/accessibility
 ## Access
-- Pictures marked as decorative or described | S wcag-nontext
+- Pictures marked as decorative or described | S wcag-nontext >design-system/accessibility

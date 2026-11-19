@@ -18,7 +18,7 @@ also: design-system/accessibility
 ## Results
 - Count of results, grouped by type if mixed | R nng-search
 - Matched words highlighted with weight, not only colour | S wcag-color
-- Filters in a sheet or chips above results, with counts | R baymard-filters
+- Filters in a sheet or chips above results, with counts | R baymard-filters >flows/filtering-items
 - Sort choice | R nng-search
 - Infinite scroll keeps position when coming back | R nng-infinite
 ## No results

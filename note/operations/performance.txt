@@ -8,9 +8,9 @@ TARGETS
  2. Web pages meet Core Web Vitals (LCP, INP, CLS)   (Standard: webdev-vitals)
 
 SERVER
- 3. Slow database queries found and fixed with EXPLAIN   (Standard: pg-explain)
- 4. Indexes for every common filter and sort   (Standard: pg-indexes)
- 5. Caching for repeated reads   (Standard: rfc-caching)
+ 3. Slow database queries found and fixed with EXPLAIN   (Standard: pg-explain)  -> see backend/database-design
+ 4. Indexes for every common filter and sort   (Standard: pg-indexes)  -> see backend/database-design
+ 5. Caching for repeated reads   (Standard: rfc-caching)  -> see backend/caching
  6. No one-call-per-item loops to the database   (Practice)
 
 LOAD

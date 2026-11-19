@@ -21,11 +21,11 @@ SUCCESS
 
 FAILURE
 11. Server error: plain message, data kept, Try again   (Standard: wcag-error)
-12. Session expired: keep the data and sign in again   (Standard: wcag-timing)
+12. Session expired: keep the data and sign in again   (Standard: wcag-timing)  -> see web-app/login, backend/sessions
 
 SAFETY
 13. Server checks everything again   (Standard: owasp-authz)
-14. Spam protection without robot puzzles that block people (honeypot, rate limits)   (Standard: wcag-auth)
+14. Spam protection without robot puzzles that block people (honeypot, rate limits)   (Standard: wcag-auth)  -> see api/rate-limits
 15. CSRF protection   (Standard: owasp-csrf)
 
 ACCESS

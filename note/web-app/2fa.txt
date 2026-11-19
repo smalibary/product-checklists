@@ -10,7 +10,7 @@ CHOOSING A METHOD
  4. More than one method can be added, so losing one is not the end   (Standard: owasp-mfa)
 
 SETTING UP AN AUTHENTICATOR APP
- 5. QR code plus the key as text for people who cannot scan   (Standard: rfc-totp, wcag-nontext)
+ 5. QR code plus the key as text for people who cannot scan   (Standard: rfc-totp, wcag-nontext)  -> see design-system/accessibility
  6. Key shown in groups of 4 characters with a copy button   (Practice)
  7. Ask for one code to confirm it works before turning it on   (Standard: owasp-mfa)
  8. Name the account so it shows clearly in the app (site name and email)   (Standard: rfc-totp)
@@ -32,7 +32,7 @@ ENTERING A CODE AT SIGN-IN
 MANAGING
 19. Turning 2FA off or changing it asks for the password or a code again   (Standard: owasp-mfa)
 20. Email sent when 2FA is turned on, off or changed   (Standard: owasp-mfa)
-21. Admins can require 2FA for everyone in a workspace   (Practice)
+21. Admins can require 2FA for everyone in a workspace   (Practice)  -> see web-app/workspace-switcher
 22. Lost-everything recovery through support with identity checks   (Standard: owasp-mfa)
 
 ACCESS

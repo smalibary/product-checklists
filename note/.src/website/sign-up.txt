@@ -12,7 +12,7 @@ also: design-system/accessibility
 ## Fields
 - Ask only what is needed now; everything else later | R baymard-fields webdev-signup
 - One name field ("Full name"), not first and last, for international names | S w3c-names
-- Visible labels; placeholders only as examples | S wcag-labels nng-placeholder
+- Visible labels; placeholders only as examples | S wcag-labels nng-placeholder >design-system/accessibility
 - autocomplete set: name, email, new-password | S webdev-signup mdn-autocomplete wcag-purpose
 - Optional fields marked "(optional)"; required ones not starred | R nng-required govuk-question
 - Email typo hint ("Did you mean gmail.com?") | P
@@ -28,7 +28,7 @@ also: design-system/accessibility
 - What was typed is kept after an error | S wcag-redundant
 - Submit is never disabled; it explains what is missing instead | R govuk-button
 ## Legal and consent
-- Terms and privacy links beside the button | L gdpr-13
+- Terms and privacy links beside the button | L gdpr-13 >website/terms
 - Marketing consent separate and unticked | L gdpr-7
 - Age check where children's law applies | L coppa
 ## Sending and after

@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 OFFERING UNDO
  1. Undo for deletes, moves and sends instead of asking "Are you sure?" each time   (Research: nng-control)
- 2. An Undo button in a toast for a few seconds   (Standard: m3-snackbar)
+ 2. An Undo button in a toast for a few seconds   (Standard: m3-snackbar)  -> see design-system/toast
  3. Time long enough to read and act, or until dismissed   (Standard: wcag-timing)
 
 BEHAVIOUR
@@ -14,7 +14,7 @@ BEHAVIOUR
  6. A bin or history for later undo   (Research: nng-control)
 
 ACCESS
- 7. Toast announced and reachable by keyboard   (Standard: wcag-status, wcag-keyboard)
+ 7. Toast announced and reachable by keyboard   (Standard: wcag-status, wcag-keyboard)  -> see design-system/toast, design-system/accessibility
 
 SOURCES
 - nng-control: https://www.nngroup.com/articles/user-control-and-freedom/

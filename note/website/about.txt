@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 WHO AND WHY
  1. One sentence on what the company does and for whom, at the top   (Research: nng-about)
  2. The story: when and why it started, in a few short paragraphs   (Research: nng-about)
- 3. Mission or purpose in plain words, not slogans   (Research: nng-about)
+ 3. Mission or purpose in plain words, not slogans   (Research: nng-about)  -> see design-system/content-voice
  4. What makes the company different, with facts   (Research: nng-trust)
 
 PEOPLE
@@ -27,10 +27,10 @@ CONTACT AND LEGAL
 
 WRITING AND LAYOUT
 15. Short paragraphs, headings and lists for scanning   (Research: nng-scanning)
-16. Headings that say what each part is about   (Standard: wcag-headings)
-17. Images have alt text that describes them; decorative ones are hidden from screen readers   (Standard: wcag-nontext, wai-images)
-18. Text contrast meets 4.5 to 1   (Standard: wcag-contrast)
-19. Organization structured data (name, logo, address, links)   (Standard: schema-org)
+16. Headings that say what each part is about   (Standard: wcag-headings)  -> see design-system/accessibility
+17. Images have alt text that describes them; decorative ones are hidden from screen readers   (Standard: wcag-nontext, wai-images)  -> see design-system/accessibility
+18. Text contrast meets 4.5 to 1   (Standard: wcag-contrast)  -> see design-system/accessibility
+19. Organization structured data (name, logo, address, links)   (Standard: schema-org)  -> see growth/technical-seo
 20. Page title that names the company   (Standard: wcag-title)
 
 SOURCES

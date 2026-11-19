@@ -6,18 +6,18 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 CHECKING
  1. Signature checked against the raw body before anything else   (Standard: standard-webhooks, stripe-webhooks)
  2. Timestamp checked; messages older than about 5 minutes are refused (no replays)   (Standard: standard-webhooks)
- 3. Secrets kept in the secret store, never in code   (Standard: owasp-secrets)
+ 3. Secrets kept in the secret store, never in code   (Standard: owasp-secrets)  -> see operations/secrets
 
 HANDLING
- 4. Answer 2xx fast, then do the work in a background job   (Standard: stripe-webhooks)
+ 4. Answer 2xx fast, then do the work in a background job   (Standard: stripe-webhooks)  -> see backend/background-jobs
  5. Each event id stored; a repeat is acknowledged and skipped   (Standard: stripe-webhooks, outbox)
  6. Events may arrive out of order: compare times or fetch the latest state before acting   (Standard: stripe-webhooks)
  7. Only the event types you need are handled; others are acknowledged and ignored   (Standard: stripe-webhooks)
 
 FAILURES
- 8. Failed processing retried from your own queue, not by failing the call   (Practice)
+ 8. Failed processing retried from your own queue, not by failing the call   (Practice)  -> see backend/background-jobs
  9. A daily check against the sender's API catches events that never arrived   (Standard: stripe-webhooks)
-10. Alerts when deliveries stop or errors rise   (Standard: sre-alerting)
+10. Alerts when deliveries stop or errors rise   (Standard: sre-alerting)  -> see operations/monitoring-alerts
 
 STORE EVENTS
 11. App Store and Google Play subscription events handled the same way (signed, recorded, deduplicated)   (Standard: apple-server-notif, play-rtdn)

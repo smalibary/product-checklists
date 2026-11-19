@@ -5,30 +5,30 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 WHEN TO USE
  1. Browsing collections of mixed content (images, text, actions)   (Research: nng-cards)
- 2. Not for lists where people compare the same facts (use a table or list)   (Research: nng-cards)
+ 2. Not for lists where people compare the same facts (use a table or list)   (Research: nng-cards)  -> see design-system/table
  3. Not as decoration for every block of a page   (Research: nng-cards)
 
 PARTS
  4. Optional media (image) on top, then title, short text, meta and actions   (Standard: m3-cards)
- 5. Title is a heading of the right level   (Standard: wcag-headings)
+ 5. Title is a heading of the right level   (Standard: wcag-headings)  -> see design-system/accessibility
  6. Up to two actions; more in a menu   (Standard: m3-cards)
  7. All cards in a set have the same structure   (Research: nng-cards)
 
 LOOK
- 8. Kinds: elevated (shadow), filled, outlined   (Standard: m3-cards)
+ 8. Kinds: elevated (shadow), filled, outlined   (Standard: m3-cards)  -> see design-system/elevation
  9. Clear edge against the background (3:1 if the edge carries meaning)   (Standard: wcag-ui-contrast)
-10. Same padding, radius and spacing from tokens   (Standard: dtcg-tokens)
+10. Same padding, radius and spacing from tokens   (Standard: dtcg-tokens)  -> see design-system/tokens
 11. Images with set ratio so cards do not jump while loading   (Standard: webdev-cls)
 
 CLICKABLE CARDS
 12. One main link; the whole card can be clicked by stretching that link   (Practice)
 13. Other buttons inside still work separately   (Practice)
-14. Clear hover and focus state on the whole card   (Standard: wcag-focus)
+14. Clear hover and focus state on the whole card   (Standard: wcag-focus)  -> see design-system/accessibility
 15. Do not wrap the whole card in one link with many items inside (screen readers read it all)   (Practice)
 
 RESPONSIVE
-16. Grid of cards reflows from several columns to one   (Standard: wcag-reflow)
-17. Text never cut off without a way to read it all   (Standard: wcag-resize)
+16. Grid of cards reflows from several columns to one   (Standard: wcag-reflow)  -> see design-system/accessibility
+17. Text never cut off without a way to read it all   (Standard: wcag-resize)  -> see design-system/accessibility
 
 ACCESS
 18. Images have alt text, or are decorative if the title says it all   (Standard: wai-images)

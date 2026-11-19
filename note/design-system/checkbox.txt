@@ -6,15 +6,15 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 WHEN TO USE
  1. Choosing zero, one or many from a list   (Standard: govuk-checkboxes)
  2. One checkbox for a yes/no agreement that takes effect on submit   (Standard: govuk-checkboxes)
- 3. Use a switch instead for settings that apply at once   (Research: nng-toggle)
- 4. Use radios when only one choice is allowed   (Standard: govuk-radios)
+ 3. Use a switch instead for settings that apply at once   (Research: nng-toggle)  -> see design-system/toggle
+ 4. Use radios when only one choice is allowed   (Standard: govuk-radios)  -> see design-system/radio
 
 LOOK
  5. Box on the start side of its label; the label is clickable too   (Standard: govuk-checkboxes)
  6. Ticked, unticked and mixed (some children ticked) states clearly different   (Standard: apg-checkbox)
  7. Box border 3:1 contrast   (Standard: wcag-ui-contrast)
  8. Disabled shown clearly, with why if possible   (Practice)
- 9. Touch area at least 24 px, ideally 44   (Standard: wcag-target)
+ 9. Touch area at least 24 px, ideally 44   (Standard: wcag-target)  -> see design-system/accessibility
 
 GROUPS
 10. Grouped in a fieldset with a question as the legend   (Standard: govuk-checkboxes)
@@ -31,7 +31,7 @@ BEHAVIOUR
 ACCESS
 18. Native checkbox input, or role checkbox with aria-checked   (Standard: apg-checkbox)
 19. Space toggles   (Standard: apg-checkbox)
-20. Label linked to the box   (Standard: wcag-labels)
+20. Label linked to the box   (Standard: wcag-labels)  -> see design-system/accessibility
 
 SOURCES
 - govuk-checkboxes: https://design-system.service.gov.uk/components/checkboxes/

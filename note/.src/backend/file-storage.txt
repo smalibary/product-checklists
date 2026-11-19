@@ -9,10 +9,10 @@ about: Keeping uploaded and generated files safe, private and affordable.
 - Image metadata (like location) removed | S owasp-file-upload
 ## Serving
 - Served from a separate domain with safe headers | S owasp-file-upload owasp-headers
-- Thumbnails and sizes made once and cached | S mdn-cache-control
+- Thumbnails and sizes made once and cached | S mdn-cache-control >backend/caching
 ## Life
 - Old and unfinished uploads cleaned up by rule | P
 - Files deleted when their owner deletes them, including copies | L gdpr-17
-- Backups of important files, tested | S pg-backup nist-contingency
+- Backups of important files, tested | S pg-backup nist-contingency >operations/backups
 ## Costs
 - Storage and transfer measured against the plan's limits | S aws-cost

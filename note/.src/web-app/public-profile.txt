@@ -6,7 +6,7 @@ also: design-system/accessibility
 - What the person has made or shared (posts, projects, reviews) | P
 - Join date and simple activity numbers | P
 - Links to their other profiles, marked as external | S wcag-link
-- Verified badges explained on hover or tap | S wcag-hover
+- Verified badges explained on hover or tap | S wcag-hover >design-system/badge
 ## Actions for visitors
 - Follow, message or contact, if the product has them | P
 - Share profile link | P
@@ -19,7 +19,7 @@ also: design-system/accessibility
 - Children's profiles private by default | L coppa
 ## Address and search
 - A readable address (/@name) that does not change silently | P
-- Person structured data where useful | S schema-person
+- Person structured data where useful | S schema-person >growth/technical-seo
 - Page title with the person's name | S wcag-title
 ## Access
 - Photo has alt text with the name, or is decorative beside the name | S wai-images

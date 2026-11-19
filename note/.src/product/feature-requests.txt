@@ -12,4 +12,4 @@ about: Collecting, sorting and answering what people ask the product to do.
 - Status shown (under review, planned, shipped, not planned) | P
 - People told when what they asked for ships | P
 ## Records
-- Personal data in requests handled under the privacy policy | L gdpr-5
+- Personal data in requests handled under the privacy policy | L gdpr-5 >website/privacy >backend/data-privacy

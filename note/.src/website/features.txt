@@ -4,24 +4,24 @@ about: Shows what the product does, feature by feature, so visitors can judge wh
 - A headline that names the main outcome, not the technology | R nng-scanning
 - Features grouped by job or by user type, not a long flat list | R nng-scanning
 - Each feature: a short name, one benefit line and a real screenshot or clip | R nng-scanning
-- A jump list or tabs for long pages | R nng-tabs
-- Headings in order, so the page reads as an outline | S wcag-headings wcag-info
+- A jump list or tabs for long pages | R nng-tabs >design-system/tabs
+- Headings in order, so the page reads as an outline | S wcag-headings wcag-info >design-system/accessibility
 ## Proof and detail
 - Real product screens, not mock art, kept current with the product | R nng-trust
 - A short customer quote or number next to the key features | R nng-reviews
 - Which plan includes each feature, linking to Pricing | R nng-pricing
 - Features still coming marked "Coming soon", never shown as available | L ftc-dark-patterns
 - Integrations listed with logos and a link to the full list | P
-- Links to docs or a help article for each feature | P
+- Links to docs or a help article for each feature | P >website/docs
 ## Action
 - One main action (Start free, Book a demo) repeated after each few sections | P
 - A secondary path for people not ready (watch a tour, see pricing) | P
 ## Media
 - Videos have captions, no sound on start, and a pause control | S wcag-captions wcag-audio wcag-pause
-- Animated demos can be paused, and respect the reduced-motion setting | S wcag-pause wcag-animation mdn-reduced-motion
-- Screenshots have alt text describing what they show | S wcag-nontext wai-images
+- Animated demos can be paused, and respect the reduced-motion setting | S wcag-pause wcag-animation mdn-reduced-motion >motion/motion-accessibility >motion/motion-system
+- Screenshots have alt text describing what they show | S wcag-nontext wai-images >design-system/accessibility
 - Images sized and lazy-loaded so the page stays fast | S webdev-lcp webdev-images
 - Space reserved for images so the page does not jump while loading | S webdev-cls
 ## Comparison
-- A feature table for products with many plans or editions | R nng-comparison
-- Plain words for each feature, with a short explanation on demand | P
+- A feature table for products with many plans or editions | R nng-comparison >design-system/table
+- Plain words for each feature, with a short explanation on demand | P >design-system/content-voice

@@ -11,7 +11,7 @@ COLUMNS
  5. Swimlanes (rows) by person, priority or project   (Practice)
 
 CARDS
- 6. Title, assignee photo, due date, labels and a small set of icons (comments, files)   (Research: nng-cards)
+ 6. Title, assignee photo, due date, labels and a small set of icons (comments, files)   (Research: nng-cards)  -> see web-app/comments
  7. Overdue shown by icon and word, not only red   (Standard: wcag-color)
  8. Labels have text, not only colour   (Standard: wcag-color)
  9. Click opens the card detail in a side panel or page with its own address   (Practice)
@@ -22,18 +22,18 @@ MOVING
 12. A clear drop place shown while dragging   (Research: nng-drag)
 13. Every drag has another way: a "Move to" menu or keyboard keys   (Standard: wcag-dragging, apg-menubutton)
 14. Moving to Done may ask for a reason or set fields, only when needed   (Practice)
-15. Undo after a move   (Research: nng-control)
+15. Undo after a move   (Research: nng-control)  -> see flows/undoing-an-action
 16. Changes from others appear live without moving the card under the person's hand   (Practice)
 
 FINDING
-17. Filter by person, label and due date; search   (Research: nng-filters)
-18. Quick "Only my cards" filter   (Practice)
-19. Switch to list or table view   (Practice)
+17. Filter by person, label and due date; search   (Research: nng-filters)  -> see flows/filtering-items
+18. Quick "Only my cards" filter   (Practice)  -> see flows/filtering-items
+19. Switch to list or table view   (Practice)  -> see web-app/data-table
 
 ACCESS
 20. Moving by keyboard announced ("Card moved to Doing, position 2")   (Standard: wcag-status)
-21. Columns are lists with headings; cards are list items   (Standard: wcag-info)
-22. On phones: one column at a time, swipe or tabs between columns   (Standard: wcag-reflow)
+21. Columns are lists with headings; cards are list items   (Standard: wcag-info)  -> see design-system/accessibility
+22. On phones: one column at a time, swipe or tabs between columns   (Standard: wcag-reflow)  -> see mobile/gesture-navigation, design-system/tabs, design-system/accessibility
 
 SPEED
 23. Smooth with hundreds of cards   (Standard: webdev-inp)

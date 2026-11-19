@@ -1,4 +1,4 @@
-Status: Product Checklists / 292 checklists, 4295 items in 14 groups (claude.ai/artifact/PU86W5cQykqVZQaQPJs8k4) / doing: nothing, waiting for Salem
+Status: Product Checklists / 293 checklists, 4313 items, 1184 links between them, in 14 groups (claude.ai/artifact/PU86W5cQykqVZQaQPJs8k4) / doing: nothing, waiting for Salem
 
 ## Running
 - Nothing running.

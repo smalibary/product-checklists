@@ -13,11 +13,11 @@ about: The spacing scale and layout grid that keep every screen evenly spaced an
 - Maximum content width so lines do not get too long | S butterick-line
 - Safe areas respected on phones with notches | S hig-layout android-edge
 ## Responsive behaviour
-- Content reflows to one column at 320 px wide without sideways scrolling | S wcag-reflow
-- Layout survives 200% zoom and bigger text | S wcag-resize
+- Content reflows to one column at 320 px wide without sideways scrolling | S wcag-reflow >design-system/accessibility
+- Layout survives 200% zoom and bigger text | S wcag-resize >design-system/accessibility
 - Logical properties (start, end) so layouts flip for Arabic | S mdn-logical w3c-dir
 ## Touch
-- Touch targets with space between them; at least 24 px, ideally 44 to 48 | S wcag-target hig-layout m3-layout
+- Touch targets with space between them; at least 24 px, ideally 44 to 48 | S wcag-target hig-layout m3-layout >design-system/accessibility
 ## Density
 - Comfortable and compact density options for data-heavy screens | S m3-layout
 ## Process

@@ -10,7 +10,7 @@ also: design-system/accessibility
 - Pending invites listed, can be resent or cancelled | P
 - Limits on invites per day | S owasp-dos
 ## Accepting
-- Existing accounts join with one click; new people sign up and land in the workspace | P
+- Existing accounts join with one click; new people sign up and land in the workspace | P >website/sign-up >web-app/workspace-switcher
 - The invite link works once and expires | S owasp-forgot
 ## Billing
 - Seat costs shown before inviting on paid plans | L ftc-junk-fees

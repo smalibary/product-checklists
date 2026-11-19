@@ -18,20 +18,20 @@ COMPARING
 10. The person's own usage shown next to each plan's limit   (Practice)
 
 CHANGING
-11. Upgrade shows prorated charge today and the next bill   (Rule: ftc-negative-option)
-12. Downgrade shows what will be lost or locked, and when it takes effect   (Rule: ftc-negative-option)
-13. Owners change plans; members can request   (Standard: owasp-authz)
+11. Upgrade shows prorated charge today and the next bill   (Rule: ftc-negative-option)  -> see web-app/upgrade
+12. Downgrade shows what will be lost or locked, and when it takes effect   (Rule: ftc-negative-option)  -> see web-app/upgrade
+13. Owners change plans; members can request   (Standard: owasp-authz)  -> see web-app/upgrade
 14. Contact sales for large plans, without hiding the price of smaller ones   (Practice)
 
 HONESTY
 15. No fake countdowns or "only 2 left"   (Rule: ftc-dark-patterns)
 16. Trial terms and auto-renewal stated before payment   (Rule: ftc-negative-option)
-17. Cancellation easy to find from here   (Rule: ftc-negative-option)
+17. Cancellation easy to find from here   (Rule: ftc-negative-option)  -> see flows/canceling-subscription
 
 ACCESS
-18. Comparison table with headers; ticks have text for screen readers   (Standard: wai-tables, wcag-nontext)
-19. Works at phone width (plans stack, table scrolls)   (Standard: wcag-reflow)
-20. Monthly/yearly switch is a real switch or radio group   (Standard: apg-radio)
+18. Comparison table with headers; ticks have text for screen readers   (Standard: wai-tables, wcag-nontext)  -> see web-app/data-table, design-system/accessibility
+19. Works at phone width (plans stack, table scrolls)   (Standard: wcag-reflow)  -> see web-app/data-table, design-system/accessibility
+20. Monthly/yearly switch is a real switch or radio group   (Standard: apg-radio)  -> see design-system/radio
 
 SOURCES
 - nng-comparison: https://www.nngroup.com/articles/comparison-tables/

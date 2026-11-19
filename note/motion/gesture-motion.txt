@@ -11,7 +11,7 @@ FOLLOWING
 FEEDBACK
  4. Edges resist with a soft rubber band   (Standard: hig-motion)
  5. Swipe actions show what will happen before release   (Research: nng-swipe)
- 6. Pull to refresh shows progress while pulling   (Standard: m3-progress)
+ 6. Pull to refresh shows progress while pulling   (Standard: m3-progress)  -> see mobile/pull-to-refresh
 
 ALTERNATIVES
  7. Every gesture has a button or menu alternative   (Standard: wcag-gestures, wcag-dragging)

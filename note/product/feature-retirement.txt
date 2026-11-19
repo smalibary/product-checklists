@@ -13,7 +13,7 @@ TELLING PEOPLE
  5. API users told with Deprecation and Sunset headers   (Standard: rfc-deprecation, rfc-sunset)
 
 LEAVING
- 6. A way to export their data   (Rule: gdpr-20)
+ 6. A way to export their data   (Rule: gdpr-20)  -> see flows/exporting-data
  7. An alternative suggested, or help to move   (Standard: govuk-retire)
  8. Paid plans adjusted or refunded fairly   (Rule: eu-consumer-rights)
 

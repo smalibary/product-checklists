@@ -7,7 +7,7 @@ about: The outside code your app is built on, kept up to date and trustworthy.
 - Prefer maintained, widely used packages; check their health score | S openssf-scorecard
 - Fewer dependencies where a small amount of own code will do | P
 ## Updating
-- Automatic alerts for known vulnerabilities | S owasp-dependencies
+- Automatic alerts for known vulnerabilities | S owasp-dependencies >operations/monitoring-alerts
 - Updates applied regularly in small steps, with tests | S owasp-dependencies
 - Critical fixes applied within days | S owasp-dependencies
 ## Supply chain

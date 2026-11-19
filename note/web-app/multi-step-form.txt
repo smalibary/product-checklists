@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 SHAPE
  1. Split only when the form is long or later questions depend on earlier answers   (Research: nng-wizards)
  2. One topic per step; one question per page for hard or unfamiliar questions   (Standard: govuk-question)
- 3. Steps named, with "Step 2 of 5" and a progress indicator   (Research: nng-progress)
+ 3. Steps named, with "Step 2 of 5" and a progress indicator   (Research: nng-progress)  -> see design-system/progress
  4. Before starting, say how long it takes and what to have ready   (Standard: govuk-question)
  5. A task list for long applications, so steps can be done in any order   (Standard: govuk-task-list)
 
@@ -20,7 +20,7 @@ MOVING
 CHECKING
 11. Errors checked when leaving a field or on Continue, never while typing the first time   (Research: baymard-inline)
 12. Error summary at the top of the step, linking to each field   (Standard: govuk-error-summary)
-13. Error message next to each field in words   (Standard: govuk-error-message, wcag-error)
+13. Error message next to each field in words   (Standard: govuk-error-message, wcag-error)  -> see flows/showing-input-error
 14. Answers already given are never asked again   (Standard: wcag-redundant)
 
 THE END
@@ -32,7 +32,7 @@ THE END
 ACCESS
 19. Focus moves to the step heading after Continue   (Standard: wcag-focus-order)
 20. Page title changes per step ("Step 2 of 5: Address")   (Standard: wcag-title)
-21. Labels, autofill and the right keyboard on every field   (Standard: wcag-labels, mdn-autocomplete, mdn-inputmode)
+21. Labels, autofill and the right keyboard on every field   (Standard: wcag-labels, mdn-autocomplete, mdn-inputmode)  -> see design-system/accessibility
 22. No time limit, or one that can be extended   (Standard: wcag-timing)
 
 SOURCES

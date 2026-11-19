@@ -10,11 +10,11 @@ about: Keeping a person signed in safely between requests.
 - "Sign out everywhere" and a list of active devices | S owasp-session
 - Password change ends all other sessions | S owasp-session
 ## Protection
-- Forms that change things protected against cross-site requests (SameSite plus tokens) | S owasp-csrf
+- Forms that change things protected against cross-site requests (SameSite plus tokens) | S owasp-csrf >code/secure-coding
 - Sensitive actions ask for the password again | S owasp-session
-- Session data stored server-side; nothing secret in the cookie | S owasp-session
+- Session data stored server-side; nothing secret in the cookie | S owasp-session >operations/secrets
 ## Tokens in apps
 - Phone apps keep tokens in the system's secure storage | S owasp-masvs
 - Refresh tokens change on each use; reuse of an old one ends the session | S rfc-oauth-security
 ## Records
-- Session starts and ends logged with device and place | S owasp-logging
+- Session starts and ends logged with device and place | S owasp-logging >operations/logging

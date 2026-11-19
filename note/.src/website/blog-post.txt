@@ -1,7 +1,7 @@
 title: Blog post
 about: A single article page, built for reading, sharing and finding the next article.
 ## Top of the article
-- Title as the only top-level heading | S wcag-headings
+- Title as the only top-level heading | S wcag-headings >design-system/accessibility
 - Author name with photo and a link to their page | R nng-blog
 - Date published and date updated | R nng-blog google-article
 - Reading time | P
@@ -9,23 +9,23 @@ about: A single article page, built for reading, sharing and finding the next ar
 ## Reading
 - Body text at least 16 pixels, line height about 1.5 | S wcag-spacing
 - Lines of about 50 to 75 characters | P butterick-line
-- Headings every few paragraphs, in order | S wcag-headings
+- Headings every few paragraphs, in order | S wcag-headings >design-system/accessibility
 - Short paragraphs, lists and bold key words | R nng-scanning
 - A contents list for long posts, with jump links | P
 - Links say where they go | S wcag-link
-- Images with alt text and captions; charts also described in words | S wcag-nontext
-- Code blocks scroll on their own on phones, never the whole page | S wcag-reflow
-- Text resizes to 200% without breaking | S wcag-resize
+- Images with alt text and captions; charts also described in words | S wcag-nontext >design-system/charts >design-system/accessibility
+- Code blocks scroll on their own on phones, never the whole page | S wcag-reflow >design-system/accessibility
+- Text resizes to 200% without breaking | S wcag-resize >design-system/accessibility
 - Dark mode respected if the site has one | P mdn-color-scheme
 ## Around the article
-- Share buttons that are links, not heavy trackers | P
+- Share buttons that are links, not heavy trackers | P >flows/sharing-a-link
 - Related posts at the end | R nng-blog
-- A sign-up for new posts, with consent rules | L gdpr-7
-- Category and tags linking to more | R nng-blog
+- A sign-up for new posts, with consent rules | L gdpr-7 >website/newsletter-signup
+- Category and tags linking to more | R nng-blog >design-system/tag-chip
 - Comments, if any, moderated | L eu-dsa
 ## Search and speed
-- Article structured data: headline, author, dates, image | S google-article
+- Article structured data: headline, author, dates, image | S google-article >growth/technical-seo
 - A unique title and description | S google-title google-snippet
-- Breadcrumbs for deep sites | S google-breadcrumb
+- Breadcrumbs for deep sites | S google-breadcrumb >design-system/breadcrumb
 - Images sized and lazy-loaded; the page does not jump | S webdev-images webdev-cls
 - Sponsored or affiliate links disclosed | L ftc-endorsements

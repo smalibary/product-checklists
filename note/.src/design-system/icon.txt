@@ -4,21 +4,21 @@ also: design-system/accessibility
 ## The set
 - One icon family with one style (line or filled, same stroke and corners) | S m3-icons hig-icons
 - Drawn on one grid (24 px with padding), with sizes 16, 20, 24 | S m3-icons
-- Filled versions used for selected states (tab bar) | S hig-icons
+- Filled versions used for selected states (tab bar) | S hig-icons >mobile/tab-bar-navigation
 - Every icon has a name and a meaning listed in the docs | P
 - Common meanings kept standard (magnifier is search, gear is settings) | R nng-icons
 ## Use
 - Icons with text labels; icon-only only for very common actions | R nng-icons
-- Icon-only buttons have a text name and a tooltip | S wcag-name-role apg-tooltip
+- Icon-only buttons have a text name and a tooltip | S wcag-name-role apg-tooltip >design-system/tooltip
 - One meaning per icon across the product | R nng-consistency
-- Directional icons (back, forward) flip in right-to-left; others like clocks do not | S w3c-dir
+- Directional icons (back, forward) flip in right-to-left; others like clocks do not | S w3c-dir >design-system/rtl-localisation
 ## Look
 - Icon colour 3:1 contrast when it carries meaning or is a control | S wcag-ui-contrast
-- Touch area at least 24 px, ideally 44, even when the icon is 16 | S wcag-target
-- Colour from role tokens, follows the theme | S dtcg-tokens
+- Touch area at least 24 px, ideally 44, even when the icon is 16 | S wcag-target >design-system/accessibility
+- Colour from role tokens, follows the theme | S dtcg-tokens >design-system/tokens
 ## Access
 - Decorative icons hidden from screen readers (aria-hidden) | S wai-images
-- Meaningful icons alone have a text name | S wcag-nontext
+- Meaningful icons alone have a text name | S wcag-nontext >design-system/accessibility
 - Icons as SVG, not icon fonts (they break with custom fonts and screen readers) | P
 - Icons still visible in Windows high-contrast mode (currentColor) | S mdn-forced-colors
 ## Delivery

@@ -5,10 +5,10 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 TRUST SUMMARY AT THE TOP
  1. One plain sentence that says what is protected and how, before any detail   (Practice)
- 2. Certifications held (SOC 2, ISO 27001, PCI DSS) shown with the year and scope, never a badge for one not held   (Rule: ftc-dark-patterns)
+ 2. Certifications held (SOC 2, ISO 27001, PCI DSS) shown with the year and scope, never a badge for one not held   (Rule: ftc-dark-patterns)  -> see design-system/badge
  3. A link to request the full audit report (often under a confidentiality agreement)   (Practice)
  4. A date showing when the page was last reviewed   (Practice)
- 5. A link to the live status page   (Practice)
+ 5. A link to the live status page   (Practice)  -> see website/status
 
 DATA PROTECTION
  6. Where data is stored (country or region) and which cloud providers are used   (Rule: gdpr-13, pdpl)
@@ -19,21 +19,21 @@ DATA PROTECTION
 11. A list of sub-processors (third parties that handle customer data), with a way to be told of changes   (Rule: gdpr-13)
 
 ACCESS AND ACCOUNTS
-12. Customer-side controls listed: two-step sign-in, single sign-on, roles, session timeout   (Standard: owasp-auth, owasp-mfa)
+12. Customer-side controls listed: two-step sign-in, single sign-on, roles, session timeout   (Standard: owasp-auth, owasp-mfa)  -> see web-app/2fa, backend/sessions
 13. Passkeys or other phishing-resistant sign-in offered or planned   (Standard: nist-63b-auth, webauthn)
-14. Staff access to customer data: least privilege, logged, reviewed   (Standard: owasp-authz, gdpr-32)
+14. Staff access to customer data: least privilege, logged, reviewed   (Standard: owasp-authz, gdpr-32)  -> see operations/logging
 15. How staff are vetted and trained in security   (Practice)
 
 APPLICATION AND INFRASTRUCTURE
-16. How the software is tested: code review, automatic scans, outside penetration tests and how often   (Standard: owasp-masvs)
+16. How the software is tested: code review, automatic scans, outside penetration tests and how often   (Standard: owasp-masvs)  -> see code/code-review
 17. Network protection named in plain terms (firewalls, DDoS protection) without giving attackers a map   (Practice)
-18. Logging and monitoring of suspicious activity   (Standard: owasp-logging)
-19. Secrets (keys, passwords) kept in a managed vault, never in code   (Standard: owasp-secrets)
+18. Logging and monitoring of suspicious activity   (Standard: owasp-logging)  -> see operations/logging
+19. Secrets (keys, passwords) kept in a managed vault, never in code   (Standard: owasp-secrets)  -> see operations/secrets
 
 INCIDENTS
 20. How customers are told about a breach, and how fast   (Rule: gdpr-33)
-21. A short incident-response outline: detect, contain, inform, review   (Practice)
-22. Past incidents or a link to post-incident reports, if the company publishes them   (Practice)
+21. A short incident-response outline: detect, contain, inform, review   (Practice)  -> see operations/incident-response
+22. Past incidents or a link to post-incident reports, if the company publishes them   (Practice)  -> see operations/incident-response
 
 REPORTING A WEAKNESS
 23. A clear way to report a vulnerability: an email or form, what to include, and what happens next   (Standard: owasp-disclosure)
@@ -44,9 +44,9 @@ REPORTING A WEAKNESS
 28. A PGP key or other way to send sensitive reports safely   (Standard: rfc-securitytxt)
 
 COMPLIANCE AND LEGAL
-29. Links to the privacy policy, data-processing agreement and terms   (Rule: gdpr-13)
-30. Laws the company follows named by region (GDPR, Saudi PDPL, CCPA)   (Rule: gdpr-13, pdpl, ccpa)
-31. Accessibility of the page itself: headings, contrast, readable without images   (Standard: wcag-headings, wcag-contrast)
+29. Links to the privacy policy, data-processing agreement and terms   (Rule: gdpr-13)  -> see website/privacy
+30. Laws the company follows named by region (GDPR, Saudi PDPL, CCPA)   (Rule: gdpr-13, pdpl, ccpa)  -> see backend/data-privacy
+31. Accessibility of the page itself: headings, contrast, readable without images   (Standard: wcag-headings, wcag-contrast)  -> see design-system/accessibility
 
 WRITING AND LAYOUT
 32. Written for a buyer, not an engineer: short sections, a jump list at the top   (Research: nng-scanning)

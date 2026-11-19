@@ -11,9 +11,9 @@ STRUCTURE
  5. Each role has a matching "on" colour for text on top (on-primary)   (Standard: m3-color)
 
 CONTRAST
- 6. Every text-on-background pair checked: 4.5:1 normal, 3:1 large   (Standard: wcag-contrast)
+ 6. Every text-on-background pair checked: 4.5:1 normal, 3:1 large   (Standard: wcag-contrast)  -> see design-system/accessibility
  7. Borders and icons of controls 3:1 against what is next to them   (Standard: wcag-ui-contrast)
- 8. APCA checked as a second view, especially for dark mode   (Standard: apca)
+ 8. APCA checked as a second view, especially for dark mode   (Standard: apca)  -> see design-system/dark-mode
  9. Contrast pairs listed in the documentation   (Practice)
 
 MEANING
@@ -23,13 +23,13 @@ MEANING
 13. Cultural meanings checked for the audience   (Practice)
 
 THEMES
-14. Light and dark themes from the same roles   (Standard: m3-color, hig-dark-mode)
-15. Dark mode uses dark grey surfaces, not pure black, with less saturated colours   (Standard: m3-color, hig-dark-mode)
+14. Light and dark themes from the same roles   (Standard: m3-color, hig-dark-mode)  -> see design-system/dark-mode
+15. Dark mode uses dark grey surfaces, not pure black, with less saturated colours   (Standard: m3-color, hig-dark-mode)  -> see design-system/dark-mode
 16. Follow the system theme by default, with a manual switch   (Standard: mdn-color-scheme)
 17. High-contrast mode and Windows forced colours still work   (Standard: mdn-forced-colors)
 
 CHARTS
-18. A separate set of chart colours that differ in lightness, not only hue   (Practice)
+18. A separate set of chart colours that differ in lightness, not only hue   (Practice)  -> see design-system/charts
 
 PROCESS
 19. Colours stored as tokens shared by design and code   (Standard: dtcg-tokens)

@@ -18,7 +18,7 @@ about: A control for choosing a date or a range of dates, by typing or from a ca
 - Hijri calendar shown where the audience needs it | P
 ## Keyboard and access
 - Arrow keys move by day, Page Up/Down by month, Home/End to week start and end | S apg-datepicker
-- Calendar is a dialog with a grid; focus moves in and back | S apg-datepicker
+- Calendar is a dialog with a grid; focus moves in and back | S apg-datepicker >design-system/modal
 - Each day read with full date ("Tuesday 3 March 2026") | S apg-datepicker
 - Escape closes without changing the value | S apg-datepicker
 ## Rules and errors

@@ -3,15 +3,15 @@ about: Articles that bring readers, answer questions and stay findable.
 ## Article page
 - A clear title and summary at the top | R nng-microcontent
 - Author, publish date and update date shown | S gsc-date
-- Article structured data | S google-article
+- Article structured data | S google-article >growth/technical-seo
 - Headings, short paragraphs and a table of contents for long posts | R nng-web-writing
-- Images with alt text and sizes set | S wcag-nontext webdev-images
+- Images with alt text and sizes set | S wcag-nontext webdev-images >design-system/accessibility
 ## Listing
 - Posts by topic or tag, with page-by-page lists | S gsc-links
 - Related posts at the end | P
 ## Sharing
-- Link preview tags on every post | S ogp
-- An RSS or Atom feed | S rfc-atom
+- Link preview tags on every post | S ogp >growth/link-previews
+- An RSS or Atom feed | S rfc-atom >web-app/feed
 ## Upkeep
 - Old posts reviewed; out-of-date ones updated or redirected | S google-helpful gsc-redirects
-- Comments, if any, moderated and marked ugc | L gsc-qualify
+- Comments, if any, moderated and marked ugc | L gsc-qualify >web-app/comments

@@ -4,14 +4,14 @@ also: design-system/accessibility
 ## When to use
 - For product-wide news or problems that persist (trial ends, payment failed, read-only mode) | S m3-banner
 - One banner at a time; more wait in line | S m3-banner
-- Not for messages about one action (use a toast) or one section (use an alert) | R nng-indicators
+- Not for messages about one action (use a toast) or one section (use an alert) | R nng-indicators >design-system/toast
 ## Content
 - One short sentence on what is happening | S govuk-notification
 - One or two actions (Update payment, Learn more) | S m3-banner
 - Dates and times with time zone where relevant | P
 ## Look
 - Kind shown by colour, icon and words (info, warning, error) | S wcag-color
-- Contrast for text and buttons meets WCAG | S wcag-contrast
+- Contrast for text and buttons meets WCAG | S wcag-contrast >design-system/accessibility
 - Stays at the top of the content, under the header | S m3-banner
 ## Behaviour
 - Can be closed if not critical; closed stays closed for that message | P

@@ -9,22 +9,22 @@ CARD DATA
 
 FLOW
  3. One payment intent per order, created on the server with the amount set by the server   (Standard: stripe-payment-intents)
- 4. An idempotency key on every create call   (Standard: stripe-idempotency)
+ 4. An idempotency key on every create call   (Standard: stripe-idempotency)  -> see api/idempotency
  5. Bank checks (3-D Secure) handled where required   (Rule: psd2-sca, stripe-3ds)
- 6. The order marked paid only from a signed webhook, not from the browser   (Standard: stripe-webhooks)
+ 6. The order marked paid only from a signed webhook, not from the browser   (Standard: stripe-webhooks)  -> see api/webhooks-receiving
 
 MONEY
- 7. Amounts as whole numbers in the smallest unit with a currency code   (Standard: iso-4217)
+ 7. Amounts as whole numbers in the smallest unit with a currency code   (Standard: iso-4217)  -> see backend/dates-money
  8. VAT added and shown correctly; e-invoices where required   (Rule: zatca-einvoice)
 
 AFTER PAYING
- 9. Refunds through the provider, linked to the original payment   (Standard: stripe-refunds)
+ 9. Refunds through the provider, linked to the original payment   (Standard: stripe-refunds)  -> see flows/requesting-a-refund
 10. Disputes tracked with evidence and deadlines   (Standard: stripe-disputes)
 11. Store subscriptions checked on the server with the store's notifications   (Standard: apple-server-notif, play-rtdn)
 
 RECORDS
 12. A ledger of every charge, refund and fee, matched to the provider each day   (Practice)
-13. Logs never contain card numbers or full bank details   (Standard: pci-dss, owasp-logging)
+13. Logs never contain card numbers or full bank details   (Standard: pci-dss, owasp-logging)  -> see operations/logging
 
 SOURCES
 - pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/

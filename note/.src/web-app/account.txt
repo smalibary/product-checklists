@@ -4,27 +4,27 @@ also: design-system/accessibility
 ## Profile
 - Name, photo and the details others see, with a preview | P
 - One full-name field, any characters | S w3c-names
-- Photo upload with crop, size and type limits stated | S owasp-upload
+- Photo upload with crop, size and type limits stated | S owasp-upload >design-system/file-upload
 ## Email and sign-in
-- Changing email sends a link to the new address and a notice to the old one | S owasp-auth
+- Changing email sends a link to the new address and a notice to the old one | S owasp-auth >flows/changing-email
 - Changing password asks for the current one | S owasp-auth
-- New password follows the same rules as sign-up (length, leaked-password check) | S nist-63b
+- New password follows the same rules as sign-up (length, leaked-password check) | S nist-63b >website/sign-up
 - Connected sign-in methods (Google, Apple, passkeys) listed, with add and remove | P
-- Cannot remove the last way to sign in | P
-- Two-step sign-in status and a link to set it up | S owasp-mfa
+- Cannot remove the last way to sign in | P >web-app/login
+- Two-step sign-in status and a link to set it up | S owasp-mfa >web-app/2fa
 ## Sessions and devices
-- Active sessions with device, place and last used | S owasp-session
-- Sign out of one session or all others | S owasp-session
+- Active sessions with device, place and last used | S owasp-session >backend/sessions
+- Sign out of one session or all others | S owasp-session >backend/sessions
 - Email notice on new sign-ins | S owasp-auth
 ## Your data
 - Download a copy of your data in a common format | L gdpr-15 gdpr-20
-- Delete account, easy to find, with what is deleted and when | L gdpr-17 apple-5.1.1 play-deletion
+- Delete account, easy to find, with what is deleted and when | L gdpr-17 apple-5.1.1 play-deletion >flows/deleting-account
 - Language, time zone and date format settings | P
 ## Saving and errors
 - Clear Save for forms, or save on change with a "Saved" message | S wcag-status
-- Unsaved changes warned before leaving | R nng-control
+- Unsaved changes warned before leaving | R nng-control >flows/saving-changes
 - Sensitive changes ask for the password or a code again | S owasp-auth
 - Errors next to the field in words | S wcag-error
 ## Access
-- Labels, autofill (name, email, new-password) and keyboard work | S wcag-labels mdn-autocomplete wcag-keyboard
-- Sections with headings and a side menu for long pages | S wcag-headings
+- Labels, autofill (name, email, new-password) and keyboard work | S wcag-labels mdn-autocomplete wcag-keyboard >design-system/accessibility
+- Sections with headings and a side menu for long pages | S wcag-headings >design-system/accessibility

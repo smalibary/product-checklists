@@ -1,15 +1,15 @@
 title: Popover
 about: A small floating panel tied to a button, for extra options or details.
 ## Use
-- For short, non-blocking content; use a dialog when a decision is needed | S hig-popovers
+- For short, non-blocking content; use a dialog when a decision is needed | S hig-popovers >design-system/modal
 - Not used for content people must read to continue | S hig-popovers
 ## Behaviour
 - Opens on click or tap, not on hover alone | S wcag-hover
 - Closes on Escape, on outside click and when the trigger is pressed again | S mdn-popover
 - Focus moves into it when it has controls, and back to the trigger when closed | S apg-dialog
-- Stays on screen at small sizes; repositions near edges | S wcag-reflow
+- Stays on screen at small sizes; repositions near edges | S wcag-reflow >design-system/accessibility
 ## Semantics
 - The trigger says it opens something (aria-expanded) | S apg-disclosure
 - Built on the browser's popover feature where possible | S mdn-popover
 ## Look
-- Clear edge and shadow, arrow pointing at its trigger | S m3-elevation
+- Clear edge and shadow, arrow pointing at its trigger | S m3-elevation >design-system/elevation

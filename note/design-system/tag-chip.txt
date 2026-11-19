@@ -17,8 +17,8 @@ INTERACTION
  7. Remove buttons named ("Remove Riyadh")   (Standard: wcag-label-name)
 
 LOOK
- 8. Text contrast meets 4.5:1   (Standard: wcag-contrast)
- 9. Tap targets at least 24 by 24 pixels   (Standard: wcag-target)
+ 8. Text contrast meets 4.5:1   (Standard: wcag-contrast)  -> see design-system/accessibility
+ 9. Tap targets at least 24 by 24 pixels   (Standard: wcag-target)  -> see design-system/accessibility
 
 SOURCES
 - govuk-tag: https://design-system.service.gov.uk/components/tag/

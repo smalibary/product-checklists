@@ -11,7 +11,7 @@ WAYS IN
  5. Magic link by email as an option, with the code too for other devices   (Practice)
 
 FIELDS
- 6. Labels, autocomplete username and current-password   (Standard: mdn-autocomplete, wcag-labels)
+ 6. Labels, autocomplete username and current-password   (Standard: mdn-autocomplete, wcag-labels)  -> see design-system/accessibility
  7. Paste and password managers allowed   (Standard: nist-63b, wcag-auth)
  8. Show password button   (Standard: nist-63b)
  9. Caps Lock warning   (Practice)
@@ -19,20 +19,20 @@ FIELDS
 ERRORS AND SAFETY
 10. Same message for wrong email or wrong password ("Email or password is wrong")   (Standard: owasp-auth)
 11. Limited tries per account and per address, then slow down; no permanent lockout by others   (Standard: owasp-auth, nist-63b)
-12. Two-step sign-in after the password where turned on   (Standard: owasp-mfa)
+12. Two-step sign-in after the password where turned on   (Standard: owasp-mfa)  -> see web-app/2fa
 13. Robot checks only after suspicious attempts, never the first time   (Standard: wcag-auth)
 14. Sign-in from a new device emailed   (Standard: owasp-auth)
 15. All over HTTPS, cookies Secure and HttpOnly   (Standard: owasp-session)
 
 STAYING SIGNED IN
 16. "Keep me signed in" for trusted devices   (Practice)
-17. Sessions end after a stated idle time, with a warning before   (Standard: owasp-session, wcag-timing)
+17. Sessions end after a stated idle time, with a warning before   (Standard: owasp-session, wcag-timing)  -> see backend/sessions
 18. After signing in, return to the page the person wanted   (Practice)
 19. Signed out in another tab: the others notice   (Practice)
 
 HELP
-20. Forgot password link next to the password field   (Standard: owasp-forgot)
-21. Link to sign up and to help   (Practice)
+20. Forgot password link next to the password field   (Standard: owasp-forgot)  -> see flows/resetting-password
+21. Link to sign up and to help   (Practice)  -> see website/sign-up
 
 ACCESS
 22. Errors next to fields and in a summary, focus moved there   (Standard: wcag-error, govuk-error-summary)

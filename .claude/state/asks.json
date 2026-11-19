@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 38,
+ "next": 39,
  "asks": [
   {
    "id": 2,
@@ -1047,6 +1047,72 @@
    "status": "done",
    "note": "Book drawing removed from the 404 example",
    "updated": "2026-11-19T22:12:31.115Z"
+  },
+  {
+   "id": 38,
+   "at": "2026-11-19T22:14:06.210Z",
+   "text": "i feel the checklist , need to be interconnected like header and footer should point to those footer checklist and header checklist and so on ... so update the whole list go item by item and do it ... like even accessbility we just removed we can keep it , but indicate to it instead of forcing it to every page etc!",
+   "status": "done",
+   "parts": [
+    {
+     "name": "website",
+     "done": true
+    },
+    {
+     "name": "web-app",
+     "done": true
+    },
+    {
+     "name": "design-system",
+     "done": true
+    },
+    {
+     "name": "motion",
+     "done": true
+    },
+    {
+     "name": "mobile",
+     "done": true
+    },
+    {
+     "name": "flows",
+     "done": true
+    },
+    {
+     "name": "api",
+     "done": true
+    },
+    {
+     "name": "backend",
+     "done": true
+    },
+    {
+     "name": "operations",
+     "done": true
+    },
+    {
+     "name": "code",
+     "done": true
+    },
+    {
+     "name": "growth",
+     "done": true
+    },
+    {
+     "name": "product",
+     "done": true
+    },
+    {
+     "name": "support",
+     "done": true
+    },
+    {
+     "name": "launch",
+     "done": true
+    }
+   ],
+   "note": "1184 links: items point to the checklist they mention; accessibility items point to the Accessibility checklist; new Header checklist",
+   "updated": "2026-11-19T22:25:41.753Z"
   }
  ]
 }

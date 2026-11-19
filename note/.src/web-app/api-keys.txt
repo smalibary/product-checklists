@@ -8,7 +8,7 @@ also: design-system/accessibility
 - The full key shown once, with a copy button and a warning to store it safely | S stripe-keys owasp-secrets
 - After leaving, only the last 4 characters are shown | S stripe-keys
 ## List
-- Table: name, last 4 characters, scopes, created, last used, expiry, created by | S github-tokens
+- Table: name, last 4 characters, scopes, created, last used, expiry, created by | S github-tokens >web-app/data-table
 - Unused and soon-to-expire keys flagged | S github-tokens
 ## Changing
 - Revoke (delete) a key at once, with a confirm naming it | R nng-confirm
@@ -16,13 +16,13 @@ also: design-system/accessibility
 - Restrict a key to certain addresses (IP list) | P
 ## Safety
 - Keys stored hashed on the server where possible | S owasp-secrets
-- Key creation, use from a new place and revoke are logged and emailed | S owasp-logging
-- Keys found leaked on public code (secret scanning) revoked and the owner told | S github-tokens
+- Key creation, use from a new place and revoke are logged and emailed | S owasp-logging >operations/logging
+- Keys found leaked on public code (secret scanning) revoked and the owner told | S github-tokens >operations/secrets
 - Only admins can create live keys | S owasp-authz
 - Sensitive actions ask for the password again | S owasp-auth
 ## Help
 - A quick-start code example using the new key | P
-- Link to the API docs and rate limits | P
+- Link to the API docs and rate limits | P >api/rate-limits
 ## Access
 - Copy button announces "Copied" | S wcag-status
-- Keys shown in a monospaced font with enough contrast | S wcag-contrast
+- Keys shown in a monospaced font with enough contrast | S wcag-contrast >design-system/accessibility

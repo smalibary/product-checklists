@@ -6,8 +6,8 @@ about: Things that move as the page scrolls: reveals, sticky headers, parallax.
 - Scroll-linked effects built with scroll-driven animation, not scroll events | S mdn-scroll-driven
 ## Limits
 - No scroll hijacking: the page scrolls at the person's speed | R nng-animation-usability
-- Parallax small and turned off for reduced motion | S wcag-animation a11yproject-vestibular
-- Sticky headers shrink smoothly and do not cover focused items | S wcag-obscured
+- Parallax small and turned off for reduced motion | S wcag-animation a11yproject-vestibular >motion/motion-accessibility
+- Sticky headers shrink smoothly and do not cover focused items | S wcag-obscured >website/header
 ## Performance
 - Only transform and opacity animated during scroll | S webdev-anim-perf
 - No layout shift as items reveal | S webdev-cls

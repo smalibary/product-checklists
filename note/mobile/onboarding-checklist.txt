@@ -16,11 +16,11 @@ PROGRESS
 
 PLACEMENT
  8. On the home screen as a card, can be collapsed   (Practice)
- 9. Can be hidden or skipped; reachable again from settings or help   (Research: nng-onboarding)
+ 9. Can be hidden or skipped; reachable again from settings or help   (Research: nng-onboarding)  -> see mobile/settings
 10. Never blocks using the app   (Research: nng-onboarding)
 
 PERMISSIONS IN THE LIST
-11. Notifications, contacts or location tasks open a pre-permission screen first   (Standard: hig-privacy, webdev-permissions)
+11. Notifications, contacts or location tasks open a pre-permission screen first   (Standard: hig-privacy, webdev-permissions)  -> see mobile/permission-prompts
 12. Saying no does not leave the checklist stuck: the task can be skipped   (Practice)
 
 ACCESS

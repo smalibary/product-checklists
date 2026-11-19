@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 MODEL
  1. A few clear default roles (owner, admin, member, viewer)   (Standard: owasp-authz)
- 2. What each role can do shown in a table   (Research: nng-tables)
+ 2. What each role can do shown in a table   (Research: nng-tables)  -> see web-app/data-table
  3. Custom roles only when the product needs them   (Practice)
 
 CHANGING
@@ -14,7 +14,7 @@ CHANGING
  6. The last owner cannot be removed   (Practice)
 
 SAFETY
- 7. Every change recorded in the audit trail   (Standard: owasp-logging)
+ 7. Every change recorded in the audit trail   (Standard: owasp-logging)  -> see web-app/audit-log
  8. Only admins see this screen; checks happen on the server   (Standard: owasp-authz)
  9. Least privilege by default for new members   (Standard: owasp-authz)
 

@@ -2,7 +2,7 @@ title: Requesting a refund (flow)
 about: Asking for money back on an order or subscription.
 also: design-system/accessibility
 ## Finding
-- From the order or billing page, clearly named | P
+- From the order or billing page, clearly named | P >web-app/billing
 ## Asking
 - Pick the items and a reason | P
 - The refund amount and method shown before sending | L eu-consumer-rights

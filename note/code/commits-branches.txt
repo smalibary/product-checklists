@@ -6,16 +6,16 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 COMMITS
  1. One logical change per commit   (Standard: git-book)
  2. A short summary line, then why it changed   (Standard: git-book)
- 3. A shared message format (feat, fix, docs) when release notes are generated   (Standard: conv-commits)
- 4. No secrets, built files or huge data in commits   (Standard: owasp-secrets)
+ 3. A shared message format (feat, fix, docs) when release notes are generated   (Standard: conv-commits)  -> see website/changelog
+ 4. No secrets, built files or huge data in commits   (Standard: owasp-secrets)  -> see operations/secrets
 
 BRANCHES
  5. Main always works; work happens on short-lived branches   (Standard: github-flow)
- 6. Branches merged through a reviewed pull request   (Standard: github-flow)
+ 6. Branches merged through a reviewed pull request   (Standard: github-flow)  -> see code/code-review
  7. Release versions tagged with version numbers   (Standard: semver)
 
 HISTORY
- 8. Breaking changes marked in the commit and release notes   (Standard: conv-commits, semver)
+ 8. Breaking changes marked in the commit and release notes   (Standard: conv-commits, semver)  -> see website/changelog
 
 SOURCES
 - git-book: https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project

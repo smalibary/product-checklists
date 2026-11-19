@@ -4,9 +4,9 @@ Backing: 0 Rule, 5 Standard, 3 Research, 0 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 CHOOSING
- 1. Bar with percent when the length is known; spinner when it is not   (Standard: m3-progress, hig-progress-indicators)
+ 1. Bar with percent when the length is known; spinner when it is not   (Standard: m3-progress, hig-progress-indicators)  -> see design-system/loading
  2. Nothing for waits under about 1 second   (Research: nng-response)
- 3. Skeletons for loading page content   (Research: nng-skeleton)
+ 3. Skeletons for loading page content   (Research: nng-skeleton)  -> see design-system/skeleton
 
 BEHAVIOUR
  4. Progress only moves forward   (Standard: hig-progress-indicators)
@@ -16,7 +16,7 @@ SEMANTICS
  6. progressbar role with the value, or a status message for screen readers   (Standard: apg-meter, wcag-status)
 
 MOTION
- 7. Animation respects reduced motion   (Standard: mdn-reduced-motion)
+ 7. Animation respects reduced motion   (Standard: mdn-reduced-motion)  -> see motion/motion-accessibility, motion/motion-system
 
 LOOK
  8. Enough contrast for the bar and its track   (Standard: wcag-ui-contrast)

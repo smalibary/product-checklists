@@ -14,15 +14,15 @@ also: design-system/accessibility
 - Limits stated in numbers (projects, storage, members) | P
 - The person's own usage shown next to each plan's limit | P
 ## Changing
-- Upgrade shows prorated charge today and the next bill | L ftc-negative-option
-- Downgrade shows what will be lost or locked, and when it takes effect | L ftc-negative-option
-- Owners change plans; members can request | S owasp-authz
+- Upgrade shows prorated charge today and the next bill | L ftc-negative-option >web-app/upgrade
+- Downgrade shows what will be lost or locked, and when it takes effect | L ftc-negative-option >web-app/upgrade
+- Owners change plans; members can request | S owasp-authz >web-app/upgrade
 - Contact sales for large plans, without hiding the price of smaller ones | P
 ## Honesty
 - No fake countdowns or "only 2 left" | L ftc-dark-patterns
 - Trial terms and auto-renewal stated before payment | L ftc-negative-option
-- Cancellation easy to find from here | L ftc-negative-option
+- Cancellation easy to find from here | L ftc-negative-option >flows/canceling-subscription
 ## Access
-- Comparison table with headers; ticks have text for screen readers | S wai-tables wcag-nontext
-- Works at phone width (plans stack, table scrolls) | S wcag-reflow
-- Monthly/yearly switch is a real switch or radio group | S apg-radio
+- Comparison table with headers; ticks have text for screen readers | S wai-tables wcag-nontext >web-app/data-table >design-system/accessibility
+- Works at phone width (plans stack, table scrolls) | S wcag-reflow >web-app/data-table >design-system/accessibility
+- Monthly/yearly switch is a real switch or radio group | S apg-radio >design-system/radio

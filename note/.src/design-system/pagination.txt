@@ -11,7 +11,7 @@ also: design-system/accessibility
 - A "View all" option when lists are short enough | R nng-pagination
 - Infinite scroll avoided where people need to find things again | R nng-infinite
 ## Look
-- Targets big enough to tap | S wcag-target
+- Targets big enough to tap | S wcag-target >design-system/accessibility
 - Inside a nav landmark with a name ("Pagination") | S apg-landmarks
 ## Access
 - Works by keyboard; link names say the page number | S wcag-link

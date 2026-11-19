@@ -14,11 +14,11 @@ WHAT IT SHOWS
 NEW USERS
  7. Getting-started checklist until done, then it goes away   (Practice)
  8. Templates and sample content   (Practice)
- 9. Empty sections teach, not just say "nothing here"   (Research: nng-empty)
+ 9. Empty sections teach, not just say "nothing here"   (Research: nng-empty)  -> see web-app/empty-state
 
 NAVIGATION
 10. Main menu in the same place as every other screen   (Standard: wcag-consistent)
-11. Workspace or team switch visible if the person is in several   (Practice)
+11. Workspace or team switch visible if the person is in several   (Practice)  -> see web-app/workspace-switcher
 12. Search reachable from here   (Research: nng-search)
 
 PERSONAL
@@ -26,7 +26,7 @@ PERSONAL
 14. Different home for different roles (admin, member)   (Practice)
 
 SPEED
-15. Loads fast; sections load on their own with skeletons   (Standard: webdev-lcp, nng-skeleton)
+15. Loads fast; sections load on their own with skeletons   (Standard: webdev-lcp, nng-skeleton)  -> see design-system/skeleton, operations/performance
 16. No layout jumping as sections arrive   (Standard: webdev-cls)
 
 ACCESS

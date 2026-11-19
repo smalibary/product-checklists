@@ -7,7 +7,7 @@ about: Movement that follows the finger: dragging, swiping, pulling, flicking.
 ## Feedback
 - Edges resist with a soft rubber band | S hig-motion
 - Swipe actions show what will happen before release | R nng-swipe
-- Pull to refresh shows progress while pulling | S m3-progress
+- Pull to refresh shows progress while pulling | S m3-progress >mobile/pull-to-refresh
 ## Alternatives
 - Every gesture has a button or menu alternative | S wcag-gestures wcag-dragging
 ## Back

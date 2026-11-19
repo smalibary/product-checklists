@@ -4,9 +4,9 @@ Backing: 0 Rule, 8 Standard, 7 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WHEN TO USE
- 1. Naming icon-only buttons, and short hints that are nice to have   (Research: nng-tooltip)
+ 1. Naming icon-only buttons, and short hints that are nice to have   (Research: nng-tooltip)  -> see design-system/icon
  2. Never for information people need to finish a task (put it on the page)   (Research: nng-tooltip)
- 3. Never for interactive content like links or buttons (use a popover)   (Standard: apg-tooltip)
+ 3. Never for interactive content like links or buttons (use a popover)   (Standard: apg-tooltip)  -> see design-system/popover
  4. Not on touch screens alone: they have no hover   (Research: nng-tooltip)
 
 CONTENT
@@ -16,7 +16,7 @@ CONTENT
 LOOK AND PLACE
  7. Close to the element, not covering it or what it relates to   (Research: nng-tooltip)
  8. Moves to stay on screen   (Practice)
- 9. Contrast meets WCAG   (Standard: wcag-contrast)
+ 9. Contrast meets WCAG   (Standard: wcag-contrast)  -> see design-system/accessibility
 10. An arrow pointing at the element is optional   (Practice)
 
 TIMING

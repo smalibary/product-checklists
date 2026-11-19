@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 PERMISSION
  1. Ask for camera access only when the person taps to use it   (Standard: hig-privacy, android-permissions)
- 2. A clear purpose string ("To scan your receipt")   (Standard: apple-usage)
+ 2. A clear purpose string ("To scan your receipt")   (Standard: apple-usage)  -> see mobile/permission-prompts
  3. If refused: explain and offer a button to settings, plus another way (pick from photos, type the code)   (Standard: android-permissions)
  4. Use the system photo picker to choose photos without asking for full library access   (Standard: hig-privacy, android-photo-picker)
 
@@ -14,12 +14,12 @@ CAPTURE SCREEN
  6. Flash, switch camera and close buttons with names   (Standard: hig-accessibility)
  7. Guides for scanning (a frame for documents, a square for QR)   (Practice)
  8. Auto-capture when a document or code is steady, with manual capture too   (Practice)
- 9. Feedback on success (sound or haptic and a visual mark)   (Standard: hig-feedback)
+ 9. Feedback on success (sound or haptic and a visual mark)   (Standard: hig-feedback)  -> see mobile/feedback
 
 AFTER CAPTURE
 10. Preview with Retake and Use photo   (Standard: hig-camera)
 11. Crop, rotate and simple fixes   (Practice)
-12. Upload with progress; works again if the connection drops   (Research: nng-progress)
+12. Upload with progress; works again if the connection drops   (Research: nng-progress)  -> see design-system/file-upload
 
 PRIVACY
 13. Location in photos removed unless needed and stated   (Rule: gdpr-25)
@@ -28,7 +28,7 @@ PRIVACY
 
 ACCESS
 16. VoiceOver and TalkBack users get spoken hints ("Document found, hold still")   (Standard: hig-accessibility)
-17. Alternatives for people who cannot use the camera (upload, type)   (Standard: wcag-gestures)
+17. Alternatives for people who cannot use the camera (upload, type)   (Standard: wcag-gestures)  -> see design-system/file-upload
 18. Works in both orientations where it makes sense   (Standard: wcag-orientation)
 
 SOURCES

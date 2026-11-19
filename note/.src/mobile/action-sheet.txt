@@ -3,7 +3,7 @@ about: A list of actions that slides up from the bottom of the phone screen, abo
 also: design-system/accessibility
 ## When to use
 - Choices about one item (Share, Edit, Delete) or confirming a destructive action | S hig-action-sheets
-- Android uses a bottom sheet or a menu for the same job | S m3-bottom-sheets m3-menus
+- Android uses a bottom sheet or a menu for the same job | S m3-bottom-sheets m3-menus >design-system/drawer
 - Not for long content or forms (use a full sheet or new screen) | R nng-bottom-sheet
 - Not for a simple yes/no that needs explanation (use an alert) | S hig-alerts
 ## Content
@@ -13,9 +13,9 @@ also: design-system/accessibility
 - A Cancel button at the bottom, separate from the rest | S hig-action-sheets
 - Few actions; long lists scroll | S hig-action-sheets
 ## Behaviour
-- Tap outside or swipe down closes it | S m3-bottom-sheets
+- Tap outside or swipe down closes it | S m3-bottom-sheets >mobile/gesture-navigation
 - Android back closes it | S android-back
-- On iPad and large screens it shows as a popover next to what was tapped | S hig-action-sheets
+- On iPad and large screens it shows as a popover next to what was tapped | S hig-action-sheets >design-system/popover
 - Destructive actions can be undone, or confirmed | R nng-confirm
 ## Look
 - Grabber handle on draggable sheets | S m3-bottom-sheets
@@ -23,5 +23,5 @@ also: design-system/accessibility
 - Rows at least 44 pt / 48 dp tall | S hig-layout m3-layout
 ## Access
 - Focus moves into the sheet and returns after | S hig-accessibility
-- Screen readers announce it as a menu or dialog with a title | S hig-accessibility
+- Screen readers announce it as a menu or dialog with a title | S hig-accessibility >design-system/modal
 - Large text grows the rows instead of cutting text | S hig-accessibility

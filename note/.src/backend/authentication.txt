@@ -13,9 +13,9 @@ about: How the server checks who someone is: passwords, codes, passkeys and sign
 ## Attacks
 - Attempts limited per account and per network address, with growing delays | S owasp-auth
 - The same answer whether or not the account exists | S owasp-auth
-- Password reset links random, single-use and short-lived | S owasp-forgot
+- Password reset links random, single-use and short-lived | S owasp-forgot >flows/resetting-password
 ## Records
-- Sign-ins, failures, resets and factor changes logged without the secrets | S owasp-logging
+- Sign-ins, failures, resets and factor changes logged without the secrets | S owasp-logging >operations/logging >operations/secrets
 - The user told by email about a new device or a changed password | S owasp-auth
 ## Checks
-- The design checked against OWASP ASVS level 2 | S owasp-asvs
+- The design checked against OWASP ASVS level 2 | S owasp-asvs >code/secure-coding

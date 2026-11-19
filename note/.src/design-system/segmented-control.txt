@@ -2,14 +2,14 @@ title: Segmented control
 about: A row of 2 to 5 joined buttons for switching between views or options.
 ## Use
 - For 2 to 5 related choices that switch a view at once | S hig-segmented m3-segmented
-- Not for navigation between pages; use tabs instead | S hig-segmented
+- Not for navigation between pages; use tabs instead | S hig-segmented >design-system/tabs
 ## Labels
 - Short text or icons with names, all the same kind | S hig-segmented
 ## Behaviour
 - One selected at a time, or several when marked as multi-select | S m3-segmented
 - Selection clear by more than colour | S wcag-color
 ## Semantics
-- Built as a radio group or toggle buttons | S apg-radio
+- Built as a radio group or toggle buttons | S apg-radio >design-system/radio
 ## Look
 - Equal widths; text does not wrap | S hig-segmented
-- Tap targets large enough | S wcag-target
+- Tap targets large enough | S wcag-target >design-system/accessibility

@@ -1,7 +1,7 @@
 title: FAQ page
 about: Answers the questions people really ask, so they do not have to contact support.
 ## Content
-- Questions taken from real support tickets and searches, not marketing points | R nng-faq
+- Questions taken from real support tickets and searches, not marketing points | R nng-faq >support/help-desk
 - Written in the customer's words | R nng-faq
 - Short, direct answers; the first sentence answers the question | R nng-faq
 - Links to longer help articles where needed | R nng-faq
@@ -9,17 +9,17 @@ about: Answers the questions people really ask, so they do not have to contact s
 - Most asked questions first | R nng-faq
 - Reviewed and dated; out-of-date answers removed | P
 ## Finding an answer
-- A search box over the questions on long pages | R nng-faq
+- A search box over the questions on long pages | R nng-faq >website/search
 - A list of all questions at the top that jumps to each answer | R nng-faq
 - Each question has its own link that can be shared | P
 ## Layout
-- Short lists may show all answers; long lists can fold into an accordion | R nng-accordion
-- Accordions are buttons with expanded and collapsed state | S apg-accordion
+- Short lists may show all answers; long lists can fold into an accordion | R nng-accordion >design-system/accordion
+- Accordions are buttons with expanded and collapsed state | S apg-accordion >design-system/accordion
 - Find-in-page still works with folded answers (hidden="until-found" or all open) | P
-- Headings in order | S wcag-headings
+- Headings in order | S wcag-headings >design-system/accessibility
 ## Next step
 - "Still need help?" with a contact link at the end | R nng-help
 - "Was this helpful?" on each answer to find weak ones | P
 ## Search
-- FAQ structured data where it still applies (Google now shows it mainly for government and health sites) | S google-faq
-- Contrast and phone width meet WCAG | S wcag-contrast wcag-reflow
+- FAQ structured data where it still applies (Google now shows it mainly for government and health sites) | S google-faq >growth/technical-seo
+- Contrast and phone width meet WCAG | S wcag-contrast wcag-reflow >design-system/accessibility

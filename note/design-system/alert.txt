@@ -5,19 +5,19 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 KINDS
  1. Info, success, warning and error, each with its own colour and icon   (Standard: govuk-notification)
- 2. Error alerts for page-level problems; field errors go next to fields   (Standard: govuk-error-summary, govuk-error-message)
- 3. Not for urgent questions that need an answer now (use an alert dialog)   (Standard: apg-alertdialog)
- 4. Not for passing messages (use a toast)   (Research: nng-indicators)
+ 2. Error alerts for page-level problems; field errors go next to fields   (Standard: govuk-error-summary, govuk-error-message)  -> see flows/showing-input-error
+ 3. Not for urgent questions that need an answer now (use an alert dialog)   (Standard: apg-alertdialog)  -> see design-system/modal
+ 4. Not for passing messages (use a toast)   (Research: nng-indicators)  -> see design-system/toast
 
 CONTENT
  5. A short title saying what happened   (Standard: govuk-notification)
  6. A sentence on what to do next, with a link or button if there is an action   (Research: nng-errors)
- 7. Plain words, no blame, no codes alone   (Research: nng-errors)
+ 7. Plain words, no blame, no codes alone   (Research: nng-errors)  -> see design-system/content-voice
 
 LOOK
  8. Kind shown by icon and words as well as colour   (Standard: wcag-color)
- 9. Icon has a text name ("Error:") or the title says it   (Standard: wcag-nontext)
-10. Text and icon contrast meet WCAG   (Standard: wcag-contrast, wcag-ui-contrast)
+ 9. Icon has a text name ("Error:") or the title says it   (Standard: wcag-nontext)  -> see design-system/accessibility
+10. Text and icon contrast meet WCAG   (Standard: wcag-contrast, wcag-ui-contrast)  -> see design-system/accessibility
 11. Placed near what it is about, usually at the top of the content   (Research: nng-errors)
 
 BEHAVIOUR

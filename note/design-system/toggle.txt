@@ -5,15 +5,15 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 WHEN TO USE
  1. A setting that applies immediately (Notifications on)   (Research: nng-toggle)
- 2. Not inside a form with a Save button (use a checkbox)   (Research: nng-toggle)
- 3. Not for choosing between two different things (use radios or a segmented control)   (Research: nng-toggle)
+ 2. Not inside a form with a Save button (use a checkbox)   (Research: nng-toggle)  -> see design-system/checkbox
+ 3. Not for choosing between two different things (use radios or a segmented control)   (Research: nng-toggle)  -> see design-system/radio, design-system/segmented-control
 
 LOOK
  4. Track and thumb; on and off clearly different by position and fill, not only colour   (Standard: wcag-color, m3-switch)
  5. An optional check icon inside the thumb when on   (Standard: m3-switch)
  6. Label on the start side says what is switched, not the state ("Email alerts")   (Research: nng-toggle)
  7. Track border and thumb 3:1 contrast in both states   (Standard: wcag-ui-contrast)
- 8. Touch area at least 24 px, ideally 44 to 48   (Standard: wcag-target, hig-toggles)
+ 8. Touch area at least 24 px, ideally 44 to 48   (Standard: wcag-target, hig-toggles)  -> see design-system/accessibility
 
 BEHAVIOUR
  9. Changes apply at once, with a short "Saved" message if it is saved to a server   (Standard: wcag-status)
@@ -23,10 +23,10 @@ BEHAVIOUR
 13. Disabled toggles explain why   (Practice)
 
 ACCESS
-14. role switch with aria-checked, or a native checkbox styled as a switch   (Standard: apg-switch)
+14. role switch with aria-checked, or a native checkbox styled as a switch   (Standard: apg-switch)  -> see design-system/checkbox
 15. Space toggles; Enter may too   (Standard: apg-switch)
-16. Label linked to the switch   (Standard: wcag-labels)
-17. Thumb moves to the other side in right-to-left   (Standard: w3c-dir)
+16. Label linked to the switch   (Standard: wcag-labels)  -> see design-system/accessibility
+17. Thumb moves to the other side in right-to-left   (Standard: w3c-dir)  -> see design-system/rtl-localisation
 
 SOURCES
 - nng-toggle: https://www.nngroup.com/articles/toggle-switch-guidelines/

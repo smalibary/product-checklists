@@ -13,7 +13,7 @@ INDEXING
  5. One main address per page, marked as canonical   (Standard: gsc-canonical)
  6. Private or thin pages marked noindex   (Standard: gsc-noindex)
  7. Moved pages send a permanent redirect   (Standard: gsc-redirects)
- 8. Missing pages return a real 404   (Standard: google-404)
+ 8. Missing pages return a real 404   (Standard: google-404)  -> see website/404
 
 PAGES
  9. Short, readable addresses with words, not ids   (Standard: gsc-url)

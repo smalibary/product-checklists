@@ -6,19 +6,19 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 DESIGN
  1. Shortcuts for the most frequent actions only   (Research: nng-shortcuts)
  2. Platform conventions followed (Ctrl on Windows, Cmd on Mac)   (Standard: hig-keyboards)
- 3. No clash with browser or screen-reader keys   (Standard: wcag-keyboard)
- 4. Single-letter shortcuts can be turned off or changed   (Standard: wcag-keyboard)
+ 3. No clash with browser or screen-reader keys   (Standard: wcag-keyboard)  -> see design-system/accessibility
+ 4. Single-letter shortcuts can be turned off or changed   (Standard: wcag-keyboard)  -> see design-system/accessibility
 
 FINDING
  5. A help screen listing all shortcuts, opened with ?   (Research: nng-shortcuts)
- 6. Shortcuts shown next to menu items and in tooltips   (Research: nng-shortcuts)
+ 6. Shortcuts shown next to menu items and in tooltips   (Research: nng-shortcuts)  -> see design-system/tooltip
 
 BEHAVIOUR
  7. Shortcuts do not fire while typing in a field   (Practice)
  8. Destructive shortcuts can be undone   (Research: nng-control)
 
 ACCESS
- 9. Everything a shortcut does can also be done another way   (Standard: wcag-keyboard)
+ 9. Everything a shortcut does can also be done another way   (Standard: wcag-keyboard)  -> see design-system/accessibility
 
 SOURCES
 - nng-shortcuts: https://www.nngroup.com/articles/ui-accelerators/

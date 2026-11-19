@@ -2,20 +2,20 @@ title: API rate limits
 about: Capping how much one caller can ask for, so one heavy user cannot slow or break the service for everyone.
 ## Limits
 - Limits per key or per user, and a lower one per network address for anonymous calls | S owasp-api-top10 owasp-dos
-- Stricter limits on costly or sensitive actions: sign-in, password reset, search, exports, AI calls | S owasp-auth owasp-api-top10
+- Stricter limits on costly or sensitive actions: sign-in, password reset, search, exports, AI calls | S owasp-auth owasp-api-top10 >flows/resetting-password >flows/exporting-data >backend/ai-features
 - Size limits too: body size, page size, file size, query depth | S owasp-api-top10
 - A timeout on every request, so slow work cannot pile up | S sre-overload
 ## Telling callers
 - 429 Too Many Requests with Retry-After | S rfc-429 rfc-retry-after
 - Headers with the limit, what is left and when it resets | S ietf-ratelimit github-rate-limits
-- Limits listed in the docs for each plan | S github-rate-limits
+- Limits listed in the docs for each plan | S github-rate-limits >api/api-docs
 ## Behaviour
 - Counted in one shared store, so all servers agree | P
 - Smooth counting (a sliding window or token bucket) so bursts cannot slip through at each reset | P
 - Under overload, the least important work is dropped first and core actions keep working | S sre-overload
 - Callers told to retry with growing waits and a random spread | S aws-backoff
 ## Costs
-- Anything that costs money per call (AI, SMS, email, maps) has a daily cap in code | S aws-cost owasp-llm
-- An alert when one caller or the whole service nears its cap | S sre-alerting
+- Anything that costs money per call (AI, SMS, email, maps) has a daily cap in code | S aws-cost owasp-llm >backend/ai-features >operations/cost-limits
+- An alert when one caller or the whole service nears its cap | S sre-alerting >operations/monitoring-alerts
 ## Abuse
-- Repeated hits on a limit are logged and reviewed | S owasp-logging
+- Repeated hits on a limit are logged and reviewed | S owasp-logging >operations/logging

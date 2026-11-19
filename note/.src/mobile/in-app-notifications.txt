@@ -6,18 +6,18 @@ also: design-system/accessibility
 - Each item: who, what, when, with a photo or icon | P
 - Unread marked by a dot and bold, not only colour | S wcag-color
 - Tap opens the right screen and marks it read | P
-- Swipe to delete or mark read, with buttons too | R nng-swipe wcag-dragging
+- Swipe to delete or mark read, with buttons too | R nng-swipe wcag-dragging >mobile/gesture-navigation
 - Mark all as read | P
-- Empty state: "You're all caught up" | R nng-empty
+- Empty state: "You're all caught up" | R nng-empty >mobile/empty-state
 ## Banners while the app is open
-- A short banner at the top for important new things, which goes away by itself | S hig-notifications
+- A short banner at the top for important new things, which goes away by itself | S hig-notifications >design-system/banner
 - Does not cover the main action or the keyboard | P
-- Tap opens it; swipe up dismisses | S hig-gestures
+- Tap opens it; swipe up dismisses | S hig-gestures >mobile/gesture-navigation
 - Not shown for the conversation the person is already in | P
 ## Volume and control
 - Similar items combined ("Sara and 3 others liked...") | R nng-notifications
 - Settings to choose topics, reachable from the list | R nng-notifications
-- App icon badge count matches the unread count | S hig-notifications
+- App icon badge count matches the unread count | S hig-notifications >design-system/badge
 ## Access
-- New banners announced by VoiceOver and TalkBack without moving focus | S hig-accessibility
-- Banners stay long enough to read, or can be found again in the list | S wcag-timing
+- New banners announced by VoiceOver and TalkBack without moving focus | S hig-accessibility >design-system/banner
+- Banners stay long enough to read, or can be found again in the list | S wcag-timing >design-system/banner

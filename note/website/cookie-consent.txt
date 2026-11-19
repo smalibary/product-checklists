@@ -10,7 +10,7 @@ WHEN
 THE BANNER
  3. Accept and Reject equally easy, on the first layer   (Rule: edpb-cookies)
  4. No ticked boxes in advance   (Rule: gdpr-7, edpb-cookies)
- 5. Plain words on what each kind does, with a link to details   (Rule: gdpr-12)
+ 5. Plain words on what each kind does, with a link to details   (Rule: gdpr-12)  -> see design-system/content-voice
  6. Does not block the page more than needed   (Standard: govuk-cookie)
 
 CHOICES
@@ -22,7 +22,7 @@ RECORDS
 10. Consent recorded with time and version   (Rule: gdpr-7)
 
 ACCESS
-11. The banner reachable by keyboard and read by screen readers   (Standard: wcag-keyboard)
+11. The banner reachable by keyboard and read by screen readers   (Standard: wcag-keyboard)  -> see design-system/banner, design-system/accessibility
 12. Focus not trapped and content not hidden behind it   (Standard: wcag-obscured)
 
 SOURCES

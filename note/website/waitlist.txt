@@ -5,22 +5,22 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 THE OFFER
  1. What they are joining and what they get when let in   (Practice)
- 2. How the waitlist works: first come, by invitation, by referral   (Practice)
+ 2. How the waitlist works: first come, by invitation, by referral   (Practice)  -> see mobile/referral
  3. A rough wait time, if the team can keep it   (Practice)
  4. Real numbers only; never invent a queue length   (Rule: ftc-dark-patterns)
 
 THE FORM
  5. Email only, or email plus one question that helps decide who goes first   (Research: baymard-fields)
- 6. Visible labels, the right keyboard and autofill   (Standard: wcag-labels, mdn-autocomplete)
+ 6. Visible labels, the right keyboard and autofill   (Standard: wcag-labels, mdn-autocomplete)  -> see design-system/accessibility
  7. Errors in words next to the field   (Standard: wcag-error)
- 8. What emails will be sent and a link to the privacy policy   (Rule: gdpr-13)
+ 8. What emails will be sent and a link to the privacy policy   (Rule: gdpr-13)  -> see website/privacy
  9. Consent for marketing separate from joining the list, unticked   (Rule: gdpr-7)
 
 AFTER JOINING
 10. A confirmation screen with the place in line, if shown   (Research: govuk-confirm)
 11. A confirmation email, with a way to leave the list   (Rule: can-spam)
-12. An optional "move up by inviting friends" with the referral rules written out   (Practice)
-13. Rewards for referrals that are honest and delivered   (Rule: ftc-dark-patterns)
+12. An optional "move up by inviting friends" with the referral rules written out   (Practice)  -> see mobile/referral
+13. Rewards for referrals that are honest and delivered   (Rule: ftc-dark-patterns)  -> see mobile/referral
 
 WHEN ACCESS OPENS
 14. An email invite with a clear first step and a link that works once   (Standard: owasp-auth)

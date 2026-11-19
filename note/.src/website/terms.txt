@@ -3,12 +3,12 @@ about: The legal agreement people accept to use the product.
 also: design-system/accessibility
 ## Content
 - Plain-language summary at the top | R nng-scanning
-- Headings and a table of contents | S wcag-headings
+- Headings and a table of contents | S wcag-headings >design-system/accessibility
 - Who you are, how to contact you, and which law applies | L eu-consumer-rights
-- Payment, renewal and cancellation terms spelled out | L ftc-negative-option
+- Payment, renewal and cancellation terms spelled out | L ftc-negative-option >flows/canceling-subscription
 - How accounts can be closed and data deleted | L gdpr-17
 ## Acceptance
-- Shown before accepting, with a link at sign-up | L eu-consumer-rights
+- Shown before accepting, with a link at sign-up | L eu-consumer-rights >website/sign-up
 - Acceptance recorded with the version and time | P
 ## Changes
 - A date and version on the page | P

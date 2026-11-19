@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 KINDS OF EMPTY
  1. First use (nothing created yet): explain what goes here and how to start   (Research: nng-empty)
- 2. No results (search or filter): say so and offer to clear filters or change the search   (Research: nng-empty)
+ 2. No results (search or filter): say so and offer to clear filters or change the search   (Research: nng-empty)  -> see flows/filtering-items
  3. All done (inbox zero): a short positive message   (Research: nng-empty)
  4. Error (could not load): say what failed and offer Retry; never show an empty list for an error   (Research: nng-errors)
  5. No permission: say who to ask   (Practice)
@@ -19,8 +19,8 @@ CONTENT
 11. A small illustration only if it does not push the action below the fold   (Practice)
 
 BEHAVIOUR
-12. Never shown while data is still loading (use loading state first)   (Research: nng-skeleton)
-13. Search terms and active filters stay visible on no-results   (Research: nng-search)
+12. Never shown while data is still loading (use loading state first)   (Research: nng-skeleton)  -> see design-system/loading
+13. Search terms and active filters stay visible on no-results   (Research: nng-search)  -> see flows/filtering-items
 14. Matches the layout of the filled screen, so it does not jump when data arrives   (Standard: webdev-cls)
 
 ACCESS

@@ -21,12 +21,12 @@ CONFIRMING
 
 AFTER
 11. Signed out, confirmation screen and email   (Practice)
-12. Grace period to undo (for example 30 days) said clearly, with how to undo   (Practice)
-13. Data deleted from all systems and backups within a stated time   (Rule: gdpr-17)
+12. Grace period to undo (for example 30 days) said clearly, with how to undo   (Practice)  -> see flows/undoing-an-action
+13. Data deleted from all systems and backups within a stated time   (Rule: gdpr-17)  -> see operations/backups
 14. Third parties told to delete   (Rule: gdpr-17)
 
 RULES
-15. GDPR right to erasure; Saudi PDPL also gives the right to destruction of personal data   (Rule: gdpr-17, pdpl)
+15. GDPR right to erasure; Saudi PDPL also gives the right to destruction of personal data   (Rule: gdpr-17, pdpl)  -> see backend/data-privacy
 
 ACCESS
 16. No time limit on the confirmation   (Standard: wcag-timing)

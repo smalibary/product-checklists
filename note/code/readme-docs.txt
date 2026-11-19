@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 README
  1. What it is and who it is for, in the first lines   (Standard: github-readme)
  2. How to install, run and test, as copyable commands   (Standard: github-readme)
- 3. Settings and environment variables listed   (Standard: twelve-factor)
+ 3. Settings and environment variables listed   (Standard: twelve-factor)  -> see operations/environments, operations/secrets
  4. How to get help and how to contribute   (Standard: github-readme)
  5. The licence named   (Standard: choose-license)
 
@@ -17,7 +17,7 @@ DOCS
  9. API reference generated from the code or spec   (Standard: openapi)
 
 UPKEEP
-10. Docs changed in the same commit as the code   (Practice)
+10. Docs changed in the same commit as the code   (Practice)  -> see code/commits-branches
 
 SOURCES
 - github-readme: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes

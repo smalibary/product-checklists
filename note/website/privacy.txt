@@ -20,15 +20,15 @@ REQUIRED CONTENT
 14. A "Do not sell or share my personal information" link where California law applies   (Rule: ccpa)
 
 CLARITY
-15. A short summary at the top in plain words, the full text below   (Rule: gdpr-12)
-16. Written in clear, plain language; no hidden meaning   (Rule: gdpr-12)
-17. Headings and a contents list to jump to a part   (Standard: wcag-headings)
+15. A short summary at the top in plain words, the full text below   (Rule: gdpr-12)  -> see design-system/content-voice
+16. Written in clear, plain language; no hidden meaning   (Rule: gdpr-12)  -> see design-system/content-voice
+17. Headings and a contents list to jump to a part   (Standard: wcag-headings)  -> see design-system/accessibility
 18. Available in the languages the service is offered in   (Rule: pdpl)
 19. Effective date and a list of changes   (Practice)
 20. People told by email when the policy changes in an important way   (Practice)
 
 ACCESS
-21. Linked from the footer of every page and from sign-up   (Practice)
+21. Linked from the footer of every page and from sign-up   (Practice)  -> see website/sign-up
 22. Readable as plain HTML (not only a PDF)   (Standard: wcag)
 23. A printable or downloadable version   (Practice)
 

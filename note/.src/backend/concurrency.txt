@@ -11,7 +11,7 @@ about: Keeping data right when many people or servers change the same thing at o
 ## Retries
 - Transactions that fail on conflict retried a few times with a wait | S pg-isolation aws-backoff
 ## Distributed work
-- Side effects (emails, payments) happen after the transaction commits, via an outbox | S outbox
-- Every message handler is idempotent | S aws-idempotent
+- Side effects (emails, payments) happen after the transaction commits, via an outbox | S outbox >backend/payments
+- Every message handler is idempotent | S aws-idempotent >api/idempotency
 ## Testing
 - Tests that run the same action in parallel | P

@@ -12,13 +12,13 @@ about: A window over the page that blocks it until the person finishes or closes
 - The safe choice is clear; dangerous action styled as dangerous | R nng-confirm
 ## Look
 - Dimmed backdrop over the page | S m3-dialogs
-- Centred on desktop; full screen or bottom sheet on phones | S m3-dialogs hig-sheets
+- Centred on desktop; full screen or bottom sheet on phones | S m3-dialogs hig-sheets >design-system/drawer
 - Close button with a name in the corner | S wcag-name-role
-- Width suits the content, with margins on small screens | S wcag-reflow
+- Width suits the content, with margins on small screens | S wcag-reflow >design-system/accessibility
 ## Behaviour
 - Escape closes it (except where data would be lost without warning) | S apg-dialog
 - Click on the backdrop closes non-critical modals | P
-- Unsaved changes warned before closing | R nng-control
+- Unsaved changes warned before closing | R nng-control >flows/saving-changes
 - No modals on top of modals | R nng-modal
 - Page behind does not scroll | P
 ## Focus and access
@@ -28,4 +28,4 @@ about: A window over the page that blocks it until the person finishes or closes
 - Role dialog with aria-modal and a name from the title | S apg-dialog
 - The native dialog element with showModal handles much of this | S mdn-dialog
 - Page behind is hidden from screen readers (inert) | S mdn-inert
-- Opening and closing motion respects reduced motion | S mdn-reduced-motion
+- Opening and closing motion respects reduced motion | S mdn-reduced-motion >motion/motion-accessibility

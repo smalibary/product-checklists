@@ -9,14 +9,14 @@ ADDRESSES
  3. An x-default for the language chooser   (Standard: gsc-hreflang)
 
 CONTENT
- 4. Whole pages translated, not just menus   (Standard: gsc-hreflang)
+ 4. Whole pages translated, not just menus   (Standard: gsc-hreflang)  -> see design-system/rtl-localisation
  5. Language set in the page's lang attribute   (Standard: wcag-lang)
- 6. Right-to-left pages mirrored for Arabic   (Standard: w3c-dir)
+ 6. Right-to-left pages mirrored for Arabic   (Standard: w3c-dir)  -> see design-system/rtl-localisation
  7. Dates, numbers and money in local formats   (Standard: mdn-intl)
 
 CHOICE
- 8. No forced redirects by location; offer a switch   (Standard: gsc-hreflang)
- 9. Each version listed in the sitemap   (Standard: gsc-sitemaps)
+ 8. No forced redirects by location; offer a switch   (Standard: gsc-hreflang)  -> see flows/switching-language
+ 9. Each version listed in the sitemap   (Standard: gsc-sitemaps)  -> see growth/technical-seo
 
 SOURCES
 - gsc-hreflang: https://developers.google.com/search/docs/specialty/international/localized-versions

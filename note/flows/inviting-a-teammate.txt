@@ -14,7 +14,7 @@ SENDING
  6. Limits on invites per day   (Standard: owasp-dos)
 
 ACCEPTING
- 7. Existing accounts join with one click; new people sign up and land in the workspace   (Practice)
+ 7. Existing accounts join with one click; new people sign up and land in the workspace   (Practice)  -> see website/sign-up, web-app/workspace-switcher
  8. The invite link works once and expires   (Standard: owasp-forgot)
 
 BILLING

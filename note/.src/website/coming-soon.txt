@@ -7,10 +7,10 @@ about: A holding page before a launch that says what is coming and collects inte
 - What the person will get by signing up (early access, a discount) | P
 - Company name and a way to contact | L eu-consumer-rights
 ## The email form
-- One field: email, with a visible label and the right input type | S wcag-labels mdn-autocomplete
+- One field: email, with a visible label and the right input type | S wcag-labels mdn-autocomplete >design-system/accessibility
 - Say exactly what emails will be sent and how often | L gdpr-13 can-spam
 - Consent box unticked by default where the law needs consent for marketing | L gdpr-7
-- A link to the privacy policy beside the form | L gdpr-13
+- A link to the privacy policy beside the form | L gdpr-13 >website/privacy
 - Confirmation on screen and by email; double opt-in where required | P
 - Errors shown in words next to the field | S wcag-error
 ## Countdown, if used
@@ -18,8 +18,8 @@ about: A holding page before a launch that says what is coming and collects inte
 - Countdown numbers not read aloud every second by screen readers | S wcag-status
 ## Search and status
 - Returns a normal page (status 200), with a real title and description | S google-title google-snippet
-- If the main site is down for a short while, use a maintenance page instead (status 503) | S google-maintenance
+- If the main site is down for a short while, use a maintenance page instead (status 503) | S google-maintenance >web-app/maintenance
 ## Look and access
-- Contrast and text size meet WCAG | S wcag-contrast
-- Any background video or animation can be paused and respects reduced motion | S wcag-pause mdn-reduced-motion
-- Works at phone width with no sideways scroll | S wcag-reflow
+- Contrast and text size meet WCAG | S wcag-contrast >design-system/accessibility
+- Any background video or animation can be paused and respects reduced motion | S wcag-pause mdn-reduced-motion >motion/motion-accessibility >motion/motion-system
+- Works at phone width with no sideways scroll | S wcag-reflow >design-system/accessibility

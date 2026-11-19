@@ -4,7 +4,7 @@ Backing: 1 Rule, 7 Standard, 0 Research, 8 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WAYS TO INVITE
- 1. Share a link through the system share sheet   (Standard: hig-share, android-sharesheet)
+ 1. Share a link through the system share sheet   (Standard: hig-share, android-sharesheet)  -> see flows/sharing-a-link
  2. Type an email or phone number   (Practice)
  3. Pick from contacts only after the person chooses it, with a reason   (Standard: hig-privacy, android-permissions)
  4. QR code to scan in person   (Practice)
@@ -31,7 +31,7 @@ RESPECT
 15. Contacts not uploaded or kept without consent   (Rule: gdpr-6)
 
 ACCESS
-16. Role choices as a list with radio buttons and names   (Standard: hig-accessibility)
+16. Role choices as a list with radio buttons and names   (Standard: hig-accessibility)  -> see design-system/radio
 
 SOURCES
 - hig-share: https://developer.apple.com/design/human-interface-guidelines/activity-views

@@ -5,8 +5,8 @@ about: Choosing what to build next in a way people can see and trust.
 - Scores for reach, impact, confidence and effort | P rice
 - Value against effort shown on a simple grid | R nng-prioritization
 ## Inputs
-- Goals and roadmap themes come first | R nng-roadmaps
-- Research and feedback, not the loudest voice | R nng-feedback
+- Goals and roadmap themes come first | R nng-roadmaps >product/roadmap
+- Research and feedback, not the loudest voice | R nng-feedback >product/user-feedback
 - Risk, legal and security work counted, not crowded out | P
 ## Output
 - A ranked list with the reasons beside each item | R nng-prioritization

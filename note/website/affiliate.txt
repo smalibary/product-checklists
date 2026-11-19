@@ -22,15 +22,15 @@ RULES AFFILIATES MUST FOLLOW
 
 TOOLS
 12. Links, banners and text ready to copy   (Practice)
-13. A dashboard showing clicks, sign-ups, sales and money owed   (Practice)
+13. A dashboard showing clicks, sign-ups, sales and money owed   (Practice)  -> see web-app/dashboard
 14. A contact for affiliate questions   (Research: nng-contact)
 
 TRUST
 15. Quotes or numbers from current affiliates (real, with permission)   (Rule: ftc-endorsements)
-16. FAQ on tax forms, payment methods and returns that cancel commission   (Research: nng-faq)
+16. FAQ on tax forms, payment methods and returns that cancel commission   (Research: nng-faq)  -> see website/faq
 
 ACCESSIBILITY
-17. Form fields with visible labels and clear errors   (Standard: wcag-labels, wcag-error)
+17. Form fields with visible labels and clear errors   (Standard: wcag-labels, wcag-error)  -> see design-system/accessibility
 
 SOURCES
 - baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields

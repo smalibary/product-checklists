@@ -704,3 +704,7 @@ gonzalez-animation https://doi.org/10.1145/238386.238396
 mdn-transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions
 mdn-easing https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function
 mdn-starting-style https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style
+nng-logo          https://www.nngroup.com/articles/logo-placement-brand-recall/
+nng-sticky        https://www.nngroup.com/articles/sticky-headers/
+nng-utility-nav   https://www.nngroup.com/articles/utility-navigation/
+nng-homepage-link https://www.nngroup.com/articles/homepage-links/

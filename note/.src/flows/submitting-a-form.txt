@@ -16,10 +16,10 @@ also: design-system/accessibility
 - Form not resent on refresh (redirect after sending) | P
 ## Failure
 - Server error: plain message, data kept, Try again | S wcag-error
-- Session expired: keep the data and sign in again | S wcag-timing
+- Session expired: keep the data and sign in again | S wcag-timing >web-app/login >backend/sessions
 ## Safety
 - Server checks everything again | S owasp-authz
-- Spam protection without robot puzzles that block people (honeypot, rate limits) | S wcag-auth
+- Spam protection without robot puzzles that block people (honeypot, rate limits) | S wcag-auth >api/rate-limits
 - CSRF protection | S owasp-csrf
 ## Access
 - Enter submits from a text field | S wcag-on-input

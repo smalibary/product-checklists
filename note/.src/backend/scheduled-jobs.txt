@@ -1,18 +1,18 @@
 title: Scheduled jobs
 about: Work that runs at set times, like reminders, reports and clean-ups.
 ## Timing
-- Times kept in UTC; local times turned into UTC with the time-zone database | S iana-tz
+- Times kept in UTC; local times turned into UTC with the time-zone database | S iana-tz >backend/dates-money
 - Daylight-saving gaps and repeats handled for local schedules | S iana-tz
 - Runs no more often than the data really changes | P
 ## Running once
-- A lock so only one server runs each job | S pg-locking
-- Safe to run twice and safe to skip a run | S aws-idempotent
+- A lock so only one server runs each job | S pg-locking >backend/concurrency
+- Safe to run twice and safe to skip a run | S aws-idempotent >api/idempotency
 - Missed runs (server down) caught up or skipped by a clear rule | P
 ## Work size
 - Work done in batches with limits, not all at once | P
 - Large jobs spread over time so they do not overload the database | S sre-overload
 ## Watching
-- Each run logged with its start, end and result | S otel
-- An alert when a job fails or does not run at all | S sre-alerting
+- Each run logged with its start, end and result | S otel >operations/logging
+- An alert when a job fails or does not run at all | S sre-alerting >operations/monitoring-alerts
 ## Costs
 - Copies in test and dev run less often, or not at all | S aws-cost

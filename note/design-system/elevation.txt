@@ -5,14 +5,14 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 LEVELS
  1. A small fixed set of levels (for example 0 to 5) as tokens   (Standard: m3-elevation, dtcg-tokens)
- 2. Each level has one job (cards, menus, dialogs)   (Standard: m3-elevation)
+ 2. Each level has one job (cards, menus, dialogs)   (Standard: m3-elevation)  -> see design-system/modal
 
 LOOK
- 3. Dark mode shows height with lighter surfaces, not only shadows   (Standard: m3-elevation, hig-dark-mode)
+ 3. Dark mode shows height with lighter surfaces, not only shadows   (Standard: m3-elevation, hig-dark-mode)  -> see design-system/dark-mode
  4. Borders as well as shadows where contrast is low   (Standard: wcag-ui-contrast)
 
 STACKING
- 5. A fixed order of layers (page, sticky bars, menus, dialogs, toasts)   (Practice)
+ 5. A fixed order of layers (page, sticky bars, menus, dialogs, toasts)   (Practice)  -> see design-system/toast, design-system/modal
  6. Overlays dim and block what is beneath   (Standard: apg-dialog)
 
 SOURCES

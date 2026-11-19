@@ -6,35 +6,35 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 PROFILE
  1. Name, photo and the details others see, with a preview   (Practice)
  2. One full-name field, any characters   (Standard: w3c-names)
- 3. Photo upload with crop, size and type limits stated   (Standard: owasp-upload)
+ 3. Photo upload with crop, size and type limits stated   (Standard: owasp-upload)  -> see design-system/file-upload
 
 EMAIL AND SIGN-IN
- 4. Changing email sends a link to the new address and a notice to the old one   (Standard: owasp-auth)
+ 4. Changing email sends a link to the new address and a notice to the old one   (Standard: owasp-auth)  -> see flows/changing-email
  5. Changing password asks for the current one   (Standard: owasp-auth)
- 6. New password follows the same rules as sign-up (length, leaked-password check)   (Standard: nist-63b)
+ 6. New password follows the same rules as sign-up (length, leaked-password check)   (Standard: nist-63b)  -> see website/sign-up
  7. Connected sign-in methods (Google, Apple, passkeys) listed, with add and remove   (Practice)
- 8. Cannot remove the last way to sign in   (Practice)
- 9. Two-step sign-in status and a link to set it up   (Standard: owasp-mfa)
+ 8. Cannot remove the last way to sign in   (Practice)  -> see web-app/login
+ 9. Two-step sign-in status and a link to set it up   (Standard: owasp-mfa)  -> see web-app/2fa
 
 SESSIONS AND DEVICES
-10. Active sessions with device, place and last used   (Standard: owasp-session)
-11. Sign out of one session or all others   (Standard: owasp-session)
+10. Active sessions with device, place and last used   (Standard: owasp-session)  -> see backend/sessions
+11. Sign out of one session or all others   (Standard: owasp-session)  -> see backend/sessions
 12. Email notice on new sign-ins   (Standard: owasp-auth)
 
 YOUR DATA
 13. Download a copy of your data in a common format   (Rule: gdpr-15, gdpr-20)
-14. Delete account, easy to find, with what is deleted and when   (Rule: gdpr-17, apple-5.1.1, play-deletion)
+14. Delete account, easy to find, with what is deleted and when   (Rule: gdpr-17, apple-5.1.1, play-deletion)  -> see flows/deleting-account
 15. Language, time zone and date format settings   (Practice)
 
 SAVING AND ERRORS
 16. Clear Save for forms, or save on change with a "Saved" message   (Standard: wcag-status)
-17. Unsaved changes warned before leaving   (Research: nng-control)
+17. Unsaved changes warned before leaving   (Research: nng-control)  -> see flows/saving-changes
 18. Sensitive changes ask for the password or a code again   (Standard: owasp-auth)
 19. Errors next to the field in words   (Standard: wcag-error)
 
 ACCESS
-20. Labels, autofill (name, email, new-password) and keyboard work   (Standard: wcag-labels, mdn-autocomplete, wcag-keyboard)
-21. Sections with headings and a side menu for long pages   (Standard: wcag-headings)
+20. Labels, autofill (name, email, new-password) and keyboard work   (Standard: wcag-labels, mdn-autocomplete, wcag-keyboard)  -> see design-system/accessibility
+21. Sections with headings and a side menu for long pages   (Standard: wcag-headings)  -> see design-system/accessibility
 
 SOURCES
 - w3c-names: https://www.w3.org/International/questions/qa-personal-names

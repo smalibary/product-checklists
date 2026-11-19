@@ -8,11 +8,11 @@ also: design-system/accessibility
 - No error for an empty field the person has not reached yet | R baymard-inline
 ## What the message says
 - What is wrong and how to fix it ("Enter a date like 21/03/2026") | S wcag-suggest
-- Plain words; no codes, no blame | R nng-errors
+- Plain words; no codes, no blame | R nng-errors >design-system/content-voice
 - Near the field, under it, tied to it for screen readers (aria-describedby) | S wcag-error
 ## How it looks
 - Red border plus an icon and text, not colour alone | S wcag-color
-- Contrast at least 3:1 for the border, 4.5:1 for the text | S wcag-ui-contrast wcag-contrast
+- Contrast at least 3:1 for the border, 4.5:1 for the text | S wcag-ui-contrast wcag-contrast >design-system/accessibility
 - Layout does not jump much when the message appears | P
 ## On submit
 - Summary at the top listing errors as links to each field | S govuk-error-summary
@@ -20,8 +20,8 @@ also: design-system/accessibility
 - Page title starts with "Error:" on full page forms | S govuk-error-summary
 - Everything typed is kept | S wcag-error
 ## Prevent errors
-- Accept many formats (spaces in card numbers, +966 or 05) | R baymard-fields
-- Hints before typing for format rules | S wcag-labels
+- Accept many formats (spaces in card numbers, +966 or 05) | R baymard-fields >flows/making-a-card-payment
+- Hints before typing for format rules | S wcag-labels >design-system/accessibility
 - Right keyboard and autofill | S mdn-inputmode mdn-autocomplete
 ## Access
 - Field marked invalid (aria-invalid) | S wcag-name-role

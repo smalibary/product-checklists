@@ -6,7 +6,7 @@ about: Keeping track of what the screen shows and fetching data without bugs.
 - No copying server data into local state without a reason | S react-effect
 ## Loading
 - Every fetch has loading, empty, error and success states on screen | R nng-empty nng-response
-- Repeated requests cached and shared, not fired twice | S rfc-caching
+- Repeated requests cached and shared, not fired twice | S rfc-caching >backend/caching
 - Old requests cancelled when the person moves on | S react-effect
 - Lists fetched page by page | S google-aip-pagination
 ## Changes

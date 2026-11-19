@@ -6,24 +6,24 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 THE SET
  1. One icon family with one style (line or filled, same stroke and corners)   (Standard: m3-icons, hig-icons)
  2. Drawn on one grid (24 px with padding), with sizes 16, 20, 24   (Standard: m3-icons)
- 3. Filled versions used for selected states (tab bar)   (Standard: hig-icons)
+ 3. Filled versions used for selected states (tab bar)   (Standard: hig-icons)  -> see mobile/tab-bar-navigation
  4. Every icon has a name and a meaning listed in the docs   (Practice)
  5. Common meanings kept standard (magnifier is search, gear is settings)   (Research: nng-icons)
 
 USE
  6. Icons with text labels; icon-only only for very common actions   (Research: nng-icons)
- 7. Icon-only buttons have a text name and a tooltip   (Standard: wcag-name-role, apg-tooltip)
+ 7. Icon-only buttons have a text name and a tooltip   (Standard: wcag-name-role, apg-tooltip)  -> see design-system/tooltip
  8. One meaning per icon across the product   (Research: nng-consistency)
- 9. Directional icons (back, forward) flip in right-to-left; others like clocks do not   (Standard: w3c-dir)
+ 9. Directional icons (back, forward) flip in right-to-left; others like clocks do not   (Standard: w3c-dir)  -> see design-system/rtl-localisation
 
 LOOK
 10. Icon colour 3:1 contrast when it carries meaning or is a control   (Standard: wcag-ui-contrast)
-11. Touch area at least 24 px, ideally 44, even when the icon is 16   (Standard: wcag-target)
-12. Colour from role tokens, follows the theme   (Standard: dtcg-tokens)
+11. Touch area at least 24 px, ideally 44, even when the icon is 16   (Standard: wcag-target)  -> see design-system/accessibility
+12. Colour from role tokens, follows the theme   (Standard: dtcg-tokens)  -> see design-system/tokens
 
 ACCESS
 13. Decorative icons hidden from screen readers (aria-hidden)   (Standard: wai-images)
-14. Meaningful icons alone have a text name   (Standard: wcag-nontext)
+14. Meaningful icons alone have a text name   (Standard: wcag-nontext)  -> see design-system/accessibility
 15. Icons as SVG, not icon fonts (they break with custom fonts and screen readers)   (Practice)
 16. Icons still visible in Windows high-contrast mode (currentColor)   (Standard: mdn-forced-colors)
 

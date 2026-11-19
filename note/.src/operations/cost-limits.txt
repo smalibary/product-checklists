@@ -4,13 +4,13 @@ about: Making every paid service last its whole billing period and never surpris
 - Each paid service listed with its plan, limits, reset date and which copies share them | S aws-cost
 - A daily budget per service (limit divided by days) | S aws-cost
 ## Capping
-- Code that spends per call (AI, SMS, email, maps) counts use and stops at a daily cap | S owasp-llm
+- Code that spends per call (AI, SMS, email, maps) counts use and stops at a daily cap | S owasp-llm >backend/ai-features
 - Retries give up after a few tries | S aws-backoff
-- Spending alerts and hard caps set in each provider's console | S aws-cost
+- Spending alerts and hard caps set in each provider's console | S aws-cost >operations/monitoring-alerts
 ## Cheap by design
 - Jobs start when there is work, not on fast timers | P
 - Test and dev copies use cheaper or separate accounts | S aws-cost
-- Repeated lookups and AI answers cached | S aws-cost
+- Repeated lookups and AI answers cached | S aws-cost >backend/caching >backend/ai-features
 - Unused servers, files and copies removed | S aws-cost
 ## Watching
-- Usage compared with the pace line each week; alerts at 50% and 80% when ahead of pace | S aws-cost
+- Usage compared with the pace line each week; alerts at 50% and 80% when ahead of pace | S aws-cost >operations/monitoring-alerts

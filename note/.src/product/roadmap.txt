@@ -4,9 +4,9 @@ about: A living plan of the problems the product will solve, now, next and later
 - Themes and problems, not a list of features with dates | R nng-roadmaps
 - Columns by time horizon: now, next, later | R nng-roadmaps
 - Each theme tied to a goal and how success is measured | R nng-roadmaps govuk-measure
-- Evidence behind each item (research, feedback, numbers) | R nng-roadmaps
+- Evidence behind each item (research, feedback, numbers) | R nng-roadmaps >product/user-feedback
 ## Making it
-- Built from goals, research and feedback, then prioritised | R nng-roadmaps nng-prioritization
+- Built from goals, research and feedback, then prioritised | R nng-roadmaps nng-prioritization >product/user-feedback
 - Priority method written down (for example reach, impact, confidence, effort) | P rice
 ## Sharing
 - A public version promises less than the internal one | P

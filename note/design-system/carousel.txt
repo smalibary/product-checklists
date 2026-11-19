@@ -9,20 +9,20 @@ WHEN TO USE
  3. Show part of the next slide so people know there is more   (Standard: m3-carousel)
 
 CONTROLS
- 4. Previous and next buttons with names, large enough to tap   (Standard: apg-carousel, wcag-target)
+ 4. Previous and next buttons with names, large enough to tap   (Standard: apg-carousel, wcag-target)  -> see design-system/accessibility
  5. Dots or "3 of 8" to show position; dots are buttons with names   (Standard: apg-carousel)
- 6. Swipe on touch, with buttons too   (Standard: wcag-dragging)
+ 6. Swipe on touch, with buttons too   (Standard: wcag-dragging)  -> see mobile/gesture-navigation
  7. Keyboard can reach the controls and each slide   (Standard: apg-carousel)
 
 AUTO-PLAY
  8. Avoid auto-play; if used, a visible pause button   (Standard: apg-carousel, wcag-pause)
- 9. Auto-play stops on hover, on focus, and for reduced motion   (Standard: apg-carousel, mdn-reduced-motion)
+ 9. Auto-play stops on hover, on focus, and for reduced motion   (Standard: apg-carousel, mdn-reduced-motion)  -> see motion/motion-accessibility
 10. Slides stay at least 5 seconds   (Research: nng-carousel)
 
 CONTENT
 11. Each slide makes sense alone   (Research: nng-carousel)
-12. Images have alt text   (Standard: wcag-nontext)
-13. Text on images keeps contrast (overlay)   (Standard: wcag-contrast)
+12. Images have alt text   (Standard: wcag-nontext)  -> see design-system/accessibility
+13. Text on images keeps contrast (overlay)   (Standard: wcag-contrast)  -> see design-system/accessibility
 14. Slides sized before images load, so nothing jumps   (Standard: webdev-cls)
 
 ACCESS

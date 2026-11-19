@@ -2,7 +2,7 @@ title: Tabs
 about: A row of labels that switch between views of related content in the same place.
 ## When to use
 - Switching between related views of the same thing (Overview, Activity, Settings) | S apg-tabs m3-tabs
-- Not for steps in order (use a stepper) or for main navigation of the app (use a nav bar) | R nng-tabs
+- Not for steps in order (use a stepper) or for main navigation of the app (use a nav bar) | R nng-tabs >design-system/stepper
 - Not when people need to compare content across tabs | R nng-tabs
 ## Look
 - Short labels, one or two words, in a single row | R nng-tabs
@@ -13,13 +13,13 @@ about: A row of labels that switch between views of related content in the same 
 ## Behaviour
 - Switching is instant; content keeps its state when coming back | R nng-tabs
 - Selected tab kept in the address when tabs are big views | P
-- Swipe between tabs on phones, with taps too | S m3-tabs
-- Counts or badges on tabs when useful ("Comments 3") | P
+- Swipe between tabs on phones, with taps too | S m3-tabs >mobile/gesture-navigation
+- Counts or badges on tabs when useful ("Comments 3") | P >design-system/badge
 ## Keyboard and access
 - Tab list, tab and tab panel roles; each tab controls its panel | S apg-tabs
 - Arrow keys move between tabs; Tab goes into the panel | S apg-tabs
 - Home and End jump to first and last | S apg-tabs
 - Selected tab marked aria-selected | S apg-tabs
 - Panel labelled by its tab | S apg-tabs
-- Arrows flip for right-to-left | S w3c-dir
-- Targets large enough to tap | S wcag-target
+- Arrows flip for right-to-left | S w3c-dir >design-system/rtl-localisation
+- Targets large enough to tap | S wcag-target >design-system/accessibility

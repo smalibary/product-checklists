@@ -9,7 +9,7 @@ DATA
  3. Conflicts resolved by a clear rule   (Standard: android-offline)
 
 TELLING PEOPLE
- 4. A quiet banner when offline, not an error on every screen   (Practice)
+ 4. A quiet banner when offline, not an error on every screen   (Practice)  -> see design-system/banner
  5. Actions that need a connection say so   (Research: nng-errors)
  6. Items waiting to send are marked   (Practice)
 
@@ -18,7 +18,7 @@ BEHAVIOUR
  8. No data lost when the app closes while offline   (Standard: android-offline)
 
 WEB
- 9. Service worker caches the shell and key data   (Standard: mdn-service-worker)
+ 9. Service worker caches the shell and key data   (Standard: mdn-service-worker)  -> see backend/caching
 
 SOURCES
 - android-offline: https://developer.android.com/topic/architecture/data-layer/offline-first

@@ -8,18 +8,18 @@ also: design-system/accessibility
 - Taxes (VAT) explained: whether prices include tax and how tax IDs are added | L eu-consumer-rights ftc-junk-fees
 ## Renewals and changes
 - Auto-renewal stated plainly, with the price after any discount ends | L ftc-negative-option
-- What happens on upgrade (charged the difference now) and downgrade (from next period) | P
+- What happens on upgrade (charged the difference now) and downgrade (from next period) | P >web-app/upgrade
 - Reminder email before a yearly renewal or trial end | L ftc-negative-option
 - How to cancel, in as few steps as it took to sign up | L ftc-negative-option eu-consumer-rights
 ## Refunds
-- Refund policy in plain words, including the EU 14-day right to withdraw where it applies | L eu-consumer-rights
-- How long a refund takes to arrive | P
+- Refund policy in plain words, including the EU 14-day right to withdraw where it applies | L eu-consumer-rights >flows/requesting-a-refund >design-system/content-voice
+- How long a refund takes to arrive | P >flows/requesting-a-refund
 ## Invoices and receipts
 - Where to find invoices, and that they can be downloaded as PDF | P
 - How to add a company name, address and tax ID to invoices | P
 - Invoices that meet the local e-invoice rules (for Saudi Arabia, ZATCA) | L zatca-einvoice
 ## Problems
 - What happens if a payment fails: retries, grace period, when access stops | P
-- Card security: card details handled by a PCI-certified payment provider | S pci-dss
+- Card security: card details handled by a PCI-certified payment provider | S pci-dss >flows/making-a-card-payment
 - A contact for billing questions | R nng-contact
-- FAQ for common questions | R nng-faq
+- FAQ for common questions | R nng-faq >website/faq

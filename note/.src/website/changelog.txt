@@ -7,11 +7,11 @@ also: design-system/accessibility
 - Written for users: what they can do now, not code names | S keepachangelog
 - Screenshots or short clips for visible changes | P
 ## Finding
-- Linked from the product and the footer | P
+- Linked from the product and the footer | P >website/footer
 - Each entry has its own address to share | P
 - RSS or email for people who want updates | P
 ## Honesty
 - Breaking changes and removals called out clearly | S keepachangelog semver
 - Security fixes listed | S keepachangelog
 ## Access
-- Headings per release and readable images | S wcag-headings wcag-nontext
+- Headings per release and readable images | S wcag-headings wcag-nontext >design-system/accessibility

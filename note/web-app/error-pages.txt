@@ -4,18 +4,18 @@ Backing: 0 Rule, 6 Standard, 2 Research, 3 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 KINDS
- 1. Not found (404), not allowed (403), signed out (401), server error (500), down for maintenance (503)   (Standard: rfc-http)
+ 1. Not found (404), not allowed (403), signed out (401), server error (500), down for maintenance (503)   (Standard: rfc-http)  -> see website/404
  2. The right status code sent with each page   (Standard: google-404)
 
 CONTENT
- 3. Plain words on what happened and what to do next   (Research: nng-errors)
+ 3. Plain words on what happened and what to do next   (Research: nng-errors)  -> see design-system/content-voice
  4. A way home, a search box and a contact link   (Research: nng-404)
  5. No technical details or stack traces   (Standard: owasp-errors)
  6. An error reference number support can look up   (Practice)
 
 SPECIFIC CASES
  7. Not allowed: who to ask for access   (Practice)
- 8. Signed out: sign in and return to the same page   (Practice)
+ 8. Signed out: sign in and return to the same page   (Practice)  -> see web-app/login
  9. Maintenance: when it will be back, with Retry-After   (Standard: google-maintenance)
 
 LOOK

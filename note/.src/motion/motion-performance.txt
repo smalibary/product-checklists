@@ -10,5 +10,5 @@ about: Keeping animation smooth at 60 frames a second on ordinary phones.
 - Animations paused when off screen or in a hidden tab | P
 ## Checking
 - Tested on a low-end phone with the frame counter on | P
-- Interaction speed (INP) not hurt by animations | S webdev-inp
+- Interaction speed (INP) not hurt by animations | S webdev-inp >operations/performance
 - No layout shift caused by animation | S webdev-cls

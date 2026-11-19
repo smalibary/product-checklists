@@ -2,25 +2,25 @@ title: Tab Bar Navigation
 about: The bar at the bottom of a phone app with the main sections (also called a bottom navigation bar or dock).
 also: design-system/accessibility
 ## Content
-- 3 to 5 tabs for the main top-level sections | S hig-tab-bars m3-nav-bar
+- 3 to 5 tabs for the main top-level sections | S hig-tab-bars m3-nav-bar >design-system/tabs
 - Each tab an icon and a short label, always shown | S hig-tab-bars m3-nav-bar
 - Labels one word where possible | R nng-mobile-nav
-- Tabs are places, not actions (no "New post" tab unless it is a clear exception) | S hig-tab-bars
+- Tabs are places, not actions (no "New post" tab unless it is a clear exception) | S hig-tab-bars >design-system/tabs
 - "More" tab only if really needed | R nng-mobile-nav
 ## Look
 - Selected tab clear by filled icon, colour and label, not colour alone | S wcag-color hig-tab-bars
-- Badges for counts on tabs | S m3-badges
+- Badges for counts on tabs | S m3-badges >design-system/tabs >design-system/badge
 - Bar sits above the home indicator safe area | S hig-layout android-edge
 - Visible on all top-level screens; hidden only in full-screen tasks | S hig-tab-bars
 ## Behaviour
 - Tapping a tab opens that section where the person left it | S hig-tab-bars
 - Tapping the current tab again scrolls to top or goes back to its root | S hig-tab-bars
-- No moving tabs around between screens | R nng-consistency
+- No moving tabs around between screens | R nng-consistency >design-system/tabs
 - Each tab keeps its own navigation history | S hig-tab-bars
 ## Platform
 - iOS: tab bar; Android: navigation bar (bottom) or rail on tablets | S hig-tab-bars m3-nav-bar
-- On tablets and large screens, a side rail or sidebar instead | S m3-nav-bar
+- On tablets and large screens, a side rail or sidebar instead | S m3-nav-bar >design-system/sidebar
 ## Access
 - Each tab has a name and says it is selected ("Home, tab, 1 of 5, selected") | S hig-accessibility
 - Labels stay readable with large text (bigger labels shown on long press on iOS) | S hig-accessibility
-- Order flips for right-to-left languages | S w3c-dir
+- Order flips for right-to-left languages | S w3c-dir >design-system/rtl-localisation

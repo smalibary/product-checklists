@@ -8,7 +8,7 @@ also: design-system/accessibility
 - Paste works | S wcag-on-input
 ## Applying
 - Busy state on Apply | P
-- Success: code shown as a removable tag with the saving | R baymard-coupon
+- Success: code shown as a removable tag with the saving | R baymard-coupon >design-system/tag-chip
 - Totals update at once, discount on its own line | L eu-consumer-rights
 ## Errors
 - Say why: expired, wrong code, minimum not reached, not for these items | S wcag-error
@@ -20,5 +20,5 @@ also: design-system/accessibility
 - Discount shown honestly against the real earlier price | L eu-omnibus
 ## Access
 - Result announced | S wcag-status
-- Field has a visible name | S wcag-labels
+- Field has a visible name | S wcag-labels >design-system/accessibility
 - Remove button named ("Remove code SAVE10") | S wcag-name-role

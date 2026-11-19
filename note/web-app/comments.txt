@@ -4,7 +4,7 @@ Backing: 1 Rule, 6 Standard, 1 Research, 14 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WRITING
- 1. A box with a clear label and a Send button; Enter behaviour stated (Enter sends or adds a line)   (Standard: wcag-labels)
+ 1. A box with a clear label and a Send button; Enter behaviour stated (Enter sends or adds a line)   (Standard: wcag-labels)  -> see design-system/accessibility
  2. Mention people with @, with suggestions as you type   (Standard: apg-combobox)
  3. Basic formatting, links, files and emoji   (Practice)
  4. Draft kept if the person leaves before sending   (Practice)
@@ -30,11 +30,11 @@ RULES
 16. Only the author edits; author and admins delete   (Standard: owasp-authz)
 17. Deleted comment leaves "Comment deleted" so replies make sense   (Practice)
 18. Report or hide abuse in public comments   (Rule: eu-dsa)
-19. Text escaped so it cannot run code (no script injection)   (Standard: owasp-xss)
+19. Text escaped so it cannot run code (no script injection)   (Standard: owasp-xss)  -> see code/secure-coding
 
 ACCESS
 20. New comments announced politely   (Standard: wcag-status)
-21. Each comment readable as one unit; the thread works by keyboard   (Standard: wcag-keyboard, wcag-info)
+21. Each comment readable as one unit; the thread works by keyboard   (Standard: wcag-keyboard, wcag-info)  -> see design-system/accessibility
 22. Times readable as exact times   (Practice)
 
 SOURCES

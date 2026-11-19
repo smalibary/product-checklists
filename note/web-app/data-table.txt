@@ -4,7 +4,7 @@ Backing: 0 Rule, 9 Standard, 11 Research, 4 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 STRUCTURE
- 1. Real table markup with column headers (and row headers where one column names the row)   (Standard: wai-tables, wcag-info)
+ 1. Real table markup with column headers (and row headers where one column names the row)   (Standard: wai-tables, wcag-info)  -> see design-system/accessibility
  2. A caption or heading that names the table   (Standard: wai-tables)
  3. Numbers right-aligned, text left-aligned, same decimals in a column   (Research: nng-tables)
  4. Units in the header, not in every cell   (Research: nng-tables)
@@ -13,28 +13,28 @@ STRUCTURE
 
 FINDING
  7. Sort by clicking a header, with the direction shown and announced (aria-sort)   (Standard: apg-table)
- 8. Filters above the table, with active filters shown as removable chips   (Research: nng-filters)
+ 8. Filters above the table, with active filters shown as removable chips   (Research: nng-filters)  -> see flows/filtering-items
  9. Search within the table   (Research: nng-tables)
-10. Pagination or virtual scrolling for large sets, with the total count   (Research: nng-infinite)
+10. Pagination or virtual scrolling for large sets, with the total count   (Research: nng-infinite)  -> see design-system/pagination
 11. Choose, reorder and resize columns; the choice is remembered   (Research: nng-tables)
 
 ACTING
-12. Select rows with checkboxes, select all on page and select all results   (Research: nng-tables)
+12. Select rows with checkboxes, select all on page and select all results   (Research: nng-tables)  -> see design-system/checkbox
 13. Bulk action bar appears with the count selected   (Practice)
 14. Row actions in a menu at the end of the row, also reachable by keyboard   (Standard: apg-menubutton)
 15. Clicking a row opens the item; the row is a link or has one   (Practice)
 16. Inline edit only for quick fields, with save and cancel   (Practice)
-17. Export to CSV or Excel   (Practice)
+17. Export to CSV or Excel   (Practice)  -> see web-app/import-export
 
 STATES
-18. Loading rows as skeletons   (Research: nng-skeleton)
+18. Loading rows as skeletons   (Research: nng-skeleton)  -> see design-system/skeleton
 19. Empty and no-results states with next steps   (Research: nng-empty)
 20. Errors per row (failed to save) next to the row   (Standard: wcag-error)
 
 ACCESS
 21. Keyboard moves through cells if the table is interactive (grid pattern)   (Standard: apg-grid)
 22. Status in words, not only colour   (Standard: wcag-color)
-23. On phones: scroll the table sideways inside its box, or show cards   (Standard: wcag-reflow)
+23. On phones: scroll the table sideways inside its box, or show cards   (Standard: wcag-reflow)  -> see design-system/accessibility
 24. Zebra stripes or row lines keep contrast   (Standard: wcag-ui-contrast)
 
 SOURCES

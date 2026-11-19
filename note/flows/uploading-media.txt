@@ -13,7 +13,7 @@ BEFORE SENDING
  5. Previews with remove for each   (Practice)
  6. Crop, rotate or trim where needed   (Practice)
  7. Wrong type or too large caught at once, per file   (Standard: wcag-error)
- 8. Location and camera details removed from photos unless needed   (Rule: gdpr-25)
+ 8. Location and camera details removed from photos unless needed   (Rule: gdpr-25)  -> see mobile/camera
 
 SENDING
  9. Progress per file with percent and cancel   (Research: nng-progress)
@@ -31,8 +31,8 @@ SAFETY
 
 ACCESS
 17. Progress and results announced   (Standard: wcag-status)
-18. Alt text field for images that will be shown to others   (Standard: wcag-nontext)
-19. Keyboard can reach choose, remove and cancel   (Standard: wcag-keyboard)
+18. Alt text field for images that will be shown to others   (Standard: wcag-nontext)  -> see design-system/accessibility
+19. Keyboard can reach choose, remove and cancel   (Standard: wcag-keyboard)  -> see design-system/accessibility
 
 SOURCES
 - wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements

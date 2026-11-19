@@ -10,13 +10,13 @@ SWITCHING
 
 COLOURS
  4. Dark grey surfaces rather than pure black   (Standard: m3-color)
- 5. Every colour pair checked for contrast in both themes   (Standard: wcag-contrast)
- 6. Colours defined as role tokens with a value per theme   (Standard: m3-tokens, dtcg-tokens)
+ 5. Every colour pair checked for contrast in both themes   (Standard: wcag-contrast)  -> see design-system/accessibility
+ 6. Colours defined as role tokens with a value per theme   (Standard: m3-tokens, dtcg-tokens)  -> see design-system/tokens
  7. Bright colours toned down to avoid glare   (Standard: hig-dark-mode)
 
 CONTENT
  8. Images and logos checked on dark backgrounds   (Practice)
- 9. Charts and status colours re-checked   (Standard: wcag-ui-contrast)
+ 9. Charts and status colours re-checked   (Standard: wcag-ui-contrast)  -> see design-system/charts
 
 RESEARCH
 10. Some people read better in light mode; keep both   (Research: nng-dark-mode)

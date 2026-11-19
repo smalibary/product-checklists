@@ -8,7 +8,7 @@ also: design-system/accessibility
 - Teach in context (hints when a feature is first used) rather than up front | R nng-onboarding
 ## Account
 - Let people look around before signing up where the app allows | S hig-onboarding
-- Sign up later, when needed (saving, buying) | S apple-review
+- Sign up later, when needed (saving, buying) | S apple-review >mobile/sign-up
 - Sign in with Apple offered if other social sign-ins are offered on iOS | S hig-sign-in-apple
 ## Setup questions
 - A few questions only if the answers shape the experience (interests, goals) | P
@@ -22,4 +22,4 @@ also: design-system/accessibility
 - Marketing and tracking consent separate, never pre-ticked | L gdpr-7
 - Age checks for apps with age limits | L coppa
 ## Access
-- Slides work with VoiceOver and TalkBack (swipe and buttons) | S hig-accessibility
+- Slides work with VoiceOver and TalkBack (swipe and buttons) | S hig-accessibility >mobile/gesture-navigation

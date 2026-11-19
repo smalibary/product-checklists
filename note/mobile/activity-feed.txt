@@ -11,13 +11,13 @@ ITEMS
 
 LOADING
  5. Newest first; "New posts" pill at the top instead of jumping the list   (Research: nng-infinite)
- 6. Pull to refresh   (Standard: hig-loading)
+ 6. Pull to refresh   (Standard: hig-loading)  -> see mobile/pull-to-refresh
  7. Endless scroll with a loading row; position kept when coming back   (Research: nng-infinite)
- 8. Skeleton rows on first load   (Research: nng-skeleton)
+ 8. Skeleton rows on first load   (Research: nng-skeleton)  -> see design-system/skeleton
  9. Images loaded small first, videos play muted only when visible, if at all   (Standard: hig-accessibility)
 
 CONTROL
-10. Filters (all, mentions, following) as tabs or chips   (Practice)
+10. Filters (all, mentions, following) as tabs or chips   (Practice)  -> see flows/filtering-items, design-system/tabs
 11. Hide, mute, or report an item from its menu   (Standard: apple-review)
 12. Chronological option where the order is ranked   (Practice)
 
@@ -26,11 +26,11 @@ HEALTHY USE
 14. "You're all caught up" at the end of new items   (Practice)
 
 OFFLINE
-15. Cached items shown with a notice   (Practice)
+15. Cached items shown with a notice   (Practice)  -> see backend/caching
 
 ACCESS
 16. Each item a single readable unit with actions as custom actions   (Standard: hig-accessibility)
-17. Autoplay can be turned off; reduced motion respected   (Standard: wcag-pause)
+17. Autoplay can be turned off; reduced motion respected   (Standard: wcag-pause)  -> see motion/motion-accessibility
 
 SOURCES
 - nng-notifications: https://www.nngroup.com/articles/push-notification/

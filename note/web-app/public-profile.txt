@@ -8,7 +8,7 @@ CONTENT
  2. What the person has made or shared (posts, projects, reviews)   (Practice)
  3. Join date and simple activity numbers   (Practice)
  4. Links to their other profiles, marked as external   (Standard: wcag-link)
- 5. Verified badges explained on hover or tap   (Standard: wcag-hover)
+ 5. Verified badges explained on hover or tap   (Standard: wcag-hover)  -> see design-system/badge
 
 ACTIONS FOR VISITORS
  6. Follow, message or contact, if the product has them   (Practice)
@@ -24,7 +24,7 @@ PRIVACY FOR THE OWNER
 
 ADDRESS AND SEARCH
 14. A readable address (/@name) that does not change silently   (Practice)
-15. Person structured data where useful   (Standard: schema-person)
+15. Person structured data where useful   (Standard: schema-person)  -> see growth/technical-seo
 16. Page title with the person's name   (Standard: wcag-title)
 
 ACCESS

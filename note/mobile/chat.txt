@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 CONVERSATION LIST
  1. Newest first: photo, name, last message, time, unread count   (Practice)
  2. Search across conversations   (Research: nng-search)
- 3. Swipe for archive, mute, delete, with a menu too   (Research: nng-swipe, wcag-dragging)
+ 3. Swipe for archive, mute, delete, with a menu too   (Research: nng-swipe, wcag-dragging)  -> see mobile/gesture-navigation
  4. Pinned conversations at the top   (Practice)
 
 CONVERSATION
@@ -22,17 +22,17 @@ MESSAGE BOX
 12. Keyboard never covers the box or the last message   (Standard: hig-layout)
 13. Attach photos, files, voice notes, location   (Practice)
 14. Draft kept when leaving the conversation   (Practice)
-15. Right-to-left and mixed Arabic and English text shown in the right direction per message   (Standard: w3c-dir)
+15. Right-to-left and mixed Arabic and English text shown in the right direction per message   (Standard: w3c-dir)  -> see design-system/rtl-localisation
 
 MEDIA
 16. Photos load as small previews first; tap opens full screen with zoom   (Practice)
 17. Voice notes with length and a play bar   (Practice)
-18. Upload progress and cancel   (Research: nng-progress)
+18. Upload progress and cancel   (Research: nng-progress)  -> see design-system/file-upload
 
 SAFETY AND PRIVACY
 19. Block and report from the conversation   (Standard: apple-review)
 20. End-to-end encryption where private messages are expected; say so   (Standard: owasp-masvs)
-21. Notifications can hide message text on the lock screen   (Standard: hig-notifications)
+21. Notifications can hide message text on the lock screen   (Standard: hig-notifications)  -> see mobile/in-app-notifications
 
 ACCESS
 22. New messages announced politely   (Standard: wcag-status)

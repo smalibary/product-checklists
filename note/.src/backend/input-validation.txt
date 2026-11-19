@@ -9,11 +9,11 @@ about: Checking everything that comes in before the server uses it.
 - Text normalised (Unicode NFC) before comparing or storing | S unicode-normalization owasp-input
 - Sizes capped: body, strings, arrays, file sizes | S owasp-api-top10
 ## Injection
-- Database queries always use parameters, never joined strings | S owasp-sql
+- Database queries always use parameters, never joined strings | S owasp-sql >backend/database-design
 - Output encoded for where it goes (HTML, address, JSON) | S owasp-xss
 - No user input in shell commands or file paths | S owasp-input
 - Addresses supplied by users fetched only through an allow-list (no internal addresses) | S owasp-ssrf
 - No reading of untrusted serialised objects | S owasp-deserialization
 - Redirects only to known addresses | S owasp-redirect
 ## Errors
-- Clear field errors to the caller, without internal details | S rfc-problem owasp-errors
+- Clear field errors to the caller, without internal details | S rfc-problem owasp-errors >flows/showing-input-error

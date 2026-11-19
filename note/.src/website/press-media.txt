@@ -18,6 +18,6 @@ also: design-system/accessibility
 - Rules for using the logo and the brand name | P
 - Image credits and permission to use stated | P
 ## Access
-- Photos and logos have alt text | S wcag-nontext
+- Photos and logos have alt text | S wcag-nontext >design-system/accessibility
 - Downloads labelled with type and size | S wcag-link
-- Reachable from the footer and About page | R nng-footers
+- Reachable from the footer and About page | R nng-footers >website/footer

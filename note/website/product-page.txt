@@ -6,27 +6,27 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 PICTURES
  1. Several large images, including scale and in-use shots   (Research: baymard-product)
  2. Zoom on tap or hover   (Research: baymard-product)
- 3. Images described for screen readers   (Standard: wcag-nontext)
+ 3. Images described for screen readers   (Standard: wcag-nontext)  -> see design-system/accessibility
 
 FACTS
- 4. Price with VAT and any fees shown before checkout   (Rule: ftc-junk-fees, eu-consumer-rights)
+ 4. Price with VAT and any fees shown before checkout   (Rule: ftc-junk-fees, eu-consumer-rights)  -> see web-app/checkout
  5. Options (size, colour) as visible choices, with unavailable ones marked   (Research: baymard-product)
  6. Stock and delivery date near the button   (Research: baymard-product)
  7. Specifications in a scannable list   (Research: nng-product-page)
  8. Returns and warranty summary near the price   (Research: baymard-product)
 
 BUYING
- 9. One clear Add to cart button that stays in reach on phones   (Research: baymard-product)
+ 9. One clear Add to cart button that stays in reach on phones   (Research: baymard-product)  -> see website/cart
 10. Confirmation after adding, without taking the person away   (Research: baymard-cart)
 
 REVIEWS
 11. Real reviews, with negative ones shown too   (Rule: ftc-reviews)
 
 SEARCH ENGINES
-12. Product structured data (price, availability, rating)   (Standard: google-product)
+12. Product structured data (price, availability, rating)   (Standard: google-product)  -> see growth/technical-seo
 
 ACCESS
-13. Option choices work by keyboard and say which is selected   (Standard: wcag-keyboard, wcag-name-role)
+13. Option choices work by keyboard and say which is selected   (Standard: wcag-keyboard, wcag-name-role)  -> see design-system/accessibility
 
 SOURCES
 - baymard-product: https://baymard.com/research/product-page

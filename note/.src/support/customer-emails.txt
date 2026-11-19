@@ -3,15 +3,15 @@ about: The emails the product sends to people: receipts, alerts, account message
 also: design-system/accessibility
 ## Content
 - Subject says what it is and what to do | R nng-microcontent
-- Plain words; one main action | S govuk-email
+- Plain words; one main action | S govuk-email >design-system/content-voice
 - Sender name people recognise | L can-spam
 ## Kinds
-- Account and receipt emails kept separate from marketing | L can-spam
+- Account and receipt emails kept separate from marketing | L can-spam >web-app/billing >backend/email-sending
 - Security emails for sign-in, password and email changes | S owasp-auth
 ## Delivery
-- SPF, DKIM and DMARC set up | S rfc-spf rfc-dkim rfc-dmarc
-- Bulk-sender rules met, one-click unsubscribe on marketing | S google-sender rfc-unsubscribe
+- SPF, DKIM and DMARC set up | S rfc-spf rfc-dkim rfc-dmarc >launch/domain-email-setup
+- Bulk-sender rules met, one-click unsubscribe on marketing | S google-sender rfc-unsubscribe >flows/unsubscribing-from-emails
 ## Access
-- Works without images, readable on phones, in light and dark | S wcag-contrast
+- Works without images, readable on phones, in light and dark | S wcag-contrast >design-system/accessibility
 ## Safety
 - No passwords or full card numbers in email | S owasp-auth

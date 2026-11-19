@@ -2,18 +2,18 @@ title: Deployment
 about: Putting new versions live safely and often, with a quick way back.
 ## Pipeline
 - Every change goes through the same automatic build, test and release steps | S sre-release
-- Builds are repeatable and produce one package used in every environment | S twelve-factor slsa
-- Settings come from the environment, not from code | S twelve-factor
+- Builds are repeatable and produce one package used in every environment | S twelve-factor slsa >operations/environments
+- Settings come from the environment, not from code | S twelve-factor >operations/environments
 ## Releasing
 - Small, frequent releases | S dora
 - Canary or gradual rollouts, watched before going wider | S sre-canary
 - One click or command to roll back | S sre-release
-- Database changes made compatible with old and new code | S fowler-parallel-change
+- Database changes made compatible with old and new code | S fowler-parallel-change >backend/database-design
 ## Checks
 - Health checks before traffic reaches a new version | S sre-release
-- Release notes and the version number visible | S keepachangelog
+- Release notes and the version number visible | S keepachangelog >website/changelog
 ## Security
-- Pipeline secrets kept in the secret store; steps run with least privilege | S owasp-cicd
+- Pipeline secrets kept in the secret store; steps run with least privilege | S owasp-cicd >operations/secrets
 - Only reviewed changes to main can deploy | S owasp-cicd
 ## Measure
 - Deploy frequency, lead time, change failure rate and time to restore tracked | S dora

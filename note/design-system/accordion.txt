@@ -4,7 +4,7 @@ Backing: 0 Rule, 12 Standard, 4 Research, 1 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 WHEN TO USE
- 1. Many sections where people need only some of them (FAQ, settings groups)   (Research: nng-accordion)
+ 1. Many sections where people need only some of them (FAQ, settings groups)   (Research: nng-accordion)  -> see website/faq
  2. Not when most people need all the content: show it open instead   (Research: nng-accordion)
  3. Not for very short content or for navigation menus   (Standard: govuk-accordion)
 
@@ -13,7 +13,7 @@ LOOK
  5. An icon (chevron or plus) that changes when open   (Standard: apg-accordion)
  6. Header and its content look connected   (Research: nng-accordion)
  7. "Show all sections" for long accordions   (Standard: govuk-accordion)
- 8. Enough space to tap the header   (Standard: wcag-target)
+ 8. Enough space to tap the header   (Standard: wcag-target)  -> see design-system/accessibility
 
 BEHAVIOUR
  9. Several sections can be open at once by default   (Research: nng-accordion)

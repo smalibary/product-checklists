@@ -15,8 +15,8 @@ EACH EMAIL
  7. Scannable layout that works on phones   (Research: nng-email)
 
 LEAVING
- 8. An unsubscribe link in every email, working in one step   (Rule: can-spam, nng-unsubscribe)
- 9. Unsubscribes honoured within 10 business days (quicker is better)   (Rule: can-spam)
+ 8. An unsubscribe link in every email, working in one step   (Rule: can-spam, nng-unsubscribe)  -> see flows/unsubscribing-from-emails
+ 9. Unsubscribes honoured within 10 business days (quicker is better)   (Rule: can-spam)  -> see flows/unsubscribing-from-emails
 
 DELIVERY
 10. Sender authentication set up and bulk-sender rules met   (Standard: google-sender, gmail-postmaster)

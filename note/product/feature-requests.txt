@@ -18,7 +18,7 @@ ANSWERING
  8. People told when what they asked for ships   (Practice)
 
 RECORDS
- 9. Personal data in requests handled under the privacy policy   (Rule: gdpr-5)
+ 9. Personal data in requests handled under the privacy policy   (Rule: gdpr-5)  -> see website/privacy, backend/data-privacy
 
 SOURCES
 - nng-feedback: https://www.nngroup.com/articles/user-feedback/

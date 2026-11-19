@@ -7,7 +7,7 @@ PEOPLE
  1. Real photos taken in a consistent style   (Research: nng-about, nng-trust)
  2. Name, role and a short line about each person   (Research: nng-about)
  3. Leaders first, then teams grouped by function   (Practice)
- 4. Optional links to each person's public profile   (Practice)
+ 4. Optional links to each person's public profile   (Practice)  -> see web-app/public-profile
  5. Each person agreed to be shown; a way to be removed   (Rule: gdpr-7, gdpr-17)
  6. No personal email or phone without consent   (Rule: gdpr-25)
 
@@ -17,10 +17,10 @@ CULTURE
  9. A link to open jobs   (Research: nng-careers)
 
 LAYOUT AND ACCESS
-10. A grid that reflows to one column on phones   (Standard: wcag-reflow)
-11. Each photo has alt text with the person's name; hover-only extra info also works by keyboard and tap   (Standard: wcag-nontext, wcag-hover)
-12. Names and roles are text, not part of an image   (Standard: wcag-nontext)
-13. Person structured data for leaders if useful   (Standard: schema-person)
+10. A grid that reflows to one column on phones   (Standard: wcag-reflow)  -> see design-system/accessibility
+11. Each photo has alt text with the person's name; hover-only extra info also works by keyboard and tap   (Standard: wcag-nontext, wcag-hover)  -> see design-system/accessibility
+12. Names and roles are text, not part of an image   (Standard: wcag-nontext)  -> see design-system/accessibility
+13. Person structured data for leaders if useful   (Standard: schema-person)  -> see growth/technical-seo
 
 SOURCES
 - nng-about: https://www.nngroup.com/articles/about-us-information-on-websites/

@@ -4,12 +4,12 @@ also: design-system/accessibility
 ## Before planned work
 - Warned ahead in the app and by email: date, start time with time zone, how long, what stops working | P
 - Planned at a quiet time for most users | P
-- A banner a day before and an hour before, which can be closed | P
-- Listed on the status page | S atlassian-incident
+- A banner a day before and an hour before, which can be closed | P >design-system/banner
+- Listed on the status page | S atlassian-incident >website/status
 ## The page itself
 - Says plainly that the app is down for maintenance, and that data is safe | P
 - When it should be back, with time zone | P
-- Link to the status page and support contact | S atlassian-incident
+- Link to the status page and support contact | S atlassian-incident >website/status
 - Branded but light: loads without the main app's servers | P
 - Returns HTTP status 503 with a Retry-After header, so search engines do not drop pages | S google-maintenance rfc-retry-after
 - Checks by itself and reloads when the app is back | P

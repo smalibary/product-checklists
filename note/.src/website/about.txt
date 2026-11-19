@@ -3,7 +3,7 @@ about: Tells visitors who the company is, why it exists and why they can trust i
 ## Who and why
 - One sentence on what the company does and for whom, at the top | R nng-about
 - The story: when and why it started, in a few short paragraphs | R nng-about
-- Mission or purpose in plain words, not slogans | R nng-about
+- Mission or purpose in plain words, not slogans | R nng-about >design-system/content-voice
 - What makes the company different, with facts | R nng-trust
 ## People
 - Founders and leaders with real photos, names and roles | R nng-about nng-trust
@@ -20,8 +20,8 @@ about: Tells visitors who the company is, why it exists and why they can trust i
 - Links to Careers, Press and Contact | P
 ## Writing and layout
 - Short paragraphs, headings and lists for scanning | R nng-scanning
-- Headings that say what each part is about | S wcag-headings
-- Images have alt text that describes them; decorative ones are hidden from screen readers | S wcag-nontext wai-images
-- Text contrast meets 4.5 to 1 | S wcag-contrast
-- Organization structured data (name, logo, address, links) | S schema-org
+- Headings that say what each part is about | S wcag-headings >design-system/accessibility
+- Images have alt text that describes them; decorative ones are hidden from screen readers | S wcag-nontext wai-images >design-system/accessibility
+- Text contrast meets 4.5 to 1 | S wcag-contrast >design-system/accessibility
+- Organization structured data (name, logo, address, links) | S schema-org >growth/technical-seo
 - Page title that names the company | S wcag-title

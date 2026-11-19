@@ -10,8 +10,8 @@ USE
 
 LIMITS
  4. No scroll hijacking: the page scrolls at the person's speed   (Research: nng-animation-usability)
- 5. Parallax small and turned off for reduced motion   (Standard: wcag-animation, a11yproject-vestibular)
- 6. Sticky headers shrink smoothly and do not cover focused items   (Standard: wcag-obscured)
+ 5. Parallax small and turned off for reduced motion   (Standard: wcag-animation, a11yproject-vestibular)  -> see motion/motion-accessibility
+ 6. Sticky headers shrink smoothly and do not cover focused items   (Standard: wcag-obscured)  -> see website/header
 
 PERFORMANCE
  7. Only transform and opacity animated during scroll   (Standard: webdev-anim-perf)

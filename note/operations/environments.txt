@@ -6,14 +6,14 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 SEPARATION
  1. Dev, test and production in separate accounts or projects   (Standard: twelve-factor, aws-wa)
  2. No production data in dev or test; fake or masked data instead   (Rule: gdpr-5)
- 3. Different secrets and keys in each   (Standard: owasp-secrets)
+ 3. Different secrets and keys in each   (Standard: owasp-secrets)  -> see operations/secrets
 
 SAMENESS
  4. The same build runs in every environment; only settings differ   (Standard: twelve-factor)
  5. Infrastructure described as code   (Standard: aws-wa)
 
 ACCESS
- 6. Production access limited to few people, logged, and time-limited   (Standard: owasp-authz)
+ 6. Production access limited to few people, logged, and time-limited   (Standard: owasp-authz)  -> see operations/logging
  7. Test copies not open to the public, or protected by sign-in   (Practice)
 
 COSTS

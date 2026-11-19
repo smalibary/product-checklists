@@ -23,14 +23,14 @@ LOOK
 13. Empty cells show a dash with a screen-reader word ("None")   (Practice)
 
 RESPONSIVE
-14. On small screens: scroll inside its own box, with the first column fixed   (Standard: wcag-reflow)
+14. On small screens: scroll inside its own box, with the first column fixed   (Standard: wcag-reflow)  -> see design-system/accessibility
 15. Or turn rows into stacked cards for simple tables   (Practice)
-16. The scroll box can take focus so keyboard users can scroll it   (Standard: wcag-keyboard)
+16. The scroll box can take focus so keyboard users can scroll it   (Standard: wcag-keyboard)  -> see design-system/accessibility
 
 INTERACTIVE TABLES
 17. Sortable headers are buttons with aria-sort   (Standard: apg-table)
 18. If cells are interactive, use the grid pattern with arrow keys   (Standard: apg-grid)
-19. Row selection with checkboxes that have names ("Select row: Invoice 104")   (Standard: wcag-name-role)
+19. Row selection with checkboxes that have names ("Select row: Invoice 104")   (Standard: wcag-name-role)  -> see design-system/checkbox
 
 CONTENT
 20. Status in words or icons with names, not only colour   (Standard: wcag-color)

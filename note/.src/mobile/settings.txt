@@ -11,17 +11,17 @@ also: design-system/accessibility
 - Toggles take effect at once, no Save needed | S hig-toggles nng-toggle
 - Choices with few options open a list with a tick | S hig-settings
 - Short help text under rows that need it | P
-- Destructive rows (Log out, Delete account) at the bottom, styled red | S hig-action-sheets
+- Destructive rows (Log out, Delete account) at the bottom, styled red | S hig-action-sheets >flows/deleting-account
 ## Content
-- Notifications by kind | S android-notif-perm
-- Language, with Arabic and right-to-left layout | S w3c-dir
+- Notifications by kind | S android-notif-perm >mobile/in-app-notifications
+- Language, with Arabic and right-to-left layout | S w3c-dir >design-system/rtl-localisation
 - Appearance: system, light, dark | S hig-dark-mode
-- Privacy, data download and account deletion | L gdpr-15 gdpr-17 apple-deletion
+- Privacy, data download and account deletion | L gdpr-15 gdpr-17 apple-deletion >flows/deleting-account
 - App version and build at the bottom | P
-- Help, terms, privacy policy links | S apple-review
+- Help, terms, privacy policy links | S apple-review >website/privacy >website/terms
 ## Behaviour
 - Changes saved on the device and synced to the account | P
-- Settings that need the system (notifications off, location off) link to the system settings page | S android-permissions
+- Settings that need the system (notifications off, location off) link to the system settings page | S android-permissions >mobile/permission-prompts
 ## Access
 - Toggles read their state ("Dark mode, switch, on") | S hig-accessibility
 - Large text: rows grow and wrap, values move under names | S hig-accessibility

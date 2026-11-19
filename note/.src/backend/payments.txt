@@ -5,16 +5,16 @@ about: Taking money safely: payment intents, webhooks, refunds and records.
 - Card fields hosted by the provider keep you at the lightest PCI level | S pci-dss
 ## Flow
 - One payment intent per order, created on the server with the amount set by the server | S stripe-payment-intents
-- An idempotency key on every create call | S stripe-idempotency
+- An idempotency key on every create call | S stripe-idempotency >api/idempotency
 - Bank checks (3-D Secure) handled where required | L psd2-sca stripe-3ds
-- The order marked paid only from a signed webhook, not from the browser | S stripe-webhooks
+- The order marked paid only from a signed webhook, not from the browser | S stripe-webhooks >api/webhooks-receiving
 ## Money
-- Amounts as whole numbers in the smallest unit with a currency code | S iso-4217
+- Amounts as whole numbers in the smallest unit with a currency code | S iso-4217 >backend/dates-money
 - VAT added and shown correctly; e-invoices where required | L zatca-einvoice
 ## After paying
-- Refunds through the provider, linked to the original payment | S stripe-refunds
+- Refunds through the provider, linked to the original payment | S stripe-refunds >flows/requesting-a-refund
 - Disputes tracked with evidence and deadlines | S stripe-disputes
 - Store subscriptions checked on the server with the store's notifications | S apple-server-notif play-rtdn
 ## Records
 - A ledger of every charge, refund and fee, matched to the provider each day | P
-- Logs never contain card numbers or full bank details | S pci-dss owasp-logging
+- Logs never contain card numbers or full bank details | S pci-dss owasp-logging >operations/logging

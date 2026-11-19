@@ -24,9 +24,9 @@ MEDIA KIT
 12. Image credits and permission to use stated   (Practice)
 
 ACCESS
-13. Photos and logos have alt text   (Standard: wcag-nontext)
+13. Photos and logos have alt text   (Standard: wcag-nontext)  -> see design-system/accessibility
 14. Downloads labelled with type and size   (Standard: wcag-link)
-15. Reachable from the footer and About page   (Research: nng-footers)
+15. Reachable from the footer and About page   (Research: nng-footers)  -> see website/footer
 
 SOURCES
 - nng-press: https://www.nngroup.com/articles/press-area-usability/

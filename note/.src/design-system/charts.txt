@@ -13,4 +13,4 @@ also: design-system/accessibility
 ## Interaction
 - Hover or tap shows exact values, also by keyboard | S wcag-hover
 ## Access
-- A text summary or data table alternative | S wcag-nontext hig-charts
+- A text summary or data table alternative | S wcag-nontext hig-charts >design-system/table >design-system/accessibility

@@ -1,16 +1,16 @@
 title: Legal pages pack
 about: The pages a product must publish before it goes live.
 ## Must-haves
-- Privacy policy: what is collected, why, how long, who it is shared with | L gdpr-13 pdpl
-- Terms of use | P
-- Cookie notice and choices where cookies need consent | L eprivacy
+- Privacy policy: what is collected, why, how long, who it is shared with | L gdpr-13 pdpl >website/privacy
+- Terms of use | P >website/terms
+- Cookie notice and choices where cookies need consent | L eprivacy >website/cookie-consent
 ## When they apply
-- Refund and cancellation policy for paid products | L eu-consumer-rights ftc-negative-option
-- Accessibility statement | S w3c-a11y-statement
+- Refund and cancellation policy for paid products | L eu-consumer-rights ftc-negative-option >flows/canceling-subscription >flows/requesting-a-refund
+- Accessibility statement | S w3c-a11y-statement >launch/accessibility-statement
 - Imprint or company details in the EU | L eu-consumer-rights
 - Security contact (security.txt) | S rfc-securitytxt
-- Community rules for user content | L eu-dsa
-- Notice of AI use where people talk to an AI | L eu-ai-act
+- Community rules for user content | L eu-dsa >support/community-forum
+- Notice of AI use where people talk to an AI | L eu-ai-act >backend/ai-features
 ## Upkeep
 - Dated, with changes announced before they apply | P
-- Linked from the footer and the sign-up screen | P
+- Linked from the footer and the sign-up screen | P >website/footer >website/sign-up

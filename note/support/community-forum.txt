@@ -16,10 +16,10 @@ CONTENT
 SAFETY
  7. User links marked ugc   (Rule: gsc-qualify)
  8. Spam and abuse filters   (Rule: gsc-spam)
- 9. Personal data not shown publicly by default   (Rule: gdpr-25)
+ 9. Personal data not shown publicly by default   (Rule: gdpr-25)  -> see backend/data-privacy
 
 SEARCH
-10. Question and answer structured data on threads   (Standard: schema-org)
+10. Question and answer structured data on threads   (Standard: schema-org)  -> see growth/technical-seo
 
 SOURCES
 - eu-dsa: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package

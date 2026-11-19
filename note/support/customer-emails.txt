@@ -5,19 +5,19 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 CONTENT
  1. Subject says what it is and what to do   (Research: nng-microcontent)
- 2. Plain words; one main action   (Standard: govuk-email)
+ 2. Plain words; one main action   (Standard: govuk-email)  -> see design-system/content-voice
  3. Sender name people recognise   (Rule: can-spam)
 
 KINDS
- 4. Account and receipt emails kept separate from marketing   (Rule: can-spam)
+ 4. Account and receipt emails kept separate from marketing   (Rule: can-spam)  -> see web-app/billing, backend/email-sending
  5. Security emails for sign-in, password and email changes   (Standard: owasp-auth)
 
 DELIVERY
- 6. SPF, DKIM and DMARC set up   (Standard: rfc-spf, rfc-dkim, rfc-dmarc)
- 7. Bulk-sender rules met, one-click unsubscribe on marketing   (Standard: google-sender, rfc-unsubscribe)
+ 6. SPF, DKIM and DMARC set up   (Standard: rfc-spf, rfc-dkim, rfc-dmarc)  -> see launch/domain-email-setup
+ 7. Bulk-sender rules met, one-click unsubscribe on marketing   (Standard: google-sender, rfc-unsubscribe)  -> see flows/unsubscribing-from-emails
 
 ACCESS
- 8. Works without images, readable on phones, in light and dark   (Standard: wcag-contrast)
+ 8. Works without images, readable on phones, in light and dark   (Standard: wcag-contrast)  -> see design-system/accessibility
 
 SAFETY
  9. No passwords or full card numbers in email   (Standard: owasp-auth)

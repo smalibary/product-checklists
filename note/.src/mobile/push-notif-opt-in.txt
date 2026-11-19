@@ -9,16 +9,16 @@ also: design-system/accessibility
 ## The pre-permission screen
 - Says what kinds of alerts and how often ("Only when your order moves") | R nng-permissions
 - One clear yes button and an equal "Not now" | L ftc-dark-patterns
-- An example of a notification | P
+- An example of a notification | P >mobile/in-app-notifications
 ## After the answer
-- Yes: confirm and offer choices of topics in settings | P
+- Yes: confirm and offer choices of topics in settings | P >mobile/settings
 - No: the app works fully without it | S apple-review
 - Later: ask again only at a new, relevant moment, not on every launch | R nng-permissions
-- If turned off in system settings, show how to turn it back on, with a button to the settings page | S hig-notifications
+- If turned off in system settings, show how to turn it back on, with a button to the settings page | S hig-notifications >mobile/settings
 ## iOS options
-- Provisional authorization: quiet notifications delivered without asking, so the person can decide later | S hig-notifications
+- Provisional authorization: quiet notifications delivered without asking, so the person can decide later | S hig-notifications >mobile/in-app-notifications
 - Time-sensitive and critical alerts only for real needs | S hig-notifications
 ## Rules
 - Push not used for ads unless the person opted in to marketing | S apple-review
 - Marketing consent separate from service alerts | L gdpr-7
-- Notification channels on Android so people can mute kinds separately | S android-notif-perm
+- Notification channels on Android so people can mute kinds separately | S android-notif-perm >mobile/in-app-notifications

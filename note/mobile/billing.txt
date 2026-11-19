@@ -8,7 +8,7 @@ STORE SUBSCRIPTIONS
  2. Current plan, price, renewal date and the store it was bought from   (Standard: apple-subscriptions, play-subscriptions)
  3. "Manage subscription" opens the store's own subscription page   (Standard: apple-subscriptions, play-subscriptions)
  4. Restore purchases button for people on a new phone   (Standard: apple-review)
- 5. Upgrades and downgrades through the store, with the price change shown   (Standard: apple-subscriptions, play-subscriptions)
+ 5. Upgrades and downgrades through the store, with the price change shown   (Standard: apple-subscriptions, play-subscriptions)  -> see mobile/upgrade, product/pricing-changes
  6. Free trial end date and the first charge shown clearly   (Rule: apple-subscriptions, ftc-negative-option)
 
 BOUGHT ELSEWHERE
@@ -25,7 +25,7 @@ CANCELLING
 13. What happens after cancelling: access until the period ends   (Standard: apple-subscriptions)
 
 PROBLEMS
-14. Billing problem (card failed at the store): banner with a link to fix it in the store   (Standard: apple-subscriptions, play-subscriptions)
+14. Billing problem (card failed at the store): banner with a link to fix it in the store   (Standard: apple-subscriptions, play-subscriptions)  -> see design-system/banner
 15. Grace period respected: access continues while the store retries   (Standard: apple-subscriptions, play-subscriptions)
 
 ACCESS

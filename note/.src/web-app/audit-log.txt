@@ -3,24 +3,24 @@ about: The record of who did what, when and from where, for admins to check secu
 also: design-system/accessibility
 ## What is recorded
 - Who (person or key), what action, on which item, when, and from where (IP, device) | S owasp-logging
-- Sign-ins, failed sign-ins, password and 2FA changes | S owasp-logging
+- Sign-ins, failed sign-ins, password and 2FA changes | S owasp-logging >web-app/2fa
 - Permission and role changes, member added or removed | S owasp-logging
-- Settings, billing and data export changes | S owasp-logging
+- Settings, billing and data export changes | S owasp-logging >web-app/import-export >web-app/billing
 - Before and after values for changes | S owasp-logging
-- Admin "view as user" sessions | S owasp-logging
+- Admin "view as user" sessions | S owasp-logging >backend/sessions
 ## Reading it
 - Newest first, with exact time and time zone (ISO 8601 on export) | S iso-8601
-- Filters for person, action type, item and date range | R nng-filters
+- Filters for person, action type, item and date range | R nng-filters >flows/filtering-items
 - Search | R nng-tables
 - Each entry opens to the full detail | P
 - Plain-language descriptions ("Sara changed Ali's role from Member to Admin") | P
 ## Trust
 - Entries cannot be edited or deleted by anyone in the app | S owasp-logging
 - Kept for a stated time per plan | P
-- Export to CSV and stream to outside tools (SIEM) | P
-- No passwords, tokens or full card numbers ever in the log | S owasp-logging pci-dss
-- Personal data in logs handled like any personal data (retention, access) | L gdpr-5 gdpr-32
+- Export to CSV and stream to outside tools (SIEM) | P >web-app/import-export
+- No passwords, tokens or full card numbers ever in the log | S owasp-logging pci-dss >flows/making-a-card-payment
+- Personal data in logs handled like any personal data (retention, access) | L gdpr-5 gdpr-32 >backend/data-privacy >operations/logging
 ## Access
 - Only owners and security admins can see it | S owasp-authz
-- Viewing the audit log is itself logged | S owasp-logging
-- Real table with headers, works by keyboard | S wai-tables wcag-keyboard
+- Viewing the audit log is itself logged | S owasp-logging >operations/logging
+- Real table with headers, works by keyboard | S wai-tables wcag-keyboard >web-app/data-table >design-system/accessibility

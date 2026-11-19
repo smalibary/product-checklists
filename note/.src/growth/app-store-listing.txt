@@ -11,6 +11,6 @@ about: The store page that turns browsers into downloads.
 ## Trust
 - Privacy details filled in truthfully | L apple-privacy-labels play-data-safety
 - Age rating answered honestly | L apple-age-rating
-- Support and privacy policy addresses working | L apple-review
+- Support and privacy policy addresses working | L apple-review >website/privacy
 ## Upkeep
 - Replies to reviews | S apple-review

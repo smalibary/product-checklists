@@ -17,8 +17,8 @@ RETRIES
  7. Transactions that fail on conflict retried a few times with a wait   (Standard: pg-isolation, aws-backoff)
 
 DISTRIBUTED WORK
- 8. Side effects (emails, payments) happen after the transaction commits, via an outbox   (Standard: outbox)
- 9. Every message handler is idempotent   (Standard: aws-idempotent)
+ 8. Side effects (emails, payments) happen after the transaction commits, via an outbox   (Standard: outbox)  -> see backend/payments
+ 9. Every message handler is idempotent   (Standard: aws-idempotent)  -> see api/idempotency
 
 TESTING
 10. Tests that run the same action in parallel   (Practice)

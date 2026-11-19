@@ -3,16 +3,16 @@ about: Accepting event calls from another service safely, without double work or
 ## Checking
 - Signature checked against the raw body before anything else | S standard-webhooks stripe-webhooks
 - Timestamp checked; messages older than about 5 minutes are refused (no replays) | S standard-webhooks
-- Secrets kept in the secret store, never in code | S owasp-secrets
+- Secrets kept in the secret store, never in code | S owasp-secrets >operations/secrets
 ## Handling
-- Answer 2xx fast, then do the work in a background job | S stripe-webhooks
+- Answer 2xx fast, then do the work in a background job | S stripe-webhooks >backend/background-jobs
 - Each event id stored; a repeat is acknowledged and skipped | S stripe-webhooks outbox
 - Events may arrive out of order: compare times or fetch the latest state before acting | S stripe-webhooks
 - Only the event types you need are handled; others are acknowledged and ignored | S stripe-webhooks
 ## Failures
-- Failed processing retried from your own queue, not by failing the call | P
+- Failed processing retried from your own queue, not by failing the call | P >backend/background-jobs
 - A daily check against the sender's API catches events that never arrived | S stripe-webhooks
-- Alerts when deliveries stop or errors rise | S sre-alerting
+- Alerts when deliveries stop or errors rise | S sre-alerting >operations/monitoring-alerts
 ## Store events
 - App Store and Google Play subscription events handled the same way (signed, recorded, deduplicated) | S apple-server-notif play-rtdn
 ## Testing

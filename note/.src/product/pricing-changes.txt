@@ -12,4 +12,4 @@ about: Changing prices or plans fairly and within store and consumer rules.
 - Old price kept for a time where promised | P
 ## Display
 - Former prices shown honestly in sales | L eu-omnibus
-- Pricing page clear and comparable | R nng-pricing
+- Pricing page clear and comparable | R nng-pricing >website/pricing

@@ -11,6 +11,6 @@ also: design-system/accessibility
 ## Errors
 - Wrong type or too big explained per file | S govuk-error-message
 ## Phones
-- Camera and photo library offered where useful | S android-photo-picker
+- Camera and photo library offered where useful | S android-photo-picker >mobile/camera
 ## Access
 - Status changes announced | S wcag-status

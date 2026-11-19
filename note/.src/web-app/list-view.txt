@@ -6,24 +6,24 @@ also: design-system/accessibility
 - Icon or photo to tell types apart | P
 - Status in words or icons with names, not only colour | S wcag-color
 - The whole row opens the item; actions in a menu at the end | P
-- Hover shows quick actions, which are also reachable by keyboard | S wcag-hover wcag-keyboard
+- Hover shows quick actions, which are also reachable by keyboard | S wcag-hover wcag-keyboard >design-system/accessibility
 ## Order and grouping
 - Sort choice (name, date, priority), remembered | P
 - Grouping by date, status or owner, with headings and counts | P
 - Groups can collapse | S apg-accordion
 ## Finding
-- Filter and search above the list | R nng-filters
-- Active filters shown with remove | R nng-filters
+- Filter and search above the list | R nng-filters >flows/filtering-items
+- Active filters shown with remove | R nng-filters >flows/filtering-items
 ## Acting
-- Select several with checkboxes, with a bulk action bar | P
+- Select several with checkboxes, with a bulk action bar | P >design-system/checkbox
 - Drag to reorder where order matters, with a keyboard way too | S wcag-dragging
-- Swipe actions on touch screens, with a visible alternative | R nng-swipe
+- Swipe actions on touch screens, with a visible alternative | R nng-swipe >mobile/gesture-navigation
 ## Lots of items
-- Pagination or load more, with the total | R nng-infinite
+- Pagination or load more, with the total | R nng-infinite >design-system/pagination
 - Back keeps the scroll position | P
 ## States
-- Skeleton rows while loading | R nng-skeleton
+- Skeleton rows while loading | R nng-skeleton >design-system/skeleton
 - Empty and no-results states | R nng-empty
 ## Access
-- A real list (or table if there are columns) | S wcag-info
+- A real list (or table if there are columns) | S wcag-info >web-app/data-table >design-system/accessibility
 - Row links read well alone | S wcag-link

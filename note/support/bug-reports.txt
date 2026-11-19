@@ -15,7 +15,7 @@ HANDLING
 
 FIXING
  7. A failing test written before the fix   (Standard: fowler-test-pyramid)
- 8. Fix noted in the release notes   (Standard: keepachangelog)
+ 8. Fix noted in the release notes   (Standard: keepachangelog)  -> see website/changelog
 
 TRENDS
  9. Crash and error rates watched alongside reports   (Standard: sre-monitoring)

@@ -14,12 +14,12 @@ CONSENT
  6. Global Privacy Control respected   (Rule: gpc)
 
 DATA
- 7. No personal data (names, emails) in events   (Rule: gdpr-5)
+ 7. No personal data (names, emails) in events   (Rule: gdpr-5)  -> see backend/data-privacy
  8. Internal and test traffic filtered out   (Practice)
 
 USE
  9. Numbers paired with research before big changes   (Research: nng-analytics)
-10. Each dashboard names its owner and question   (Practice)
+10. Each dashboard names its owner and question   (Practice)  -> see web-app/dashboard
 
 SOURCES
 - heart: https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/

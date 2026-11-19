@@ -7,7 +7,7 @@ also: design-system/accessibility
 ## The banner
 - Accept and Reject equally easy, on the first layer | L edpb-cookies
 - No ticked boxes in advance | L gdpr-7 edpb-cookies
-- Plain words on what each kind does, with a link to details | L gdpr-12
+- Plain words on what each kind does, with a link to details | L gdpr-12 >design-system/content-voice
 - Does not block the page more than needed | S govuk-cookie
 ## Choices
 - Choice by purpose (analytics, marketing) | L edpb-cookies
@@ -16,5 +16,5 @@ also: design-system/accessibility
 ## Records
 - Consent recorded with time and version | L gdpr-7
 ## Access
-- The banner reachable by keyboard and read by screen readers | S wcag-keyboard
+- The banner reachable by keyboard and read by screen readers | S wcag-keyboard >design-system/banner >design-system/accessibility
 - Focus not trapped and content not hidden behind it | S wcag-obscured

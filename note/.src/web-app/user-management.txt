@@ -2,32 +2,32 @@ title: User Management
 about: Where admins invite people, give them roles, and remove them from a workspace.
 also: design-system/accessibility
 ## List of people
-- Table: name, email, role, status (active, invited, suspended), last active | R nng-tables
-- Search and filter by role and status | R nng-filters
+- Table: name, email, role, status (active, invited, suspended), last active | R nng-tables >web-app/data-table
+- Search and filter by role and status | R nng-filters >flows/filtering-items
 - Sort by name or last active | R nng-tables
 - Count of seats used and left | P
-- Pending invites listed with resend and cancel | P
+- Pending invites listed with resend and cancel | P >flows/inviting-a-teammate
 ## Inviting
-- Invite by email, several at once (paste a list) | P
-- Choose a role while inviting, with what each role can do | S owasp-authz
-- Invite links expire and can be turned off | S owasp-auth
-- Domain sign-up: anyone with the company email can join, if the admin turns it on | P
-- Price change shown before adding a paid seat | L eu-consumer-rights
+- Invite by email, several at once (paste a list) | P >flows/inviting-a-teammate
+- Choose a role while inviting, with what each role can do | S owasp-authz >flows/inviting-a-teammate
+- Invite links expire and can be turned off | S owasp-auth >flows/inviting-a-teammate
+- Domain sign-up: anyone with the company email can join, if the admin turns it on | P >website/sign-up
+- Price change shown before adding a paid seat | L eu-consumer-rights >product/pricing-changes
 ## Roles
-- Few clear roles (Owner, Admin, Member, Guest), described in plain words | S owasp-authz
-- A table showing what each role can do | P
+- Few clear roles (Owner, Admin, Member, Guest), described in plain words | S owasp-authz >design-system/content-voice
+- A table showing what each role can do | P >web-app/data-table
 - Least privilege by default: new people get the smallest role | S owasp-authz
 - Changes take effect at once, including for people already signed in | S owasp-authz
 - There is always at least one owner | P
 ## Removing
 - Remove or suspend a person, with what happens to their work (kept, moved to someone) | P
-- Their sessions end at once | S owasp-session
+- Their sessions end at once | S owasp-session >backend/sessions
 - Confirm with the person's name in the message | R nng-confirm
 - Bulk actions for many people, with a count in the confirm | P
 ## Safety and records
-- Every change logged: who did what to whom and when | S owasp-logging
+- Every change logged: who did what to whom and when | S owasp-logging >operations/logging
 - Single sign-on and automatic user sync (SCIM) for larger plans | P
-- Require two-step sign-in for all members | S owasp-mfa
+- Require two-step sign-in for all members | S owasp-mfa >web-app/2fa
 ## Access
-- Table with headers, row actions in a menu with names | S wai-tables apg-menubutton
+- Table with headers, row actions in a menu with names | S wai-tables apg-menubutton >web-app/data-table
 - Status shown in words, not only colour | S wcag-color

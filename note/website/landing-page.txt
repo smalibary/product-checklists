@@ -14,13 +14,13 @@ BODY
  6. Three to five benefits, each a short heading, a line and a picture   (Research: nng-scanning)
  7. Proof: customer logos, numbers or quotes, with permission   (Rule: ftc-endorsements)
  8. How it works in three steps   (Practice)
- 9. Answers to the main doubts (price, time, risk) in a short FAQ   (Research: nng-faq)
+ 9. Answers to the main doubts (price, time, risk) in a short FAQ   (Research: nng-faq)  -> see website/faq
 10. The main action repeated after each big section   (Practice)
 11. Few or no links that lead away from the action   (Practice)
 
 FORMS
-12. Ask only what is needed; every extra field costs sign-ups   (Research: baymard-fields)
-13. Labels above fields, the right keyboard and autofill   (Standard: wcag-labels, mdn-autocomplete, webdev-signup)
+12. Ask only what is needed; every extra field costs sign-ups   (Research: baymard-fields)  -> see website/sign-up
+13. Labels above fields, the right keyboard and autofill   (Standard: wcag-labels, mdn-autocomplete, webdev-signup)  -> see design-system/form-layout, design-system/accessibility
 14. Errors in words next to the field   (Standard: wcag-error)
 15. Marketing consent unticked by default where the law needs consent   (Rule: gdpr-7)
 

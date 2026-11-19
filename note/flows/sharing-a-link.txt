@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 SHARING
  1. System share sheet on phones   (Standard: android-sharesheet, hig-share)
  2. Copy link button with a confirmation   (Standard: wcag-status)
- 3. Link previews look right (title, image, description)   (Practice)
+ 3. Link previews look right (title, image, description)   (Practice)  -> see growth/link-previews
 
 ACCESS LEVEL
  4. Clear who can open it   (Standard: owasp-authz)

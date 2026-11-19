@@ -3,20 +3,20 @@ about: Lets people join a queue for access to a product that is not open to ever
 also: design-system/accessibility
 ## The offer
 - What they are joining and what they get when let in | P
-- How the waitlist works: first come, by invitation, by referral | P
+- How the waitlist works: first come, by invitation, by referral | P >mobile/referral
 - A rough wait time, if the team can keep it | P
 - Real numbers only; never invent a queue length | L ftc-dark-patterns
 ## The form
 - Email only, or email plus one question that helps decide who goes first | R baymard-fields
-- Visible labels, the right keyboard and autofill | S wcag-labels mdn-autocomplete
+- Visible labels, the right keyboard and autofill | S wcag-labels mdn-autocomplete >design-system/accessibility
 - Errors in words next to the field | S wcag-error
-- What emails will be sent and a link to the privacy policy | L gdpr-13
+- What emails will be sent and a link to the privacy policy | L gdpr-13 >website/privacy
 - Consent for marketing separate from joining the list, unticked | L gdpr-7
 ## After joining
 - A confirmation screen with the place in line, if shown | R govuk-confirm
 - A confirmation email, with a way to leave the list | L can-spam
-- An optional "move up by inviting friends" with the referral rules written out | P
-- Rewards for referrals that are honest and delivered | L ftc-dark-patterns
+- An optional "move up by inviting friends" with the referral rules written out | P >mobile/referral
+- Rewards for referrals that are honest and delivered | L ftc-dark-patterns >mobile/referral
 ## When access opens
 - An email invite with a clear first step and a link that works once | S owasp-auth
 - Invite links expire after a stated time | S owasp-auth

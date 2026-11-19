@@ -5,13 +5,13 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 PROCESS
  1. Every change as a numbered migration file kept with the code   (Practice)
- 2. Migrations run automatically in each environment, in order, once   (Practice)
+ 2. Migrations run automatically in each environment, in order, once   (Practice)  -> see operations/environments
  3. Tested on a copy of real-sized data before production   (Practice)
 
 WITHOUT DOWNTIME
  4. Change in steps: add the new, write to both, move readers, then remove the old   (Standard: fowler-parallel-change)
  5. New columns start nullable or with a default   (Standard: pg-constraints)
- 6. Indexes built without locking the table (CONCURRENTLY)   (Standard: pg-indexes)
+ 6. Indexes built without locking the table (CONCURRENTLY)   (Standard: pg-indexes)  -> see backend/database-design, backend/concurrency
  7. Long locks avoided; a lock timeout set for migration runs   (Standard: pg-locking)
  8. Big data changes in batches, not in one transaction   (Practice)
 
@@ -21,7 +21,7 @@ SAFETY
 11. No destructive change (drop, rename) in the same release as the code that stops using it   (Standard: fowler-parallel-change)
 
 RECORDS
-12. The schema version is visible and logged   (Practice)
+12. The schema version is visible and logged   (Practice)  -> see operations/logging
 
 SOURCES
 - fowler-parallel-change: https://martinfowler.com/bliki/ParallelChange.html

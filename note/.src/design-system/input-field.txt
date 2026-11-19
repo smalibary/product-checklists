@@ -2,16 +2,16 @@ title: Input Field
 about: A text box for typing a value, with its label, hint, error and states.
 also: design-system/accessibility
 ## Parts
-- A visible label above the field, always present | S wcag-labels govuk-text-input
+- A visible label above the field, always present | S wcag-labels govuk-text-input >design-system/form-layout >design-system/accessibility
 - Hint text under the label for format or examples | S govuk-text-input
-- Placeholder never used as the label | S wcag-labels
-- Error message next to the field, in words | S govuk-error-message wcag-error
+- Placeholder never used as the label | S wcag-labels >design-system/accessibility
+- Error message next to the field, in words | S govuk-error-message wcag-error >flows/showing-input-error
 - Optional prefix or suffix (SAR, kg, @) outside the typed text | S govuk-text-input
 - Character count for limited fields | S govuk-character
 ## Sizes
 - Width hints at expected length (postcode short, address long) | S govuk-text-input
 - Height and text size large enough on phones (16 px stops iOS zooming) | P
-- Touch area at least 24 px, ideally 44 | S wcag-target
+- Touch area at least 24 px, ideally 44 | S wcag-target >design-system/accessibility
 ## States
 - Default, hover, focus, filled, error, disabled, read-only, each clearly different | S m3-text-fields
 - Focus ring visible with 3:1 contrast | S wcag-focus-appearance
@@ -23,12 +23,12 @@ also: design-system/accessibility
 - autocomplete set (name, email, address) | S mdn-autocomplete wcag-input-purpose
 - Paste always allowed | S wcag-auth
 - Spellcheck off for codes and names | P
-- Accept spaces and dashes in phone and card numbers | R baymard-fields
+- Accept spaces and dashes in phone and card numbers | R baymard-fields >flows/making-a-card-payment
 ## Checking
 - Check when leaving the field or on submit, not on every key | R baymard-inline
 - Clear the error once fixed | R baymard-inline
 ## Access
-- Label linked with for and id; hint and error linked with aria-describedby | S wcag-labels
+- Label linked with for and id; hint and error linked with aria-describedby | S wcag-labels >design-system/accessibility
 - Invalid fields marked aria-invalid | S wcag-error
-- Required fields marked in words, not only with * | S wcag-labels
+- Required fields marked in words, not only with * | S wcag-labels >design-system/form-layout >design-system/accessibility
 - Direction follows the typed language (dir auto) | S w3c-dir

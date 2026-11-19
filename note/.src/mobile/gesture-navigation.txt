@@ -7,7 +7,7 @@ also: design-system/accessibility
 - iOS swipe from the left edge goes back in navigation stacks; keep it working | S hig-gestures
 - Content drawn edge to edge, with controls kept away from gesture areas | S android-edge hig-layout
 ## App gestures
-- Use standard gestures with their usual meaning (tap, swipe, pinch, long press, pull to refresh) | S hig-gestures m3-gestures
+- Use standard gestures with their usual meaning (tap, swipe, pinch, long press, pull to refresh) | S hig-gestures m3-gestures >mobile/pull-to-refresh
 - Swipe actions on list rows (archive, delete) shown with colour, icon and text | R nng-swipe
 - Every gesture has a visible alternative (button or menu) | S wcag-dragging wcag-gestures
 - Gestures that need two fingers or a path have a single-tap way too | S wcag-gestures
@@ -18,7 +18,7 @@ also: design-system/accessibility
 ## Feel
 - Movement follows the finger and can be cancelled mid-way | S hig-gestures
 - Light haptics confirm a completed gesture, where supported | S hig-feedback
-- Reduced motion respected for the animations | S hig-accessibility
+- Reduced motion respected for the animations | S hig-accessibility >motion/motion-accessibility >motion/motion-system
 ## Access
 - Works with VoiceOver and TalkBack (custom actions for swipe actions) | S hig-accessibility
 - Accidental activation avoided (actions on release, not on touch down) | S wcag-cancel

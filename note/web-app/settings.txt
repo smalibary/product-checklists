@@ -4,14 +4,14 @@ Backing: 0 Rule, 5 Standard, 7 Research, 7 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 STRUCTURE
- 1. Personal settings separate from workspace (team) settings   (Practice)
- 2. A side menu of sections (General, Account, Notifications, Billing, Members, Security, Integrations)   (Practice)
+ 1. Personal settings separate from workspace (team) settings   (Practice)  -> see web-app/workspace-switcher
+ 2. A side menu of sections (General, Account, Notifications, Billing, Members, Security, Integrations)   (Practice)  -> see web-app/notifications
  3. Each section has its own address so it can be linked and bookmarked   (Practice)
  4. Search across settings for apps with many   (Practice)
  5. Most used settings first; dangerous ones last in a "Danger zone"   (Practice)
 
 CONTROLS
- 6. One control type per job: switch for on/off taking effect at once, checkbox when a Save button follows   (Research: nng-toggle)
+ 6. One control type per job: switch for on/off taking effect at once, checkbox when a Save button follows   (Research: nng-toggle)  -> see design-system/checkbox
  7. Each setting has a label and one line explaining what it changes   (Research: nng-heuristics)
  8. Defaults that suit most people   (Research: nng-heuristics)
  9. Disabled settings say why (plan, permission)   (Practice)
@@ -19,18 +19,18 @@ CONTROLS
 SAVING
 10. Either save on change (with a "Saved" message) or one Save button per section, not a mix   (Research: nng-heuristics)
 11. Saved message announced to screen readers   (Standard: wcag-status)
-12. Unsaved changes warned before leaving   (Research: nng-control)
-13. Undo, or reset to default   (Research: nng-control)
+12. Unsaved changes warned before leaving   (Research: nng-control)  -> see flows/saving-changes
+13. Undo, or reset to default   (Research: nng-control)  -> see flows/undoing-an-action
 14. Failed save says why and keeps what was typed   (Standard: wcag-redundant)
 
 DANGEROUS ACTIONS
-15. Deleting a workspace or transferring ownership needs typing the name or re-entering the password   (Standard: wcag-prevent)
+15. Deleting a workspace or transferring ownership needs typing the name or re-entering the password   (Standard: wcag-prevent)  -> see web-app/workspace-switcher
 16. Say exactly what will be lost   (Research: nng-confirm)
 
 ACCESS
 17. Side menu is navigation with the current section marked   (Standard: apg-landmarks)
-18. Works at phone width (menu becomes a list or a drop-down)   (Standard: wcag-reflow)
-19. Dark mode and text size settings respected   (Practice: mdn-color-scheme)
+18. Works at phone width (menu becomes a list or a drop-down)   (Standard: wcag-reflow)  -> see design-system/dropdown-menu, design-system/accessibility
+19. Dark mode and text size settings respected   (Practice: mdn-color-scheme)  -> see design-system/dark-mode
 
 SOURCES
 - nng-toggle: https://www.nngroup.com/articles/toggle-switch-guidelines/

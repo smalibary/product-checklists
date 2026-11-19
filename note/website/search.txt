@@ -8,7 +8,7 @@ THE BOX
  2. At least 27 characters wide so queries are visible   (Research: nng-search)
  3. A magnifier icon and a label or placeholder that says what can be searched   (Research: nng-search, nng-placeholder)
  4. Has an accessible name and sits in a search landmark   (Standard: wcag-name-role, apg-landmarks)
- 5. Opens with a keyboard shortcut (/ or Ctrl+K) shown in the box   (Practice)
+ 5. Opens with a keyboard shortcut (/ or Ctrl+K) shown in the box   (Practice)  -> see web-app/keyboard-shortcuts
  6. Enter submits; a clear button empties the box   (Practice)
 
 SUGGESTIONS WHILE TYPING
@@ -23,9 +23,9 @@ RESULTS
 13. Number of results shown   (Practice)
 14. Each result: title, a short extract with the matched words highlighted, type and date   (Practice)
 15. Typos forgiven, with "Did you mean ...?"   (Research: baymard-autocomplete)
-16. Filters by type, date or section for large sites   (Research: nng-filters)
+16. Filters by type, date or section for large sites   (Research: nng-filters)  -> see flows/filtering-items
 17. Sort by relevance by default   (Practice)
-18. Pagination or "Load more" with the position kept on Back   (Research: nng-infinite)
+18. Pagination or "Load more" with the position kept on Back   (Research: nng-infinite)  -> see design-system/pagination
 
 NO RESULTS
 19. Say so plainly, repeat the query, and offer fixes: spelling, fewer words, popular pages   (Research: nng-empty)
@@ -34,7 +34,7 @@ NO RESULTS
 SPEED AND ACCESS
 21. Results in under 1 second; show progress if slower   (Research: nng-response)
 22. Page title includes the query ("Results for pricing")   (Standard: wcag-title)
-23. Results page is not indexed by search engines   (Practice)
+23. Results page is not indexed by search engines   (Practice)  -> see growth/technical-seo
 
 SOURCES
 - nng-search: https://www.nngroup.com/articles/search-visible-and-simple/

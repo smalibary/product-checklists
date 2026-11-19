@@ -7,7 +7,7 @@ about: How a page looks when shared in chats and social apps.
 - og:type set (website, article) | S ogp
 ## Content
 - Title and description written for sharing, not just search | R nng-microcontent
-- Private pages show a generic preview, never personal data | L gdpr-5
+- Private pages show a generic preview, never personal data | L gdpr-5 >backend/data-privacy
 ## Checks
 - Previews tested in the main apps people share to | P
 - Image address absolute and public | S ogp

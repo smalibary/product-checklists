@@ -5,11 +5,11 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 DOMAIN
  1. Domain registered with auto-renew and locked   (Practice)
- 2. HTTPS everywhere, with HSTS   (Standard: mdn-hsts)
+ 2. HTTPS everywhere, with HSTS   (Standard: mdn-hsts)  -> see operations/security-headers
  3. One main address; others redirect   (Standard: gsc-canonical, gsc-redirects)
 
 SECURITY
- 4. Security headers checked (CSP, framing, content type)   (Standard: mdn-csp, owasp-headers, mozilla-observatory)
+ 4. Security headers checked (CSP, framing, content type)   (Standard: mdn-csp, owasp-headers, mozilla-observatory)  -> see operations/security-headers
  5. security.txt published   (Standard: rfc-securitytxt)
 
 EMAIL
@@ -18,7 +18,7 @@ EMAIL
  8. Support and no-reply addresses chosen; replies go somewhere read   (Practice)
 
 SEARCH
- 9. Site verified in the search console, sitemap sent   (Standard: gsc-sitemaps)
+ 9. Site verified in the search console, sitemap sent   (Standard: gsc-sitemaps)  -> see growth/technical-seo
 
 SOURCES
 - mdn-hsts: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security

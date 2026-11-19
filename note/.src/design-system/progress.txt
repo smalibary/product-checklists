@@ -1,15 +1,15 @@
 title: Progress indicator
 about: Bars and spinners that show something is happening and how far along it is.
 ## Choosing
-- Bar with percent when the length is known; spinner when it is not | S m3-progress hig-progress-indicators
+- Bar with percent when the length is known; spinner when it is not | S m3-progress hig-progress-indicators >design-system/loading
 - Nothing for waits under about 1 second | R nng-response
-- Skeletons for loading page content | R nng-skeleton
+- Skeletons for loading page content | R nng-skeleton >design-system/skeleton
 ## Behaviour
 - Progress only moves forward | S hig-progress-indicators
 - Long waits explain what is happening and allow cancel | R nng-progress
 ## Semantics
 - progressbar role with the value, or a status message for screen readers | S apg-meter wcag-status
 ## Motion
-- Animation respects reduced motion | S mdn-reduced-motion
+- Animation respects reduced motion | S mdn-reduced-motion >motion/motion-accessibility >motion/motion-system
 ## Look
 - Enough contrast for the bar and its track | S wcag-ui-contrast

@@ -11,7 +11,7 @@ MEASURE
 ALERTS
  4. Alert on user pain (SLO burn rate), not on every high number   (Standard: sre-alerting)
  5. Every alert can be acted on and links to a runbook   (Standard: sre-alerting, sre-incident)
- 6. Urgent alerts page someone; the rest go to a ticket   (Standard: sre-monitoring)
+ 6. Urgent alerts page someone; the rest go to a ticket   (Standard: sre-monitoring)  -> see support/help-desk
  7. Noisy alerts fixed or removed   (Standard: sre-alerting)
 
 DASHBOARDS
@@ -19,7 +19,7 @@ DASHBOARDS
  9. Traces across services   (Standard: otel)
 
 USERS
-10. A public status page during problems   (Standard: atlassian-incident)
+10. A public status page during problems   (Standard: atlassian-incident)  -> see website/status
 
 COSTS
 11. Usage of paid services watched against limits, with alerts at 50% and 80%   (Standard: aws-cost)

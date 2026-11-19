@@ -14,19 +14,19 @@ ROWS
  6. Toggles take effect at once, no Save needed   (Standard: hig-toggles, nng-toggle)
  7. Choices with few options open a list with a tick   (Standard: hig-settings)
  8. Short help text under rows that need it   (Practice)
- 9. Destructive rows (Log out, Delete account) at the bottom, styled red   (Standard: hig-action-sheets)
+ 9. Destructive rows (Log out, Delete account) at the bottom, styled red   (Standard: hig-action-sheets)  -> see flows/deleting-account
 
 CONTENT
-10. Notifications by kind   (Standard: android-notif-perm)
-11. Language, with Arabic and right-to-left layout   (Standard: w3c-dir)
+10. Notifications by kind   (Standard: android-notif-perm)  -> see mobile/in-app-notifications
+11. Language, with Arabic and right-to-left layout   (Standard: w3c-dir)  -> see design-system/rtl-localisation
 12. Appearance: system, light, dark   (Standard: hig-dark-mode)
-13. Privacy, data download and account deletion   (Rule: gdpr-15, gdpr-17, apple-deletion)
+13. Privacy, data download and account deletion   (Rule: gdpr-15, gdpr-17, apple-deletion)  -> see flows/deleting-account
 14. App version and build at the bottom   (Practice)
-15. Help, terms, privacy policy links   (Standard: apple-review)
+15. Help, terms, privacy policy links   (Standard: apple-review)  -> see website/privacy, website/terms
 
 BEHAVIOUR
 16. Changes saved on the device and synced to the account   (Practice)
-17. Settings that need the system (notifications off, location off) link to the system settings page   (Standard: android-permissions)
+17. Settings that need the system (notifications off, location off) link to the system settings page   (Standard: android-permissions)  -> see mobile/permission-prompts
 
 ACCESS
 18. Toggles read their state ("Dark mode, switch, on")   (Standard: hig-accessibility)

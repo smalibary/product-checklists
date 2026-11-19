@@ -4,16 +4,16 @@ also: design-system/accessibility
 ## Plan
 - Current plan, price, billing period and next charge date and amount | L ftc-negative-option
 - Usage against limits (seats, storage, calls) with a bar and numbers | P
-- Change plan, with the price difference shown before confirming | L eu-consumer-rights
-- Cancel subscription, as easy to find and do as signing up was | L ftc-negative-option apple-subscriptions
+- Change plan, with the price difference shown before confirming | L eu-consumer-rights >web-app/upgrade
+- Cancel subscription, as easy to find and do as signing up was | L ftc-negative-option apple-subscriptions >flows/canceling-subscription
 - What happens on cancel: access until the period ends, data kept for how long | L ftc-negative-option
 - Turn auto-renew on again after cancelling | P
 ## Payment
 - Saved payment method (brand and last 4 digits, expiry), with change and remove | S pci-dss
 - Card expiring soon warned ahead | P
-- Card details collected by a PCI-certified provider, never stored by the app | S pci-dss
+- Card details collected by a PCI-certified provider, never stored by the app | S pci-dss >flows/making-a-card-payment
 - Strong customer authentication when the bank asks for it | L psd2-sca stripe-3ds
-- Failed payment: banner with what to do and the date access stops | P
+- Failed payment: banner with what to do and the date access stops | P >design-system/banner
 ## Invoices
 - List of invoices with date, amount, status (paid, failed, refunded) and PDF download | P
 - Billing details (company, address, tax ID) editable and shown on invoices | P
@@ -23,6 +23,6 @@ also: design-system/accessibility
 - Only owners and billing admins see and change billing | S owasp-authz
 - Others see "Ask your admin" | P
 ## Access
-- Invoice list is a real table with headers | S wai-tables
+- Invoice list is a real table with headers | S wai-tables >web-app/data-table
 - Amounts read clearly by screen readers (currency named) | S wcag-name-role
 - Confirmations for charges name the amount | S wcag-prevent

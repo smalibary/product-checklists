@@ -9,12 +9,12 @@ SETUP
 
 BEHAVIOUR
  3. Opens the exact screen, with a back path that makes sense   (Standard: android-back)
- 4. Sign-in required? Sign in, then continue to the linked screen   (Practice)
+ 4. Sign-in required? Sign in, then continue to the linked screen   (Practice)  -> see mobile/login
  5. Missing or deleted content: a clear message, not a crash   (Research: nng-errors)
 
 SAFETY
  6. Every linked screen checks permission   (Standard: owasp-authz)
- 7. Parameters validated like any input   (Standard: owasp-input)
+ 7. Parameters validated like any input   (Standard: owasp-input)  -> see backend/input-validation
 
 TESTING
  8. Each link tested installed, not installed and signed out   (Practice)

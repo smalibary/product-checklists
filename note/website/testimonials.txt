@@ -20,15 +20,15 @@ WHAT MAKES A QUOTE BELIEVABLE
 12. Video testimonials with captions and a transcript   (Standard: wcag-captions)
 
 LAYOUT
-13. Short quotes in a grid or list; never an auto-moving carousel   (Research: nng-carousel)
+13. Short quotes in a grid or list; never an auto-moving carousel   (Research: nng-carousel)  -> see design-system/carousel
 14. Star ratings show the number of reviews behind them   (Research: nng-reviews)
 15. Logos of customers used with permission   (Rule: ftc-endorsements)
-16. Text over photos keeps 4.5 to 1 contrast   (Standard: wcag-contrast)
-17. Photos have alt text with the person's name   (Standard: wcag-nontext)
+16. Text over photos keeps 4.5 to 1 contrast   (Standard: wcag-contrast)  -> see design-system/accessibility
+17. Photos have alt text with the person's name   (Standard: wcag-nontext)  -> see design-system/accessibility
 18. A call to action after the quotes (start, book a demo)   (Practice)
 
 SEARCH
-19. Review structured data only for real reviews of the item on the page   (Standard: google-review)
+19. Review structured data only for real reviews of the item on the page   (Standard: google-review)  -> see growth/technical-seo
 
 SOURCES
 - ftc-endorsements: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking

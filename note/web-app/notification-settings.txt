@@ -4,13 +4,13 @@ Backing: 3 Rule, 5 Standard, 1 Research, 10 Practice
 Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
 
 STRUCTURE
- 1. Grouped by topic (mentions, comments, billing, security, product news)   (Practice)
+ 1. Grouped by topic (mentions, comments, billing, security, product news)   (Practice)  -> see web-app/comments
  2. A grid: topics down the side, channels across the top (email, push, in-app)   (Practice)
- 3. Each row says in plain words what triggers it   (Practice)
+ 3. Each row says in plain words what triggers it   (Practice)  -> see design-system/content-voice
  4. Defaults set to what most people want, never to everything   (Research: nng-notifications)
 
 CONTROLS
- 5. Switches or checkboxes with clear names that include the topic and channel   (Standard: wcag-name-role, apg-switch)
+ 5. Switches or checkboxes with clear names that include the topic and channel   (Standard: wcag-name-role, apg-switch)  -> see design-system/checkbox
  6. Changes saved at once, with a short "Saved" message announced to screen readers   (Standard: wcag-status)
  7. Pause all for a set time (1 hour, until tomorrow, a week)   (Practice)
  8. Quiet hours with the time zone   (Practice)
@@ -18,9 +18,9 @@ CONTROLS
 
 RULES
 10. Security and billing alerts cannot be turned off, and say why   (Practice)
-11. Marketing emails off by default where the law needs consent   (Rule: gdpr-7)
-12. One-click unsubscribe in every marketing email, honoured quickly   (Rule: can-spam, rfc-unsubscribe)
-13. Email senders follow the bulk sender rules (one-click unsubscribe, low spam rate)   (Rule: google-sender)
+11. Marketing emails off by default where the law needs consent   (Rule: gdpr-7)  -> see growth/email-marketing
+12. One-click unsubscribe in every marketing email, honoured quickly   (Rule: can-spam, rfc-unsubscribe)  -> see flows/unsubscribing-from-emails, growth/email-marketing
+13. Email senders follow the bulk sender rules (one-click unsubscribe, low spam rate)   (Rule: google-sender)  -> see flows/unsubscribing-from-emails
 14. Push asked for only after the person has a reason to want it   (Standard: webdev-push)
 15. If browser push is blocked, explain how to turn it back on   (Practice)
 
@@ -29,8 +29,8 @@ PER ITEM
 17. Links in each email to change the setting for that topic   (Practice)
 
 ACCESS
-18. Grid is a real table or list with headers so screen readers read topic and channel   (Standard: wai-tables, wcag-info)
-19. Works at phone width (the grid becomes a list)   (Standard: wcag-reflow)
+18. Grid is a real table or list with headers so screen readers read topic and channel   (Standard: wai-tables, wcag-info)  -> see web-app/data-table, design-system/accessibility
+19. Works at phone width (the grid becomes a list)   (Standard: wcag-reflow)  -> see design-system/accessibility
 
 SOURCES
 - nng-notifications: https://www.nngroup.com/articles/push-notification/

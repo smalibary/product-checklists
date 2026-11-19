@@ -6,13 +6,13 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 BEFORE PLANNED WORK
  1. Warned ahead in the app and by email: date, start time with time zone, how long, what stops working   (Practice)
  2. Planned at a quiet time for most users   (Practice)
- 3. A banner a day before and an hour before, which can be closed   (Practice)
- 4. Listed on the status page   (Standard: atlassian-incident)
+ 3. A banner a day before and an hour before, which can be closed   (Practice)  -> see design-system/banner
+ 4. Listed on the status page   (Standard: atlassian-incident)  -> see website/status
 
 THE PAGE ITSELF
  5. Says plainly that the app is down for maintenance, and that data is safe   (Practice)
  6. When it should be back, with time zone   (Practice)
- 7. Link to the status page and support contact   (Standard: atlassian-incident)
+ 7. Link to the status page and support contact   (Standard: atlassian-incident)  -> see website/status
  8. Branded but light: loads without the main app's servers   (Practice)
  9. Returns HTTP status 503 with a Retry-After header, so search engines do not drop pages   (Standard: google-maintenance, rfc-retry-after)
 10. Checks by itself and reloads when the app is back   (Practice)

@@ -6,7 +6,7 @@ about: Keeping copies of answers so repeated requests are fast and cheap, withou
 - ETag or Last-Modified so clients can ask "changed since?" | S mdn-etag
 - Static files with content hashes in their names, cached for a year | S mdn-cache-control
 ## App caching
-- Cache keys include everything that changes the answer (user, language, tenant) | P
+- Cache keys include everything that changes the answer (user, language, tenant) | P >backend/multi-tenancy
 - A time limit on every cached item | P
 - Clear invalidation when the source changes | P
 - Protection against many requests rebuilding the same item at once | P
@@ -14,6 +14,6 @@ about: Keeping copies of answers so repeated requests are fast and cheap, withou
 - Never cache answers with another user's data under a shared key | S owasp-multitenant
 - The app still works when the cache is empty or down | S sre-cascading
 ## Costs
-- Expensive results (AI answers, outside lookups) cached | S aws-cost
+- Expensive results (AI answers, outside lookups) cached | S aws-cost >backend/ai-features
 ## Watching
 - Hit rate and size measured | S sre-monitoring

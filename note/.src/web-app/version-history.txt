@@ -18,7 +18,7 @@ also: design-system/accessibility
 - Confirm restore with the date and author named | R nng-confirm
 ## Rules
 - How long versions are kept, per plan | P
-- Who can see and restore versions follows edit rights | S owasp-authz
+- Who can see and restore versions follows edit rights | S owasp-authz >web-app/roles-permissions
 - Deleted items can be restored for a stated time | R nng-control
 ## Access
 - History panel opens as a side panel with focus moved in | S apg-dialog

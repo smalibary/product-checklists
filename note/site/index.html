@@ -124,6 +124,8 @@ mark{background:var(--accent-soft);color:inherit;border-radius:2px}
   .srclist li{grid-template-columns:minmax(0,1fr)}
 }
 @media (prefers-reduced-motion:no-preference){.grp a,.chip{transition:background .12s}}
+.see{font-size:12.5px;font-weight:600;color:var(--accent);text-decoration:none;border:1px solid var(--accent);border-radius:999px;padding:0 8px;line-height:20px}
+.see::before{content:"→ "}.see:hover{background:var(--accent-soft)}
 .also{margin:20px 0 0;padding:12px 14px;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;font-size:15px}
 </style>
 
@@ -188,7 +190,8 @@ function nav(cur){
 
 function tags(it,srcs){
   return `<div class="meta"><span class="tag ${it.b}">${BACK[it.b][0]}</span>`+
-    it.k.map(k=>srcs[k]?`<a class="src" href="${esc(srcs[k])}" target="_blank" rel="noopener">${esc(k)}</a>`:`<span class="src">${esc(k)}</span>`).join("")+`</div>`;
+    it.k.map(k=>srcs[k]?`<a class="src" href="${esc(srcs[k])}" target="_blank" rel="noopener">${esc(k)}</a>`:`<span class="src">${esc(k)}</span>`).join("")+
+    (it.x||[]).filter(x=>BY[x]).map(x=>`<a class="see" href="#${x}">See the ${esc(BY[x].title)} checklist</a>`).join("")+`</div>`;
 }
 function row(l,n,it,html){
   const d=isDone(l.id,n);

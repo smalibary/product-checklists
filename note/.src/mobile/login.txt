@@ -17,11 +17,11 @@ also: design-system/accessibility
 - Tokens kept in the Keychain or Keystore, not plain storage | S owasp-masvs
 ## Errors and help
 - One general message for wrong email or password | S owasp-auth
-- Forgot password link near the field | R nng-password
+- Forgot password link near the field | R nng-password >flows/resetting-password
 - Too many tries: wait time shown, not a dead end | S owasp-auth
-- Offline: say so, keep what was typed | P
+- Offline: say so, keep what was typed | P >mobile/offline
 ## Security
-- Two-step check where risk is high | S nist-63b
+- Two-step check where risk is high | S nist-63b >web-app/2fa
 - New device sign-in alert by email | S owasp-auth
 ## Access
 - Large text supported; keyboard never covers the button | S hig-layout

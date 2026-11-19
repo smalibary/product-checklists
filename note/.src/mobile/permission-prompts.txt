@@ -11,6 +11,6 @@ about: Asking for camera, location, contacts or notifications at the right time.
 - A way to turn it on later, with a link to settings | S android-permissions
 - No repeated nagging | R nng-permissions
 ## Notifications
-- Android 13 and later need the notification permission | S android-notif-perm
+- Android 13 and later need the notification permission | S android-notif-perm >mobile/in-app-notifications
 ## Tracking
 - App Tracking Transparency before tracking on iPhone | L apple-att

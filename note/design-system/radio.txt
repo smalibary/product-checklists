@@ -5,15 +5,15 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 WHEN TO USE
  1. One choice from a short list (2 to about 7) where seeing all options helps   (Standard: govuk-radios)
- 2. Longer lists: a select or a combobox   (Research: nng-dropdown)
- 3. Two options that mean on and off: a switch or one checkbox may be clearer   (Research: nng-toggle)
+ 2. Longer lists: a select or a combobox   (Research: nng-dropdown)  -> see design-system/select-combobox
+ 3. Two options that mean on and off: a switch or one checkbox may be clearer   (Research: nng-toggle)  -> see design-system/toggle, design-system/checkbox
 
 LOOK
  4. Circles on the start side of their labels; labels clickable   (Standard: govuk-radios)
  5. Selected state clear by more than colour (filled dot)   (Standard: wcag-color)
  6. Circle border 3:1 contrast   (Standard: wcag-ui-contrast)
  7. Vertical list for most cases; side by side only for two short options   (Standard: govuk-radios)
- 8. Touch area at least 24 px, ideally 44   (Standard: wcag-target)
+ 8. Touch area at least 24 px, ideally 44   (Standard: wcag-target)  -> see design-system/accessibility
 
 CONTENT
  9. Group has a question as its legend   (Standard: govuk-radios)

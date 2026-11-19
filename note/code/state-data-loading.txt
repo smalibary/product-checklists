@@ -10,7 +10,7 @@ STATE
 
 LOADING
  4. Every fetch has loading, empty, error and success states on screen   (Research: nng-empty, nng-response)
- 5. Repeated requests cached and shared, not fired twice   (Standard: rfc-caching)
+ 5. Repeated requests cached and shared, not fired twice   (Standard: rfc-caching)  -> see backend/caching
  6. Old requests cancelled when the person moves on   (Standard: react-effect)
  7. Lists fetched page by page   (Standard: google-aip-pagination)
 

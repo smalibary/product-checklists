@@ -2,7 +2,7 @@ title: Data Table
 about: A table of many records that people scan, compare, sort, filter and act on.
 also: design-system/accessibility
 ## Structure
-- Real table markup with column headers (and row headers where one column names the row) | S wai-tables wcag-info
+- Real table markup with column headers (and row headers where one column names the row) | S wai-tables wcag-info >design-system/accessibility
 - A caption or heading that names the table | S wai-tables
 - Numbers right-aligned, text left-aligned, same decimals in a column | R nng-tables
 - Units in the header, not in every cell | R nng-tables
@@ -10,23 +10,23 @@ also: design-system/accessibility
 - Row height choice (compact, comfortable) | R nng-tables
 ## Finding
 - Sort by clicking a header, with the direction shown and announced (aria-sort) | S apg-table
-- Filters above the table, with active filters shown as removable chips | R nng-filters
+- Filters above the table, with active filters shown as removable chips | R nng-filters >flows/filtering-items
 - Search within the table | R nng-tables
-- Pagination or virtual scrolling for large sets, with the total count | R nng-infinite
+- Pagination or virtual scrolling for large sets, with the total count | R nng-infinite >design-system/pagination
 - Choose, reorder and resize columns; the choice is remembered | R nng-tables
 ## Acting
-- Select rows with checkboxes, select all on page and select all results | R nng-tables
+- Select rows with checkboxes, select all on page and select all results | R nng-tables >design-system/checkbox
 - Bulk action bar appears with the count selected | P
 - Row actions in a menu at the end of the row, also reachable by keyboard | S apg-menubutton
 - Clicking a row opens the item; the row is a link or has one | P
 - Inline edit only for quick fields, with save and cancel | P
-- Export to CSV or Excel | P
+- Export to CSV or Excel | P >web-app/import-export
 ## States
-- Loading rows as skeletons | R nng-skeleton
+- Loading rows as skeletons | R nng-skeleton >design-system/skeleton
 - Empty and no-results states with next steps | R nng-empty
 - Errors per row (failed to save) next to the row | S wcag-error
 ## Access
 - Keyboard moves through cells if the table is interactive (grid pattern) | S apg-grid
 - Status in words, not only colour | S wcag-color
-- On phones: scroll the table sideways inside its box, or show cards | S wcag-reflow
+- On phones: scroll the table sideways inside its box, or show cards | S wcag-reflow >design-system/accessibility
 - Zebra stripes or row lines keep contrast | S wcag-ui-contrast

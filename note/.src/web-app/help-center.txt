@@ -1,7 +1,7 @@
 title: Help Center
 about: The self-help library of articles that answers how-to questions and fixes problems.
 ## Finding
-- A big search box at the top, with suggestions while typing | R nng-help baymard-autocomplete
+- A big search box at the top, with suggestions while typing | R nng-help baymard-autocomplete >web-app/search-results
 - Topics grouped by task (getting started, billing, account), with article counts | R nng-help
 - Popular articles listed | R nng-help
 - Search forgives typos and synonyms | R baymard-autocomplete
@@ -16,14 +16,14 @@ about: The self-help library of articles that answers how-to questions and fixes
 - Related articles at the end | R nng-help
 - "Was this helpful?" with an optional comment | P
 ## Getting more help
-- Contact support easy to find, never hidden behind forced searches | R nng-help
-- Status page link for outages | P
-- Community forum link, if any | P
+- Contact support easy to find, never hidden behind forced searches | R nng-help >flows/contacting-support
+- Status page link for outages | P >website/status >operations/incident-response
+- Community forum link, if any | P >support/community-forum
 - In-app help opens the right article for the screen the person is on | R nng-help
 ## Structure and access
-- Breadcrumbs from topic to article | R nng-breadcrumbs
-- Headings in order, contents list on long articles | S wcag-headings
-- Images and GIFs have alt text; animations can be paused | S wcag-nontext wcag-pause
+- Breadcrumbs from topic to article | R nng-breadcrumbs >design-system/breadcrumb
+- Headings in order, contents list on long articles | S wcag-headings >design-system/accessibility
+- Images and GIFs have alt text; animations can be paused | S wcag-nontext wcag-pause >motion/motion-system >design-system/accessibility
 - Help link in the same place on every page of the app | S wcag-help
 - Available in the app's languages | P
 - Articles indexable by search engines | S google-helpful

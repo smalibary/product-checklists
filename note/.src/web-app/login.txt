@@ -8,24 +8,24 @@ also: design-system/accessibility
 - Single sign-on for companies: type the work email and the company's sign-in opens | P
 - Magic link by email as an option, with the code too for other devices | P
 ## Fields
-- Labels, autocomplete username and current-password | S mdn-autocomplete wcag-labels
+- Labels, autocomplete username and current-password | S mdn-autocomplete wcag-labels >design-system/accessibility
 - Paste and password managers allowed | S nist-63b wcag-auth
 - Show password button | S nist-63b
 - Caps Lock warning | P
 ## Errors and safety
 - Same message for wrong email or wrong password ("Email or password is wrong") | S owasp-auth
 - Limited tries per account and per address, then slow down; no permanent lockout by others | S owasp-auth nist-63b
-- Two-step sign-in after the password where turned on | S owasp-mfa
+- Two-step sign-in after the password where turned on | S owasp-mfa >web-app/2fa
 - Robot checks only after suspicious attempts, never the first time | S wcag-auth
 - Sign-in from a new device emailed | S owasp-auth
 - All over HTTPS, cookies Secure and HttpOnly | S owasp-session
 ## Staying signed in
 - "Keep me signed in" for trusted devices | P
-- Sessions end after a stated idle time, with a warning before | S owasp-session wcag-timing
+- Sessions end after a stated idle time, with a warning before | S owasp-session wcag-timing >backend/sessions
 - After signing in, return to the page the person wanted | P
 - Signed out in another tab: the others notice | P
 ## Help
-- Forgot password link next to the password field | S owasp-forgot
-- Link to sign up and to help | P
+- Forgot password link next to the password field | S owasp-forgot >flows/resetting-password
+- Link to sign up and to help | P >website/sign-up
 ## Access
 - Errors next to fields and in a summary, focus moved there | S wcag-error govuk-error-summary

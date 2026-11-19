@@ -8,27 +8,27 @@ also: design-system/accessibility
 - Time zone of the data stated | P
 - When the data was last updated | R nng-status
 ## Charts
-- The right chart for the question: lines for trends, bars for comparison, no 3D or pies with many slices | R nng-dashboards
+- The right chart for the question: lines for trends, bars for comparison, no 3D or pies with many slices | R nng-dashboards >design-system/charts
 - Axes labelled with units; y-axis starts at zero for bars | P
-- Tooltip on hover and focus showing exact values | S wcag-hover
+- Tooltip on hover and focus showing exact values | S wcag-hover >design-system/tooltip
 - Legend near the lines, or labels on the lines | P
-- Colours that work for colour-blind people and in dark mode | S wcag-ui-contrast wcag-color
-- A table view of the same data for screen readers and export | S wcag-nontext
+- Colours that work for colour-blind people and in dark mode | S wcag-ui-contrast wcag-color >design-system/dark-mode
+- A table view of the same data for screen readers and export | S wcag-nontext >web-app/import-export >web-app/data-table >design-system/accessibility
 ## Exploring
-- Filter by segment (country, plan, channel) | R nng-filters
-- Click a chart point to see the records behind it | P
-- Filters and range kept in the address, so views can be shared | P
+- Filter by segment (country, plan, channel) | R nng-filters >flows/filtering-items
+- Click a chart point to see the records behind it | P >design-system/charts
+- Filters and range kept in the address, so views can be shared | P >flows/filtering-items
 - Save a view or report | P
 ## Trust
 - Definitions of each number on demand ("Active user: signed in within 7 days") | P
 - Incomplete periods (today) marked | P
 - Data gaps or delays shown, not drawn as zero | P
 ## States and speed
-- Loading skeletons in chart shapes | R nng-skeleton
-- No data state explains why (no events yet, filter too narrow) | R nng-empty
+- Loading skeletons in chart shapes | R nng-skeleton >design-system/skeleton >design-system/charts
+- No data state explains why (no events yet, filter too narrow) | R nng-empty >flows/filtering-items
 - Slow queries show progress and can be cancelled | R nng-response
 ## Access and export
-- Export to CSV and image | P
-- Animated charts respect reduced motion | S mdn-reduced-motion wcag-animation
-- Works at phone width (charts scale, tables scroll) | S wcag-reflow
-- Personal data aggregated or anonymised where possible | L gdpr-25
+- Export to CSV and image | P >web-app/import-export
+- Animated charts respect reduced motion | S mdn-reduced-motion wcag-animation >design-system/charts >motion/motion-accessibility >motion/motion-system
+- Works at phone width (charts scale, tables scroll) | S wcag-reflow >web-app/data-table >design-system/charts >design-system/accessibility
+- Personal data aggregated or anonymised where possible | L gdpr-25 >backend/data-privacy

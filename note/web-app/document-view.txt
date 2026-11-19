@@ -5,35 +5,35 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 READING
  1. Title as the main heading, with owner, last edited time and by whom   (Practice)
- 2. Contents list from headings for long documents   (Standard: wcag-headings)
- 3. Comfortable line length (about 60 to 80 characters) and line height   (Standard: butterick-line, wcag-text-spacing)
- 4. Readable at 200% zoom and in dark mode   (Standard: wcag-reflow, mdn-color-scheme)
- 5. Images, tables and code blocks fit the width or scroll inside their box   (Standard: wcag-reflow)
+ 2. Contents list from headings for long documents   (Standard: wcag-headings)  -> see design-system/accessibility
+ 3. Comfortable line length (about 60 to 80 characters) and line height   (Standard: butterick-line, wcag-text-spacing)  -> see design-system/typography
+ 4. Readable at 200% zoom and in dark mode   (Standard: wcag-reflow, mdn-color-scheme)  -> see design-system/dark-mode, design-system/accessibility
+ 5. Images, tables and code blocks fit the width or scroll inside their box   (Standard: wcag-reflow)  -> see web-app/data-table, design-system/accessibility
 
 EDITING
  6. Clear difference between view and edit mode, or edit in place with a visible cursor   (Practice)
  7. Saving automatic with "Saved" or "Saving..." shown   (Research: nng-status)
- 8. Offline edits kept and synced later   (Practice)
- 9. Undo and redo with keyboard shortcuts   (Research: nng-control)
-10. Formatting toolbar with named buttons, also by keyboard shortcut   (Standard: wcag-name-role)
+ 8. Offline edits kept and synced later   (Practice)  -> see mobile/offline
+ 9. Undo and redo with keyboard shortcuts   (Research: nng-control)  -> see flows/undoing-an-action, web-app/keyboard-shortcuts
+10. Formatting toolbar with named buttons, also by keyboard shortcut   (Standard: wcag-name-role)  -> see web-app/keyboard-shortcuts
 11. Paste from other apps keeps simple formatting   (Practice)
 
 TOGETHER
 12. Who else is here, with photos and coloured cursors plus names   (Practice)
-13. Comments on selected text   (Practice)
+13. Comments on selected text   (Practice)  -> see web-app/comments
 14. Suggest changes mode for reviewers   (Practice)
-15. Version history   (Practice)
+15. Version history   (Practice)  -> see web-app/version-history
 
 SHARING
-16. Share button showing who has access and their level (view, comment, edit)   (Standard: owasp-authz)
-17. Link sharing off by default, or limited to the workspace   (Standard: owasp-authz)
-18. Export to PDF, Word, Markdown   (Practice)
+16. Share button showing who has access and their level (view, comment, edit)   (Standard: owasp-authz)  -> see flows/sharing-a-link, web-app/comments
+17. Link sharing off by default, or limited to the workspace   (Standard: owasp-authz)  -> see web-app/workspace-switcher
+18. Export to PDF, Word, Markdown   (Practice)  -> see web-app/import-export
 19. Print layout   (Practice)
 
 ACCESS
-20. Editor works with screen readers and keyboard only   (Standard: wcag-keyboard)
-21. Headings, lists and tables are real structure, not just bold text   (Standard: wcag-info)
-22. Language of the document set, with right-to-left for Arabic   (Standard: w3c-dir)
+20. Editor works with screen readers and keyboard only   (Standard: wcag-keyboard)  -> see design-system/accessibility
+21. Headings, lists and tables are real structure, not just bold text   (Standard: wcag-info)  -> see web-app/data-table, design-system/accessibility
+22. Language of the document set, with right-to-left for Arabic   (Standard: w3c-dir)  -> see design-system/rtl-localisation
 
 SOURCES
 - wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels

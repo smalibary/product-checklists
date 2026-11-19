@@ -9,7 +9,7 @@ about: Making sure search engines can find, read and list every page that should
 - One main address per page, marked as canonical | S gsc-canonical
 - Private or thin pages marked noindex | S gsc-noindex
 - Moved pages send a permanent redirect | S gsc-redirects
-- Missing pages return a real 404 | S google-404
+- Missing pages return a real 404 | S google-404 >website/404
 ## Pages
 - Short, readable addresses with words, not ids | S gsc-url
 - Same content on phone and computer | S gsc-mobile-first

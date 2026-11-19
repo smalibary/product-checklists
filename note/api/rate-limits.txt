@@ -5,14 +5,14 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 LIMITS
  1. Limits per key or per user, and a lower one per network address for anonymous calls   (Standard: owasp-api-top10, owasp-dos)
- 2. Stricter limits on costly or sensitive actions: sign-in, password reset, search, exports, AI calls   (Standard: owasp-auth, owasp-api-top10)
+ 2. Stricter limits on costly or sensitive actions: sign-in, password reset, search, exports, AI calls   (Standard: owasp-auth, owasp-api-top10)  -> see flows/resetting-password, flows/exporting-data, backend/ai-features
  3. Size limits too: body size, page size, file size, query depth   (Standard: owasp-api-top10)
  4. A timeout on every request, so slow work cannot pile up   (Standard: sre-overload)
 
 TELLING CALLERS
  5. 429 Too Many Requests with Retry-After   (Standard: rfc-429, rfc-retry-after)
  6. Headers with the limit, what is left and when it resets   (Standard: ietf-ratelimit, github-rate-limits)
- 7. Limits listed in the docs for each plan   (Standard: github-rate-limits)
+ 7. Limits listed in the docs for each plan   (Standard: github-rate-limits)  -> see api/api-docs
 
 BEHAVIOUR
  8. Counted in one shared store, so all servers agree   (Practice)
@@ -21,11 +21,11 @@ BEHAVIOUR
 11. Callers told to retry with growing waits and a random spread   (Standard: aws-backoff)
 
 COSTS
-12. Anything that costs money per call (AI, SMS, email, maps) has a daily cap in code   (Standard: aws-cost, owasp-llm)
-13. An alert when one caller or the whole service nears its cap   (Standard: sre-alerting)
+12. Anything that costs money per call (AI, SMS, email, maps) has a daily cap in code   (Standard: aws-cost, owasp-llm)  -> see backend/ai-features, operations/cost-limits
+13. An alert when one caller or the whole service nears its cap   (Standard: sre-alerting)  -> see operations/monitoring-alerts
 
 ABUSE
-14. Repeated hits on a limit are logged and reviewed   (Standard: owasp-logging)
+14. Repeated hits on a limit are logged and reviewed   (Standard: owasp-logging)  -> see operations/logging
 
 SOURCES
 - owasp-api-top10: https://owasp.org/API-Security/editions/2023/en/0x11-t10/

@@ -8,7 +8,7 @@ also: design-system/accessibility
 - Collapse a column | P
 - Swimlanes (rows) by person, priority or project | P
 ## Cards
-- Title, assignee photo, due date, labels and a small set of icons (comments, files) | R nng-cards
+- Title, assignee photo, due date, labels and a small set of icons (comments, files) | R nng-cards >web-app/comments
 - Overdue shown by icon and word, not only red | S wcag-color
 - Labels have text, not only colour | S wcag-color
 - Click opens the card detail in a side panel or page with its own address | P
@@ -18,15 +18,15 @@ also: design-system/accessibility
 - A clear drop place shown while dragging | R nng-drag
 - Every drag has another way: a "Move to" menu or keyboard keys | S wcag-dragging apg-menubutton
 - Moving to Done may ask for a reason or set fields, only when needed | P
-- Undo after a move | R nng-control
+- Undo after a move | R nng-control >flows/undoing-an-action
 - Changes from others appear live without moving the card under the person's hand | P
 ## Finding
-- Filter by person, label and due date; search | R nng-filters
-- Quick "Only my cards" filter | P
-- Switch to list or table view | P
+- Filter by person, label and due date; search | R nng-filters >flows/filtering-items
+- Quick "Only my cards" filter | P >flows/filtering-items
+- Switch to list or table view | P >web-app/data-table
 ## Access
 - Moving by keyboard announced ("Card moved to Doing, position 2") | S wcag-status
-- Columns are lists with headings; cards are list items | S wcag-info
-- On phones: one column at a time, swipe or tabs between columns | S wcag-reflow
+- Columns are lists with headings; cards are list items | S wcag-info >design-system/accessibility
+- On phones: one column at a time, swipe or tabs between columns | S wcag-reflow >mobile/gesture-navigation >design-system/tabs >design-system/accessibility
 ## Speed
 - Smooth with hundreds of cards | S webdev-inp

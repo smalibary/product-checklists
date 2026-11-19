@@ -6,7 +6,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 CHANNELS
  1. A feedback link on every page or screen   (Standard: govuk-feedback)
  2. Short in-product surveys at natural moments, never during a task   (Research: nng-surveys, nng-feedback)
- 3. In-app review prompts only after a success, within store limits   (Rule: apple-review-prompt, play-in-app-review)
+ 3. In-app review prompts only after a success, within store limits   (Rule: apple-review-prompt, play-in-app-review)  -> see launch/app-store-submission
 
 ASKING WELL
  4. One or two questions, the rating scale kept the same   (Research: nng-surveys)
@@ -14,7 +14,7 @@ ASKING WELL
 
 USING IT
  6. Feedback read on a schedule and sorted into themes   (Research: nng-feedback)
- 7. Paired with analytics and research before acting   (Research: nng-analytics)
+ 7. Paired with analytics and research before acting   (Research: nng-analytics)  -> see growth/analytics-tracking
  8. Results told back to the people who gave them   (Practice)
 
 MEASURES

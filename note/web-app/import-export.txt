@@ -9,17 +9,17 @@ IMPORT
  3. Errors listed by row and field, with a way to fix and retry   (Standard: govuk-error-summary)
  4. Large imports run in the background with progress   (Research: nng-progress)
  5. A summary at the end: added, updated, skipped   (Standard: govuk-confirm)
- 6. Undo or delete the whole import   (Research: nng-control)
+ 6. Undo or delete the whole import   (Research: nng-control)  -> see flows/undoing-an-action
 
 EXPORT
  7. Common formats (CSV, JSON, PDF)   (Practice)
- 8. Exports of all personal data available to the person   (Rule: gdpr-20)
+ 8. Exports of all personal data available to the person   (Rule: gdpr-20)  -> see backend/data-privacy
  9. Large exports emailed or ready to download later   (Practice)
-10. CSV safe against formula injection   (Practice)
+10. CSV safe against formula injection   (Practice)  -> see code/secure-coding
 
 SAFETY
 11. Only data the person may see is exported   (Standard: owasp-authz)
-12. Exports logged in the audit trail   (Standard: owasp-logging)
+12. Exports logged in the audit trail   (Standard: owasp-logging)  -> see web-app/audit-log
 
 SOURCES
 - govuk-file-upload: https://design-system.service.gov.uk/components/file-upload/

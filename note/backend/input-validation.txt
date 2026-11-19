@@ -14,7 +14,7 @@ HOW
  6. Sizes capped: body, strings, arrays, file sizes   (Standard: owasp-api-top10)
 
 INJECTION
- 7. Database queries always use parameters, never joined strings   (Standard: owasp-sql)
+ 7. Database queries always use parameters, never joined strings   (Standard: owasp-sql)  -> see backend/database-design
  8. Output encoded for where it goes (HTML, address, JSON)   (Standard: owasp-xss)
  9. No user input in shell commands or file paths   (Standard: owasp-input)
 10. Addresses supplied by users fetched only through an allow-list (no internal addresses)   (Standard: owasp-ssrf)
@@ -22,7 +22,7 @@ INJECTION
 12. Redirects only to known addresses   (Standard: owasp-redirect)
 
 ERRORS
-13. Clear field errors to the caller, without internal details   (Standard: rfc-problem, owasp-errors)
+13. Clear field errors to the caller, without internal details   (Standard: rfc-problem, owasp-errors)  -> see flows/showing-input-error
 
 SOURCES
 - owasp-input: https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html

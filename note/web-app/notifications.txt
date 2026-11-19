@@ -5,7 +5,7 @@ Rule = a store or a law requires it · Standard = a published standard · Resear
 
 THE BELL
  1. An icon button with a name and the unread count ("Notifications, 3 unread")   (Standard: wcag-name-role)
- 2. Count capped (9+) and shown as a badge   (Research: nng-indicators)
+ 2. Count capped (9+) and shown as a badge   (Research: nng-indicators)  -> see design-system/badge
  3. New notifications announced politely, not interrupting   (Standard: wcag-status)
 
 THE LIST
@@ -15,8 +15,8 @@ THE LIST
  7. Clicking opens the item and marks it read   (Practice)
  8. Mark one or all as read   (Practice)
  9. Quick actions inline (approve, reply) for common jobs   (Practice)
-10. Filters: all, mentions, assigned to me   (Practice)
-11. Link to notification settings   (Practice)
+10. Filters: all, mentions, assigned to me   (Practice)  -> see flows/filtering-items
+11. Link to notification settings   (Practice)  -> see web-app/notification-settings
 
 VOLUME
 12. Similar notifications combined ("Sara and 4 others commented")   (Research: nng-notifications)
@@ -24,12 +24,12 @@ VOLUME
 14. Old notifications cleared after a stated time   (Practice)
 
 STATES
-15. Empty state: "You're all caught up"   (Research: nng-empty)
+15. Empty state: "You're all caught up"   (Research: nng-empty)  -> see web-app/empty-state
 16. Loading and error states   (Research: nng-skeleton)
 
 ACCESS
-17. The panel is a dialog or popover with focus moved in and Escape to close   (Standard: apg-dialog)
-18. Works at phone width (full-screen panel)   (Standard: wcag-reflow)
+17. The panel is a dialog or popover with focus moved in and Escape to close   (Standard: apg-dialog)  -> see design-system/modal, design-system/popover
+18. Works at phone width (full-screen panel)   (Standard: wcag-reflow)  -> see design-system/accessibility
 
 SOURCES
 - wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value

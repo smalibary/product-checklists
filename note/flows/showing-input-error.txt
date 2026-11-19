@@ -11,12 +11,12 @@ WHEN TO CHECK
 
 WHAT THE MESSAGE SAYS
  5. What is wrong and how to fix it ("Enter a date like 21/03/2026")   (Standard: wcag-suggest)
- 6. Plain words; no codes, no blame   (Research: nng-errors)
+ 6. Plain words; no codes, no blame   (Research: nng-errors)  -> see design-system/content-voice
  7. Near the field, under it, tied to it for screen readers (aria-describedby)   (Standard: wcag-error)
 
 HOW IT LOOKS
  8. Red border plus an icon and text, not colour alone   (Standard: wcag-color)
- 9. Contrast at least 3:1 for the border, 4.5:1 for the text   (Standard: wcag-ui-contrast, wcag-contrast)
+ 9. Contrast at least 3:1 for the border, 4.5:1 for the text   (Standard: wcag-ui-contrast, wcag-contrast)  -> see design-system/accessibility
 10. Layout does not jump much when the message appears   (Practice)
 
 ON SUBMIT
@@ -26,8 +26,8 @@ ON SUBMIT
 14. Everything typed is kept   (Standard: wcag-error)
 
 PREVENT ERRORS
-15. Accept many formats (spaces in card numbers, +966 or 05)   (Research: baymard-fields)
-16. Hints before typing for format rules   (Standard: wcag-labels)
+15. Accept many formats (spaces in card numbers, +966 or 05)   (Research: baymard-fields)  -> see flows/making-a-card-payment
+16. Hints before typing for format rules   (Standard: wcag-labels)  -> see design-system/accessibility
 17. Right keyboard and autofill   (Standard: mdn-inputmode, mdn-autocomplete)
 
 ACCESS
