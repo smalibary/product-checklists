@@ -14,6 +14,7 @@ import { fileUrl, outcomeLabel, type Run } from "@/lib/api"
 import { cn } from "@/lib/utils"
 import { Chips, KINDS, OUTCOMES, outcomeTone } from "./parts"
 import { StepDetail } from "./step-detail"
+import { ComponentsView } from "./components-view"
 
 export function RunView({ run }: { run: Run }) {
   const [query, setQuery] = useState("")
@@ -43,12 +44,13 @@ export function RunView({ run }: { run: Run }) {
         <div className="min-w-0">
           <h1 className="truncate text-base font-semibold">{run.site}</h1>
           <p className="truncate text-xs text-muted-foreground">
-            {run.start_url} · {run.steps.length} steps · {run.screens.length} screens
+            {run.start_url} · {run.steps.length} steps · {run.screens.length} screens · {run.components?.length ?? 0} components
             {run.error ? ` · stopped: ${run.error}` : ""}
           </p>
         </div>
         <TabsList className="ml-auto">
           <TabsTrigger value="steps">Steps</TabsTrigger>
+          <TabsTrigger value="components">Components</TabsTrigger>
           <TabsTrigger value="screens">Screens</TabsTrigger>
           <TabsTrigger value="checklist">Checklist</TabsTrigger>
         </TabsList>
@@ -93,6 +95,10 @@ export function RunView({ run }: { run: Run }) {
         <section className="min-w-0 flex-1 overflow-y-auto p-4">
           {current ? <StepDetail run={run} step={current} /> : <p className="text-sm text-muted-foreground">No steps match.</p>}
         </section>
+      </TabsContent>
+
+      <TabsContent value="components" className="flex min-h-0 flex-1">
+        <ComponentsView run={run} />
       </TabsContent>
 
       <TabsContent value="screens" className="min-h-0 flex-1 overflow-y-auto p-4">

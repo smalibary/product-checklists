@@ -7,11 +7,19 @@ export type Step = {
   outcome: "new-screen" | "changed-in-place" | "nothing-changed" | "error"
   explanation: string; before: string; after: string; clip: string | null; clip_ms: number; frames: number
 }
+export type Change = { what: string; from: string; to: string }
+export type Motion = { what: string; ms: number; delay_ms: number; easing: string }
+export type StateShot = { state: "normal" | "hover" | "focus" | "pressed"; picture: string; changes: Change[]; motion: Motion[]; said: string }
+export type ComponentCard = {
+  id: string; screen: string; kind: string; family: string; name: string; used: number
+  tag: string; role: string; parts: string; html: string; look: Record<string, string>
+  states: StateShot[]; explanation: string; lessons: string[]
+}
 export type Run = {
   id: string; site: string; start_url: string; started_at: string; finished_at: string | null
-  status: "running" | "done" | "failed"; error: string | null; screens: Screen[]; steps: Step[]
+  status: "running" | "done" | "failed"; error: string | null; screens: Screen[]; steps: Step[]; components?: ComponentCard[]
 }
-export type RunSummary = { id: string; site: string; start_url: string; started_at: string; status: string; steps: number; screens: number; cover: string | null }
+export type RunSummary = { id: string; site: string; start_url: string; started_at: string; status: string; steps: number; screens: number; components?: number; cover: string | null }
 
 export const fileUrl = (runId: string, name: string) => `/files/${runId}/${name}`
 

@@ -48,6 +48,59 @@ pub struct Step {
     pub frames: usize,
 }
 
+/// One look of a component (normal, hover, focus, pressed): its picture, what changed from normal,
+/// and what moved on the way there.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct StateShot {
+    pub state: String,
+    pub picture: String,
+    pub changes: Vec<Change>,
+    pub motion: Vec<Motion>,
+    /// plain-language sentence about this state
+    pub said: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Change {
+    pub what: String,
+    pub from: String,
+    pub to: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Motion {
+    pub what: String,
+    pub ms: u64,
+    pub delay_ms: u64,
+    pub easing: String,
+}
+
+/// A component cut out of a recorded screen, so an AI can copy it and a person can learn from it.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ComponentCard {
+    pub id: String,
+    /// short code of the screen it was found on
+    pub screen: String,
+    pub kind: String,
+    /// filled button, outlined button, ghost button, text link, icon button, text field...
+    pub family: String,
+    pub name: String,
+    /// how many controls on the screen look exactly like this one
+    pub used: usize,
+    pub tag: String,
+    pub role: String,
+    /// icon + label | icon only | label only
+    pub parts: String,
+    pub html: String,
+    /// how it looks when nothing is happening (colours, sizes, corners, font...)
+    pub look: std::collections::BTreeMap<String, String>,
+    pub states: Vec<StateShot>,
+    /// a short paragraph in plain words: what it is and what it does
+    pub explanation: String,
+    /// design lessons: what it does well or badly (feedback, focus, size, contrast, timing)
+    pub lessons: Vec<String>,
+}
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Run {
     pub id: String,
@@ -60,6 +113,8 @@ pub struct Run {
     pub error: Option<String>,
     pub screens: Vec<Screen>,
     pub steps: Vec<Step>,
+    #[serde(default)]
+    pub components: Vec<ComponentCard>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -71,6 +126,7 @@ pub struct RunSummary {
     pub status: String,
     pub steps: usize,
     pub screens: usize,
+    pub components: usize,
     pub cover: Option<String>,
 }
 
@@ -120,6 +176,7 @@ impl Library {
                     status: run.status,
                     steps: run.steps.len(),
                     screens: run.screens.len(),
+                    components: run.components.len(),
                 });
             }
         }

@@ -21,6 +21,9 @@ One line each, plain meaning. Alphabetical. Salem's own words win: if he calls s
 | Contact | A doctor or an emergency contact on a person in care's card: name, speciality or relation, phone; up to eight of each (E19.1). |
 | Component inventory | The closed list of components in DESIGN.md. Screens use only these; a new one needs a real reason (R-35). |
 | Component | One reusable piece of a screen, like a button, a card or a menu. |
+| Component card | One component cut out of a recorded site: its build, look, states, motion and behaviour, kept in the library so an AI can copy it. |
+| Recipe | The written steps on a component card that tell an AI how to rebuild that component in our own stack. |
+| States | The different looks of one component: normal, hover, pressed, focused, open, loading, disabled, error. |
 | Daily report | One report per child per day from the nanny, housemaid or driver: meals, nap, mood, a note and up to four photos; sending it alerts the parents (E18.4). |
 | Design file | DESIGN.md, in Google's format: the colours, text styles and components every screen is built from. |
 | Dose | One time a medicine is due on one day; the carer taps Given, and a dose 30 minutes late shows on the parents' Home (E18.3). |

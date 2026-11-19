@@ -1,5 +1,6 @@
 //! The recorder: drives a hidden Chrome (never the real mouse or screen), clicks through a website,
 //! and keeps a picture before and after each click plus a smooth video clip of what moved in between.
+use crate::components;
 use crate::store::{Control, Library, Run, Screen, Step};
 use anyhow::{anyhow, Result};
 use base64::Engine;
@@ -287,6 +288,7 @@ pub async fn explore(lib: &Library, opts: ExploreOptions, run_id: Option<String>
         error: None,
         screens: vec![],
         steps: vec![],
+        components: vec![],
     };
     lib.save(&run)?;
 
@@ -326,6 +328,10 @@ async fn explore_inner(lib: &Library, opts: &ExploreOptions, origin: &str, dir: 
             first_step: 0,
             controls: home_controls.clone(),
         });
+        lib.save(run)?;
+        // component cards for the start page (controls are marked by the listing above)
+        let cards = components::capture(&tab.page, dir, &home_code, 0, components::FIRST_SCREEN_LIMIT).await;
+        run.components.extend(cards);
         lib.save(run)?;
 
         let todo: Vec<Control> = home_controls.iter().filter(|c| !skip(c)).take(opts.max_steps).cloned().collect();
@@ -384,6 +390,11 @@ async fn explore_inner(lib: &Library, opts: &ExploreOptions, origin: &str, dir: 
                 let pic = format!("screen-{:02}.jpg", run.screens.len());
                 std::fs::write(dir.join(&pic), &after)?;
                 let controls = if origin_of(&url_after) == origin { tab.controls(origin).await } else { vec![] };
+                if !controls.is_empty() {
+                    let start = run.components.len();
+                    let cards = components::capture(&tab.page, dir, &code_after, start, components::OTHER_SCREEN_LIMIT).await;
+                    run.components.extend(cards);
+                }
                 run.screens.push(Screen {
                     code: code_after.clone(),
                     url: url_after.clone(),
