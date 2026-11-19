@@ -9,9 +9,10 @@ This file only points. It holds nothing that changes (R-01).
 - Rules index: `.claude/rulebook/INDEX.md` · topic rules: `.claude/rules/`
 - Live state: `.claude/state/now.md` · idea: `.claude/docs/idea.md`
 - Lessons: `.claude/docs/lessons.md` · journal: `.claude/docs/journal/`
-- The plan: `.claude/docs/epics/` · grill records: `.claude/grill/`
+- Grill records: `.claude/grill/`
 - Services and limits: `.claude/docs/services.md`
 - Skills: `.claude/skills/` (grill, long-run, mockup, pattern-sweep; helpers builder, scout, checker)
 - Inspect mode: `.claude/inspect/`
-- App: Rust brain `core/` (hidden-Chrome recorder, library on disk), `app/` (record + serve), page `web/`
-- Run: `cargo build --release`, `pnpm -C web build`, then `target/release/agentscreen serve` → http://127.0.0.1:4477
+- App: the Product Checklists page `note/site/` (live: https://claude.ai/artifact/PU86W5cQykqVZQaQPJs8k4)
+- Content: `note/.src/<group>/*.txt` + `note/.src/sources.txt`; build `python .claude/scripts/notes.py`
+- The old recorder is gone (2026-11-20); its last version is git tag `recorder-last`

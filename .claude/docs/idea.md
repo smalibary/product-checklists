@@ -1,44 +1,25 @@
-# agentscreen: the idea (2026-11-19)
+# agentscreen: the idea (changed 2026-11-20)
 
-## In Salem's words (summarised)
-A fresh start, not built on ux-agents. Mobbin shows screens, but none of the open-source alternatives show the
-full flow: every animation, every screen, everything working. He wants a very light app that an AI uses to go
-through a website or app screen by screen, link by link, button by button, and record everything, animations
-included. Afterwards: a list of every interaction that can be filtered, searched and explained, plus checklists.
-For Salem first; later a product others can use, like Mobbin. Test first, then more examples.
-Rust for the logic; ui-sdk.dev for the screens. It must run headless: never use his mouse or screen.
+## In Salem's words
+"I want this app to be this artifact, delete all the rest, the recording of other sites etc when we started it!
+I don't like that, I like this artifact!"
+
+## What it is now
+**Product Checklists**: one page with every checklist a product team needs, from the website and sign-up flow to
+code, motion, growth, support and launch. 292 checklists in 14 groups, each item marked as a Rule (law or store
+policy), Standard, Research or Practice, with a link to its source.
 
 ## What it does
-- **Rust brain:** runs a hidden Chrome, clicks and types with virtual input, records video of everything, takes a
-  picture of each screen, gives each screen a short code that tells pages apart, and saves every action as a step:
-  before, what was done, after, and the clip. It also does search, filters and checklists.
-- **The AI:** the brain offers controls Claude uses directly (open, click, type, record, save). Claude chooses the
-  interesting states (wrong password, email taken, weak or strong password). An automatic mode clicks every
-  link and button with no AI.
-- **The library:** a page in Salem's browser: flows, clips, search ("every password error"), filters by site and
-  screen type, a short explanation per step.
+- Overview of all groups, then each checklist with its sections and items.
+- Search across every item; filter by backing (Rule, Standard, Research, Practice).
+- Ticks per project, kept in the browser; "Copy as text"; an "All sources" view.
+- Optional groups (code, growth, product, support, launch) are marked as needed only by some products.
 
-## Decisions (2026-11-19, all option A; full list in `.claude/grill/decisions.md`)
-D1 Claude drives it plus an automatic mode · D2 library page in his normal browser · D3 shadcn plus ui-sdk for
-timeline, search, tree · D4 websites first, Android apps next · headless only.
+## How it is made
+- Each checklist is a short text file in `note/.src/<group>/`; sources live once in `note/.src/sources.txt`.
+- One script builds the notes and the page's data file; the page is published as a claude.ai artifact.
+- Every source link is checked before it is used.
 
-## First test (2026-11-19, passed; throwaway code removed, the real recorder is rebuilt from what it proved)
-- Hidden Chrome (new headless mode) driven from Rust through the Chrome DevTools connection; video from the
-  screencast frames joined into a video file with ffmpeg using their real times.
-- A practice login: wrong password (red error) then right password (logged in), one picture and one line per step.
-- A 1-second slide-in animation: about 60 frames, 60 frames a second. 7.5 s of video came to about 90 KB.
-- The first page's links, buttons and inputs were listed: the start of "every interaction on a screen".
-- **Lesson:** when the same tab moved from one website to another, virtual clicks stopped reaching the page.
-  Fix: one hidden tab per website.
-
-## Not yet decided
-- First real sites to record; what counts as one flow; what the library filters on; how checklists are made.
-
-## The bigger idea (Salem, 2026-11-19): not just capture, the best version of the same page
-Mobbin only captures. agentscreen records a real flow (example: Dribbble sign-up), then:
-1. **Audit:** grades it against a full best-practice checklist for that kind of flow: each item met, missing or
-   partly met, why it matters, with the step picture as proof.
-2. **Best version:** a working sign-up built with ui-sdk that meets every checklist item, all of it really working.
-3. **In their style:** the recorded app's look (colours, fonts, corners, spacing taken from its component cards)
-   is applied to the best version as tokens, so you see "Dribbble's sign-up, done right".
-Open decisions: see `.claude/grill/decisions.md` (rows dated 2026-11-19, "best version").
+## What was dropped (2026-11-20)
+The first idea: a hidden-Chrome recorder that walked websites screen by screen and kept clips in a library.
+Code, builds and recordings were deleted; the code's last version is kept as git tag `recorder-last`.

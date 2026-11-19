@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 28,
+ "next": 29,
  "asks": [
   {
    "id": 2,
@@ -941,6 +941,40 @@
    "status": "done",
    "note": "Motion group: 12 animation checklists, 30 new sources; page 292 in 14 groups",
    "updated": "2026-11-19T21:36:18.041Z"
+  },
+  {
+   "id": 28,
+   "at": "2026-11-19T21:41:07.167Z",
+   "text": "ok i want this app to be this artifact , delete all the rest , the recording of other sites etc when we started it ! i dont like that i like thisartifact !",
+   "status": "doing",
+   "note": "Make the checklists page the whole app; remove the recorder and recordings",
+   "updated": "2026-11-19T21:41:13.136Z",
+   "parts": [
+    {
+     "name": "Keep a recovery tag",
+     "done": true
+    },
+    {
+     "name": "Remove recorder code",
+     "done": true
+    },
+    {
+     "name": "Remove recordings and builds",
+     "done": true
+    },
+    {
+     "name": "Rewrite idea and pointers",
+     "done": true
+    },
+    {
+     "name": "Commit",
+     "done": true
+    },
+    {
+     "name": "Report",
+     "done": false
+    }
+   ]
   }
  ]
 }

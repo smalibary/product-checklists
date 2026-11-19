@@ -25,3 +25,5 @@
 | 2026-11-19 | Best version: measured items judged automatically, the rest by Claude in a session (no AI cost per recording) | Salem chose the recommended option | Salem |
 | 2026-11-19 | Test inbox: a free throwaway inbox (mail.tm), one new address per recording; capped at 20 a day in code | Salem chose the recommended option; nothing to set up | Salem |
 | 2026-11-19 | Robot check on Dribbble: audit what was recorded; screens past the robot check are marked 'not reached' | Salem chose the recommended option | Salem |
+
+| 2026-11-20 | The app is the Product Checklists page only; the recorder, its library page and all recordings are deleted (code kept as git tag recorder-last). D1 to D4 no longer apply. | Salem: "i want this app to be this artifact, delete all the rest" | Salem |
