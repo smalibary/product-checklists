@@ -1,0 +1,19 @@
+title: Logging
+about: Writing down what the system does, so problems can be found and explained.
+## Format
+- Structured logs (JSON) with time, level, message, service and request id | S otel otel-semconv
+- One request id carried through every service and job | S otel
+- Times in UTC | S rfc-datetime
+## What
+- Errors with enough detail to fix them | S owasp-logging
+- Security events: sign-ins, failures, permission changes, admin actions | S owasp-logging
+- Each request: route, status, time taken | S otel-semconv
+## What not
+- No passwords, tokens, keys, card numbers or full personal data | S owasp-logging pci-dss
+- User input cleaned before logging so it cannot fake log lines | S owasp-logging
+## Keeping
+- Logs sent to one central place, not left on servers | S twelve-factor
+- Kept for a stated time, then removed | L gdpr-5
+- Access to logs limited and itself logged | S owasp-logging
+## Cost
+- Log levels set so production is not flooded; noisy logs sampled | S aws-cost

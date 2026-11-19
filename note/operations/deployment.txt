@@ -1,0 +1,36 @@
+﻿DEPLOYMENT CHECKLIST: 12 items
+Putting new versions live safely and often, with a quick way back.
+Backing: 0 Rule, 12 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PIPELINE
+ 1. Every change goes through the same automatic build, test and release steps   (Standard: sre-release)
+ 2. Builds are repeatable and produce one package used in every environment   (Standard: twelve-factor, slsa)
+ 3. Settings come from the environment, not from code   (Standard: twelve-factor)
+
+RELEASING
+ 4. Small, frequent releases   (Standard: dora)
+ 5. Canary or gradual rollouts, watched before going wider   (Standard: sre-canary)
+ 6. One click or command to roll back   (Standard: sre-release)
+ 7. Database changes made compatible with old and new code   (Standard: fowler-parallel-change)
+
+CHECKS
+ 8. Health checks before traffic reaches a new version   (Standard: sre-release)
+ 9. Release notes and the version number visible   (Standard: keepachangelog)
+
+SECURITY
+10. Pipeline secrets kept in the secret store; steps run with least privilege   (Standard: owasp-cicd)
+11. Only reviewed changes to main can deploy   (Standard: owasp-cicd)
+
+MEASURE
+12. Deploy frequency, lead time, change failure rate and time to restore tracked   (Standard: dora)
+
+SOURCES
+- sre-release: https://sre.google/sre-book/release-engineering/
+- twelve-factor: https://12factor.net/
+- slsa: https://slsa.dev/
+- dora: https://dora.dev/guides/dora-metrics-four-keys/
+- sre-canary: https://sre.google/workbook/canarying-releases/
+- fowler-parallel-change: https://martinfowler.com/bliki/ParallelChange.html
+- keepachangelog: https://keepachangelog.com/en/1.1.0/
+- owasp-cicd: https://cheatsheetseries.owasp.org/cheatsheets/CI_CD_Security_Cheat_Sheet.html

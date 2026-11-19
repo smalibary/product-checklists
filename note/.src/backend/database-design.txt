@@ -1,0 +1,23 @@
+title: Database design
+about: Tables, keys and rules that keep data correct and fast as it grows.
+## Structure
+- One table per kind of thing; no lists hidden inside text columns | P
+- Primary keys on every table; random or time-ordered ids for public ones | S rfc-uuid
+- Foreign keys between related tables | S pg-constraints
+- NOT NULL, UNIQUE and CHECK rules for what must always be true | S pg-constraints
+## Types
+- Times stored as UTC timestamps with time zone | S rfc-datetime iana-tz
+- Money as whole numbers in the smallest unit, or exact decimals, never floating point | S iso-4217
+- Fixed lists as enums or lookup tables | P
+## Speed
+- Indexes on columns used to filter, join or sort | S pg-indexes
+- Slow queries checked with EXPLAIN before release | S pg-explain
+- Lists always paged; no unbounded reads | S google-aip-pagination
+## Correctness
+- Steps that must happen together run in one transaction | S pg-isolation
+- The right isolation level for money and stock | S pg-isolation
+## Privacy
+- Personal data in clearly marked columns, so it can be exported and deleted | L gdpr-15 gdpr-17
+- Sensitive columns encrypted | L gdpr-32
+## Shared data
+- Each customer's rows marked by tenant and guarded by row rules | S pg-rls owasp-multitenant

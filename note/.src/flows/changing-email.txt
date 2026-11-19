@@ -1,0 +1,15 @@
+title: Changing email (flow)
+about: Switching the email address an account signs in with.
+## Asking
+- Current password or fresh sign-in required | S owasp-auth
+- The new address entered with checks | S govuk-email
+## Confirming
+- A link or code sent to the new address; the change only applies after it | S owasp-auth
+- A notice sent to the old address with a way to undo | S owasp-auth
+## After
+- Sessions on other devices reviewed | S owasp-session
+- Marketing consent carried over only when right | L gdpr-7
+## Errors
+- Address already used: say so without leaking other accounts | S owasp-auth
+## Access
+- Status announced on each step | S wcag-status

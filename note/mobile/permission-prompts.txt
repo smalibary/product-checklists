@@ -1,0 +1,34 @@
+﻿PERMISSION PROMPTS CHECKLIST: 9 items
+Asking for camera, location, contacts or notifications at the right time.
+Backing: 3 Rule, 5 Standard, 1 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TIMING
+ 1. Ask when the person uses the feature that needs it, not at launch   (Standard: android-permissions, hig-privacy)
+ 2. Explain why first, in the app, before the system prompt   (Standard: webdev-permissions, android-permissions)
+
+ASKING
+ 3. The system prompt text (purpose string) is specific   (Rule: apple-5.1.1)
+ 4. Ask for the least access (approximate location, chosen photos)   (Standard: android-location, android-photo-picker)
+
+AFTER A NO
+ 5. The app still works without it   (Rule: apple-5.1.1)
+ 6. A way to turn it on later, with a link to settings   (Standard: android-permissions)
+ 7. No repeated nagging   (Research: nng-permissions)
+
+NOTIFICATIONS
+ 8. Android 13 and later need the notification permission   (Standard: android-notif-perm)
+
+TRACKING
+ 9. App Tracking Transparency before tracking on iPhone   (Rule: apple-att)
+
+SOURCES
+- android-permissions: https://developer.android.com/training/permissions/requesting
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- webdev-permissions: https://web.dev/articles/permissions-best-practices
+- apple-5.1.1: https://developer.apple.com/help/app-review/guideline-reference/5-1-1-account-deletion
+- android-location: https://developer.android.com/develop/sensors-and-location/location/permissions
+- android-photo-picker: https://developer.android.com/training/data-storage/shared/photopicker
+- nng-permissions: https://www.nngroup.com/articles/permission-requests/
+- android-notif-perm: https://developer.android.com/develop/ui/views/notifications/notification-permission
+- apple-att: https://developer.apple.com/documentation/apptrackingtransparency

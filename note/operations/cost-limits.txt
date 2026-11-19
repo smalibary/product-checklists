@@ -1,0 +1,27 @@
+﻿COST AND USAGE LIMITS CHECKLIST: 10 items
+Making every paid service last its whole billing period and never surprise you with a bill.
+Backing: 0 Rule, 9 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+KNOWING
+ 1. Each paid service listed with its plan, limits, reset date and which copies share them   (Standard: aws-cost)
+ 2. A daily budget per service (limit divided by days)   (Standard: aws-cost)
+
+CAPPING
+ 3. Code that spends per call (AI, SMS, email, maps) counts use and stops at a daily cap   (Standard: owasp-llm)
+ 4. Retries give up after a few tries   (Standard: aws-backoff)
+ 5. Spending alerts and hard caps set in each provider's console   (Standard: aws-cost)
+
+CHEAP BY DESIGN
+ 6. Jobs start when there is work, not on fast timers   (Practice)
+ 7. Test and dev copies use cheaper or separate accounts   (Standard: aws-cost)
+ 8. Repeated lookups and AI answers cached   (Standard: aws-cost)
+ 9. Unused servers, files and copies removed   (Standard: aws-cost)
+
+WATCHING
+10. Usage compared with the pace line each week; alerts at 50% and 80% when ahead of pace   (Standard: aws-cost)
+
+SOURCES
+- aws-cost: https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html
+- owasp-llm: https://genai.owasp.org/llm-top-10/
+- aws-backoff: https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/

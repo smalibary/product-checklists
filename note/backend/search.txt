@@ -1,0 +1,34 @@
+﻿SEARCH (SERVER) CHECKLIST: 12 items
+Finding records by words quickly and fairly.
+Backing: 0 Rule, 10 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+INDEX
+ 1. A full-text index rather than LIKE scans   (Standard: pg-fts)
+ 2. Arabic and English handled: language rules, letter forms and diacritics   (Standard: pg-fts, unicode-normalization)
+ 3. The index updated when records change   (Standard: pg-fts)
+
+QUERIES
+ 4. Typos forgiven where possible   (Practice)
+ 5. Results ranked by match and then by freshness or popularity   (Standard: pg-fts)
+ 6. Filters use indexes too   (Standard: pg-indexes)
+ 7. Results paged with a maximum   (Standard: google-aip-pagination)
+
+SAFETY
+ 8. Each person sees only results they may open   (Standard: owasp-authz)
+ 9. Query length and complexity limited   (Standard: owasp-dos)
+10. Search input passed as a parameter, never joined into a query   (Standard: owasp-sql)
+
+QUALITY
+11. Searches with no results logged to improve the index   (Practice)
+12. Slow searches measured   (Standard: pg-explain)
+
+SOURCES
+- pg-fts: https://www.postgresql.org/docs/current/textsearch.html
+- unicode-normalization: https://unicode.org/reports/tr15/
+- pg-indexes: https://www.postgresql.org/docs/current/indexes.html
+- google-aip-pagination: https://google.aip.dev/158
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-dos: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html
+- owasp-sql: https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html
+- pg-explain: https://www.postgresql.org/docs/current/using-explain.html

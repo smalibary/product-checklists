@@ -1,0 +1,34 @@
+﻿PERFORMANCE CHECKLIST: 11 items
+Keeping the service fast as use grows, and knowing what fast means.
+Backing: 0 Rule, 9 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TARGETS
+ 1. Speed targets per action (for example 95% of searches under 300 ms)   (Standard: sre-slo)
+ 2. Web pages meet Core Web Vitals (LCP, INP, CLS)   (Standard: webdev-vitals)
+
+SERVER
+ 3. Slow database queries found and fixed with EXPLAIN   (Standard: pg-explain)
+ 4. Indexes for every common filter and sort   (Standard: pg-indexes)
+ 5. Caching for repeated reads   (Standard: rfc-caching)
+ 6. No one-call-per-item loops to the database   (Practice)
+
+LOAD
+ 7. Load tests before big launches, on a separate copy   (Practice)
+ 8. Timeouts and limits so overload slows things down instead of breaking them   (Standard: sre-overload)
+ 9. Failures in one part do not spread to others   (Standard: sre-cascading, fowler-circuit)
+
+WATCHING
+10. Time taken measured per route at the 50th, 95th and 99th percentile   (Standard: sre-monitoring)
+11. Real users' speed measured, not only lab tests   (Standard: webdev-vitals)
+
+SOURCES
+- sre-slo: https://sre.google/sre-book/service-level-objectives/
+- webdev-vitals: https://web.dev/articles/vitals
+- pg-explain: https://www.postgresql.org/docs/current/using-explain.html
+- pg-indexes: https://www.postgresql.org/docs/current/indexes.html
+- rfc-caching: https://www.rfc-editor.org/rfc/rfc9111
+- sre-overload: https://sre.google/sre-book/handling-overload/
+- sre-cascading: https://sre.google/sre-book/addressing-cascading-failures/
+- fowler-circuit: https://martinfowler.com/bliki/CircuitBreaker.html
+- sre-monitoring: https://sre.google/sre-book/monitoring-distributed-systems/

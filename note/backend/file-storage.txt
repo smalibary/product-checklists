@@ -1,0 +1,37 @@
+﻿FILE STORAGE CHECKLIST: 11 items
+Keeping uploaded and generated files safe, private and affordable.
+Backing: 2 Rule, 8 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STORAGE
+ 1. Files in object storage, not in the database or on one server's disk   (Standard: twelve-factor)
+ 2. Private by default; shared only through expiring signed links   (Standard: owasp-authz)
+ 3. Encrypted at rest   (Rule: gdpr-32)
+
+UPLOADS
+ 4. Type and size checked, files renamed, scanned before sharing   (Standard: owasp-file-upload)
+ 5. Image metadata (like location) removed   (Standard: owasp-file-upload)
+
+SERVING
+ 6. Served from a separate domain with safe headers   (Standard: owasp-file-upload, owasp-headers)
+ 7. Thumbnails and sizes made once and cached   (Standard: mdn-cache-control)
+
+LIFE
+ 8. Old and unfinished uploads cleaned up by rule   (Practice)
+ 9. Files deleted when their owner deletes them, including copies   (Rule: gdpr-17)
+10. Backups of important files, tested   (Standard: pg-backup, nist-contingency)
+
+COSTS
+11. Storage and transfer measured against the plan's limits   (Standard: aws-cost)
+
+SOURCES
+- twelve-factor: https://12factor.net/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- gdpr-32: https://gdpr-info.eu/art-32-gdpr/
+- owasp-file-upload: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+- owasp-headers: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html
+- mdn-cache-control: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- pg-backup: https://www.postgresql.org/docs/current/backup.html
+- nist-contingency: https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final
+- aws-cost: https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html

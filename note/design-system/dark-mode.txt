@@ -1,0 +1,32 @@
+﻿DARK MODE CHECKLIST: 10 items
+A dark colour scheme that follows the device setting or the person's choice.
+Backing: 0 Rule, 6 Standard, 1 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SWITCHING
+ 1. Follows the system setting by default, with a manual choice   (Standard: mdn-color-scheme, hig-dark-mode)
+ 2. The choice remembered   (Practice)
+ 3. No flash of the wrong theme on load   (Practice)
+
+COLOURS
+ 4. Dark grey surfaces rather than pure black   (Standard: m3-color)
+ 5. Every colour pair checked for contrast in both themes   (Standard: wcag-contrast)
+ 6. Colours defined as role tokens with a value per theme   (Standard: m3-tokens, dtcg-tokens)
+ 7. Bright colours toned down to avoid glare   (Standard: hig-dark-mode)
+
+CONTENT
+ 8. Images and logos checked on dark backgrounds   (Practice)
+ 9. Charts and status colours re-checked   (Standard: wcag-ui-contrast)
+
+RESEARCH
+10. Some people read better in light mode; keep both   (Research: nng-dark-mode)
+
+SOURCES
+- mdn-color-scheme: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+- hig-dark-mode: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+- m3-color: https://m3.material.io/styles/color/system/overview
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- m3-tokens: https://m3.material.io/foundations/design-tokens/overview
+- dtcg-tokens: https://tr.designtokens.org/format/
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- nng-dark-mode: https://www.nngroup.com/articles/dark-mode/

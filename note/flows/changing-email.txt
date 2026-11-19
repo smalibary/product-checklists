@@ -1,0 +1,29 @@
+﻿CHANGING EMAIL (FLOW) CHECKLIST: 8 items
+Switching the email address an account signs in with.
+Backing: 1 Rule, 7 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ASKING
+ 1. Current password or fresh sign-in required   (Standard: owasp-auth)
+ 2. The new address entered with checks   (Standard: govuk-email)
+
+CONFIRMING
+ 3. A link or code sent to the new address; the change only applies after it   (Standard: owasp-auth)
+ 4. A notice sent to the old address with a way to undo   (Standard: owasp-auth)
+
+AFTER
+ 5. Sessions on other devices reviewed   (Standard: owasp-session)
+ 6. Marketing consent carried over only when right   (Rule: gdpr-7)
+
+ERRORS
+ 7. Address already used: say so without leaking other accounts   (Standard: owasp-auth)
+
+ACCESS
+ 8. Status announced on each step   (Standard: wcag-status)
+
+SOURCES
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- govuk-email: https://design-system.service.gov.uk/patterns/email-addresses/
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages

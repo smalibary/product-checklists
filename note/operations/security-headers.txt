@@ -1,0 +1,39 @@
+﻿SECURITY HEADERS CHECKLIST: 11 items
+The settings a web server sends that tell browsers how to protect its pages.
+Backing: 0 Rule, 10 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TRANSPORT
+ 1. HTTPS everywhere, with HSTS   (Standard: mdn-hsts, owasp-headers)
+
+CONTENT
+ 2. A Content Security Policy that allows only your own scripts   (Standard: mdn-csp, owasp-csp)
+ 3. X-Content-Type-Options: nosniff   (Standard: owasp-headers)
+ 4. Frames blocked with frame-ancestors (or X-Frame-Options) unless needed   (Standard: owasp-headers)
+ 5. Referrer-Policy set (strict-origin-when-cross-origin)   (Standard: owasp-headers)
+ 6. Permissions-Policy turns off unused features (camera, location)   (Standard: owasp-headers)
+
+COOKIES
+ 7. Secure, HttpOnly and SameSite on session cookies   (Standard: mdn-cookies)
+
+CROSS-SITE
+ 8. CORS allows only known sites   (Standard: mdn-cors)
+
+HIDING
+ 9. Server and framework version headers removed   (Standard: owasp-headers, owasp-disclosure)
+
+CONTACT
+10. A security.txt file says where to report problems   (Standard: rfc-securitytxt)
+
+CHECKING
+11. Headers checked automatically on each release   (Practice)
+
+SOURCES
+- mdn-hsts: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security
+- owasp-headers: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html
+- mdn-csp: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP
+- owasp-csp: https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+- mdn-cookies: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies
+- mdn-cors: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS
+- owasp-disclosure: https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html
+- rfc-securitytxt: https://www.rfc-editor.org/rfc/rfc9116

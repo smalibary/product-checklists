@@ -1,0 +1,16 @@
+title: Feature flags
+about: Switching features on and off without a new release.
+## Use
+- Flags for gradual rollouts, quick switch-offs, experiments and plan features | S fowler-flags
+- One flag service or library (such as OpenFeature) instead of scattered checks | S openfeature
+## Rollout
+- Rolled out by percentage or group, with the same user always in the same group | S fowler-flags
+- A kill switch for any risky feature | S fowler-flags
+- Rollouts watched for errors before going wider | S sre-canary
+## Safety
+- Flags checked on the server for anything that controls access or money | S owasp-authz
+- A safe default when the flag service is down | S fowler-flags
+## Housekeeping
+- Every flag has an owner and an end date | S fowler-flags
+- Old flags removed from the code once fully on | S fowler-flags
+- Flag changes logged with who and when | S owasp-logging

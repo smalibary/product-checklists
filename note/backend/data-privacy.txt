@@ -1,0 +1,44 @@
+﻿DATA PRIVACY (SERVER) CHECKLIST: 13 items
+Handling personal data the way GDPR and Saudi PDPL require.
+Backing: 13 Rule, 0 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BASICS
+ 1. A list of what personal data is kept, why, where and for how long   (Rule: gdpr-30, pdpl)
+ 2. A legal reason for each use   (Rule: gdpr-6, pdpl)
+ 3. Collect only what is needed   (Rule: gdpr-5)
+ 4. Privacy built into the design from the start   (Rule: gdpr-25)
+
+PEOPLE'S RIGHTS
+ 5. Access and a copy of their data   (Rule: gdpr-15, gdpr-20)
+ 6. Correction and deletion, including from backups within a stated time   (Rule: gdpr-17, pdpl)
+ 7. Objection to marketing and profiling   (Rule: gdpr-21)
+
+SECURITY
+ 8. Encryption in transit and at rest, access limited by role   (Rule: gdpr-32)
+ 9. Breaches reported within 72 hours where required   (Rule: gdpr-33)
+
+SUPPLIERS
+10. A data processing agreement with each supplier   (Rule: gdpr-28)
+11. Transfers outside the country only under the rules   (Rule: gdpr-44, pdpl)
+
+RISK
+12. An impact assessment for high-risk processing   (Rule: gdpr-35)
+13. Saudi cybersecurity controls checked where they apply   (Rule: nca-ecc)
+
+SOURCES
+- gdpr-30: https://gdpr-info.eu/art-30-gdpr/
+- pdpl: https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf
+- gdpr-6: https://gdpr-info.eu/art-6-gdpr/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/
+- gdpr-25: https://gdpr-info.eu/art-25-gdpr/
+- gdpr-15: https://gdpr-info.eu/art-15-gdpr/
+- gdpr-20: https://gdpr-info.eu/art-20-gdpr/
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- gdpr-21: https://gdpr-info.eu/art-21-gdpr/
+- gdpr-32: https://gdpr-info.eu/art-32-gdpr/
+- gdpr-33: https://gdpr-info.eu/art-33-gdpr/
+- gdpr-28: https://gdpr-info.eu/art-28-gdpr/
+- gdpr-44: https://gdpr-info.eu/art-44-gdpr/
+- gdpr-35: https://gdpr-info.eu/art-35-gdpr/
+- nca-ecc: https://nca.gov.sa/en/regulatory-documents/controls-list/ecc/

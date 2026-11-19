@@ -1,0 +1,18 @@
+title: Calendar
+about: Showing and planning events by day, week and month.
+## Views
+- Day, week, month and list views, with today marked | P
+- The person's time zone shown and changeable | S iana-tz
+- Week start and date format by locale; Hijri where expected | S cldr
+## Events
+- Create by clicking a time slot or a button | P
+- Events show title, time and colour with text, not colour alone | S wcag-color
+- Overlapping events stay readable | P
+- Repeating events with "this one or all" when changing | S rfc-icalendar
+## Sharing
+- Export and subscribe through iCalendar | S rfc-icalendar
+- Invites show who is coming | P
+## Access
+- Keyboard moves between days and events | S apg-grid
+- Each event has an accessible name with its date and time | S wcag-name-role
+- Drag to move also has a form alternative | S wcag-dragging

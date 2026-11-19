@@ -1,0 +1,34 @@
+﻿TESTING CHECKLIST: 11 items
+Automatic checks that catch mistakes before people see them.
+Backing: 1 Rule, 6 Standard, 0 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SHAPE
+ 1. Many small unit tests, fewer integration tests, few end-to-end tests   (Standard: fowler-test-pyramid)
+ 2. Contract tests for APIs between services   (Standard: fowler-test-pyramid)
+
+WHAT
+ 3. Every bug fixed gets a test that would have caught it   (Practice)
+ 4. Permission tests for each role, including refused cases   (Standard: owasp-asvs)
+ 5. Edge cases: empty, very long, Arabic and right-to-left text, time zones   (Practice)
+ 6. Accessibility checks on key screens   (Standard: wcag)
+
+RUNNING
+ 7. Tests run on every change and block merging when they fail   (Standard: sre-release)
+ 8. Flaky tests fixed or removed, not ignored   (Practice)
+ 9. Tests use their own data and clean up after themselves   (Practice)
+
+DATA
+10. No real personal data in test environments   (Rule: gdpr-5)
+
+SECURITY
+11. Dependency and code scanning in the pipeline   (Standard: owasp-dependencies, nist-ssdf)
+
+SOURCES
+- fowler-test-pyramid: https://martinfowler.com/articles/practical-test-pyramid.html
+- owasp-asvs: https://owasp.org/www-project-application-security-verification-standard/
+- wcag: https://www.w3.org/TR/WCAG22/
+- sre-release: https://sre.google/sre-book/release-engineering/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/
+- owasp-dependencies: https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html
+- nist-ssdf: https://csrc.nist.gov/projects/ssdf

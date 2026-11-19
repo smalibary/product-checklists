@@ -1,0 +1,13 @@
+title: App update
+about: Getting people onto a new version, and forcing it only when really needed.
+## Asking
+- Flexible in-app update prompts for normal releases | S android-in-app-updates
+- Forced updates only for security or broken old versions | S android-in-app-updates
+- The prompt says what is new or why it matters | P
+## Server side
+- The server knows the minimum supported version and answers old versions clearly | P
+- APIs keep working for older app versions for a set time | S fowler-parallel-change
+## After
+- What's new shown once, briefly, skippable | R nng-onboarding
+## Store
+- Release notes in the store listing | S apple-review

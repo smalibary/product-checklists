@@ -1,0 +1,16 @@
+title: Setting up two-step sign-in (flow)
+about: Adding a second factor like an authenticator app, passkey or SMS code.
+## Choosing
+- Options listed: passkey, authenticator app, then SMS as a fallback | S nist-63b-auth owasp-mfa
+## Authenticator app
+- QR code plus a text key to type | S rfc-totp
+- Confirm with a code before turning it on | S owasp-mfa
+## Recovery
+- Recovery codes shown once, with copy and download | S owasp-mfa
+- The person confirms they saved them | P
+## After
+- Email confirmation that two-step is on | S owasp-mfa
+- Turning it off needs a fresh sign-in and a code | S owasp-mfa
+## Access
+- Code fields allow paste and autofill | S wcag-auth webdev-otp
+- No time pressure on entering codes beyond the code's life | S wcag-timing

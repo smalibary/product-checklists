@@ -1,0 +1,17 @@
+title: Concurrency
+about: Keeping data right when many people or servers change the same thing at once.
+## Changes
+- Optimistic locking: a version or ETag must match, or the change is refused | S mdn-etag rfc-http
+- Database locks for counters and stock, taken in a fixed order to avoid deadlocks | S pg-locking
+- Isolation levels chosen for money and stock moves | S pg-isolation
+- Unique rules prevent double creates | S pg-constraints
+## Hot spots
+- Busy counters split across several rows and added up when read | P
+- Conflicts and retries measured as a warning sign | P
+## Retries
+- Transactions that fail on conflict retried a few times with a wait | S pg-isolation aws-backoff
+## Distributed work
+- Side effects (emails, payments) happen after the transaction commits, via an outbox | S outbox
+- Every message handler is idempotent | S aws-idempotent
+## Testing
+- Tests that run the same action in parallel | P

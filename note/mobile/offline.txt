@@ -1,0 +1,27 @@
+﻿OFFLINE CHECKLIST: 9 items
+What an app does with no connection or a weak one.
+Backing: 0 Rule, 6 Standard, 1 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+DATA
+ 1. Recent data shown from the device when offline   (Standard: android-offline)
+ 2. Changes saved on the device and sent when back online   (Standard: android-offline)
+ 3. Conflicts resolved by a clear rule   (Standard: android-offline)
+
+TELLING PEOPLE
+ 4. A quiet banner when offline, not an error on every screen   (Practice)
+ 5. Actions that need a connection say so   (Research: nng-errors)
+ 6. Items waiting to send are marked   (Practice)
+
+BEHAVIOUR
+ 7. Retries with growing waits when the connection returns   (Standard: aws-backoff)
+ 8. No data lost when the app closes while offline   (Standard: android-offline)
+
+WEB
+ 9. Service worker caches the shell and key data   (Standard: mdn-service-worker)
+
+SOURCES
+- android-offline: https://developer.android.com/topic/architecture/data-layer/offline-first
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- aws-backoff: https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/
+- mdn-service-worker: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API

@@ -1,0 +1,19 @@
+title: File manager
+about: Browsing, organising and sharing files and folders in an app.
+## Views
+- List and grid views, remembering the choice | R nng-tables
+- Columns for name, owner, size and date, sortable | R nng-tables
+- Breadcrumbs for the folder path | R nng-breadcrumbs
+## Actions
+- Upload by button and by dropping files, with progress | S govuk-file-upload
+- Select many with checkboxes, Shift-click and keyboard | S apg-grid
+- Rename, move, copy, delete and share from a menu and from shortcuts | S apg-menu
+- Delete goes to a bin that can be restored | R nng-control
+## Feedback
+- Empty folders explain what to do | R nng-empty
+- Long tasks show progress and can be cancelled | R nng-progress
+## Sharing
+- Clear who can see each file | S owasp-authz
+## Access
+- Drag and drop has a keyboard or menu alternative | S wcag-dragging
+- File types shown by icon and text, not icon alone | S wcag-color

@@ -1,0 +1,33 @@
+﻿CHANGING PLAN (FLOW) CHECKLIST: 8 items
+Upgrading or downgrading a subscription.
+Backing: 2 Rule, 3 Standard, 2 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING
+ 1. Plans compared side by side, current plan marked   (Research: nng-pricing)
+ 2. The new price, when it starts and any prorated charge shown before confirming   (Rule: ftc-junk-fees, ftc-negative-option)
+
+DOWNGRADING
+ 3. What will be lost said plainly   (Practice)
+ 4. Data kept or exportable   (Rule: gdpr-20)
+
+CONFIRMING
+ 5. One clear button naming the action   (Research: nng-buttons)
+ 6. Confirmation page and email with the new terms   (Standard: govuk-confirm)
+
+STORES
+ 7. Plan changes for store purchases go through the store   (Standard: apple-subscriptions, play-subscriptions)
+
+SERVER
+ 8. Plan change confirmed by the payment provider before access changes   (Standard: stripe-webhooks)
+
+SOURCES
+- nng-pricing: https://www.nngroup.com/articles/show-price/
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- gdpr-20: https://gdpr-info.eu/art-20-gdpr/
+- nng-buttons: https://www.nngroup.com/articles/button-states-communicate-interaction/
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- apple-subscriptions: https://developer.apple.com/app-store/subscriptions/
+- play-subscriptions: https://support.google.com/googleplay/android-developer/answer/9900533
+- stripe-webhooks: https://docs.stripe.com/webhooks

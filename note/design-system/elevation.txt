@@ -1,0 +1,23 @@
+﻿ELEVATION AND SHADOWS CHECKLIST: 6 items
+How layers sit above each other: shadows, surfaces and stacking.
+Backing: 0 Rule, 5 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+LEVELS
+ 1. A small fixed set of levels (for example 0 to 5) as tokens   (Standard: m3-elevation, dtcg-tokens)
+ 2. Each level has one job (cards, menus, dialogs)   (Standard: m3-elevation)
+
+LOOK
+ 3. Dark mode shows height with lighter surfaces, not only shadows   (Standard: m3-elevation, hig-dark-mode)
+ 4. Borders as well as shadows where contrast is low   (Standard: wcag-ui-contrast)
+
+STACKING
+ 5. A fixed order of layers (page, sticky bars, menus, dialogs, toasts)   (Practice)
+ 6. Overlays dim and block what is beneath   (Standard: apg-dialog)
+
+SOURCES
+- m3-elevation: https://m3.material.io/styles/elevation/overview
+- dtcg-tokens: https://tr.designtokens.org/format/
+- hig-dark-mode: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/

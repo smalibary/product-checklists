@@ -1,0 +1,34 @@
+﻿MONITORING AND ALERTS CHECKLIST: 11 items
+Knowing the service is healthy, and waking someone only when people are affected.
+Backing: 0 Rule, 11 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+MEASURE
+ 1. The four golden signals: traffic, errors, time taken and how full the system is   (Standard: sre-monitoring)
+ 2. Service level objectives (for example 99.9% of requests succeed) agreed and written   (Standard: sre-slo)
+ 3. Checks from outside that act like a user (synthetic checks)   (Standard: sre-monitoring)
+
+ALERTS
+ 4. Alert on user pain (SLO burn rate), not on every high number   (Standard: sre-alerting)
+ 5. Every alert can be acted on and links to a runbook   (Standard: sre-alerting, sre-incident)
+ 6. Urgent alerts page someone; the rest go to a ticket   (Standard: sre-monitoring)
+ 7. Noisy alerts fixed or removed   (Standard: sre-alerting)
+
+DASHBOARDS
+ 8. One overview page per service   (Standard: sre-monitoring)
+ 9. Traces across services   (Standard: otel)
+
+USERS
+10. A public status page during problems   (Standard: atlassian-incident)
+
+COSTS
+11. Usage of paid services watched against limits, with alerts at 50% and 80%   (Standard: aws-cost)
+
+SOURCES
+- sre-monitoring: https://sre.google/sre-book/monitoring-distributed-systems/
+- sre-slo: https://sre.google/sre-book/service-level-objectives/
+- sre-alerting: https://sre.google/workbook/alerting-on-slos/
+- sre-incident: https://sre.google/sre-book/managing-incidents/
+- otel: https://opentelemetry.io/docs/
+- atlassian-incident: https://www.atlassian.com/incident-management/incident-communication
+- aws-cost: https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html

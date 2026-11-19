@@ -1,0 +1,15 @@
+title: Tag and chip
+about: Small labels for status or category, and small buttons for filters and choices.
+## Kinds
+- Status tags (read only) kept apart from chips you can press | S govuk-tag m3-chips
+- Filter chips toggle and show they are on | S m3-chips
+- Input chips (like email addresses) have a remove button | S m3-chips
+## Text
+- Short, one or two words | S govuk-tag
+- Meaning not given by colour alone | S wcag-color
+## Interaction
+- Pressable chips are buttons with a pressed state | S apg-button
+- Remove buttons named ("Remove Riyadh") | S wcag-label-name
+## Look
+- Text contrast meets 4.5:1 | S wcag-contrast
+- Tap targets at least 24 by 24 pixels | S wcag-target

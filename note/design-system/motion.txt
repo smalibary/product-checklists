@@ -1,0 +1,28 @@
+﻿MOTION CHECKLIST: 8 items
+Animation rules: when things move, how fast, and for whom motion is turned off.
+Backing: 0 Rule, 6 Standard, 2 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PURPOSE
+ 1. Motion explains a change (where something came from or went) and is never only decoration   (Research: nng-animation)
+ 2. Short: about 100 to 300 ms for small changes, up to about 500 ms for big ones   (Standard: m3-motion)
+ 3. Easing curves from a shared set (tokens)   (Standard: m3-motion, dtcg-tokens)
+
+SAFETY
+ 4. Reduced motion setting respected: swap movement for fades or nothing   (Standard: mdn-reduced-motion, wcag-animation)
+ 5. Nothing flashes more than 3 times a second   (Standard: wcag-flash)
+ 6. Moving content over 5 seconds can be paused   (Standard: wcag-pause)
+
+BEHAVIOUR
+ 7. Animations never block input   (Research: nng-response)
+ 8. The same motion for the same job everywhere   (Standard: m3-motion)
+
+SOURCES
+- nng-animation: https://www.nngroup.com/articles/animation-purpose-ux/
+- m3-motion: https://m3.material.io/styles/motion/overview
+- dtcg-tokens: https://tr.designtokens.org/format/
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- wcag-animation: https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions
+- wcag-flash: https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/

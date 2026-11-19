@@ -1,0 +1,19 @@
+title: Input validation
+about: Checking everything that comes in before the server uses it.
+## Where
+- Checked on the server even when the screen checks too | S owasp-input
+- Checked as early as possible, at the edge of the system | S owasp-input
+## How
+- Allow-lists: say what is allowed (type, length, range, pattern), not what is banned | S owasp-input
+- A schema for every request body; unknown fields refused | S owasp-input owasp-mass-assignment
+- Text normalised (Unicode NFC) before comparing or storing | S unicode-normalization owasp-input
+- Sizes capped: body, strings, arrays, file sizes | S owasp-api-top10
+## Injection
+- Database queries always use parameters, never joined strings | S owasp-sql
+- Output encoded for where it goes (HTML, address, JSON) | S owasp-xss
+- No user input in shell commands or file paths | S owasp-input
+- Addresses supplied by users fetched only through an allow-list (no internal addresses) | S owasp-ssrf
+- No reading of untrusted serialised objects | S owasp-deserialization
+- Redirects only to known addresses | S owasp-redirect
+## Errors
+- Clear field errors to the caller, without internal details | S rfc-problem owasp-errors

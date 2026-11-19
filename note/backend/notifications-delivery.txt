@@ -1,0 +1,38 @@
+﻿NOTIFICATION DELIVERY CHECKLIST: 12 items
+Getting push, email and in-app messages to the right person once, at the right time.
+Backing: 0 Rule, 10 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHANNELS
+ 1. Push through FCM and APNs with tokens kept per device   (Standard: fcm, apns)
+ 2. Dead device tokens removed when the service reports them   (Standard: fcm, apns)
+ 3. Each person's channel choices stored and respected   (Standard: nng-notifications)
+
+SENDING
+ 4. One place decides what to send on which channel   (Practice)
+ 5. Sent from a queue with retries; never twice for one event   (Standard: aws-idempotent)
+ 6. Quiet hours and the person's time zone respected   (Standard: iana-tz)
+ 7. Similar messages grouped instead of many in a row   (Standard: nng-notifications)
+
+CONTENT
+ 8. No private details on lock-screen text unless the person allows it   (Standard: hig-notifications)
+ 9. A link that opens the right screen   (Standard: android-app-links, apple-universal-links)
+
+LIMITS
+10. Caps per person per day   (Practice)
+11. SMS and email counted against daily budgets   (Standard: aws-cost)
+
+WATCHING
+12. Delivery, open and failure rates measured   (Standard: sre-monitoring)
+
+SOURCES
+- fcm: https://firebase.google.com/docs/cloud-messaging
+- apns: https://developer.apple.com/documentation/usernotifications
+- nng-notifications: https://www.nngroup.com/articles/push-notification/
+- aws-idempotent: https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/
+- iana-tz: https://www.iana.org/time-zones
+- hig-notifications: https://developer.apple.com/design/human-interface-guidelines/notifications
+- android-app-links: https://developer.android.com/training/app-links
+- apple-universal-links: https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app
+- aws-cost: https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html
+- sre-monitoring: https://sre.google/sre-book/monitoring-distributed-systems/

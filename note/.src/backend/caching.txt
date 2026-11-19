@@ -1,0 +1,19 @@
+title: Caching
+about: Keeping copies of answers so repeated requests are fast and cheap, without serving wrong data.
+## HTTP caching
+- Cache-Control on every response: public, private or no-store | S rfc-caching mdn-cache-control
+- Personal pages marked private or no-store | S rfc-caching
+- ETag or Last-Modified so clients can ask "changed since?" | S mdn-etag
+- Static files with content hashes in their names, cached for a year | S mdn-cache-control
+## App caching
+- Cache keys include everything that changes the answer (user, language, tenant) | P
+- A time limit on every cached item | P
+- Clear invalidation when the source changes | P
+- Protection against many requests rebuilding the same item at once | P
+## Safety
+- Never cache answers with another user's data under a shared key | S owasp-multitenant
+- The app still works when the cache is empty or down | S sre-cascading
+## Costs
+- Expensive results (AI answers, outside lookups) cached | S aws-cost
+## Watching
+- Hit rate and size measured | S sre-monitoring

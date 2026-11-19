@@ -1,0 +1,18 @@
+title: File storage
+about: Keeping uploaded and generated files safe, private and affordable.
+## Storage
+- Files in object storage, not in the database or on one server's disk | S twelve-factor
+- Private by default; shared only through expiring signed links | S owasp-authz
+- Encrypted at rest | L gdpr-32
+## Uploads
+- Type and size checked, files renamed, scanned before sharing | S owasp-file-upload
+- Image metadata (like location) removed | S owasp-file-upload
+## Serving
+- Served from a separate domain with safe headers | S owasp-file-upload owasp-headers
+- Thumbnails and sizes made once and cached | S mdn-cache-control
+## Life
+- Old and unfinished uploads cleaned up by rule | P
+- Files deleted when their owner deletes them, including copies | L gdpr-17
+- Backups of important files, tested | S pg-backup nist-contingency
+## Costs
+- Storage and transfer measured against the plan's limits | S aws-cost

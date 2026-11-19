@@ -1,0 +1,16 @@
+title: File upload
+about: The control for choosing files from the device.
+## Control
+- A real file input with a visible button and label | S govuk-file-upload
+- Drop area for big screens, with the button as well | S govuk-file-upload wcag-dragging
+- Allowed types and maximum size stated before choosing | S govuk-file-upload
+## During
+- Progress per file, with cancel | R nng-progress
+- Each chosen file listed with name, size and a remove button | S govuk-file-upload
+## Errors
+- Wrong type or too big explained per file | S govuk-error-message
+## Phones
+- Camera and photo library offered where useful | S android-photo-picker
+## Access
+- Status changes announced | S wcag-status
+- Works fully by keyboard | S wcag-keyboard

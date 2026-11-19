@@ -1,0 +1,17 @@
+title: Inviting a teammate (flow)
+about: Adding someone to a workspace by email or link.
+## Inviting
+- Enter one or many email addresses, with checks | S govuk-email
+- Pick a role, with what each role can do | S owasp-authz
+- A link option, with expiry | S owasp-authz
+## Sending
+- Invite email says who invited, to what, with one button | P
+- Pending invites listed, can be resent or cancelled | P
+- Limits on invites per day | S owasp-dos
+## Accepting
+- Existing accounts join with one click; new people sign up and land in the workspace | P
+- The invite link works once and expires | S owasp-forgot
+## Billing
+- Seat costs shown before inviting on paid plans | L ftc-junk-fees
+## Access
+- Results announced; errors linked to fields | S wcag-status wcag-error

@@ -1,0 +1,29 @@
+﻿CHARTS CHECKLIST: 9 items
+Showing numbers as pictures that people read correctly.
+Backing: 0 Rule, 6 Standard, 3 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING
+ 1. Chart type fits the question: change over time, comparison, part of a whole   (Research: nng-charts)
+ 2. Bars start at zero   (Research: nng-charts)
+ 3. Pie charts only for a few parts   (Research: nng-charts)
+
+READING
+ 4. Clear title, axis labels and units   (Standard: hig-charts)
+ 5. Direct labels instead of distant legends where possible   (Standard: hig-charts)
+ 6. Colour not the only way to tell lines apart   (Standard: wcag-color)
+ 7. Colour pairs checked for colour-blind readers   (Standard: wcag-ui-contrast)
+
+INTERACTION
+ 8. Hover or tap shows exact values, also by keyboard   (Standard: wcag-hover)
+
+ACCESS
+ 9. A text summary or data table alternative   (Standard: wcag-nontext, hig-charts)
+
+SOURCES
+- nng-charts: https://www.nngroup.com/articles/choosing-chart-types/
+- hig-charts: https://developer.apple.com/design/human-interface-guidelines/charts
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content

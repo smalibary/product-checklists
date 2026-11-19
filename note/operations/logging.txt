@@ -1,0 +1,36 @@
+﻿LOGGING CHECKLIST: 12 items
+Writing down what the system does, so problems can be found and explained.
+Backing: 1 Rule, 11 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FORMAT
+ 1. Structured logs (JSON) with time, level, message, service and request id   (Standard: otel, otel-semconv)
+ 2. One request id carried through every service and job   (Standard: otel)
+ 3. Times in UTC   (Standard: rfc-datetime)
+
+WHAT
+ 4. Errors with enough detail to fix them   (Standard: owasp-logging)
+ 5. Security events: sign-ins, failures, permission changes, admin actions   (Standard: owasp-logging)
+ 6. Each request: route, status, time taken   (Standard: otel-semconv)
+
+WHAT NOT
+ 7. No passwords, tokens, keys, card numbers or full personal data   (Standard: owasp-logging, pci-dss)
+ 8. User input cleaned before logging so it cannot fake log lines   (Standard: owasp-logging)
+
+KEEPING
+ 9. Logs sent to one central place, not left on servers   (Standard: twelve-factor)
+10. Kept for a stated time, then removed   (Rule: gdpr-5)
+11. Access to logs limited and itself logged   (Standard: owasp-logging)
+
+COST
+12. Log levels set so production is not flooded; noisy logs sampled   (Standard: aws-cost)
+
+SOURCES
+- otel: https://opentelemetry.io/docs/
+- otel-semconv: https://opentelemetry.io/docs/specs/semconv/
+- rfc-datetime: https://www.rfc-editor.org/rfc/rfc3339
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
+- twelve-factor: https://12factor.net/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/
+- aws-cost: https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html

@@ -1,0 +1,17 @@
+title: Audit trail
+about: A permanent record of who did what, for security, support and the law.
+## What
+- Sign-ins, permission changes, data exports, deletes and admin actions recorded | S owasp-logging
+- Each entry: who, what, which record, when, from where, and the result | S owasp-logging
+- Before and after values for important changes | P
+## Integrity
+- Entries cannot be changed or deleted by the app | S owasp-logging
+- Stored apart from normal data, with its own access rules | S owasp-logging
+- Times in UTC from a synced clock | S rfc-datetime
+## Privacy
+- No passwords, tokens or full card numbers in entries | S owasp-logging pci-dss
+- Kept for a stated period, then removed | L gdpr-5
+## Use
+- Customers can see their own account's trail where it helps | P
+- Searchable by user, record and time | P
+- Alerts on suspicious patterns | S owasp-logging

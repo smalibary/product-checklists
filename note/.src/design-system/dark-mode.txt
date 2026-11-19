@@ -1,0 +1,16 @@
+title: Dark mode
+about: A dark colour scheme that follows the device setting or the person's choice.
+## Switching
+- Follows the system setting by default, with a manual choice | S mdn-color-scheme hig-dark-mode
+- The choice remembered | P
+- No flash of the wrong theme on load | P
+## Colours
+- Dark grey surfaces rather than pure black | S m3-color
+- Every colour pair checked for contrast in both themes | S wcag-contrast
+- Colours defined as role tokens with a value per theme | S m3-tokens dtcg-tokens
+- Bright colours toned down to avoid glare | S hig-dark-mode
+## Content
+- Images and logos checked on dark backgrounds | P
+- Charts and status colours re-checked | S wcag-ui-contrast
+## Research
+- Some people read better in light mode; keep both | R nng-dark-mode

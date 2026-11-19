@@ -1,0 +1,31 @@
+﻿EXPORTING DATA (FLOW) CHECKLIST: 8 items
+Downloading a copy of your data.
+Backing: 2 Rule, 4 Standard, 1 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ASKING
+ 1. Choose what to export and the format   (Practice)
+ 2. Personal data export available to every person   (Rule: gdpr-20, pdpl)
+
+WAITING
+ 3. Large exports prepared in the background with a notice when ready   (Research: nng-progress)
+
+GETTING IT
+ 4. Download link that expires and needs sign-in   (Standard: owasp-authz)
+ 5. Common, readable formats (CSV, JSON)   (Rule: gdpr-20)
+
+SAFETY
+ 6. Fresh sign-in for full account exports   (Standard: owasp-session)
+ 7. The export logged   (Standard: owasp-logging)
+
+ACCESS
+ 8. Status and errors announced   (Standard: wcag-status)
+
+SOURCES
+- gdpr-20: https://gdpr-info.eu/art-20-gdpr/
+- pdpl: https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages

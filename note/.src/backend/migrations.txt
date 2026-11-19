@@ -1,0 +1,18 @@
+title: Database migrations
+about: Changing the database structure safely while the app keeps running.
+## Process
+- Every change as a numbered migration file kept with the code | P
+- Migrations run automatically in each environment, in order, once | P
+- Tested on a copy of real-sized data before production | P
+## Without downtime
+- Change in steps: add the new, write to both, move readers, then remove the old | S fowler-parallel-change
+- New columns start nullable or with a default | S pg-constraints
+- Indexes built without locking the table (CONCURRENTLY) | S pg-indexes
+- Long locks avoided; a lock timeout set for migration runs | S pg-locking
+- Big data changes in batches, not in one transaction | P
+## Safety
+- A backup or restore point before risky changes | S pg-backup
+- A way back written for each step, or a plan to fix forward | P
+- No destructive change (drop, rename) in the same release as the code that stops using it | S fowler-parallel-change
+## Records
+- The schema version is visible and logged | P

@@ -1,0 +1,24 @@
+﻿SWITCHING LANGUAGE (FLOW) CHECKLIST: 8 items
+Changing the language the product uses.
+Backing: 0 Rule, 4 Standard, 0 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FINDING
+ 1. Language choice easy to find (header, footer or settings)   (Practice)
+ 2. Each language named in itself (العربية, English)   (Standard: w3c-names)
+ 3. No flags for languages   (Practice)
+
+SWITCHING
+ 4. Stays on the same page after switching   (Practice)
+ 5. The choice remembered   (Practice)
+ 6. Direction changes for Arabic   (Standard: w3c-dir)
+
+CONTENT
+ 7. The page language marked so screen readers switch voices   (Standard: wcag-lang)
+ 8. Dates, numbers and currency follow the language   (Standard: cldr)
+
+SOURCES
+- w3c-names: https://www.w3.org/International/questions/qa-personal-names
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- wcag-lang: https://www.w3.org/WAI/WCAG22/Understanding/language-of-page
+- cldr: https://cldr.unicode.org/

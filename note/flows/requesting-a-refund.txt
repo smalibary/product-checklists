@@ -1,0 +1,32 @@
+﻿REQUESTING A REFUND (FLOW) CHECKLIST: 9 items
+Asking for money back on an order or subscription.
+Backing: 3 Rule, 4 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FINDING
+ 1. From the order or billing page, clearly named   (Practice)
+
+ASKING
+ 2. Pick the items and a reason   (Practice)
+ 3. The refund amount and method shown before sending   (Rule: eu-consumer-rights)
+ 4. EU 14-day withdrawal right honoured where it applies   (Rule: eu-consumer-rights)
+
+AFTER
+ 5. Confirmation with a reference number and the time it takes   (Standard: govuk-confirm)
+ 6. Refund through the original payment method   (Standard: stripe-refunds)
+ 7. Store purchases go through the store's refund process   (Standard: apple-subscriptions, play-subscriptions)
+
+FAIRNESS
+ 8. No hidden steps or obstacles   (Rule: ftc-dark-patterns)
+
+ACCESS
+ 9. Errors and results announced   (Standard: wcag-status)
+
+SOURCES
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- stripe-refunds: https://docs.stripe.com/refunds
+- apple-subscriptions: https://developer.apple.com/app-store/subscriptions/
+- play-subscriptions: https://support.google.com/googleplay/android-developer/answer/9900533
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages

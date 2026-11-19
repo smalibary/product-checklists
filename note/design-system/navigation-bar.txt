@@ -1,0 +1,34 @@
+﻿NAVIGATION BAR CHECKLIST: 10 items
+The top bar of a website or app with the logo, main links and account menu.
+Backing: 0 Rule, 5 Standard, 4 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. Logo links to home   (Research: nng-indicators)
+ 2. 5 to 7 main links with clear words   (Research: nng-scanning)
+ 3. Current section marked visually and with aria-current   (Research: nng-indicators)
+ 4. Search and account in their usual places (top right in left-to-right layouts)   (Practice)
+
+PHONES
+ 5. Collapses into a menu or bottom bar on phones   (Research: nng-hamburger)
+
+BEHAVIOUR
+ 6. Menus open on click; hover menus have a delay and keyboard support   (Standard: apg-menubutton)
+ 7. A skip link to the main content before it   (Standard: wcag-bypass)
+
+SEMANTICS
+ 8. Inside a nav landmark with a name   (Standard: apg-landmarks)
+
+LOOK
+ 9. Stays consistent on every page   (Standard: wcag-consistent)
+10. Sticky bars do not cover focused items   (Standard: wcag-obscured)
+
+SOURCES
+- nng-indicators: https://www.nngroup.com/articles/indicators-validations-notifications/
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- nng-hamburger: https://www.nngroup.com/articles/hamburger-menus/
+- apg-menubutton: https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/
+- wcag-bypass: https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- wcag-consistent: https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation
+- wcag-obscured: https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum

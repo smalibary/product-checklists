@@ -1,0 +1,34 @@
+﻿AUTHORIZATION CHECKLIST: 12 items
+Deciding what each signed-in person may see and do, checked on the server every time.
+Backing: 0 Rule, 12 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+MODEL
+ 1. Deny by default; access granted only by explicit rules   (Standard: owasp-authz)
+ 2. Roles or permissions defined in one place, not scattered through the code   (Standard: owasp-authz)
+ 3. Least privilege: each role gets only what its job needs   (Standard: owasp-authz)
+
+EVERY REQUEST
+ 4. Checked on the server for every action, never only by hiding buttons   (Standard: owasp-authz, owasp-api-top10)
+ 5. Object-level checks: the record must belong to the caller (no reading order 124 by changing the number)   (Standard: owasp-api-top10)
+ 6. Field-level checks: some fields only some roles may read or change   (Standard: owasp-api-top10, owasp-mass-assignment)
+ 7. Admin actions behind separate checks and, ideally, a separate address   (Standard: owasp-api-top10)
+
+IN THE DATABASE
+ 8. Row-level security as a second guard for shared tables   (Standard: pg-rls)
+ 9. The app's database user cannot change the schema   (Standard: owasp-authz)
+
+CHANGES
+10. Role changes take effect immediately   (Standard: owasp-authz)
+11. Every grant, removal and admin action written to the audit trail   (Standard: owasp-logging)
+
+TESTING
+12. Tests that try each action as each role, including "should be refused" cases   (Standard: owasp-asvs)
+
+SOURCES
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-api-top10: https://owasp.org/API-Security/editions/2023/en/0x11-t10/
+- owasp-mass-assignment: https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html
+- pg-rls: https://www.postgresql.org/docs/current/ddl-rowsecurity.html
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- owasp-asvs: https://owasp.org/www-project-application-security-verification-standard/

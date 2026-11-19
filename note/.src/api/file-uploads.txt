@@ -1,0 +1,20 @@
+title: File uploads (API)
+about: Accepting files through an API without letting them harm the server or other users.
+## Before upload
+- Allowed file types listed; checked by content, not only by name | S owasp-file-upload
+- Size limit per file and per account, told to the caller up front | S owasp-file-upload
+- Large files go straight to storage through a short-lived signed address | P
+## On receipt
+- Files renamed with random names; the original name kept only as text | S owasp-file-upload
+- Stored outside the web root, served from a separate domain | S owasp-file-upload
+- Images re-encoded to strip hidden content and location data | S owasp-file-upload
+- Virus scan before the file is shared with anyone | S owasp-file-upload
+- Archives unpacked only with limits on size and file count | S owasp-file-upload
+## Serving
+- Download links that expire and check permission | S owasp-authz
+- Content-Disposition attachment and nosniff on downloads | S owasp-headers
+## Progress
+- Resumable uploads for big files, with progress | P
+- Clear errors for wrong type, too big or failed scan | S rfc-problem
+## Clean-up
+- Uploads never finished are removed after a set time | P

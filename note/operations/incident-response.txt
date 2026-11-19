@@ -1,0 +1,31 @@
+﻿INCIDENT RESPONSE CHECKLIST: 12 items
+What happens when the service breaks: who leads, how people are told, and how it gets learned from.
+Backing: 2 Rule, 10 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+READY
+ 1. Who is on call is written, with a backup   (Standard: sre-incident)
+ 2. Runbooks for the common failures   (Standard: sre-incident)
+ 3. Severity levels defined with examples   (Standard: atlassian-incident)
+
+DURING
+ 4. One incident lead; roles for talking, fixing and writing down   (Standard: sre-incident)
+ 5. Stop the harm first, find the cause later   (Standard: sre-incident)
+ 6. A running timeline of what was done   (Standard: sre-incident)
+ 7. Customers told on the status page early and updated regularly   (Standard: atlassian-incident)
+
+DATA BREACHES
+ 8. Personal data breaches reported to the authority within 72 hours where required   (Rule: gdpr-33, pdpl)
+ 9. Affected people told when the risk is high   (Rule: gdpr-33)
+
+AFTER
+10. A blameless postmortem with causes and actions   (Standard: sre-postmortem)
+11. Actions have owners and dates, and are followed up   (Standard: sre-postmortem)
+12. Lessons shared with the whole team   (Standard: sre-postmortem)
+
+SOURCES
+- sre-incident: https://sre.google/sre-book/managing-incidents/
+- atlassian-incident: https://www.atlassian.com/incident-management/incident-communication
+- gdpr-33: https://gdpr-info.eu/art-33-gdpr/
+- pdpl: https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf
+- sre-postmortem: https://sre.google/sre-book/postmortem-culture/

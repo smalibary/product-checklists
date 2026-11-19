@@ -1,0 +1,24 @@
+title: API authentication
+about: How programs and apps prove who they are when they call an API.
+## Choosing a method
+- People signing in through apps: OAuth 2 with PKCE, in the system browser | S rfc-oauth rfc-pkce rfc-oauth-native
+- Server to server: API keys or OAuth client credentials, over HTTPS only | S rfc-oauth owasp-rest
+- No passwords sent on every call | S rfc-oauth-security
+## Keys
+- Keys shown once, stored only as a hash, with a visible prefix to recognise them (sk_live_) | S github-tokens stripe-keys
+- Separate keys for test and live | S stripe-keys
+- Scopes: each key gets only the permissions it needs | S rfc-oauth owasp-api-top10
+- Rotation without downtime: two keys can work while switching | S owasp-secrets
+- Leaked keys found by secret scanning and revoked | S github-tokens
+## Tokens
+- Short-lived access tokens; refresh tokens that change on each use | S rfc-oauth-security
+- JWTs fully checked: signature, an allowed algorithm (never "none"), issuer, audience, expiry | S rfc-jwt rfc-jwt-bcp owasp-jwt
+- Tokens never in addresses, because addresses end up in logs | S owasp-rest
+- Revoking a token or key works quickly everywhere | S owasp-session
+## Every request
+- Every address checks identity unless deliberately public; the public list is short and reviewed | S owasp-api-top10
+- Failures get 401 with a WWW-Authenticate header, without saying which part was wrong | S rfc-http
+- Sign-in attempts limited per key and per network address | S owasp-auth
+## Browsers
+- Browser apps use Secure, HttpOnly, SameSite cookies, not tokens kept in page storage | S mdn-cookies owasp-session
+- CORS allows only your own sites, never "*" with credentials | S mdn-cors

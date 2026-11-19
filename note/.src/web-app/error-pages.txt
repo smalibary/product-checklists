@@ -1,0 +1,18 @@
+title: Error pages
+about: What people see when a page cannot load, they lack access, or the server fails.
+## Kinds
+- Not found (404), not allowed (403), signed out (401), server error (500), down for maintenance (503) | S rfc-http
+- The right status code sent with each page | S google-404
+## Content
+- Plain words on what happened and what to do next | R nng-errors
+- A way home, a search box and a contact link | R nng-404
+- No technical details or stack traces | S owasp-errors
+- An error reference number support can look up | P
+## Specific cases
+- Not allowed: who to ask for access | P
+- Signed out: sign in and return to the same page | P
+- Maintenance: when it will be back, with Retry-After | S google-maintenance
+## Look
+- Same look and navigation as the rest of the app | S wcag-consistent
+## Access
+- A page title that says it is an error | S wcag-title

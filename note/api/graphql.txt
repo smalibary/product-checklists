@@ -1,0 +1,38 @@
+﻿GRAPHQL API CHECKLIST: 13 items
+An API where the caller writes a query naming exactly the data it wants.
+Backing: 0 Rule, 13 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SCHEMA
+ 1. One schema with clear type and field names, descriptions on every type and field   (Standard: graphql-spec, graphql-best)
+ 2. Nullable fields by default where parts can fail; required only when always present   (Standard: graphql-best)
+ 3. Changes are added rather than versioned; old fields marked @deprecated with a reason   (Standard: graphql-best)
+
+LISTS
+ 4. Connection-style paging (edges, cursors, pageInfo) with a maximum page size   (Standard: graphql-pagination)
+
+SAFETY
+ 5. Query depth and cost limited, so one query cannot ask for millions of rows   (Standard: owasp-graphql)
+ 6. Introspection and the query explorer switched off for the public in production, unless the API is public by design   (Standard: owasp-graphql)
+ 7. Authorization checked in every field resolver or the data layer, not only at the top   (Standard: owasp-graphql, owasp-authz)
+ 8. Batching and aliases limited, so they cannot be used to guess passwords   (Standard: owasp-graphql)
+ 9. Inputs validated like any API; errors without internal details   (Standard: owasp-input, owasp-errors)
+
+SPEED
+10. Data loaded in batches to avoid one database call per item   (Standard: graphql-best)
+11. Known queries can be stored and called by id (persisted queries)   (Standard: graphql-best)
+
+ERRORS
+12. Errors in the errors list with a stable code in extensions   (Standard: graphql-spec)
+
+RATE LIMITS
+13. Limits based on query cost, not only on the number of calls   (Standard: owasp-graphql)
+
+SOURCES
+- graphql-spec: https://spec.graphql.org/
+- graphql-best: https://graphql.org/learn/best-practices/
+- graphql-pagination: https://graphql.org/learn/pagination/
+- owasp-graphql: https://cheatsheetseries.owasp.org/cheatsheets/GraphQL_Cheat_Sheet.html
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-input: https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html
+- owasp-errors: https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html

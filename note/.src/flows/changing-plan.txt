@@ -1,0 +1,15 @@
+title: Changing plan (flow)
+about: Upgrading or downgrading a subscription.
+## Choosing
+- Plans compared side by side, current plan marked | R nng-pricing
+- The new price, when it starts and any prorated charge shown before confirming | L ftc-junk-fees ftc-negative-option
+## Downgrading
+- What will be lost said plainly | P
+- Data kept or exportable | L gdpr-20
+## Confirming
+- One clear button naming the action | R nng-buttons
+- Confirmation page and email with the new terms | S govuk-confirm
+## Stores
+- Plan changes for store purchases go through the store | S apple-subscriptions play-subscriptions
+## Server
+- Plan change confirmed by the payment provider before access changes | S stripe-webhooks

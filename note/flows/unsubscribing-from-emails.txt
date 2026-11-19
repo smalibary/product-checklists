@@ -1,0 +1,24 @@
+﻿UNSUBSCRIBING FROM EMAILS (FLOW) CHECKLIST: 7 items
+Stopping marketing emails in one step.
+Backing: 4 Rule, 0 Standard, 0 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+UNSUBSCRIBING
+ 1. One click from the email (List-Unsubscribe)   (Rule: rfc-unsubscribe, google-sender)
+ 2. Works without signing in   (Rule: can-spam)
+ 3. Honoured quickly (within 2 days for bulk senders)   (Rule: google-sender, yahoo-sender)
+
+PAGE
+ 4. Confirms it is done   (Practice)
+ 5. Optional: choose which emails to keep   (Practice)
+ 6. No guilt wording or tricks   (Rule: ftc-dark-patterns)
+
+ACCOUNT EMAILS
+ 7. Security and receipt emails still sent; this is explained   (Practice)
+
+SOURCES
+- rfc-unsubscribe: https://www.rfc-editor.org/rfc/rfc8058
+- google-sender: https://support.google.com/a/answer/81126
+- can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- yahoo-sender: https://senders.yahooinc.com/best-practices/
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light

@@ -1,0 +1,15 @@
+title: Keyboard shortcuts
+about: Key combinations that let regular users work faster.
+## Design
+- Shortcuts for the most frequent actions only | R nng-shortcuts
+- Platform conventions followed (Ctrl on Windows, Cmd on Mac) | S hig-keyboards
+- No clash with browser or screen-reader keys | S wcag-keyboard
+- Single-letter shortcuts can be turned off or changed | S wcag-keyboard
+## Finding
+- A help screen listing all shortcuts, opened with ? | R nng-shortcuts
+- Shortcuts shown next to menu items and in tooltips | R nng-shortcuts
+## Behaviour
+- Shortcuts do not fire while typing in a field | P
+- Destructive shortcuts can be undone | R nng-control
+## Access
+- Everything a shortcut does can also be done another way | S wcag-keyboard

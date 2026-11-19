@@ -1,0 +1,18 @@
+title: Form layout
+about: How fields, labels and buttons are arranged so forms are quick to fill.
+## Layout
+- One column | R nng-forms baymard-fields
+- Labels above fields | R nng-forms
+- Field width hints at the expected length | S govuk-text-input
+- Related fields grouped with a heading or fieldset | S wai-forms
+## Labels and help
+- Every field has a visible label; optional fields marked, not required ones | R nng-required
+- Help text under the label, before the field | S govuk-question
+## Actions
+- The main button at the end, left-aligned with the fields | S govuk-button
+- One main button; others look secondary | R nng-buttons
+## Errors
+- Error summary at the top, messages at each field | S govuk-error-summary govuk-error-message
+## Access
+- Order of fields matches reading order | S wcag-meaningful-sequence
+- Autocomplete hints on personal fields | S wcag-input-purpose

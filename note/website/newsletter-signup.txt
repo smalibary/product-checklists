@@ -1,0 +1,39 @@
+﻿NEWSLETTER SIGN-UP CHECKLIST: 11 items
+The small form where people give an email address to get news.
+Backing: 5 Rule, 5 Standard, 1 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FORM
+ 1. One email field with a clear label and type email   (Standard: wcag-labels, mdn-autocomplete)
+ 2. Says what they will get and how often   (Research: nng-forms)
+ 3. Consent wording clear, not hidden in terms   (Rule: gdpr-7, eprivacy)
+ 4. Separate from other consent (no bundled boxes)   (Rule: gdpr-7)
+
+AFTER
+ 5. Double opt-in by confirmation email where the law or deliverability needs it   (Standard: google-sender)
+ 6. A success message in the page   (Standard: wcag-status)
+
+EMAILS
+ 7. An unsubscribe link in every email, working with one click   (Rule: can-spam, rfc-unsubscribe)
+ 8. The sender's name and postal address   (Rule: can-spam)
+
+ABUSE
+ 9. Protection against bots without hard puzzles   (Standard: wcag-auth)
+10. Rate-limited by address   (Standard: owasp-dos)
+
+PRIVACY
+11. Link to the privacy notice   (Rule: gdpr-13)
+
+SOURCES
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- mdn-autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+- nng-forms: https://www.nngroup.com/articles/web-form-design/
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- eprivacy: https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en
+- google-sender: https://support.google.com/a/answer/81126
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- rfc-unsubscribe: https://www.rfc-editor.org/rfc/rfc8058
+- wcag-auth: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum
+- owasp-dos: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/

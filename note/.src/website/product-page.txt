@@ -1,0 +1,21 @@
+title: Product page
+about: The page for one product in a shop: pictures, price, options and the button to buy.
+## Pictures
+- Several large images, including scale and in-use shots | R baymard-product
+- Zoom on tap or hover | R baymard-product
+- Images described for screen readers | S wcag-nontext
+## Facts
+- Price with VAT and any fees shown before checkout | L ftc-junk-fees eu-consumer-rights
+- Options (size, colour) as visible choices, with unavailable ones marked | R baymard-product
+- Stock and delivery date near the button | R baymard-product
+- Specifications in a scannable list | R nng-product-page
+- Returns and warranty summary near the price | R baymard-product
+## Buying
+- One clear Add to cart button that stays in reach on phones | R baymard-product
+- Confirmation after adding, without taking the person away | R baymard-cart
+## Reviews
+- Real reviews, with negative ones shown too | L ftc-reviews
+## Search engines
+- Product structured data (price, availability, rating) | S google-product
+## Access
+- Option choices work by keyboard and say which is selected | S wcag-keyboard wcag-name-role

@@ -1,0 +1,18 @@
+title: Dates, times and money
+about: Storing and showing times, currencies and numbers correctly for every country.
+## Time
+- Stored in UTC; shown in the person's time zone | S rfc-datetime iana-tz
+- Time zones by name (Asia/Riyadh), not by fixed offset | S iana-tz
+- Text dates in RFC 3339 or ISO 8601 | S rfc-datetime iso-8601
+- Hijri and Gregorian calendars shown where people expect them | S cldr mdn-intl
+- Daylight saving handled for countries that use it | S iana-tz
+## Money
+- Whole numbers in the smallest unit or exact decimals, never floating point | S iso-4217
+- The currency code stored with every amount | S iso-4217
+- Rounding rules stated and applied once | P
+- Exchange rates stored with the time they were used | P
+## Showing
+- Numbers, dates and currency formatted by locale (Intl) | S mdn-intl cldr
+- Arabic-Indic or Western digits by the person's choice | S cldr
+## Testing
+- Tests at month ends, leap years and time-zone changes | P

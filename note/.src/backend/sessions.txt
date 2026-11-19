@@ -1,0 +1,20 @@
+title: Sessions
+about: Keeping a person signed in safely between requests.
+## Session id
+- A long random id made by the server | S owasp-session
+- Sent in a cookie marked Secure, HttpOnly and SameSite | S owasp-session mdn-cookies
+- A new id after sign-in and after any change in rights | S owasp-session
+## Lifetime
+- An idle timeout and an absolute timeout, shorter for sensitive apps | S owasp-session nist-63b
+- Sign-out ends the session on the server, not only in the browser | S owasp-session
+- "Sign out everywhere" and a list of active devices | S owasp-session
+- Password change ends all other sessions | S owasp-session
+## Protection
+- Forms that change things protected against cross-site requests (SameSite plus tokens) | S owasp-csrf
+- Sensitive actions ask for the password again | S owasp-session
+- Session data stored server-side; nothing secret in the cookie | S owasp-session
+## Tokens in apps
+- Phone apps keep tokens in the system's secure storage | S owasp-masvs
+- Refresh tokens change on each use; reuse of an old one ends the session | S rfc-oauth-security
+## Records
+- Session starts and ends logged with device and place | S owasp-logging

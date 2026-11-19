@@ -1,0 +1,30 @@
+﻿POPOVER CHECKLIST: 9 items
+A small floating panel tied to a button, for extra options or details.
+Backing: 0 Rule, 9 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+USE
+ 1. For short, non-blocking content; use a dialog when a decision is needed   (Standard: hig-popovers)
+ 2. Not used for content people must read to continue   (Standard: hig-popovers)
+
+BEHAVIOUR
+ 3. Opens on click or tap, not on hover alone   (Standard: wcag-hover)
+ 4. Closes on Escape, on outside click and when the trigger is pressed again   (Standard: mdn-popover)
+ 5. Focus moves into it when it has controls, and back to the trigger when closed   (Standard: apg-dialog)
+ 6. Stays on screen at small sizes; repositions near edges   (Standard: wcag-reflow)
+
+SEMANTICS
+ 7. The trigger says it opens something (aria-expanded)   (Standard: apg-disclosure)
+ 8. Built on the browser's popover feature where possible   (Standard: mdn-popover)
+
+LOOK
+ 9. Clear edge and shadow, arrow pointing at its trigger   (Standard: m3-elevation)
+
+SOURCES
+- hig-popovers: https://developer.apple.com/design/human-interface-guidelines/popovers
+- wcag-hover: https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus
+- mdn-popover: https://developer.mozilla.org/en-US/docs/Web/API/Popover_API
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow
+- apg-disclosure: https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/
+- m3-elevation: https://m3.material.io/styles/elevation/overview

@@ -1,0 +1,17 @@
+title: Right-to-left and languages
+about: Making screens work in Arabic and other languages, not only English.
+## Direction
+- The page direction set (dir=rtl) and the language marked | S w3c-dir wcag-lang
+- Logical CSS properties (start and end, not left and right) | S mdn-logical
+- Layouts, icons with direction and progress flip; clocks, media controls and logos do not | S hig-right-to-left android-rtl
+- Mixed Arabic and English text isolated so punctuation lands in the right place | S w3c-dir
+## Text
+- Arabic fonts with proper shaping and enough line height | S hig-typography
+- No text in images | S wcag-images-text
+- Room for longer text in other languages | S w3c-forms-i18n
+## Formats
+- Dates, numbers, digits and currency by locale | S cldr mdn-intl
+- Hijri dates where expected | S cldr
+- Names and addresses fields flexible for every country | S w3c-names
+## Testing
+- Every screen checked in Arabic, not only translated strings | P

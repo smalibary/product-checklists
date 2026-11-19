@@ -1,0 +1,30 @@
+﻿TAG AND CHIP CHECKLIST: 9 items
+Small labels for status or category, and small buttons for filters and choices.
+Backing: 0 Rule, 9 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+KINDS
+ 1. Status tags (read only) kept apart from chips you can press   (Standard: govuk-tag, m3-chips)
+ 2. Filter chips toggle and show they are on   (Standard: m3-chips)
+ 3. Input chips (like email addresses) have a remove button   (Standard: m3-chips)
+
+TEXT
+ 4. Short, one or two words   (Standard: govuk-tag)
+ 5. Meaning not given by colour alone   (Standard: wcag-color)
+
+INTERACTION
+ 6. Pressable chips are buttons with a pressed state   (Standard: apg-button)
+ 7. Remove buttons named ("Remove Riyadh")   (Standard: wcag-label-name)
+
+LOOK
+ 8. Text contrast meets 4.5:1   (Standard: wcag-contrast)
+ 9. Tap targets at least 24 by 24 pixels   (Standard: wcag-target)
+
+SOURCES
+- govuk-tag: https://design-system.service.gov.uk/components/tag/
+- m3-chips: https://m3.material.io/components/chips/guidelines
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- apg-button: https://www.w3.org/WAI/ARIA/apg/patterns/button/
+- wcag-label-name: https://www.w3.org/WAI/WCAG22/Understanding/label-in-name
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

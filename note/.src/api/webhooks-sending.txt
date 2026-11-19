@@ -1,0 +1,20 @@
+title: Sending webhooks
+about: Telling other systems when something happens, by calling an address they gave you.
+## Payload
+- One envelope for every event: id, type, time, and the data or a link to it | S standard-webhooks
+- Event types named object.action (invoice.paid) and listed in the docs | S stripe-webhooks
+- Small payloads; the receiver fetches full details when needed | S standard-webhooks
+## Security
+- Every message signed with a secret per endpoint and a timestamp | S standard-webhooks stripe-webhooks
+- Secrets can be rotated with two valid at once during the switch | S standard-webhooks
+- Only HTTPS addresses accepted; private and internal addresses blocked | S owasp-ssrf
+## Delivery
+- Retries with growing waits for about 3 days; a 2xx answer means delivered | S stripe-webhooks aws-backoff
+- Short timeout per attempt (for example 10 to 15 seconds) | S standard-webhooks
+- Order is not promised; each event carries its time so receivers can sort | S stripe-webhooks
+- An endpoint failing for days is switched off and its owner emailed | S stripe-webhooks
+## Customer tools
+- Each endpoint picks which events it wants | S stripe-webhooks
+- A delivery log with each attempt, its status and the answer | P
+- Buttons to send a test event and to re-send a failed one | S stripe-webhooks
+- Events also readable through an API list, so missed ones can be fetched | S stripe-webhooks

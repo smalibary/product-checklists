@@ -1,0 +1,18 @@
+title: Sharing
+about: Giving other people access to a document, project or file.
+## Sharing
+- Share by email or name, with a role (view, comment, edit) | P
+- A link option with clear access (anyone with the link, or only people invited) | S owasp-authz
+- Who already has access listed, with roles changeable | P
+## Links
+- Links can expire and be switched off | S owasp-authz
+- Link addresses are random and long | S rfc-uuid
+- Copy link with confirmation | S wcag-status
+## Telling people
+- Invitees notified with what was shared and by whom | P
+- Owners see when access is requested | P
+## Safety
+- Sharing outside the organisation can be limited by admins | P
+- Shares and removals logged | S owasp-logging
+## Access
+- The sharing dialog follows dialog rules (focus, Escape, labels) | S apg-dialog

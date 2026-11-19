@@ -1,0 +1,32 @@
+﻿SELECT AND COMBOBOX CHECKLIST: 11 items
+Choosing one option from a list, with or without typing to filter.
+Backing: 0 Rule, 10 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING THE CONTROL
+ 1. Up to about 5 options: radio buttons instead   (Standard: govuk-select, nng-dropdown)
+ 2. Long lists: a combobox with typing to filter   (Standard: apg-combobox)
+ 3. The browser's own select where it fits, because it works everywhere   (Standard: govuk-select)
+
+BEHAVIOUR
+ 4. Arrow keys move, Enter picks, Escape closes   (Standard: apg-combobox, apg-listbox)
+ 5. Typing filters, forgiving case and accents   (Standard: apg-combobox)
+ 6. "No results" shown clearly   (Practice)
+ 7. The chosen value visible after closing   (Standard: apg-combobox)
+
+LABELS
+ 8. A visible label above, not placeholder only   (Standard: wcag-labels, nng-placeholder)
+ 9. Grouped options with group names   (Standard: apg-listbox)
+
+ACCESS
+10. Active option announced   (Standard: apg-combobox)
+11. Works on touch screens with large targets   (Standard: wcag-target)
+
+SOURCES
+- govuk-select: https://design-system.service.gov.uk/components/select/
+- nng-dropdown: https://www.nngroup.com/articles/drop-down-menus/
+- apg-combobox: https://www.w3.org/WAI/ARIA/apg/patterns/combobox/
+- apg-listbox: https://www.w3.org/WAI/ARIA/apg/patterns/listbox/
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- nng-placeholder: https://www.nngroup.com/articles/form-design-placeholders/
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

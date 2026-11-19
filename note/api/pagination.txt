@@ -1,0 +1,37 @@
+﻿API PAGINATION CHECKLIST: 13 items
+Returning long lists in pages so neither the server nor the caller has to handle everything at once.
+Backing: 0 Rule, 13 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+METHOD
+ 1. Cursor paging (a next-page token) for lists that change or grow; numbered pages only for small, stable lists   (Standard: google-aip-pagination, graphql-pagination)
+ 2. The token is opaque: callers pass it back and never build it themselves   (Standard: google-aip-pagination)
+ 3. A stable sort with a unique tie-breaker (created time, then id), so nothing is skipped or shown twice   (Standard: google-aip-pagination)
+ 4. The same filters must come with each next page; changed filters are refused   (Standard: google-aip-pagination)
+
+SIZE
+ 5. A default page size and a maximum; larger requests are cut to the maximum   (Standard: google-aip-pagination)
+ 6. No "give me everything" option on big tables   (Standard: owasp-api-top10)
+
+RESPONSE
+ 7. A next-page token, empty on the last page   (Standard: google-aip-pagination)
+ 8. Optionally a Link header with next and previous addresses   (Standard: rfc-link)
+ 9. Total count only when it is cheap; otherwise only "has more"   (Standard: google-aip-pagination)
+
+BEHAVIOUR
+10. An expired token gives a clear error, not an empty page   (Standard: google-aip-errors)
+11. Every list reads through an index that matches its sort, never a full table scan   (Standard: pg-indexes)
+12. Deep numbered pages avoided: they get slower the further you go   (Standard: pg-explain)
+
+DOCS
+13. Paging explained once and identical on every list   (Standard: openapi)
+
+SOURCES
+- google-aip-pagination: https://google.aip.dev/158
+- graphql-pagination: https://graphql.org/learn/pagination/
+- owasp-api-top10: https://owasp.org/API-Security/editions/2023/en/0x11-t10/
+- rfc-link: https://www.rfc-editor.org/rfc/rfc8288
+- google-aip-errors: https://google.aip.dev/193
+- pg-indexes: https://www.postgresql.org/docs/current/indexes.html
+- pg-explain: https://www.postgresql.org/docs/current/using-explain.html
+- openapi: https://spec.openapis.org/oas/latest.html

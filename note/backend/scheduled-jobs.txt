@@ -1,0 +1,34 @@
+﻿SCHEDULED JOBS CHECKLIST: 11 items
+Work that runs at set times, like reminders, reports and clean-ups.
+Backing: 0 Rule, 8 Standard, 0 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TIMING
+ 1. Times kept in UTC; local times turned into UTC with the time-zone database   (Standard: iana-tz)
+ 2. Daylight-saving gaps and repeats handled for local schedules   (Standard: iana-tz)
+ 3. Runs no more often than the data really changes   (Practice)
+
+RUNNING ONCE
+ 4. A lock so only one server runs each job   (Standard: pg-locking)
+ 5. Safe to run twice and safe to skip a run   (Standard: aws-idempotent)
+ 6. Missed runs (server down) caught up or skipped by a clear rule   (Practice)
+
+WORK SIZE
+ 7. Work done in batches with limits, not all at once   (Practice)
+ 8. Large jobs spread over time so they do not overload the database   (Standard: sre-overload)
+
+WATCHING
+ 9. Each run logged with its start, end and result   (Standard: otel)
+10. An alert when a job fails or does not run at all   (Standard: sre-alerting)
+
+COSTS
+11. Copies in test and dev run less often, or not at all   (Standard: aws-cost)
+
+SOURCES
+- iana-tz: https://www.iana.org/time-zones
+- pg-locking: https://www.postgresql.org/docs/current/explicit-locking.html
+- aws-idempotent: https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/
+- sre-overload: https://sre.google/sre-book/handling-overload/
+- otel: https://opentelemetry.io/docs/
+- sre-alerting: https://sre.google/workbook/alerting-on-slos/
+- aws-cost: https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html

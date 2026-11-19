@@ -1,0 +1,33 @@
+﻿CALENDAR CHECKLIST: 12 items
+Showing and planning events by day, week and month.
+Backing: 0 Rule, 8 Standard, 0 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+VIEWS
+ 1. Day, week, month and list views, with today marked   (Practice)
+ 2. The person's time zone shown and changeable   (Standard: iana-tz)
+ 3. Week start and date format by locale; Hijri where expected   (Standard: cldr)
+
+EVENTS
+ 4. Create by clicking a time slot or a button   (Practice)
+ 5. Events show title, time and colour with text, not colour alone   (Standard: wcag-color)
+ 6. Overlapping events stay readable   (Practice)
+ 7. Repeating events with "this one or all" when changing   (Standard: rfc-icalendar)
+
+SHARING
+ 8. Export and subscribe through iCalendar   (Standard: rfc-icalendar)
+ 9. Invites show who is coming   (Practice)
+
+ACCESS
+10. Keyboard moves between days and events   (Standard: apg-grid)
+11. Each event has an accessible name with its date and time   (Standard: wcag-name-role)
+12. Drag to move also has a form alternative   (Standard: wcag-dragging)
+
+SOURCES
+- iana-tz: https://www.iana.org/time-zones
+- cldr: https://cldr.unicode.org/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- rfc-icalendar: https://www.rfc-editor.org/rfc/rfc5545
+- apg-grid: https://www.w3.org/WAI/ARIA/apg/patterns/grid/
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements

@@ -1,0 +1,50 @@
+﻿API AUTHENTICATION CHECKLIST: 17 items
+How programs and apps prove who they are when they call an API.
+Backing: 0 Rule, 17 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING A METHOD
+ 1. People signing in through apps: OAuth 2 with PKCE, in the system browser   (Standard: rfc-oauth, rfc-pkce, rfc-oauth-native)
+ 2. Server to server: API keys or OAuth client credentials, over HTTPS only   (Standard: rfc-oauth, owasp-rest)
+ 3. No passwords sent on every call   (Standard: rfc-oauth-security)
+
+KEYS
+ 4. Keys shown once, stored only as a hash, with a visible prefix to recognise them (sk_live_)   (Standard: github-tokens, stripe-keys)
+ 5. Separate keys for test and live   (Standard: stripe-keys)
+ 6. Scopes: each key gets only the permissions it needs   (Standard: rfc-oauth, owasp-api-top10)
+ 7. Rotation without downtime: two keys can work while switching   (Standard: owasp-secrets)
+ 8. Leaked keys found by secret scanning and revoked   (Standard: github-tokens)
+
+TOKENS
+ 9. Short-lived access tokens; refresh tokens that change on each use   (Standard: rfc-oauth-security)
+10. JWTs fully checked: signature, an allowed algorithm (never "none"), issuer, audience, expiry   (Standard: rfc-jwt, rfc-jwt-bcp, owasp-jwt)
+11. Tokens never in addresses, because addresses end up in logs   (Standard: owasp-rest)
+12. Revoking a token or key works quickly everywhere   (Standard: owasp-session)
+
+EVERY REQUEST
+13. Every address checks identity unless deliberately public; the public list is short and reviewed   (Standard: owasp-api-top10)
+14. Failures get 401 with a WWW-Authenticate header, without saying which part was wrong   (Standard: rfc-http)
+15. Sign-in attempts limited per key and per network address   (Standard: owasp-auth)
+
+BROWSERS
+16. Browser apps use Secure, HttpOnly, SameSite cookies, not tokens kept in page storage   (Standard: mdn-cookies, owasp-session)
+17. CORS allows only your own sites, never "*" with credentials   (Standard: mdn-cors)
+
+SOURCES
+- rfc-oauth: https://www.rfc-editor.org/rfc/rfc6749
+- rfc-pkce: https://www.rfc-editor.org/rfc/rfc7636
+- rfc-oauth-native: https://www.rfc-editor.org/rfc/rfc8252
+- owasp-rest: https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html
+- rfc-oauth-security: https://www.rfc-editor.org/rfc/rfc9700
+- github-tokens: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+- stripe-keys: https://docs.stripe.com/keys
+- owasp-api-top10: https://owasp.org/API-Security/editions/2023/en/0x11-t10/
+- owasp-secrets: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- rfc-jwt: https://www.rfc-editor.org/rfc/rfc7519
+- rfc-jwt-bcp: https://www.rfc-editor.org/rfc/rfc8725
+- owasp-jwt: https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_Cheat_Sheet.html
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- rfc-http: https://www.rfc-editor.org/rfc/rfc9110
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- mdn-cookies: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies
+- mdn-cors: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS

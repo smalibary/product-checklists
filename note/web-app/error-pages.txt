@@ -1,0 +1,35 @@
+﻿ERROR PAGES CHECKLIST: 11 items
+What people see when a page cannot load, they lack access, or the server fails.
+Backing: 0 Rule, 6 Standard, 2 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+KINDS
+ 1. Not found (404), not allowed (403), signed out (401), server error (500), down for maintenance (503)   (Standard: rfc-http)
+ 2. The right status code sent with each page   (Standard: google-404)
+
+CONTENT
+ 3. Plain words on what happened and what to do next   (Research: nng-errors)
+ 4. A way home, a search box and a contact link   (Research: nng-404)
+ 5. No technical details or stack traces   (Standard: owasp-errors)
+ 6. An error reference number support can look up   (Practice)
+
+SPECIFIC CASES
+ 7. Not allowed: who to ask for access   (Practice)
+ 8. Signed out: sign in and return to the same page   (Practice)
+ 9. Maintenance: when it will be back, with Retry-After   (Standard: google-maintenance)
+
+LOOK
+10. Same look and navigation as the rest of the app   (Standard: wcag-consistent)
+
+ACCESS
+11. A page title that says it is an error   (Standard: wcag-title)
+
+SOURCES
+- rfc-http: https://www.rfc-editor.org/rfc/rfc9110
+- google-404: https://developers.google.com/search/docs/crawling-indexing/http-network-errors
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- nng-404: https://www.nngroup.com/articles/improving-dreaded-404-error-message/
+- owasp-errors: https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html
+- google-maintenance: https://developers.google.com/search/blog/2011/01/how-to-deal-with-planned-site-downtime
+- wcag-consistent: https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled

@@ -1,0 +1,16 @@
+title: Text area
+about: The box for writing longer text, like comments or descriptions.
+## Basics
+- A visible label and optional help text | S wcag-labels
+- Height fits the expected answer; grows as you type where possible | S govuk-character
+## Limits
+- A character count when there is a limit, updated politely to screen readers | S govuk-character
+- Going over the limit allowed while typing, then shown as an error | S govuk-character
+## Text
+- Spell check on | P
+- Direction follows the text (dir=auto) for mixed Arabic and English | S w3c-dir
+## Safety
+- Drafts saved for long text | P
+## Access
+- Errors linked to the field | S wcag-error
+- Resizable and not clipped when text is enlarged | S wcag-resize

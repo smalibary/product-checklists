@@ -1,0 +1,28 @@
+﻿WORKSPACE SWITCHER CHECKLIST: 9 items
+Moving between teams, accounts or organisations in one app.
+Backing: 0 Rule, 2 Standard, 2 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SHOWING
+ 1. Current workspace name and logo always visible   (Research: nng-indicators)
+ 2. The list shows each workspace with name and role   (Practice)
+ 3. Search when there are many   (Practice)
+
+SWITCHING
+ 4. Switch in one or two clicks   (Practice)
+ 5. Lands on the same kind of page in the new workspace where possible   (Practice)
+ 6. Each workspace's data fully separated   (Standard: owasp-multitenant)
+
+ADDING
+ 7. Create or join a workspace from the switcher   (Practice)
+
+CLARITY
+ 8. Clear signs of which workspace you are in before changing anything   (Research: nng-indicators)
+
+ACCESS
+ 9. Works as a menu button with keyboard   (Standard: apg-menubutton)
+
+SOURCES
+- nng-indicators: https://www.nngroup.com/articles/indicators-validations-notifications/
+- owasp-multitenant: https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html
+- apg-menubutton: https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/

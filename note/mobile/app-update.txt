@@ -1,0 +1,25 @@
+﻿APP UPDATE CHECKLIST: 7 items
+Getting people onto a new version, and forcing it only when really needed.
+Backing: 0 Rule, 4 Standard, 1 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ASKING
+ 1. Flexible in-app update prompts for normal releases   (Standard: android-in-app-updates)
+ 2. Forced updates only for security or broken old versions   (Standard: android-in-app-updates)
+ 3. The prompt says what is new or why it matters   (Practice)
+
+SERVER SIDE
+ 4. The server knows the minimum supported version and answers old versions clearly   (Practice)
+ 5. APIs keep working for older app versions for a set time   (Standard: fowler-parallel-change)
+
+AFTER
+ 6. What's new shown once, briefly, skippable   (Research: nng-onboarding)
+
+STORE
+ 7. Release notes in the store listing   (Standard: apple-review)
+
+SOURCES
+- android-in-app-updates: https://developer.android.com/guide/playcore/in-app-updates
+- fowler-parallel-change: https://martinfowler.com/bliki/ParallelChange.html
+- nng-onboarding: https://www.nngroup.com/articles/mobile-app-onboarding/
+- apple-review: https://developer.apple.com/app-store/review/guidelines/

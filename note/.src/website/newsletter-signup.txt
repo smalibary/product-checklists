@@ -1,0 +1,18 @@
+title: Newsletter sign-up
+about: The small form where people give an email address to get news.
+## Form
+- One email field with a clear label and type email | S wcag-labels mdn-autocomplete
+- Says what they will get and how often | R nng-forms
+- Consent wording clear, not hidden in terms | L gdpr-7 eprivacy
+- Separate from other consent (no bundled boxes) | L gdpr-7
+## After
+- Double opt-in by confirmation email where the law or deliverability needs it | S google-sender
+- A success message in the page | S wcag-status
+## Emails
+- An unsubscribe link in every email, working with one click | L can-spam rfc-unsubscribe
+- The sender's name and postal address | L can-spam
+## Abuse
+- Protection against bots without hard puzzles | S wcag-auth
+- Rate-limited by address | S owasp-dos
+## Privacy
+- Link to the privacy notice | L gdpr-13

@@ -1,0 +1,35 @@
+﻿TERMS OF SERVICE CHECKLIST: 12 items
+The legal agreement people accept to use the product.
+Backing: 6 Rule, 2 Standard, 1 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. Plain-language summary at the top   (Research: nng-scanning)
+ 2. Headings and a table of contents   (Standard: wcag-headings)
+ 3. Who you are, how to contact you, and which law applies   (Rule: eu-consumer-rights)
+ 4. Payment, renewal and cancellation terms spelled out   (Rule: ftc-negative-option)
+ 5. How accounts can be closed and data deleted   (Rule: gdpr-17)
+
+ACCEPTANCE
+ 6. Shown before accepting, with a link at sign-up   (Rule: eu-consumer-rights)
+ 7. Acceptance recorded with the version and time   (Practice)
+
+CHANGES
+ 8. A date and version on the page   (Practice)
+ 9. People told before important changes take effect   (Rule: eu-consumer-rights)
+10. Old versions kept and reachable   (Practice)
+
+FAIRNESS
+11. No hidden or surprising terms   (Rule: ftc-dark-patterns)
+
+ACCESS
+12. Readable on phones and by screen readers   (Standard: wcag-reflow)
+
+SOURCES
+- nng-scanning: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light
+- wcag-reflow: https://www.w3.org/WAI/WCAG22/Understanding/reflow

@@ -1,0 +1,19 @@
+title: Cookie consent
+about: Asking before using cookies and trackers that are not strictly needed.
+## When
+- Consent before any non-essential cookie or tracker is set | L eprivacy gdpr-7
+- Strictly necessary cookies need no consent | L eprivacy
+## The banner
+- Accept and Reject equally easy, on the first layer | L edpb-cookies
+- No ticked boxes in advance | L gdpr-7 edpb-cookies
+- Plain words on what each kind does, with a link to details | L gdpr-12
+- Does not block the page more than needed | S govuk-cookie
+## Choices
+- Choice by purpose (analytics, marketing) | L edpb-cookies
+- Changing your mind is as easy as giving consent, from every page | L gdpr-7
+- The choice remembered and not asked again on every visit | S govuk-cookie
+## Records
+- Consent recorded with time and version | L gdpr-7
+## Access
+- The banner reachable by keyboard and read by screen readers | S wcag-keyboard
+- Focus not trapped and content not hidden behind it | S wcag-obscured

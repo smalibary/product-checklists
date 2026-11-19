@@ -1,0 +1,42 @@
+﻿PAYMENTS (SERVER) CHECKLIST: 13 items
+Taking money safely: payment intents, webhooks, refunds and records.
+Backing: 2 Rule, 10 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CARD DATA
+ 1. Card details collected by the payment provider; your servers never see them   (Standard: pci-dss)
+ 2. Card fields hosted by the provider keep you at the lightest PCI level   (Standard: pci-dss)
+
+FLOW
+ 3. One payment intent per order, created on the server with the amount set by the server   (Standard: stripe-payment-intents)
+ 4. An idempotency key on every create call   (Standard: stripe-idempotency)
+ 5. Bank checks (3-D Secure) handled where required   (Rule: psd2-sca, stripe-3ds)
+ 6. The order marked paid only from a signed webhook, not from the browser   (Standard: stripe-webhooks)
+
+MONEY
+ 7. Amounts as whole numbers in the smallest unit with a currency code   (Standard: iso-4217)
+ 8. VAT added and shown correctly; e-invoices where required   (Rule: zatca-einvoice)
+
+AFTER PAYING
+ 9. Refunds through the provider, linked to the original payment   (Standard: stripe-refunds)
+10. Disputes tracked with evidence and deadlines   (Standard: stripe-disputes)
+11. Store subscriptions checked on the server with the store's notifications   (Standard: apple-server-notif, play-rtdn)
+
+RECORDS
+12. A ledger of every charge, refund and fee, matched to the provider each day   (Practice)
+13. Logs never contain card numbers or full bank details   (Standard: pci-dss, owasp-logging)
+
+SOURCES
+- pci-dss: https://www.pcisecuritystandards.org/standards/pci-dss/
+- stripe-payment-intents: https://docs.stripe.com/payments/payment-intents
+- stripe-idempotency: https://docs.stripe.com/api/idempotent_requests
+- psd2-sca: https://www.ecb.europa.eu/press/intro/mip-online/2018/html/1803_revisedpsd.en.html
+- stripe-3ds: https://docs.stripe.com/payments/3d-secure
+- stripe-webhooks: https://docs.stripe.com/webhooks
+- iso-4217: https://www.iso.org/iso-4217-currency-codes.html
+- zatca-einvoice: https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx
+- stripe-refunds: https://docs.stripe.com/refunds
+- stripe-disputes: https://docs.stripe.com/disputes
+- apple-server-notif: https://developer.apple.com/documentation/appstoreservernotifications
+- play-rtdn: https://developer.android.com/google/play/billing/rtdn-reference
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html

@@ -1,0 +1,36 @@
+﻿RIGHT-TO-LEFT AND LANGUAGES CHECKLIST: 11 items
+Making screens work in Arabic and other languages, not only English.
+Backing: 0 Rule, 10 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+DIRECTION
+ 1. The page direction set (dir=rtl) and the language marked   (Standard: w3c-dir, wcag-lang)
+ 2. Logical CSS properties (start and end, not left and right)   (Standard: mdn-logical)
+ 3. Layouts, icons with direction and progress flip; clocks, media controls and logos do not   (Standard: hig-right-to-left, android-rtl)
+ 4. Mixed Arabic and English text isolated so punctuation lands in the right place   (Standard: w3c-dir)
+
+TEXT
+ 5. Arabic fonts with proper shaping and enough line height   (Standard: hig-typography)
+ 6. No text in images   (Standard: wcag-images-text)
+ 7. Room for longer text in other languages   (Standard: w3c-forms-i18n)
+
+FORMATS
+ 8. Dates, numbers, digits and currency by locale   (Standard: cldr, mdn-intl)
+ 9. Hijri dates where expected   (Standard: cldr)
+10. Names and addresses fields flexible for every country   (Standard: w3c-names)
+
+TESTING
+11. Every screen checked in Arabic, not only translated strings   (Practice)
+
+SOURCES
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- wcag-lang: https://www.w3.org/WAI/WCAG22/Understanding/language-of-page
+- mdn-logical: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values
+- hig-right-to-left: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+- android-rtl: https://developer.android.com/training/basics/supporting-devices/languages
+- hig-typography: https://developer.apple.com/design/human-interface-guidelines/typography
+- wcag-images-text: https://www.w3.org/WAI/WCAG22/Understanding/images-of-text
+- w3c-forms-i18n: https://www.w3.org/International/questions/qa-forms-utf-8
+- cldr: https://cldr.unicode.org/
+- mdn-intl: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl
+- w3c-names: https://www.w3.org/International/questions/qa-personal-names

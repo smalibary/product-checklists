@@ -1,0 +1,17 @@
+title: Select and combobox
+about: Choosing one option from a list, with or without typing to filter.
+## Choosing the control
+- Up to about 5 options: radio buttons instead | S govuk-select nng-dropdown
+- Long lists: a combobox with typing to filter | S apg-combobox
+- The browser's own select where it fits, because it works everywhere | S govuk-select
+## Behaviour
+- Arrow keys move, Enter picks, Escape closes | S apg-combobox apg-listbox
+- Typing filters, forgiving case and accents | S apg-combobox
+- "No results" shown clearly | P
+- The chosen value visible after closing | S apg-combobox
+## Labels
+- A visible label above, not placeholder only | S wcag-labels nng-placeholder
+- Grouped options with group names | S apg-listbox
+## Access
+- Active option announced | S apg-combobox
+- Works on touch screens with large targets | S wcag-target

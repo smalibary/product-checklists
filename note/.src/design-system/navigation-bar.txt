@@ -1,0 +1,17 @@
+title: Navigation bar
+about: The top bar of a website or app with the logo, main links and account menu.
+## Content
+- Logo links to home | R nng-indicators
+- 5 to 7 main links with clear words | R nng-scanning
+- Current section marked visually and with aria-current | R nng-indicators
+- Search and account in their usual places (top right in left-to-right layouts) | P
+## Phones
+- Collapses into a menu or bottom bar on phones | R nng-hamburger
+## Behaviour
+- Menus open on click; hover menus have a delay and keyboard support | S apg-menubutton
+- A skip link to the main content before it | S wcag-bypass
+## Semantics
+- Inside a nav landmark with a name | S apg-landmarks
+## Look
+- Stays consistent on every page | S wcag-consistent
+- Sticky bars do not cover focused items | S wcag-obscured

@@ -1,0 +1,35 @@
+﻿COOKIE CONSENT CHECKLIST: 12 items
+Asking before using cookies and trackers that are not strictly needed.
+Backing: 8 Rule, 4 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHEN
+ 1. Consent before any non-essential cookie or tracker is set   (Rule: eprivacy, gdpr-7)
+ 2. Strictly necessary cookies need no consent   (Rule: eprivacy)
+
+THE BANNER
+ 3. Accept and Reject equally easy, on the first layer   (Rule: edpb-cookies)
+ 4. No ticked boxes in advance   (Rule: gdpr-7, edpb-cookies)
+ 5. Plain words on what each kind does, with a link to details   (Rule: gdpr-12)
+ 6. Does not block the page more than needed   (Standard: govuk-cookie)
+
+CHOICES
+ 7. Choice by purpose (analytics, marketing)   (Rule: edpb-cookies)
+ 8. Changing your mind is as easy as giving consent, from every page   (Rule: gdpr-7)
+ 9. The choice remembered and not asked again on every visit   (Standard: govuk-cookie)
+
+RECORDS
+10. Consent recorded with time and version   (Rule: gdpr-7)
+
+ACCESS
+11. The banner reachable by keyboard and read by screen readers   (Standard: wcag-keyboard)
+12. Focus not trapped and content not hidden behind it   (Standard: wcag-obscured)
+
+SOURCES
+- eprivacy: https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- edpb-cookies: https://www.edpb.europa.eu/our-work-tools/our-documents/other/report-work-undertaken-cookie-banner-taskforce_en
+- gdpr-12: https://gdpr-info.eu/art-12-gdpr/
+- govuk-cookie: https://design-system.service.gov.uk/components/cookie-banner/
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- wcag-obscured: https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum

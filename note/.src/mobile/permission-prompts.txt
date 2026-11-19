@@ -1,0 +1,16 @@
+title: Permission prompts
+about: Asking for camera, location, contacts or notifications at the right time.
+## Timing
+- Ask when the person uses the feature that needs it, not at launch | S android-permissions hig-privacy
+- Explain why first, in the app, before the system prompt | S webdev-permissions android-permissions
+## Asking
+- The system prompt text (purpose string) is specific | L apple-5.1.1
+- Ask for the least access (approximate location, chosen photos) | S android-location android-photo-picker
+## After a no
+- The app still works without it | L apple-5.1.1
+- A way to turn it on later, with a link to settings | S android-permissions
+- No repeated nagging | R nng-permissions
+## Notifications
+- Android 13 and later need the notification permission | S android-notif-perm
+## Tracking
+- App Tracking Transparency before tracking on iPhone | L apple-att

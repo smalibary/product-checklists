@@ -1,0 +1,32 @@
+﻿SENDING WEBHOOKS CHECKLIST: 14 items
+Telling other systems when something happens, by calling an address they gave you.
+Backing: 0 Rule, 13 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PAYLOAD
+ 1. One envelope for every event: id, type, time, and the data or a link to it   (Standard: standard-webhooks)
+ 2. Event types named object.action (invoice.paid) and listed in the docs   (Standard: stripe-webhooks)
+ 3. Small payloads; the receiver fetches full details when needed   (Standard: standard-webhooks)
+
+SECURITY
+ 4. Every message signed with a secret per endpoint and a timestamp   (Standard: standard-webhooks, stripe-webhooks)
+ 5. Secrets can be rotated with two valid at once during the switch   (Standard: standard-webhooks)
+ 6. Only HTTPS addresses accepted; private and internal addresses blocked   (Standard: owasp-ssrf)
+
+DELIVERY
+ 7. Retries with growing waits for about 3 days; a 2xx answer means delivered   (Standard: stripe-webhooks, aws-backoff)
+ 8. Short timeout per attempt (for example 10 to 15 seconds)   (Standard: standard-webhooks)
+ 9. Order is not promised; each event carries its time so receivers can sort   (Standard: stripe-webhooks)
+10. An endpoint failing for days is switched off and its owner emailed   (Standard: stripe-webhooks)
+
+CUSTOMER TOOLS
+11. Each endpoint picks which events it wants   (Standard: stripe-webhooks)
+12. A delivery log with each attempt, its status and the answer   (Practice)
+13. Buttons to send a test event and to re-send a failed one   (Standard: stripe-webhooks)
+14. Events also readable through an API list, so missed ones can be fetched   (Standard: stripe-webhooks)
+
+SOURCES
+- standard-webhooks: https://www.standardwebhooks.com/
+- stripe-webhooks: https://docs.stripe.com/webhooks
+- owasp-ssrf: https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
+- aws-backoff: https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/

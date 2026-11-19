@@ -1,0 +1,32 @@
+﻿ROLES AND PERMISSIONS CHECKLIST: 11 items
+The screen where admins decide what each person in a workspace may do.
+Backing: 0 Rule, 7 Standard, 1 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+MODEL
+ 1. A few clear default roles (owner, admin, member, viewer)   (Standard: owasp-authz)
+ 2. What each role can do shown in a table   (Research: nng-tables)
+ 3. Custom roles only when the product needs them   (Practice)
+
+CHANGING
+ 4. Role chosen from a list with a short description of each   (Standard: apg-listbox)
+ 5. Changes take effect at once and the person is told   (Standard: owasp-authz)
+ 6. The last owner cannot be removed   (Practice)
+
+SAFETY
+ 7. Every change recorded in the audit trail   (Standard: owasp-logging)
+ 8. Only admins see this screen; checks happen on the server   (Standard: owasp-authz)
+ 9. Least privilege by default for new members   (Standard: owasp-authz)
+
+CLARITY
+10. A person can see their own role and what it allows   (Practice)
+
+ACCESS
+11. Tables and controls usable by keyboard and screen reader   (Standard: wcag-keyboard)
+
+SOURCES
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- nng-tables: https://www.nngroup.com/articles/data-tables/
+- apg-listbox: https://www.w3.org/WAI/ARIA/apg/patterns/listbox/
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

@@ -1,0 +1,25 @@
+﻿UNDOING AN ACTION (FLOW) CHECKLIST: 7 items
+Reversing a mistake right after making it.
+Backing: 0 Rule, 3 Standard, 4 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+OFFERING UNDO
+ 1. Undo for deletes, moves and sends instead of asking "Are you sure?" each time   (Research: nng-control)
+ 2. An Undo button in a toast for a few seconds   (Standard: m3-snackbar)
+ 3. Time long enough to read and act, or until dismissed   (Standard: wcag-timing)
+
+BEHAVIOUR
+ 4. Undo restores everything exactly   (Research: nng-control)
+ 5. Ctrl+Z works where people expect it   (Research: nng-shortcuts)
+ 6. A bin or history for later undo   (Research: nng-control)
+
+ACCESS
+ 7. Toast announced and reachable by keyboard   (Standard: wcag-status, wcag-keyboard)
+
+SOURCES
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- m3-snackbar: https://m3.material.io/components/snackbar/guidelines
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable
+- nng-shortcuts: https://www.nngroup.com/articles/ui-accelerators/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

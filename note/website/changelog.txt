@@ -1,0 +1,28 @@
+﻿CHANGELOG CHECKLIST: 10 items
+The public list of what changed in each release.
+Backing: 0 Rule, 6 Standard, 0 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ENTRIES
+ 1. Newest first, with date and version   (Standard: keepachangelog)
+ 2. Grouped by Added, Changed, Fixed, Removed, Security   (Standard: keepachangelog)
+ 3. Written for users: what they can do now, not code names   (Standard: keepachangelog)
+ 4. Screenshots or short clips for visible changes   (Practice)
+
+FINDING
+ 5. Linked from the product and the footer   (Practice)
+ 6. Each entry has its own address to share   (Practice)
+ 7. RSS or email for people who want updates   (Practice)
+
+HONESTY
+ 8. Breaking changes and removals called out clearly   (Standard: keepachangelog, semver)
+ 9. Security fixes listed   (Standard: keepachangelog)
+
+ACCESS
+10. Headings per release and readable images   (Standard: wcag-headings, wcag-nontext)
+
+SOURCES
+- keepachangelog: https://keepachangelog.com/en/1.1.0/
+- semver: https://semver.org/
+- wcag-headings: https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content

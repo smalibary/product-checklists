@@ -1,0 +1,17 @@
+title: Multi-tenancy
+about: Keeping many customers in one system without any of them seeing another.
+## Separation
+- Every row carries its tenant id | S owasp-multitenant
+- Every query filtered by tenant, ideally forced by row-level security | S pg-rls owasp-multitenant
+- The tenant comes from the signed-in session, never from a field the caller sends | S owasp-multitenant
+- Files and cache keys include the tenant | S owasp-multitenant
+## Fairness
+- Limits per tenant so one cannot slow the others | S owasp-dos
+- Heavy jobs queued per tenant | P
+## Admin
+- Staff access to a tenant is granted, time-limited and logged | S owasp-authz owasp-logging
+## Data
+- Export and delete of a whole tenant | L gdpr-20 gdpr-17
+- A tenant can be restored without restoring everyone | S pg-backup
+## Testing
+- Tests that try to read and change another tenant's data and must fail | S owasp-asvs

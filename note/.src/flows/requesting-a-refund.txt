@@ -1,0 +1,16 @@
+title: Requesting a refund (flow)
+about: Asking for money back on an order or subscription.
+## Finding
+- From the order or billing page, clearly named | P
+## Asking
+- Pick the items and a reason | P
+- The refund amount and method shown before sending | L eu-consumer-rights
+- EU 14-day withdrawal right honoured where it applies | L eu-consumer-rights
+## After
+- Confirmation with a reference number and the time it takes | S govuk-confirm
+- Refund through the original payment method | S stripe-refunds
+- Store purchases go through the store's refund process | S apple-subscriptions play-subscriptions
+## Fairness
+- No hidden steps or obstacles | L ftc-dark-patterns
+## Access
+- Errors and results announced | S wcag-status

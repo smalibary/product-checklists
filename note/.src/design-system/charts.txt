@@ -1,0 +1,15 @@
+title: Charts
+about: Showing numbers as pictures that people read correctly.
+## Choosing
+- Chart type fits the question: change over time, comparison, part of a whole | R nng-charts
+- Bars start at zero | R nng-charts
+- Pie charts only for a few parts | R nng-charts
+## Reading
+- Clear title, axis labels and units | S hig-charts
+- Direct labels instead of distant legends where possible | S hig-charts
+- Colour not the only way to tell lines apart | S wcag-color
+- Colour pairs checked for colour-blind readers | S wcag-ui-contrast
+## Interaction
+- Hover or tap shows exact values, also by keyboard | S wcag-hover
+## Access
+- A text summary or data table alternative | S wcag-nontext hig-charts

@@ -1,0 +1,42 @@
+﻿API VERSIONING CHECKLIST: 15 items
+Changing an API without breaking the programs that already use it.
+Backing: 0 Rule, 14 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHAT BREAKS
+ 1. Removing or renaming a field, an address or an error code   (Standard: semver, google-aip)
+ 2. Changing a field's type, format or meaning   (Standard: google-aip)
+ 3. Making an optional input required   (Standard: google-aip)
+ 4. Adding fields or enum values is safe only if clients were told to ignore unknown ones   (Standard: zalando-api)
+
+HOW
+ 5. One version scheme for the whole API: in the path (/v1), a header or a dated version   (Standard: ms-api-guidelines, stripe-versioning)
+ 6. Each account pinned to the version it started on; it upgrades by choice   (Standard: stripe-versioning)
+ 7. Old versions translated at the edge, so the core code has one model   (Standard: stripe-versioning)
+
+RETIRING
+ 8. Deprecation and Sunset headers with the date on anything being retired   (Standard: rfc-deprecation, rfc-sunset)
+ 9. Notice sent well ahead (often 6 to 12 months) by email and in the changelog   (Standard: zalando-api)
+10. Use of old versions measured, so you know who to contact   (Practice)
+
+CHANGELOG
+11. Every change listed with its date, version and what callers must do   (Standard: keepachangelog)
+12. Breaking changes clearly marked   (Standard: keepachangelog)
+
+TESTING
+13. Contract tests prove old versions still answer as documented   (Standard: fowler-test-pyramid)
+14. The OpenAPI file is compared on every change to catch breaking ones   (Standard: openapi)
+15. Changes rolled out in steps: add the new, move callers, then remove the old   (Standard: fowler-parallel-change)
+
+SOURCES
+- semver: https://semver.org/
+- google-aip: https://google.aip.dev/
+- zalando-api: https://opensource.zalando.com/restful-api-guidelines/
+- ms-api-guidelines: https://github.com/microsoft/api-guidelines
+- stripe-versioning: https://docs.stripe.com/api/versioning
+- rfc-deprecation: https://www.rfc-editor.org/rfc/rfc9745
+- rfc-sunset: https://www.rfc-editor.org/rfc/rfc8594
+- keepachangelog: https://keepachangelog.com/en/1.1.0/
+- fowler-test-pyramid: https://martinfowler.com/articles/practical-test-pyramid.html
+- openapi: https://spec.openapis.org/oas/latest.html
+- fowler-parallel-change: https://martinfowler.com/bliki/ParallelChange.html

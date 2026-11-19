@@ -1,0 +1,19 @@
+title: Terms of service
+about: The legal agreement people accept to use the product.
+## Content
+- Plain-language summary at the top | R nng-scanning
+- Headings and a table of contents | S wcag-headings
+- Who you are, how to contact you, and which law applies | L eu-consumer-rights
+- Payment, renewal and cancellation terms spelled out | L ftc-negative-option
+- How accounts can be closed and data deleted | L gdpr-17
+## Acceptance
+- Shown before accepting, with a link at sign-up | L eu-consumer-rights
+- Acceptance recorded with the version and time | P
+## Changes
+- A date and version on the page | P
+- People told before important changes take effect | L eu-consumer-rights
+- Old versions kept and reachable | P
+## Fairness
+- No hidden or surprising terms | L ftc-dark-patterns
+## Access
+- Readable on phones and by screen readers | S wcag-reflow

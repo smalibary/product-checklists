@@ -1,0 +1,15 @@
+title: Exporting data (flow)
+about: Downloading a copy of your data.
+## Asking
+- Choose what to export and the format | P
+- Personal data export available to every person | L gdpr-20 pdpl
+## Waiting
+- Large exports prepared in the background with a notice when ready | R nng-progress
+## Getting it
+- Download link that expires and needs sign-in | S owasp-authz
+- Common, readable formats (CSV, JSON) | L gdpr-20
+## Safety
+- Fresh sign-in for full account exports | S owasp-session
+- The export logged | S owasp-logging
+## Access
+- Status and errors announced | S wcag-status

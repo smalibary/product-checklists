@@ -1,0 +1,39 @@
+﻿FILE MANAGER CHECKLIST: 12 items
+Browsing, organising and sharing files and folders in an app.
+Backing: 0 Rule, 6 Standard, 6 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+VIEWS
+ 1. List and grid views, remembering the choice   (Research: nng-tables)
+ 2. Columns for name, owner, size and date, sortable   (Research: nng-tables)
+ 3. Breadcrumbs for the folder path   (Research: nng-breadcrumbs)
+
+ACTIONS
+ 4. Upload by button and by dropping files, with progress   (Standard: govuk-file-upload)
+ 5. Select many with checkboxes, Shift-click and keyboard   (Standard: apg-grid)
+ 6. Rename, move, copy, delete and share from a menu and from shortcuts   (Standard: apg-menu)
+ 7. Delete goes to a bin that can be restored   (Research: nng-control)
+
+FEEDBACK
+ 8. Empty folders explain what to do   (Research: nng-empty)
+ 9. Long tasks show progress and can be cancelled   (Research: nng-progress)
+
+SHARING
+10. Clear who can see each file   (Standard: owasp-authz)
+
+ACCESS
+11. Drag and drop has a keyboard or menu alternative   (Standard: wcag-dragging)
+12. File types shown by icon and text, not icon alone   (Standard: wcag-color)
+
+SOURCES
+- nng-tables: https://www.nngroup.com/articles/data-tables/
+- nng-breadcrumbs: https://www.nngroup.com/articles/breadcrumbs/
+- govuk-file-upload: https://design-system.service.gov.uk/components/file-upload/
+- apg-grid: https://www.w3.org/WAI/ARIA/apg/patterns/grid/
+- apg-menu: https://www.w3.org/WAI/ARIA/apg/patterns/menubar/
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color

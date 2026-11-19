@@ -1,0 +1,20 @@
+title: Idempotency and retries
+about: Making it safe to send the same request twice, so a dropped connection never charges a card twice.
+## Keys
+- Actions that create (payments, orders, messages) accept an idempotency key from the caller | S stripe-idempotency aws-idempotent
+- The same key with the same body returns the first result without doing the work again | S stripe-idempotency
+- The same key with a different body is refused with a clear error | S stripe-idempotency
+- Keys kept for at least 24 hours | S stripe-idempotency
+## Server side
+- The key and the result saved in the same transaction as the work | S aws-idempotent
+- Two requests with the same key at the same moment: one waits or gets 409, never both run | S pg-locking
+- A database uniqueness rule as the last guard (one payment per order) | S pg-constraints
+## Retries
+- Clients retry only safe or idempotent requests | S rfc-http
+- Growing waits with a random spread and a maximum number of tries | S aws-backoff
+- Retry only on errors that can pass (timeouts, 429, 503), never on 400 | S google-aip-errors
+- A timeout at every layer, each shorter than the layer calling it | S aws-backoff
+- A circuit breaker stops calling a service that keeps failing | S fowler-circuit sre-cascading
+## Messages and events
+- Consumers handle the same message twice safely by remembering processed ids | S outbox
+- Events written in the same transaction as the change (an outbox table), then sent | S outbox

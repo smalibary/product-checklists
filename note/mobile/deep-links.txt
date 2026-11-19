@@ -1,0 +1,28 @@
+﻿DEEP LINKS CHECKLIST: 8 items
+Links that open a specific screen in the app.
+Backing: 0 Rule, 5 Standard, 1 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SETUP
+ 1. Verified app links on Android and universal links on iPhone   (Standard: android-app-links, apple-universal-links)
+ 2. The same address works on the web when the app is not installed   (Standard: apple-universal-links)
+
+BEHAVIOUR
+ 3. Opens the exact screen, with a back path that makes sense   (Standard: android-back)
+ 4. Sign-in required? Sign in, then continue to the linked screen   (Practice)
+ 5. Missing or deleted content: a clear message, not a crash   (Research: nng-errors)
+
+SAFETY
+ 6. Every linked screen checks permission   (Standard: owasp-authz)
+ 7. Parameters validated like any input   (Standard: owasp-input)
+
+TESTING
+ 8. Each link tested installed, not installed and signed out   (Practice)
+
+SOURCES
+- android-app-links: https://developer.android.com/training/app-links
+- apple-universal-links: https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app
+- android-back: https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-input: https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html

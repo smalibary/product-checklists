@@ -1,0 +1,32 @@
+﻿CONTENT AND VOICE CHECKLIST: 9 items
+How the product speaks: words, tone and labels across every screen.
+Backing: 0 Rule, 4 Standard, 5 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+VOICE
+ 1. Voice described in a few dimensions (formal or casual, serious or playful)   (Research: nng-voice)
+ 2. Tone shifts with the moment: calm for errors, warm for success   (Research: nng-voice)
+
+WORDS
+ 3. Plain words people use, not internal names   (Standard: hig-writing)
+ 4. Buttons say what they do (Save changes, not OK)   (Research: nng-buttons)
+ 5. Sentence case for labels   (Standard: hig-writing)
+ 6. Numbers, dates and money formatted by locale   (Standard: cldr)
+
+ERRORS
+ 7. Say what happened and how to fix it, without blame   (Research: nng-errors)
+
+CONSISTENCY
+ 8. One word for one thing across the product (a glossary)   (Research: nng-consistency)
+
+LANGUAGES
+ 9. Text written to translate well, with room for longer words   (Standard: w3c-forms-i18n)
+
+SOURCES
+- nng-voice: https://www.nngroup.com/articles/tone-of-voice-dimensions/
+- hig-writing: https://developer.apple.com/design/human-interface-guidelines/writing
+- nng-buttons: https://www.nngroup.com/articles/button-states-communicate-interaction/
+- cldr: https://cldr.unicode.org/
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- nng-consistency: https://www.nngroup.com/articles/consistency-and-standards/
+- w3c-forms-i18n: https://www.w3.org/International/questions/qa-forms-utf-8

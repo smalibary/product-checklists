@@ -1,0 +1,36 @@
+﻿REALTIME CONNECTIONS CHECKLIST: 14 items
+Pushing live updates to apps over WebSockets or server-sent events.
+Backing: 0 Rule, 9 Standard, 0 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING
+ 1. Server-sent events when only the server talks; WebSockets when both sides send   (Standard: whatwg-sse, rfc-websocket)
+ 2. Polling only when updates are rare, and then slowly   (Practice)
+
+SECURITY
+ 3. Secure connections only (wss)   (Standard: owasp-websocket)
+ 4. The Origin header checked when the connection opens   (Standard: owasp-websocket)
+ 5. The user signed in when connecting, and checked again for each private channel   (Standard: owasp-websocket, owasp-authz)
+ 6. Every incoming message validated and size-limited   (Standard: owasp-websocket)
+
+CONNECTIONS
+ 7. Heartbeats close dead connections   (Standard: rfc-websocket)
+ 8. Clients reconnect with growing waits and a random spread   (Standard: aws-backoff)
+ 9. After reconnecting, the client catches up from its last event id   (Standard: whatwg-sse)
+10. Limits on connections per user and messages per second   (Standard: owasp-dos)
+
+MESSAGES
+11. One message format with a type and an id   (Practice)
+12. Missed messages are not assumed delivered; important state is also readable from the normal API   (Practice)
+
+SCALE
+13. Fan-out through a shared message service so any server can reach any client   (Practice)
+14. Data that changes every few seconds is batched or sent as a summary   (Practice)
+
+SOURCES
+- whatwg-sse: https://html.spec.whatwg.org/multipage/server-sent-events.html
+- rfc-websocket: https://www.rfc-editor.org/rfc/rfc6455
+- owasp-websocket: https://cheatsheetseries.owasp.org/cheatsheets/WebSocket_Security_Cheat_Sheet.html
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- aws-backoff: https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/
+- owasp-dos: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html

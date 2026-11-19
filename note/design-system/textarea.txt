@@ -1,0 +1,30 @@
+﻿TEXT AREA CHECKLIST: 9 items
+The box for writing longer text, like comments or descriptions.
+Backing: 0 Rule, 7 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BASICS
+ 1. A visible label and optional help text   (Standard: wcag-labels)
+ 2. Height fits the expected answer; grows as you type where possible   (Standard: govuk-character)
+
+LIMITS
+ 3. A character count when there is a limit, updated politely to screen readers   (Standard: govuk-character)
+ 4. Going over the limit allowed while typing, then shown as an error   (Standard: govuk-character)
+
+TEXT
+ 5. Spell check on   (Practice)
+ 6. Direction follows the text (dir=auto) for mixed Arabic and English   (Standard: w3c-dir)
+
+SAFETY
+ 7. Drafts saved for long text   (Practice)
+
+ACCESS
+ 8. Errors linked to the field   (Standard: wcag-error)
+ 9. Resizable and not clipped when text is enlarged   (Standard: wcag-resize)
+
+SOURCES
+- wcag-labels: https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions
+- govuk-character: https://design-system.service.gov.uk/components/character-count/
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- wcag-resize: https://www.w3.org/WAI/WCAG22/Understanding/resize-text

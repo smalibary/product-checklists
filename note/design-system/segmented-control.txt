@@ -1,0 +1,29 @@
+﻿SEGMENTED CONTROL CHECKLIST: 8 items
+A row of 2 to 5 joined buttons for switching between views or options.
+Backing: 0 Rule, 8 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+USE
+ 1. For 2 to 5 related choices that switch a view at once   (Standard: hig-segmented, m3-segmented)
+ 2. Not for navigation between pages; use tabs instead   (Standard: hig-segmented)
+
+LABELS
+ 3. Short text or icons with names, all the same kind   (Standard: hig-segmented)
+
+BEHAVIOUR
+ 4. One selected at a time, or several when marked as multi-select   (Standard: m3-segmented)
+ 5. Selection clear by more than colour   (Standard: wcag-color)
+
+SEMANTICS
+ 6. Built as a radio group or toggle buttons   (Standard: apg-radio)
+
+LOOK
+ 7. Equal widths; text does not wrap   (Standard: hig-segmented)
+ 8. Tap targets large enough   (Standard: wcag-target)
+
+SOURCES
+- hig-segmented: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
+- m3-segmented: https://m3.material.io/components/segmented-buttons/overview
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- apg-radio: https://www.w3.org/WAI/ARIA/apg/patterns/radio/
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

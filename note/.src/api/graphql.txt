@@ -1,0 +1,21 @@
+title: GraphQL API
+about: An API where the caller writes a query naming exactly the data it wants.
+## Schema
+- One schema with clear type and field names, descriptions on every type and field | S graphql-spec graphql-best
+- Nullable fields by default where parts can fail; required only when always present | S graphql-best
+- Changes are added rather than versioned; old fields marked @deprecated with a reason | S graphql-best
+## Lists
+- Connection-style paging (edges, cursors, pageInfo) with a maximum page size | S graphql-pagination
+## Safety
+- Query depth and cost limited, so one query cannot ask for millions of rows | S owasp-graphql
+- Introspection and the query explorer switched off for the public in production, unless the API is public by design | S owasp-graphql
+- Authorization checked in every field resolver or the data layer, not only at the top | S owasp-graphql owasp-authz
+- Batching and aliases limited, so they cannot be used to guess passwords | S owasp-graphql
+- Inputs validated like any API; errors without internal details | S owasp-input owasp-errors
+## Speed
+- Data loaded in batches to avoid one database call per item | S graphql-best
+- Known queries can be stored and called by id (persisted queries) | S graphql-best
+## Errors
+- Errors in the errors list with a stable code in extensions | S graphql-spec
+## Rate limits
+- Limits based on query cost, not only on the number of calls | S owasp-graphql

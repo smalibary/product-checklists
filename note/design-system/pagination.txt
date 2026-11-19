@@ -1,0 +1,30 @@
+﻿PAGINATION CHECKLIST: 10 items
+The control for moving between pages of a long list.
+Backing: 0 Rule, 6 Standard, 2 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PARTS
+ 1. Previous and Next with words, not only arrows   (Standard: govuk-pagination)
+ 2. Page numbers with the current one marked, and gaps shown with ...   (Standard: govuk-pagination)
+ 3. Current page marked with aria-current   (Standard: govuk-pagination)
+
+BEHAVIOUR
+ 4. Each page has its own address   (Practice)
+ 5. Focus or scroll moves to the top of the new results   (Practice)
+ 6. A "View all" option when lists are short enough   (Research: nng-pagination)
+ 7. Infinite scroll avoided where people need to find things again   (Research: nng-infinite)
+
+LOOK
+ 8. Targets big enough to tap   (Standard: wcag-target)
+ 9. Inside a nav landmark with a name ("Pagination")   (Standard: apg-landmarks)
+
+ACCESS
+10. Works by keyboard; link names say the page number   (Standard: wcag-link)
+
+SOURCES
+- govuk-pagination: https://design-system.service.gov.uk/components/pagination/
+- nng-pagination: https://www.nngroup.com/articles/item-list-view-all/
+- nng-infinite: https://www.nngroup.com/articles/infinite-scrolling-tips/
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context

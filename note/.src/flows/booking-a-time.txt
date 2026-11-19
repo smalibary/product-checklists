@@ -1,0 +1,17 @@
+title: Booking a time (flow)
+about: Choosing a date and time slot for an appointment or meeting.
+## Choosing
+- Available days and times only, in the person's time zone, shown clearly | S iana-tz
+- Time zone changeable | S iana-tz
+- Date picker that works by keyboard | S apg-datepicker
+## Details
+- Only the fields needed | L gdpr-5
+- Summary before confirming: what, when, where, price | S govuk-check
+## Confirming
+- Slot held while finishing, with a clear time limit that can be extended | S wcag-timing
+- Confirmation page and email with a calendar file | S govuk-confirm rfc-icalendar
+## Changing
+- Reschedule and cancel links in the email | P
+- Reminders before the time | P
+## Access
+- Slots announced with full date and time | S wcag-name-role

@@ -1,0 +1,31 @@
+﻿SETTING UP TWO-STEP SIGN-IN (FLOW) CHECKLIST: 9 items
+Adding a second factor like an authenticator app, passkey or SMS code.
+Backing: 0 Rule, 8 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING
+ 1. Options listed: passkey, authenticator app, then SMS as a fallback   (Standard: nist-63b-auth, owasp-mfa)
+
+AUTHENTICATOR APP
+ 2. QR code plus a text key to type   (Standard: rfc-totp)
+ 3. Confirm with a code before turning it on   (Standard: owasp-mfa)
+
+RECOVERY
+ 4. Recovery codes shown once, with copy and download   (Standard: owasp-mfa)
+ 5. The person confirms they saved them   (Practice)
+
+AFTER
+ 6. Email confirmation that two-step is on   (Standard: owasp-mfa)
+ 7. Turning it off needs a fresh sign-in and a code   (Standard: owasp-mfa)
+
+ACCESS
+ 8. Code fields allow paste and autofill   (Standard: wcag-auth, webdev-otp)
+ 9. No time pressure on entering codes beyond the code's life   (Standard: wcag-timing)
+
+SOURCES
+- nist-63b-auth: https://pages.nist.gov/800-63-4/sp800-63b.html
+- owasp-mfa: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
+- rfc-totp: https://www.rfc-editor.org/rfc/rfc6238
+- wcag-auth: https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum
+- webdev-otp: https://web.dev/articles/sms-otp-form
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable

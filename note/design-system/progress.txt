@@ -1,0 +1,33 @@
+﻿PROGRESS INDICATOR CHECKLIST: 8 items
+Bars and spinners that show something is happening and how far along it is.
+Backing: 0 Rule, 5 Standard, 3 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING
+ 1. Bar with percent when the length is known; spinner when it is not   (Standard: m3-progress, hig-progress-indicators)
+ 2. Nothing for waits under about 1 second   (Research: nng-response)
+ 3. Skeletons for loading page content   (Research: nng-skeleton)
+
+BEHAVIOUR
+ 4. Progress only moves forward   (Standard: hig-progress-indicators)
+ 5. Long waits explain what is happening and allow cancel   (Research: nng-progress)
+
+SEMANTICS
+ 6. progressbar role with the value, or a status message for screen readers   (Standard: apg-meter, wcag-status)
+
+MOTION
+ 7. Animation respects reduced motion   (Standard: mdn-reduced-motion)
+
+LOOK
+ 8. Enough contrast for the bar and its track   (Standard: wcag-ui-contrast)
+
+SOURCES
+- m3-progress: https://m3.material.io/components/progress-indicators/guidelines
+- hig-progress-indicators: https://developer.apple.com/design/human-interface-guidelines/progress-indicators
+- nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- apg-meter: https://www.w3.org/WAI/ARIA/apg/patterns/meter/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- wcag-ui-contrast: https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast

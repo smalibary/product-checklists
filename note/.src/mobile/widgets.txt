@@ -1,0 +1,14 @@
+title: Home screen widgets
+about: Small views of the app on the home screen.
+## Content
+- One clear job per widget with glanceable information | S hig-widgets android-widgets
+- Sizes offered that fit the content | S hig-widgets
+- Tapping opens the matching screen | S hig-widgets
+## Data
+- Updates on a sensible schedule, not constantly | S android-widgets
+- Placeholder content while loading | S hig-widgets
+- No private data shown without the person choosing it | S hig-privacy
+## Look
+- Follows system light and dark mode | S hig-dark-mode
+## Access
+- Text scales with system settings | S hig-accessibility

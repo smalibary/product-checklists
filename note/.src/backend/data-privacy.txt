@@ -1,0 +1,20 @@
+title: Data privacy (server)
+about: Handling personal data the way GDPR and Saudi PDPL require.
+## Basics
+- A list of what personal data is kept, why, where and for how long | L gdpr-30 pdpl
+- A legal reason for each use | L gdpr-6 pdpl
+- Collect only what is needed | L gdpr-5
+- Privacy built into the design from the start | L gdpr-25
+## People's rights
+- Access and a copy of their data | L gdpr-15 gdpr-20
+- Correction and deletion, including from backups within a stated time | L gdpr-17 pdpl
+- Objection to marketing and profiling | L gdpr-21
+## Security
+- Encryption in transit and at rest, access limited by role | L gdpr-32
+- Breaches reported within 72 hours where required | L gdpr-33
+## Suppliers
+- A data processing agreement with each supplier | L gdpr-28
+- Transfers outside the country only under the rules | L gdpr-44 pdpl
+## Risk
+- An impact assessment for high-risk processing | L gdpr-35
+- Saudi cybersecurity controls checked where they apply | L nca-ecc

@@ -1,0 +1,18 @@
+title: Documentation site
+about: The help and how-to pages for a product, organised so people find answers.
+## Structure
+- Tutorials, how-to guides, reference and explanations kept apart | S diataxis
+- A getting-started page that reaches a first success fast | S diataxis
+- Left navigation tree and "on this page" headings | R nng-vertical-nav
+## Finding
+- Search across all pages with good results for common words | R nng-search
+- Clear page titles and addresses | S wcag-title
+## Pages
+- Steps numbered, with screenshots that match the current product | R nng-help
+- Copy buttons on code and commands | P
+- Last updated date | P
+## Feedback
+- "Was this helpful?" on each page | P
+- A link to support when the page did not help | S wcag-consistent-help
+## Access
+- Headings, keyboard use, contrast and readable code blocks | S wcag

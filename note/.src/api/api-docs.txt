@@ -1,0 +1,21 @@
+title: API docs
+about: The documentation developers read to start using an API and to fix problems.
+## Structure
+- Four kinds kept apart: a getting-started tutorial, how-to guides, the reference, and explanations | S diataxis
+- A quick start that reaches a first working call in minutes | S diataxis
+- The reference generated from the OpenAPI file so it never drifts from the code | S openapi
+## Reference
+- Every address with its method, fields, types, required marks, example request and response | S openapi
+- Every error code with its meaning and fix | S rfc-problem
+- Authentication, paging, rate limits and versioning explained once and linked from each address | S google-aip
+## Examples
+- Copyable examples in curl and the main languages, with test keys filled in for signed-in readers | S stripe-keys
+- Examples that are run in tests so they keep working | P
+## Change
+- A changelog with dates and what callers must do | S keepachangelog
+- Deprecated items marked with their retire date | S rfc-deprecation rfc-sunset
+## Finding things
+- Search across all pages | P
+- A status page and a support contact linked from the docs | P
+## Access
+- Docs pages meet WCAG: headings, keyboard use, contrast, readable code blocks | S wcag

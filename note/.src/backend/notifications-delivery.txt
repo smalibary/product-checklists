@@ -1,0 +1,19 @@
+title: Notification delivery
+about: Getting push, email and in-app messages to the right person once, at the right time.
+## Channels
+- Push through FCM and APNs with tokens kept per device | S fcm apns
+- Dead device tokens removed when the service reports them | S fcm apns
+- Each person's channel choices stored and respected | S nng-notifications
+## Sending
+- One place decides what to send on which channel | P
+- Sent from a queue with retries; never twice for one event | S aws-idempotent
+- Quiet hours and the person's time zone respected | S iana-tz
+- Similar messages grouped instead of many in a row | S nng-notifications
+## Content
+- No private details on lock-screen text unless the person allows it | S hig-notifications
+- A link that opens the right screen | S android-app-links apple-universal-links
+## Limits
+- Caps per person per day | P
+- SMS and email counted against daily budgets | S aws-cost
+## Watching
+- Delivery, open and failure rates measured | S sre-monitoring

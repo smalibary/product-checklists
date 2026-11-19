@@ -1,0 +1,20 @@
+title: AI features (server)
+about: Building features on language models safely, within budget, and honestly.
+## Risks
+- Prompt injection planned for: model output never trusted to take actions alone | S owasp-llm
+- Model output checked and encoded before showing or using it | S owasp-llm owasp-xss
+- No secrets or other users' data in prompts | S owasp-llm
+- Tools the model can call are limited, and risky ones need a person's yes | S owasp-llm
+## Cost
+- A daily cap per user and in total, counted in one place | S owasp-llm aws-cost
+- Repeated answers cached | S aws-cost
+- Input and output size limited | S owasp-llm
+## Quality
+- A test set of real questions run before each model or prompt change | S nist-ai-rmf
+- Answers that state when they are unsure; sources shown where possible | S nist-ai-rmf
+## People
+- People told when they are talking to an AI or seeing AI content | L eu-ai-act
+- A way to report a bad answer | S nist-ai-rmf
+## Data
+- What is sent to the model provider is stated in the privacy notice | L gdpr-13
+- Provider settings checked so your data is not used for their training without consent | L gdpr-28

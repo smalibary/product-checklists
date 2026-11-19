@@ -1,0 +1,18 @@
+title: Command palette
+about: A search box that opens with a shortcut (Ctrl+K) and runs any command or jumps anywhere.
+## Opening
+- Ctrl+K or Cmd+K, plus a visible button for people who do not know the shortcut | R nng-shortcuts
+- Opens with focus in the search field | S apg-combobox
+## Results
+- Results update as you type, forgiving typos | P
+- Grouped (pages, actions, recent) with group names | S apg-listbox
+- Each result shows its shortcut where one exists | R nng-shortcuts
+- Recent and suggested items shown before typing | P
+## Keys
+- Arrow keys move, Enter runs, Escape closes | S apg-combobox
+- The active result announced to screen readers | S apg-combobox wcag-name-role
+## Safety
+- Only commands the person may use are listed | S owasp-authz
+- Dangerous commands still ask to confirm | R nng-confirm
+## After
+- Focus returns to where it was when closed | S apg-dialog

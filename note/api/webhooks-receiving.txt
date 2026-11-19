@@ -1,0 +1,35 @@
+﻿RECEIVING WEBHOOKS CHECKLIST: 12 items
+Accepting event calls from another service safely, without double work or lost events.
+Backing: 0 Rule, 11 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHECKING
+ 1. Signature checked against the raw body before anything else   (Standard: standard-webhooks, stripe-webhooks)
+ 2. Timestamp checked; messages older than about 5 minutes are refused (no replays)   (Standard: standard-webhooks)
+ 3. Secrets kept in the secret store, never in code   (Standard: owasp-secrets)
+
+HANDLING
+ 4. Answer 2xx fast, then do the work in a background job   (Standard: stripe-webhooks)
+ 5. Each event id stored; a repeat is acknowledged and skipped   (Standard: stripe-webhooks, outbox)
+ 6. Events may arrive out of order: compare times or fetch the latest state before acting   (Standard: stripe-webhooks)
+ 7. Only the event types you need are handled; others are acknowledged and ignored   (Standard: stripe-webhooks)
+
+FAILURES
+ 8. Failed processing retried from your own queue, not by failing the call   (Practice)
+ 9. A daily check against the sender's API catches events that never arrived   (Standard: stripe-webhooks)
+10. Alerts when deliveries stop or errors rise   (Standard: sre-alerting)
+
+STORE EVENTS
+11. App Store and Google Play subscription events handled the same way (signed, recorded, deduplicated)   (Standard: apple-server-notif, play-rtdn)
+
+TESTING
+12. Tested with the sender's test events and command-line tools before going live   (Standard: stripe-webhooks)
+
+SOURCES
+- standard-webhooks: https://www.standardwebhooks.com/
+- stripe-webhooks: https://docs.stripe.com/webhooks
+- owasp-secrets: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- outbox: https://microservices.io/patterns/data/transactional-outbox.html
+- sre-alerting: https://sre.google/workbook/alerting-on-slos/
+- apple-server-notif: https://developer.apple.com/documentation/appstoreservernotifications
+- play-rtdn: https://developer.android.com/google/play/billing/rtdn-reference

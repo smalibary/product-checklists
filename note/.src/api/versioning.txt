@@ -1,0 +1,22 @@
+title: API versioning
+about: Changing an API without breaking the programs that already use it.
+## What breaks
+- Removing or renaming a field, an address or an error code | S semver google-aip
+- Changing a field's type, format or meaning | S google-aip
+- Making an optional input required | S google-aip
+- Adding fields or enum values is safe only if clients were told to ignore unknown ones | S zalando-api
+## How
+- One version scheme for the whole API: in the path (/v1), a header or a dated version | S ms-api-guidelines stripe-versioning
+- Each account pinned to the version it started on; it upgrades by choice | S stripe-versioning
+- Old versions translated at the edge, so the core code has one model | S stripe-versioning
+## Retiring
+- Deprecation and Sunset headers with the date on anything being retired | S rfc-deprecation rfc-sunset
+- Notice sent well ahead (often 6 to 12 months) by email and in the changelog | S zalando-api
+- Use of old versions measured, so you know who to contact | P
+## Changelog
+- Every change listed with its date, version and what callers must do | S keepachangelog
+- Breaking changes clearly marked | S keepachangelog
+## Testing
+- Contract tests prove old versions still answer as documented | S fowler-test-pyramid
+- The OpenAPI file is compared on every change to catch breaking ones | S openapi
+- Changes rolled out in steps: add the new, move callers, then remove the old | S fowler-parallel-change

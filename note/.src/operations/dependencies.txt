@@ -1,0 +1,15 @@
+title: Dependencies
+about: The outside code your app is built on, kept up to date and trustworthy.
+## Knowing
+- A list of every dependency and its version (a lock file and a software bill of materials) | S slsa owasp-dependencies
+- Licences checked before adding | P
+## Choosing
+- Prefer maintained, widely used packages; check their health score | S openssf-scorecard
+- Fewer dependencies where a small amount of own code will do | P
+## Updating
+- Automatic alerts for known vulnerabilities | S owasp-dependencies
+- Updates applied regularly in small steps, with tests | S owasp-dependencies
+- Critical fixes applied within days | S owasp-dependencies
+## Supply chain
+- Packages installed from trusted sources with locked versions and checks | S slsa
+- Build steps signed or verified | S slsa nist-ssdf

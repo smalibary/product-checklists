@@ -1,0 +1,21 @@
+title: Email sending
+about: Sending account and product emails that arrive in the inbox and follow the law.
+## Domain
+- SPF, DKIM and DMARC set up for the sending domain | S rfc-spf rfc-dkim rfc-dmarc
+- Gmail and Yahoo rules met: alignment, low spam rate, one-click unsubscribe for bulk mail | L google-sender yahoo-sender
+- Account emails and marketing emails sent from separate addresses or streams | S google-sender
+## Content
+- A plain-text version with every HTML email | P
+- The sender's name and postal address in marketing emails | L can-spam
+## Consent
+- Marketing only with consent where the law needs it | L eprivacy gdpr-6
+- One-click unsubscribe header and a working link, honoured quickly | L rfc-unsubscribe can-spam
+## Delivery
+- Sending through a queue with retries | S aws-backoff
+- Bounces and complaints handled: stop sending to bad addresses | S google-sender
+- Daily caps per user and in total | S aws-cost
+## Safety
+- No secrets or full card numbers in emails | S pci-dss
+- Links in emails expire when they sign someone in | S owasp-forgot
+## Watching
+- Delivery, bounce and complaint rates measured | S google-sender

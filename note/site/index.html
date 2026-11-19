@@ -1,4 +1,4 @@
-<title>Design Checklists</title>
+<title>Product Checklists</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -84,6 +84,37 @@ mark{background:var(--accent-soft);color:inherit;border-radius:2px}
 .hitgrp .g{font:12px var(--f-mono);color:var(--muted);margin-left:8px}
 .empty{color:var(--muted);padding:32px 0}
 .foot{margin-top:40px;font-size:13px;color:var(--muted);max-width:65ch}
+.tick{width:18px;height:18px;margin:2px 0 0;accent-color:var(--accent);cursor:pointer}
+.item{grid-template-columns:1.4rem 2rem minmax(0,1fr)}
+.item.done .txt{color:var(--muted)}
+.item.done .txt>span{text-decoration:line-through;text-decoration-color:var(--muted)}
+.proj{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+.proj input{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;width:11rem}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;align-items:center}
+.btn{font:500 13px/1 var(--f-body);color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer}
+.btn:hover{background:var(--hover)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--panel)}
+.done-n{font:500 13px var(--f-mono);color:var(--accent)}
+.copybox{width:100%;min-height:12rem;margin-top:10px;font:12px/1.5 var(--f-mono);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px}
+.top a{display:flex;justify-content:space-between;text-decoration:none;padding:5px 8px;border-radius:6px;font-size:14px;font-weight:600}
+.top a:hover{background:var(--hover)} .top a[aria-current="page"]{background:var(--accent-soft);color:var(--accent)}
+.top{margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:14px;margin-top:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.card h3{font:700 1.25rem/1.1 var(--f-head);margin:0;display:flex;justify-content:space-between;gap:8px}
+.card h3 small{font:12px var(--f-mono);color:var(--muted);font-weight:400}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.card .links{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:13px}
+.card .links a{text-decoration:none;border-bottom:1px solid var(--line)}
+.card .links a:hover{color:var(--accent);border-color:var(--accent)}
+.card .links a.has{color:var(--accent)}
+.side-h{font:600 12px/1 var(--f-body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:30px 0 0}
+.srcrow{display:grid;grid-template-columns:minmax(9rem,15rem) minmax(0,1fr);gap:4px 14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.srcrow code{font:12.5px var(--f-mono);font-weight:500}
+.srcrow .u{overflow-wrap:anywhere;color:var(--accent)}
+.srcrow .in{grid-column:2;color:var(--muted);font-size:13px}
+.srcrow .in a{text-decoration:none;border-bottom:1px dotted var(--muted)}
+@media (max-width:860px){.srcrow{grid-template-columns:minmax(0,1fr)}.srcrow .in{grid-column:1}.proj input{width:9rem}}
 @media (max-width:860px){
   .wrap{grid-template-columns:minmax(0,1fr);gap:16px}
   nav{position:static;max-height:none}
@@ -96,66 +127,124 @@ mark{background:var(--accent-soft);color:inherit;border-radius:2px}
 </style>
 
 <header class="bar"><div class="bar-in">
-  <div class="brand"><h1>Design Checklists</h1><span id="stats">Loading…</span></div>
-  <div class="search"><input id="q" type="search" placeholder="Search every checklist (try: contrast, mada, cancel)" aria-label="Search every checklist"></div>
+  <div class="brand"><h1>Product Checklists</h1><span id="stats">Loading…</span></div>
+  <div class="search"><input id="q" type="search" placeholder="Search every checklist (try: contrast, webhook, cancel)" aria-label="Search every checklist"></div>
+  <label class="proj">Project <input id="proj" list="projs" placeholder="My project" aria-label="Project name for ticks"><datalist id="projs"></datalist></label>
   <div class="chips" id="chips" role="group" aria-label="Show items by backing"></div>
 </div></header>
 
 <div class="wrap">
   <nav id="nav" aria-label="Checklists">
     <button class="navtoggle" id="navtoggle" aria-expanded="false"><span id="navlabel">All checklists</span><span>▾</span></button>
-    <div class="lists" id="lists"></div>
+    <div class="lists"><div class="top" id="top"></div><div id="lists"></div></div>
   </nav>
   <main id="main"><p class="empty">Loading the checklists…</p></main>
 </div>
 
 <script>
-const GROUPS={"website":"Website","web-app":"Web app","design-system":"Design system","mobile":"Mobile","flows":"Flows"};
+const GROUPS={"website":"Website","web-app":"Web app","design-system":"Design system","mobile":"Mobile","flows":"Flows","api":"API","backend":"Backend","operations":"Operations"};
+const ABOUT={"website":"Public pages of a company or product: landing, pricing, legal, help.","web-app":"Screens inside a signed-in product: dashboards, settings, data, teams.","design-system":"The components, tokens and rules every screen is built from.","mobile":"Phone app screens and the things only phones have.","flows":"Step-by-step journeys from start to finish.","api":"How other programs talk to your product: addresses, errors, limits, webhooks.","backend":"The logic behind the screens: accounts, data, jobs, payments, privacy.","operations":"Running it live: logging, alerts, backups, releases, incidents, costs."};
 const BACK={L:["Rule","A store or a law requires it"],S:["Standard","A published standard"],R:["Research","Usability studies"],P:["Practice","Good practice, no study found"]};
 const VAR={L:"--rule",S:"--std",R:"--res",P:"--prac"};
-let DATA=[], BY={}, on=new Set(Object.keys(BACK));
+let DATA=[], BY={}, SRC={}, on=new Set(Object.keys(BACK)), project="", TICKS={};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const count=l=>l.sections.reduce((n,s)=>n+s.items.length,0);
+const short=t=>t.replace(/ \(flow\)$/,"");
 
-function store(k,v){try{v===undefined?null:localStorage.setItem(k,JSON.stringify(v));return JSON.parse(localStorage.getItem(k))}catch(e){return null}}
+function load(k){try{const v=localStorage.getItem(k);return v?JSON.parse(v):null}catch(e){return null}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+
+/* Ticks: one set per project name, kept in this browser only */
+function tkey(){return "ticks:"+(project||"default")}
+function loadTicks(){TICKS=load(tkey())||{}}
+function isDone(id,n){return (TICKS[id]||[]).includes(n)}
+function setDone(id,n,v){const a=new Set(TICKS[id]||[]);v?a.add(n):a.delete(n);TICKS[id]=[...a];save(tkey(),TICKS)}
+function doneCount(id){return (TICKS[id]||[]).length}
+function projects(){const p=load("projects")||[];$("projs").innerHTML=p.map(x=>`<option value="${esc(x)}">`).join("")}
+function setProject(name){
+  project=name.trim(); save("project",project);
+  if(project){const p=load("projects")||[]; if(!p.includes(project)){p.push(project);save("projects",p);projects()}}
+  loadTicks(); render();
+}
 
 function chips(){
   $("chips").innerHTML=Object.entries(BACK).map(([k,[n,d]])=>
     `<button class="chip" data-k="${k}" aria-pressed="${on.has(k)}" title="${d}"><i style="background:var(${VAR[k]})"></i>${n}</button>`).join("");
   $("chips").querySelectorAll("button").forEach(b=>b.onclick=()=>{
-    const k=b.dataset.k; on.has(k)&&on.size>1?on.delete(k):on.add(k); store("on",[...on]); chips(); render();});
+    const k=b.dataset.k; on.has(k)&&on.size>1?on.delete(k):on.add(k); save("on",[...on]); chips(); render();});
 }
 
 function nav(cur){
+  $("top").innerHTML=`<a href="#home" ${cur==="home"?'aria-current="page"':""}>Overview<span></span></a><a href="#sources" ${cur==="sources"?'aria-current="page"':""}>All sources<span>${Object.keys(SRC).length}</span></a>`;
   $("lists").innerHTML=Object.entries(GROUPS).map(([g,name])=>{
     const ls=DATA.filter(l=>l.group===g);
-    return `<div class="grp"><h2><span>${name}</span><span>${ls.length}</span></h2>`+
-      ls.map(l=>`<a href="#${l.id}" ${l.id===cur?'aria-current="page"':""}>${esc(l.title.replace(/ \(flow\)$/,""))}<span>${count(l)}</span></a>`).join("")+`</div>`;
+    return `<div class="grp" id="g-${g}"><h2><span>${name}</span><span>${ls.length}</span></h2>`+
+      ls.map(l=>{const d=doneCount(l.id);return `<a href="#${l.id}" ${l.id===cur?'aria-current="page"':""}>${esc(short(l.title))}<span>${d?d+"/":""}${count(l)}</span></a>`}).join("")+`</div>`;
   }).join("");
-  const c=BY[cur]; $("navlabel").textContent=c?`${GROUPS[c.group]} · ${c.title}`:"All checklists";
+  const c=BY[cur]; $("navlabel").textContent=c?`${GROUPS[c.group]} · ${c.title}`:cur==="sources"?"All sources":"Overview";
 }
 
 function tags(it,srcs){
   return `<div class="meta"><span class="tag ${it.b}">${BACK[it.b][0]}</span>`+
     it.k.map(k=>srcs[k]?`<a class="src" href="${esc(srcs[k])}" target="_blank" rel="noopener">${esc(k)}</a>`:`<span class="src">${esc(k)}</span>`).join("")+`</div>`;
 }
+function row(l,n,it,html){
+  const d=isDone(l.id,n);
+  return `<li class="item${d?" done":""}"><input type="checkbox" class="tick" data-l="${l.id}" data-n="${n}" ${d?"checked":""} aria-label="Done: ${esc(it.t)}"><span class="num">${n}</span><div class="txt"><span>${html||esc(it.t)}</span>${tags(it,l.sources)}</div></li>`;
+}
+
+function asText(l){
+  let n=0; const out=[`${l.title}`,`${l.about}`,project?`Project: ${project}`:"",""].filter((x,i)=>x||i===3);
+  l.sections.forEach(s=>{out.push(`## ${s.name}`);s.items.forEach(it=>{n++;if(!on.has(it.b))return;
+    out.push(`[${isDone(l.id,n)?"x":" "}] ${n}. ${it.t} (${BACK[it.b][0]}${it.k.length?": "+it.k.join(", "):""})`)});out.push("")});
+  const used=Object.entries(l.sources); if(used.length){out.push("Sources");used.forEach(([k,u])=>out.push(`${k}: ${u}`))}
+  return out.join("\n");
+}
+function copy(l){
+  const text=asText(l), msg=$("copymsg");
+  const fallback=()=>{$("copyarea").innerHTML=`<textarea class="copybox" readonly aria-label="Checklist as text">${esc(text)}</textarea>`;
+    const t=$("copyarea").querySelector("textarea"); t.focus(); t.select(); msg.textContent="Select all and copy the text below."};
+  try{navigator.clipboard.writeText(text).then(()=>{msg.textContent="Copied as text."},fallback)}catch(e){fallback()}
+}
 
 function showList(l){
   const all=l.sections.flatMap(s=>s.items), n=all.length, c={L:0,S:0,R:0,P:0}; all.forEach(i=>c[i.b]++);
   let num=0, shown=0;
   const secs=l.sections.map(s=>{
-    const rows=s.items.map(it=>{num++; if(!on.has(it.b))return ""; shown++;
-      return `<li class="item"><span class="num">${num}</span><div class="txt">${esc(it.t)}${tags(it,l.sources)}</div></li>`}).join("");
+    const rows=s.items.map(it=>{num++; if(!on.has(it.b))return ""; shown++; return row(l,num,it)}).join("");
     return rows?`<section class="sec"><h3>${esc(s.name)}</h3><ol class="items">${rows}</ol></section>`:"";
   }).join("");
-  const used=Object.entries(l.sources);
+  const used=Object.entries(l.sources), d=doneCount(l.id);
   $("main").innerHTML=`<div class="lhead"><div class="eyebrow">${GROUPS[l.group]} · ${n} items</div><h2>${esc(l.title)}</h2><p>${esc(l.about)}</p>
     <div class="mix" role="img" aria-label="${Object.keys(c).map(k=>c[k]+" "+BACK[k][0]).join(", ")}">${Object.keys(c).map(k=>c[k]?`<b style="flex:${c[k]};background:var(${VAR[k]})"></b>`:"").join("")}</div>
-    <div class="legend">${Object.keys(c).map(k=>`<span><strong>${c[k]}</strong> ${BACK[k][0]}</span>`).join("")}${shown<n?`<span>· showing ${shown}</span>`:""}</div></div>
+    <div class="legend">${Object.keys(c).map(k=>`<span><strong>${c[k]}</strong> ${BACK[k][0]}</span>`).join("")}${shown<n?`<span>· showing ${shown}</span>`:""}</div>
+    <div class="tools"><span class="done-n" id="donen">${d} of ${n} done${project?" for "+esc(project):""}</span>
+      <button class="btn main" id="copybtn">Copy as text</button><button class="btn" id="clearbtn" ${d?"":"hidden"}>Clear ticks</button>
+      <span id="copymsg" role="status" class="done-n"></span></div><div id="copyarea"></div></div>
     ${secs||`<p class="empty">No items with this backing here.</p>`}
     ${used.length?`<div class="srclist"><h3>Sources</h3><ul>${used.map(([k,u])=>`<li><code>${esc(k)}</code><a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,""))}</a></li>`).join("")}</ul></div>`:""}
-    <p class="foot">Rule = a store or a law requires it. Standard = a published standard (WCAG, OWASP, NIST, platform guidelines). Research = usability studies (Nielsen Norman Group, Baymard). Practice = good practice with no study found.</p>`;
+    <p class="foot">Rule = a store or a law requires it. Standard = a published standard (WCAG, OWASP, NIST, IETF, platform guidelines). Research = usability studies (Nielsen Norman Group, Baymard). Practice = good practice with no study found. Ticks are kept in this browser only, one set per project name.</p>`;
+  $("copybtn").onclick=()=>copy(l);
+  $("clearbtn").onclick=()=>{TICKS[l.id]=[];save(tkey(),TICKS);render()};
+}
+
+function showHome(){
+  const total=DATA.reduce((n,l)=>n+count(l),0), done=DATA.reduce((n,l)=>n+doneCount(l.id),0);
+  $("main").innerHTML=`<div class="lhead"><div class="eyebrow">Overview</div><h2>${DATA.length} checklists in ${Object.keys(GROUPS).length} groups</h2>
+    <p>${total} items, each marked by what backs it, with a link to the source. Pick a checklist, tick items for your project, and copy it as text.${done?` ${done} items ticked${project?" for "+esc(project):""}.`:""}</p></div>
+    <div class="cards">${Object.entries(GROUPS).map(([g,name])=>{
+      const ls=DATA.filter(l=>l.group===g), n=ls.reduce((a,l)=>a+count(l),0);
+      return `<section class="card"><h3><a href="#${ls[0]?ls[0].id:""}" style="text-decoration:none">${name}</a><small>${ls.length} lists · ${n} items</small></h3><p>${ABOUT[g]}</p>
+        <div class="links">${ls.map(l=>`<a href="#${l.id}" class="${doneCount(l.id)?"has":""}">${esc(short(l.title))}</a>`).join("")}</div></section>`}).join("")}</div>`;
+}
+
+function showSources(){
+  const used={}; DATA.forEach(l=>Object.keys(l.sources).forEach(k=>(used[k]=used[k]||[]).push(l)));
+  const keys=Object.keys(SRC).sort();
+  $("main").innerHTML=`<div class="lhead"><div class="eyebrow">All sources</div><h2>${keys.length} sources</h2><p>Every standard, law, study and guide the checklists point to, with the checklists that use it.</p></div>`+
+    keys.map(k=>`<div class="srcrow"><code>${esc(k)}</code><a class="u" href="${esc(SRC[k])}" target="_blank" rel="noopener">${esc(SRC[k].replace(/^https?:\/\//,""))}</a>
+      <div class="in">Used in ${used[k].length}: ${used[k].map(l=>`<a href="#${l.id}">${esc(short(l.title))}</a>`).join(", ")}</div></div>`).join("");
 }
 
 function showSearch(q){
@@ -164,29 +253,35 @@ function showSearch(q){
   const out=DATA.map(l=>{
     let num=0; const hits=[];
     l.sections.forEach(s=>s.items.forEach(it=>{num++; const hay=(it.t+" "+it.k.join(" ")+" "+s.name+" "+l.title).toLowerCase();
-      if(on.has(it.b)&&words.every(w=>hay.includes(w)))hits.push([num,it,s.name]);}));
+      if(on.has(it.b)&&words.every(w=>hay.includes(w)))hits.push([num,it]);}));
     total+=hits.length; if(!hits.length)return "";
     return `<div class="hitgrp"><h3><a href="#${l.id}">${esc(l.title)}</a><span class="g">${GROUPS[l.group]} · ${hits.length}</span></h3><ol class="items">`+
-      hits.map(([n,it])=>`<li class="item"><span class="num">${n}</span><div class="txt">${esc(it.t).replace(re,"<mark>$1</mark>")}${tags(it,l.sources)}</div></li>`).join("")+`</ol></div>`;
+      hits.map(([n,it])=>row(l,n,it,esc(it.t).replace(re,"<mark>$1</mark>"))).join("")+`</ol></div>`;
   }).join("");
   $("main").innerHTML=`<div class="hits"><div class="eyebrow">Search</div><h2>${total} items match “${esc(q)}”</h2></div>${out||`<p class="empty">Nothing matches. Try a shorter word, or turn the backing filters back on.</p>`}`;
 }
 
 function render(){
   const q=$("q").value.trim();
-  const id=location.hash.slice(1); const cur=BY[id]?id:DATA[0].id;
+  const id=location.hash.slice(1); const cur=BY[id]||id==="sources"?id:"home";
   nav(q?"":cur);
-  q?showSearch(q):showList(BY[cur]);
+  if(q)showSearch(q); else if(cur==="home")showHome(); else if(cur==="sources")showSources(); else showList(BY[cur]);
 }
 
 $("navtoggle").onclick=()=>{const n=$("nav");n.classList.toggle("open");$("navtoggle").setAttribute("aria-expanded",n.classList.contains("open"))};
-$("lists").addEventListener("click",e=>{if(e.target.closest("a")){$("q").value="";$("nav").classList.remove("open");$("navtoggle").setAttribute("aria-expanded","false");scrollTo(0,0)}});
+$("nav").addEventListener("click",e=>{if(e.target.closest("a")){$("q").value="";$("nav").classList.remove("open");$("navtoggle").setAttribute("aria-expanded","false");if(location.hash===e.target.closest("a").getAttribute("href"))render();scrollTo(0,0)}});
+$("main").addEventListener("change",e=>{const t=e.target;if(!t.classList.contains("tick"))return;
+  setDone(t.dataset.l,+t.dataset.n,t.checked); t.closest(".item").classList.toggle("done",t.checked);
+  const l=BY[t.dataset.l], d=$("donen"); if(d&&l)d.textContent=`${doneCount(l.id)} of ${count(l)} done${project?" for "+project:""}`;
+  const cb=$("clearbtn"); if(cb)cb.hidden=!doneCount(t.dataset.l); nav($("q").value.trim()?"":location.hash.slice(1)||"home")});
 $("q").addEventListener("input",render);
+$("proj").addEventListener("change",e=>setProject(e.target.value));
 addEventListener("hashchange",()=>{$("q").value="";render();scrollTo(0,0)});
 
 fetch("checklists.json").then(r=>r.json()).then(d=>{
-  DATA=d; d.forEach(l=>BY[l.id]=l);
-  const saved=store("on"); if(Array.isArray(saved)&&saved.length)on=new Set(saved.filter(k=>BACK[k]));
+  DATA=d; d.forEach(l=>{BY[l.id]=l;Object.assign(SRC,l.sources)});
+  const saved=load("on"); if(Array.isArray(saved)&&saved.length)on=new Set(saved.filter(k=>BACK[k]));
+  project=load("project")||""; $("proj").value=project; projects(); loadTicks();
   const items=d.reduce((n,l)=>n+count(l),0), c={L:0,S:0,R:0,P:0};
   d.forEach(l=>l.sections.forEach(s=>s.items.forEach(i=>c[i.b]++)));
   $("stats").textContent=`${d.length} checklists · ${items} items · ${c.L} rules · ${c.S} standards · ${c.R} research · ${c.P} practice`;

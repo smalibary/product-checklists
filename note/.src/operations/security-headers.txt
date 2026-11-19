@@ -1,0 +1,20 @@
+title: Security headers
+about: The settings a web server sends that tell browsers how to protect its pages.
+## Transport
+- HTTPS everywhere, with HSTS | S mdn-hsts owasp-headers
+## Content
+- A Content Security Policy that allows only your own scripts | S mdn-csp owasp-csp
+- X-Content-Type-Options: nosniff | S owasp-headers
+- Frames blocked with frame-ancestors (or X-Frame-Options) unless needed | S owasp-headers
+- Referrer-Policy set (strict-origin-when-cross-origin) | S owasp-headers
+- Permissions-Policy turns off unused features (camera, location) | S owasp-headers
+## Cookies
+- Secure, HttpOnly and SameSite on session cookies | S mdn-cookies
+## Cross-site
+- CORS allows only known sites | S mdn-cors
+## Hiding
+- Server and framework version headers removed | S owasp-headers owasp-disclosure
+## Contact
+- A security.txt file says where to report problems | S rfc-securitytxt
+## Checking
+- Headers checked automatically on each release | P

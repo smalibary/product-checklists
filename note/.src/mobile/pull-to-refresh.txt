@@ -1,0 +1,13 @@
+title: Pull to refresh
+about: Pulling a list down to load the newest items.
+## Use
+- On lists that show changing content, in time order | S android-pull-refresh
+- Not the only way to refresh; a button or automatic refresh as well | S wcag-gestures
+## Behaviour
+- The system control, so it feels native | S android-pull-refresh
+- Indicator shows while loading and disappears when done | S android-pull-refresh
+- New items appear without jumping the person's place | S webdev-cls
+## Errors
+- A failed refresh says so and keeps the old content | R nng-errors
+## Access
+- Screen readers have a refresh action | S wcag-gestures

@@ -1,0 +1,12 @@
+title: Empty state (mobile)
+about: What a phone screen shows when there is nothing in it yet.
+## Content
+- Says why it is empty and what to do | R nng-empty
+- One main action button | R nng-empty
+- A small picture only if it helps, not big blocks of art | P
+## Kinds
+- First use, no results, cleared and error states each handled | R nng-empty
+## Layout
+- Fits small screens and large text without scrolling far | S wcag-reflow
+## Access
+- Pictures marked as decorative or described | S wcag-nontext

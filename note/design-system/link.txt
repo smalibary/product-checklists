@@ -1,0 +1,30 @@
+﻿LINK CHECKLIST: 9 items
+Text that takes people to another page or place.
+Backing: 0 Rule, 7 Standard, 2 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+LOOK
+ 1. Looks like a link: underlined or otherwise clear, not by colour alone   (Research: nng-links)
+ 2. Visited links look different where it helps   (Research: nng-links)
+ 3. Focus style clear   (Standard: wcag-focus)
+
+WORDS
+ 4. Link text says where it goes; no "click here"   (Standard: wcag-link)
+ 5. Links to files say type and size   (Standard: wcag-link)
+
+BEHAVIOUR
+ 6. Opens in the same tab unless there is a strong reason; new tabs announced   (Standard: wcag-on-input)
+ 7. Links go to places; buttons do actions   (Standard: apg-button)
+
+LOOK
+ 8. Contrast against text and background   (Standard: wcag-contrast)
+ 9. Big enough to tap on phones   (Standard: wcag-target)
+
+SOURCES
+- nng-links: https://www.nngroup.com/articles/guidelines-for-visualizing-links/
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+- wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+- wcag-on-input: https://www.w3.org/WAI/WCAG22/Understanding/on-input
+- apg-button: https://www.w3.org/WAI/ARIA/apg/patterns/button/
+- wcag-contrast: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum
+- wcag-target: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum

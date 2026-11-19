@@ -1,0 +1,35 @@
+﻿BACKUPS CHECKLIST: 11 items
+Copies of data you can actually restore when something goes wrong.
+Backing: 2 Rule, 8 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PLAN
+ 1. How much data you can lose (RPO) and how long you can be down (RTO) agreed   (Standard: nist-contingency)
+ 2. Point-in-time recovery for the main database   (Standard: pg-backup)
+ 3. 3 copies, on 2 kinds of storage, 1 in another place   (Practice)
+
+SAFETY
+ 4. Backups encrypted   (Rule: gdpr-32)
+ 5. At least one copy cannot be changed or deleted by the app's accounts   (Standard: nist-contingency)
+ 6. Access to backups limited and logged   (Standard: owasp-logging)
+
+TESTING
+ 7. Restores tested on a schedule, timed, and written up   (Standard: nist-contingency)
+ 8. A full disaster-recovery practice at least yearly   (Standard: nist-contingency)
+
+SCOPE
+ 9. Files, settings and secrets covered, not only the database   (Standard: nist-contingency)
+
+PRIVACY
+10. Deleted personal data removed from backups within a stated time   (Rule: gdpr-17)
+
+WATCHING
+11. An alert when a backup fails or is late   (Standard: sre-alerting)
+
+SOURCES
+- nist-contingency: https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final
+- pg-backup: https://www.postgresql.org/docs/current/backup.html
+- gdpr-32: https://gdpr-info.eu/art-32-gdpr/
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- sre-alerting: https://sre.google/workbook/alerting-on-slos/

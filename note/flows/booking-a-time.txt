@@ -1,0 +1,34 @@
+﻿BOOKING A TIME (FLOW) CHECKLIST: 10 items
+Choosing a date and time slot for an appointment or meeting.
+Backing: 1 Rule, 7 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING
+ 1. Available days and times only, in the person's time zone, shown clearly   (Standard: iana-tz)
+ 2. Time zone changeable   (Standard: iana-tz)
+ 3. Date picker that works by keyboard   (Standard: apg-datepicker)
+
+DETAILS
+ 4. Only the fields needed   (Rule: gdpr-5)
+ 5. Summary before confirming: what, when, where, price   (Standard: govuk-check)
+
+CONFIRMING
+ 6. Slot held while finishing, with a clear time limit that can be extended   (Standard: wcag-timing)
+ 7. Confirmation page and email with a calendar file   (Standard: govuk-confirm, rfc-icalendar)
+
+CHANGING
+ 8. Reschedule and cancel links in the email   (Practice)
+ 9. Reminders before the time   (Practice)
+
+ACCESS
+10. Slots announced with full date and time   (Standard: wcag-name-role)
+
+SOURCES
+- iana-tz: https://www.iana.org/time-zones
+- apg-datepicker: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/datepicker-dialog/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/
+- govuk-check: https://design-system.service.gov.uk/patterns/check-answers/
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- rfc-icalendar: https://www.rfc-editor.org/rfc/rfc5545
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value

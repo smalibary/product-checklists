@@ -1,0 +1,16 @@
+title: Workspace switcher
+about: Moving between teams, accounts or organisations in one app.
+## Showing
+- Current workspace name and logo always visible | R nng-indicators
+- The list shows each workspace with name and role | P
+- Search when there are many | P
+## Switching
+- Switch in one or two clicks | P
+- Lands on the same kind of page in the new workspace where possible | P
+- Each workspace's data fully separated | S owasp-multitenant
+## Adding
+- Create or join a workspace from the switcher | P
+## Clarity
+- Clear signs of which workspace you are in before changing anything | R nng-indicators
+## Access
+- Works as a menu button with keyboard | S apg-menubutton

@@ -1,0 +1,21 @@
+title: Realtime connections
+about: Pushing live updates to apps over WebSockets or server-sent events.
+## Choosing
+- Server-sent events when only the server talks; WebSockets when both sides send | S whatwg-sse rfc-websocket
+- Polling only when updates are rare, and then slowly | P
+## Security
+- Secure connections only (wss) | S owasp-websocket
+- The Origin header checked when the connection opens | S owasp-websocket
+- The user signed in when connecting, and checked again for each private channel | S owasp-websocket owasp-authz
+- Every incoming message validated and size-limited | S owasp-websocket
+## Connections
+- Heartbeats close dead connections | S rfc-websocket
+- Clients reconnect with growing waits and a random spread | S aws-backoff
+- After reconnecting, the client catches up from its last event id | S whatwg-sse
+- Limits on connections per user and messages per second | S owasp-dos
+## Messages
+- One message format with a type and an id | P
+- Missed messages are not assumed delivered; important state is also readable from the normal API | P
+## Scale
+- Fan-out through a shared message service so any server can reach any client | P
+- Data that changes every few seconds is batched or sent as a summary | P

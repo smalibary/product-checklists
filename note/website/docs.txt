@@ -1,0 +1,34 @@
+﻿DOCUMENTATION SITE CHECKLIST: 11 items
+The help and how-to pages for a product, organised so people find answers.
+Backing: 0 Rule, 5 Standard, 3 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STRUCTURE
+ 1. Tutorials, how-to guides, reference and explanations kept apart   (Standard: diataxis)
+ 2. A getting-started page that reaches a first success fast   (Standard: diataxis)
+ 3. Left navigation tree and "on this page" headings   (Research: nng-vertical-nav)
+
+FINDING
+ 4. Search across all pages with good results for common words   (Research: nng-search)
+ 5. Clear page titles and addresses   (Standard: wcag-title)
+
+PAGES
+ 6. Steps numbered, with screenshots that match the current product   (Research: nng-help)
+ 7. Copy buttons on code and commands   (Practice)
+ 8. Last updated date   (Practice)
+
+FEEDBACK
+ 9. "Was this helpful?" on each page   (Practice)
+10. A link to support when the page did not help   (Standard: wcag-consistent-help)
+
+ACCESS
+11. Headings, keyboard use, contrast and readable code blocks   (Standard: wcag)
+
+SOURCES
+- diataxis: https://diataxis.fr/
+- nng-vertical-nav: https://www.nngroup.com/articles/vertical-nav/
+- nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
+- wcag-title: https://www.w3.org/WAI/WCAG22/Understanding/page-titled
+- nng-help: https://www.nngroup.com/articles/help-and-documentation/
+- wcag-consistent-help: https://www.w3.org/WAI/WCAG22/Understanding/consistent-help
+- wcag: https://www.w3.org/TR/WCAG22/

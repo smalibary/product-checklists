@@ -1,0 +1,43 @@
+﻿API RATE LIMITS CHECKLIST: 14 items
+Capping how much one caller can ask for, so one heavy user cannot slow or break the service for everyone.
+Backing: 0 Rule, 12 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+LIMITS
+ 1. Limits per key or per user, and a lower one per network address for anonymous calls   (Standard: owasp-api-top10, owasp-dos)
+ 2. Stricter limits on costly or sensitive actions: sign-in, password reset, search, exports, AI calls   (Standard: owasp-auth, owasp-api-top10)
+ 3. Size limits too: body size, page size, file size, query depth   (Standard: owasp-api-top10)
+ 4. A timeout on every request, so slow work cannot pile up   (Standard: sre-overload)
+
+TELLING CALLERS
+ 5. 429 Too Many Requests with Retry-After   (Standard: rfc-429, rfc-retry-after)
+ 6. Headers with the limit, what is left and when it resets   (Standard: ietf-ratelimit, github-rate-limits)
+ 7. Limits listed in the docs for each plan   (Standard: github-rate-limits)
+
+BEHAVIOUR
+ 8. Counted in one shared store, so all servers agree   (Practice)
+ 9. Smooth counting (a sliding window or token bucket) so bursts cannot slip through at each reset   (Practice)
+10. Under overload, the least important work is dropped first and core actions keep working   (Standard: sre-overload)
+11. Callers told to retry with growing waits and a random spread   (Standard: aws-backoff)
+
+COSTS
+12. Anything that costs money per call (AI, SMS, email, maps) has a daily cap in code   (Standard: aws-cost, owasp-llm)
+13. An alert when one caller or the whole service nears its cap   (Standard: sre-alerting)
+
+ABUSE
+14. Repeated hits on a limit are logged and reviewed   (Standard: owasp-logging)
+
+SOURCES
+- owasp-api-top10: https://owasp.org/API-Security/editions/2023/en/0x11-t10/
+- owasp-dos: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- sre-overload: https://sre.google/sre-book/handling-overload/
+- rfc-429: https://www.rfc-editor.org/rfc/rfc6585
+- rfc-retry-after: https://www.rfc-editor.org/rfc/rfc9110#field.retry-after
+- ietf-ratelimit: https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/
+- github-rate-limits: https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api
+- aws-backoff: https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/
+- aws-cost: https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html
+- owasp-llm: https://genai.owasp.org/llm-top-10/
+- sre-alerting: https://sre.google/workbook/alerting-on-slos/
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html

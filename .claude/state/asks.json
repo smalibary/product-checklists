@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 25,
+ "next": 26,
  "asks": [
   {
    "id": 2,
@@ -826,6 +826,68 @@
     },
     {
      "name": "Flows (13)",
+     "done": true
+    },
+    {
+     "name": "Published",
+     "done": true
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "at": "2026-11-19T14:57:03.790Z",
+   "text": "What els3 u think is missing keep workong on it and make the ljbrary feels complete no more things we can do ..... also do for backend logics api etc",
+   "status": "done",
+   "note": "235 checklists, 3838 items, 8 groups, page republished with overview, ticks, copy, all sources",
+   "updated": "2026-11-19T15:10:36.187Z",
+   "parts": [
+    {
+     "name": "Website gaps",
+     "done": true
+    },
+    {
+     "name": "Web app gaps",
+     "done": true
+    },
+    {
+     "name": "Design system gaps",
+     "done": true
+    },
+    {
+     "name": "Mobile gaps",
+     "done": true
+    },
+    {
+     "name": "Flows gaps",
+     "done": true
+    },
+    {
+     "name": "API group",
+     "done": true
+    },
+    {
+     "name": "Backend group",
+     "done": true
+    },
+    {
+     "name": "Operations group",
+     "done": true
+    },
+    {
+     "name": "Page: overview home",
+     "done": true
+    },
+    {
+     "name": "Page: tick items per project",
+     "done": true
+    },
+    {
+     "name": "Page: copy as text",
+     "done": true
+    },
+    {
+     "name": "Page: all sources view",
      "done": true
     },
     {

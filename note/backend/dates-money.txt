@@ -1,0 +1,32 @@
+﻿DATES, TIMES AND MONEY CHECKLIST: 12 items
+Storing and showing times, currencies and numbers correctly for every country.
+Backing: 0 Rule, 9 Standard, 0 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TIME
+ 1. Stored in UTC; shown in the person's time zone   (Standard: rfc-datetime, iana-tz)
+ 2. Time zones by name (Asia/Riyadh), not by fixed offset   (Standard: iana-tz)
+ 3. Text dates in RFC 3339 or ISO 8601   (Standard: rfc-datetime, iso-8601)
+ 4. Hijri and Gregorian calendars shown where people expect them   (Standard: cldr, mdn-intl)
+ 5. Daylight saving handled for countries that use it   (Standard: iana-tz)
+
+MONEY
+ 6. Whole numbers in the smallest unit or exact decimals, never floating point   (Standard: iso-4217)
+ 7. The currency code stored with every amount   (Standard: iso-4217)
+ 8. Rounding rules stated and applied once   (Practice)
+ 9. Exchange rates stored with the time they were used   (Practice)
+
+SHOWING
+10. Numbers, dates and currency formatted by locale (Intl)   (Standard: mdn-intl, cldr)
+11. Arabic-Indic or Western digits by the person's choice   (Standard: cldr)
+
+TESTING
+12. Tests at month ends, leap years and time-zone changes   (Practice)
+
+SOURCES
+- rfc-datetime: https://www.rfc-editor.org/rfc/rfc3339
+- iana-tz: https://www.iana.org/time-zones
+- iso-8601: https://www.iso.org/iso-8601-date-and-time-format.html
+- cldr: https://cldr.unicode.org/
+- mdn-intl: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl
+- iso-4217: https://www.iso.org/iso-4217-currency-codes.html

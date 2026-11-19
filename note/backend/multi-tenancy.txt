@@ -1,0 +1,35 @@
+﻿MULTI-TENANCY CHECKLIST: 10 items
+Keeping many customers in one system without any of them seeing another.
+Backing: 1 Rule, 8 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SEPARATION
+ 1. Every row carries its tenant id   (Standard: owasp-multitenant)
+ 2. Every query filtered by tenant, ideally forced by row-level security   (Standard: pg-rls, owasp-multitenant)
+ 3. The tenant comes from the signed-in session, never from a field the caller sends   (Standard: owasp-multitenant)
+ 4. Files and cache keys include the tenant   (Standard: owasp-multitenant)
+
+FAIRNESS
+ 5. Limits per tenant so one cannot slow the others   (Standard: owasp-dos)
+ 6. Heavy jobs queued per tenant   (Practice)
+
+ADMIN
+ 7. Staff access to a tenant is granted, time-limited and logged   (Standard: owasp-authz, owasp-logging)
+
+DATA
+ 8. Export and delete of a whole tenant   (Rule: gdpr-20, gdpr-17)
+ 9. A tenant can be restored without restoring everyone   (Standard: pg-backup)
+
+TESTING
+10. Tests that try to read and change another tenant's data and must fail   (Standard: owasp-asvs)
+
+SOURCES
+- owasp-multitenant: https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html
+- pg-rls: https://www.postgresql.org/docs/current/ddl-rowsecurity.html
+- owasp-dos: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- gdpr-20: https://gdpr-info.eu/art-20-gdpr/
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- pg-backup: https://www.postgresql.org/docs/current/backup.html
+- owasp-asvs: https://owasp.org/www-project-application-security-verification-standard/

@@ -1,0 +1,17 @@
+title: Performance
+about: Keeping the service fast as use grows, and knowing what fast means.
+## Targets
+- Speed targets per action (for example 95% of searches under 300 ms) | S sre-slo
+- Web pages meet Core Web Vitals (LCP, INP, CLS) | S webdev-vitals
+## Server
+- Slow database queries found and fixed with EXPLAIN | S pg-explain
+- Indexes for every common filter and sort | S pg-indexes
+- Caching for repeated reads | S rfc-caching
+- No one-call-per-item loops to the database | P
+## Load
+- Load tests before big launches, on a separate copy | P
+- Timeouts and limits so overload slows things down instead of breaking them | S sre-overload
+- Failures in one part do not spread to others | S sre-cascading fowler-circuit
+## Watching
+- Time taken measured per route at the 50th, 95th and 99th percentile | S sre-monitoring
+- Real users' speed measured, not only lab tests | S webdev-vitals

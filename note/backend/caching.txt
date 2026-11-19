@@ -1,0 +1,35 @@
+﻿CACHING CHECKLIST: 12 items
+Keeping copies of answers so repeated requests are fast and cheap, without serving wrong data.
+Backing: 0 Rule, 8 Standard, 0 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+HTTP CACHING
+ 1. Cache-Control on every response: public, private or no-store   (Standard: rfc-caching, mdn-cache-control)
+ 2. Personal pages marked private or no-store   (Standard: rfc-caching)
+ 3. ETag or Last-Modified so clients can ask "changed since?"   (Standard: mdn-etag)
+ 4. Static files with content hashes in their names, cached for a year   (Standard: mdn-cache-control)
+
+APP CACHING
+ 5. Cache keys include everything that changes the answer (user, language, tenant)   (Practice)
+ 6. A time limit on every cached item   (Practice)
+ 7. Clear invalidation when the source changes   (Practice)
+ 8. Protection against many requests rebuilding the same item at once   (Practice)
+
+SAFETY
+ 9. Never cache answers with another user's data under a shared key   (Standard: owasp-multitenant)
+10. The app still works when the cache is empty or down   (Standard: sre-cascading)
+
+COSTS
+11. Expensive results (AI answers, outside lookups) cached   (Standard: aws-cost)
+
+WATCHING
+12. Hit rate and size measured   (Standard: sre-monitoring)
+
+SOURCES
+- rfc-caching: https://www.rfc-editor.org/rfc/rfc9111
+- mdn-cache-control: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control
+- mdn-etag: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/ETag
+- owasp-multitenant: https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html
+- sre-cascading: https://sre.google/sre-book/addressing-cascading-failures/
+- aws-cost: https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html
+- sre-monitoring: https://sre.google/sre-book/monitoring-distributed-systems/

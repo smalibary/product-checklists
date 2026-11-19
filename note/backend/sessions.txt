@@ -1,0 +1,36 @@
+﻿SESSIONS CHECKLIST: 13 items
+Keeping a person signed in safely between requests.
+Backing: 0 Rule, 13 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SESSION ID
+ 1. A long random id made by the server   (Standard: owasp-session)
+ 2. Sent in a cookie marked Secure, HttpOnly and SameSite   (Standard: owasp-session, mdn-cookies)
+ 3. A new id after sign-in and after any change in rights   (Standard: owasp-session)
+
+LIFETIME
+ 4. An idle timeout and an absolute timeout, shorter for sensitive apps   (Standard: owasp-session, nist-63b)
+ 5. Sign-out ends the session on the server, not only in the browser   (Standard: owasp-session)
+ 6. "Sign out everywhere" and a list of active devices   (Standard: owasp-session)
+ 7. Password change ends all other sessions   (Standard: owasp-session)
+
+PROTECTION
+ 8. Forms that change things protected against cross-site requests (SameSite plus tokens)   (Standard: owasp-csrf)
+ 9. Sensitive actions ask for the password again   (Standard: owasp-session)
+10. Session data stored server-side; nothing secret in the cookie   (Standard: owasp-session)
+
+TOKENS IN APPS
+11. Phone apps keep tokens in the system's secure storage   (Standard: owasp-masvs)
+12. Refresh tokens change on each use; reuse of an old one ends the session   (Standard: rfc-oauth-security)
+
+RECORDS
+13. Session starts and ends logged with device and place   (Standard: owasp-logging)
+
+SOURCES
+- owasp-session: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+- mdn-cookies: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies
+- nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
+- owasp-csrf: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+- owasp-masvs: https://mas.owasp.org/MASVS/
+- rfc-oauth-security: https://www.rfc-editor.org/rfc/rfc9700
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html

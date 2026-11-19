@@ -1,0 +1,32 @@
+﻿SHARING CHECKLIST: 11 items
+Giving other people access to a document, project or file.
+Backing: 0 Rule, 6 Standard, 0 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SHARING
+ 1. Share by email or name, with a role (view, comment, edit)   (Practice)
+ 2. A link option with clear access (anyone with the link, or only people invited)   (Standard: owasp-authz)
+ 3. Who already has access listed, with roles changeable   (Practice)
+
+LINKS
+ 4. Links can expire and be switched off   (Standard: owasp-authz)
+ 5. Link addresses are random and long   (Standard: rfc-uuid)
+ 6. Copy link with confirmation   (Standard: wcag-status)
+
+TELLING PEOPLE
+ 7. Invitees notified with what was shared and by whom   (Practice)
+ 8. Owners see when access is requested   (Practice)
+
+SAFETY
+ 9. Sharing outside the organisation can be limited by admins   (Practice)
+10. Shares and removals logged   (Standard: owasp-logging)
+
+ACCESS
+11. The sharing dialog follows dialog rules (focus, Escape, labels)   (Standard: apg-dialog)
+
+SOURCES
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- rfc-uuid: https://www.rfc-editor.org/rfc/rfc9562
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/

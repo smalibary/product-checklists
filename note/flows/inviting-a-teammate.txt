@@ -1,0 +1,33 @@
+﻿INVITING A TEAMMATE (FLOW) CHECKLIST: 10 items
+Adding someone to a workspace by email or link.
+Backing: 1 Rule, 6 Standard, 0 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+INVITING
+ 1. Enter one or many email addresses, with checks   (Standard: govuk-email)
+ 2. Pick a role, with what each role can do   (Standard: owasp-authz)
+ 3. A link option, with expiry   (Standard: owasp-authz)
+
+SENDING
+ 4. Invite email says who invited, to what, with one button   (Practice)
+ 5. Pending invites listed, can be resent or cancelled   (Practice)
+ 6. Limits on invites per day   (Standard: owasp-dos)
+
+ACCEPTING
+ 7. Existing accounts join with one click; new people sign up and land in the workspace   (Practice)
+ 8. The invite link works once and expires   (Standard: owasp-forgot)
+
+BILLING
+ 9. Seat costs shown before inviting on paid plans   (Rule: ftc-junk-fees)
+
+ACCESS
+10. Results announced; errors linked to fields   (Standard: wcag-status, wcag-error)
+
+SOURCES
+- govuk-email: https://design-system.service.gov.uk/patterns/email-addresses/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-dos: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html
+- owasp-forgot: https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification

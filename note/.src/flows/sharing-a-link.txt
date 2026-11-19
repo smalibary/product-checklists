@@ -1,0 +1,12 @@
+title: Sharing a link (flow)
+about: Sending a page or item to someone else.
+## Sharing
+- System share sheet on phones | S android-sharesheet hig-share
+- Copy link button with a confirmation | S wcag-status
+- Link previews look right (title, image, description) | P
+## Access level
+- Clear who can open it | S owasp-authz
+- Private items ask before making a public link | P
+## Links
+- Short, readable and lasting | P
+- Opens the right screen in the app or on the web | S android-app-links apple-universal-links

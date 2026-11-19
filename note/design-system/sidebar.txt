@@ -1,0 +1,33 @@
+﻿SIDEBAR NAVIGATION CHECKLIST: 9 items
+The side menu in apps for moving between sections.
+Backing: 0 Rule, 4 Standard, 4 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STRUCTURE
+ 1. Sections grouped with headings   (Research: nng-vertical-nav)
+ 2. Icons with text labels; icons alone only when collapsed, with tooltips   (Research: nng-icons)
+ 3. Current page marked   (Research: nng-indicators)
+
+BEHAVIOUR
+ 4. Collapsible, remembering the choice   (Research: nng-vertical-nav)
+ 5. Nested items expand in place   (Standard: apg-disclosure)
+ 6. Scrolls on its own when long   (Practice)
+
+PHONES
+ 7. Becomes a drawer on small screens   (Standard: m3-nav-drawer)
+
+SEMANTICS
+ 8. nav landmark; current link with aria-current   (Standard: apg-landmarks)
+
+DIRECTION
+ 9. Moves to the right side in Arabic layouts   (Standard: w3c-dir, hig-right-to-left)
+
+SOURCES
+- nng-vertical-nav: https://www.nngroup.com/articles/vertical-nav/
+- nng-icons: https://www.nngroup.com/articles/icon-usability/
+- nng-indicators: https://www.nngroup.com/articles/indicators-validations-notifications/
+- apg-disclosure: https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/
+- m3-nav-drawer: https://m3.material.io/components/navigation-drawer/guidelines
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- hig-right-to-left: https://developer.apple.com/design/human-interface-guidelines/right-to-left

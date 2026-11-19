@@ -1,0 +1,39 @@
+﻿FORM LAYOUT CHECKLIST: 11 items
+How fields, labels and buttons are arranged so forms are quick to fill.
+Backing: 0 Rule, 7 Standard, 4 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+LAYOUT
+ 1. One column   (Research: nng-forms, baymard-fields)
+ 2. Labels above fields   (Research: nng-forms)
+ 3. Field width hints at the expected length   (Standard: govuk-text-input)
+ 4. Related fields grouped with a heading or fieldset   (Standard: wai-forms)
+
+LABELS AND HELP
+ 5. Every field has a visible label; optional fields marked, not required ones   (Research: nng-required)
+ 6. Help text under the label, before the field   (Standard: govuk-question)
+
+ACTIONS
+ 7. The main button at the end, left-aligned with the fields   (Standard: govuk-button)
+ 8. One main button; others look secondary   (Research: nng-buttons)
+
+ERRORS
+ 9. Error summary at the top, messages at each field   (Standard: govuk-error-summary, govuk-error-message)
+
+ACCESS
+10. Order of fields matches reading order   (Standard: wcag-meaningful-sequence)
+11. Autocomplete hints on personal fields   (Standard: wcag-input-purpose)
+
+SOURCES
+- nng-forms: https://www.nngroup.com/articles/web-form-design/
+- baymard-fields: https://baymard.com/blog/checkout-flow-average-form-fields
+- govuk-text-input: https://design-system.service.gov.uk/components/text-input/
+- wai-forms: https://www.w3.org/WAI/tutorials/forms/
+- nng-required: https://www.nngroup.com/articles/required-fields/
+- govuk-question: https://design-system.service.gov.uk/patterns/question-pages/
+- govuk-button: https://design-system.service.gov.uk/components/button/
+- nng-buttons: https://www.nngroup.com/articles/button-states-communicate-interaction/
+- govuk-error-summary: https://design-system.service.gov.uk/components/error-summary/
+- govuk-error-message: https://design-system.service.gov.uk/components/error-message/
+- wcag-meaningful-sequence: https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence
+- wcag-input-purpose: https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose

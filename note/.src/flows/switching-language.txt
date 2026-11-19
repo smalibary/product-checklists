@@ -1,0 +1,13 @@
+title: Switching language (flow)
+about: Changing the language the product uses.
+## Finding
+- Language choice easy to find (header, footer or settings) | P
+- Each language named in itself (العربية, English) | S w3c-names
+- No flags for languages | P
+## Switching
+- Stays on the same page after switching | P
+- The choice remembered | P
+- Direction changes for Arabic | S w3c-dir
+## Content
+- The page language marked so screen readers switch voices | S wcag-lang
+- Dates, numbers and currency follow the language | S cldr

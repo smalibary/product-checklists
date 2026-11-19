@@ -1,0 +1,32 @@
+﻿FILE UPLOAD CHECKLIST: 9 items
+The control for choosing files from the device.
+Backing: 0 Rule, 8 Standard, 1 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTROL
+ 1. A real file input with a visible button and label   (Standard: govuk-file-upload)
+ 2. Drop area for big screens, with the button as well   (Standard: govuk-file-upload, wcag-dragging)
+ 3. Allowed types and maximum size stated before choosing   (Standard: govuk-file-upload)
+
+DURING
+ 4. Progress per file, with cancel   (Research: nng-progress)
+ 5. Each chosen file listed with name, size and a remove button   (Standard: govuk-file-upload)
+
+ERRORS
+ 6. Wrong type or too big explained per file   (Standard: govuk-error-message)
+
+PHONES
+ 7. Camera and photo library offered where useful   (Standard: android-photo-picker)
+
+ACCESS
+ 8. Status changes announced   (Standard: wcag-status)
+ 9. Works fully by keyboard   (Standard: wcag-keyboard)
+
+SOURCES
+- govuk-file-upload: https://design-system.service.gov.uk/components/file-upload/
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- govuk-error-message: https://design-system.service.gov.uk/components/error-message/
+- android-photo-picker: https://developer.android.com/training/data-storage/shared/photopicker
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

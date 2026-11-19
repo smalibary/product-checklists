@@ -1,0 +1,27 @@
+﻿KEYBOARD SHORTCUTS CHECKLIST: 9 items
+Key combinations that let regular users work faster.
+Backing: 0 Rule, 4 Standard, 4 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+DESIGN
+ 1. Shortcuts for the most frequent actions only   (Research: nng-shortcuts)
+ 2. Platform conventions followed (Ctrl on Windows, Cmd on Mac)   (Standard: hig-keyboards)
+ 3. No clash with browser or screen-reader keys   (Standard: wcag-keyboard)
+ 4. Single-letter shortcuts can be turned off or changed   (Standard: wcag-keyboard)
+
+FINDING
+ 5. A help screen listing all shortcuts, opened with ?   (Research: nng-shortcuts)
+ 6. Shortcuts shown next to menu items and in tooltips   (Research: nng-shortcuts)
+
+BEHAVIOUR
+ 7. Shortcuts do not fire while typing in a field   (Practice)
+ 8. Destructive shortcuts can be undone   (Research: nng-control)
+
+ACCESS
+ 9. Everything a shortcut does can also be done another way   (Standard: wcag-keyboard)
+
+SOURCES
+- nng-shortcuts: https://www.nngroup.com/articles/ui-accelerators/
+- hig-keyboards: https://developer.apple.com/design/human-interface-guidelines/keyboards
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/

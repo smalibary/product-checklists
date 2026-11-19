@@ -1,0 +1,31 @@
+﻿DATABASE MIGRATIONS CHECKLIST: 12 items
+Changing the database structure safely while the app keeps running.
+Backing: 0 Rule, 6 Standard, 0 Research, 6 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PROCESS
+ 1. Every change as a numbered migration file kept with the code   (Practice)
+ 2. Migrations run automatically in each environment, in order, once   (Practice)
+ 3. Tested on a copy of real-sized data before production   (Practice)
+
+WITHOUT DOWNTIME
+ 4. Change in steps: add the new, write to both, move readers, then remove the old   (Standard: fowler-parallel-change)
+ 5. New columns start nullable or with a default   (Standard: pg-constraints)
+ 6. Indexes built without locking the table (CONCURRENTLY)   (Standard: pg-indexes)
+ 7. Long locks avoided; a lock timeout set for migration runs   (Standard: pg-locking)
+ 8. Big data changes in batches, not in one transaction   (Practice)
+
+SAFETY
+ 9. A backup or restore point before risky changes   (Standard: pg-backup)
+10. A way back written for each step, or a plan to fix forward   (Practice)
+11. No destructive change (drop, rename) in the same release as the code that stops using it   (Standard: fowler-parallel-change)
+
+RECORDS
+12. The schema version is visible and logged   (Practice)
+
+SOURCES
+- fowler-parallel-change: https://martinfowler.com/bliki/ParallelChange.html
+- pg-constraints: https://www.postgresql.org/docs/current/ddl-constraints.html
+- pg-indexes: https://www.postgresql.org/docs/current/indexes.html
+- pg-locking: https://www.postgresql.org/docs/current/explicit-locking.html
+- pg-backup: https://www.postgresql.org/docs/current/backup.html

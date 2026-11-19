@@ -1,0 +1,32 @@
+﻿IMPORT AND EXPORT CHECKLIST: 12 items
+Bringing data in from files or other tools, and taking it out.
+Backing: 1 Rule, 5 Standard, 2 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+IMPORT
+ 1. Supported formats listed, with a template to download   (Standard: govuk-file-upload)
+ 2. A preview with column matching before anything is saved   (Practice)
+ 3. Errors listed by row and field, with a way to fix and retry   (Standard: govuk-error-summary)
+ 4. Large imports run in the background with progress   (Research: nng-progress)
+ 5. A summary at the end: added, updated, skipped   (Standard: govuk-confirm)
+ 6. Undo or delete the whole import   (Research: nng-control)
+
+EXPORT
+ 7. Common formats (CSV, JSON, PDF)   (Practice)
+ 8. Exports of all personal data available to the person   (Rule: gdpr-20)
+ 9. Large exports emailed or ready to download later   (Practice)
+10. CSV safe against formula injection   (Practice)
+
+SAFETY
+11. Only data the person may see is exported   (Standard: owasp-authz)
+12. Exports logged in the audit trail   (Standard: owasp-logging)
+
+SOURCES
+- govuk-file-upload: https://design-system.service.gov.uk/components/file-upload/
+- govuk-error-summary: https://design-system.service.gov.uk/components/error-summary/
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- govuk-confirm: https://design-system.service.gov.uk/patterns/confirmation-pages/
+- nng-control: https://www.nngroup.com/articles/user-control-and-freedom/
+- gdpr-20: https://gdpr-info.eu/art-20-gdpr/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html

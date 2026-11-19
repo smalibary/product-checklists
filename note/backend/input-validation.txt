@@ -1,0 +1,38 @@
+﻿INPUT VALIDATION CHECKLIST: 13 items
+Checking everything that comes in before the server uses it.
+Backing: 0 Rule, 13 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHERE
+ 1. Checked on the server even when the screen checks too   (Standard: owasp-input)
+ 2. Checked as early as possible, at the edge of the system   (Standard: owasp-input)
+
+HOW
+ 3. Allow-lists: say what is allowed (type, length, range, pattern), not what is banned   (Standard: owasp-input)
+ 4. A schema for every request body; unknown fields refused   (Standard: owasp-input, owasp-mass-assignment)
+ 5. Text normalised (Unicode NFC) before comparing or storing   (Standard: unicode-normalization, owasp-input)
+ 6. Sizes capped: body, strings, arrays, file sizes   (Standard: owasp-api-top10)
+
+INJECTION
+ 7. Database queries always use parameters, never joined strings   (Standard: owasp-sql)
+ 8. Output encoded for where it goes (HTML, address, JSON)   (Standard: owasp-xss)
+ 9. No user input in shell commands or file paths   (Standard: owasp-input)
+10. Addresses supplied by users fetched only through an allow-list (no internal addresses)   (Standard: owasp-ssrf)
+11. No reading of untrusted serialised objects   (Standard: owasp-deserialization)
+12. Redirects only to known addresses   (Standard: owasp-redirect)
+
+ERRORS
+13. Clear field errors to the caller, without internal details   (Standard: rfc-problem, owasp-errors)
+
+SOURCES
+- owasp-input: https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html
+- owasp-mass-assignment: https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html
+- unicode-normalization: https://unicode.org/reports/tr15/
+- owasp-api-top10: https://owasp.org/API-Security/editions/2023/en/0x11-t10/
+- owasp-sql: https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html
+- owasp-xss: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
+- owasp-ssrf: https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
+- owasp-deserialization: https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html
+- owasp-redirect: https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html
+- rfc-problem: https://www.rfc-editor.org/rfc/rfc9457
+- owasp-errors: https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html

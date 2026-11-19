@@ -1,0 +1,47 @@
+﻿DATABASE DESIGN CHECKLIST: 15 items
+Tables, keys and rules that keep data correct and fast as it grows.
+Backing: 2 Rule, 11 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STRUCTURE
+ 1. One table per kind of thing; no lists hidden inside text columns   (Practice)
+ 2. Primary keys on every table; random or time-ordered ids for public ones   (Standard: rfc-uuid)
+ 3. Foreign keys between related tables   (Standard: pg-constraints)
+ 4. NOT NULL, UNIQUE and CHECK rules for what must always be true   (Standard: pg-constraints)
+
+TYPES
+ 5. Times stored as UTC timestamps with time zone   (Standard: rfc-datetime, iana-tz)
+ 6. Money as whole numbers in the smallest unit, or exact decimals, never floating point   (Standard: iso-4217)
+ 7. Fixed lists as enums or lookup tables   (Practice)
+
+SPEED
+ 8. Indexes on columns used to filter, join or sort   (Standard: pg-indexes)
+ 9. Slow queries checked with EXPLAIN before release   (Standard: pg-explain)
+10. Lists always paged; no unbounded reads   (Standard: google-aip-pagination)
+
+CORRECTNESS
+11. Steps that must happen together run in one transaction   (Standard: pg-isolation)
+12. The right isolation level for money and stock   (Standard: pg-isolation)
+
+PRIVACY
+13. Personal data in clearly marked columns, so it can be exported and deleted   (Rule: gdpr-15, gdpr-17)
+14. Sensitive columns encrypted   (Rule: gdpr-32)
+
+SHARED DATA
+15. Each customer's rows marked by tenant and guarded by row rules   (Standard: pg-rls, owasp-multitenant)
+
+SOURCES
+- rfc-uuid: https://www.rfc-editor.org/rfc/rfc9562
+- pg-constraints: https://www.postgresql.org/docs/current/ddl-constraints.html
+- rfc-datetime: https://www.rfc-editor.org/rfc/rfc3339
+- iana-tz: https://www.iana.org/time-zones
+- iso-4217: https://www.iso.org/iso-4217-currency-codes.html
+- pg-indexes: https://www.postgresql.org/docs/current/indexes.html
+- pg-explain: https://www.postgresql.org/docs/current/using-explain.html
+- google-aip-pagination: https://google.aip.dev/158
+- pg-isolation: https://www.postgresql.org/docs/current/transaction-iso.html
+- gdpr-15: https://gdpr-info.eu/art-15-gdpr/
+- gdpr-17: https://gdpr-info.eu/art-17-gdpr/
+- gdpr-32: https://gdpr-info.eu/art-32-gdpr/
+- pg-rls: https://www.postgresql.org/docs/current/ddl-rowsecurity.html
+- owasp-multitenant: https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html

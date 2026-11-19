@@ -1,0 +1,16 @@
+title: Pagination
+about: The control for moving between pages of a long list.
+## Parts
+- Previous and Next with words, not only arrows | S govuk-pagination
+- Page numbers with the current one marked, and gaps shown with ... | S govuk-pagination
+- Current page marked with aria-current | S govuk-pagination
+## Behaviour
+- Each page has its own address | P
+- Focus or scroll moves to the top of the new results | P
+- A "View all" option when lists are short enough | R nng-pagination
+- Infinite scroll avoided where people need to find things again | R nng-infinite
+## Look
+- Targets big enough to tap | S wcag-target
+- Inside a nav landmark with a name ("Pagination") | S apg-landmarks
+## Access
+- Works by keyboard; link names say the page number | S wcag-link

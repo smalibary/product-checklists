@@ -1,0 +1,20 @@
+title: API pagination
+about: Returning long lists in pages so neither the server nor the caller has to handle everything at once.
+## Method
+- Cursor paging (a next-page token) for lists that change or grow; numbered pages only for small, stable lists | S google-aip-pagination graphql-pagination
+- The token is opaque: callers pass it back and never build it themselves | S google-aip-pagination
+- A stable sort with a unique tie-breaker (created time, then id), so nothing is skipped or shown twice | S google-aip-pagination
+- The same filters must come with each next page; changed filters are refused | S google-aip-pagination
+## Size
+- A default page size and a maximum; larger requests are cut to the maximum | S google-aip-pagination
+- No "give me everything" option on big tables | S owasp-api-top10
+## Response
+- A next-page token, empty on the last page | S google-aip-pagination
+- Optionally a Link header with next and previous addresses | S rfc-link
+- Total count only when it is cheap; otherwise only "has more" | S google-aip-pagination
+## Behaviour
+- An expired token gives a clear error, not an empty page | S google-aip-errors
+- Every list reads through an index that matches its sort, never a full table scan | S pg-indexes
+- Deep numbered pages avoided: they get slower the further you go | S pg-explain
+## Docs
+- Paging explained once and identical on every list | S openapi

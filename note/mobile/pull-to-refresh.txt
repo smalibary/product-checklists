@@ -1,0 +1,25 @@
+﻿PULL TO REFRESH CHECKLIST: 7 items
+Pulling a list down to load the newest items.
+Backing: 0 Rule, 6 Standard, 1 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+USE
+ 1. On lists that show changing content, in time order   (Standard: android-pull-refresh)
+ 2. Not the only way to refresh; a button or automatic refresh as well   (Standard: wcag-gestures)
+
+BEHAVIOUR
+ 3. The system control, so it feels native   (Standard: android-pull-refresh)
+ 4. Indicator shows while loading and disappears when done   (Standard: android-pull-refresh)
+ 5. New items appear without jumping the person's place   (Standard: webdev-cls)
+
+ERRORS
+ 6. A failed refresh says so and keeps the old content   (Research: nng-errors)
+
+ACCESS
+ 7. Screen readers have a refresh action   (Standard: wcag-gestures)
+
+SOURCES
+- android-pull-refresh: https://developer.android.com/develop/ui/compose/components/pull-to-refresh
+- wcag-gestures: https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures
+- webdev-cls: https://web.dev/articles/cls
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/

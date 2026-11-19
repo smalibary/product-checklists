@@ -1,0 +1,34 @@
+﻿COMMAND PALETTE CHECKLIST: 11 items
+A search box that opens with a shortcut (Ctrl+K) and runs any command or jumps anywhere.
+Backing: 0 Rule, 6 Standard, 3 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+OPENING
+ 1. Ctrl+K or Cmd+K, plus a visible button for people who do not know the shortcut   (Research: nng-shortcuts)
+ 2. Opens with focus in the search field   (Standard: apg-combobox)
+
+RESULTS
+ 3. Results update as you type, forgiving typos   (Practice)
+ 4. Grouped (pages, actions, recent) with group names   (Standard: apg-listbox)
+ 5. Each result shows its shortcut where one exists   (Research: nng-shortcuts)
+ 6. Recent and suggested items shown before typing   (Practice)
+
+KEYS
+ 7. Arrow keys move, Enter runs, Escape closes   (Standard: apg-combobox)
+ 8. The active result announced to screen readers   (Standard: apg-combobox, wcag-name-role)
+
+SAFETY
+ 9. Only commands the person may use are listed   (Standard: owasp-authz)
+10. Dangerous commands still ask to confirm   (Research: nng-confirm)
+
+AFTER
+11. Focus returns to where it was when closed   (Standard: apg-dialog)
+
+SOURCES
+- nng-shortcuts: https://www.nngroup.com/articles/ui-accelerators/
+- apg-combobox: https://www.w3.org/WAI/ARIA/apg/patterns/combobox/
+- apg-listbox: https://www.w3.org/WAI/ARIA/apg/patterns/listbox/
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- nng-confirm: https://www.nngroup.com/articles/confirmation-dialog/
+- apg-dialog: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/

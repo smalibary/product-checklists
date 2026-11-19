@@ -1,0 +1,29 @@
+﻿FEATURE FLAGS CHECKLIST: 10 items
+Switching features on and off without a new release.
+Backing: 0 Rule, 10 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+USE
+ 1. Flags for gradual rollouts, quick switch-offs, experiments and plan features   (Standard: fowler-flags)
+ 2. One flag service or library (such as OpenFeature) instead of scattered checks   (Standard: openfeature)
+
+ROLLOUT
+ 3. Rolled out by percentage or group, with the same user always in the same group   (Standard: fowler-flags)
+ 4. A kill switch for any risky feature   (Standard: fowler-flags)
+ 5. Rollouts watched for errors before going wider   (Standard: sre-canary)
+
+SAFETY
+ 6. Flags checked on the server for anything that controls access or money   (Standard: owasp-authz)
+ 7. A safe default when the flag service is down   (Standard: fowler-flags)
+
+HOUSEKEEPING
+ 8. Every flag has an owner and an end date   (Standard: fowler-flags)
+ 9. Old flags removed from the code once fully on   (Standard: fowler-flags)
+10. Flag changes logged with who and when   (Standard: owasp-logging)
+
+SOURCES
+- fowler-flags: https://martinfowler.com/articles/feature-toggles.html
+- openfeature: https://openfeature.dev/
+- sre-canary: https://sre.google/workbook/canarying-releases/
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html

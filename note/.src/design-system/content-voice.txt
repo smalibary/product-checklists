@@ -1,0 +1,16 @@
+title: Content and voice
+about: How the product speaks: words, tone and labels across every screen.
+## Voice
+- Voice described in a few dimensions (formal or casual, serious or playful) | R nng-voice
+- Tone shifts with the moment: calm for errors, warm for success | R nng-voice
+## Words
+- Plain words people use, not internal names | S hig-writing
+- Buttons say what they do (Save changes, not OK) | R nng-buttons
+- Sentence case for labels | S hig-writing
+- Numbers, dates and money formatted by locale | S cldr
+## Errors
+- Say what happened and how to fix it, without blame | R nng-errors
+## Consistency
+- One word for one thing across the product (a glossary) | R nng-consistency
+## Languages
+- Text written to translate well, with room for longer words | S w3c-forms-i18n

@@ -1,0 +1,18 @@
+title: Monitoring and alerts
+about: Knowing the service is healthy, and waking someone only when people are affected.
+## Measure
+- The four golden signals: traffic, errors, time taken and how full the system is | S sre-monitoring
+- Service level objectives (for example 99.9% of requests succeed) agreed and written | S sre-slo
+- Checks from outside that act like a user (synthetic checks) | S sre-monitoring
+## Alerts
+- Alert on user pain (SLO burn rate), not on every high number | S sre-alerting
+- Every alert can be acted on and links to a runbook | S sre-alerting sre-incident
+- Urgent alerts page someone; the rest go to a ticket | S sre-monitoring
+- Noisy alerts fixed or removed | S sre-alerting
+## Dashboards
+- One overview page per service | S sre-monitoring
+- Traces across services | S otel
+## Users
+- A public status page during problems | S atlassian-incident
+## Costs
+- Usage of paid services watched against limits, with alerts at 50% and 80% | S aws-cost

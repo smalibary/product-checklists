@@ -1,0 +1,19 @@
+title: Authorization
+about: Deciding what each signed-in person may see and do, checked on the server every time.
+## Model
+- Deny by default; access granted only by explicit rules | S owasp-authz
+- Roles or permissions defined in one place, not scattered through the code | S owasp-authz
+- Least privilege: each role gets only what its job needs | S owasp-authz
+## Every request
+- Checked on the server for every action, never only by hiding buttons | S owasp-authz owasp-api-top10
+- Object-level checks: the record must belong to the caller (no reading order 124 by changing the number) | S owasp-api-top10
+- Field-level checks: some fields only some roles may read or change | S owasp-api-top10 owasp-mass-assignment
+- Admin actions behind separate checks and, ideally, a separate address | S owasp-api-top10
+## In the database
+- Row-level security as a second guard for shared tables | S pg-rls
+- The app's database user cannot change the schema | S owasp-authz
+## Changes
+- Role changes take effect immediately | S owasp-authz
+- Every grant, removal and admin action written to the audit trail | S owasp-logging
+## Testing
+- Tests that try each action as each role, including "should be refused" cases | S owasp-asvs

@@ -1,0 +1,33 @@
+﻿FILE UPLOADS (API) CHECKLIST: 13 items
+Accepting files through an API without letting them harm the server or other users.
+Backing: 0 Rule, 10 Standard, 0 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BEFORE UPLOAD
+ 1. Allowed file types listed; checked by content, not only by name   (Standard: owasp-file-upload)
+ 2. Size limit per file and per account, told to the caller up front   (Standard: owasp-file-upload)
+ 3. Large files go straight to storage through a short-lived signed address   (Practice)
+
+ON RECEIPT
+ 4. Files renamed with random names; the original name kept only as text   (Standard: owasp-file-upload)
+ 5. Stored outside the web root, served from a separate domain   (Standard: owasp-file-upload)
+ 6. Images re-encoded to strip hidden content and location data   (Standard: owasp-file-upload)
+ 7. Virus scan before the file is shared with anyone   (Standard: owasp-file-upload)
+ 8. Archives unpacked only with limits on size and file count   (Standard: owasp-file-upload)
+
+SERVING
+ 9. Download links that expire and check permission   (Standard: owasp-authz)
+10. Content-Disposition attachment and nosniff on downloads   (Standard: owasp-headers)
+
+PROGRESS
+11. Resumable uploads for big files, with progress   (Practice)
+12. Clear errors for wrong type, too big or failed scan   (Standard: rfc-problem)
+
+CLEAN-UP
+13. Uploads never finished are removed after a set time   (Practice)
+
+SOURCES
+- owasp-file-upload: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-headers: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html
+- rfc-problem: https://www.rfc-editor.org/rfc/rfc9457

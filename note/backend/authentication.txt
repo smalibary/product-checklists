@@ -1,0 +1,43 @@
+﻿AUTHENTICATION (SERVER) CHECKLIST: 14 items
+How the server checks who someone is: passwords, codes, passkeys and sign-in limits.
+Backing: 0 Rule, 14 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PASSWORDS
+ 1. At least 8 characters (15 when it is the only factor), up to at least 64, all characters allowed   (Standard: nist-63b)
+ 2. Checked against lists of leaked and common passwords   (Standard: nist-63b)
+ 3. No forced rules about symbols and no forced regular changes   (Standard: nist-63b)
+ 4. Stored with a slow, salted hash (Argon2id, scrypt or bcrypt)   (Standard: owasp-passwords)
+
+OTHER WAYS IN
+ 5. Passkeys offered where supported   (Standard: webauthn, passkeys-dev)
+ 6. A second factor available, required for admins   (Standard: owasp-mfa, nist-63b-auth)
+ 7. One-time codes expire quickly, work once and are limited in tries   (Standard: rfc-totp, owasp-mfa)
+ 8. Sign in with Apple or Google through standard OAuth with PKCE   (Standard: rfc-oauth-native, rfc-pkce)
+
+ATTACKS
+ 9. Attempts limited per account and per network address, with growing delays   (Standard: owasp-auth)
+10. The same answer whether or not the account exists   (Standard: owasp-auth)
+11. Password reset links random, single-use and short-lived   (Standard: owasp-forgot)
+
+RECORDS
+12. Sign-ins, failures, resets and factor changes logged without the secrets   (Standard: owasp-logging)
+13. The user told by email about a new device or a changed password   (Standard: owasp-auth)
+
+CHECKS
+14. The design checked against OWASP ASVS level 2   (Standard: owasp-asvs)
+
+SOURCES
+- nist-63b: https://pages.nist.gov/800-63-4/sp800-63b/passwords
+- owasp-passwords: https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
+- webauthn: https://www.w3.org/TR/webauthn-3/
+- passkeys-dev: https://passkeys.dev/
+- owasp-mfa: https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
+- nist-63b-auth: https://pages.nist.gov/800-63-4/sp800-63b.html
+- rfc-totp: https://www.rfc-editor.org/rfc/rfc6238
+- rfc-oauth-native: https://www.rfc-editor.org/rfc/rfc8252
+- rfc-pkce: https://www.rfc-editor.org/rfc/rfc7636
+- owasp-auth: https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+- owasp-forgot: https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- owasp-asvs: https://owasp.org/www-project-application-security-verification-standard/

@@ -1,0 +1,27 @@
+﻿DEPENDENCIES CHECKLIST: 9 items
+The outside code your app is built on, kept up to date and trustworthy.
+Backing: 0 Rule, 7 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+KNOWING
+ 1. A list of every dependency and its version (a lock file and a software bill of materials)   (Standard: slsa, owasp-dependencies)
+ 2. Licences checked before adding   (Practice)
+
+CHOOSING
+ 3. Prefer maintained, widely used packages; check their health score   (Standard: openssf-scorecard)
+ 4. Fewer dependencies where a small amount of own code will do   (Practice)
+
+UPDATING
+ 5. Automatic alerts for known vulnerabilities   (Standard: owasp-dependencies)
+ 6. Updates applied regularly in small steps, with tests   (Standard: owasp-dependencies)
+ 7. Critical fixes applied within days   (Standard: owasp-dependencies)
+
+SUPPLY CHAIN
+ 8. Packages installed from trusted sources with locked versions and checks   (Standard: slsa)
+ 9. Build steps signed or verified   (Standard: slsa, nist-ssdf)
+
+SOURCES
+- slsa: https://slsa.dev/
+- owasp-dependencies: https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html
+- openssf-scorecard: https://scorecard.dev/
+- nist-ssdf: https://csrc.nist.gov/projects/ssdf

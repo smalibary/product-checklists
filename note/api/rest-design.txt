@@ -1,0 +1,52 @@
+﻿REST API DESIGN CHECKLIST: 20 items
+The shape of an HTTP API: addresses, methods, bodies and status codes that other programs rely on.
+Backing: 0 Rule, 20 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ADDRESSES
+ 1. Nouns for resources (/orders/123), plural collections, no verbs in the path   (Standard: google-aip, zalando-api)
+ 2. Lowercase paths with hyphens, and one naming style for fields used everywhere   (Standard: zalando-api, ms-api-guidelines)
+ 3. Identifiers that cannot be guessed (random or time-ordered UUIDs), not running numbers   (Standard: rfc-uuid)
+ 4. Nesting at most one level deep (/orders/123/items)   (Standard: google-aip)
+
+METHODS
+ 5. GET only reads and is safe to repeat   (Standard: rfc-http)
+ 6. POST creates, PUT replaces, PATCH changes some fields, DELETE removes   (Standard: rfc-http)
+ 7. PUT and DELETE give the same result when repeated   (Standard: rfc-http)
+ 8. Actions that are not create, read, change or delete get their own sub-address with POST (/orders/123:cancel)   (Standard: google-aip)
+
+BODIES
+ 9. JSON with a declared content type; dates as RFC 3339 text with a time zone   (Standard: rfc-datetime)
+10. Money as an amount in the smallest unit plus a currency code (24500 and "SAR")   (Standard: iso-4217)
+11. Only fields a caller may set are accepted; unknown or protected fields are refused   (Standard: owasp-mass-assignment)
+12. Responses never include fields the caller may not see (password hashes, other customers)   (Standard: owasp-api-top10)
+
+STATUS CODES
+13. 200 done, 201 created with a Location header, 204 done with nothing to return   (Standard: rfc-http)
+14. 400 bad input, 401 not signed in, 403 not allowed, 404 not found, 409 conflict, 422 checks failed   (Standard: rfc-http)
+15. 5xx only for the server's own failures, never for the caller's mistakes   (Standard: rfc-http)
+
+READING EFFICIENTLY
+16. Lists are paged from the first version   (Standard: google-aip-pagination)
+17. Callers can ask for only the fields they need   (Standard: google-aip-fields)
+18. ETag on reads so a client can ask "changed since?" and get 304 Not Modified   (Standard: mdn-etag, rfc-caching)
+
+DESCRIPTION
+19. The whole API described in an OpenAPI file kept in step with the code   (Standard: openapi)
+20. Security reviewed against the OWASP API Top 10 before launch   (Standard: owasp-api-top10)
+
+SOURCES
+- google-aip: https://google.aip.dev/
+- zalando-api: https://opensource.zalando.com/restful-api-guidelines/
+- ms-api-guidelines: https://github.com/microsoft/api-guidelines
+- rfc-uuid: https://www.rfc-editor.org/rfc/rfc9562
+- rfc-http: https://www.rfc-editor.org/rfc/rfc9110
+- rfc-datetime: https://www.rfc-editor.org/rfc/rfc3339
+- iso-4217: https://www.iso.org/iso-4217-currency-codes.html
+- owasp-mass-assignment: https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html
+- owasp-api-top10: https://owasp.org/API-Security/editions/2023/en/0x11-t10/
+- google-aip-pagination: https://google.aip.dev/158
+- google-aip-fields: https://google.aip.dev/161
+- mdn-etag: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/ETag
+- rfc-caching: https://www.rfc-editor.org/rfc/rfc9111
+- openapi: https://spec.openapis.org/oas/latest.html

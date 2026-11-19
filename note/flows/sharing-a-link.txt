@@ -1,0 +1,25 @@
+﻿SHARING A LINK (FLOW) CHECKLIST: 7 items
+Sending a page or item to someone else.
+Backing: 0 Rule, 4 Standard, 0 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SHARING
+ 1. System share sheet on phones   (Standard: android-sharesheet, hig-share)
+ 2. Copy link button with a confirmation   (Standard: wcag-status)
+ 3. Link previews look right (title, image, description)   (Practice)
+
+ACCESS LEVEL
+ 4. Clear who can open it   (Standard: owasp-authz)
+ 5. Private items ask before making a public link   (Practice)
+
+LINKS
+ 6. Short, readable and lasting   (Practice)
+ 7. Opens the right screen in the app or on the web   (Standard: android-app-links, apple-universal-links)
+
+SOURCES
+- android-sharesheet: https://developer.android.com/training/sharing/send
+- hig-share: https://developer.apple.com/design/human-interface-guidelines/activity-views
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- android-app-links: https://developer.android.com/training/app-links
+- apple-universal-links: https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app

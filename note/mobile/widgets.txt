@@ -1,0 +1,27 @@
+﻿HOME SCREEN WIDGETS CHECKLIST: 8 items
+Small views of the app on the home screen.
+Backing: 0 Rule, 8 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. One clear job per widget with glanceable information   (Standard: hig-widgets, android-widgets)
+ 2. Sizes offered that fit the content   (Standard: hig-widgets)
+ 3. Tapping opens the matching screen   (Standard: hig-widgets)
+
+DATA
+ 4. Updates on a sensible schedule, not constantly   (Standard: android-widgets)
+ 5. Placeholder content while loading   (Standard: hig-widgets)
+ 6. No private data shown without the person choosing it   (Standard: hig-privacy)
+
+LOOK
+ 7. Follows system light and dark mode   (Standard: hig-dark-mode)
+
+ACCESS
+ 8. Text scales with system settings   (Standard: hig-accessibility)
+
+SOURCES
+- hig-widgets: https://developer.apple.com/design/human-interface-guidelines/widgets
+- android-widgets: https://developer.android.com/develop/ui/views/appwidgets/overview
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- hig-dark-mode: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
