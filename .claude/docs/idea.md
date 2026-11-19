@@ -33,3 +33,12 @@ timeline, search, tree · D4 websites first, Android apps next · headless only.
 
 ## Not yet decided
 - First real sites to record; what counts as one flow; what the library filters on; how checklists are made.
+
+## The bigger idea (Salem, 2026-11-19): not just capture, the best version of the same page
+Mobbin only captures. agentscreen records a real flow (example: Dribbble sign-up), then:
+1. **Audit:** grades it against a full best-practice checklist for that kind of flow: each item met, missing or
+   partly met, why it matters, with the step picture as proof.
+2. **Best version:** a working sign-up built with ui-sdk that meets every checklist item, all of it really working.
+3. **In their style:** the recorded app's look (colours, fonts, corners, spacing taken from its component cards)
+   is applied to the best version as tokens, so you see "Dribbble's sign-up, done right".
+Open decisions: see `.claude/grill/decisions.md` (rows dated 2026-11-19, "best version").

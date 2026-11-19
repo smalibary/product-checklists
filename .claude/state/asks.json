@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 12,
+ "next": 16,
  "asks": [
   {
    "id": 2,
@@ -95,6 +95,82 @@
      "done": true
     }
    ]
+  },
+  {
+   "id": 12,
+   "at": "2026-11-19T10:23:22.281Z",
+   "text": "ok delete all the website you just have ! .. i have alot of other context to add!",
+   "status": "done",
+   "parts": [
+    {
+     "name": "the-internet (first)",
+     "done": true
+    },
+    {
+     "name": "linear.app",
+     "done": true
+    },
+    {
+     "name": "vercel.com",
+     "done": true
+    },
+    {
+     "name": "google.com",
+     "done": true
+    },
+    {
+     "name": "www.google.com",
+     "done": true
+    },
+    {
+     "name": "the-internet (second)",
+     "done": true
+    },
+    {
+     "name": "wikipedia",
+     "done": true
+    }
+   ],
+   "note": "All 7 recordings deleted; library empty",
+   "updated": "2026-11-19T10:23:36.166Z"
+  },
+  {
+   "id": 13,
+   "at": "2026-11-19T10:25:49.687Z",
+   "text": "ok , \n\ni want you to inspect this site : \nhttps://www.checklist.design/mobile/sign-up\n\n---\n\nif you see it you will see this : \n\n\n[pasted text]\n\n\n---\n\nif you can see the check list is not comperhensive ... .... can you list here in chat the comperhensive version ?!",
+   "status": "done",
+   "note": "Comprehensive mobile sign-up checklist written in chat",
+   "updated": "2026-11-19T10:25:56.816Z"
+  },
+  {
+   "id": 14,
+   "at": "2026-11-19T10:27:51.926Z",
+   "text": "ok from where did you get this full list?!",
+   "status": "done",
+   "note": "Explained the list came from my own knowledge, named the sources it matches, corrected the Apple sign-in item",
+   "updated": "2026-11-19T10:27:57.962Z"
+  },
+  {
+   "id": 15,
+   "at": "2026-11-19T10:32:36.294Z",
+   "text": "think of it , i went to sign up inside poplular app like hmmm say dribbble , and you cehck this comperhensive list , and indicate where it lack and why etc! , and you also have signup with all those checked in like good styling like using ui sdk , with all functionality ,,.. and because i opened dribble you just change the token styling of that , to see how that page would be in perfect workflow checklist ! something like this i want the app , its not like mobbin is just capturing , instead if give the best practices of the same page or something liek this idk ...",
+   "status": "done",
+   "parts": [
+    {
+     "name": "write the idea down",
+     "done": true
+    },
+    {
+     "name": "settle the open decisions with Salem",
+     "done": true
+    },
+    {
+     "name": "plan the build",
+     "done": true
+    }
+   ],
+   "note": "Idea written, checklist verified (66 items), decisions logged, plan E1 with 7 features",
+   "updated": "2026-11-19T10:37:23.265Z"
   }
  ]
 }
