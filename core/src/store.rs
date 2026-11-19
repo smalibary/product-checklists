@@ -14,6 +14,9 @@ pub struct Control {
     pub external: bool,
     /// true once the recorder has tried it
     pub tried: bool,
+    /// true for a search box: the recorder types a search into it and presses Enter
+    #[serde(default)]
+    pub search: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -99,6 +102,9 @@ pub struct ComponentCard {
     pub explanation: String,
     /// design lessons: what it does well or badly (feedback, focus, size, contrast, timing)
     pub lessons: Vec<String>,
+    /// file name of the live working copy (a small web page you can hover, focus and press)
+    #[serde(default)]
+    pub live: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

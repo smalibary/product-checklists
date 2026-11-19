@@ -2,7 +2,7 @@
 //! looks, then show it hovered, focused and pressed, keeping a picture, the changes and the motion.
 //! Hover uses the hidden Chrome's own virtual pointer (never the real mouse); focus and pressed are
 //! switched on directly in Chrome, which plays the same transitions a real person would see.
-use crate::describe;
+use crate::{describe, livecopy};
 use crate::store::{Change, ComponentCard, Motion, StateShot};
 use anyhow::Result;
 use chromiumoxide::cdp::browser_protocol::css::{EnableParams as CssEnable, ForcePseudoStateParams};
@@ -62,7 +62,8 @@ async fn js<T: for<'de> Deserialize<'de>>(page: &Page, code: String) -> Option<T
 }
 
 /// Makes cards for the marked controls on the page as it is now. Card ids continue from `start`.
-pub async fn capture(page: &Page, dir: &Path, screen: &str, start: usize, limit: usize) -> Vec<ComponentCard> {
+/// `known` holds the components already in this recording; the same one found again is skipped.
+pub async fn capture(page: &Page, dir: &Path, screen: &str, start: usize, limit: usize, known: &[ComponentCard]) -> Vec<ComponentCard> {
     let _ = page.execute(DomEnable::default()).await;
     let _ = page.execute(CssEnable::default()).await;
     if page.evaluate(PROBE).await.is_err() {
@@ -72,7 +73,7 @@ pub async fn capture(page: &Page, dir: &Path, screen: &str, start: usize, limit:
     let mut cards = vec![];
     for g in groups {
         let id = format!("c-{:02}", start + cards.len() + 1);
-        if let Ok(Some(card)) = one(page, dir, screen, &id, g.index, g.used).await {
+        if let Ok(Some(card)) = one(page, dir, screen, &id, g.index, g.used, known).await {
             cards.push(card);
         }
     }
@@ -86,8 +87,11 @@ pub async fn capture(page: &Page, dir: &Path, screen: &str, start: usize, limit:
     cards
 }
 
-async fn one(page: &Page, dir: &Path, screen: &str, id: &str, i: usize, used: usize) -> Result<Option<ComponentCard>> {
+async fn one(page: &Page, dir: &Path, screen: &str, id: &str, i: usize, used: usize, known: &[ComponentCard]) -> Result<Option<ComponentCard>> {
     let Some(read) = js::<Read>(page, format!("window.__as.read({i})")).await else { return Ok(None) };
+    if known.iter().any(|k| k.family == read.family && k.name == read.name && k.look.get("background-color") == read.style.get("background-color")) {
+        return Ok(None);
+    }
     let sel = format!("[data-as-i=\"{i}\"]");
     let el = page.find_element(sel.as_str()).await?;
     park(page).await;
@@ -96,6 +100,8 @@ async fn one(page: &Page, dir: &Path, screen: &str, id: &str, i: usize, used: us
     if normal.w < 4.0 || normal.h < 4.0 {
         return Ok(None);
     }
+    let copy = js::<livecopy::Copy>(page, format!("window.__as.copy({i})")).await;
+    let mut full_states: Vec<(String, livecopy::Styles)> = vec![];
     let mut states = vec![StateShot {
         state: "normal".into(),
         picture: shot(page, dir, id, "normal", &normal).await?,
@@ -119,6 +125,9 @@ async fn one(page: &Page, dir: &Path, screen: &str, id: &str, i: usize, used: us
         let longest = moving.iter().map(|m| m.ms + m.delay_ms).max().unwrap_or(0).min(1500);
         tokio::time::sleep(Duration::from_millis(longest + 120)).await;
         let now = js::<Now>(page, format!("window.__as.now({i})")).await;
+        if let Some(f) = js::<livecopy::Styles>(page, format!("window.__as.full({i})")).await {
+            full_states.push((state.to_string(), f));
+        }
         if let Some(now) = now {
             let changes = diff(&normal.style, &now.style);
             let motion: Vec<Motion> = moving
@@ -155,6 +164,7 @@ async fn one(page: &Page, dir: &Path, screen: &str, id: &str, i: usize, used: us
         states,
         explanation: String::new(),
         lessons: vec![],
+        live: copy.and_then(|c| livecopy::write(dir, id, &c, &full_states).ok()),
     };
     card.explanation = describe::card(&card);
     card.lessons = describe::lessons(&card);

@@ -15,3 +15,4 @@
 | 2026-10-04 | Work landed with no task moving | the task check (`.claude/hooks/board-check.js`) |
 | 2026-11-19 | Clicks stopped reaching the page after the same hidden tab moved to another website | one hidden tab per website (`.claude/docs/idea.md`, first test) |
 | 2026-11-19 | The first test was run in the lab folder while Salem watched the project folder, which looked empty | work in the project folder (now.md, "Salem said to remember") |
+| 2026-11-19 | google.com: 7 steps, all from the start page, no search typed, mic refused; Salem: "this simple main 2 pages couldnt do it correctly" | the explorer goes screen by screen and types searches (`core/src/recorder.rs`) |

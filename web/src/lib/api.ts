@@ -14,6 +14,7 @@ export type ComponentCard = {
   id: string; screen: string; kind: string; family: string; name: string; used: number
   tag: string; role: string; parts: string; html: string; look: Record<string, string>
   states: StateShot[]; explanation: string; lessons: string[]
+  live?: string | null
 }
 export type Run = {
   id: string; site: string; start_url: string; started_at: string; finished_at: string | null

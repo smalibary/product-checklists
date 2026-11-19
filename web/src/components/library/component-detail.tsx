@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { fileUrl, type ComponentCard, type Run } from "@/lib/api"
 import { cardText, lookRows } from "@/lib/card-text"
+import { LivePreview } from "./live-preview"
 
 const STATE_LABEL: Record<string, string> = { normal: "Normal", hover: "Hover", focus: "Focus (keyboard)", pressed: "Pressed" }
 
@@ -28,6 +29,8 @@ export function ComponentDetail({ run, card }: { run: Run; card: ComponentCard }
           {copied ? "Copied" : "Copy for AI"}
         </Button>
       </div>
+
+      {card.live && <LivePreview key={card.id} runId={run.id} file={card.live} />}
 
       <section>
         <h3 className="mb-2 text-sm font-semibold">States</h3>

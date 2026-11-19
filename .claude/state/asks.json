@@ -1,12 +1,100 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 4,
+ "next": 12,
  "asks": [
   {
    "id": 2,
    "at": "2026-11-19T08:11:57.988Z",
    "text": "no need to have frist test etc! also no need to work with subagents",
    "status": "done"
+  },
+  {
+   "id": 4,
+   "at": "2026-11-19T08:15:02.927Z",
+   "text": "did you finish ? because i dont see the app ?! like the folder still clean?!",
+   "status": "done"
+  },
+  {
+   "id": 5,
+   "at": "2026-11-19T08:41:08.829Z",
+   "text": "ok i build this app , but i have some adjustment i want ok ?",
+   "status": "noted",
+   "note": "Salem announced adjustments are coming; waiting for him to list them",
+   "updated": "2026-11-19T08:41:16.917Z"
+  },
+  {
+   "id": 6,
+   "at": "2026-11-19T08:42:50.016Z",
+   "text": "ok , this app is used mainly by ai right ? they capture websites and others right ?!",
+   "status": "done",
+   "note": "Answered: AI does the capturing, Salem browses the library",
+   "updated": "2026-11-19T08:42:54.990Z"
+  },
+  {
+   "id": 7,
+   "at": "2026-11-19T08:44:53.585Z",
+   "text": "ok i want to think with me ok ? ,,, this goign to be very effective like if i say do this button but on other app it can do ,.. so ai use this app to record how it behave and copy it .. in order to this to happen the ai need to understand the components also it build library maybe idk ? help me understand",
+   "status": "done",
+   "note": "Salem chose A: component cards first",
+   "updated": "2026-11-19T08:48:25.329Z"
+  },
+  {
+   "id": 8,
+   "at": "2026-11-19T08:48:19.561Z",
+   "text": "ok do a , but also i think ai need like natural text explaining what is happening like saying this button scale up when hover etc! so people also learn using it! me from that audience need learn both component , ux and workflow , and animation etc!",
+   "status": "done",
+   "note": "Component cards with plain-language text and lessons built, tested on linear.app and vercel.com, saved af118f9",
+   "updated": "2026-11-19T09:16:40.324Z"
+  },
+  {
+   "id": 9,
+   "at": "2026-11-19T09:19:49.254Z",
+   "text": "ok wait , i dont see component except as screens , cant you just buidl one too ? like i hover and see it ? or this goign to be very diffcutl if i have like 2k websites?",
+   "status": "done",
+   "note": "Live copy on every card: hover, Tab, press, or hold a state with the ui-sdk switch; list previews show the real component",
+   "updated": "2026-11-19T09:53:14.073Z"
+  },
+  {
+   "id": 10,
+   "at": "2026-11-19T09:20:41.899Z",
+   "text": "ok wait , i dont see component except as screens , cant you just buidl one too ? like i hover and see it ? or this goign to be very diffcutl if i have like 2k websites? , also use ui sdk for that ?!",
+   "status": "done",
+   "note": "Live copy on every card: hover, Tab, press, or hold a state with the ui-sdk switch; list previews show the real component",
+   "updated": "2026-11-19T09:53:14.075Z"
+  },
+  {
+   "id": 11,
+   "at": "2026-11-19T09:28:04.319Z",
+   "text": "also i added google.com , like there is alooot missing in components , it didnt go through the whole app , also for example mic didnt give it permission , aalso many buttons didnt clicked etc.. also for example didnt do search , also thene see detail inside search liek this simple main 2 pages couldnt do it correctly!!! ? how the rest?!",
+   "status": "done",
+   "note": "Explorer goes screen by screen, searches and opens results (proved on Wikipedia: search, article, links inside, results page); permissions granted; Google itself shows a robot check to automated searches, which we don't get around",
+   "updated": "2026-11-19T10:09:37.996Z",
+   "parts": [
+    {
+     "name": "find why google run missed things",
+     "done": true
+    },
+    {
+     "name": "allow mic/camera/location permissions",
+     "done": true
+    },
+    {
+     "name": "click every button not just some",
+     "done": true
+    },
+    {
+     "name": "type into search and submit",
+     "done": true
+    },
+    {
+     "name": "open a result and go deeper",
+     "done": true
+    },
+    {
+     "name": "re-record google.com and check",
+     "done": true
+    }
+   ]
   }
  ]
 }

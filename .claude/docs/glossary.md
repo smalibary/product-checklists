@@ -43,6 +43,7 @@ One line each, plain meaning. Alphabetical. Salem's own words win: if he calls s
 | Inspect mode | Ctrl+Shift+Space in an app: point at something on screen and Claude receives exactly what it is. |
 | Just for me | The worker's private corner on her Me, with a lock and the line "Only you can see this": the Arabic phrases she has met, money sent home, savings goals, notes and mood; the database lets nobody else read it, and deleting her account erases it (E21). |
 | Leaving | The checklist for a worker's last days: things returned, final pay, exit visa or transfer, ticket and handover notes, ending with removing her from the household while her records stay (E20.5). |
+| Live copy | A component rebuilt as its own small working page from a recording: you can hover it, Tab into it and press it, or hold one state still. |
 | Long run | Claude working through the board's tasks on its own for hours, until the time or usage limit you set. |
 | Medicine plan | A person's list of medicines with dose, times of day and dates; owner and family write it, carers tap Given (E18.3). |
 | MiniChart | A small line of one health reading over the last 30 days, with a soft red dot past a limit (E19.3). |

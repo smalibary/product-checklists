@@ -1,7 +1,7 @@
-Status: v0.1 recorder + library page working / doing: next, Claude controls + deeper exploring
+Status: v0.1 recorder + library page + live copies + whole-site explorer / doing: next, board + pattern sweep
 
 ## Running
-- Nothing running.
+- Nothing running. Library server on http://127.0.0.1:4477.
 
 ## Helpers
 - None open.

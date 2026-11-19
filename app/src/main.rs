@@ -20,9 +20,10 @@ async fn main() -> anyhow::Result<()> {
     let lib = Library::open(lib_root)?;
     match args.first().map(String::as_str) {
         Some("record") => {
-            let url = args.get(1).ok_or_else(|| anyhow::anyhow!("usage: agentscreen record <url> [steps]"))?;
-            let max_steps = args.get(2).and_then(|s| s.parse().ok()).unwrap_or(12);
-            let run = explore(&lib, ExploreOptions { url: url.clone(), max_steps }, None).await?;
+            let url = args.get(1).ok_or_else(|| anyhow::anyhow!("usage: agentscreen record <url> [steps] [search words]"))?;
+            let max_steps = args.get(2).and_then(|s| s.parse().ok()).unwrap_or(80);
+            let query = args.get(3).cloned().unwrap_or_else(|| "weather".into());
+            let run = explore(&lib, ExploreOptions { url: url.clone(), max_steps, query }, None).await?;
             println!("{} {}: {} steps, {} screens{}", run.status, run.id, run.steps.len(), run.screens.len(),
                 run.error.map(|e| format!(" ({e})")).unwrap_or_default());
             for s in &run.steps {
@@ -71,6 +72,7 @@ async fn get_run(State(s): State<AppState>, Path(id): Path<String>) -> Result<Js
 struct RecordReq {
     url: String,
     steps: Option<usize>,
+    query: Option<String>,
 }
 
 async fn start_record(State(s): State<AppState>, Json(req): Json<RecordReq>) -> Result<Json<serde_json::Value>, (StatusCode, String)> {
@@ -79,7 +81,11 @@ async fn start_record(State(s): State<AppState>, Json(req): Json<RecordReq>) -> 
     let id = format!("{}-{}", chrono_now(), host);
     let lib = s.lib.clone();
     let rid = id.clone();
-    let opts = ExploreOptions { url: req.url, max_steps: req.steps.unwrap_or(12).min(60) };
+    let opts = ExploreOptions {
+        url: req.url,
+        max_steps: req.steps.unwrap_or(80).min(300),
+        query: req.query.filter(|q| !q.trim().is_empty()).unwrap_or_else(|| "weather".into()),
+    };
     tokio::spawn(async move {
         if let Err(e) = explore(&lib, opts, Some(rid)).await {
             eprintln!("recording failed: {e}");

@@ -4,6 +4,7 @@ import { fileUrl, type Run } from "@/lib/api"
 import { cn } from "@/lib/utils"
 import { Chips } from "./parts"
 import { ComponentDetail } from "./component-detail"
+import { LiveFrame } from "./live-preview"
 
 export function ComponentsView({ run }: { run: Run }) {
   const cards = run.components ?? []
@@ -46,8 +47,12 @@ export function ComponentsView({ run }: { run: Run }) {
                   current?.id === c.id && "bg-muted"
                 )}
               >
-                <span className="grid h-12 w-24 shrink-0 place-items-center overflow-hidden rounded border bg-muted/40">
-                  <img src={fileUrl(run.id, c.states[0]?.picture ?? "")} alt="" className="max-h-full max-w-full object-contain" />
+                <span className="grid h-12 w-24 shrink-0 place-items-center overflow-hidden rounded border bg-muted/40 relative">
+                  {c.live ? (
+                    <LiveFrame runId={run.id} file={c.live} thumb className="absolute inset-0 h-full w-full" />
+                  ) : (
+                    <img src={fileUrl(run.id, c.states[0]?.picture ?? "")} alt="" className="max-h-full max-w-full object-contain" />
+                  )}
                 </span>
                 <span className="min-w-0">
                   <span className="block truncate text-sm font-medium">{c.name || `Unnamed ${c.kind}`}</span>

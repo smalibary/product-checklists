@@ -1,277 +1,41 @@
-//! The recorder: drives a hidden Chrome (never the real mouse or screen), clicks through a website,
-//! and keeps a picture before and after each click plus a smooth video clip of what moved in between.
-use crate::components;
-use crate::store::{Control, Library, Run, Screen, Step};
+//! The recorder: drives a hidden Chrome (never the real mouse or screen) through a whole website,
+//! screen by screen. On every screen it tries each link, button and field: it types a search into
+//! search boxes and presses Enter, opens menus and then tries what appeared inside them, and puts
+//! every new screen it reaches on the list to explore next. Microphone, camera and location are
+//! allowed (with a fake microphone and camera), so buttons that need them work.
+use crate::step::{key, skip, Act, Ctx};
+use crate::store::{Control, Library, Run};
+use crate::tab::{find_chrome, origin_of, same_site, Tab, H, W};
 use anyhow::{anyhow, Result};
-use base64::Engine;
 use chromiumoxide::browser::{Browser, BrowserConfig};
-use chromiumoxide::cdp::browser_protocol::page::{
-    CaptureScreenshotFormat, EventScreencastFrame, ScreencastFrameAckParams, StartScreencastFormat,
-    StartScreencastParams, StopScreencastParams,
-};
-use chromiumoxide::page::ScreenshotParams;
-use chromiumoxide::Page;
+use chromiumoxide::cdp::browser_protocol::browser::{PermissionDescriptor, PermissionSetting, SetPermissionParams};
 use futures::StreamExt;
-use sha2::{Digest, Sha256};
+use std::collections::{HashSet, VecDeque};
 use std::path::Path;
-use std::sync::{Arc, Mutex};
-use std::time::{Duration, Instant};
+use std::time::Instant;
 
-const W: u32 = 1280;
-const H: u32 = 800;
+/// Tries per visit to a screen (a screen with more is visited again later, so the explorer goes deep
+/// before it goes wide), most screens explored, and links to other websites tried per screen.
+const PER_SCREEN: usize = 12;
+const MAX_SCREENS: usize = 25;
+const OUTSIDE_PER_SCREEN: usize = 4;
+/// Most items tried inside one menu or panel that a click opened.
+const INSIDE_MENU: usize = 6;
 
 #[derive(Debug, Clone)]
 pub struct ExploreOptions {
     pub url: String,
     pub max_steps: usize,
+    /// what to type into search boxes
+    pub query: String,
 }
 
-#[derive(Default)]
-struct Tape {
-    frames: Vec<(f64, Vec<u8>)>,
-    last: Option<Instant>,
+/// One thing to try: a control on a screen, maybe inside a menu that another control opens first.
+struct Try {
+    via: Option<Control>,
+    target: Control,
 }
 
-/// One hidden tab with its own recording. A fresh one is opened whenever the tab has left the
-/// website, because clicks stop reaching pages after a tab moves between websites (first test).
-struct Tab {
-    page: Page,
-    tape: Arc<Mutex<Tape>>,
-}
-
-impl Tab {
-    async fn open(browser: &Browser) -> Result<Self> {
-        let page = browser.new_page("about:blank").await?;
-        let tape = Arc::new(Mutex::new(Tape::default()));
-        let mut events = page.event_listener::<EventScreencastFrame>().await?;
-        let (p, t) = (page.clone(), tape.clone());
-        tokio::spawn(async move {
-            while let Some(ev) = events.next().await {
-                let ts = ev.metadata.timestamp.as_ref().map(|t| *t.inner()).unwrap_or(0.0);
-                let data: &str = ev.data.as_ref();
-                if let Ok(bytes) = base64::engine::general_purpose::STANDARD.decode(data) {
-                    let mut g = t.lock().unwrap();
-                    g.frames.push((ts, bytes));
-                    g.last = Some(Instant::now());
-                }
-                let _ = p.execute(ScreencastFrameAckParams::new(ev.session_id)).await;
-            }
-        });
-        page.execute(
-            StartScreencastParams::builder()
-                .format(StartScreencastFormat::Jpeg)
-                .quality(85)
-                .max_width(W as i64)
-                .max_height(H as i64)
-                .every_nth_frame(1)
-                .build(),
-        )
-        .await?;
-        Ok(Self { page, tape })
-    }
-
-    async fn close(self) {
-        let _ = self.page.execute(StopScreencastParams::default()).await;
-        let _ = self.page.close().await;
-    }
-
-    fn clear(&self) {
-        let mut g = self.tape.lock().unwrap();
-        g.frames.clear();
-        g.last = None;
-    }
-
-    fn take(&self) -> Vec<(f64, Vec<u8>)> {
-        std::mem::take(&mut self.tape.lock().unwrap().frames)
-    }
-
-    /// Wait until nothing on screen has moved for a moment (animations finished), up to a limit.
-    async fn wait_still(&self, started: Instant) {
-        loop {
-            tokio::time::sleep(Duration::from_millis(100)).await;
-            let since_frame = self.tape.lock().unwrap().last.map(|l| l.elapsed());
-            let quiet = since_frame.map(|d| d >= Duration::from_millis(700)).unwrap_or(true);
-            if (quiet && started.elapsed() >= Duration::from_millis(900))
-                || started.elapsed() >= Duration::from_secs(8)
-            {
-                return;
-            }
-        }
-    }
-
-    async fn goto(&self, url: &str) -> Result<()> {
-        self.page.goto(url).await?;
-        let _ = tokio::time::timeout(Duration::from_secs(15), self.page.wait_for_navigation()).await;
-        // a blinking text cursor never lets the screen go still, so hide it while recording
-        let _ = self
-            .page
-            .evaluate("(()=>{const s=document.createElement('style');s.textContent='*{caret-color:transparent!important}';document.head&&document.head.appendChild(s)})()")
-            .await;
-        self.wait_still(Instant::now()).await;
-        Ok(())
-    }
-
-    async fn picture(&self) -> Result<Vec<u8>> {
-        Ok(self
-            .page
-            .screenshot(ScreenshotParams::builder().format(CaptureScreenshotFormat::Jpeg).quality(90).build())
-            .await?)
-    }
-
-    async fn url(&self) -> String {
-        self.page.url().await.ok().flatten().unwrap_or_default()
-    }
-
-    /// Short code for "which screen is this": the address (without # part) plus the visible text.
-    async fn screen_code(&self) -> String {
-        let text: String = self
-            .page
-            .evaluate("(document.body ? document.body.innerText : '').replace(/\\s+/g,' ').slice(0,3000)")
-            .await
-            .ok()
-            .and_then(|v| v.into_value().ok())
-            .unwrap_or_default();
-        let url = self.url().await;
-        let url = url.split('#').next().unwrap_or("").to_string();
-        short_hash(format!("{url}\n{text}").as_bytes())
-    }
-
-    /// Lists every visible link, button and input, marking each so it can be clicked later.
-    async fn controls(&self, origin: &str) -> Vec<Control> {
-        let js = r#"(() => {
-          const els = [...document.querySelectorAll('a[href],button,input:not([type=hidden]),select,textarea,[role=button],[role=tab],[role=menuitem],summary')];
-          const out = [];
-          let i = 0;
-          for (const e of els) {
-            const r = e.getBoundingClientRect();
-            const st = getComputedStyle(e);
-            if (r.width < 2 || r.height < 2 || st.visibility === 'hidden' || st.display === 'none') continue;
-            e.setAttribute('data-as-i', String(i));
-            const tag = e.tagName.toLowerCase();
-            const role = e.getAttribute('role');
-            const kind = tag === 'a' ? 'link' : (tag === 'button' || role === 'button' || role === 'tab' || role === 'menuitem' || tag === 'summary' || (tag === 'input' && ['submit','button','reset'].includes(e.type))) ? 'button' : (tag === 'select' ? 'select' : (tag === 'input' || tag === 'textarea') ? 'input' : 'other');
-            const text = (e.innerText || e.getAttribute('aria-label') || e.value || e.placeholder || e.name || e.title || '').replace(/\s+/g,' ').trim().slice(0, 80);
-            out.push({ index: i, kind, text, href: tag === 'a' ? e.href : null });
-            i++;
-          }
-          return JSON.stringify(out);
-        })()"#;
-        let raw: String = match self.page.evaluate(js).await {
-            Ok(v) => v.into_value().unwrap_or_default(),
-            Err(_) => return vec![],
-        };
-        #[derive(serde::Deserialize)]
-        struct C {
-            index: usize,
-            kind: String,
-            text: String,
-            href: Option<String>,
-        }
-        let list: Vec<C> = serde_json::from_str(&raw).unwrap_or_default();
-        list.into_iter()
-            .map(|c| {
-                let external = c
-                    .href
-                    .as_deref()
-                    .map(|h| !origin_of(h).eq_ignore_ascii_case(origin) || h.starts_with("mailto:") || h.starts_with("tel:"))
-                    .unwrap_or(false);
-                Control { index: c.index, kind: c.kind, text: c.text, href: c.href, external, tried: false }
-            })
-            .collect()
-    }
-}
-
-fn short_hash(bytes: &[u8]) -> String {
-    let h = Sha256::digest(bytes);
-    h.iter().take(4).map(|b| format!("{b:02x}")).collect()
-}
-
-fn origin_of(u: &str) -> String {
-    url::Url::parse(u).map(|p| p.origin().ascii_serialization()).unwrap_or_default()
-}
-
-fn find_chrome() -> Option<String> {
-    let candidates = [
-        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
-        r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
-        r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
-        r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
-    ];
-    candidates.iter().find(|p| Path::new(p).exists()).map(|p| p.to_string())
-}
-
-/// Should the recorder leave this control alone? (leaving the site, downloads, signing out)
-fn skip(c: &Control) -> bool {
-    if c.external {
-        return true;
-    }
-    let t = c.text.to_lowercase();
-    if ["log out", "logout", "sign out", "signout", "delete"].iter().any(|w| t.contains(w)) {
-        return true;
-    }
-    if let Some(h) = &c.href {
-        let h = h.to_lowercase();
-        if h.starts_with("javascript:") || [".pdf", ".zip", ".dmg", ".exe"].iter().any(|e| h.ends_with(e)) {
-            return true;
-        }
-    }
-    false
-}
-
-/// Write a clip from screencast frames (each frame keeps its real timing) using ffmpeg.
-fn write_clip(dir: &Path, name: &str, before: &[u8], frames: &[(f64, Vec<u8>)]) -> Result<(String, u64)> {
-    let tmp = dir.join(format!("{name}-frames"));
-    std::fs::create_dir_all(&tmp)?;
-    let mut list = String::new();
-    // hold the "before" picture briefly so every clip starts from the screen as it was
-    std::fs::write(tmp.join("00000.jpg"), before)?;
-    list.push_str("file '00000.jpg'\nduration 0.4000\n");
-    let mut total = 0.4;
-    for (i, (ts, bytes)) in frames.iter().enumerate() {
-        let file = format!("{:05}.jpg", i + 1);
-        std::fs::write(tmp.join(&file), bytes)?;
-        let next = frames.get(i + 1).map(|n| n.0).unwrap_or(ts + 0.6);
-        let dur = (next - ts).clamp(0.001, 2.0);
-        total += dur;
-        list.push_str(&format!("file '{file}'\nduration {dur:.4}\n"));
-    }
-    let last = frames.len();
-    list.push_str(&format!("file '{last:05}.jpg'\n"));
-    std::fs::write(tmp.join("list.txt"), list)?;
-    let out = dir.join(format!("{name}.mp4"));
-    let status = std::process::Command::new("ffmpeg")
-        .args(["-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i"])
-        .arg(tmp.join("list.txt"))
-        .args([
-            "-vf",
-            &format!("scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:white,fps=60"),
-            "-pix_fmt",
-            "yuv420p",
-            "-movflags",
-            "+faststart",
-        ])
-        .arg(&out)
-        .status()?;
-    let _ = std::fs::remove_dir_all(&tmp);
-    if !status.success() {
-        return Err(anyhow!("ffmpeg could not make the clip"));
-    }
-    Ok((format!("{name}.mp4"), (total * 1000.0) as u64))
-}
-
-fn explain(kind: &str, text: &str, outcome: &str, url_after: &str) -> String {
-    let what = if text.is_empty() { format!("an unnamed {kind}") } else { format!("the \"{text}\" {kind}") };
-    let verb = if kind == "input" || kind == "select" { "Clicked into" } else { "Clicked" };
-    match outcome {
-        "new-screen" => format!("{verb} {what}; it opened a new screen ({url_after})."),
-        "changed-in-place" => format!("{verb} {what}; the same screen changed (menu, panel, message or animation)."),
-        "nothing-changed" => format!("{verb} {what}; nothing visible changed."),
-        _ => format!("{verb} {what}; it failed."),
-    }
-}
-
-/// Automatic mode: open the start page, then try every link and button on it one by one,
-/// going back to the start page before each try. Saves the run after every step.
 pub async fn explore(lib: &Library, opts: ExploreOptions, run_id: Option<String>) -> Result<Run> {
     let origin = origin_of(&opts.url);
     let site = url::Url::parse(&opts.url)?.host_str().unwrap_or("site").to_string();
@@ -291,8 +55,7 @@ pub async fn explore(lib: &Library, opts: ExploreOptions, run_id: Option<String>
         components: vec![],
     };
     lib.save(&run)?;
-
-    let result = explore_inner(lib, &opts, &origin, &dir, &mut run).await;
+    let result = launch(lib, &opts, &origin, &dir, &mut run).await;
     run.finished_at = Some(chrono::Local::now().to_rfc3339());
     match result {
         Ok(()) => run.status = "done".into(),
@@ -305,142 +68,147 @@ pub async fn explore(lib: &Library, opts: ExploreOptions, run_id: Option<String>
     Ok(run)
 }
 
-async fn explore_inner(lib: &Library, opts: &ExploreOptions, origin: &str, dir: &Path, run: &mut Run) -> Result<()> {
-    let mut cfg = BrowserConfig::builder().new_headless_mode().window_size(W, H).viewport(None);
+async fn launch(lib: &Library, opts: &ExploreOptions, origin: &str, dir: &Path, run: &mut Run) -> Result<()> {
+    // each recording gets its own Chrome profile, so a Chrome left over from a stopped one never blocks it
+    let profile = std::env::temp_dir().join(format!("agentscreen-{}", run.id));
+    let mut cfg = BrowserConfig::builder()
+        .user_data_dir(&profile)
+        .new_headless_mode()
+        .window_size(W, H)
+        .viewport(None)
+        // say yes to microphone and camera, with a fake device, so those buttons really work
+        .arg("--use-fake-ui-for-media-stream")
+        .arg("--use-fake-device-for-media-stream")
+        .arg("--lang=en-US");
     if let Some(chrome) = find_chrome() {
         cfg = cfg.chrome_executable(chrome);
     }
     let (mut browser, mut handler) = Browser::launch(cfg.build().map_err(|e| anyhow!(e))?).await?;
     let pump = tokio::spawn(async move { while handler.next().await.is_some() {} });
-
-    let outcome = async {
-        let mut tab = Tab::open(&browser).await?;
-        tab.goto(&opts.url).await?;
-        let home_code = tab.screen_code().await;
-        let home_pic = tab.picture().await?;
-        std::fs::write(dir.join("screen-00.jpg"), &home_pic)?;
-        let home_controls = tab.controls(origin).await;
-        run.screens.push(Screen {
-            code: home_code.clone(),
-            url: tab.url().await,
-            title: tab.page.get_title().await.ok().flatten().unwrap_or_default(),
-            picture: "screen-00.jpg".into(),
-            first_step: 0,
-            controls: home_controls.clone(),
-        });
-        lib.save(run)?;
-        // component cards for the start page (controls are marked by the listing above)
-        let cards = components::capture(&tab.page, dir, &home_code, 0, components::FIRST_SCREEN_LIMIT).await;
-        run.components.extend(cards);
-        lib.save(run)?;
-
-        let todo: Vec<Control> = home_controls.iter().filter(|c| !skip(c)).take(opts.max_steps).cloned().collect();
-        let mut fresh = true;
-        for c in todo {
-            let n = run.steps.len() + 1;
-            // start every try from a clean start page, in a new tab if the last one left the website
-            if !fresh {
-                if origin_of(&tab.url().await) != origin {
-                    tab.close().await;
-                    tab = Tab::open(&browser).await?;
-                }
-                tab.goto(&opts.url).await?;
-                tab.controls(origin).await; // re-mark the controls on the fresh page
-            }
-            fresh = false;
-            let url_before = tab.url().await;
-            let before = tab.picture().await?;
-            let sel = format!("[data-as-i=\"{}\"]", c.index);
-            let el = match tab.page.find_element(sel.as_str()).await {
-                Ok(el) => el,
-                Err(_) => continue,
-            };
-            let _ = tab
-                .page
-                .evaluate(format!("document.querySelector('{}')?.removeAttribute('target')", sel.replace('\'', "\\'")))
-                .await;
-            tab.clear();
-            let started = Instant::now();
-            let clicked = async {
-                el.scroll_into_view().await?;
-                el.click().await?;
-                anyhow::Ok(())
-            }
-            .await;
-            tab.wait_still(started).await;
-            let frames = tab.take();
-            let after = tab.picture().await.unwrap_or_else(|_| before.clone());
-            let url_after = tab.url().await;
-            let code_after = tab.screen_code().await;
-            let before_name = format!("step-{n:02}-before.jpg");
-            let after_name = format!("step-{n:02}-after.jpg");
-            std::fs::write(dir.join(&before_name), &before)?;
-            std::fs::write(dir.join(&after_name), &after)?;
-
-            let outcome = if clicked.is_err() {
-                "error"
-            } else if code_after != run.screens[0].code && url_after.split('#').next() != url_before.split('#').next() {
-                "new-screen"
-            } else if short_hash(&after) != short_hash(&before) || frames.len() > 2 {
-                "changed-in-place"
-            } else {
-                "nothing-changed"
-            };
-            if outcome == "new-screen" && !run.screens.iter().any(|s| s.code == code_after) {
-                let pic = format!("screen-{:02}.jpg", run.screens.len());
-                std::fs::write(dir.join(&pic), &after)?;
-                let controls = if origin_of(&url_after) == origin { tab.controls(origin).await } else { vec![] };
-                if !controls.is_empty() {
-                    let start = run.components.len();
-                    let cards = components::capture(&tab.page, dir, &code_after, start, components::OTHER_SCREEN_LIMIT).await;
-                    run.components.extend(cards);
-                }
-                run.screens.push(Screen {
-                    code: code_after.clone(),
-                    url: url_after.clone(),
-                    title: tab.page.get_title().await.ok().flatten().unwrap_or_default(),
-                    picture: pic,
-                    first_step: n,
-                    controls,
-                });
-            }
-            let (clip, clip_ms) = if frames.is_empty() {
-                (None, 0)
-            } else {
-                match write_clip(dir, &format!("step-{n:02}"), &before, &frames) {
-                    Ok((f, ms)) => (Some(f), ms),
-                    Err(_) => (None, 0),
-                }
-            };
-            if let Some(ctrl) = run.screens[0].controls.iter_mut().find(|x| x.index == c.index) {
-                ctrl.tried = true;
-            }
-            run.steps.push(Step {
-                n,
-                action: if c.kind == "input" || c.kind == "select" { "focus".into() } else { "click".into() },
-                control_kind: c.kind.clone(),
-                control_text: c.text.clone(),
-                screen_before: run.screens[0].code.clone(),
-                screen_after: code_after,
-                url_before,
-                url_after: url_after.clone(),
-                outcome: outcome.into(),
-                explanation: explain(&c.kind, &c.text, outcome, &url_after),
-                before: before_name,
-                after: after_name,
-                clip,
-                clip_ms,
-                frames: frames.len(),
-            });
-            lib.save(run)?;
-        }
-        tab.close().await;
-        anyhow::Ok(())
+    for name in ["microphone", "camera", "geolocation", "notifications", "clipboard-read", "clipboard-write"] {
+        let _ = browser.execute(SetPermissionParams::new(PermissionDescriptor::new(name), PermissionSetting::Granted)).await;
     }
-    .await;
-
+    let outcome = crawl(&browser, opts, Ctx { lib, dir, origin, run }).await;
     let _ = browser.close().await;
     let _ = browser.wait().await;
     pump.abort();
+    let _ = std::fs::remove_dir_all(&profile);
     outcome
+}
+
+/// Load a screen again and, when the try is inside a menu, open that menu first.
+async fn reset(browser: &Browser, tab: &mut Tab, url: &str, origin: &str, via: &Option<Control>) -> Result<Vec<Control>> {
+    if !same_site(&tab.url().await, origin) {
+        // clicks stop reaching pages after a tab moves between websites, so take a fresh tab
+        let old = std::mem::replace(tab, Tab::open(browser).await?);
+        old.close().await;
+    }
+    tab.goto(url).await?;
+    let mut list = tab.controls(origin).await;
+    if let Some(v) = via {
+        if let Some(c) = list.iter().find(|c| key(c) == key(v)) {
+            if let Ok(el) = tab.page.find_element(format!("[data-as-i=\"{}\"]", c.index)).await {
+                let _ = el.click().await;
+                tab.wait_still(Instant::now()).await;
+                list = tab.controls(origin).await;
+            }
+        }
+    }
+    Ok(list)
+}
+
+async fn crawl(browser: &Browser, opts: &ExploreOptions, mut cx: Ctx<'_>) -> Result<()> {
+    let mut tab = Tab::open(browser).await?;
+    // (address, is this a second visit for the controls left over)
+    let mut queue: VecDeque<(String, bool)> = VecDeque::from([(opts.url.clone(), false)]);
+    let mut seen_urls: HashSet<String> = HashSet::from([bare(&opts.url)]);
+    let mut explored: HashSet<String> = HashSet::new();
+    let mut tried: HashSet<(String, String, String)> = HashSet::new();
+
+    while let Some((url, again)) = queue.pop_front() {
+        if cx.run.steps.len() >= opts.max_steps || explored.len() >= MAX_SCREENS {
+            break;
+        }
+        let mut list = reset(browser, &mut tab, &url, cx.origin, &None).await?;
+        let code = tab.screen_code().await;
+        if !again && !explored.insert(code.clone()) {
+            continue;
+        }
+        if !cx.run.screens.iter().any(|s| s.code == code) {
+            let pic = tab.picture().await?;
+            let (n, here) = (cx.run.steps.len(), tab.url().await);
+            cx.new_screen(&mut tab, &code, &here, &pic, n, true).await?;
+            list = tab.controls(cx.origin).await;
+        }
+        let mut outside = 0;
+        let mut todo: VecDeque<Try> = VecDeque::new();
+        for c in list.iter().filter(|c| !skip(c)) {
+            if c.external {
+                if outside >= OUTSIDE_PER_SCREEN {
+                    continue;
+                }
+                outside += 1;
+            }
+            if c.href.as_ref().is_some_and(|h| seen_urls.contains(&bare(h))) || tried.contains(&key(c)) {
+                continue; // the same control (or an address already reached) was tried on another screen
+            }
+            todo.push_back(Try { via: None, target: c.clone() });
+        }
+        // search boxes first: a search opens the most screens
+        todo.make_contiguous().sort_by_key(|t| !t.target.search);
+        if todo.len() > PER_SCREEN {
+            todo.truncate(PER_SCREEN);
+            queue.push_back((url.clone(), true)); // come back for the rest after going deeper
+        }
+        for t in &todo {
+            tried.insert(key(&t.target));
+        }
+
+        let mut fresh = true;
+        while let Some(t) = todo.pop_front() {
+            if cx.run.steps.len() >= opts.max_steps {
+                break;
+            }
+            let now = if fresh && t.via.is_none() { list.clone() } else { reset(browser, &mut tab, &url, cx.origin, &t.via).await? };
+            fresh = false;
+            let Some(c) = now.iter().find(|c| key(c) == key(&t.target)).cloned() else { continue };
+            let Ok(el) = tab.page.find_element(format!("[data-as-i=\"{}\"]", c.index)).await else { continue };
+            let _ = tab.page.evaluate(format!("document.querySelector('[data-as-i=\"{}\"]')?.removeAttribute('target')", c.index)).await;
+
+            let led = if c.search {
+                cx.step(&mut tab, &el, &c, Act::Type(&opts.query), &code).await?;
+                if cx.run.steps.len() >= opts.max_steps {
+                    break;
+                }
+                cx.step(&mut tab, &el, &c, Act::Enter, &code).await?
+            } else {
+                cx.step(&mut tab, &el, &c, Act::Click, &code).await?
+            };
+
+            if led.outcome == "new-screen" && led.same_site && seen_urls.insert(bare(&led.url)) {
+                // new screens go before second visits, so the explorer goes deeper first
+                let at = queue.iter().position(|q| q.1).unwrap_or(queue.len());
+                queue.insert(at, (led.url.clone(), false));
+            } else if led.outcome == "changed-in-place" && t.via.is_none() && !c.search {
+                // a menu or panel opened: try what appeared inside it, opening it again before each try
+                let after = tab.controls(cx.origin).await;
+                let before: HashSet<_> = now.iter().map(key).collect();
+                let new: Vec<Control> = after
+                    .into_iter()
+                    .filter(|x| !before.contains(&key(x)) && !skip(x) && !x.external && tried.insert(key(x)))
+                    .take(INSIDE_MENU)
+                    .collect();
+                for (k, x) in new.into_iter().enumerate() {
+                    todo.insert(k, Try { via: Some(c.clone()), target: x });
+                }
+            }
+        }
+    }
+    tab.close().await;
+    Ok(())
+}
+
+/// An address without its # part and trailing slash, to tell whether it was reached before.
+fn bare(u: &str) -> String {
+    u.split('#').next().unwrap_or("").trim_end_matches('/').to_string()
 }
