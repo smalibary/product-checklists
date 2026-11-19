@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 18,
+ "next": 25,
  "asks": [
   {
    "id": 2,
@@ -187,6 +187,652 @@
    "status": "done",
    "note": "Answered: parts 1 and 2 built; Dribbble stopped at a robot check; choice asked",
    "updated": "2026-11-19T11:59:46.134Z"
+  },
+  {
+   "id": 18,
+   "at": "2026-11-19T12:10:41.372Z",
+   "text": "how much work left ?! im curious i thought this going to be something small?!",
+   "status": "done",
+   "note": "Answered: 2 of 7 built, part 3 nearly done, 4 left",
+   "updated": "2026-11-19T12:11:12.220Z"
+  },
+  {
+   "id": 19,
+   "at": "2026-11-19T12:21:40.286Z",
+   "text": "go ahead",
+   "status": "done",
+   "note": "Parts 5-7 built: best-version sign-up, Dribbble's style, side by side with the audit",
+   "updated": "2026-11-19T12:38:47.227Z"
+  },
+  {
+   "id": 20,
+   "at": "2026-11-19T13:57:03.188Z",
+   "text": "how did you get the comperhesnive checklist for the signup ?!",
+   "status": "done",
+   "note": "Explained where the sign-up checklist came from",
+   "updated": "2026-11-19T13:57:13.041Z"
+  },
+  {
+   "id": 21,
+   "at": "2026-11-19T13:58:05.322Z",
+   "text": "so in total how many in the list?",
+   "status": "done",
+   "note": "Answered: 65 items",
+   "updated": "2026-11-19T13:58:09.670Z"
+  },
+  {
+   "id": 22,
+   "at": "2026-11-19T13:58:33.613Z",
+   "text": "can you list all of them in a note and open it??",
+   "status": "done",
+   "parts": [
+    {
+     "name": "write the list",
+     "done": true
+    },
+    {
+     "name": "open it",
+     "done": true
+    }
+   ],
+   "note": "List note written and opened in Notepad",
+   "updated": "2026-11-19T13:58:43.914Z"
+  },
+  {
+   "id": 23,
+   "at": "2026-11-19T14:00:32.158Z",
+   "text": "ok i want you to do same for everything in here : do one by one  , create note , all put them in repo/note folder ... \n\n\n\n[pasted text]",
+   "status": "done",
+   "parts": [
+    {
+     "name": "Website: Security",
+     "done": true
+    },
+    {
+     "name": "Website: Event Page",
+     "done": true
+    },
+    {
+     "name": "Website: About",
+     "done": true
+    },
+    {
+     "name": "Website: Privacy",
+     "done": true
+    },
+    {
+     "name": "Website: Features",
+     "done": true
+    },
+    {
+     "name": "Website: Testimonials",
+     "done": true
+    },
+    {
+     "name": "Website: Affiliate",
+     "done": true
+    },
+    {
+     "name": "Website: Coming Soon",
+     "done": true
+    },
+    {
+     "name": "Website: Compare",
+     "done": true
+    },
+    {
+     "name": "Website: Status",
+     "done": true
+    },
+    {
+     "name": "Website: Billing",
+     "done": true
+    },
+    {
+     "name": "Website: Landing Page",
+     "done": true
+    },
+    {
+     "name": "Website: Waitlist",
+     "done": true
+    },
+    {
+     "name": "Website: Press / Media",
+     "done": true
+    },
+    {
+     "name": "Website: Team",
+     "done": true
+    },
+    {
+     "name": "Website: Cart",
+     "done": true
+    },
+    {
+     "name": "Website: Footer",
+     "done": true
+    },
+    {
+     "name": "Website: Search",
+     "done": true
+    },
+    {
+     "name": "Website: Careers",
+     "done": true
+    },
+    {
+     "name": "Website: Blog Post",
+     "done": true
+    },
+    {
+     "name": "Website: Contact Us",
+     "done": true
+    },
+    {
+     "name": "Website: Pricing",
+     "done": true
+    },
+    {
+     "name": "Website: FAQ",
+     "done": true
+    },
+    {
+     "name": "Website: 404",
+     "done": true
+    },
+    {
+     "name": "Website: Login",
+     "done": true
+    },
+    {
+     "name": "Website: Blog",
+     "done": true
+    },
+    {
+     "name": "Website: Sign up",
+     "done": true
+    },
+    {
+     "name": "Web app: Upgrade",
+     "done": true
+    },
+    {
+     "name": "Web app: 2FA",
+     "done": true
+    },
+    {
+     "name": "Web app: Notification Settings",
+     "done": true
+    },
+    {
+     "name": "Web app: Account",
+     "done": true
+    },
+    {
+     "name": "Web app: Help Center",
+     "done": true
+    },
+    {
+     "name": "Web app: Billing",
+     "done": true
+    },
+    {
+     "name": "Web app: Settings",
+     "done": true
+    },
+    {
+     "name": "Web app: User Management",
+     "done": true
+    },
+    {
+     "name": "Web app: Single Item Detail",
+     "done": true
+    },
+    {
+     "name": "Web app: Admin Panel",
+     "done": true
+    },
+    {
+     "name": "Web app: Empty State",
+     "done": true
+    },
+    {
+     "name": "Web app: Data Table",
+     "done": true
+    },
+    {
+     "name": "Web app: Analytics",
+     "done": true
+    },
+    {
+     "name": "Web app: Onboarding",
+     "done": true
+    },
+    {
+     "name": "Web app: Notifications",
+     "done": true
+    },
+    {
+     "name": "Web app: Public Profile",
+     "done": true
+    },
+    {
+     "name": "Web app: Timeline / Gantt View",
+     "done": true
+    },
+    {
+     "name": "Web app: Feed",
+     "done": true
+    },
+    {
+     "name": "Web app: Report View",
+     "done": true
+    },
+    {
+     "name": "Web app: API Keys",
+     "done": true
+    },
+    {
+     "name": "Web app: Search Results",
+     "done": true
+    },
+    {
+     "name": "Web app: Integrations",
+     "done": true
+    },
+    {
+     "name": "Web app: Audit Log",
+     "done": true
+    },
+    {
+     "name": "Web app: Version History",
+     "done": true
+    },
+    {
+     "name": "Web app: Comments",
+     "done": true
+    },
+    {
+     "name": "Web app: Multi-step form",
+     "done": true
+    },
+    {
+     "name": "Web app: Dashboard",
+     "done": true
+    },
+    {
+     "name": "Web app: Kanban board",
+     "done": true
+    },
+    {
+     "name": "Web app: Checkout",
+     "done": true
+    },
+    {
+     "name": "Web app: Chat",
+     "done": true
+    },
+    {
+     "name": "Web app: Maintenance",
+     "done": true
+    },
+    {
+     "name": "Web app: Pricing",
+     "done": true
+    },
+    {
+     "name": "Web app: Login",
+     "done": true
+    },
+    {
+     "name": "Web app: Document View",
+     "done": true
+    },
+    {
+     "name": "Web app: List View",
+     "done": true
+    },
+    {
+     "name": "Web app: Reporting",
+     "done": true
+    },
+    {
+     "name": "Web app: Feedback",
+     "done": true
+    },
+    {
+     "name": "Web app: Home",
+     "done": true
+    },
+    {
+     "name": "Design system: Drawer",
+     "done": true
+    },
+    {
+     "name": "Design system: Typography",
+     "done": true
+    },
+    {
+     "name": "Design system: Accessibility",
+     "done": true
+    },
+    {
+     "name": "Design system: Date Picker",
+     "done": true
+    },
+    {
+     "name": "Design system: Spacing / Grid",
+     "done": true
+    },
+    {
+     "name": "Design system: Breadcrumb",
+     "done": true
+    },
+    {
+     "name": "Design system: Alert",
+     "done": true
+    },
+    {
+     "name": "Design system: Color System",
+     "done": true
+    },
+    {
+     "name": "Design system: Tokens",
+     "done": true
+    },
+    {
+     "name": "Design system: Accordion",
+     "done": true
+    },
+    {
+     "name": "Design system: Skeleton",
+     "done": true
+    },
+    {
+     "name": "Design system: Carousel",
+     "done": true
+    },
+    {
+     "name": "Design system: Banner",
+     "done": true
+    },
+    {
+     "name": "Design system: Slider",
+     "done": true
+    },
+    {
+     "name": "Design system: Toast",
+     "done": true
+    },
+    {
+     "name": "Design system: Tabs",
+     "done": true
+    },
+    {
+     "name": "Design system: Checkbox",
+     "done": true
+    },
+    {
+     "name": "Design system: Radio",
+     "done": true
+    },
+    {
+     "name": "Design system: Searchbar",
+     "done": true
+    },
+    {
+     "name": "Design system: Tooltip",
+     "done": true
+    },
+    {
+     "name": "Design system: Modal",
+     "done": true
+    },
+    {
+     "name": "Design system: Loading",
+     "done": true
+    },
+    {
+     "name": "Design system: Toggle",
+     "done": true
+    },
+    {
+     "name": "Design system: Input Field",
+     "done": true
+    },
+    {
+     "name": "Design system: Icon",
+     "done": true
+    },
+    {
+     "name": "Design system: Table",
+     "done": true
+    },
+    {
+     "name": "Design system: Card",
+     "done": true
+    },
+    {
+     "name": "Design system: Button",
+     "done": true
+    },
+    {
+     "name": "Design system: Badge",
+     "done": true
+    },
+    {
+     "name": "Design system: Avatar",
+     "done": true
+    },
+    {
+     "name": "Design system: Dropdown Menu",
+     "done": true
+    },
+    {
+     "name": "Design system: Stepper",
+     "done": true
+    },
+    {
+     "name": "Mobile: Push Notif. Opt-in",
+     "done": true
+    },
+    {
+     "name": "Mobile: Gesture navigation",
+     "done": true
+    },
+    {
+     "name": "Mobile: Splash Screen",
+     "done": true
+    },
+    {
+     "name": "Mobile: Checkout",
+     "done": true
+    },
+    {
+     "name": "Mobile: Tab Bar Navigation",
+     "done": true
+    },
+    {
+     "name": "Mobile: In-App Notifications",
+     "done": true
+    },
+    {
+     "name": "Mobile: Action Sheet",
+     "done": true
+    },
+    {
+     "name": "Mobile: Billing",
+     "done": true
+    },
+    {
+     "name": "Mobile: Search",
+     "done": true
+    },
+    {
+     "name": "Mobile: Camera",
+     "done": true
+    },
+    {
+     "name": "Mobile: Map View",
+     "done": true
+    },
+    {
+     "name": "Mobile: Onboarding Checklist",
+     "done": true
+    },
+    {
+     "name": "Mobile: Paywall",
+     "done": true
+    },
+    {
+     "name": "Mobile: Onboarding",
+     "done": true
+    },
+    {
+     "name": "Mobile: Dashboard",
+     "done": true
+    },
+    {
+     "name": "Mobile: Profile",
+     "done": true
+    },
+    {
+     "name": "Mobile: Chat",
+     "done": true
+    },
+    {
+     "name": "Mobile: Settings",
+     "done": true
+    },
+    {
+     "name": "Mobile: In-App Browser",
+     "done": true
+    },
+    {
+     "name": "Mobile: Cart",
+     "done": true
+    },
+    {
+     "name": "Mobile: Login",
+     "done": true
+    },
+    {
+     "name": "Mobile: Sign up",
+     "done": true
+    },
+    {
+     "name": "Mobile: Account",
+     "done": true
+    },
+    {
+     "name": "Mobile: Upgrade",
+     "done": true
+    },
+    {
+     "name": "Mobile: Activity Feed",
+     "done": true
+    },
+    {
+     "name": "Mobile: Feedback",
+     "done": true
+    },
+    {
+     "name": "Mobile: Referral",
+     "done": true
+    },
+    {
+     "name": "Mobile: Invite",
+     "done": true
+    },
+    {
+     "name": "Flows: Adding to cart",
+     "done": true
+    },
+    {
+     "name": "Flows: Uploading media",
+     "done": true
+    },
+    {
+     "name": "Flows: Verifying account",
+     "done": true
+    },
+    {
+     "name": "Flows: Canceling subscription",
+     "done": true
+    },
+    {
+     "name": "Flows: Filtering items",
+     "done": true
+    },
+    {
+     "name": "Flows: Saving changes",
+     "done": true
+    },
+    {
+     "name": "Flows: Entering promo code",
+     "done": true
+    },
+    {
+     "name": "Flows: Showing input error",
+     "done": true
+    },
+    {
+     "name": "Flows: Resetting password",
+     "done": true
+    },
+    {
+     "name": "Flows: Deleting account",
+     "done": true
+    },
+    {
+     "name": "Flows: Contacting support",
+     "done": true
+    },
+    {
+     "name": "Flows: Making a card payment",
+     "done": true
+    },
+    {
+     "name": "Flows: Submitting a form",
+     "done": true
+    }
+   ],
+   "note": "138 of 138 notes in note/, links checked",
+   "updated": "2026-11-19T14:27:23.500Z"
+  },
+  {
+   "id": 24,
+   "at": "2026-11-19T14:37:54.766Z",
+   "text": "Create artifact to display all those lists",
+   "status": "done",
+   "note": "Checklists page published",
+   "updated": "2026-11-19T14:39:50.926Z",
+   "parts": [
+    {
+     "name": "Website (27)",
+     "done": true
+    },
+    {
+     "name": "Web app (38)",
+     "done": true
+    },
+    {
+     "name": "Design system (32)",
+     "done": true
+    },
+    {
+     "name": "Mobile (28)",
+     "done": true
+    },
+    {
+     "name": "Flows (13)",
+     "done": true
+    },
+    {
+     "name": "Published",
+     "done": true
+    }
+   ]
   }
  ]
 }

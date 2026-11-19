@@ -1,0 +1,195 @@
+<title>Design Checklists</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a field manual. Sticky toolbar, list index on the left, one checklist at a time on the right. */
+:root{
+  --bg:#f5f6f8; --panel:#ffffff; --ink:#151a22; --muted:#5a6472; --line:#dde1e8; --hover:#eceff4;
+  --accent:#0d6b64; --accent-soft:#dcefed;
+  --rule:#b3261e; --rule-bg:#fbe9e7; --std:#1d5bbd; --std-bg:#e5eefb; --res:#7b3fb3; --res-bg:#f1e8fa; --prac:#5f6977; --prac-bg:#eceef2;
+  --f-head:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1318; --panel:#161b22; --ink:#e7ebf0; --muted:#97a1ae; --line:#2a313b; --hover:#1e252e;
+  --accent:#4cc2b6; --accent-soft:#16332f;
+  --rule:#f2857b; --rule-bg:#3a1c1a; --std:#7fb0ff; --std-bg:#18263d; --res:#c9a0f2; --res-bg:#2b1e3a; --prac:#a3acb8; --prac-bg:#232a33; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1318; --panel:#161b22; --ink:#e7ebf0; --muted:#97a1ae; --line:#2a313b; --hover:#1e252e;
+  --accent:#4cc2b6; --accent-soft:#16332f;
+  --rule:#f2857b; --rule-bg:#3a1c1a; --std:#7fb0ff; --std-bg:#18263d; --res:#c9a0f2; --res-bg:#2b1e3a; --prac:#a3acb8; --prac-bg:#232a33; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--panel)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--panel);border-bottom:1px solid var(--line);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:12px}
+.bar-in{max-width:84rem;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.brand{display:flex;flex-direction:column;min-width:0;margin-right:auto}
+.brand h1{font:700 1.3rem/1.1 var(--f-head);letter-spacing:.01em;margin:0}
+.brand span{font:12px/1.4 var(--f-mono);color:var(--muted)}
+.search{flex:1 1 16rem;max-width:26rem;position:relative}
+.search input{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+.search input:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px var(--accent-soft)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 12.5px/1 var(--f-body);border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:7px 11px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.chip i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.chip[aria-pressed="true"]{color:var(--ink);border-color:var(--ink)}
+.chip:hover{background:var(--hover)}
+.wrap{max-width:84rem;margin:0 auto;display:grid;grid-template-columns:17rem minmax(0,1fr);gap:28px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 84px);align-self:start;max-height:calc(100vh - 110px);overflow:auto;padding-right:4px}
+.navtoggle{display:none}
+.grp{margin-bottom:18px}
+.grp h2{font:600 11.5px/1 var(--f-body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 6px;display:flex;justify-content:space-between}
+.grp a{display:flex;justify-content:space-between;gap:8px;text-decoration:none;padding:5px 8px;border-radius:6px;font-size:14px}
+.grp a span{font:12px var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.grp a:hover{background:var(--hover)}
+.grp a[aria-current="page"]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+main{min-width:0}
+.eyebrow{font:600 12px/1 var(--f-body);letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+.lhead h2{font:700 2.1rem/1.1 var(--f-head);margin:8px 0 6px;text-wrap:balance}
+.lhead p{color:var(--muted);margin:0 0 16px;max-width:65ch}
+.mix{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--line);max-width:36rem}
+.mix b{display:block}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;margin:8px 0 0;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.legend strong{color:var(--ink);font-weight:600}
+.sec{margin-top:28px}
+.sec h3{font:600 1.05rem/1.2 var(--f-head);letter-spacing:.02em;text-transform:uppercase;margin:0 0 4px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+ol.items{list-style:none;margin:0;padding:0}
+.item{display:grid;grid-template-columns:2.2rem minmax(0,1fr);gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.num{font:500 13px/1.6 var(--f-mono);color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+.txt{min-width:0}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:5px;align-items:center}
+.tag{font:600 11px/1 var(--f-body);letter-spacing:.05em;text-transform:uppercase;padding:4px 7px;border-radius:4px}
+.L{color:var(--rule);background:var(--rule-bg)} .S{color:var(--std);background:var(--std-bg)}
+.R{color:var(--res);background:var(--res-bg)} .P{color:var(--prac);background:var(--prac-bg)}
+.src{font:12px/1.4 var(--f-mono);color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--muted)}
+.src:hover{color:var(--accent);border-color:var(--accent)}
+mark{background:var(--accent-soft);color:inherit;border-radius:2px}
+.srclist{margin-top:36px;padding-top:12px;border-top:2px solid var(--ink)}
+.srclist h3{font:600 1.05rem var(--f-head);text-transform:uppercase;letter-spacing:.02em;margin:0 0 8px}
+.srclist ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.srclist li{display:grid;grid-template-columns:minmax(8rem,14rem) minmax(0,1fr);gap:10px;font-size:13px}
+.srclist li code{font:12px var(--f-mono);color:var(--muted)}
+.srclist li a{overflow-wrap:anywhere;color:var(--accent)}
+.hits h2{font:700 1.5rem var(--f-head);margin:0 0 4px}
+.hitgrp{margin-top:22px}
+.hitgrp h3{font:600 1rem var(--f-head);margin:0}
+.hitgrp h3 a{text-decoration:none}
+.hitgrp h3 a:hover{color:var(--accent)}
+.hitgrp .g{font:12px var(--f-mono);color:var(--muted);margin-left:8px}
+.empty{color:var(--muted);padding:32px 0}
+.foot{margin-top:40px;font-size:13px;color:var(--muted);max-width:65ch}
+@media (max-width:860px){
+  .wrap{grid-template-columns:minmax(0,1fr);gap:16px}
+  nav{position:static;max-height:none}
+  nav .lists{display:none} nav.open .lists{display:block}
+  .navtoggle{display:flex;width:100%;justify-content:space-between;font:600 14px var(--f-body);color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;cursor:pointer;margin-bottom:10px}
+  .lhead h2{font-size:1.7rem}
+  .srclist li{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:no-preference){.grp a,.chip{transition:background .12s}}
+</style>
+
+<header class="bar"><div class="bar-in">
+  <div class="brand"><h1>Design Checklists</h1><span id="stats">Loading…</span></div>
+  <div class="search"><input id="q" type="search" placeholder="Search every checklist (try: contrast, mada, cancel)" aria-label="Search every checklist"></div>
+  <div class="chips" id="chips" role="group" aria-label="Show items by backing"></div>
+</div></header>
+
+<div class="wrap">
+  <nav id="nav" aria-label="Checklists">
+    <button class="navtoggle" id="navtoggle" aria-expanded="false"><span id="navlabel">All checklists</span><span>▾</span></button>
+    <div class="lists" id="lists"></div>
+  </nav>
+  <main id="main"><p class="empty">Loading the checklists…</p></main>
+</div>
+
+<script>
+const GROUPS={"website":"Website","web-app":"Web app","design-system":"Design system","mobile":"Mobile","flows":"Flows"};
+const BACK={L:["Rule","A store or a law requires it"],S:["Standard","A published standard"],R:["Research","Usability studies"],P:["Practice","Good practice, no study found"]};
+const VAR={L:"--rule",S:"--std",R:"--res",P:"--prac"};
+let DATA=[], BY={}, on=new Set(Object.keys(BACK));
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const count=l=>l.sections.reduce((n,s)=>n+s.items.length,0);
+
+function store(k,v){try{v===undefined?null:localStorage.setItem(k,JSON.stringify(v));return JSON.parse(localStorage.getItem(k))}catch(e){return null}}
+
+function chips(){
+  $("chips").innerHTML=Object.entries(BACK).map(([k,[n,d]])=>
+    `<button class="chip" data-k="${k}" aria-pressed="${on.has(k)}" title="${d}"><i style="background:var(${VAR[k]})"></i>${n}</button>`).join("");
+  $("chips").querySelectorAll("button").forEach(b=>b.onclick=()=>{
+    const k=b.dataset.k; on.has(k)&&on.size>1?on.delete(k):on.add(k); store("on",[...on]); chips(); render();});
+}
+
+function nav(cur){
+  $("lists").innerHTML=Object.entries(GROUPS).map(([g,name])=>{
+    const ls=DATA.filter(l=>l.group===g);
+    return `<div class="grp"><h2><span>${name}</span><span>${ls.length}</span></h2>`+
+      ls.map(l=>`<a href="#${l.id}" ${l.id===cur?'aria-current="page"':""}>${esc(l.title.replace(/ \(flow\)$/,""))}<span>${count(l)}</span></a>`).join("")+`</div>`;
+  }).join("");
+  const c=BY[cur]; $("navlabel").textContent=c?`${GROUPS[c.group]} · ${c.title}`:"All checklists";
+}
+
+function tags(it,srcs){
+  return `<div class="meta"><span class="tag ${it.b}">${BACK[it.b][0]}</span>`+
+    it.k.map(k=>srcs[k]?`<a class="src" href="${esc(srcs[k])}" target="_blank" rel="noopener">${esc(k)}</a>`:`<span class="src">${esc(k)}</span>`).join("")+`</div>`;
+}
+
+function showList(l){
+  const all=l.sections.flatMap(s=>s.items), n=all.length, c={L:0,S:0,R:0,P:0}; all.forEach(i=>c[i.b]++);
+  let num=0, shown=0;
+  const secs=l.sections.map(s=>{
+    const rows=s.items.map(it=>{num++; if(!on.has(it.b))return ""; shown++;
+      return `<li class="item"><span class="num">${num}</span><div class="txt">${esc(it.t)}${tags(it,l.sources)}</div></li>`}).join("");
+    return rows?`<section class="sec"><h3>${esc(s.name)}</h3><ol class="items">${rows}</ol></section>`:"";
+  }).join("");
+  const used=Object.entries(l.sources);
+  $("main").innerHTML=`<div class="lhead"><div class="eyebrow">${GROUPS[l.group]} · ${n} items</div><h2>${esc(l.title)}</h2><p>${esc(l.about)}</p>
+    <div class="mix" role="img" aria-label="${Object.keys(c).map(k=>c[k]+" "+BACK[k][0]).join(", ")}">${Object.keys(c).map(k=>c[k]?`<b style="flex:${c[k]};background:var(${VAR[k]})"></b>`:"").join("")}</div>
+    <div class="legend">${Object.keys(c).map(k=>`<span><strong>${c[k]}</strong> ${BACK[k][0]}</span>`).join("")}${shown<n?`<span>· showing ${shown}</span>`:""}</div></div>
+    ${secs||`<p class="empty">No items with this backing here.</p>`}
+    ${used.length?`<div class="srclist"><h3>Sources</h3><ul>${used.map(([k,u])=>`<li><code>${esc(k)}</code><a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,""))}</a></li>`).join("")}</ul></div>`:""}
+    <p class="foot">Rule = a store or a law requires it. Standard = a published standard (WCAG, OWASP, NIST, platform guidelines). Research = usability studies (Nielsen Norman Group, Baymard). Practice = good practice with no study found.</p>`;
+}
+
+function showSearch(q){
+  const words=q.toLowerCase().split(/\s+/).filter(Boolean), re=new RegExp("("+words.map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")).join("|")+")","gi");
+  let total=0;
+  const out=DATA.map(l=>{
+    let num=0; const hits=[];
+    l.sections.forEach(s=>s.items.forEach(it=>{num++; const hay=(it.t+" "+it.k.join(" ")+" "+s.name+" "+l.title).toLowerCase();
+      if(on.has(it.b)&&words.every(w=>hay.includes(w)))hits.push([num,it,s.name]);}));
+    total+=hits.length; if(!hits.length)return "";
+    return `<div class="hitgrp"><h3><a href="#${l.id}">${esc(l.title)}</a><span class="g">${GROUPS[l.group]} · ${hits.length}</span></h3><ol class="items">`+
+      hits.map(([n,it])=>`<li class="item"><span class="num">${n}</span><div class="txt">${esc(it.t).replace(re,"<mark>$1</mark>")}${tags(it,l.sources)}</div></li>`).join("")+`</ol></div>`;
+  }).join("");
+  $("main").innerHTML=`<div class="hits"><div class="eyebrow">Search</div><h2>${total} items match “${esc(q)}”</h2></div>${out||`<p class="empty">Nothing matches. Try a shorter word, or turn the backing filters back on.</p>`}`;
+}
+
+function render(){
+  const q=$("q").value.trim();
+  const id=location.hash.slice(1); const cur=BY[id]?id:DATA[0].id;
+  nav(q?"":cur);
+  q?showSearch(q):showList(BY[cur]);
+}
+
+$("navtoggle").onclick=()=>{const n=$("nav");n.classList.toggle("open");$("navtoggle").setAttribute("aria-expanded",n.classList.contains("open"))};
+$("lists").addEventListener("click",e=>{if(e.target.closest("a")){$("q").value="";$("nav").classList.remove("open");$("navtoggle").setAttribute("aria-expanded","false");scrollTo(0,0)}});
+$("q").addEventListener("input",render);
+addEventListener("hashchange",()=>{$("q").value="";render();scrollTo(0,0)});
+
+fetch("checklists.json").then(r=>r.json()).then(d=>{
+  DATA=d; d.forEach(l=>BY[l.id]=l);
+  const saved=store("on"); if(Array.isArray(saved)&&saved.length)on=new Set(saved.filter(k=>BACK[k]));
+  const items=d.reduce((n,l)=>n+count(l),0), c={L:0,S:0,R:0,P:0};
+  d.forEach(l=>l.sections.forEach(s=>s.items.forEach(i=>c[i.b]++)));
+  $("stats").textContent=`${d.length} checklists · ${items} items · ${c.L} rules · ${c.S} standards · ${c.R} research · ${c.P} practice`;
+  chips(); render();
+}).catch(()=>{$("main").innerHTML=`<p class="empty">The checklists could not be loaded. Reload the page to try again.</p>`});
+</script>

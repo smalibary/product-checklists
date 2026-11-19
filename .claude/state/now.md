@@ -1,7 +1,7 @@
-Status: best version 7 of 7 built / 138 checklist notes written in note/ / doing: nothing, waiting for Salem
+Status: best version 7 of 7 built / 138 checklists on one page (claude.ai/artifact/PU86W5cQykqVZQaQPJs8k4) / doing: nothing, waiting for Salem
 
 ## Running
-- Nothing running. Library server on http://127.0.0.1:4477.
+- Nothing running. Library server stopped for low memory (2026-11-20); restart only when Salem asks.
 
 ## Helpers
 - None open.
