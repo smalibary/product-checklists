@@ -34,8 +34,8 @@ export async function getRun(id: string): Promise<Run | null> {
   return r.ok ? r.json() : null
 }
 export type Flow = "explore" | "sign-up"
-export async function startRecording(url: string, steps: number, flow: Flow = "explore"): Promise<string> {
-  const r = await fetch("/api/record", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ url, steps, flow }) })
+export async function startRecording(url: string, steps: number, flow: Flow = "explore", real = false): Promise<string> {
+  const r = await fetch("/api/record", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ url, steps, flow, real }) })
   if (!r.ok) throw new Error(await r.text())
   return (await r.json()).id
 }

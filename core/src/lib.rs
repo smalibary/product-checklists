@@ -2,6 +2,8 @@
 pub mod chrome;
 pub mod components;
 pub mod describe;
+pub mod form;
+pub mod inbox;
 pub mod livecopy;
 pub mod recorder;
 pub mod signup;

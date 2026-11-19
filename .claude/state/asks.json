@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 17,
+ "next": 18,
  "asks": [
   {
    "id": 2,
@@ -179,6 +179,14 @@
    "status": "done",
    "note": "Part 1 built and tested on Dribbble; part 2 needs his test inbox choice",
    "updated": "2026-11-19T11:11:06.764Z"
+  },
+  {
+   "id": 17,
+   "at": "2026-11-19T11:59:18.228Z",
+   "text": "where u at now ?!",
+   "status": "done",
+   "note": "Answered: parts 1 and 2 built; Dribbble stopped at a robot check; choice asked",
+   "updated": "2026-11-19T11:59:46.134Z"
   }
  ]
 }

@@ -23,3 +23,4 @@
 | 2026-11-19 | "Account already exists": the best version uses the helpful message for ordinary apps, the private one for sensitive apps | Real trade-off between usability (practice) and privacy (OWASP) | Claude (clear answer) |
 | 2026-11-19 | Best version: recordings make a real account with a throwaway test email, one per site, reading the code from a test inbox; at a robot check the recording stops and says so | Salem chose full sign-up so every step can be judged | Salem |
 | 2026-11-19 | Best version: measured items judged automatically, the rest by Claude in a session (no AI cost per recording) | Salem chose the recommended option | Salem |
+| 2026-11-19 | Test inbox: a free throwaway inbox (mail.tm), one new address per recording; capped at 20 a day in code | Salem chose the recommended option; nothing to set up | Salem |

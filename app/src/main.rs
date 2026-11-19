@@ -27,15 +27,16 @@ async fn main() -> anyhow::Result<()> {
             report(&run);
         }
         Some("signup") => {
-            let url = args.get(1).ok_or_else(|| anyhow::anyhow!("usage: agentscreen signup <url> [test inbox email]"))?;
-            let run = record_signup(&lib, url, None, args.get(2).cloned()).await?;
+            let url = args.get(1).ok_or_else(|| anyhow::anyhow!("usage: agentscreen signup <url> [--real]"))?;
+            let real = args.iter().any(|a| a == "--real");
+            let run = record_signup(&lib, url, None, real).await?;
             report(&run);
         }
         Some("serve") | None => {
             let port: u16 = args.get(1).and_then(|s| s.parse().ok()).unwrap_or(4477);
             serve(lib, port).await?;
         }
-        Some(other) => anyhow::bail!("unknown command {other}; use: record <url> [steps] | signup <url> [email] | serve [port]"),
+        Some(other) => anyhow::bail!("unknown command {other}; use: record <url> [steps] | signup <url> [--real] | serve [port]"),
     }
     Ok(())
 }
@@ -87,8 +88,8 @@ struct RecordReq {
     query: Option<String>,
     /// "sign-up" records one sign-up flow at phone size; anything else explores the whole site
     flow: Option<String>,
-    /// test inbox address: only with it does a sign-up recording press the final button
-    inbox: Option<String>,
+    /// sign-up only: make a real account with a throwaway test inbox (otherwise stop before the final button)
+    real: Option<bool>,
 }
 
 async fn start_record(State(s): State<AppState>, Json(req): Json<RecordReq>) -> Result<Json<serde_json::Value>, (StatusCode, String)> {
@@ -98,9 +99,9 @@ async fn start_record(State(s): State<AppState>, Json(req): Json<RecordReq>) -> 
     let lib = s.lib.clone();
     let rid = id.clone();
     if req.flow.as_deref() == Some("sign-up") {
-        let (url, inbox) = (req.url, req.inbox.filter(|e| e.contains('@')));
+        let (url, real) = (req.url, req.real.unwrap_or(false));
         tokio::spawn(async move {
-            if let Err(e) = record_signup(&lib, &url, Some(rid), inbox).await {
+            if let Err(e) = record_signup(&lib, &url, Some(rid), real).await {
                 eprintln!("recording failed: {e}");
             }
         });

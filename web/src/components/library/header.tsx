@@ -8,6 +8,7 @@ export function Header({ onStarted }: { onStarted: (id: string) => void }) {
   const [url, setUrl] = useState("")
   const [steps, setSteps] = useState(12)
   const [flow, setFlow] = useState<Flow>("explore")
+  const [real, setReal] = useState(false)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const submit = async (e: React.FormEvent) => {
@@ -18,7 +19,7 @@ export function Header({ onStarted }: { onStarted: (id: string) => void }) {
     if (!/^https?:\/\//.test(u)) u = "https://" + u
     setBusy(true)
     try {
-      onStarted(await startRecording(u, steps, flow))
+      onStarted(await startRecording(u, steps, flow, real))
       setUrl("")
     } catch (err) {
       setError(String(err instanceof Error ? err.message : err))
@@ -38,6 +39,12 @@ export function Header({ onStarted }: { onStarted: (id: string) => void }) {
           <ToggleGroupItem value="explore">Whole site</ToggleGroupItem>
           <ToggleGroupItem value="sign-up">Sign-up on a phone</ToggleGroupItem>
         </ToggleGroup>
+        {flow === "sign-up" && (
+          <label className="flex items-center gap-1.5 text-xs text-muted-foreground" title="Uses a free throwaway inbox, deleted afterwards">
+            <input type="checkbox" checked={real} onChange={(e) => setReal(e.target.checked)} className="size-4 accent-foreground" />
+            Make a real test account
+          </label>
+        )}
         {flow === "explore" && (
           <label className="flex items-center gap-1 text-xs text-muted-foreground">
             tries
