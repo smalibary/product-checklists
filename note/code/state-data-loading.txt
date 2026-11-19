@@ -1,0 +1,27 @@
+﻿STATE AND DATA LOADING CHECKLIST: 9 items
+Keeping track of what the screen shows and fetching data without bugs.
+Backing: 0 Rule, 6 Standard, 2 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+STATE
+ 1. The smallest state possible; everything else worked out from it   (Standard: react-state)
+ 2. One source of truth for each piece of data   (Standard: react-state)
+ 3. No copying server data into local state without a reason   (Standard: react-effect)
+
+LOADING
+ 4. Every fetch has loading, empty, error and success states on screen   (Research: nng-empty, nng-response)
+ 5. Repeated requests cached and shared, not fired twice   (Standard: rfc-caching)
+ 6. Old requests cancelled when the person moves on   (Standard: react-effect)
+ 7. Lists fetched page by page   (Standard: google-aip-pagination)
+
+CHANGES
+ 8. Optimistic updates roll back clearly on failure   (Research: nng-response)
+ 9. Address (URL) holds filters and the open tab, so pages can be shared   (Practice)
+
+SOURCES
+- react-state: https://react.dev/learn/choosing-the-state-structure
+- react-effect: https://react.dev/learn/you-might-not-need-an-effect
+- nng-empty: https://www.nngroup.com/articles/empty-state-interface-design/
+- nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/
+- rfc-caching: https://www.rfc-editor.org/rfc/rfc9111
+- google-aip-pagination: https://google.aip.dev/158

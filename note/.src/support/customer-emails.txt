@@ -1,0 +1,16 @@
+title: Customer emails
+about: The emails the product sends to people: receipts, alerts, account messages.
+## Content
+- Subject says what it is and what to do | R nng-microcontent
+- Plain words; one main action | S govuk-email
+- Sender name people recognise | L can-spam
+## Kinds
+- Account and receipt emails kept separate from marketing | L can-spam
+- Security emails for sign-in, password and email changes | S owasp-auth
+## Delivery
+- SPF, DKIM and DMARC set up | S rfc-spf rfc-dkim rfc-dmarc
+- Bulk-sender rules met, one-click unsubscribe on marketing | S google-sender rfc-unsubscribe
+## Access
+- Works without images, readable on phones, in light and dark | S wcag-contrast
+## Safety
+- No passwords or full card numbers in email | S owasp-auth

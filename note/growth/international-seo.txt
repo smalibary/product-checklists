@@ -1,0 +1,26 @@
+﻿INTERNATIONAL SEO CHECKLIST: 9 items
+Serving the right language version of each page to each searcher.
+Backing: 0 Rule, 9 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ADDRESSES
+ 1. One address per language (folder or subdomain), never switched by cookie   (Standard: gsc-hreflang)
+ 2. hreflang links between all versions, each pointing back   (Standard: gsc-hreflang)
+ 3. An x-default for the language chooser   (Standard: gsc-hreflang)
+
+CONTENT
+ 4. Whole pages translated, not just menus   (Standard: gsc-hreflang)
+ 5. Language set in the page's lang attribute   (Standard: wcag-lang)
+ 6. Right-to-left pages mirrored for Arabic   (Standard: w3c-dir)
+ 7. Dates, numbers and money in local formats   (Standard: mdn-intl)
+
+CHOICE
+ 8. No forced redirects by location; offer a switch   (Standard: gsc-hreflang)
+ 9. Each version listed in the sitemap   (Standard: gsc-sitemaps)
+
+SOURCES
+- gsc-hreflang: https://developers.google.com/search/docs/specialty/international/localized-versions
+- wcag-lang: https://www.w3.org/WAI/WCAG22/Understanding/language-of-page
+- w3c-dir: https://www.w3.org/International/questions/qa-html-dir
+- mdn-intl: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl
+- gsc-sitemaps: https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview

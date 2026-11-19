@@ -1,0 +1,13 @@
+title: Support macros
+about: Saved replies that make answers quick and consistent without sounding robotic.
+## Writing
+- Written in the product's tone, plain and kind | S govuk-content
+- One answer per question, with a link to the help article | R nng-help
+- Placeholders for name and details, checked before sending | P
+## Upkeep
+- Each macro has an owner and a review date | P
+- Updated when the product changes | P
+- Unused ones removed | P
+## Use
+- Edited for the person, never sent blind | S iso-10002
+- Tagged so common topics can be counted | S iso-10002

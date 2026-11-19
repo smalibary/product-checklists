@@ -1,0 +1,17 @@
+title: SEO content
+about: Writing pages people search for and find useful.
+## Basics
+- Written for people first, helpful and original | S google-helpful
+- A unique page title naming the topic | S google-title nng-microcontent
+- A meta description that sums the page up | S google-snippet
+- One clear main heading, then headings by topic | S gsc-starter
+## Writing
+- Front-load key words in headings and first lines | R nng-web-writing
+- Short paragraphs and lists people can scan | R nng-web-writing
+- Plain words people actually search with | S govuk-content
+## Images
+- Descriptive alt text and file names | S gsc-images wcag-nontext
+## Rules
+- No keyword stuffing, hidden text or copied pages | L gsc-spam
+- Paid and sponsored links marked as such | L gsc-qualify
+- Author and date shown; date updated only when content changes | S gsc-date

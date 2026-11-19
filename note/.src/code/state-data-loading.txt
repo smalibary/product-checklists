@@ -1,0 +1,14 @@
+title: State and data loading
+about: Keeping track of what the screen shows and fetching data without bugs.
+## State
+- The smallest state possible; everything else worked out from it | S react-state
+- One source of truth for each piece of data | S react-state
+- No copying server data into local state without a reason | S react-effect
+## Loading
+- Every fetch has loading, empty, error and success states on screen | R nng-empty nng-response
+- Repeated requests cached and shared, not fired twice | S rfc-caching
+- Old requests cancelled when the person moves on | S react-effect
+- Lists fetched page by page | S google-aip-pagination
+## Changes
+- Optimistic updates roll back clearly on failure | R nng-response
+- Address (URL) holds filters and the open tab, so pages can be shared | P

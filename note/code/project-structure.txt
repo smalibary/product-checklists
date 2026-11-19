@@ -1,0 +1,26 @@
+﻿PROJECT STRUCTURE CHECKLIST: 8 items
+Where files go, so anyone can find things and changes stay small.
+Backing: 0 Rule, 4 Standard, 0 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FOLDERS
+ 1. Grouped by feature, with shared pieces in one common place   (Practice)
+ 2. A short guide in the README says what each top-level folder holds   (Standard: github-readme)
+ 3. Settings in environment variables, not in code   (Standard: twelve-factor)
+
+BOUNDARIES
+ 4. Screens call a data layer; they never talk to the database directly   (Practice)
+ 5. Shared code has no imports back from features   (Practice)
+ 6. Secrets and generated files kept out of git   (Standard: owasp-secrets)
+
+SIZE
+ 7. Files kept small; split by topic when they grow   (Practice)
+
+DECISIONS
+ 8. Big choices written as short decision records next to the code   (Standard: adr)
+
+SOURCES
+- github-readme: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
+- twelve-factor: https://12factor.net/
+- owasp-secrets: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- adr: https://adr.github.io/

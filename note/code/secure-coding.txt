@@ -1,0 +1,36 @@
+﻿SECURE CODING CHECKLIST: 11 items
+Habits in everyday code that stop the common attacks.
+Backing: 0 Rule, 11 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+INPUT
+ 1. All input validated on the server, with allow-lists   (Standard: owasp-input, owasp-scp)
+ 2. Database queries use parameters, never joined strings   (Standard: owasp-sql)
+ 3. Output escaped for where it goes (HTML, URL, script)   (Standard: owasp-xss)
+ 4. No building code or commands from user text   (Standard: owasp-scp)
+
+ACCESS
+ 5. Every request checks the person may do this to this record   (Standard: owasp-authz, owasp-proactive)
+ 6. Forms that change things protected from cross-site requests   (Standard: owasp-csrf)
+ 7. Redirects only to known addresses   (Standard: owasp-redirect)
+
+DATA
+ 8. Secrets from the secret store, never in code   (Standard: owasp-secrets)
+ 9. Untrusted data never turned back into objects without checks   (Standard: owasp-deserialization)
+
+HABITS
+10. Security libraries from the framework, not home-made crypto   (Standard: owasp-proactive)
+11. Dependencies scanned on every change   (Standard: owasp-dependencies)
+
+SOURCES
+- owasp-input: https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html
+- owasp-scp: https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/
+- owasp-sql: https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html
+- owasp-xss: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
+- owasp-authz: https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+- owasp-proactive: https://top10proactive.owasp.org/
+- owasp-csrf: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+- owasp-redirect: https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html
+- owasp-secrets: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- owasp-deserialization: https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html
+- owasp-dependencies: https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html

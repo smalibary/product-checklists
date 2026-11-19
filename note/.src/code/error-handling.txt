@@ -1,0 +1,14 @@
+title: Error handling in code
+about: What code does when something fails, so people see help and developers see the cause.
+## Catching
+- Expected failures (network, invalid input) handled where they happen | S owasp-errors
+- An error boundary around each screen so one crash does not blank the app | S react-error
+- Errors never swallowed silently | S owasp-errors
+## Showing
+- People see plain words and a next step, never raw error text | R nng-errors
+- Retry offered for temporary failures, with growing waits | S aws-backoff
+## Recording
+- Every unexpected error logged with context and a request id | S owasp-logging otel
+- No passwords or personal data in error reports | S owasp-logging
+## Safety
+- Failures fail closed: access denied when a check errors | S owasp-scp

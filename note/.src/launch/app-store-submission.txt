@@ -1,0 +1,18 @@
+title: App Store submission
+about: Getting an iPhone or iPad app through Apple's review.
+## Account and build
+- Developer account, certificates and bundle id set | L apple-review
+- Tested with TestFlight on real devices | S apple-testflight
+## Listing
+- Name, subtitle, description, keywords and screenshots | L apple-screenshots apple-product-page
+- Privacy details answered truthfully | L apple-privacy-labels
+- Age rating set | L apple-age-rating
+- Privacy policy and support addresses working | L apple-review
+## Review rules
+- Demo account and notes for the reviewer | L apple-review
+- Account deletion inside the app if sign-up exists | L apple-deletion
+- Sign in with Apple offered when other social sign-ins are | L apple-4.8
+- Purchases of digital goods through Apple's system | L apple-subscriptions
+- Tracking permission asked before tracking | L apple-att
+## Release
+- Phased release for updates | S apple-phased

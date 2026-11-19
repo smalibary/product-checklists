@@ -1,0 +1,30 @@
+﻿COMMUNITY FORUM CHECKLIST: 10 items
+A place where users help each other, with clear rules and moderation.
+Backing: 6 Rule, 1 Standard, 1 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+RULES
+ 1. Community rules written and linked on every page   (Rule: eu-dsa)
+ 2. A way to report posts, with replies to reporters   (Rule: eu-dsa)
+ 3. Moderation decisions explained, with a way to appeal   (Rule: eu-dsa)
+
+CONTENT
+ 4. Search before posting, to cut duplicates   (Research: nng-search)
+ 5. Accepted answers marked   (Practice)
+ 6. Staff answers clearly labelled   (Practice)
+
+SAFETY
+ 7. User links marked ugc   (Rule: gsc-qualify)
+ 8. Spam and abuse filters   (Rule: gsc-spam)
+ 9. Personal data not shown publicly by default   (Rule: gdpr-25)
+
+SEARCH
+10. Question and answer structured data on threads   (Standard: schema-org)
+
+SOURCES
+- eu-dsa: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
+- nng-search: https://www.nngroup.com/articles/search-visible-and-simple/
+- gsc-qualify: https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links
+- gsc-spam: https://developers.google.com/search/docs/essentials/spam-policies
+- gdpr-25: https://gdpr-info.eu/art-25-gdpr/
+- schema-org: https://schema.org/Organization

@@ -1,0 +1,32 @@
+﻿LEGAL PAGES PACK CHECKLIST: 11 items
+The pages a product must publish before it goes live.
+Backing: 6 Rule, 2 Standard, 0 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+MUST-HAVES
+ 1. Privacy policy: what is collected, why, how long, who it is shared with   (Rule: gdpr-13, pdpl)
+ 2. Terms of use   (Practice)
+ 3. Cookie notice and choices where cookies need consent   (Rule: eprivacy)
+
+WHEN THEY APPLY
+ 4. Refund and cancellation policy for paid products   (Rule: eu-consumer-rights, ftc-negative-option)
+ 5. Accessibility statement   (Standard: w3c-a11y-statement)
+ 6. Imprint or company details in the EU   (Rule: eu-consumer-rights)
+ 7. Security contact (security.txt)   (Standard: rfc-securitytxt)
+ 8. Community rules for user content   (Rule: eu-dsa)
+ 9. Notice of AI use where people talk to an AI   (Rule: eu-ai-act)
+
+UPKEEP
+10. Dated, with changes announced before they apply   (Practice)
+11. Linked from the footer and the sign-up screen   (Practice)
+
+SOURCES
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- pdpl: https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf
+- eprivacy: https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- w3c-a11y-statement: https://www.w3.org/WAI/planning/statements/
+- rfc-securitytxt: https://www.rfc-editor.org/rfc/rfc9116
+- eu-dsa: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
+- eu-ai-act: https://artificialintelligenceact.eu/article/50/

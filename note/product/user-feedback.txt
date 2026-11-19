@@ -1,0 +1,31 @@
+﻿USER FEEDBACK CHECKLIST: 9 items
+Hearing from people while they use the product, and acting on it.
+Backing: 1 Rule, 2 Standard, 5 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHANNELS
+ 1. A feedback link on every page or screen   (Standard: govuk-feedback)
+ 2. Short in-product surveys at natural moments, never during a task   (Research: nng-surveys, nng-feedback)
+ 3. In-app review prompts only after a success, within store limits   (Rule: apple-review-prompt, play-in-app-review)
+
+ASKING WELL
+ 4. One or two questions, the rating scale kept the same   (Research: nng-surveys)
+ 5. An open box for "what would make this better"   (Standard: govuk-feedback)
+
+USING IT
+ 6. Feedback read on a schedule and sorted into themes   (Research: nng-feedback)
+ 7. Paired with analytics and research before acting   (Research: nng-analytics)
+ 8. Results told back to the people who gave them   (Practice)
+
+MEASURES
+ 9. A standard satisfaction or ease score tracked over time   (Research: sus, heart)
+
+SOURCES
+- govuk-feedback: https://www.gov.uk/service-manual/service-assessments/get-feedback-page
+- nng-surveys: https://www.nngroup.com/articles/qualitative-surveys/
+- nng-feedback: https://www.nngroup.com/articles/user-feedback/
+- apple-review-prompt: https://developer.apple.com/documentation/storekit/requesting-app-store-reviews
+- play-in-app-review: https://developer.android.com/guide/playcore/in-app-review
+- nng-analytics: https://www.nngroup.com/articles/analytics-user-experience/
+- sus: https://www.nngroup.com/articles/measuring-perceived-usability/
+- heart: https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/

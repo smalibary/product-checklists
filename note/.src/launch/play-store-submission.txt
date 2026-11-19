@@ -1,0 +1,17 @@
+title: Play Store submission
+about: Getting an Android app published on Google Play.
+## Account and build
+- Developer account verified; new personal accounts run a closed test first | L play-new-accounts
+- Target API level meets the current requirement | L play-target-api
+- Tested in internal and closed testing tracks | S play-testing
+## Listing
+- Title, short and full description, icon, screenshots | L play-listing
+- Data safety form answered truthfully | L play-data-safety
+- Content rating questionnaire done | L play-policy
+- Privacy policy link working | L play-user-data
+## Rules
+- Account deletion offered in the app and on the web | L play-deletion
+- Digital goods through Play billing | L play-billing
+- Permissions asked only when needed | S hig-privacy webdev-permissions
+## Release
+- Staged rollout with crash rates watched | S play-staged

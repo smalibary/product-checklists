@@ -1,0 +1,25 @@
+﻿COMMITS AND BRANCHES CHECKLIST: 8 items
+Saving work in git so history explains itself and the main version stays working.
+Backing: 0 Rule, 8 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+COMMITS
+ 1. One logical change per commit   (Standard: git-book)
+ 2. A short summary line, then why it changed   (Standard: git-book)
+ 3. A shared message format (feat, fix, docs) when release notes are generated   (Standard: conv-commits)
+ 4. No secrets, built files or huge data in commits   (Standard: owasp-secrets)
+
+BRANCHES
+ 5. Main always works; work happens on short-lived branches   (Standard: github-flow)
+ 6. Branches merged through a reviewed pull request   (Standard: github-flow)
+ 7. Release versions tagged with version numbers   (Standard: semver)
+
+HISTORY
+ 8. Breaking changes marked in the commit and release notes   (Standard: conv-commits, semver)
+
+SOURCES
+- git-book: https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project
+- conv-commits: https://www.conventionalcommits.org/en/v1.0.0/
+- owasp-secrets: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- github-flow: https://docs.github.com/en/get-started/using-github/github-flow
+- semver: https://semver.org/

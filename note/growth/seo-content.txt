@@ -1,0 +1,37 @@
+﻿SEO CONTENT CHECKLIST: 11 items
+Writing pages people search for and find useful.
+Backing: 2 Rule, 7 Standard, 2 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BASICS
+ 1. Written for people first, helpful and original   (Standard: google-helpful)
+ 2. A unique page title naming the topic   (Standard: google-title, nng-microcontent)
+ 3. A meta description that sums the page up   (Standard: google-snippet)
+ 4. One clear main heading, then headings by topic   (Standard: gsc-starter)
+
+WRITING
+ 5. Front-load key words in headings and first lines   (Research: nng-web-writing)
+ 6. Short paragraphs and lists people can scan   (Research: nng-web-writing)
+ 7. Plain words people actually search with   (Standard: govuk-content)
+
+IMAGES
+ 8. Descriptive alt text and file names   (Standard: gsc-images, wcag-nontext)
+
+RULES
+ 9. No keyword stuffing, hidden text or copied pages   (Rule: gsc-spam)
+10. Paid and sponsored links marked as such   (Rule: gsc-qualify)
+11. Author and date shown; date updated only when content changes   (Standard: gsc-date)
+
+SOURCES
+- google-helpful: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+- google-title: https://developers.google.com/search/docs/appearance/title-link
+- nng-microcontent: https://www.nngroup.com/articles/microcontent-how-to-write-headlines-page-titles-and-subject-lines/
+- google-snippet: https://developers.google.com/search/docs/appearance/snippet
+- gsc-starter: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+- nng-web-writing: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- govuk-content: https://www.gov.uk/guidance/content-design/writing-for-gov-uk
+- gsc-images: https://developers.google.com/search/docs/appearance/google-images
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- gsc-spam: https://developers.google.com/search/docs/essentials/spam-policies
+- gsc-qualify: https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links
+- gsc-date: https://developers.google.com/search/docs/appearance/publication-dates

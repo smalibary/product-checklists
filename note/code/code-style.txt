@@ -1,0 +1,26 @@
+﻿CODE STYLE CHECKLIST: 9 items
+Making all code look the same, so people read logic instead of formatting.
+Backing: 0 Rule, 9 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+AUTOMATIC
+ 1. A formatter decides layout; nobody argues about spaces   (Standard: prettier)
+ 2. A linter catches likely bugs and banned patterns   (Standard: eslint)
+ 3. Editor settings shared in the project (indentation, line endings)   (Standard: editorconfig)
+ 4. Formatting and lint run on every save and in the pipeline   (Standard: eslint)
+
+AGREED
+ 5. A written style guide picked, not invented from scratch   (Standard: google-style)
+ 6. Lint warnings fixed or turned off on purpose with a reason, never ignored   (Standard: eslint)
+
+READING
+ 7. Short functions that do one thing   (Standard: fowler-refactoring)
+ 8. Early returns instead of deep nesting   (Standard: google-style)
+ 9. No dead or commented-out code; git keeps history   (Standard: fowler-refactoring)
+
+SOURCES
+- prettier: https://prettier.io/docs/why-prettier
+- eslint: https://eslint.org/docs/latest/use/getting-started
+- editorconfig: https://editorconfig.org/
+- google-style: https://google.github.io/styleguide/
+- fowler-refactoring: https://refactoring.com/

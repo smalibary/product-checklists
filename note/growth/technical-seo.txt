@@ -1,0 +1,37 @@
+﻿TECHNICAL SEO CHECKLIST: 12 items
+Making sure search engines can find, read and list every page that should be found.
+Backing: 0 Rule, 12 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CRAWLING
+ 1. A sitemap listing every public page, sent to the search console   (Standard: gsc-sitemaps)
+ 2. robots.txt blocks only what should stay out of search   (Standard: gsc-robots)
+ 3. Links are real links with addresses, not click handlers   (Standard: gsc-links)
+ 4. Pages that need scripts still show their content to the crawler   (Standard: gsc-js)
+
+INDEXING
+ 5. One main address per page, marked as canonical   (Standard: gsc-canonical)
+ 6. Private or thin pages marked noindex   (Standard: gsc-noindex)
+ 7. Moved pages send a permanent redirect   (Standard: gsc-redirects)
+ 8. Missing pages return a real 404   (Standard: google-404)
+
+PAGES
+ 9. Short, readable addresses with words, not ids   (Standard: gsc-url)
+10. Same content on phone and computer   (Standard: gsc-mobile-first)
+11. Fast loading and stable layout   (Standard: webdev-vitals)
+12. Structured data for the page type, checked with Google's test   (Standard: gsc-structured, schema-org)
+
+SOURCES
+- gsc-sitemaps: https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview
+- gsc-robots: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+- gsc-links: https://developers.google.com/search/docs/crawling-indexing/links-crawlable
+- gsc-js: https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+- gsc-canonical: https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+- gsc-noindex: https://developers.google.com/search/docs/crawling-indexing/block-indexing
+- gsc-redirects: https://developers.google.com/search/docs/crawling-indexing/301-redirects
+- google-404: https://developers.google.com/search/docs/crawling-indexing/http-network-errors
+- gsc-url: https://developers.google.com/search/docs/crawling-indexing/url-structure
+- gsc-mobile-first: https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing
+- webdev-vitals: https://web.dev/articles/vitals
+- gsc-structured: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+- schema-org: https://schema.org/Organization

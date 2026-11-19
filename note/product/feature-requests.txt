@@ -1,0 +1,27 @@
+﻿FEATURE REQUESTS CHECKLIST: 9 items
+Collecting, sorting and answering what people ask the product to do.
+Backing: 1 Rule, 0 Standard, 3 Research, 5 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+COLLECTING
+ 1. One place to send ideas, linked from help and settings   (Research: nng-feedback)
+ 2. A form that asks what they are trying to do, not just what to build   (Research: nng-interviews)
+ 3. Duplicates merged; votes or counts kept   (Practice)
+
+SORTING
+ 4. Each request tagged by problem, customer type and size   (Practice)
+ 5. Requests weighed against goals, not just votes   (Research: nng-prioritization)
+
+ANSWERING
+ 6. Every request acknowledged   (Practice)
+ 7. Status shown (under review, planned, shipped, not planned)   (Practice)
+ 8. People told when what they asked for ships   (Practice)
+
+RECORDS
+ 9. Personal data in requests handled under the privacy policy   (Rule: gdpr-5)
+
+SOURCES
+- nng-feedback: https://www.nngroup.com/articles/user-feedback/
+- nng-interviews: https://www.nngroup.com/articles/user-interviews/
+- nng-prioritization: https://www.nngroup.com/articles/prioritization-methods/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/

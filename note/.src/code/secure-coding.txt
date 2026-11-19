@@ -1,0 +1,17 @@
+title: Secure coding
+about: Habits in everyday code that stop the common attacks.
+## Input
+- All input validated on the server, with allow-lists | S owasp-input owasp-scp
+- Database queries use parameters, never joined strings | S owasp-sql
+- Output escaped for where it goes (HTML, URL, script) | S owasp-xss
+- No building code or commands from user text | S owasp-scp
+## Access
+- Every request checks the person may do this to this record | S owasp-authz owasp-proactive
+- Forms that change things protected from cross-site requests | S owasp-csrf
+- Redirects only to known addresses | S owasp-redirect
+## Data
+- Secrets from the secret store, never in code | S owasp-secrets
+- Untrusted data never turned back into objects without checks | S owasp-deserialization
+## Habits
+- Security libraries from the framework, not home-made crypto | S owasp-proactive
+- Dependencies scanned on every change | S owasp-dependencies

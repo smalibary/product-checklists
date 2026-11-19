@@ -1,0 +1,14 @@
+title: Code style
+about: Making all code look the same, so people read logic instead of formatting.
+## Automatic
+- A formatter decides layout; nobody argues about spaces | S prettier
+- A linter catches likely bugs and banned patterns | S eslint
+- Editor settings shared in the project (indentation, line endings) | S editorconfig
+- Formatting and lint run on every save and in the pipeline | S eslint
+## Agreed
+- A written style guide picked, not invented from scratch | S google-style
+- Lint warnings fixed or turned off on purpose with a reason, never ignored | S eslint
+## Reading
+- Short functions that do one thing | S fowler-refactoring
+- Early returns instead of deep nesting | S google-style
+- No dead or commented-out code; git keeps history | S fowler-refactoring

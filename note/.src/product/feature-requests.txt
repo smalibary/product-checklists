@@ -1,0 +1,15 @@
+title: Feature requests
+about: Collecting, sorting and answering what people ask the product to do.
+## Collecting
+- One place to send ideas, linked from help and settings | R nng-feedback
+- A form that asks what they are trying to do, not just what to build | R nng-interviews
+- Duplicates merged; votes or counts kept | P
+## Sorting
+- Each request tagged by problem, customer type and size | P
+- Requests weighed against goals, not just votes | R nng-prioritization
+## Answering
+- Every request acknowledged | P
+- Status shown (under review, planned, shipped, not planned) | P
+- People told when what they asked for ships | P
+## Records
+- Personal data in requests handled under the privacy policy | L gdpr-5

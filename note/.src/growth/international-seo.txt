@@ -1,0 +1,14 @@
+title: International SEO
+about: Serving the right language version of each page to each searcher.
+## Addresses
+- One address per language (folder or subdomain), never switched by cookie | S gsc-hreflang
+- hreflang links between all versions, each pointing back | S gsc-hreflang
+- An x-default for the language chooser | S gsc-hreflang
+## Content
+- Whole pages translated, not just menus | S gsc-hreflang
+- Language set in the page's lang attribute | S wcag-lang
+- Right-to-left pages mirrored for Arabic | S w3c-dir
+- Dates, numbers and money in local formats | S mdn-intl
+## Choice
+- No forced redirects by location; offer a switch | S gsc-hreflang
+- Each version listed in the sitemap | S gsc-sitemaps

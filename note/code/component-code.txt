@@ -1,0 +1,40 @@
+﻿COMPONENT CODE CHECKLIST: 12 items
+How a reusable screen piece is written so it is easy to use, change and trust.
+Backing: 0 Rule, 10 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SHAPE
+ 1. One component, one job; split when it grows several   (Standard: react-thinking)
+ 2. Rendering is pure: same inputs, same output, no side effects while drawing   (Standard: react-pure, react-rules)
+ 3. Hooks called at the top level only, never inside conditions or loops   (Standard: react-hooks-rules)
+ 4. Effects used only to sync with outside systems, not to compute values   (Standard: react-effect)
+
+INPUTS (PROPS)
+ 5. Few, clearly named inputs with sensible defaults   (Standard: react-thinking)
+ 6. Variants as a short list of named options, not many true/false switches   (Practice)
+ 7. Passes through standard attributes (id, aria, className) to the main element   (Practice)
+
+LOOK
+ 8. Colours, spacing and type from tokens, never typed-in values   (Standard: dtcg-tokens)
+
+ACCESS
+ 9. Real buttons, links and inputs, not clickable divs   (Standard: wcag-name-role, apg-button)
+10. Keyboard and focus behaviour match the pattern it copies   (Standard: apg-landmarks, wcag-keyboard)
+
+PROOF
+11. Each state (default, hover, disabled, loading, error) shown in a story or demo page   (Standard: storybook)
+12. Tests for its behaviour, not its inner details   (Standard: fowler-test-pyramid)
+
+SOURCES
+- react-thinking: https://react.dev/learn/thinking-in-react
+- react-pure: https://react.dev/learn/keeping-components-pure
+- react-rules: https://react.dev/reference/rules
+- react-hooks-rules: https://react.dev/reference/rules/rules-of-hooks
+- react-effect: https://react.dev/learn/you-might-not-need-an-effect
+- dtcg-tokens: https://tr.designtokens.org/format/
+- wcag-name-role: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value
+- apg-button: https://www.w3.org/WAI/ARIA/apg/patterns/button/
+- apg-landmarks: https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard
+- storybook: https://storybook.js.org/docs/writing-docs
+- fowler-test-pyramid: https://martinfowler.com/articles/practical-test-pyramid.html

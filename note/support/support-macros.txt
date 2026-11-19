@@ -1,0 +1,23 @@
+﻿SUPPORT MACROS CHECKLIST: 8 items
+Saved replies that make answers quick and consistent without sounding robotic.
+Backing: 0 Rule, 3 Standard, 1 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WRITING
+ 1. Written in the product's tone, plain and kind   (Standard: govuk-content)
+ 2. One answer per question, with a link to the help article   (Research: nng-help)
+ 3. Placeholders for name and details, checked before sending   (Practice)
+
+UPKEEP
+ 4. Each macro has an owner and a review date   (Practice)
+ 5. Updated when the product changes   (Practice)
+ 6. Unused ones removed   (Practice)
+
+USE
+ 7. Edited for the person, never sent blind   (Standard: iso-10002)
+ 8. Tagged so common topics can be counted   (Standard: iso-10002)
+
+SOURCES
+- govuk-content: https://www.gov.uk/guidance/content-design/writing-for-gov-uk
+- nng-help: https://www.nngroup.com/articles/help-and-documentation/
+- iso-10002: https://www.iso.org/standard/71580.html

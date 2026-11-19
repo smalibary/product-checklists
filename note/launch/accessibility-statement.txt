@@ -1,0 +1,24 @@
+﻿ACCESSIBILITY STATEMENT CHECKLIST: 8 items
+A public page saying how accessible the product is and how to get help.
+Backing: 2 Rule, 6 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. The standard aimed for (for example WCAG 2.2 AA)   (Standard: w3c-a11y-statement)
+ 2. Known problems listed, with plans and dates   (Standard: govuk-a11y-statement)
+ 3. How to report a problem or ask for another format   (Standard: w3c-a11y-statement)
+ 4. Date of the last check and how it was checked   (Standard: govuk-a11y-statement)
+
+LAW
+ 5. Required for public sector sites in the EU and UK   (Rule: eu-a11y-directive, govuk-a11y-statement)
+ 6. Products and services under the European Accessibility Act need accessibility information   (Rule: eu-accessibility-act)
+
+UPKEEP
+ 7. Linked from the footer   (Standard: w3c-a11y-statement)
+ 8. Updated after each audit   (Standard: govuk-a11y-statement)
+
+SOURCES
+- w3c-a11y-statement: https://www.w3.org/WAI/planning/statements/
+- govuk-a11y-statement: https://www.gov.uk/guidance/make-your-website-or-app-accessible-and-publish-an-accessibility-statement
+- eu-a11y-directive: https://digital-strategy.ec.europa.eu/en/policies/web-accessibility
+- eu-accessibility-act: https://ec.europa.eu/social/main.jsp?catId=1202

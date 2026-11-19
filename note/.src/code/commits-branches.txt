@@ -1,0 +1,13 @@
+title: Commits and branches
+about: Saving work in git so history explains itself and the main version stays working.
+## Commits
+- One logical change per commit | S git-book
+- A short summary line, then why it changed | S git-book
+- A shared message format (feat, fix, docs) when release notes are generated | S conv-commits
+- No secrets, built files or huge data in commits | S owasp-secrets
+## Branches
+- Main always works; work happens on short-lived branches | S github-flow
+- Branches merged through a reviewed pull request | S github-flow
+- Release versions tagged with version numbers | S semver
+## History
+- Breaking changes marked in the commit and release notes | S conv-commits semver

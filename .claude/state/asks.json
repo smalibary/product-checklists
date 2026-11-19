@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 26,
+ "next": 27,
  "asks": [
   {
    "id": 2,
@@ -893,6 +893,44 @@
     {
      "name": "Published",
      "done": true
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "at": "2026-11-19T21:17:50.151Z",
+   "text": "Can create for component , written code ,  roadmap , ask for feature , blog , seo etc those things that some need some dont ... get the full list of thing then do research , i dont know the full list i just gave examples",
+   "status": "doing",
+   "note": "Five new groups of optional checklists: code, growth, product, support, launch",
+   "updated": "2026-11-19T21:18:07.290Z",
+   "parts": [
+    {
+     "name": "Code group",
+     "done": false
+    },
+    {
+     "name": "Growth group",
+     "done": false
+    },
+    {
+     "name": "Product group",
+     "done": false
+    },
+    {
+     "name": "Support group",
+     "done": false
+    },
+    {
+     "name": "Launch group",
+     "done": false
+    },
+    {
+     "name": "Page updated",
+     "done": false
+    },
+    {
+     "name": "Published",
+     "done": false
     }
    ]
   }

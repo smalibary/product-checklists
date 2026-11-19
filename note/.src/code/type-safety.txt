@@ -1,0 +1,13 @@
+title: Type safety
+about: Letting the computer catch wrong kinds of values before the code runs.
+## Setup
+- Strict mode on from the start | S ts-strict
+- The type check runs in the pipeline and blocks merging | S ts-handbook
+## Writing
+- No "any" except at clearly marked edges | S ts-handbook
+- Data from outside (forms, APIs, files) checked at runtime, then typed | S owasp-input
+- Possible empty values handled, not assumed | S ts-strict
+- Fixed sets of options as unions, not loose strings | S ts-handbook
+## Sharing
+- One source for types shared by the server and the screens (generated from the API or database) | S openapi
+- Ignore comments for type errors only with a reason | P

@@ -17,7 +17,7 @@ for line in (src / "sources.txt").read_text(encoding="utf-8").splitlines():
         SOURCES[k] = u.strip()
 NAMES = {"L": "Rule", "S": "Standard", "R": "Research", "P": "Practice"}
 import json
-ORDER = ["website", "web-app", "design-system", "mobile", "flows", "api", "backend", "operations"]
+ORDER = ["website", "web-app", "design-system", "mobile", "flows", "api", "backend", "operations", "code", "growth", "product", "support", "launch"]
 index, missing, records = [], set(), []
 for f in sorted(src.glob("*/*.txt")):
     group = f.parent.name

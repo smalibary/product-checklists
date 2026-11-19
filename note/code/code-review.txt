@@ -1,0 +1,25 @@
+﻿CODE REVIEW CHECKLIST: 9 items
+A second person checks every change before it joins the main version.
+Backing: 0 Rule, 8 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+AUTHOR
+ 1. Small changes, one idea each   (Standard: google-review-author)
+ 2. A description saying what changed, why, and how it was tested   (Standard: google-review-author)
+ 3. Screenshots for visible changes   (Practice)
+
+REVIEWER
+ 4. Checks design, behaviour, tests, naming and simplicity, in that order   (Standard: google-code-review)
+ 5. Approves when the change makes the code better, even if not perfect   (Standard: google-code-review)
+ 6. Comments are kind, explain why, and mark nits as optional   (Standard: google-code-review)
+ 7. Replies within one working day   (Standard: google-code-review)
+
+RULES
+ 8. Main is protected: no direct pushes, checks must pass   (Standard: github-protected)
+ 9. Owners of sensitive areas review changes there   (Standard: github-codeowners)
+
+SOURCES
+- google-review-author: https://google.github.io/eng-practices/review/developer/small-cls.html
+- google-code-review: https://google.github.io/eng-practices/review/reviewer/standard.html
+- github-protected: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
+- github-codeowners: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners

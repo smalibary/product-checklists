@@ -1,0 +1,23 @@
+﻿NAMING CHECKLIST: 8 items
+Names for files, functions and values that say what they are.
+Backing: 0 Rule, 6 Standard, 1 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+NAMES
+ 1. Say what it is or does, not how it is built   (Standard: google-style)
+ 2. One word for one idea across the whole project (a glossary)   (Research: nng-consistency)
+ 3. Booleans read as yes/no questions (isOpen, hasError)   (Standard: google-style)
+ 4. Functions start with a verb (loadOrders)   (Standard: google-style)
+ 5. No unclear short forms; well-known ones only (id, url)   (Standard: google-style)
+
+CONSISTENCY
+ 6. One casing per kind of thing (files, components, constants)   (Standard: google-style)
+ 7. Names in the code match words on screen and in the database   (Practice)
+
+CHANGING
+ 8. Bad names renamed everywhere at once with the editor's rename tool   (Standard: fowler-refactoring)
+
+SOURCES
+- google-style: https://google.github.io/styleguide/
+- nng-consistency: https://www.nngroup.com/articles/consistency-and-standards/
+- fowler-refactoring: https://refactoring.com/

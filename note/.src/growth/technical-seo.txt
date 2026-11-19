@@ -1,0 +1,17 @@
+title: Technical SEO
+about: Making sure search engines can find, read and list every page that should be found.
+## Crawling
+- A sitemap listing every public page, sent to the search console | S gsc-sitemaps
+- robots.txt blocks only what should stay out of search | S gsc-robots
+- Links are real links with addresses, not click handlers | S gsc-links
+- Pages that need scripts still show their content to the crawler | S gsc-js
+## Indexing
+- One main address per page, marked as canonical | S gsc-canonical
+- Private or thin pages marked noindex | S gsc-noindex
+- Moved pages send a permanent redirect | S gsc-redirects
+- Missing pages return a real 404 | S google-404
+## Pages
+- Short, readable addresses with words, not ids | S gsc-url
+- Same content on phone and computer | S gsc-mobile-first
+- Fast loading and stable layout | S webdev-vitals
+- Structured data for the page type, checked with Google's test | S gsc-structured schema-org

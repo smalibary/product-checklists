@@ -1,0 +1,15 @@
+title: Prioritising
+about: Choosing what to build next in a way people can see and trust.
+## Method
+- One written method used every time | R nng-prioritization
+- Scores for reach, impact, confidence and effort | P rice
+- Value against effort shown on a simple grid | R nng-prioritization
+## Inputs
+- Goals and roadmap themes come first | R nng-roadmaps
+- Research and feedback, not the loudest voice | R nng-feedback
+- Risk, legal and security work counted, not crowded out | P
+## Output
+- A ranked list with the reasons beside each item | R nng-prioritization
+- What was not chosen, and why, written down | P
+## Rhythm
+- Re-ranked on a set rhythm | P

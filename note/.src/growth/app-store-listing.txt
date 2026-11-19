@@ -1,0 +1,16 @@
+title: App store listing
+about: The store page that turns browsers into downloads.
+## Words
+- Name and subtitle say what it does | S apple-product-page play-listing
+- First lines of the description carry the main value | S apple-product-page
+- Keywords used honestly, no competitor names | L apple-review play-policy
+## Pictures
+- Screenshots in every required size, showing real screens | L apple-screenshots
+- First two screenshots tell the story | S apple-product-page
+- An optional short preview video of real use | S apple-product-page
+## Trust
+- Privacy details filled in truthfully | L apple-privacy-labels play-data-safety
+- Age rating answered honestly | L apple-age-rating
+- Support and privacy policy addresses working | L apple-review
+## Upkeep
+- Replies to reviews | S apple-review

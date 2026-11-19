@@ -1,0 +1,16 @@
+title: Retiring a feature
+about: Removing a feature or product without leaving people stranded.
+## Deciding
+- Usage and cost checked before deciding | S govuk-retire
+- Who relies on it, and on what, listed | S govuk-retire
+## Telling people
+- Announced well ahead with a date and the reason | S govuk-retire
+- In-product notices where the feature lives | P
+- API users told with Deprecation and Sunset headers | S rfc-deprecation rfc-sunset
+## Leaving
+- A way to export their data | L gdpr-20
+- An alternative suggested, or help to move | S govuk-retire
+- Paid plans adjusted or refunded fairly | L eu-consumer-rights
+## After
+- Old addresses redirected | S gsc-redirects
+- Code and data removed; data deleted on schedule | L gdpr-5

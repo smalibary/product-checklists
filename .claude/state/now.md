@@ -1,4 +1,4 @@
-Status: best version 7 of 7 built / 235 checklists in 8 groups on one page (claude.ai/artifact/PU86W5cQykqVZQaQPJs8k4) / doing: nothing, waiting for Salem
+Status: best version 7 of 7 built / 280 checklists in 13 groups on one page (claude.ai/artifact/PU86W5cQykqVZQaQPJs8k4) / doing: nothing, waiting for Salem
 
 ## Running
 - Nothing running. Library server stopped for low memory (2026-11-20); restart only when Salem asks.

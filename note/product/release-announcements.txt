@@ -1,0 +1,31 @@
+﻿RELEASE ANNOUNCEMENTS CHECKLIST: 8 items
+Telling people what changed, in places they will see it.
+Backing: 1 Rule, 5 Standard, 2 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+RELEASE NOTES
+ 1. Written for people, grouped as added, changed, fixed, removed   (Standard: keepachangelog)
+ 2. Version number follows the agreed scheme   (Standard: semver)
+ 3. Breaking changes and what to do listed first   (Standard: semver, keepachangelog)
+
+IN PRODUCT
+ 4. New features introduced in context, once, and easy to dismiss   (Research: nng-onboarding)
+ 5. No pop-ups that block the task   (Research: nng-modal)
+
+OTHER CHANNELS
+ 6. Email only to people who opted in   (Rule: gdpr-7, can-spam)
+ 7. Store "what's new" text updated each release   (Standard: apple-product-page, play-listing)
+
+TIMING
+ 8. Announced after the rollout is complete   (Standard: sre-canary)
+
+SOURCES
+- keepachangelog: https://keepachangelog.com/en/1.1.0/
+- semver: https://semver.org/
+- nng-onboarding: https://www.nngroup.com/articles/mobile-app-onboarding/
+- nng-modal: https://www.nngroup.com/articles/modal-nonmodal-dialog/
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- apple-product-page: https://developer.apple.com/app-store/product-page/
+- play-listing: https://support.google.com/googleplay/android-developer/answer/9859152
+- sre-canary: https://sre.google/workbook/canarying-releases/

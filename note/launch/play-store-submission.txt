@@ -1,0 +1,37 @@
+﻿PLAY STORE SUBMISSION CHECKLIST: 11 items
+Getting an Android app published on Google Play.
+Backing: 8 Rule, 3 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ACCOUNT AND BUILD
+ 1. Developer account verified; new personal accounts run a closed test first   (Rule: play-new-accounts)
+ 2. Target API level meets the current requirement   (Rule: play-target-api)
+ 3. Tested in internal and closed testing tracks   (Standard: play-testing)
+
+LISTING
+ 4. Title, short and full description, icon, screenshots   (Rule: play-listing)
+ 5. Data safety form answered truthfully   (Rule: play-data-safety)
+ 6. Content rating questionnaire done   (Rule: play-policy)
+ 7. Privacy policy link working   (Rule: play-user-data)
+
+RULES
+ 8. Account deletion offered in the app and on the web   (Rule: play-deletion)
+ 9. Digital goods through Play billing   (Rule: play-billing)
+10. Permissions asked only when needed   (Standard: hig-privacy, webdev-permissions)
+
+RELEASE
+11. Staged rollout with crash rates watched   (Standard: play-staged)
+
+SOURCES
+- play-new-accounts: https://support.google.com/googleplay/android-developer/answer/14151465
+- play-target-api: https://developer.android.com/google/play/requirements/target-sdk
+- play-testing: https://support.google.com/googleplay/android-developer/answer/9845334
+- play-listing: https://support.google.com/googleplay/android-developer/answer/9859152
+- play-data-safety: https://support.google.com/googleplay/android-developer/answer/10787469
+- play-policy: https://play.google/developer-content-policy/
+- play-user-data: https://support.google.com/googleplay/android-developer/answer/10144311
+- play-deletion: https://support.google.com/googleplay/android-developer/answer/13327111
+- play-billing: https://developer.android.com/google/play/billing
+- hig-privacy: https://developer.apple.com/design/human-interface-guidelines/privacy
+- webdev-permissions: https://web.dev/articles/permissions-best-practices
+- play-staged: https://support.google.com/googleplay/android-developer/answer/6346149

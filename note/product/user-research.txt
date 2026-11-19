@@ -1,0 +1,30 @@
+﻿USER RESEARCH CHECKLIST: 10 items
+Learning what people need by watching and talking to them.
+Backing: 2 Rule, 2 Standard, 6 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PLANNING
+ 1. A clear question for each round of research   (Research: nng-interviews, govuk-research)
+ 2. Participants who match real users, including people with disabilities   (Standard: govuk-research)
+ 3. Consent and data handling explained before starting   (Rule: gdpr-7)
+
+METHODS
+ 4. Interviews for needs and context   (Research: nng-interviews)
+ 5. Usability tests on real tasks with about five people per round   (Research: nng-usability-testing, nng-five-users)
+ 6. Test early drafts, not only finished screens   (Research: nng-usability-testing)
+
+RUNNING
+ 7. Neutral questions; no leading or selling   (Research: nng-interviews)
+ 8. Notes and recordings stored securely and deleted on schedule   (Rule: gdpr-5)
+
+SHARING
+ 9. Findings written up with the problems and their severity   (Research: nng-usability-testing)
+10. Fixes tracked to the next round   (Standard: govuk-research)
+
+SOURCES
+- nng-interviews: https://www.nngroup.com/articles/user-interviews/
+- govuk-research: https://www.gov.uk/service-manual/user-research
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- nng-usability-testing: https://www.nngroup.com/articles/usability-testing-101/
+- nng-five-users: https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/

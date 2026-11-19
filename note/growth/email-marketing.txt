@@ -1,0 +1,31 @@
+﻿EMAIL MARKETING CHECKLIST: 10 items
+Newsletters and offers people asked for and can easily leave.
+Backing: 6 Rule, 1 Standard, 2 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SIGNING UP
+ 1. Clear opt-in, never a pre-ticked box   (Rule: gdpr-7, eprivacy)
+ 2. Says what is sent and how often   (Research: nng-email)
+ 3. Double opt-in confirms the address   (Practice)
+
+EACH EMAIL
+ 4. True sender and subject line   (Rule: can-spam)
+ 5. Marked as an ad where it is one   (Rule: can-spam)
+ 6. Postal address included   (Rule: can-spam)
+ 7. Scannable layout that works on phones   (Research: nng-email)
+
+LEAVING
+ 8. An unsubscribe link in every email, working in one step   (Rule: can-spam, nng-unsubscribe)
+ 9. Unsubscribes honoured within 10 business days (quicker is better)   (Rule: can-spam)
+
+DELIVERY
+10. Sender authentication set up and bulk-sender rules met   (Standard: google-sender, gmail-postmaster)
+
+SOURCES
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- eprivacy: https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en
+- nng-email: https://www.nngroup.com/articles/newsletters/
+- can-spam: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- nng-unsubscribe: https://www.nngroup.com/articles/unsubscribe-mistakes/
+- google-sender: https://support.google.com/a/answer/81126
+- gmail-postmaster: https://postmaster.google.com/

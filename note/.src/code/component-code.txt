@@ -1,0 +1,19 @@
+title: Component code
+about: How a reusable screen piece is written so it is easy to use, change and trust.
+## Shape
+- One component, one job; split when it grows several | S react-thinking
+- Rendering is pure: same inputs, same output, no side effects while drawing | S react-pure react-rules
+- Hooks called at the top level only, never inside conditions or loops | S react-hooks-rules
+- Effects used only to sync with outside systems, not to compute values | S react-effect
+## Inputs (props)
+- Few, clearly named inputs with sensible defaults | S react-thinking
+- Variants as a short list of named options, not many true/false switches | P
+- Passes through standard attributes (id, aria, className) to the main element | P
+## Look
+- Colours, spacing and type from tokens, never typed-in values | S dtcg-tokens
+## Access
+- Real buttons, links and inputs, not clickable divs | S wcag-name-role apg-button
+- Keyboard and focus behaviour match the pattern it copies | S apg-landmarks wcag-keyboard
+## Proof
+- Each state (default, hover, disabled, loading, error) shown in a story or demo page | S storybook
+- Tests for its behaviour, not its inner details | S fowler-test-pyramid

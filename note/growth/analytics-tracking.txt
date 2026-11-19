@@ -1,0 +1,32 @@
+﻿ANALYTICS TRACKING CHECKLIST: 10 items
+Measuring what people do so decisions use evidence, with their consent.
+Backing: 3 Rule, 3 Standard, 2 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PLAN
+ 1. Goals first, then the few events that show them   (Research: heart, nng-analytics)
+ 2. One named list of events and their details, kept in the repo   (Standard: ga4-events)
+ 3. Events named the same way everywhere   (Standard: ga4-events)
+
+CONSENT
+ 4. No tracking before consent where the law requires it   (Rule: gdpr-7, eprivacy)
+ 5. Consent mode passes the choice to every tag   (Standard: ga4-consent)
+ 6. Global Privacy Control respected   (Rule: gpc)
+
+DATA
+ 7. No personal data (names, emails) in events   (Rule: gdpr-5)
+ 8. Internal and test traffic filtered out   (Practice)
+
+USE
+ 9. Numbers paired with research before big changes   (Research: nng-analytics)
+10. Each dashboard names its owner and question   (Practice)
+
+SOURCES
+- heart: https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/
+- nng-analytics: https://www.nngroup.com/articles/analytics-user-experience/
+- ga4-events: https://support.google.com/analytics/answer/9322688
+- gdpr-7: https://gdpr-info.eu/art-7-gdpr/
+- eprivacy: https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en
+- ga4-consent: https://developers.google.com/tag-platform/security/guides/consent
+- gpc: https://globalprivacycontrol.org/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/

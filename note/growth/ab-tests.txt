@@ -1,0 +1,26 @@
+﻿A/B TESTS CHECKLIST: 9 items
+Comparing two versions with real people to see which works better.
+Backing: 1 Rule, 0 Standard, 7 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BEFORE
+ 1. One clear question and one main measure chosen up front   (Research: kohavi-book)
+ 2. Guard measures (speed, errors, cancels) that must not get worse   (Research: kohavi-book)
+ 3. Sample size worked out before starting   (Research: kohavi-book, nng-ab)
+
+RUNNING
+ 4. People split at random and keep their version   (Research: kohavi-book)
+ 5. Split checked: groups the expected sizes   (Research: kohavi-book)
+ 6. Run full weeks; no stopping early on a good day   (Research: kohavi-book)
+
+AFTER
+ 7. Results read with their uncertainty, not just the winner   (Research: kohavi-book)
+ 8. Losing and flat tests recorded too   (Practice)
+
+ETHICS
+ 9. No tests that trick or harm people   (Rule: ftc-dark-patterns)
+
+SOURCES
+- kohavi-book: https://experimentguide.com/
+- nng-ab: https://www.nngroup.com/articles/ab-testing/
+- ftc-dark-patterns: https://www.ftc.gov/reports/bringing-dark-patterns-light

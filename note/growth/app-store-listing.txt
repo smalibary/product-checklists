@@ -1,0 +1,32 @@
+﻿APP STORE LISTING CHECKLIST: 10 items
+The store page that turns browsers into downloads.
+Backing: 5 Rule, 5 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WORDS
+ 1. Name and subtitle say what it does   (Standard: apple-product-page, play-listing)
+ 2. First lines of the description carry the main value   (Standard: apple-product-page)
+ 3. Keywords used honestly, no competitor names   (Rule: apple-review, play-policy)
+
+PICTURES
+ 4. Screenshots in every required size, showing real screens   (Rule: apple-screenshots)
+ 5. First two screenshots tell the story   (Standard: apple-product-page)
+ 6. An optional short preview video of real use   (Standard: apple-product-page)
+
+TRUST
+ 7. Privacy details filled in truthfully   (Rule: apple-privacy-labels, play-data-safety)
+ 8. Age rating answered honestly   (Rule: apple-age-rating)
+ 9. Support and privacy policy addresses working   (Rule: apple-review)
+
+UPKEEP
+10. Replies to reviews   (Standard: apple-review)
+
+SOURCES
+- apple-product-page: https://developer.apple.com/app-store/product-page/
+- play-listing: https://support.google.com/googleplay/android-developer/answer/9859152
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- play-policy: https://play.google/developer-content-policy/
+- apple-screenshots: https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications
+- apple-privacy-labels: https://developer.apple.com/app-store/app-privacy-details/
+- play-data-safety: https://support.google.com/googleplay/android-developer/answer/10787469
+- apple-age-rating: https://developer.apple.com/help/app-store-connect/reference/age-ratings

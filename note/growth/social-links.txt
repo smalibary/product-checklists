@@ -1,0 +1,27 @@
+﻿SOCIAL MEDIA LINKS CHECKLIST: 8 items
+Linking the product to its social accounts and letting people share.
+Backing: 3 Rule, 3 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PROFILES
+ 1. Same name, logo and bio on every account   (Practice)
+ 2. Profile links back to the site   (Practice)
+ 3. Site links to accounts in the footer with clear labels   (Standard: wcag-link)
+
+SHARING
+ 4. Share buttons use the system share sheet on phones   (Standard: webshare)
+ 5. Link previews set on shared pages   (Standard: ogp, x-cards)
+ 6. No tracking scripts from social buttons before consent   (Rule: eprivacy)
+
+RULES
+ 7. Paid posts and partnerships disclosed   (Rule: ftc-endorsements)
+ 8. Reviews and testimonials real   (Rule: ftc-reviews)
+
+SOURCES
+- wcag-link: https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context
+- webshare: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share
+- ogp: https://ogp.me/
+- x-cards: https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards
+- eprivacy: https://edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22023-technical-scope-art-53-eprivacy-directive_en
+- ftc-endorsements: https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking
+- ftc-reviews: https://www.ftc.gov/legal-library/browse/rules/rule-use-consumer-reviews-testimonials

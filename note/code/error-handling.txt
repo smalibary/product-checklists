@@ -1,0 +1,29 @@
+﻿ERROR HANDLING IN CODE CHECKLIST: 8 items
+What code does when something fails, so people see help and developers see the cause.
+Backing: 0 Rule, 7 Standard, 1 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CATCHING
+ 1. Expected failures (network, invalid input) handled where they happen   (Standard: owasp-errors)
+ 2. An error boundary around each screen so one crash does not blank the app   (Standard: react-error)
+ 3. Errors never swallowed silently   (Standard: owasp-errors)
+
+SHOWING
+ 4. People see plain words and a next step, never raw error text   (Research: nng-errors)
+ 5. Retry offered for temporary failures, with growing waits   (Standard: aws-backoff)
+
+RECORDING
+ 6. Every unexpected error logged with context and a request id   (Standard: owasp-logging, otel)
+ 7. No passwords or personal data in error reports   (Standard: owasp-logging)
+
+SAFETY
+ 8. Failures fail closed: access denied when a check errors   (Standard: owasp-scp)
+
+SOURCES
+- owasp-errors: https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html
+- react-error: https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary
+- nng-errors: https://www.nngroup.com/articles/error-message-guidelines/
+- aws-backoff: https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/
+- owasp-logging: https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+- otel: https://opentelemetry.io/docs/
+- owasp-scp: https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/

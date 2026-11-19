@@ -1,0 +1,16 @@
+title: Roadmap
+about: A living plan of the problems the product will solve, now, next and later.
+## Content
+- Themes and problems, not a list of features with dates | R nng-roadmaps
+- Columns by time horizon: now, next, later | R nng-roadmaps
+- Each theme tied to a goal and how success is measured | R nng-roadmaps govuk-measure
+- Evidence behind each item (research, feedback, numbers) | R nng-roadmaps
+## Making it
+- Built from goals, research and feedback, then prioritised | R nng-roadmaps nng-prioritization
+- Priority method written down (for example reach, impact, confidence, effort) | P rice
+## Sharing
+- A public version promises less than the internal one | P
+- Owners named for each theme | P
+## Upkeep
+- Reviewed on a set rhythm, weekly to monthly | R nng-roadmaps
+- Changes explained to the people who rely on it | P

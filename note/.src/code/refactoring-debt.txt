@@ -1,0 +1,15 @@
+title: Refactoring and tech debt
+about: Improving code without changing what it does, and paying down shortcuts on purpose.
+## Refactoring
+- Small steps, each keeping the tests green | S fowler-refactoring
+- Refactor separately from feature changes | S fowler-refactoring
+- Tests in place before changing risky code | S fowler-test-pyramid
+## Debt
+- Shortcuts taken knowingly and written down with the reason | S fowler-debt
+- A visible list of debt with cost and risk | S fowler-debt
+- Time set aside each cycle to pay some back | P
+## Big changes
+- Old and new run side by side until the switch is safe | S fowler-parallel-change
+- Feature flags hide unfinished work | S fowler-flags
+## Measure
+- Change failure rate and time to restore watched | S dora

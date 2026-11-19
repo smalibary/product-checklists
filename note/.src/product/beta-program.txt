@@ -1,0 +1,14 @@
+title: Beta program
+about: Letting a small group try new work early so problems show before everyone gets it.
+## Setup
+- Clear goal for the beta and when it ends | S govuk-beta
+- Testers chosen and invited; joining and leaving easy | S apple-testflight play-testing
+- Testers told what is unfinished and what data is collected | L gdpr-13
+## Running
+- An easy way to send feedback and screenshots | S apple-testflight
+- Crash and error reports collected | S sre-monitoring
+- Features behind flags so they can be turned off | S fowler-flags
+## Closing
+- Feedback answered and testers thanked | P
+- Readiness checked against the goal before release | S govuk-beta
+- Staged rollout after the beta | S play-staged apple-phased

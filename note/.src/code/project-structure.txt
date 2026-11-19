@@ -1,0 +1,14 @@
+title: Project structure
+about: Where files go, so anyone can find things and changes stay small.
+## Folders
+- Grouped by feature, with shared pieces in one common place | P
+- A short guide in the README says what each top-level folder holds | S github-readme
+- Settings in environment variables, not in code | S twelve-factor
+## Boundaries
+- Screens call a data layer; they never talk to the database directly | P
+- Shared code has no imports back from features | P
+- Secrets and generated files kept out of git | S owasp-secrets
+## Size
+- Files kept small; split by topic when they grow | P
+## Decisions
+- Big choices written as short decision records next to the code | S adr

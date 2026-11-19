@@ -1,0 +1,16 @@
+title: Browser extension store
+about: Publishing an extension to the Chrome, Firefox or Edge store.
+## Build
+- Manifest version 3 | L mv3
+- Fewest permissions possible; optional ones asked when needed | L cws-permissions
+- No remote code; all code in the package | L cws-policy
+## Listing
+- One clear purpose in the description | L cws-policy
+- Screenshots and icon in the required sizes | S cws-best
+- Privacy practices declared; a privacy policy if data is handled | L cws-policy amo-policy
+## Rules
+- Data used only for the stated purpose | L cws-policy
+- Firefox add-on rules met for that store | L amo-policy
+- Microsoft store rules met for Edge | L ms-store-policy
+## Upkeep
+- Updates reviewed for new permission warnings | S cws-best

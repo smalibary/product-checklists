@@ -1,0 +1,27 @@
+﻿PRIORITISING CHECKLIST: 9 items
+Choosing what to build next in a way people can see and trust.
+Backing: 0 Rule, 0 Standard, 5 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+METHOD
+ 1. One written method used every time   (Research: nng-prioritization)
+ 2. Scores for reach, impact, confidence and effort   (Practice: rice)
+ 3. Value against effort shown on a simple grid   (Research: nng-prioritization)
+
+INPUTS
+ 4. Goals and roadmap themes come first   (Research: nng-roadmaps)
+ 5. Research and feedback, not the loudest voice   (Research: nng-feedback)
+ 6. Risk, legal and security work counted, not crowded out   (Practice)
+
+OUTPUT
+ 7. A ranked list with the reasons beside each item   (Research: nng-prioritization)
+ 8. What was not chosen, and why, written down   (Practice)
+
+RHYTHM
+ 9. Re-ranked on a set rhythm   (Practice)
+
+SOURCES
+- nng-prioritization: https://www.nngroup.com/articles/prioritization-methods/
+- rice: https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/
+- nng-roadmaps: https://www.nngroup.com/articles/ux-roadmaps/
+- nng-feedback: https://www.nngroup.com/articles/user-feedback/

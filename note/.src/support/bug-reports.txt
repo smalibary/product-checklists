@@ -1,0 +1,15 @@
+title: Bug reports
+about: Making it easy to report problems and turning reports into fixes.
+## Reporting
+- A form with steps, expected and actual result | S github-issue-forms
+- Screenshots and app version attached automatically where possible | P
+- Duplicate check before submitting | P
+## Handling
+- Each report labelled by severity and area | P
+- Reporter told the status | P
+- Security problems sent to a private channel, not public | S iso-29147 rfc-securitytxt
+## Fixing
+- A failing test written before the fix | S fowler-test-pyramid
+- Fix noted in the release notes | S keepachangelog
+## Trends
+- Crash and error rates watched alongside reports | S sre-monitoring

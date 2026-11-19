@@ -1,0 +1,24 @@
+﻿LINK PREVIEWS CHECKLIST: 8 items
+How a page looks when shared in chats and social apps.
+Backing: 1 Rule, 5 Standard, 1 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TAGS
+ 1. og:title, og:description, og:image and og:url on every shareable page   (Standard: ogp)
+ 2. Card tags for X   (Standard: x-cards)
+ 3. An image at least 1200 by 630 pixels, readable small   (Standard: ogp)
+ 4. og:type set (website, article)   (Standard: ogp)
+
+CONTENT
+ 5. Title and description written for sharing, not just search   (Research: nng-microcontent)
+ 6. Private pages show a generic preview, never personal data   (Rule: gdpr-5)
+
+CHECKS
+ 7. Previews tested in the main apps people share to   (Practice)
+ 8. Image address absolute and public   (Standard: ogp)
+
+SOURCES
+- ogp: https://ogp.me/
+- x-cards: https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards
+- nng-microcontent: https://www.nngroup.com/articles/microcontent-how-to-write-headlines-page-titles-and-subject-lines/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/

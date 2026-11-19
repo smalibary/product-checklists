@@ -1,0 +1,30 @@
+﻿BROWSER EXTENSION STORE CHECKLIST: 10 items
+Publishing an extension to the Chrome, Firefox or Edge store.
+Backing: 8 Rule, 2 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BUILD
+ 1. Manifest version 3   (Rule: mv3)
+ 2. Fewest permissions possible; optional ones asked when needed   (Rule: cws-permissions)
+ 3. No remote code; all code in the package   (Rule: cws-policy)
+
+LISTING
+ 4. One clear purpose in the description   (Rule: cws-policy)
+ 5. Screenshots and icon in the required sizes   (Standard: cws-best)
+ 6. Privacy practices declared; a privacy policy if data is handled   (Rule: cws-policy, amo-policy)
+
+RULES
+ 7. Data used only for the stated purpose   (Rule: cws-policy)
+ 8. Firefox add-on rules met for that store   (Rule: amo-policy)
+ 9. Microsoft store rules met for Edge   (Rule: ms-store-policy)
+
+UPKEEP
+10. Updates reviewed for new permission warnings   (Standard: cws-best)
+
+SOURCES
+- mv3: https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3
+- cws-permissions: https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions
+- cws-policy: https://developer.chrome.com/docs/webstore/program-policies
+- cws-best: https://developer.chrome.com/docs/webstore/best-practices
+- amo-policy: https://extensionworkshop.com/documentation/publish/add-on-policies/
+- ms-store-policy: https://learn.microsoft.com/en-us/windows/apps/publish/store-policies

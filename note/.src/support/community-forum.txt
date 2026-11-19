@@ -1,0 +1,16 @@
+title: Community forum
+about: A place where users help each other, with clear rules and moderation.
+## Rules
+- Community rules written and linked on every page | L eu-dsa
+- A way to report posts, with replies to reporters | L eu-dsa
+- Moderation decisions explained, with a way to appeal | L eu-dsa
+## Content
+- Search before posting, to cut duplicates | R nng-search
+- Accepted answers marked | P
+- Staff answers clearly labelled | P
+## Safety
+- User links marked ugc | L gsc-qualify
+- Spam and abuse filters | L gsc-spam
+- Personal data not shown publicly by default | L gdpr-25
+## Search
+- Question and answer structured data on threads | S schema-org

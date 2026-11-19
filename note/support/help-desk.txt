@@ -1,0 +1,32 @@
+﻿HELP DESK CHECKLIST: 10 items
+Receiving, answering and tracking every support question.
+Backing: 1 Rule, 6 Standard, 3 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+INTAKE
+ 1. Contact options easy to find from every screen   (Research: nng-contact, govuk-contact)
+ 2. A form that asks the right details up front   (Standard: govuk-question)
+ 3. Every request gets a reference and a reply time   (Standard: iso-10002)
+
+HANDLING
+ 4. Response and fix time targets by priority   (Standard: zendesk-sla)
+ 5. Requests sorted and routed to the right team   (Standard: iso-10002)
+ 6. Customers told who is helping and what happens next   (Standard: iso-10002)
+
+RECORDS
+ 7. History kept so nobody has to repeat themselves   (Research: nng-chat)
+ 8. Personal data limited and deleted on schedule   (Rule: gdpr-5)
+
+LEARNING
+ 9. Common questions turned into help articles   (Research: nng-help)
+10. Complaints counted and reviewed for root causes   (Standard: iso-10002)
+
+SOURCES
+- nng-contact: https://www.nngroup.com/articles/contact-us-pages/
+- govuk-contact: https://design-system.service.gov.uk/patterns/
+- govuk-question: https://design-system.service.gov.uk/patterns/question-pages/
+- iso-10002: https://www.iso.org/standard/71580.html
+- zendesk-sla: https://support.zendesk.com/hc/en-us/articles/4408829459866-Defining-SLA-policies
+- nng-chat: https://www.nngroup.com/articles/chat-ux/
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/
+- nng-help: https://www.nngroup.com/articles/help-and-documentation/

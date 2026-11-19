@@ -1,0 +1,31 @@
+﻿LIVE CHAT CHECKLIST: 10 items
+Real-time help in the product, by a person or a bot.
+Backing: 0 Rule, 1 Standard, 9 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FINDING IT
+ 1. Labelled "Chat", in the usual bottom corner   (Research: nng-chat)
+ 2. Not the only way to get help   (Research: nng-chat, nng-contact)
+
+STARTING
+ 3. Says if a bot or a person is answering   (Research: nng-chat, nng-chatbots)
+ 4. Expected wait shown as a time, not a queue number   (Research: nng-chat)
+ 5. Opening hours shown when nobody is there, with another way to reach out   (Research: nng-chat)
+
+DURING
+ 6. Handover from bot to person keeps the conversation   (Research: nng-chat)
+ 7. Timestamps on messages   (Research: nng-chat)
+
+AFTER
+ 8. A copy of the conversation offered   (Research: nng-chat)
+ 9. Can resume after a disconnect   (Research: nng-chat)
+
+ACCESS
+10. Works with keyboard and screen readers; new messages announced   (Standard: wcag-status, wcag-keyboard)
+
+SOURCES
+- nng-chat: https://www.nngroup.com/articles/chat-ux/
+- nng-contact: https://www.nngroup.com/articles/contact-us-pages/
+- nng-chatbots: https://www.nngroup.com/articles/chatbots/
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- wcag-keyboard: https://www.w3.org/WAI/WCAG22/Understanding/keyboard

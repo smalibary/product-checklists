@@ -1,0 +1,37 @@
+﻿BLOG CHECKLIST: 11 items
+Articles that bring readers, answer questions and stay findable.
+Backing: 1 Rule, 7 Standard, 2 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ARTICLE PAGE
+ 1. A clear title and summary at the top   (Research: nng-microcontent)
+ 2. Author, publish date and update date shown   (Standard: gsc-date)
+ 3. Article structured data   (Standard: google-article)
+ 4. Headings, short paragraphs and a table of contents for long posts   (Research: nng-web-writing)
+ 5. Images with alt text and sizes set   (Standard: wcag-nontext, webdev-images)
+
+LISTING
+ 6. Posts by topic or tag, with page-by-page lists   (Standard: gsc-links)
+ 7. Related posts at the end   (Practice)
+
+SHARING
+ 8. Link preview tags on every post   (Standard: ogp)
+ 9. An RSS or Atom feed   (Standard: rfc-atom)
+
+UPKEEP
+10. Old posts reviewed; out-of-date ones updated or redirected   (Standard: google-helpful, gsc-redirects)
+11. Comments, if any, moderated and marked ugc   (Rule: gsc-qualify)
+
+SOURCES
+- nng-microcontent: https://www.nngroup.com/articles/microcontent-how-to-write-headlines-page-titles-and-subject-lines/
+- gsc-date: https://developers.google.com/search/docs/appearance/publication-dates
+- google-article: https://developers.google.com/search/docs/appearance/structured-data/article
+- nng-web-writing: https://www.nngroup.com/articles/how-users-read-on-the-web/
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- webdev-images: https://web.dev/learn/images
+- gsc-links: https://developers.google.com/search/docs/crawling-indexing/links-crawlable
+- ogp: https://ogp.me/
+- rfc-atom: https://www.rfc-editor.org/rfc/rfc4287
+- google-helpful: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+- gsc-redirects: https://developers.google.com/search/docs/crawling-indexing/301-redirects
+- gsc-qualify: https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links

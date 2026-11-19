@@ -1,0 +1,31 @@
+﻿RETIRING A FEATURE CHECKLIST: 10 items
+Removing a feature or product without leaving people stranded.
+Backing: 3 Rule, 6 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+DECIDING
+ 1. Usage and cost checked before deciding   (Standard: govuk-retire)
+ 2. Who relies on it, and on what, listed   (Standard: govuk-retire)
+
+TELLING PEOPLE
+ 3. Announced well ahead with a date and the reason   (Standard: govuk-retire)
+ 4. In-product notices where the feature lives   (Practice)
+ 5. API users told with Deprecation and Sunset headers   (Standard: rfc-deprecation, rfc-sunset)
+
+LEAVING
+ 6. A way to export their data   (Rule: gdpr-20)
+ 7. An alternative suggested, or help to move   (Standard: govuk-retire)
+ 8. Paid plans adjusted or refunded fairly   (Rule: eu-consumer-rights)
+
+AFTER
+ 9. Old addresses redirected   (Standard: gsc-redirects)
+10. Code and data removed; data deleted on schedule   (Rule: gdpr-5)
+
+SOURCES
+- govuk-retire: https://www.gov.uk/service-manual/agile-delivery/retiring-your-service
+- rfc-deprecation: https://www.rfc-editor.org/rfc/rfc9745
+- rfc-sunset: https://www.rfc-editor.org/rfc/rfc8594
+- gdpr-20: https://gdpr-info.eu/art-20-gdpr/
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- gsc-redirects: https://developers.google.com/search/docs/crawling-indexing/301-redirects
+- gdpr-5: https://gdpr-info.eu/art-5-gdpr/

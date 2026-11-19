@@ -1,0 +1,15 @@
+title: Product metrics
+about: The few numbers that show if the product is working for people and the business.
+## Choosing
+- Goals, then signals, then measures for each | R heart
+- A mix of happiness, engagement, adoption, retention and task success | R heart
+- One north-star measure plus guard measures | P
+## Standard measures
+- Task completion rate, cost per transaction, satisfaction and digital take-up | S govuk-measure
+- Retention by sign-up group over time | P
+## Quality
+- Each measure defined in writing: what counts, from where | S govuk-measure
+- Test and internal traffic left out | P
+## Use
+- Reviewed on a rhythm with someone who owns each one | P
+- Numbers explained with research, not guessed at | R nng-analytics

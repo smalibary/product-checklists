@@ -1,0 +1,29 @@
+﻿BUG REPORTS CHECKLIST: 9 items
+Making it easy to report problems and turning reports into fixes.
+Backing: 0 Rule, 5 Standard, 0 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+REPORTING
+ 1. A form with steps, expected and actual result   (Standard: github-issue-forms)
+ 2. Screenshots and app version attached automatically where possible   (Practice)
+ 3. Duplicate check before submitting   (Practice)
+
+HANDLING
+ 4. Each report labelled by severity and area   (Practice)
+ 5. Reporter told the status   (Practice)
+ 6. Security problems sent to a private channel, not public   (Standard: iso-29147, rfc-securitytxt)
+
+FIXING
+ 7. A failing test written before the fix   (Standard: fowler-test-pyramid)
+ 8. Fix noted in the release notes   (Standard: keepachangelog)
+
+TRENDS
+ 9. Crash and error rates watched alongside reports   (Standard: sre-monitoring)
+
+SOURCES
+- github-issue-forms: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+- iso-29147: https://www.iso.org/standard/72311.html
+- rfc-securitytxt: https://www.rfc-editor.org/rfc/rfc9116
+- fowler-test-pyramid: https://martinfowler.com/articles/practical-test-pyramid.html
+- keepachangelog: https://keepachangelog.com/en/1.1.0/
+- sre-monitoring: https://sre.google/sre-book/monitoring-distributed-systems/

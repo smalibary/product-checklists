@@ -1,0 +1,24 @@
+﻿TYPE SAFETY CHECKLIST: 8 items
+Letting the computer catch wrong kinds of values before the code runs.
+Backing: 0 Rule, 7 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SETUP
+ 1. Strict mode on from the start   (Standard: ts-strict)
+ 2. The type check runs in the pipeline and blocks merging   (Standard: ts-handbook)
+
+WRITING
+ 3. No "any" except at clearly marked edges   (Standard: ts-handbook)
+ 4. Data from outside (forms, APIs, files) checked at runtime, then typed   (Standard: owasp-input)
+ 5. Possible empty values handled, not assumed   (Standard: ts-strict)
+ 6. Fixed sets of options as unions, not loose strings   (Standard: ts-handbook)
+
+SHARING
+ 7. One source for types shared by the server and the screens (generated from the API or database)   (Standard: openapi)
+ 8. Ignore comments for type errors only with a reason   (Practice)
+
+SOURCES
+- ts-strict: https://www.typescriptlang.org/tsconfig/#strict
+- ts-handbook: https://www.typescriptlang.org/docs/handbook/intro.html
+- owasp-input: https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html
+- openapi: https://spec.openapis.org/oas/latest.html

@@ -1,0 +1,14 @@
+title: Code review
+about: A second person checks every change before it joins the main version.
+## Author
+- Small changes, one idea each | S google-review-author
+- A description saying what changed, why, and how it was tested | S google-review-author
+- Screenshots for visible changes | P
+## Reviewer
+- Checks design, behaviour, tests, naming and simplicity, in that order | S google-code-review
+- Approves when the change makes the code better, even if not perfect | S google-code-review
+- Comments are kind, explain why, and mark nits as optional | S google-code-review
+- Replies within one working day | S google-code-review
+## Rules
+- Main is protected: no direct pushes, checks must pass | S github-protected
+- Owners of sensitive areas review changes there | S github-codeowners

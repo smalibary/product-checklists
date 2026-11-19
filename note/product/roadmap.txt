@@ -1,0 +1,28 @@
+﻿ROADMAP CHECKLIST: 10 items
+A living plan of the problems the product will solve, now, next and later.
+Backing: 0 Rule, 0 Standard, 6 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CONTENT
+ 1. Themes and problems, not a list of features with dates   (Research: nng-roadmaps)
+ 2. Columns by time horizon: now, next, later   (Research: nng-roadmaps)
+ 3. Each theme tied to a goal and how success is measured   (Research: nng-roadmaps, govuk-measure)
+ 4. Evidence behind each item (research, feedback, numbers)   (Research: nng-roadmaps)
+
+MAKING IT
+ 5. Built from goals, research and feedback, then prioritised   (Research: nng-roadmaps, nng-prioritization)
+ 6. Priority method written down (for example reach, impact, confidence, effort)   (Practice: rice)
+
+SHARING
+ 7. A public version promises less than the internal one   (Practice)
+ 8. Owners named for each theme   (Practice)
+
+UPKEEP
+ 9. Reviewed on a set rhythm, weekly to monthly   (Research: nng-roadmaps)
+10. Changes explained to the people who rely on it   (Practice)
+
+SOURCES
+- nng-roadmaps: https://www.nngroup.com/articles/ux-roadmaps/
+- govuk-measure: https://www.gov.uk/service-manual/measuring-success
+- nng-prioritization: https://www.nngroup.com/articles/prioritization-methods/
+- rice: https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/

@@ -1,0 +1,35 @@
+﻿LAUNCH DAY CHECKLIST: 11 items
+The checklist for the day a product or big feature goes public.
+Backing: 0 Rule, 6 Standard, 1 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+BEFORE
+ 1. Rollback plan written and tested   (Standard: sre-release)
+ 2. Monitoring, alerts and on-call in place   (Standard: sre-monitoring, sre-alerting)
+ 3. Load expected and tested   (Standard: sre-overload)
+ 4. Status page ready   (Practice)
+
+CONTENT
+ 5. Launch post, help articles and release notes ready   (Standard: keepachangelog)
+ 6. Link previews set on the launch page   (Standard: ogp)
+ 7. Launch page listed (Product Hunt, community sites) following each site's rules   (Practice: ph-launch)
+
+DURING
+ 8. Rollout in stages, watching errors   (Standard: sre-canary)
+ 9. Someone answering questions in every channel   (Practice: ph-launch)
+
+AFTER
+10. Results against goals reviewed   (Research: heart)
+11. Launch again with each meaningful update   (Practice: yc-launch)
+
+SOURCES
+- sre-release: https://sre.google/sre-book/release-engineering/
+- sre-monitoring: https://sre.google/sre-book/monitoring-distributed-systems/
+- sre-alerting: https://sre.google/workbook/alerting-on-slos/
+- sre-overload: https://sre.google/sre-book/handling-overload/
+- keepachangelog: https://keepachangelog.com/en/1.1.0/
+- ogp: https://ogp.me/
+- ph-launch: https://help.producthunt.com/en/articles/479557-how-to-launch-on-product-hunt
+- sre-canary: https://sre.google/workbook/canarying-releases/
+- heart: https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/
+- yc-launch: https://www.ycombinator.com/library/6h-how-to-launch-again-and-again

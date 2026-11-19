@@ -1,0 +1,16 @@
+title: Analytics tracking
+about: Measuring what people do so decisions use evidence, with their consent.
+## Plan
+- Goals first, then the few events that show them | R heart nng-analytics
+- One named list of events and their details, kept in the repo | S ga4-events
+- Events named the same way everywhere | S ga4-events
+## Consent
+- No tracking before consent where the law requires it | L gdpr-7 eprivacy
+- Consent mode passes the choice to every tag | S ga4-consent
+- Global Privacy Control respected | L gpc
+## Data
+- No personal data (names, emails) in events | L gdpr-5
+- Internal and test traffic filtered out | P
+## Use
+- Numbers paired with research before big changes | R nng-analytics
+- Each dashboard names its owner and question | P

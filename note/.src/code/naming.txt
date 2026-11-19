@@ -1,0 +1,13 @@
+title: Naming
+about: Names for files, functions and values that say what they are.
+## Names
+- Say what it is or does, not how it is built | S google-style
+- One word for one idea across the whole project (a glossary) | R nng-consistency
+- Booleans read as yes/no questions (isOpen, hasError) | S google-style
+- Functions start with a verb (loadOrders) | S google-style
+- No unclear short forms; well-known ones only (id, url) | S google-style
+## Consistency
+- One casing per kind of thing (files, components, constants) | S google-style
+- Names in the code match words on screen and in the database | P
+## Changing
+- Bad names renamed everywhere at once with the editor's rename tool | S fowler-refactoring

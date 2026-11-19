@@ -1,0 +1,29 @@
+﻿REFACTORING AND TECH DEBT CHECKLIST: 9 items
+Improving code without changing what it does, and paying down shortcuts on purpose.
+Backing: 0 Rule, 8 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+REFACTORING
+ 1. Small steps, each keeping the tests green   (Standard: fowler-refactoring)
+ 2. Refactor separately from feature changes   (Standard: fowler-refactoring)
+ 3. Tests in place before changing risky code   (Standard: fowler-test-pyramid)
+
+DEBT
+ 4. Shortcuts taken knowingly and written down with the reason   (Standard: fowler-debt)
+ 5. A visible list of debt with cost and risk   (Standard: fowler-debt)
+ 6. Time set aside each cycle to pay some back   (Practice)
+
+BIG CHANGES
+ 7. Old and new run side by side until the switch is safe   (Standard: fowler-parallel-change)
+ 8. Feature flags hide unfinished work   (Standard: fowler-flags)
+
+MEASURE
+ 9. Change failure rate and time to restore watched   (Standard: dora)
+
+SOURCES
+- fowler-refactoring: https://refactoring.com/
+- fowler-test-pyramid: https://martinfowler.com/articles/practical-test-pyramid.html
+- fowler-debt: https://martinfowler.com/bliki/TechnicalDebtQuadrant.html
+- fowler-parallel-change: https://martinfowler.com/bliki/ParallelChange.html
+- fowler-flags: https://martinfowler.com/articles/feature-toggles.html
+- dora: https://dora.dev/guides/dora-metrics-four-keys/

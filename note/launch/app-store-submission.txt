@@ -1,0 +1,37 @@
+﻿APP STORE SUBMISSION CHECKLIST: 12 items
+Getting an iPhone or iPad app through Apple's review.
+Backing: 10 Rule, 2 Standard, 0 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+ACCOUNT AND BUILD
+ 1. Developer account, certificates and bundle id set   (Rule: apple-review)
+ 2. Tested with TestFlight on real devices   (Standard: apple-testflight)
+
+LISTING
+ 3. Name, subtitle, description, keywords and screenshots   (Rule: apple-screenshots, apple-product-page)
+ 4. Privacy details answered truthfully   (Rule: apple-privacy-labels)
+ 5. Age rating set   (Rule: apple-age-rating)
+ 6. Privacy policy and support addresses working   (Rule: apple-review)
+
+REVIEW RULES
+ 7. Demo account and notes for the reviewer   (Rule: apple-review)
+ 8. Account deletion inside the app if sign-up exists   (Rule: apple-deletion)
+ 9. Sign in with Apple offered when other social sign-ins are   (Rule: apple-4.8)
+10. Purchases of digital goods through Apple's system   (Rule: apple-subscriptions)
+11. Tracking permission asked before tracking   (Rule: apple-att)
+
+RELEASE
+12. Phased release for updates   (Standard: apple-phased)
+
+SOURCES
+- apple-review: https://developer.apple.com/app-store/review/guidelines/
+- apple-testflight: https://developer.apple.com/testflight/
+- apple-screenshots: https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications
+- apple-product-page: https://developer.apple.com/app-store/product-page/
+- apple-privacy-labels: https://developer.apple.com/app-store/app-privacy-details/
+- apple-age-rating: https://developer.apple.com/help/app-store-connect/reference/age-ratings
+- apple-deletion: https://developer.apple.com/support/offering-account-deletion-in-your-app
+- apple-4.8: https://developer.apple.com/app-store/review/guidelines/#login-services
+- apple-subscriptions: https://developer.apple.com/app-store/subscriptions/
+- apple-att: https://developer.apple.com/documentation/apptrackingtransparency
+- apple-phased: https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases

@@ -1,0 +1,15 @@
+title: Domain and email setup
+about: The address, security headers and email records every product needs.
+## Domain
+- Domain registered with auto-renew and locked | P
+- HTTPS everywhere, with HSTS | S mdn-hsts
+- One main address; others redirect | S gsc-canonical gsc-redirects
+## Security
+- Security headers checked (CSP, framing, content type) | S mdn-csp owasp-headers mozilla-observatory
+- security.txt published | S rfc-securitytxt
+## Email
+- SPF, DKIM and DMARC records | S rfc-spf rfc-dkim rfc-dmarc
+- Sending reputation watched | S gmail-postmaster
+- Support and no-reply addresses chosen; replies go somewhere read | P
+## Search
+- Site verified in the search console, sitemap sent | S gsc-sitemaps

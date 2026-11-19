@@ -1,0 +1,29 @@
+﻿BETA PROGRAM CHECKLIST: 9 items
+Letting a small group try new work early so problems show before everyone gets it.
+Backing: 1 Rule, 7 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SETUP
+ 1. Clear goal for the beta and when it ends   (Standard: govuk-beta)
+ 2. Testers chosen and invited; joining and leaving easy   (Standard: apple-testflight, play-testing)
+ 3. Testers told what is unfinished and what data is collected   (Rule: gdpr-13)
+
+RUNNING
+ 4. An easy way to send feedback and screenshots   (Standard: apple-testflight)
+ 5. Crash and error reports collected   (Standard: sre-monitoring)
+ 6. Features behind flags so they can be turned off   (Standard: fowler-flags)
+
+CLOSING
+ 7. Feedback answered and testers thanked   (Practice)
+ 8. Readiness checked against the goal before release   (Standard: govuk-beta)
+ 9. Staged rollout after the beta   (Standard: play-staged, apple-phased)
+
+SOURCES
+- govuk-beta: https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works
+- apple-testflight: https://developer.apple.com/testflight/
+- play-testing: https://support.google.com/googleplay/android-developer/answer/9845334
+- gdpr-13: https://gdpr-info.eu/art-13-gdpr/
+- sre-monitoring: https://sre.google/sre-book/monitoring-distributed-systems/
+- fowler-flags: https://martinfowler.com/articles/feature-toggles.html
+- play-staged: https://support.google.com/googleplay/android-developer/answer/6346149
+- apple-phased: https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases

@@ -1,0 +1,13 @@
+title: Accessibility statement
+about: A public page saying how accessible the product is and how to get help.
+## Content
+- The standard aimed for (for example WCAG 2.2 AA) | S w3c-a11y-statement
+- Known problems listed, with plans and dates | S govuk-a11y-statement
+- How to report a problem or ask for another format | S w3c-a11y-statement
+- Date of the last check and how it was checked | S govuk-a11y-statement
+## Law
+- Required for public sector sites in the EU and UK | L eu-a11y-directive govuk-a11y-statement
+- Products and services under the European Accessibility Act need accessibility information | L eu-accessibility-act
+## Upkeep
+- Linked from the footer | S w3c-a11y-statement
+- Updated after each audit | S govuk-a11y-statement

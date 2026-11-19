@@ -1,0 +1,26 @@
+﻿PRODUCT METRICS CHECKLIST: 9 items
+The few numbers that show if the product is working for people and the business.
+Backing: 0 Rule, 2 Standard, 3 Research, 4 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING
+ 1. Goals, then signals, then measures for each   (Research: heart)
+ 2. A mix of happiness, engagement, adoption, retention and task success   (Research: heart)
+ 3. One north-star measure plus guard measures   (Practice)
+
+STANDARD MEASURES
+ 4. Task completion rate, cost per transaction, satisfaction and digital take-up   (Standard: govuk-measure)
+ 5. Retention by sign-up group over time   (Practice)
+
+QUALITY
+ 6. Each measure defined in writing: what counts, from where   (Standard: govuk-measure)
+ 7. Test and internal traffic left out   (Practice)
+
+USE
+ 8. Reviewed on a rhythm with someone who owns each one   (Practice)
+ 9. Numbers explained with research, not guessed at   (Research: nng-analytics)
+
+SOURCES
+- heart: https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/
+- govuk-measure: https://www.gov.uk/service-manual/measuring-success
+- nng-analytics: https://www.nngroup.com/articles/analytics-user-experience/

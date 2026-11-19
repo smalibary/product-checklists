@@ -1,0 +1,14 @@
+title: Release announcements
+about: Telling people what changed, in places they will see it.
+## Release notes
+- Written for people, grouped as added, changed, fixed, removed | S keepachangelog
+- Version number follows the agreed scheme | S semver
+- Breaking changes and what to do listed first | S semver keepachangelog
+## In product
+- New features introduced in context, once, and easy to dismiss | R nng-onboarding
+- No pop-ups that block the task | R nng-modal
+## Other channels
+- Email only to people who opted in | L gdpr-7 can-spam
+- Store "what's new" text updated each release | S apple-product-page play-listing
+## Timing
+- Announced after the rollout is complete | S sre-canary

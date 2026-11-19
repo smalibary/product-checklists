@@ -1,0 +1,16 @@
+title: Email marketing
+about: Newsletters and offers people asked for and can easily leave.
+## Signing up
+- Clear opt-in, never a pre-ticked box | L gdpr-7 eprivacy
+- Says what is sent and how often | R nng-email
+- Double opt-in confirms the address | P
+## Each email
+- True sender and subject line | L can-spam
+- Marked as an ad where it is one | L can-spam
+- Postal address included | L can-spam
+- Scannable layout that works on phones | R nng-email
+## Leaving
+- An unsubscribe link in every email, working in one step | L can-spam nng-unsubscribe
+- Unsubscribes honoured within 10 business days (quicker is better) | L can-spam
+## Delivery
+- Sender authentication set up and bulk-sender rules met | S google-sender gmail-postmaster

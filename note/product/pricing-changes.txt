@@ -1,0 +1,30 @@
+﻿PRICING CHANGES CHECKLIST: 9 items
+Changing prices or plans fairly and within store and consumer rules.
+Backing: 5 Rule, 0 Standard, 1 Research, 3 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PLANNING
+ 1. Reason for the change written down   (Practice)
+ 2. Who is affected, and by how much, worked out   (Practice)
+
+TELLING PEOPLE
+ 3. Notice in advance, with the date and the new price   (Rule: eu-consumer-rights, ftc-negative-option)
+ 4. Subscription price rises follow the store's consent rules   (Rule: apple-subscriptions, play-subscriptions)
+ 5. Total price shown with all fees   (Rule: ftc-junk-fees)
+
+CHOICES
+ 6. Easy cancel before the change   (Rule: ftc-negative-option)
+ 7. Old price kept for a time where promised   (Practice)
+
+DISPLAY
+ 8. Former prices shown honestly in sales   (Rule: eu-omnibus)
+ 9. Pricing page clear and comparable   (Research: nng-pricing)
+
+SOURCES
+- eu-consumer-rights: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+- ftc-negative-option: https://www.ftc.gov/legal-library/browse/rules/negative-option-rule
+- apple-subscriptions: https://developer.apple.com/app-store/subscriptions/
+- play-subscriptions: https://support.google.com/googleplay/android-developer/answer/9900533
+- ftc-junk-fees: https://www.ftc.gov/legal-library/browse/rules/rule-unfair-or-deceptive-fees
+- eu-omnibus: https://commission.europa.eu/law/law-topic/consumer-protection-law/review-eu-consumer-law_en
+- nng-pricing: https://www.nngroup.com/articles/show-price/

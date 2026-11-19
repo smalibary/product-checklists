@@ -1,0 +1,15 @@
+title: A/B tests
+about: Comparing two versions with real people to see which works better.
+## Before
+- One clear question and one main measure chosen up front | R kohavi-book
+- Guard measures (speed, errors, cancels) that must not get worse | R kohavi-book
+- Sample size worked out before starting | R kohavi-book nng-ab
+## Running
+- People split at random and keep their version | R kohavi-book
+- Split checked: groups the expected sizes | R kohavi-book
+- Run full weeks; no stopping early on a good day | R kohavi-book
+## After
+- Results read with their uncertainty, not just the winner | R kohavi-book
+- Losing and flat tests recorded too | P
+## Ethics
+- No tests that trick or harm people | L ftc-dark-patterns

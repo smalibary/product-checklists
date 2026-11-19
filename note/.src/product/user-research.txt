@@ -1,0 +1,16 @@
+title: User research
+about: Learning what people need by watching and talking to them.
+## Planning
+- A clear question for each round of research | R nng-interviews govuk-research
+- Participants who match real users, including people with disabilities | S govuk-research
+- Consent and data handling explained before starting | L gdpr-7
+## Methods
+- Interviews for needs and context | R nng-interviews
+- Usability tests on real tasks with about five people per round | R nng-usability-testing nng-five-users
+- Test early drafts, not only finished screens | R nng-usability-testing
+## Running
+- Neutral questions; no leading or selling | R nng-interviews
+- Notes and recordings stored securely and deleted on schedule | L gdpr-5
+## Sharing
+- Findings written up with the problems and their severity | R nng-usability-testing
+- Fixes tracked to the next round | S govuk-research

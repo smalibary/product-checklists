@@ -1,0 +1,15 @@
+title: Pricing changes
+about: Changing prices or plans fairly and within store and consumer rules.
+## Planning
+- Reason for the change written down | P
+- Who is affected, and by how much, worked out | P
+## Telling people
+- Notice in advance, with the date and the new price | L eu-consumer-rights ftc-negative-option
+- Subscription price rises follow the store's consent rules | L apple-subscriptions play-subscriptions
+- Total price shown with all fees | L ftc-junk-fees
+## Choices
+- Easy cancel before the change | L ftc-negative-option
+- Old price kept for a time where promised | P
+## Display
+- Former prices shown honestly in sales | L eu-omnibus
+- Pricing page clear and comparable | R nng-pricing

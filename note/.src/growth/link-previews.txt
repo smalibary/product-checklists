@@ -1,0 +1,13 @@
+title: Link previews
+about: How a page looks when shared in chats and social apps.
+## Tags
+- og:title, og:description, og:image and og:url on every shareable page | S ogp
+- Card tags for X | S x-cards
+- An image at least 1200 by 630 pixels, readable small | S ogp
+- og:type set (website, article) | S ogp
+## Content
+- Title and description written for sharing, not just search | R nng-microcontent
+- Private pages show a generic preview, never personal data | L gdpr-5
+## Checks
+- Previews tested in the main apps people share to | P
+- Image address absolute and public | S ogp
