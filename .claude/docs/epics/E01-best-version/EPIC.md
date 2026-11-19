@@ -11,6 +11,6 @@ of the same page. Decisions: `.claude/grill/decisions.md` (rows "Best version", 
 | E1.2 | Test inbox | One throwaway email address per site, from a mail service with a usage limit written in services.md first (L-1); the recorder reads the code or link from it | ● built (mail.tm, capped 20 a day) |
 | E1.3 | Automatic audit | Judges every "Seen" item from what was measured (keyboard type, labels, sizes, button states, errors, code boxes, right-to-left); each verdict met / missing / partly met with the step picture as proof and the item's "why" | ● built (25 of 66 items graded automatically on Dribbble) |
 | E1.4 | Claude's audit | In a session, Claude judges the items left over from the pictures and clips, and writes the plain-words summary | ● built (Audit tab on the library page) |
-| E1.5 | Best-version sign-up | A working sign-up built with ui-sdk on shadcn that meets every item: all screens (ways in, form, errors, code, welcome) really work in the page, with fake sending | ○ |
+| E1.5 | Best-version sign-up | A working sign-up built with ui-sdk on shadcn that meets every item: all screens (ways in, form, errors, code, welcome) really work in the page, with fake sending | built 2026-11-19 |
 | E1.6 | Their style | The recorded app's colours, font, corners and spacing, taken from its component cards, applied to the best version as tokens; switch between their style and plain ui-sdk | ○ |
 | E1.7 | Side by side | In the library: real flow left, best version right, the audit below with each item's verdict, backing and source link | ○ |

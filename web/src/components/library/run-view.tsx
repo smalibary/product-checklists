@@ -16,6 +16,8 @@ import { Chips, KINDS, OUTCOMES, outcomeTone } from "./parts"
 import { StepDetail } from "./step-detail"
 import { ComponentsView } from "./components-view"
 import { AuditView } from "./audit-view"
+import { BestSignUp } from "@/components/best/signup-flow"
+import { PLAIN } from "@/components/best/theme"
 
 export function RunView({ run }: { run: Run }) {
   const [query, setQuery] = useState("")
@@ -53,6 +55,7 @@ export function RunView({ run }: { run: Run }) {
         </div>
         <TabsList className="ml-auto">
           {!!run.audit?.length && <TabsTrigger value="audit">Audit</TabsTrigger>}
+          {run.kind === "sign-up" && <TabsTrigger value="best">Best version</TabsTrigger>}
           <TabsTrigger value="steps">Steps</TabsTrigger>
           <TabsTrigger value="components">Components</TabsTrigger>
           <TabsTrigger value="screens">Screens</TabsTrigger>
@@ -63,6 +66,13 @@ export function RunView({ run }: { run: Run }) {
       {!!run.audit?.length && (
         <TabsContent value="audit" className="min-h-0 flex-1 overflow-y-auto p-4">
           <AuditView grades={run.audit} />
+        </TabsContent>
+      )}
+      {run.kind === "sign-up" && (
+        <TabsContent value="best" className="min-h-0 flex-1 overflow-y-auto p-4">
+          <div className="flex justify-center">
+            <BestSignUp theme={PLAIN} appName={run.site.replace(/^www\./, "").split(".")[0].replace(/^./, (c) => c.toUpperCase())} />
+          </div>
         </TabsContent>
       )}
 
