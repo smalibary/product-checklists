@@ -12,7 +12,7 @@ process.stdin.on('data', d => raw += d).on('end', () => {
     if (input.stop_hook_active || !input.transcript_path || !fs.existsSync(input.transcript_path)) process.exit(0);
     const root = process.env.CLAUDE_PROJECT_DIR || input.cwd || process.cwd();
     const claudeMd = path.join(root, 'CLAUDE.md');
-    if (!fs.existsSync(claudeMd) || !/claude\.ai\/artifact\//.test(fs.readFileSync(claudeMd, 'utf8'))) process.exit(0);
+    if (!fs.existsSync(claudeMd) || !/^- Board:.*claude\.ai\/artifact\//m.test(fs.readFileSync(claudeMd, 'utf8'))) process.exit(0);
 
     const lines = fs.readFileSync(input.transcript_path, 'utf8').split('\n').filter(Boolean).map(l => { try { return JSON.parse(l); } catch { return {}; } });
     let start = 0; // index after Salem's last real message

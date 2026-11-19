@@ -946,9 +946,9 @@
    "id": 28,
    "at": "2026-11-19T21:41:07.167Z",
    "text": "ok i want this app to be this artifact , delete all the rest , the recording of other sites etc when we started it ! i dont like that i like thisartifact !",
-   "status": "doing",
-   "note": "Make the checklists page the whole app; remove the recorder and recordings",
-   "updated": "2026-11-19T21:41:13.136Z",
+   "status": "done",
+   "note": "Recorder, builds and recordings removed; app is the checklists page",
+   "updated": "2026-11-19T21:45:11.888Z",
    "parts": [
     {
      "name": "Keep a recovery tag",
@@ -972,7 +972,7 @@
     },
     {
      "name": "Report",
-     "done": false
+     "done": true
     }
    ]
   }
