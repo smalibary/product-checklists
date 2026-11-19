@@ -15,7 +15,7 @@ pub struct Grade {
     pub section: String,
     pub item: String,
     pub backing: String,
-    /// pass | partly | fail | not-offered | not-reached | not-relevant | for-claude
+    /// pass | partly | fail | not-offered | not-reached | not-relevant | untested | for-claude
     pub result: String,
     pub why: String,
     /// "auto" (measured) or "claude" (judged in a session)
@@ -41,6 +41,8 @@ pub fn audit(run: &Run) -> Vec<Grade> {
             let late = section.starts_with("Verification") || section.starts_with("After sign-up");
             if blocked && late && judged == "Seen" {
                 ("not-reached", "A robot check stopped the recording before this screen.".into())
+            } else if judged == "Person" {
+                ("untested", "Needs a hands-on test this recording did not do.".into())
             } else {
                 ("for-claude", String::new())
             }
@@ -48,6 +50,19 @@ pub fn audit(run: &Run) -> Vec<Grade> {
         out.push(Grade { section: section.clone(), item: item.into(), backing: backing.into(), result: result.into(), why, by: "auto".into() });
     }
     out
+}
+
+/// Puts Claude's own judgements (claude-audit.json in the recording's folder: [item start, result, why])
+/// over the automatic grades. Claude judges from the recorded screens in a session, at no cost per recording.
+pub fn with_claude(mut grades: Vec<Grade>, dir: &std::path::Path) -> Vec<Grade> {
+    let file = std::fs::read_to_string(dir.join("claude-audit.json")).unwrap_or_default();
+    let mine: Vec<(String, String, String)> = serde_json::from_str(&file).unwrap_or_default();
+    for (start, result, why) in mine {
+        if let Some(g) = grades.iter_mut().find(|g| g.item.starts_with(&start)) {
+            (g.result, g.why, g.by) = (result, why, "claude".into());
+        }
+    }
+    grades
 }
 
 fn grade(run: &Run, item: &str) -> Option<(&'static str, String)> {

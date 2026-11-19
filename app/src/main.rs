@@ -36,7 +36,7 @@ async fn main() -> anyhow::Result<()> {
             // grades an existing sign-up recording again (after the checklist or the grading changes)
             let id = args.get(1).ok_or_else(|| anyhow::anyhow!("usage: agentscreen audit <run id>"))?;
             let mut run = lib.load(id)?;
-            run.audit = agentscreen_core::audit::audit(&run);
+            run.audit = agentscreen_core::audit::with_claude(agentscreen_core::audit::audit(&run), &lib.run_dir(id));
             lib.save(&run)?;
             for g in &run.audit {
                 println!("{:<12} {} | {}", g.result, g.item.chars().take(60).collect::<String>(), g.why);

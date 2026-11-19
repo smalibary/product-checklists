@@ -19,8 +19,9 @@ export type ComponentCard = {
 export type Run = {
   id: string; site: string; start_url: string; started_at: string; finished_at: string | null
   status: "running" | "done" | "failed"; error: string | null; screens: Screen[]; steps: Step[]; components?: ComponentCard[]
-  kind?: string; device?: string; notes?: string[]; forms?: Record<string, unknown>[]
+  kind?: string; device?: string; notes?: string[]; forms?: Record<string, unknown>[]; audit?: Grade[]
 }
+export type Grade = { section: string; item: string; backing: string; result: string; why: string; by: string }
 export type RunSummary = { id: string; site: string; start_url: string; started_at: string; status: string; steps: number; screens: number; components?: number; cover: string | null }
 
 export const fileUrl = (runId: string, name: string) => `/files/${runId}/${name}`

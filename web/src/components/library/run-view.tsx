@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils"
 import { Chips, KINDS, OUTCOMES, outcomeTone } from "./parts"
 import { StepDetail } from "./step-detail"
 import { ComponentsView } from "./components-view"
+import { AuditView } from "./audit-view"
 
 export function RunView({ run }: { run: Run }) {
   const [query, setQuery] = useState("")
@@ -39,7 +40,7 @@ export function RunView({ run }: { run: Run }) {
   const tried = run.screens[0]?.controls.filter((c) => c.tried).length ?? 0
 
   return (
-    <Tabs defaultValue="steps" className="flex h-full flex-col gap-0">
+    <Tabs defaultValue={run.audit?.length ? "audit" : "steps"} className="flex h-full flex-col gap-0">
       <div className="flex items-center gap-4 border-b px-4 py-2">
         <div className="min-w-0">
           <h1 className="truncate text-base font-semibold">{run.site}</h1>
@@ -51,12 +52,19 @@ export function RunView({ run }: { run: Run }) {
           {run.notes?.map((n) => <p key={n} className="text-xs text-foreground">{n}</p>)}
         </div>
         <TabsList className="ml-auto">
+          {!!run.audit?.length && <TabsTrigger value="audit">Audit</TabsTrigger>}
           <TabsTrigger value="steps">Steps</TabsTrigger>
           <TabsTrigger value="components">Components</TabsTrigger>
           <TabsTrigger value="screens">Screens</TabsTrigger>
           <TabsTrigger value="checklist">Checklist</TabsTrigger>
         </TabsList>
       </div>
+
+      {!!run.audit?.length && (
+        <TabsContent value="audit" className="min-h-0 flex-1 overflow-y-auto p-4">
+          <AuditView grades={run.audit} />
+        </TabsContent>
+      )}
 
       <TabsContent value="steps" className="flex min-h-0 flex-1">
         <section className="flex w-96 shrink-0 flex-col border-r">
