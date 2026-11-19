@@ -1,4 +1,4 @@
-# agentscreen: the idea (changed 2026-11-20)
+# product-checklists: the idea (changed 2026-11-20)
 
 ## In Salem's words
 "I want this app to be this artifact, delete all the rest, the recording of other sites etc when we started it!
@@ -23,3 +23,5 @@ policy), Standard, Research or Practice, with a link to its source.
 ## What was dropped (2026-11-20)
 The first idea: a hidden-Chrome recorder that walked websites screen by screen and kept clips in a library.
 Code, builds and recordings were deleted; the code's last version is kept as git tag `recorder-last`.
+
+Renamed 2026-11-20 from agentscreen to product-checklists (Salem chose the name).

@@ -8,7 +8,7 @@ Status: Product Checklists / 292 checklists in 14 groups (claude.ai/artifact/PU8
 
 ## Salem said to remember
 - 2026-11-20: the app IS the checklists page. Recorder, its builds and all recordings deleted (code kept as git tag recorder-last).
-- "We will be working here": all work in C:\CLI\productsgentscreen, not in lab.
+- "We will be working here": all work in C:\CLI\products\product-checklists, not in lab.
 - "No need to work with subagents": the main session does the work itself.
 - Never get around robot checks; if a site refuses automated fetches, use another source.
 

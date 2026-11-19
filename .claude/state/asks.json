@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 29,
+ "next": 30,
  "asks": [
   {
    "id": 2,
@@ -975,6 +975,14 @@
      "done": true
     }
    ]
+  },
+  {
+   "id": 29,
+   "at": "2026-11-19T21:48:40.369Z",
+   "text": "can you rename the termi project and folder ? so like coding-checklist",
+   "status": "doing",
+   "note": "Rename Termi project and folder",
+   "updated": "2026-11-19T21:48:49.817Z"
   }
  ]
 }
