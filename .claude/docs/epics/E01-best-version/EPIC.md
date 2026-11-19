@@ -7,7 +7,7 @@ of the same page. Decisions: `.claude/grill/decisions.md` (rows "Best version", 
 
 | # | Feature | What it does | Status |
 |---|---|---|---|
-| E1.1 | Phone-size sign-up recording | Records a sign-up at phone size, start to welcome screen: fills each field with test details, triggers each error on purpose (empty, wrong email, weak password), then signs up for real with a test inbox and reads the code from it. Stops and says so at a robot check, never gets around it | ○ |
+| E1.1 | Phone-size sign-up recording | Records a sign-up at phone size, start to welcome screen: fills each field with test details, triggers each error on purpose (empty, wrong email, weak password), then signs up for real with a test inbox and reads the code from it. Stops and says so at a robot check, never gets around it | ◐ built up to the final button; the real sign-up waits on E1.2 |
 | E1.2 | Test inbox | One throwaway email address per site, from a mail service with a usage limit written in services.md first (L-1); the recorder reads the code or link from it | ○ |
 | E1.3 | Automatic audit | Judges every "Seen" item from what was measured (keyboard type, labels, sizes, button states, errors, code boxes, right-to-left); each verdict met / missing / partly met with the step picture as proof and the item's "why" | ○ |
 | E1.4 | Claude's audit | In a session, Claude judges the items left over from the pictures and clips, and writes the plain-words summary | ○ |

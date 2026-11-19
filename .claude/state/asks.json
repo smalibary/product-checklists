@@ -176,9 +176,9 @@
    "id": 16,
    "at": "2026-11-19T10:39:23.834Z",
    "text": "ok you are working on it now ?!",
-   "status": "doing",
-   "note": "Was not working; started part 1 (phone-size sign-up recording)",
-   "updated": "2026-11-19T10:39:31.523Z"
+   "status": "done",
+   "note": "Part 1 built and tested on Dribbble; part 2 needs his test inbox choice",
+   "updated": "2026-11-19T11:11:06.764Z"
   }
  ]
 }
