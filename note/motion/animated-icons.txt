@@ -1,0 +1,32 @@
+﻿ANIMATED ICONS AND ILLUSTRATIONS CHECKLIST: 9 items
+Icons that move, animated pictures and Lottie files.
+Backing: 0 Rule, 8 Standard, 1 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+USE
+ 1. Animated icons confirm an action or show a state change   (Standard: hig-sf-symbols)
+ 2. Illustrations animate on empty states and onboarding, not on every screen   (Research: nng-animation-usability)
+
+FILES
+ 3. Vector animation files (for example Lottie) instead of video or GIF where possible   (Standard: lottie)
+ 4. File size checked; large ones loaded later   (Standard: webdev-lazy)
+ 5. A still frame shown before loading and for reduced motion   (Standard: mdn-reduced-motion)
+
+ACCESS
+ 6. Decorative animations hidden from screen readers   (Standard: wcag-nontext)
+ 7. Meaningful ones have a text alternative   (Standard: wcag-nontext)
+ 8. Loops stop after a few seconds or can be paused   (Standard: wcag-pause)
+
+LOOK
+ 9. Same stroke, colour and timing as the static icon set   (Standard: hig-icons, m3-icons)
+
+SOURCES
+- hig-sf-symbols: https://developer.apple.com/design/human-interface-guidelines/sf-symbols
+- nng-animation-usability: https://www.nngroup.com/articles/animation-usability/
+- lottie: https://airbnb.io/lottie/
+- webdev-lazy: https://web.dev/articles/browser-level-image-lazy-loading
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- wcag-nontext: https://www.w3.org/WAI/WCAG22/Understanding/non-text-content
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- hig-icons: https://developer.apple.com/design/human-interface-guidelines/icons
+- m3-icons: https://m3.material.io/styles/icons/overview

@@ -1,0 +1,17 @@
+title: Screen transitions
+about: Moving between pages and screens so people keep their place.
+## Choosing the pattern
+- Container transform when an item grows into its detail screen | S m3-transitions
+- Shared axis for steps and tabs side by side | S m3-transitions
+- Fade through for unrelated screens | S m3-transitions
+- Push and pop direction matches going deeper and coming back | S hig-motion
+## Shared elements
+- The same picture or title travels from list to detail | S android-shared-element mdn-view-transitions
+## Web
+- View transitions between pages where supported, with a plain fallback | S mdn-view-transitions chrome-view-transitions
+- Entry animations for newly shown elements set with starting styles | S mdn-starting-style
+## Back
+- Back gesture previews the screen underneath | S android-predictive-back
+- Right-to-left languages flip the direction | S hig-right-to-left
+## Evidence
+- Animated transitions help people track what changed | R heer-transitions chang-ungar

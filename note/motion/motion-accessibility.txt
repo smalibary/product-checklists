@@ -1,0 +1,31 @@
+﻿MOTION ACCESSIBILITY CHECKLIST: 9 items
+Making sure animation never makes anyone ill or locks them out.
+Backing: 2 Rule, 6 Standard, 0 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SETTINGS
+ 1. Reduce motion setting respected on web, iPhone and Android   (Standard: mdn-reduced-motion, hig-accessibility)
+ 2. Reduced motion swaps movement and zoom for fades, not nothing at all   (Standard: wcag-c39, hig-motion)
+ 3. An in-app switch to turn animation down too   (Practice)
+
+HARM
+ 4. Large zooms, spins and parallax avoided; they trigger dizziness   (Standard: wcag-animation, a11yproject-vestibular)
+ 5. Nothing flashes more than three times a second   (Rule: wcag-flash)
+ 6. Auto-playing motion over 5 seconds can be paused, stopped or hidden   (Rule: wcag-pause)
+
+USE
+ 7. No information only available while animating   (Standard: wcag-c39)
+ 8. Focus is never lost or moved by an animation   (Standard: wcag-focus-order)
+ 9. Time limits never shortened by animation   (Standard: wcag-timing)
+
+SOURCES
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- hig-accessibility: https://developer.apple.com/design/human-interface-guidelines/accessibility
+- wcag-c39: https://www.w3.org/WAI/WCAG22/Techniques/css/C39
+- hig-motion: https://developer.apple.com/design/human-interface-guidelines/motion
+- wcag-animation: https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions
+- a11yproject-vestibular: https://www.a11yproject.com/posts/understanding-vestibular-disorders/
+- wcag-flash: https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- wcag-focus-order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order
+- wcag-timing: https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable

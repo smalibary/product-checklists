@@ -1,0 +1,14 @@
+title: Micro-interactions
+about: The small animated responses to a single action: press, toggle, like, copy.
+## Parts
+- A trigger, a response, rules and an end state, all designed | R nng-microinteractions
+- Response starts within 100 ms of the action | R nng-response
+## Common ones
+- Button press shows a pressed state | S m3-buttons hig-buttons
+- Toggles slide and change colour together | S m3-switch hig-toggles
+- Like or favourite gives a short, clear reaction | R nng-microinteractions
+- Copy shows "Copied" briefly next to the button | P
+- Hover and focus states animate, not jump | S mdn-transitions
+## Restraint
+- Delight only where it helps; never slows a repeated task | R nng-animation-usability
+- Focus state always visible, even mid-animation | S wcag-focus

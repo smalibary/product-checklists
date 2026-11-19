@@ -1,0 +1,16 @@
+title: Motion system
+about: Writing motion down so every screen moves the same way.
+## Tokens
+- Durations and easing curves stored as named tokens | S m3-easing dtcg-tokens
+- A short list: a few durations, a few curves | S carbon-motion fluent-motion
+## Patterns
+- One named transition for each job (open, close, push, expand) | S m3-transitions
+- Written rules for what moves and what never moves | S carbon-motion
+## Handoff
+- Each animation specified with trigger, property, duration, curve and delay | P
+- A recording or live demo beside each spec | S storybook
+## Principles
+- Two or three motion principles written in plain words | S fluent-motion carbon-motion
+- Reduced motion version defined for every pattern | S mdn-reduced-motion
+## Review
+- Motion reviewed in design review, like colour and type | P

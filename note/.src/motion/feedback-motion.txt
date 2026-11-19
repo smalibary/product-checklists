@@ -1,0 +1,14 @@
+title: Feedback motion
+about: Animation that says success, error or "look here".
+## Success and error
+- Success shown briefly with a tick or colour change, then gets out of the way | R nng-microinteractions
+- A small shake on a wrong code or password, with a text message too | P
+- Errors never shown by motion or colour alone | S wcag-color wcag-error
+## Attention
+- New items or changes highlighted once, briefly | R nng-animation-usability
+- Badges and dots animate in once, not forever | P
+- Nothing blinks; anything moving over 5 seconds can be stopped | S wcag-pause
+## Reading aloud
+- The message behind the motion is announced to screen readers | S wcag-status
+## Evidence
+- Animation helps only when it shows change people need to follow | R tversky-animation gonzalez-animation

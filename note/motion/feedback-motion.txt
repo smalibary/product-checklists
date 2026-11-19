@@ -1,0 +1,30 @@
+﻿FEEDBACK MOTION CHECKLIST: 8 items
+Animation that says success, error or "look here".
+Backing: 0 Rule, 3 Standard, 3 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+SUCCESS AND ERROR
+ 1. Success shown briefly with a tick or colour change, then gets out of the way   (Research: nng-microinteractions)
+ 2. A small shake on a wrong code or password, with a text message too   (Practice)
+ 3. Errors never shown by motion or colour alone   (Standard: wcag-color, wcag-error)
+
+ATTENTION
+ 4. New items or changes highlighted once, briefly   (Research: nng-animation-usability)
+ 5. Badges and dots animate in once, not forever   (Practice)
+ 6. Nothing blinks; anything moving over 5 seconds can be stopped   (Standard: wcag-pause)
+
+READING ALOUD
+ 7. The message behind the motion is announced to screen readers   (Standard: wcag-status)
+
+EVIDENCE
+ 8. Animation helps only when it shows change people need to follow   (Research: tversky-animation, gonzalez-animation)
+
+SOURCES
+- nng-microinteractions: https://www.nngroup.com/articles/microinteractions/
+- wcag-color: https://www.w3.org/WAI/WCAG22/Understanding/use-of-color
+- wcag-error: https://www.w3.org/WAI/WCAG22/Understanding/error-identification
+- nng-animation-usability: https://www.nngroup.com/articles/animation-usability/
+- wcag-pause: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- tversky-animation: https://doi.org/10.1006/ijhc.2002.1017
+- gonzalez-animation: https://doi.org/10.1145/238386.238396

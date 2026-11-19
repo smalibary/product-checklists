@@ -1,0 +1,27 @@
+﻿TIMING AND EASING CHECKLIST: 10 items
+How long each animation takes and how it speeds up and slows down.
+Backing: 0 Rule, 8 Standard, 1 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+DURATION
+ 1. Small changes (a toggle, a hover) about 100 to 200 ms   (Standard: m3-easing, nng-animation-duration)
+ 2. Medium changes (a menu, a card opening) about 200 to 300 ms   (Standard: m3-easing)
+ 3. Big changes (a full screen) up to about 400 to 500 ms, never longer without a reason   (Standard: m3-easing, carbon-motion)
+ 4. Things leaving faster than things arriving   (Standard: m3-easing, fluent-motion)
+ 5. Bigger distance, slightly longer time   (Standard: m3-easing, carbon-motion)
+
+EASING
+ 6. Ease-out for things entering, ease-in for things leaving, standard for moves on screen   (Standard: m3-easing, mdn-easing)
+ 7. No linear easing for movement, except progress and spinners   (Standard: mdn-easing, carbon-motion)
+ 8. A small named set of curves used everywhere   (Standard: m3-easing, fluent-motion)
+
+TESTING
+ 9. Timing checked slowed down, then at real speed   (Practice)
+10. Repeated animations felt after the 20th time, not just the first   (Research: nng-animation-duration)
+
+SOURCES
+- m3-easing: https://m3.material.io/styles/motion/easing-and-duration
+- nng-animation-duration: https://www.nngroup.com/articles/animation-duration/
+- carbon-motion: https://carbondesignsystem.com/elements/motion/overview/
+- fluent-motion: https://fluent2.microsoft.design/motion
+- mdn-easing: https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function

@@ -1,0 +1,27 @@
+﻿MOTION PERFORMANCE CHECKLIST: 9 items
+Keeping animation smooth at 60 frames a second on ordinary phones.
+Backing: 0 Rule, 7 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+WHAT TO ANIMATE
+ 1. Only transform and opacity where possible   (Standard: webdev-anim-perf, webdev-animations)
+ 2. No animating width, height, top or left   (Standard: webdev-anim-perf)
+ 3. will-change used sparingly, only on things about to move   (Standard: mdn-will-change)
+
+HOW
+ 4. CSS or the Web Animations API, not timers in script   (Standard: mdn-waapi, webdev-animations)
+ 5. Animations off the main thread where the platform allows   (Standard: webdev-anim-perf)
+ 6. Animations paused when off screen or in a hidden tab   (Practice)
+
+CHECKING
+ 7. Tested on a low-end phone with the frame counter on   (Practice)
+ 8. Interaction speed (INP) not hurt by animations   (Standard: webdev-inp)
+ 9. No layout shift caused by animation   (Standard: webdev-cls)
+
+SOURCES
+- webdev-anim-perf: https://web.dev/articles/animations-and-performance
+- webdev-animations: https://web.dev/articles/animations-guide
+- mdn-will-change: https://developer.mozilla.org/en-US/docs/Web/CSS/will-change
+- mdn-waapi: https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API
+- webdev-inp: https://web.dev/articles/inp
+- webdev-cls: https://web.dev/articles/cls

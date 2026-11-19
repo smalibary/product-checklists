@@ -1,0 +1,14 @@
+title: Motion accessibility
+about: Making sure animation never makes anyone ill or locks them out.
+## Settings
+- Reduce motion setting respected on web, iPhone and Android | S mdn-reduced-motion hig-accessibility
+- Reduced motion swaps movement and zoom for fades, not nothing at all | S wcag-c39 hig-motion
+- An in-app switch to turn animation down too | P
+## Harm
+- Large zooms, spins and parallax avoided; they trigger dizziness | S wcag-animation a11yproject-vestibular
+- Nothing flashes more than three times a second | L wcag-flash
+- Auto-playing motion over 5 seconds can be paused, stopped or hidden | L wcag-pause
+## Use
+- No information only available while animating | S wcag-c39
+- Focus is never lost or moved by an animation | S wcag-focus-order
+- Time limits never shortened by animation | S wcag-timing

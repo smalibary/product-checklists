@@ -672,3 +672,35 @@ sus https://www.nngroup.com/articles/measuring-perceived-usability/
 nng-unsubscribe https://www.nngroup.com/articles/unsubscribe-mistakes/
 rfc-atom https://www.rfc-editor.org/rfc/rfc4287
 webshare https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share
+
+# Motion sources (added 2026-11-20)
+m3-easing https://m3.material.io/styles/motion/easing-and-duration
+m3-transitions https://m3.material.io/styles/motion/transitions/transition-patterns
+hig-motion https://developer.apple.com/design/human-interface-guidelines/motion
+nng-microinteractions https://www.nngroup.com/articles/microinteractions/
+nng-animation-duration https://www.nngroup.com/articles/animation-duration/
+nng-animation-usability https://www.nngroup.com/articles/animation-usability/
+webdev-animations https://web.dev/articles/animations-guide
+webdev-anim-perf https://web.dev/articles/animations-and-performance
+mdn-view-transitions https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API
+mdn-scroll-driven https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
+mdn-waapi https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API
+mdn-will-change https://developer.mozilla.org/en-US/docs/Web/CSS/will-change
+chrome-view-transitions https://developer.chrome.com/docs/web-platform/view-transitions
+android-animation https://developer.android.com/develop/ui/compose/animation/introduction
+android-shared-element https://developer.android.com/develop/ui/compose/animation/shared-elements
+android-predictive-back https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture
+hig-sf-symbols https://developer.apple.com/design/human-interface-guidelines/sf-symbols
+apple-springs https://developer.apple.com/videos/play/wwdc2023/10158/
+lottie https://airbnb.io/lottie/
+carbon-motion https://carbondesignsystem.com/elements/motion/overview/
+fluent-motion https://fluent2.microsoft.design/motion
+wcag-c39 https://www.w3.org/WAI/WCAG22/Techniques/css/C39
+a11yproject-vestibular https://www.a11yproject.com/posts/understanding-vestibular-disorders/
+heer-transitions https://doi.org/10.1109/TVCG.2007.70539
+tversky-animation https://doi.org/10.1006/ijhc.2002.1017
+chang-ungar https://doi.org/10.1145/168642.168647
+gonzalez-animation https://doi.org/10.1145/238386.238396
+mdn-transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions
+mdn-easing https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function
+mdn-starting-style https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style

@@ -1,0 +1,14 @@
+title: Motion performance
+about: Keeping animation smooth at 60 frames a second on ordinary phones.
+## What to animate
+- Only transform and opacity where possible | S webdev-anim-perf webdev-animations
+- No animating width, height, top or left | S webdev-anim-perf
+- will-change used sparingly, only on things about to move | S mdn-will-change
+## How
+- CSS or the Web Animations API, not timers in script | S mdn-waapi webdev-animations
+- Animations off the main thread where the platform allows | S webdev-anim-perf
+- Animations paused when off screen or in a hidden tab | P
+## Checking
+- Tested on a low-end phone with the frame counter on | P
+- Interaction speed (INP) not hurt by animations | S webdev-inp
+- No layout shift caused by animation | S webdev-cls

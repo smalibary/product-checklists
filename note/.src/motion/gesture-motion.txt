@@ -1,0 +1,14 @@
+title: Gesture motion
+about: Movement that follows the finger: dragging, swiping, pulling, flicking.
+## Following
+- The item stays under the finger while dragging | S hig-gestures m3-gestures
+- Gestures can be stopped and reversed midway | S hig-motion apple-springs
+- Released items keep their speed and settle with a spring | S apple-springs android-animation
+## Feedback
+- Edges resist with a soft rubber band | S hig-motion
+- Swipe actions show what will happen before release | R nng-swipe
+- Pull to refresh shows progress while pulling | S m3-progress
+## Alternatives
+- Every gesture has a button or menu alternative | S wcag-gestures wcag-dragging
+## Back
+- Back gesture animates the current screen away and shows the previous one | S android-predictive-back hig-gestures

@@ -1,0 +1,28 @@
+﻿SCROLL ANIMATION CHECKLIST: 8 items
+Things that move as the page scrolls: reveals, sticky headers, parallax.
+Backing: 0 Rule, 6 Standard, 2 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+USE
+ 1. Scroll effects support reading, never hide content until it animates   (Research: nng-animation-usability)
+ 2. Content readable and usable if the animation never runs   (Standard: wcag-c39)
+ 3. Scroll-linked effects built with scroll-driven animation, not scroll events   (Standard: mdn-scroll-driven)
+
+LIMITS
+ 4. No scroll hijacking: the page scrolls at the person's speed   (Research: nng-animation-usability)
+ 5. Parallax small and turned off for reduced motion   (Standard: wcag-animation, a11yproject-vestibular)
+ 6. Sticky headers shrink smoothly and do not cover focused items   (Standard: wcag-obscured)
+
+PERFORMANCE
+ 7. Only transform and opacity animated during scroll   (Standard: webdev-anim-perf)
+ 8. No layout shift as items reveal   (Standard: webdev-cls)
+
+SOURCES
+- nng-animation-usability: https://www.nngroup.com/articles/animation-usability/
+- wcag-c39: https://www.w3.org/WAI/WCAG22/Techniques/css/C39
+- mdn-scroll-driven: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
+- wcag-animation: https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions
+- a11yproject-vestibular: https://www.a11yproject.com/posts/understanding-vestibular-disorders/
+- wcag-obscured: https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum
+- webdev-anim-perf: https://web.dev/articles/animations-and-performance
+- webdev-cls: https://web.dev/articles/cls

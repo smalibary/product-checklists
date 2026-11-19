@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 27,
+ "next": 28,
  "asks": [
   {
    "id": 2,
@@ -933,6 +933,14 @@
      "done": true
     }
    ]
+  },
+  {
+   "id": 27,
+   "at": "2026-11-19T21:33:15.288Z",
+   "text": "cant you do something for animation , or this is embedding in some of the items etc?!",
+   "status": "done",
+   "note": "Motion group: 12 animation checklists, 30 new sources; page 292 in 14 groups",
+   "updated": "2026-11-19T21:36:18.041Z"
   }
  ]
 }

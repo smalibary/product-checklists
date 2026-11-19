@@ -1,0 +1,15 @@
+title: Animated icons and illustrations
+about: Icons that move, animated pictures and Lottie files.
+## Use
+- Animated icons confirm an action or show a state change | S hig-sf-symbols
+- Illustrations animate on empty states and onboarding, not on every screen | R nng-animation-usability
+## Files
+- Vector animation files (for example Lottie) instead of video or GIF where possible | S lottie
+- File size checked; large ones loaded later | S webdev-lazy
+- A still frame shown before loading and for reduced motion | S mdn-reduced-motion
+## Access
+- Decorative animations hidden from screen readers | S wcag-nontext
+- Meaningful ones have a text alternative | S wcag-nontext
+- Loops stop after a few seconds or can be paused | S wcag-pause
+## Look
+- Same stroke, colour and timing as the static icon set | S hig-icons m3-icons

@@ -1,0 +1,30 @@
+﻿MICRO-INTERACTIONS CHECKLIST: 9 items
+The small animated responses to a single action: press, toggle, like, copy.
+Backing: 0 Rule, 4 Standard, 4 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+PARTS
+ 1. A trigger, a response, rules and an end state, all designed   (Research: nng-microinteractions)
+ 2. Response starts within 100 ms of the action   (Research: nng-response)
+
+COMMON ONES
+ 3. Button press shows a pressed state   (Standard: m3-buttons, hig-buttons)
+ 4. Toggles slide and change colour together   (Standard: m3-switch, hig-toggles)
+ 5. Like or favourite gives a short, clear reaction   (Research: nng-microinteractions)
+ 6. Copy shows "Copied" briefly next to the button   (Practice)
+ 7. Hover and focus states animate, not jump   (Standard: mdn-transitions)
+
+RESTRAINT
+ 8. Delight only where it helps; never slows a repeated task   (Research: nng-animation-usability)
+ 9. Focus state always visible, even mid-animation   (Standard: wcag-focus)
+
+SOURCES
+- nng-microinteractions: https://www.nngroup.com/articles/microinteractions/
+- nng-response: https://www.nngroup.com/articles/response-times-3-important-limits/
+- m3-buttons: https://m3.material.io/components/buttons/guidelines
+- hig-buttons: https://developer.apple.com/design/human-interface-guidelines/buttons
+- m3-switch: https://m3.material.io/components/switch/guidelines
+- hig-toggles: https://developer.apple.com/design/human-interface-guidelines/toggles
+- mdn-transitions: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions
+- nng-animation-usability: https://www.nngroup.com/articles/animation-usability/
+- wcag-focus: https://www.w3.org/WAI/WCAG22/Understanding/focus-visible

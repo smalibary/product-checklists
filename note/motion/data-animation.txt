@@ -1,0 +1,29 @@
+﻿DATA AND CHART ANIMATION CHECKLIST: 8 items
+Animating charts, numbers and lists so changes are easy to follow.
+Backing: 0 Rule, 4 Standard, 3 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHARTS
+ 1. Animate from old values to new so people see what changed   (Research: heer-transitions)
+ 2. One kind of change at a time (axes, then data)   (Research: heer-transitions)
+ 3. Short and simple; no bouncing bars   (Standard: hig-charts)
+
+NUMBERS
+ 4. Counting-up numbers only on first view and short   (Practice)
+ 5. Final value readable immediately by screen readers   (Standard: wcag-status)
+
+LISTS
+ 6. Added, removed and reordered items move so people can track them   (Standard: m3-transitions, android-animation)
+ 7. Sorting animates once; filtering does not jump the page   (Research: nng-animation-usability)
+
+ACCESS
+ 8. Reduced motion shows the final state directly   (Standard: mdn-reduced-motion)
+
+SOURCES
+- heer-transitions: https://doi.org/10.1109/TVCG.2007.70539
+- hig-charts: https://developer.apple.com/design/human-interface-guidelines/charts
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages
+- m3-transitions: https://m3.material.io/styles/motion/transitions/transition-patterns
+- android-animation: https://developer.android.com/develop/ui/compose/animation/introduction
+- nng-animation-usability: https://www.nngroup.com/articles/animation-usability/
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion

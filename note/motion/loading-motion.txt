@@ -1,0 +1,30 @@
+﻿LOADING MOTION CHECKLIST: 9 items
+Animation that shows work in progress and makes waiting clearer.
+Backing: 0 Rule, 3 Standard, 5 Research, 1 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+CHOOSING
+ 1. Under 1 second: no indicator   (Research: nng-progress)
+ 2. 1 to 10 seconds: spinner or skeleton   (Research: nng-progress, nng-skeleton)
+ 3. Over 10 seconds: a progress bar with percent or time left   (Research: nng-progress)
+
+SKELETONS
+ 4. Shapes match the real layout, so nothing jumps when content arrives   (Research: nng-skeleton, webdev-cls)
+ 5. A gentle shimmer, paused for reduced motion   (Standard: mdn-reduced-motion)
+
+PROGRESS
+ 6. Progress bars move steadily, never backwards   (Research: nng-progress)
+ 7. Determinate when the length is known   (Standard: m3-progress, hig-progress-indicators)
+
+ACCESS
+ 8. Busy state announced to screen readers   (Standard: wcag-status)
+ 9. Spinners stop when done; nothing spins forever on error   (Practice)
+
+SOURCES
+- nng-progress: https://www.nngroup.com/articles/progress-indicators/
+- nng-skeleton: https://www.nngroup.com/articles/skeleton-screens/
+- webdev-cls: https://web.dev/articles/cls
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- m3-progress: https://m3.material.io/components/progress-indicators/guidelines
+- hig-progress-indicators: https://developer.apple.com/design/human-interface-guidelines/progress-indicators
+- wcag-status: https://www.w3.org/WAI/WCAG22/Understanding/status-messages

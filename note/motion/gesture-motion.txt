@@ -1,0 +1,32 @@
+﻿GESTURE MOTION CHECKLIST: 8 items
+Movement that follows the finger: dragging, swiping, pulling, flicking.
+Backing: 0 Rule, 7 Standard, 1 Research, 0 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+FOLLOWING
+ 1. The item stays under the finger while dragging   (Standard: hig-gestures, m3-gestures)
+ 2. Gestures can be stopped and reversed midway   (Standard: hig-motion, apple-springs)
+ 3. Released items keep their speed and settle with a spring   (Standard: apple-springs, android-animation)
+
+FEEDBACK
+ 4. Edges resist with a soft rubber band   (Standard: hig-motion)
+ 5. Swipe actions show what will happen before release   (Research: nng-swipe)
+ 6. Pull to refresh shows progress while pulling   (Standard: m3-progress)
+
+ALTERNATIVES
+ 7. Every gesture has a button or menu alternative   (Standard: wcag-gestures, wcag-dragging)
+
+BACK
+ 8. Back gesture animates the current screen away and shows the previous one   (Standard: android-predictive-back, hig-gestures)
+
+SOURCES
+- hig-gestures: https://developer.apple.com/design/human-interface-guidelines/gestures
+- m3-gestures: https://m3.material.io/foundations/interaction/gestures
+- hig-motion: https://developer.apple.com/design/human-interface-guidelines/motion
+- apple-springs: https://developer.apple.com/videos/play/wwdc2023/10158/
+- android-animation: https://developer.android.com/develop/ui/compose/animation/introduction
+- nng-swipe: https://www.nngroup.com/articles/contextual-swipe/
+- m3-progress: https://m3.material.io/components/progress-indicators/guidelines
+- wcag-gestures: https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures
+- wcag-dragging: https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements
+- android-predictive-back: https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture

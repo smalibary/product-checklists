@@ -1,0 +1,32 @@
+﻿MOTION SYSTEM CHECKLIST: 9 items
+Writing motion down so every screen moves the same way.
+Backing: 0 Rule, 7 Standard, 0 Research, 2 Practice
+Rule = a store or a law requires it · Standard = a published standard · Research = usability studies · Practice = good practice, no study found
+
+TOKENS
+ 1. Durations and easing curves stored as named tokens   (Standard: m3-easing, dtcg-tokens)
+ 2. A short list: a few durations, a few curves   (Standard: carbon-motion, fluent-motion)
+
+PATTERNS
+ 3. One named transition for each job (open, close, push, expand)   (Standard: m3-transitions)
+ 4. Written rules for what moves and what never moves   (Standard: carbon-motion)
+
+HANDOFF
+ 5. Each animation specified with trigger, property, duration, curve and delay   (Practice)
+ 6. A recording or live demo beside each spec   (Standard: storybook)
+
+PRINCIPLES
+ 7. Two or three motion principles written in plain words   (Standard: fluent-motion, carbon-motion)
+ 8. Reduced motion version defined for every pattern   (Standard: mdn-reduced-motion)
+
+REVIEW
+ 9. Motion reviewed in design review, like colour and type   (Practice)
+
+SOURCES
+- m3-easing: https://m3.material.io/styles/motion/easing-and-duration
+- dtcg-tokens: https://tr.designtokens.org/format/
+- carbon-motion: https://carbondesignsystem.com/elements/motion/overview/
+- fluent-motion: https://fluent2.microsoft.design/motion
+- m3-transitions: https://m3.material.io/styles/motion/transitions/transition-patterns
+- storybook: https://storybook.js.org/docs/writing-docs
+- mdn-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion

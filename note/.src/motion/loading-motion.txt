@@ -1,0 +1,15 @@
+title: Loading motion
+about: Animation that shows work in progress and makes waiting clearer.
+## Choosing
+- Under 1 second: no indicator | R nng-progress
+- 1 to 10 seconds: spinner or skeleton | R nng-progress nng-skeleton
+- Over 10 seconds: a progress bar with percent or time left | R nng-progress
+## Skeletons
+- Shapes match the real layout, so nothing jumps when content arrives | R nng-skeleton webdev-cls
+- A gentle shimmer, paused for reduced motion | S mdn-reduced-motion
+## Progress
+- Progress bars move steadily, never backwards | R nng-progress
+- Determinate when the length is known | S m3-progress hig-progress-indicators
+## Access
+- Busy state announced to screen readers | S wcag-status
+- Spinners stop when done; nothing spins forever on error | P

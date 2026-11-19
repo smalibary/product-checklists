@@ -1,0 +1,14 @@
+title: Data and chart animation
+about: Animating charts, numbers and lists so changes are easy to follow.
+## Charts
+- Animate from old values to new so people see what changed | R heer-transitions
+- One kind of change at a time (axes, then data) | R heer-transitions
+- Short and simple; no bouncing bars | S hig-charts
+## Numbers
+- Counting-up numbers only on first view and short | P
+- Final value readable immediately by screen readers | S wcag-status
+## Lists
+- Added, removed and reordered items move so people can track them | S m3-transitions android-animation
+- Sorting animates once; filtering does not jump the page | R nng-animation-usability
+## Access
+- Reduced motion shows the final state directly | S mdn-reduced-motion
