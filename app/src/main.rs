@@ -1,5 +1,5 @@
 //! agentscreen app: `record <url>` records a website; `serve` opens the library page in the browser.
-use agentscreen_core::{explore, ExploreOptions, Library};
+use agentscreen_core::{explore, record_signup, ExploreOptions, Library, Run};
 use axum::extract::{Path, State};
 use axum::http::StatusCode;
 use axum::routing::{get, post};
@@ -24,19 +24,31 @@ async fn main() -> anyhow::Result<()> {
             let max_steps = args.get(2).and_then(|s| s.parse().ok()).unwrap_or(80);
             let query = args.get(3).cloned().unwrap_or_else(|| "weather".into());
             let run = explore(&lib, ExploreOptions { url: url.clone(), max_steps, query }, None).await?;
-            println!("{} {}: {} steps, {} screens{}", run.status, run.id, run.steps.len(), run.screens.len(),
-                run.error.map(|e| format!(" ({e})")).unwrap_or_default());
-            for s in &run.steps {
-                println!("  {:>2}. [{}] {}", s.n, s.outcome, s.explanation);
-            }
+            report(&run);
+        }
+        Some("signup") => {
+            let url = args.get(1).ok_or_else(|| anyhow::anyhow!("usage: agentscreen signup <url> [test inbox email]"))?;
+            let run = record_signup(&lib, url, None, args.get(2).cloned()).await?;
+            report(&run);
         }
         Some("serve") | None => {
             let port: u16 = args.get(1).and_then(|s| s.parse().ok()).unwrap_or(4477);
             serve(lib, port).await?;
         }
-        Some(other) => anyhow::bail!("unknown command {other}; use: record <url> [steps] | serve [port]"),
+        Some(other) => anyhow::bail!("unknown command {other}; use: record <url> [steps] | signup <url> [email] | serve [port]"),
     }
     Ok(())
+}
+
+fn report(run: &Run) {
+            println!("{} {}: {} steps, {} screens{}", run.status, run.id, run.steps.len(), run.screens.len(),
+                run.error.as_ref().map(|e| format!(" ({e})")).unwrap_or_default());
+            for s in &run.steps {
+                println!("  {:>2}. [{}] {}", s.n, s.outcome, s.explanation);
+            }
+            for n in &run.notes {
+                println!("  note: {n}");
+            }
 }
 
 async fn serve(lib: Library, port: u16) -> anyhow::Result<()> {
@@ -73,6 +85,10 @@ struct RecordReq {
     url: String,
     steps: Option<usize>,
     query: Option<String>,
+    /// "sign-up" records one sign-up flow at phone size; anything else explores the whole site
+    flow: Option<String>,
+    /// test inbox address: only with it does a sign-up recording press the final button
+    inbox: Option<String>,
 }
 
 async fn start_record(State(s): State<AppState>, Json(req): Json<RecordReq>) -> Result<Json<serde_json::Value>, (StatusCode, String)> {
@@ -81,6 +97,15 @@ async fn start_record(State(s): State<AppState>, Json(req): Json<RecordReq>) -> 
     let id = format!("{}-{}", chrono_now(), host);
     let lib = s.lib.clone();
     let rid = id.clone();
+    if req.flow.as_deref() == Some("sign-up") {
+        let (url, inbox) = (req.url, req.inbox.filter(|e| e.contains('@')));
+        tokio::spawn(async move {
+            if let Err(e) = record_signup(&lib, &url, Some(rid), inbox).await {
+                eprintln!("recording failed: {e}");
+            }
+        });
+        return Ok(Json(serde_json::json!({ "id": id })));
+    }
     let opts = ExploreOptions {
         url: req.url,
         max_steps: req.steps.unwrap_or(80).min(300),

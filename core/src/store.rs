@@ -107,7 +107,7 @@ pub struct ComponentCard {
     pub live: Option<String>,
 }
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct Run {
     pub id: String,
     pub site: String,
@@ -121,6 +121,18 @@ pub struct Run {
     pub steps: Vec<Step>,
     #[serde(default)]
     pub components: Vec<ComponentCard>,
+    /// "explore" (whole site) or "sign-up" (one sign-up flow at phone size)
+    #[serde(default)]
+    pub kind: String,
+    /// "desktop" or "phone"
+    #[serde(default)]
+    pub device: String,
+    /// plain-words notes, such as where and why a recording stopped
+    #[serde(default)]
+    pub notes: Vec<String>,
+    /// what was measured on each form screen (fields, the send button, errors shown), for the audit
+    #[serde(default)]
+    pub forms: Vec<serde_json::Value>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

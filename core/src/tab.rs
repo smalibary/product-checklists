@@ -18,6 +18,8 @@ use std::time::{Duration, Instant};
 
 pub const W: u32 = 1280;
 pub const H: u32 = 800;
+pub use crate::values::{same_site, site_of};
+
 const CONTROLS: &str = include_str!("controls.js");
 
 #[derive(Default)]
@@ -31,11 +33,29 @@ struct Tape {
 pub struct Tab {
     pub page: Page,
     tape: Arc<Mutex<Tape>>,
+    /// picture size in pixels (a phone tab is drawn at twice its size, like a real phone screen)
+    pub size: (u32, u32),
 }
 
 impl Tab {
     pub async fn open(browser: &Browser) -> Result<Self> {
+        Self::open_as(browser, false).await
+    }
+
+    /// A tab that looks like a phone to the website: phone screen size, touch, mobile layout.
+    pub async fn open_phone(browser: &Browser) -> Result<Self> {
+        Self::open_as(browser, true).await
+    }
+
+    async fn open_as(browser: &Browser, phone: bool) -> Result<Self> {
         let page = browser.new_page("about:blank").await?;
+        let size = if phone {
+            crate::chrome::make_phone(&page).await?;
+            let s = crate::chrome::PHONE_SCALE as u32;
+            (crate::chrome::PHONE.0 * s, crate::chrome::PHONE.1 * s)
+        } else {
+            (W, H)
+        };
         let tape = Arc::new(Mutex::new(Tape::default()));
         let mut events = page.event_listener::<EventScreencastFrame>().await?;
         let (p, t) = (page.clone(), tape.clone());
@@ -55,13 +75,13 @@ impl Tab {
             StartScreencastParams::builder()
                 .format(StartScreencastFormat::Jpeg)
                 .quality(85)
-                .max_width(W as i64)
-                .max_height(H as i64)
+                .max_width(size.0 as i64)
+                .max_height(size.1 as i64)
                 .every_nth_frame(1)
                 .build(),
         )
         .await?;
-        Ok(Self { page, tape })
+        Ok(Self { page, tape, size })
     }
 
     pub async fn close(self) {
@@ -179,18 +199,8 @@ pub fn origin_of(u: &str) -> String {
     url::Url::parse(u).map(|p| p.origin().ascii_serialization()).unwrap_or_default()
 }
 
-pub fn find_chrome() -> Option<String> {
-    let candidates = [
-        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
-        r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
-        r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
-        r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
-    ];
-    candidates.iter().find(|p| Path::new(p).exists()).map(|p| p.to_string())
-}
-
 /// Write a clip from screencast frames (each frame keeps its real timing) using ffmpeg.
-pub fn write_clip(dir: &Path, name: &str, before: &[u8], frames: &[(f64, Vec<u8>)]) -> Result<(String, u64)> {
+pub fn write_clip(dir: &Path, name: &str, before: &[u8], frames: &[(f64, Vec<u8>)], (w, h): (u32, u32)) -> Result<(String, u64)> {
     let tmp = dir.join(format!("{name}-frames"));
     std::fs::create_dir_all(&tmp)?;
     let mut list = String::new();
@@ -215,7 +225,7 @@ pub fn write_clip(dir: &Path, name: &str, before: &[u8], frames: &[(f64, Vec<u8>
         .arg(tmp.join("list.txt"))
         .args([
             "-vf",
-            &format!("scale={W}:{H}:force_original_aspect_ratio=decrease,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:white,fps=60"),
+            &format!("scale={w}:{h}:force_original_aspect_ratio=decrease,pad={w}:{h}:(ow-iw)/2:(oh-ih)/2:white,fps=60"),
             "-pix_fmt",
             "yuv420p",
             "-movflags",
@@ -228,16 +238,4 @@ pub fn write_clip(dir: &Path, name: &str, before: &[u8], frames: &[(f64, Vec<u8>
         return Err(anyhow!("ffmpeg could not make the clip"));
     }
     Ok((format!("{name}.mp4"), (total * 1000.0) as u64))
-}
-/// The site a web address belongs to, ignoring sub-parts: www.google.com and mail.google.com are both google.com.
-pub fn site_of(u: &str) -> String {
-    let host = url::Url::parse(u).ok().and_then(|p| p.host_str().map(str::to_lowercase)).unwrap_or_default();
-    let parts: Vec<&str> = host.split('.').collect();
-    let keep = if parts.len() >= 3 && parts[parts.len() - 2].len() <= 3 && parts[parts.len() - 1].len() == 2 { 3 } else { 2 };
-    parts[parts.len().saturating_sub(keep)..].join(".")
-}
-
-pub fn same_site(a: &str, b: &str) -> bool {
-    let (x, y) = (site_of(a), site_of(b));
-    !x.is_empty() && x == y
 }

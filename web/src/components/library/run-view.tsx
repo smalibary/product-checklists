@@ -45,8 +45,10 @@ export function RunView({ run }: { run: Run }) {
           <h1 className="truncate text-base font-semibold">{run.site}</h1>
           <p className="truncate text-xs text-muted-foreground">
             {run.start_url} · {run.steps.length} steps · {run.screens.length} screens · {run.components?.length ?? 0} components
+            {run.device === "phone" ? " · phone size" : ""}
             {run.error ? ` · stopped: ${run.error}` : ""}
           </p>
+          {run.notes?.map((n) => <p key={n} className="text-xs text-foreground">{n}</p>)}
         </div>
         <TabsList className="ml-auto">
           <TabsTrigger value="steps">Steps</TabsTrigger>

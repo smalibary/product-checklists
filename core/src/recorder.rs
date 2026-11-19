@@ -5,11 +5,10 @@
 //! allowed (with a fake microphone and camera), so buttons that need them work.
 use crate::step::{key, skip, Act, Ctx};
 use crate::store::{Control, Library, Run};
-use crate::tab::{find_chrome, origin_of, same_site, Tab, H, W};
-use anyhow::{anyhow, Result};
-use chromiumoxide::browser::{Browser, BrowserConfig};
-use chromiumoxide::cdp::browser_protocol::browser::{PermissionDescriptor, PermissionSetting, SetPermissionParams};
-use futures::StreamExt;
+use crate::chrome::Chrome;
+use crate::tab::{origin_of, same_site, Tab};
+use anyhow::Result;
+use chromiumoxide::browser::Browser;
 use std::collections::{HashSet, VecDeque};
 use std::path::Path;
 use std::time::Instant;
@@ -53,6 +52,9 @@ pub async fn explore(lib: &Library, opts: ExploreOptions, run_id: Option<String>
         screens: vec![],
         steps: vec![],
         components: vec![],
+        kind: "explore".into(),
+        device: "desktop".into(),
+        ..Default::default()
     };
     lib.save(&run)?;
     let result = launch(lib, &opts, &origin, &dir, &mut run).await;
@@ -69,30 +71,9 @@ pub async fn explore(lib: &Library, opts: ExploreOptions, run_id: Option<String>
 }
 
 async fn launch(lib: &Library, opts: &ExploreOptions, origin: &str, dir: &Path, run: &mut Run) -> Result<()> {
-    // each recording gets its own Chrome profile, so a Chrome left over from a stopped one never blocks it
-    let profile = std::env::temp_dir().join(format!("agentscreen-{}", run.id));
-    let mut cfg = BrowserConfig::builder()
-        .user_data_dir(&profile)
-        .new_headless_mode()
-        .window_size(W, H)
-        .viewport(None)
-        // say yes to microphone and camera, with a fake device, so those buttons really work
-        .arg("--use-fake-ui-for-media-stream")
-        .arg("--use-fake-device-for-media-stream")
-        .arg("--lang=en-US");
-    if let Some(chrome) = find_chrome() {
-        cfg = cfg.chrome_executable(chrome);
-    }
-    let (mut browser, mut handler) = Browser::launch(cfg.build().map_err(|e| anyhow!(e))?).await?;
-    let pump = tokio::spawn(async move { while handler.next().await.is_some() {} });
-    for name in ["microphone", "camera", "geolocation", "notifications", "clipboard-read", "clipboard-write"] {
-        let _ = browser.execute(SetPermissionParams::new(PermissionDescriptor::new(name), PermissionSetting::Granted)).await;
-    }
-    let outcome = crawl(&browser, opts, Ctx { lib, dir, origin, run }).await;
-    let _ = browser.close().await;
-    let _ = browser.wait().await;
-    pump.abort();
-    let _ = std::fs::remove_dir_all(&profile);
+    let chrome = Chrome::start(&run.id).await?;
+    let outcome = crawl(&chrome.browser, opts, Ctx { lib, dir, origin, run }).await;
+    chrome.stop().await;
     outcome
 }
 
@@ -180,7 +161,7 @@ async fn crawl(browser: &Browser, opts: &ExploreOptions, mut cx: Ctx<'_>) -> Res
                 if cx.run.steps.len() >= opts.max_steps {
                     break;
                 }
-                cx.step(&mut tab, &el, &c, Act::Enter, &code).await?
+                cx.step(&mut tab, &el, &c, Act::Key("Enter"), &code).await?
             } else {
                 cx.step(&mut tab, &el, &c, Act::Click, &code).await?
             };

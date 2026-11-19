@@ -18,7 +18,8 @@ pub struct Ctx<'a> {
 pub enum Act<'a> {
     Click,
     Type(&'a str),
-    Enter,
+    /// press one key in the control, such as Enter or Tab (Tab leaves a field, so its check runs)
+    Key(&'a str),
 }
 
 /// What a step led to, so the explorer knows where to go next.
@@ -57,7 +58,7 @@ fn explain(act: &Act, kind: &str, text: &str, outcome: &str, url_after: &str) ->
     let what = if text.is_empty() { format!("an unnamed {kind}") } else { format!("the \"{text}\" {kind}") };
     let did = match act {
         Act::Type(q) => format!("Typed \"{q}\" into {what}"),
-        Act::Enter => format!("Pressed Enter in {what}"),
+        Act::Key(k) => format!("Pressed {k} in {what}"),
         Act::Click if kind == "input" || kind == "select" => format!("Clicked into {what}"),
         Act::Click => format!("Clicked {what}"),
     };
@@ -86,10 +87,12 @@ impl Ctx<'_> {
                 Act::Type(q) => {
                     el.scroll_into_view().await?;
                     el.click().await?;
+                    // select what is already there, so the new words replace it
+                    el.call_js_fn("function(){ if (this.select) this.select(); }", false).await?;
                     el.type_str(q).await?;
                 }
-                Act::Enter => {
-                    el.press_key("Enter").await?;
+                Act::Key(k) => {
+                    el.press_key(k).await?;
                 }
             }
             anyhow::Ok(())
@@ -118,7 +121,7 @@ impl Ctx<'_> {
         if outcome == "new-screen" && !self.run.screens.iter().any(|s| s.code == code_after) {
             self.new_screen(tab, &code_after, &url_after, &after, n, inside).await?;
         }
-        let clip = if frames.is_empty() { None } else { write_clip(self.dir, &format!("step-{n:02}"), &before, &frames).ok() };
+        let clip = if frames.is_empty() { None } else { write_clip(self.dir, &format!("step-{n:02}"), &before, &frames, tab.size).ok() };
         if let Some(s) = self.run.screens.iter_mut().find(|s| s.code == screen_before) {
             if let Some(x) = s.controls.iter_mut().find(|x| key(x) == key(c)) {
                 x.tried = true;
@@ -128,7 +131,7 @@ impl Ctx<'_> {
             n,
             action: match act {
                 Act::Type(_) => "type".into(),
-                Act::Enter => "press Enter".into(),
+                Act::Key(k) => format!("press {k}"),
                 Act::Click if c.kind == "input" || c.kind == "select" => "focus".into(),
                 Act::Click => "click".into(),
             },

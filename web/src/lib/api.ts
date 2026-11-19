@@ -19,6 +19,7 @@ export type ComponentCard = {
 export type Run = {
   id: string; site: string; start_url: string; started_at: string; finished_at: string | null
   status: "running" | "done" | "failed"; error: string | null; screens: Screen[]; steps: Step[]; components?: ComponentCard[]
+  kind?: string; device?: string; notes?: string[]; forms?: Record<string, unknown>[]
 }
 export type RunSummary = { id: string; site: string; start_url: string; started_at: string; status: string; steps: number; screens: number; components?: number; cover: string | null }
 
@@ -32,8 +33,9 @@ export async function getRun(id: string): Promise<Run | null> {
   const r = await fetch(`/api/runs/${id}`)
   return r.ok ? r.json() : null
 }
-export async function startRecording(url: string, steps: number): Promise<string> {
-  const r = await fetch("/api/record", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ url, steps }) })
+export type Flow = "explore" | "sign-up"
+export async function startRecording(url: string, steps: number, flow: Flow = "explore"): Promise<string> {
+  const r = await fetch("/api/record", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ url, steps, flow }) })
   if (!r.ok) throw new Error(await r.text())
   return (await r.json()).id
 }

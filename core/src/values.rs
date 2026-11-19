@@ -55,3 +55,16 @@ pub(crate) fn weight(w: &str) -> &'static str {
         _ => "bold",
     }
 }
+
+/// The site a web address belongs to, ignoring sub-parts: www.google.com and mail.google.com are both google.com.
+pub fn site_of(u: &str) -> String {
+    let host = url::Url::parse(u).ok().and_then(|p| p.host_str().map(str::to_lowercase)).unwrap_or_default();
+    let parts: Vec<&str> = host.split('.').collect();
+    let keep = if parts.len() >= 3 && parts[parts.len() - 2].len() <= 3 && parts[parts.len() - 1].len() == 2 { 3 } else { 2 };
+    parts[parts.len().saturating_sub(keep)..].join(".")
+}
+
+pub fn same_site(a: &str, b: &str) -> bool {
+    let (x, y) = (site_of(a), site_of(b));
+    !x.is_empty() && x == y
+}
