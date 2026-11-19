@@ -1,0 +1,175 @@
+<title>Qanat Books 404 Page</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a real bookshop 404 page on the left; a checklist rail on the right that numbers every part the page meets. */
+:root{
+  --bg:#f6f7f4; --surface:#ffffff; --fg:#1d2420; --muted:#5a655e; --line:#dfe3dc;
+  --accent:#2f6b4f; --accent-fg:#ffffff; --pin:#b4532a; --pin-fg:#ffffff;
+  --ok:#2f6b4f;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141917; --surface:#1c2320; --fg:#e7ece8; --muted:#a3ada6; --line:#2e3833;
+  --accent:#7cc4a0; --accent-fg:#0f1513; --pin:#f08a5d; --pin-fg:#1a0f0a; --ok:#7cc4a0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141917; --surface:#1c2320; --fg:#e7ece8; --muted:#a3ada6; --line:#2e3833;
+  --accent:#7cc4a0; --accent-fg:#0f1513; --pin:#f08a5d; --pin-fg:#1a0f0a; --ok:#7cc4a0; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--body)}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px;max-width:76rem;margin:0 auto}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:16px}
+.bar p{margin:0;color:var(--muted);font-size:14px;max-width:44rem}
+.toggle{display:inline-flex;gap:8px;align-items:center;font-size:14px;font-weight:500;cursor:pointer;user-select:none}
+.toggle input{width:18px;height:18px;accent-color:var(--pin)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 22rem;gap:24px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}}
+
+/* The site itself */
+.site{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;min-width:0}
+.site header,.site footer{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line)}
+.site footer{border-bottom:0;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.logo{font-family:var(--display);font-weight:600;font-size:20px;color:var(--fg);text-decoration:none;margin-right:auto}
+.site nav{display:flex;flex-wrap:wrap;gap:4px 16px}
+.site a{color:var(--accent)}
+.site nav a,.site footer a{text-decoration:none;font-size:15px}
+.site nav a:hover,.site footer a:hover{text-decoration:underline}
+main{padding:40px 20px 48px;display:grid;gap:28px;max-width:40rem}
+.art{width:120px;height:auto}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,5vw,40px);line-height:1.15;margin:0;text-wrap:balance}
+.lead{margin:0;font-size:17px;max-width:36rem}
+.code{font-family:var(--mono);font-size:13px;color:var(--muted);margin:0}
+form{display:flex;flex-wrap:wrap;gap:8px}
+label.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+input[type=search]{flex:1 1 14rem;min-width:0;font:inherit;padding:10px 12px;border:1px solid var(--muted);border-radius:6px;background:var(--bg);color:var(--fg)}
+button{font:inherit;font-weight:600;padding:10px 18px;border:0;border-radius:6px;background:var(--accent);color:var(--accent-fg);cursor:pointer}
+:focus-visible{outline:3px solid var(--pin);outline-offset:2px}
+.go h2{font-size:15px;font-weight:600;margin:0 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.go ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(11rem,1fr));gap:8px}
+.go li a{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:6px;text-decoration:none;font-weight:500}
+.go li a:hover{border-color:var(--accent)}
+.report{margin:0;font-size:15px;color:var(--muted)}
+.note{font-size:14px;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:10px 12px;margin:0}
+
+/* Pins: the number of the checklist item a part meets */
+.pin{display:none;vertical-align:middle;margin-left:6px;min-width:22px;height:22px;padding:0 6px;border-radius:11px;background:var(--pin);color:var(--pin-fg);font:600 12px/22px var(--mono);text-align:center}
+.show .pin{display:inline-block}
+.show [data-p]{outline:2px dashed var(--pin);outline-offset:4px;border-radius:4px}
+
+/* Checklist rail */
+.rail{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);min-width:0}
+.rail h2{font-family:var(--display);font-size:19px;margin:0 0 4px}
+.rail .sub{margin:0 0 12px;color:var(--muted);font-size:13px}
+.rail h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:14px 0 6px}
+.rail ol{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.rail li{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;font-size:13.5px;line-height:1.4}
+.n{font:600 12px/22px var(--mono);text-align:center;border-radius:11px;height:22px;background:var(--line);color:var(--fg)}
+.where{display:block;color:var(--muted);font-size:12px}
+.tick{color:var(--ok);font-weight:600}
+</style>
+
+<div class="wrap">
+  <div class="bar">
+    <p>An example 404 page built to meet the 404 checklist, for a made-up bookshop. Turn on the numbers to see which part meets which item.</p>
+    <label class="toggle" for="pins"><input type="checkbox" id="pins" checked> Show checklist numbers</label>
+  </div>
+
+  <div class="grid" id="grid">
+    <div class="site show" id="site">
+      <header data-p>
+        <a class="logo" href="#home">Qanat Books</a>
+        <nav aria-label="Main">
+          <a href="#new">New in</a><a href="#arabic">Arabic</a><a href="#children">Children</a><a href="#offers">Offers</a>
+        </nav>
+        <span class="pin">8</span>
+      </header>
+
+      <main>
+        <svg class="art" viewBox="0 0 120 80" aria-hidden="true" focusable="false" data-p>
+          <rect x="8" y="14" width="46" height="58" rx="3" fill="var(--line)"/>
+          <rect x="66" y="14" width="46" height="58" rx="3" fill="var(--line)"/>
+          <path d="M54 18 L60 14 L66 18 L66 72 L60 76 L54 72 Z" fill="var(--accent)"/>
+          <rect x="16" y="26" width="30" height="3" rx="1.5" fill="var(--muted)"/>
+          <rect x="16" y="34" width="24" height="3" rx="1.5" fill="var(--muted)"/>
+          <rect x="74" y="26" width="30" height="3" rx="1.5" fill="var(--muted)"/>
+        </svg>
+        <span class="pin" style="margin:-20px 0 0">14</span>
+
+        <div style="display:grid;gap:12px">
+          <h1 data-p>We cannot find that page<span class="pin">1</span><span class="pin">13</span></h1>
+          <p class="lead" data-p>The address may have a typing mistake, or the page has moved since the link was made. Here are some ways to find what you were looking for.<span class="pin">2</span><span class="pin">3</span></p>
+          <p class="code">Error code 404</p>
+        </div>
+
+        <form role="search" data-p onsubmit="event.preventDefault();this.querySelector('output').textContent='In a real site this would search for: '+(this.q.value||'(empty)')">
+          <label class="sr" for="q">Search books and authors</label>
+          <input type="search" id="q" name="q" placeholder="Search books and authors">
+          <button type="submit">Search</button>
+          <span class="pin">5</span>
+          <output class="report" style="flex-basis:100%"></output>
+        </form>
+
+        <div class="go" data-p>
+          <h2>Popular pages</h2>
+          <ul>
+            <li><a href="#home">Home page</a></li>
+            <li><a href="#new">New in this week</a></li>
+            <li><a href="#arabic">Arabic novels</a></li>
+            <li><a href="#orders">Track your order</a></li>
+          </ul>
+          <span class="pin">6</span>
+        </div>
+
+        <p class="report" data-p>Followed a link from our site? <a href="#contact">Tell us it is broken</a> and we will fix it.<span class="pin">7</span></p>
+      </main>
+
+      <footer data-p>
+        <a href="#about">About</a><a href="#contact">Contact</a><a href="#delivery">Delivery</a><a href="#privacy">Privacy</a>
+        <span style="margin-left:auto">Qanat Books, Jeddah</span><span class="pin">8</span>
+      </footer>
+    </div>
+
+    <aside class="rail" aria-label="404 checklist">
+      <h2>404 checklist</h2>
+      <p class="sub">14 items. Tick marks the place on the page, or behind it, that meets each one.</p>
+
+      <h3>Message</h3>
+      <ol>
+        <li><span class="n">1</span><span>Plain words, not "404" as the headline<span class="where"><span class="tick">✓</span> Headline: "We cannot find that page"</span></span></li>
+        <li><span class="n">2</span><span>A short reason<span class="where"><span class="tick">✓</span> Typing mistake, or the page moved</span></span></li>
+        <li><span class="n">3</span><span>No blame on the visitor<span class="where"><span class="tick">✓</span> Says "the address", never "you typed"</span></span></li>
+        <li><span class="n">4</span><span>Calm humour only if it does not hide the message<span class="where"><span class="tick">✓</span> No joke used; the message comes first</span></span></li>
+      </ol>
+      <h3>Ways forward</h3>
+      <ol>
+        <li><span class="n">5</span><span>A search box<span class="where"><span class="tick">✓</span> Search books and authors</span></span></li>
+        <li><span class="n">6</span><span>Home and most used pages<span class="where"><span class="tick">✓</span> Four popular pages</span></span></li>
+        <li><span class="n">7</span><span>Report a broken link<span class="where"><span class="tick">✓</span> "Tell us it is broken"</span></span></li>
+        <li><span class="n">8</span><span>Normal header and footer<span class="where"><span class="tick">✓</span> Same menu and footer as every page</span></span></li>
+      </ol>
+      <h3>Technical (behind the page)</h3>
+      <ol>
+        <li><span class="n">9</span><span>Server answers 404, or 410 if gone for good<span class="where">Set on the server. This preview can't send it.</span></span></li>
+        <li><span class="n">10</span><span>Moved pages redirect (301)<span class="where">A redirect list on the server, checked before the 404</span></span></li>
+        <li><span class="n">11</span><span>Broken links found in logs and fixed<span class="where">A weekly look at the 404 report</span></span></li>
+        <li><span class="n">12</span><span>Page title "Page not found"<span class="where"><span class="tick">✓</span> Tab title: "Page not found · Qanat Books"</span></span></li>
+      </ol>
+      <h3>Access</h3>
+      <ol>
+        <li><span class="n">13</span><span>One main heading, contrast, phone width<span class="where"><span class="tick">✓</span> One heading; text passes 4.5 to 1; works at 320 px</span></span></li>
+        <li><span class="n">14</span><span>Pictures have alt text or are hidden<span class="where"><span class="tick">✓</span> The book drawing is hidden from screen readers</span></span></li>
+      </ol>
+    </aside>
+  </div>
+</div>
+
+<script>
+// On a real site the tab title would be this; the artifact keeps its own name in the gallery.
+document.addEventListener('DOMContentLoaded',()=>{});
+const site=document.getElementById('site'),pins=document.getElementById('pins');
+try{const v=localStorage.getItem('pins404');if(v!==null){pins.checked=v==='1'}}catch(e){}
+function apply(){site.classList.toggle('show',pins.checked);try{localStorage.setItem('pins404',pins.checked?'1':'0')}catch(e){}}
+pins.addEventListener('change',apply);apply();
+</script>
