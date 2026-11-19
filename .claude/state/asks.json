@@ -1,6 +1,6 @@
 {
  "since": "2026-11-19T08:11:36.281Z",
- "next": 37,
+ "next": 38,
  "asks": [
   {
    "id": 2,
@@ -1039,6 +1039,14 @@
    "status": "done",
    "note": "Header and footer removed from the 404 example; item 8 marked as not shown",
    "updated": "2026-11-19T22:12:08.236Z"
+  },
+  {
+   "id": 37,
+   "at": "2026-11-19T22:12:19.210Z",
+   "text": "there is like book icon do we need it ?!",
+   "status": "done",
+   "note": "Book drawing removed from the 404 example",
+   "updated": "2026-11-19T22:12:31.115Z"
   }
  ]
 }
