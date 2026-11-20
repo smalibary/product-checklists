@@ -3,26 +3,105 @@
 @import "@ui-sdk/core/web.css" layer(components);
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  color-scheme: light dark;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --fg: #0a0a0a;
+  --muted: #595959;
+  --line: #e5e5e5;
+  --line-strong: #8a8a8a;
+
+  --accent: #0f766e;
+  --accent-fg: #ffffff;
+  --accent-soft: #e6f4f2;
+
+  --layer: #ea580c;
+  --layer-strong: #c2410c;
+  --layer-fg: #ffffff;
+
+  --font-text: var(--font-geist-sans), system-ui, sans-serif;
+  --font-code: var(--font-geist-mono), ui-monospace, Consolas, monospace;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px -12px rgb(0 0 0 / 0.1);
+  --focus: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent);
+
+  --ui-background: var(--surface);
+  --ui-foreground: var(--fg);
+  --ui-muted: var(--accent-soft);
+  --ui-muted-foreground: var(--muted);
+  --ui-border: var(--line);
+  --ui-input: var(--line-strong);
+  --ui-primary: var(--accent);
+  --ui-primary-foreground: var(--accent-fg);
+  --ui-ring: var(--accent);
+  --ui-ring-border: var(--accent);
+  --ui-radius: var(--radius-sm);
+  --ui-font-sans: var(--font-text);
+  --ui-font-mono: var(--font-code);
+  --ui-font-size: 0.9375rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #0a0a0a;
+    --surface: #111111;
+    --fg: #ededed;
+    --muted: #a1a1a1;
+    --line: #262626;
+    --line-strong: #6b6b6b;
+
+    --accent: #2dd4bf;
+    --accent-fg: #04201c;
+    --accent-soft: #0f2623;
+
+    --layer: #fb923c;
+    --layer-strong: #fb923c;
+    --layer-fg: #1a0e05;
+
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -12px rgb(0 0 0 / 0.6);
   }
 }
 
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --font-sans: var(--font-text);
+  --font-mono: var(--font-code);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-text);
+  font-size: 1rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

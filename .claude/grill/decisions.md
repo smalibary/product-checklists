@@ -32,3 +32,5 @@
 | 2026-11-20 | Live examples are built in a Next.js app (`web/`) with ui-sdk, not shadcn | Salem: "using ui sdk ?? Dont use shadncn"; picked React + Next.js | Salem |
 | 2026-11-20 | The app sits in `web/` beside `note/`, not in the root | Root already holds the content and agent files; keeps the build separate | Claude |
 | 2026-11-20 | Examples are built one at a time by a Sonnet helper and checked by the main session | Salem: "build one by one using sonnet subagent (1 at a time) you eval" | Salem |
+| 2026-11-20 | GitHub repo is public, with a free live preview on GitHub Pages | Salem chose Public (Recommended) | Salem |
+| 2026-11-20 | First example to approve: the 404 page rebuilt with ui-sdk | Salem chose it | Salem |
