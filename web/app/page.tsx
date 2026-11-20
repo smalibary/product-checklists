@@ -20,6 +20,10 @@ export default function Home() {
           Resetting password example
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
+        <Link className="home-link" href="/examples/dashboard">
+          Dashboard example
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
       </div>
     </main>
   );

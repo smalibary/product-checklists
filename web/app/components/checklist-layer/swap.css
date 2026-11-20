@@ -26,17 +26,17 @@
   min-height: 0;
   overflow: hidden;
 }
-.cl-collapse[data-open="true"] .cl-collapse-inner {
+.cl-collapse[data-open="true"] > .cl-collapse-inner {
   overflow: visible;
   transition: overflow 0s 200ms allow-discrete;
 }
-.cl-collapse[data-open="false"] .cl-collapse-inner {
+.cl-collapse[data-open="false"] > .cl-collapse-inner {
   pointer-events: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .cl-collapse,
   .cl-fit[data-ready="true"],
-  .cl-collapse[data-open="true"] .cl-collapse-inner {
+  .cl-collapse[data-open="true"] > .cl-collapse-inner {
     transition: none;
   }
 }

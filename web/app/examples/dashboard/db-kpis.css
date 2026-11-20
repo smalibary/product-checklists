@@ -1,0 +1,104 @@
+/* Key numbers (items 2, 5, 6, 17). */
+.db-kpis {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+@container db (min-width: 540px) {
+  .db-kpis {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+/* Item 10 unticked: fixed columns that scroll sideways on a small screen. */
+.db[data-reflow="false"] .db-kpis {
+  grid-template-columns: repeat(3, 11rem);
+  overflow-x: auto;
+}
+.db-num {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: proportional-nums;
+}
+.db-num--small {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.db-kpis[data-steady="true"] .db-num {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.db-delta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 4px;
+  margin: 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.db-delta[data-good="false"] {
+  color: var(--bad);
+}
+.db-vs {
+  color: var(--muted);
+  font-weight: 400;
+}
+.db-fresh {
+  align-self: flex-start;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Needs attention (item 3). */
+.db-attn-list {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.db-attn-list a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: "icon text state" "icon since state";
+  column-gap: 10px;
+  align-items: center;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  color: var(--fg);
+  text-decoration: none;
+}
+.db-attn-list a:hover {
+  background: var(--accent-soft);
+}
+.db-attn-list svg {
+  grid-area: icon;
+  color: var(--bad);
+}
+.db-attn-text {
+  grid-area: text;
+  font-weight: 500;
+}
+.db-attn-since {
+  grid-area: since;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.db-attn-state {
+  grid-area: state;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bad) 12%, transparent);
+  color: var(--bad);
+  font-size: 0.75rem;
+  font-weight: 600;
+}

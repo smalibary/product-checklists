@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { Fit } from "./fit";
 import { useMet } from "./met-context";
 import "./swap.css";
@@ -13,7 +13,8 @@ export function Variants({
   active,
   parts,
 }: {
-  item: number | string;
+  // Leave out on a repeat of a part whose first copy carries the spot.
+  item?: number | string;
   active: string;
   parts: Record<string, ReactNode>;
 }) {
@@ -32,9 +33,19 @@ export function Swap({ item, good, broken }: { item: number; good: ReactNode; br
 
 // A part that is simply missing when its item is unticked. It folds shut instead of snapping.
 // Needs a flex-column parent that sets --cl-gap (same rule as Ghost). Put no data-item inside.
-export function Collapse({ n, open, children }: { n: number; open: boolean; children: ReactNode }) {
+export function Collapse({
+  n,
+  open,
+  style,
+  children,
+}: {
+  n?: number;
+  open: boolean;
+  style?: CSSProperties;
+  children: ReactNode;
+}) {
   return (
-    <div className="cl-collapse" data-open={open} data-item={n}>
+    <div className="cl-collapse" data-open={open} data-item={n} style={style}>
       <div className="cl-collapse-inner" aria-hidden={open ? undefined : true} inert={!open}>
         {children}
       </div>

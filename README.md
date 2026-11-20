@@ -27,9 +27,9 @@ see why the item matters.
 |---|---|---|
 | Website | [404 page](https://smalibary.github.io/product-checklists/examples/404/) | Live |
 | Flows | [Resetting a password](https://smalibary.github.io/product-checklists/examples/resetting-password/) | Live |
-| Web app | Dashboard | Being built |
-| Mobile | Login | Next |
-| Design system | Modal | Planned |
+| Web app | [Dashboard](https://smalibary.github.io/product-checklists/examples/dashboard/) | Live |
+| Mobile | Login | Being built |
+| Design system | Modal | Next |
 | API | API docs | Planned |
 | Backend | Search | Planned |
 | Code | Readme and docs | Planned |

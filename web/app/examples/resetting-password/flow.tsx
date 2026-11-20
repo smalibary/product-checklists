@@ -18,7 +18,7 @@ export function ResetFlow() {
   const { step } = useStep();
   return (
     <>
-      <ExampleBar address={ADDRESS[step - 1]} />
+      {(step === 1 || step === 3) && <ExampleBar address={ADDRESS[step - 1]} />}
       {step === 1 && <StepForgot />}
       {step === 2 && <StepEmail />}
       {step === 3 && <StepPassword />}

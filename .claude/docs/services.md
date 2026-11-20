@@ -21,3 +21,8 @@ Default for every service: pace to use about 90% by the reset. "No limit" only w
 ## Usage checks
 | Date | Service | Used so far | % of limit | % of period gone | Over pace? | Note |
 |---|---|---|---|---|---|---|
+
+## GitHub (repo smalibary/product-checklists, public) — added 2026-11-20
+- Actions (the publish run): standard runners are free and unlimited on public repos, so they draw nothing from an allowance (https://docs.github.com/en/billing/concepts/product-billing/github-actions).
+- Pages: 1 GB site; soft 100 GB a month of visitor traffic; soft 10 builds an hour, which a custom Actions workflow is exempt from; 10-minute deploy timeout (https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
+- How we use it (Salem, 2026-11-20: "dont over use"): one publish per finished example, with its readme change in the same push. Pushes that touch only the readme or .claude don't publish (path filter in pages.yml). Checks run on local builds; the live site gets one look after each publish. About 1 run a day, each under 2 minutes.

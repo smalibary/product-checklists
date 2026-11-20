@@ -1,0 +1,104 @@
+/* States (items 14, 15, 16). */
+.db-sk-card {
+  gap: 12px;
+}
+.db-sk {
+  display: block;
+  max-width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--line) 25%,
+    color-mix(in srgb, var(--line) 40%, var(--surface)) 50%,
+    var(--line) 75%
+  );
+  background-size: 200% 100%;
+  animation: db-shimmer 1.4s linear infinite;
+}
+@keyframes db-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+.db-spin,
+.db-error {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 10px;
+  color: var(--muted);
+  text-align: center;
+}
+.db-spin {
+  min-height: 300px;
+}
+.db-error {
+  min-height: 190px;
+}
+.db-error p {
+  margin: 0;
+}
+.db-error svg {
+  color: var(--bad);
+}
+.db-spin-ring {
+  width: 26px;
+  height: 26px;
+  border: 3px solid var(--line);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: db-spin 0.9s linear infinite;
+}
+@keyframes db-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.db-empty {
+  align-items: flex-start;
+}
+.db-empty > svg {
+  color: var(--accent);
+}
+.db-empty p {
+  margin: 0;
+  color: var(--muted);
+}
+.db-empty .db-title {
+  color: var(--fg);
+  font-size: 1.125rem;
+}
+.db-steps {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.db-steps li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.db-steps svg {
+  color: var(--accent);
+}
+.db-empty-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.db-plot-empty {
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+}
+@media (prefers-reduced-motion: reduce) {
+  .db-sk,
+  .db-spin-ring,
+  .db-dot[data-on="true"] {
+    animation: none;
+  }
+}

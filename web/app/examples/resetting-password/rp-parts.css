@@ -1,44 +1,12 @@
-.rp-mail,
 .rp-linkbox {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: var(--shadow);
 }
-.rp-mail-head {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--line);
-  background: color-mix(in srgb, var(--line) 30%, var(--surface));
-  border-radius: var(--radius) var(--radius) 0 0;
-}
-.rp-mail-head p {
-  margin: 0;
-}
-.rp-mail-subject {
-  font-weight: 600;
-}
-.rp-mail-from,
 .rp-mail-small {
   font-size: 0.8125rem;
   color: var(--muted);
-}
-.rp-mail-body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 16px;
-  font-size: 0.9375rem;
-}
-.rp-mail-body p,
-.rp-mail-body output {
-  margin: 0;
-}
-.rp-mail-body output:empty {
-  display: none;
 }
 .rp-linkbox {
   display: flex;
@@ -152,4 +120,37 @@
   font-size: 0.8125rem;
   font-weight: 400;
   color: var(--muted);
+}
+
+/* Step 2: the website and the mail app are two windows, so the site's own card is dropped. */
+.cl-site:has(> .rp-desk) {
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+}
+.rp-desk {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.rp-browser {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.rp-mailslot {
+  position: relative;
+  z-index: 1;
+  align-self: stretch;
+}
+@media (min-width: 640px) {
+  .rp-browser {
+    margin-bottom: -28px;
+  }
+  .rp-mailslot {
+    align-self: flex-end;
+    width: min(100%, 25rem);
+    margin-inline-end: 12px;
+  }
 }

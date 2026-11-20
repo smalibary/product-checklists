@@ -20,3 +20,5 @@ Icons: Phosphor only (@phosphor-icons/react), no hand-drawn SVG icons. Import fr
 ## Examples that must not jump
 
 A part with a good and a broken version uses `Swap` or `Variants` (components/checklist-layer/swap.tsx): only the active version is drawn, and the spot's height glides (200ms, instant with reduced motion) between versions through `Fit` (fit.tsx). No height is reserved, so the good state has no blank room. A part that is simply missing when unticked uses `Collapse`. Put no data-item inside either; the wrapper carries it. The layer re-measures when a transition ends.
+
+`Collapse` takes an optional `style` (for CSS `order`) and may be nested; its open/closed rules use the child selector. `Variants` `item` is optional (a string like "5 6" gives one spot to two items). The mail app window for emails is the shared `MailFrame` (components/mail-frame/).
