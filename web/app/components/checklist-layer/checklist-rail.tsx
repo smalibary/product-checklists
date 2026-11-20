@@ -1,28 +1,21 @@
 "use client";
 
 import { Button } from "@ui-sdk/react/button";
+import { Check, X } from "@phosphor-icons/react/dist/ssr";
 import { Checkbox, CheckboxIndicator } from "@ui-sdk/react/checkbox";
+import { Fit } from "./fit";
 import { RailScore } from "./rail-score";
 import type { ChecklistData, ChecklistItem } from "./types";
 import "./checklist-rail.css";
 
 function Mark({ met }: { met: boolean }) {
-  return (
-    <svg className="cl-check" data-met={met} viewBox="0 0 16 16" aria-hidden="true">
-      <path
-        d={met ? "m3.5 8.5 3 3 6-7" : "m4.5 4.5 7 7m0-7-7 7"}
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
+  const Icon = met ? Check : X;
+  return <Icon className="cl-check" data-met={met} size={14} aria-hidden="true" />;
 }
 
 type Props = {
   data: ChecklistData;
+  step: number;
   unmet: Set<number>;
   onReveal: (n: number) => void;
   onActive: (n: number | null) => void;
@@ -30,7 +23,7 @@ type Props = {
   onReset: () => void;
 };
 
-function Row({ item, met, ...rest }: { item: ChecklistItem; met: boolean } & Pick<Props, "onReveal" | "onToggle">) {
+function Row({ item, met, step, ...rest }: { item: ChecklistItem; met: boolean } & Pick<Props, "step" | "onReveal" | "onToggle">) {
   const body = (
     <>
       <span className="cl-n" data-shown={item.shown} data-met={met}>
@@ -38,10 +31,22 @@ function Row({ item, met, ...rest }: { item: ChecklistItem; met: boolean } & Pic
       </span>
       <span className="cl-text">
         {item.text}
-        <span className="cl-where" data-met={met}>
-          <Mark met={met} />
-          {met || !item.broken ? item.where : `Visitors would see: ${item.broken}`}
-        </span>
+        {item.shown && item.step && item.step !== step && (
+          <span className="cl-step-tag">Step {item.step}</span>
+        )}
+        <Fit tag="span" className="cl-where-fit">
+          {met || !item.broken ? (
+            <span className="cl-where" data-met={met}>
+              <Mark met={met} />
+              {item.where}
+            </span>
+          ) : (
+            <span className="cl-where" data-met="false">
+              <Mark met={false} />
+              Visitors would see: {item.broken}
+            </span>
+          )}
+        </Fit>
       </span>
     </>
   );
@@ -68,7 +73,7 @@ function Row({ item, met, ...rest }: { item: ChecklistItem; met: boolean } & Pic
   );
 }
 
-export function ChecklistRail({ data, unmet, onReveal, onActive, onToggle, onReset }: Props) {
+export function ChecklistRail({ data, step, unmet, onReveal, onActive, onToggle, onReset }: Props) {
   const total = data.groups.reduce((sum, g) => sum + g.items.length, 0);
   return (
     <aside className="cl-rail" aria-label={data.title}>
@@ -89,7 +94,7 @@ export function ChecklistRail({ data, unmet, onReveal, onActive, onToggle, onRes
                 onFocus={() => item.shown && onActive(item.n)}
                 onBlur={() => onActive(null)}
               >
-                <Row item={item} met={!unmet.has(item.n)} onReveal={onReveal} onToggle={onToggle} />
+                <Row item={item} met={!unmet.has(item.n)} step={step} onReveal={onReveal} onToggle={onToggle} />
               </li>
             ))}
           </ol>

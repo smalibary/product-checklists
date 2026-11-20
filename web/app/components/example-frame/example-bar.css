@@ -1,0 +1,35 @@
+.ex-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: color-mix(in srgb, var(--line) 35%, var(--surface));
+}
+.ex-dots {
+  display: flex;
+  gap: 6px;
+}
+.ex-dots i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  opacity: 0.45;
+}
+.ex-address {
+  flex: 1;
+  min-width: 0;
+  max-width: 22rem;
+  padding: 3px 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

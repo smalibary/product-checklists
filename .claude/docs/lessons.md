@@ -16,3 +16,5 @@
 | 2026-11-19 | Clicks stopped reaching the page after the same hidden tab moved to another website | one hidden tab per website (`.claude/docs/idea.md`, first test) |
 | 2026-11-19 | The first test was run in the lab folder while Salem watched the project folder, which looked empty | work in the project folder (now.md, "Salem said to remember") |
 | 2026-11-19 | google.com: 7 steps, all from the start page, no search typed, mic refused; Salem: "this simple main 2 pages couldnt do it correctly" | the explorer goes screen by screen and types searches (`core/src/recorder.rs`) |
+- 2026-11-20 | Unticking 404 item 1 made the page jump: the broken headline was 59px shorter and the rail row 18px taller (Salem: "it jump fix that"). Fix: good and broken versions stacked in one spot so height never changes; checked by measuring before/after. Lives in the shared checklist layer.
+- 2026-11-20 | Builder's preview server (port 4173) and mine (4417) kept web/out locked, so builds failed with EBUSY; fix: next.config EXPORT_DIR switch, and builders stop their servers before finishing (brief).

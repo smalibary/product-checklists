@@ -1,0 +1,42 @@
+.cl-fit {
+  display: block;
+}
+.cl-fit[data-ready="true"] {
+  transition: height 200ms ease-out;
+}
+.cl-fit[data-moving="true"] {
+  overflow: hidden;
+}
+.cl-fit-inner {
+  display: flow-root;
+}
+
+.cl-collapse {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition:
+    grid-template-rows 200ms ease,
+    margin-top 200ms ease;
+}
+.cl-collapse[data-open="false"] {
+  grid-template-rows: 0fr;
+  margin-top: calc(-1 * var(--cl-gap, 0px));
+}
+.cl-collapse-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+.cl-collapse[data-open="true"] .cl-collapse-inner {
+  overflow: visible;
+  transition: overflow 0s 200ms allow-discrete;
+}
+.cl-collapse[data-open="false"] .cl-collapse-inner {
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cl-collapse,
+  .cl-fit[data-ready="true"],
+  .cl-collapse[data-open="true"] .cl-collapse-inner {
+    transition: none;
+  }
+}

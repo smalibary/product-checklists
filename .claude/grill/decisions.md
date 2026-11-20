@@ -37,3 +37,6 @@
 | 2026-11-20 | GitHub repo is public with its whole history (messages, notes, journal included) | Salem picked option 2 | Salem |
 | 2026-11-20 | Examples are generic: example.com, no real brand or country; lorem ipsum for filler, real words only where an item is about the words | Salem: "make it general ... use lumpsim" | Salem |
 | 2026-11-20 | Each checklist item can be ticked or unticked on the example; unticking shows the page breaking that rule | Salem: "check the list or uncheck and this effect how it looks" | Salem |
+| 2026-11-20 | One example per group, in this order: flows/resetting-password, web-app/dashboard, mobile/login, design-system/modal, api/api-docs, backend/search, code/readme-docs, growth/blog, launch/legal-pages, motion/micro-interactions, operations/monitoring-alerts, product/release-announcements, support/help-desk (website/404 done) | The most visual checklist in each group; cheap to swap | Claude |
+| 2026-11-20 | Icons come from Phosphor (@phosphor-icons/react), in every example; no hand-drawn icons | Salem: "use that" | Salem |
+| 2026-11-20 | Ticking never snaps the layout: the changed spot slides to its new height (~200ms) instead of reserving blank space for the taller version | Reserved space showed as empty gaps in the good state (step 3, the rail) | Claude |

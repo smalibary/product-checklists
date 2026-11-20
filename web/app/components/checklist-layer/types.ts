@@ -3,6 +3,8 @@ export type ChecklistItem = {
   text: string;
   where: string;
   shown: boolean;
+  // Flow examples: the step whose page holds this item's spot.
+  step?: number;
   // Rail line when the item is unticked: finishes "Visitors would see: ..."
   broken?: string;
 };

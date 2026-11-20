@@ -63,6 +63,7 @@ export function measureSpots(
     });
   });
   spots.sort((a, b) => a.badge.top - b.badge.top || a.badge.left - b.badge.left);
+  fanOutLines(spots);
   spots.forEach((s, i) => {
     for (let tries = 0; tries < 12; tries++) {
       const hit = spots.slice(0, i).find((p) => overlaps(s.badge, p.badge));
@@ -73,4 +74,26 @@ export function measureSpots(
     }
   });
   return spots;
+}
+
+const LINE_STEP = 9;
+
+// Several removed parts can sit at one spot, so their lines would lie on top of each other.
+// Fan each such group out around the spot, a few pixels apart, badge and all.
+function fanOutLines(spots: Spot[]) {
+  const lines = spots.filter((s) => s.box.height < 1);
+  let group: Spot[] = [];
+  const flush = () => {
+    group.forEach((s, k) => {
+      const shift = (k - (group.length - 1) / 2) * LINE_STEP;
+      s.box.top += shift;
+      s.badge.top += shift;
+    });
+    group = [];
+  };
+  lines.forEach((s) => {
+    if (group.length && Math.abs(s.box.top - group[0].box.top) > 3) flush();
+    group.push(s);
+  });
+  flush();
 }

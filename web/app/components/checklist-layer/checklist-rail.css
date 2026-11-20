@@ -189,3 +189,14 @@ button.cl-item:focus-visible {
 .cl-where[data-met="false"] .cl-check {
   color: var(--bad);
 }
+.cl-step-tag {
+  display: inline-block;
+  margin-inline-start: 8px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: var(--line);
+  color: var(--muted);
+  font: 500 11px/18px var(--font-code);
+  white-space: nowrap;
+  vertical-align: 1px;
+}

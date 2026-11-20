@@ -12,7 +12,6 @@ export function SearchForm() {
     <form
       className="ex-search"
       role="search"
-      data-item="5"
       onSubmit={(event) => {
         event.preventDefault();
         const q = String(new FormData(event.currentTarget).get("q") ?? "");

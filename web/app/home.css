@@ -38,6 +38,12 @@
 .home-link:hover {
   border-color: var(--accent);
 }
-.home-link span {
+.home-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.home-link svg {
   color: var(--accent);
 }

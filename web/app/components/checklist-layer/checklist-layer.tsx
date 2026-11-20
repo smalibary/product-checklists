@@ -12,6 +12,9 @@ import {
 } from "react";
 import { Switch, SwitchThumb } from "@ui-sdk/react/switch";
 import { ChecklistRail } from "./checklist-rail";
+import { StepBar, type StepInfo } from "./step-bar";
+import { StepContext } from "./step-context";
+import { LayerOverlay } from "./layer-overlay";
 import { MetContext } from "./met-context";
 import { EMPTY_UNMET, parseUnmet, readUnmetRaw, subscribeMet, writeUnmet } from "./met-store";
 import { readShow, subscribeShow, writeShow } from "./show-store";
@@ -24,10 +27,12 @@ type Props = {
   data: ChecklistData;
   kicker: string;
   description: string;
+  // Flow examples only: the steps shown as a row above the card.
+  steps?: StepInfo[];
   children: ReactNode;
 };
 
-export function ChecklistLayer({ exampleId, data, kicker, description, children }: Props) {
+export function ChecklistLayer({ exampleId, data, kicker, description, steps, children }: Props) {
   const show = useSyncExternalStore(subscribeShow, readShow, () => true);
   const unmetRaw = useSyncExternalStore(
     subscribeMet,
@@ -38,6 +43,9 @@ export function ChecklistLayer({ exampleId, data, kicker, description, children 
   const met = useMemo(() => ({ isMet: (n: number) => !unmet.has(n) }), [unmet]);
   const [spots, setSpots] = useState<Spot[]>([]);
   const [active, setActive] = useState<number | null>(null);
+  const [step, setStep] = useState(1);
+  const pendingReveal = useRef<number | null>(null);
+  const stepValue = useMemo(() => ({ step, setStep }), [step]);
   const stageRef = useRef<HTMLDivElement>(null);
   const siteRef = useRef<HTMLDivElement>(null);
 
@@ -94,13 +102,30 @@ export function ChecklistLayer({ exampleId, data, kicker, description, children 
       window.removeEventListener("resize", schedule);
       document.fonts?.removeEventListener("loadingdone", schedule);
     };
-  }, [show, measure]);
+  }, [show, measure, step]);
 
-  function reveal(n: number) {
+  const scrollTo = useCallback((n: number) => {
     const el = siteRef.current?.querySelector<HTMLElement>(`[data-item~="${n}"]`);
     const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     el?.scrollIntoView({ behavior: calm ? "auto" : "smooth", block: "center" });
+  }, []);
+
+  // An item whose spot is on another step first switches to that step, then scrolls.
+  function reveal(n: number) {
+    const itemStep = data.groups.flatMap((g) => g.items).find((i) => i.n === n)?.step;
+    if (itemStep && itemStep !== step) {
+      pendingReveal.current = n;
+      setStep(itemStep);
+    } else scrollTo(n);
   }
+
+  useEffect(() => {
+    const n = pendingReveal.current;
+    if (n === null) return;
+    pendingReveal.current = null;
+    const raf = requestAnimationFrame(() => scrollTo(n));
+    return () => cancelAnimationFrame(raf);
+  }, [step, scrollTo]);
 
   return (
     <div className="cl-root">
@@ -118,44 +143,21 @@ export function ChecklistLayer({ exampleId, data, kicker, description, children 
       </header>
 
       <div className="cl-grid">
-        <div className="cl-stage" ref={stageRef}>
-          <div className="cl-site" ref={siteRef}>
-            <MetContext.Provider value={met}>{children}</MetContext.Provider>
-          </div>
-          {show && (
-            <div className="cl-overlay" aria-hidden="true">
-              {spots.map((s) => {
-                const state =
-                  active === null ? "idle" : s.nums.includes(active) ? "active" : "dim";
-                return (
-                  <span key={s.key}>
-                    <span
-                      className="cl-box"
-                      data-state={state}
-                      data-unmet={s.unmet}
-                      style={s.box}
-                    />
-                    <span
-                      className="cl-badge"
-                      data-state={state}
-                      data-unmet={s.unmet}
-                      style={{
-                        left: s.badge.left,
-                        top: s.badge.top,
-                        width: s.badge.width,
-                      }}
-                    >
-                      {s.badge.label}
-                    </span>
-                  </span>
-                );
-              })}
+        <div className="cl-col">
+          {steps && <StepBar steps={steps} step={step} onStep={setStep} />}
+          <div className="cl-stage" ref={stageRef} onTransitionEnd={measure}>
+            <div className="cl-site" ref={siteRef}>
+              <StepContext.Provider value={stepValue}>
+                <MetContext.Provider value={met}>{children}</MetContext.Provider>
+              </StepContext.Provider>
             </div>
-          )}
+            {show && <LayerOverlay spots={spots} active={active} />}
+          </div>
         </div>
 
         <ChecklistRail
           data={data}
+          step={step}
           unmet={unmet}
           onReveal={reveal}
           onActive={setActive}

@@ -1,0 +1,155 @@
+.rp-mail,
+.rp-linkbox {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.rp-mail-head {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--line) 30%, var(--surface));
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.rp-mail-head p {
+  margin: 0;
+}
+.rp-mail-subject {
+  font-weight: 600;
+}
+.rp-mail-from,
+.rp-mail-small {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.rp-mail-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  font-size: 0.9375rem;
+}
+.rp-mail-body p,
+.rp-mail-body output {
+  margin: 0;
+}
+.rp-mail-body output:empty {
+  display: none;
+}
+.rp-linkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px;
+}
+.rp-linkbox p {
+  margin: 0;
+  font-weight: 600;
+}
+.rp-linkbox code {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.rp-resend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.rp-resend output {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.rp-calm,
+.rp-hurry {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+.rp-calm {
+  color: var(--muted);
+}
+.rp-hurry {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--bad) 12%, transparent);
+  color: var(--bad);
+  font-weight: 600;
+}
+
+.rp-rules {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9375rem;
+}
+.rp-rules li,
+.rp-common {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.rp-common {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+.rp-rules svg,
+.rp-common svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--muted);
+}
+[data-state="ok"] > svg {
+  color: var(--accent);
+}
+[data-state="bad"] > svg,
+.rp-common[data-state="bad"] {
+  color: var(--bad);
+}
+.rp-rules-note {
+  padding-inline-start: 26px;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.rp-error {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--bad);
+}
+.rp-error svg {
+  flex: none;
+  margin-top: 2px;
+}
+
+.rp-signout {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.rp-signout small {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--muted);
+}

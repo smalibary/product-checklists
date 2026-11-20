@@ -12,3 +12,11 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 Before using ui-sdk, follow the ui-sdk skill if it's installed, and read `node_modules/@ui-sdk/react/docs/llms.txt`.
 To build a new component, also search `node_modules/@ui-sdk/react/docs/core.md` by heading, and read `rendering.md` next to it.
+
+## Icons
+
+Icons: Phosphor only (@phosphor-icons/react), no hand-drawn SVG icons. Import from "@phosphor-icons/react/dist/ssr"; regular weight, 16 to 20px, aria-hidden when beside text.
+
+## Examples that must not jump
+
+A part with a good and a broken version uses `Swap` or `Variants` (components/checklist-layer/swap.tsx): only the active version is drawn, and the spot's height glides (200ms, instant with reduced motion) between versions through `Fit` (fit.tsx). No height is reserved, so the good state has no blank room. A part that is simply missing when unticked uses `Collapse`. Put no data-item inside either; the wrapper carries it. The layer re-measures when a transition ends.
