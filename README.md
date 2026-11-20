@@ -36,8 +36,8 @@ see why the item matters.
 | Growth | [Blog](https://smalibary.github.io/product-checklists/examples/blog/) | Live |
 | Launch | [Legal pages](https://smalibary.github.io/product-checklists/examples/legal-pages/) | Live |
 | Motion | [Micro-interactions](https://smalibary.github.io/product-checklists/examples/micro-interactions/) | Live |
-| Operations | Monitoring and alerts | Next |
-| Product | Release announcements | Planned |
+| Operations | [Monitoring and alerts](https://smalibary.github.io/product-checklists/examples/monitoring-alerts/) | Live |
+| Product | Release announcements | Next |
 | Support | Help desk | Planned |
 
 ### Shared parts

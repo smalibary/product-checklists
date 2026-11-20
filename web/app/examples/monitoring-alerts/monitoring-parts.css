@@ -1,0 +1,170 @@
+.ma-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+@container ma (min-width: 40rem) {
+  .ma-tiles {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.ma-tiles[data-one="true"] {
+  grid-template-columns: minmax(0, 1fr);
+}
+.ma-tile {
+  display: grid;
+  gap: 2px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.ma-tile-label {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.ma-tile-value {
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+.ma-facts {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.ma-alert .ma-facts {
+  padding: 0;
+  border: 0;
+}
+.ma-facts > div {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: 8px;
+  font-size: 0.875rem;
+}
+.ma-facts dt {
+  color: var(--muted);
+}
+.ma-facts dd {
+  margin: 0;
+}
+.ma-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 14px 16px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.ma-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 0.9375rem;
+}
+.ma-list svg {
+  flex: none;
+  margin-top: 2px;
+}
+.ma-list .ma-tile-note {
+  display: block;
+}
+.ma-ok {
+  color: var(--accent);
+}
+.ma-badge {
+  justify-self: start;
+  padding: 1px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--bad);
+  color: #fff;
+}
+.ma-trace {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 14px 16px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.ma-trace li {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr) 3.5rem;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.ma-trace-bar {
+  position: relative;
+  display: block;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--accent-soft);
+}
+.ma-trace-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 var(--from);
+  width: var(--span);
+  border-radius: 5px;
+  background: var(--accent);
+}
+.ma-usage {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 14px 16px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.ma-usage li {
+  display: grid;
+  gap: 6px;
+  font-size: 0.9375rem;
+}
+.ma-meter {
+  position: relative;
+  display: block;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--accent-soft);
+}
+.ma-meter-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--used);
+  border-radius: 5px;
+  background: var(--accent);
+}
+.ma-meter-fill[data-high="true"] {
+  background: var(--bad);
+}
+.ma-meter::before,
+.ma-meter::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 2px;
+  background: var(--fg);
+  opacity: 0.55;
+  z-index: 1;
+}
+.ma-meter::before {
+  left: 50%;
+}
+.ma-meter::after {
+  left: 80%;
+}
