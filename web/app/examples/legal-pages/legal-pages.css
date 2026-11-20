@@ -1,0 +1,74 @@
+.lg-page {
+  display: flex;
+  flex-direction: column;
+}
+.lg-main {
+  --cl-gap: 28px;
+  container: lg / inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 24px 20px 40px;
+  min-width: 0;
+}
+.lg-main h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 650;
+}
+.lg-main h2 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.lg-main h3 {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.lg-main p {
+  margin: 0;
+  max-width: 65ch;
+  line-height: 1.6;
+}
+.lg-title {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+.lg-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  min-width: 0;
+}
+.lg-meta {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.lg-dated {
+  display: grid;
+  gap: 10px;
+}
+.lg-note,
+.lg-chat-note {
+  padding: 10px 14px;
+  border: 1px solid var(--line-strong);
+  border-left-width: 4px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  font-size: 0.875rem;
+}
+.lg-points {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 1.5rem;
+  line-height: 1.55;
+}
+ul.lg-points {
+  list-style: disc;
+}
+ol.lg-points {
+  list-style: decimal;
+}

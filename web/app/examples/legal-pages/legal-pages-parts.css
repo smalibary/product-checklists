@@ -1,0 +1,79 @@
+/* Cards, details, cookie notice, chat and sign-up */
+.lg-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@container lg (min-width: 40rem) {
+  .lg-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.lg-card,
+.lg-cookie,
+.lg-chat {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.lg-card dl,
+.lg-imprint {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+}
+.lg-card dl > div,
+.lg-imprint > div {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: 8px;
+  font-size: 0.875rem;
+}
+.lg-card dt,
+.lg-imprint dt {
+  color: var(--muted);
+}
+.lg-card dd,
+.lg-imprint dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.lg-fixed {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.lg-chat-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.lg-chat-note svg {
+  flex: none;
+  margin-top: 3px;
+}
+.lg-bubble {
+  width: fit-content;
+  max-width: 90%;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  border: 1px solid var(--line);
+}
+.lg-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  max-width: 24rem;
+}
+/* Inside a card the label sits above its value, so three cards fit side by side */
+.lg-card dl > div {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}

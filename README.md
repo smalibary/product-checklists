@@ -34,8 +34,8 @@ see why the item matters.
 | Backend | [Search](https://smalibary.github.io/product-checklists/examples/search/) | Live |
 | Code | [Readme and docs](https://smalibary.github.io/product-checklists/examples/readme-docs/) | Live |
 | Growth | [Blog](https://smalibary.github.io/product-checklists/examples/blog/) | Live |
-| Launch | Legal pages | Next |
-| Motion | Micro-interactions | Planned |
+| Launch | [Legal pages](https://smalibary.github.io/product-checklists/examples/legal-pages/) | Live |
+| Motion | Micro-interactions | Next |
 | Operations | Monitoring and alerts | Planned |
 | Product | Release announcements | Planned |
 | Support | Help desk | Planned |
