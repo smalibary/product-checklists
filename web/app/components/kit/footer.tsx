@@ -6,8 +6,9 @@ import { Button } from "./button";
 import { FormLayout, TextField } from "./field";
 import { Link } from "./link";
 import { Part, type Spots } from "./part";
+import type { NavLink } from "./header";
 
-export type FooterVariant = "full" | "slim";
+export type FooterVariant = "full" | "slim" | "product";
 
 const GROUPS = [
   { title: "Product", links: ["Features", "Pricing", "Changelog"] },
@@ -27,12 +28,18 @@ export function SiteFooter({
   spots,
   brokens,
   socialNames = true,
+  about,
+  edges,
 }: {
   variant?: FooterVariant;
   spots?: Spots;
   brokens?: Record<string, ReactNode>;
   // Social links say their name in words, not only an icon.
   socialNames?: boolean;
+  // The "product" variant: what this site is in one line, its links and a closing note.
+  about?: { line: string; links: NavLink[]; note: string };
+  // Padding for the start and end edge, so the content lines up with the page's.
+  edges?: { start: string; end: string };
 }) {
   const full = variant === "full";
   const P = (name: string, children: ReactNode, axis: "x" | "y" = "x") => (
@@ -41,6 +48,24 @@ export function SiteFooter({
     </Part>
   );
   const year = new Date().getFullYear();
+
+  if (variant === "product" && about) {
+    return (
+      <footer className="kit-footer" data-variant="product" style={edges ? { paddingInlineStart: edges.start, paddingInlineEnd: edges.end } : undefined}>
+        <p className="kit-ft-about">{about.line}</p>
+        <ul className="kit-ft-legal kit-ft-inline" aria-label="Site links">
+          {about.links.map((l) => (
+            <li key={l.label}>
+              <Link href={l.href} hard outside={l.outside}>
+                {l.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <p className="kit-ft-note">{about.note}</p>
+      </footer>
+    );
+  }
 
   return (
     <Part name="root" spots={spots} axis="y" broken={brokens?.root}>

@@ -5,12 +5,12 @@ import "./home.css";
 export default function Home() {
   return (
     <main className="home">
-      <p className="home-kicker">Product Checklists</p>
       <h1>Product Checklists, live examples</h1>
       <p className="home-lead">
         Each example is a small page built to one checklist, with a layer that shows which part
         meets which item.
       </p>
+      <h2 className="home-sub" id="examples">Examples</h2>
       <div className="home-links">
         <Link className="home-link" href="/examples/404">
           404 page example
@@ -69,7 +69,7 @@ export default function Home() {
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
       </div>
-      <h2 className="home-sub">Shared parts</h2>
+      <h2 className="home-sub" id="parts">Shared parts</h2>
       <p className="home-lead">
         The standard header, footer, buttons, links, fields, code blocks and motion that every example above
         uses. Each is built to its own checklists.

@@ -108,3 +108,13 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* The page area between the site header and footer takes the spare height; no focus ring on the skip target. */
+.site-main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.site-main:focus {
+  outline: none;
+}

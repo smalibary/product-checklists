@@ -184,3 +184,7 @@
     font-size: 1rem;
   }
 }
+/* The product header: this site's own bar, set apart from any made-up header shown in an example. */
+.kit-header[data-variant="product"] {
+  border-top: 4px solid var(--accent);
+}

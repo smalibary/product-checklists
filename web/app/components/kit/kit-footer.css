@@ -112,3 +112,22 @@
 .kit-footer[data-variant="slim"] {
   padding-block: 16px;
 }
+/* The product footer: one line about the site, its links, and a closing note. */
+.kit-footer[data-variant="product"] {
+  gap: 10px;
+  padding-block: 20px;
+}
+.kit-ft-about {
+  margin: 0;
+  max-width: 40rem;
+}
+.kit-ft-inline {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}
+.kit-ft-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}

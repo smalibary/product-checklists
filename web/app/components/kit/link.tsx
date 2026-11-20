@@ -6,6 +6,10 @@ type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & {
   href: string;
   // Opens in a new tab: marked with an icon and announced.
   external?: boolean;
+  // A link to another part of this site's own address space (or an outside page) in the same tab:
+  // shown with the outside-link icon when "outside" is set, and always a plain anchor when "hard" is.
+  outside?: boolean;
+  hard?: boolean;
   // A file: its type and size are said in the link text.
   file?: { type: string; size: string };
   // Stands alone (a menu, a list): a larger tap area on phones.
@@ -15,12 +19,13 @@ type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & {
 
 // The one link of the site. Underlined (never colour alone), a different look once visited,
 // same tab unless there is a strong reason. For actions, use Button.
-export function Link({ href, external, file, standalone, className, children, rel, ...rest }: Props) {
+export function Link({ href, external, outside, hard, file, standalone, className, children, rel, ...rest }: Props) {
   const cls = ["kit-link", className].filter(Boolean).join(" ");
   const inner = (
     <>
       {children}
       {file && <span className="kit-link-file"> ({file.type}, {file.size})</span>}
+      {outside && !external && <ArrowSquareOut className="kit-link-out" size={14} aria-hidden="true" />}
       {external && (
         <>
           <ArrowSquareOut className="kit-link-out" size={14} aria-hidden="true" />
@@ -36,7 +41,7 @@ export function Link({ href, external, file, standalone, className, children, re
       </a>
     );
   }
-  if (href.startsWith("/")) {
+  if (!hard && href.startsWith("/")) {
     return (
       <NextLink {...rest} rel={rel} className={cls} data-standalone={standalone || undefined} href={href}>
         {inner}

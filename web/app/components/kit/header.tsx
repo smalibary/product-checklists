@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
-import { CaretDown, List, MagnifyingGlass, Planet, UserCircle, X } from "@phosphor-icons/react/dist/ssr";
+import { ArrowSquareOut, CaretDown, List, ListChecks, MagnifyingGlass, Planet, UserCircle, X } from "@phosphor-icons/react/dist/ssr";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -16,8 +16,9 @@ import { Link } from "./link";
 import { Part, type Spots } from "./part";
 import { Reveal } from "./reveal";
 
-export type HeaderVariant = "site" | "slim" | "app";
-type NavItem = { label: string; href?: string; children?: { label: string; href: string }[] };
+export type HeaderVariant = "site" | "slim" | "app" | "product";
+export type NavLink = { label: string; href: string; outside?: boolean };
+type NavItem = { label: string; href?: string; outside?: boolean; children?: { label: string; href: string }[] };
 
 const SITE_MENU: NavItem[] = [
   { label: "Features", children: ["Overview", "Security", "Integrations"].map((l) => ({ label: l, href: `#${l.toLowerCase()}` })) },
@@ -46,6 +47,12 @@ export type HeaderProps = {
   // Checklist spots by part name (example pages only). Parts without one are simply drawn.
   spots?: Spots;
   brokens?: Record<string, ReactNode>;
+  // The "product" variant: this site's own name (links to its home) and links, no search or sign-in.
+  brand?: { name: string; href: string };
+  links?: NavLink[];
+  skipTarget?: string;
+  // The product variant lines its content up with the page's: padding for the start and end edge.
+  edges?: { start: string; end: string };
 };
 
 // The one header of the site, in three variants: "site" (the full menu), "slim" (logo and help only,
@@ -60,12 +67,17 @@ export function SiteHeader({
   menuButtonLabel = true,
   spots,
   brokens,
+  brand,
+  links = [],
+  skipTarget = "#main",
+  edges,
 }: HeaderProps) {
   const [open, setOpen] = useState(false);
   const [shrunk, setShrunk] = useState(false);
   const sentinel = useRef<HTMLDivElement>(null);
   const panel = useId();
-  const menu = variant === "site" ? SITE_MENU : variant === "app" ? APP_MENU : [];
+  const product = variant === "product";
+  const menu: NavItem[] = product ? links : variant === "site" ? SITE_MENU : variant === "app" ? APP_MENU : [];
   const full = variant !== "slim";
 
   useEffect(() => {
@@ -87,9 +99,9 @@ export function SiteHeader({
   );
   const here = (label: string) => markCurrent && label === current;
   const canFold = fold && full;
-  const panelLinks: { label: string; href: string }[] = [
-    ...menu.flatMap((m) => m.children ?? [{ label: m.label, href: m.href ?? "#" }]),
-    { label: "Help", href: "#help" },
+  const panelLinks: NavLink[] = [
+    ...menu.flatMap((m) => m.children ?? [{ label: m.label, href: m.href ?? "#", outside: m.outside }]),
+    ...(product ? [] : [{ label: "Help", href: "#help" }]),
     ...(variant === "site" ? [{ label: "Sign in", href: "#sign-in" }] : []),
   ];
 
@@ -105,15 +117,15 @@ export function SiteHeader({
         data-fold={canFold}
         data-item={sticky ? spots?.sticky : undefined}
       >
-        <a className="kit-skip" href="#main">
+        <a className="kit-skip" href={skipTarget}>
           Skip to content
         </a>
-        <div className="kit-hd-in">
+        <div className="kit-hd-in" style={product && edges ? { paddingInlineStart: edges.start, paddingInlineEnd: edges.end } : undefined}>
           {P(
             "logo",
-            <a className="kit-logo" href="#home" aria-label="Lorem, home page">
-              <Planet size={24} weight="fill" aria-hidden="true" />
-              <span>Lorem</span>
+            <a className="kit-logo" href={brand?.href ?? "#home"} aria-label={`${brand?.name ?? "Lorem"}, home page`}>
+              {product ? <ListChecks size={24} weight="bold" aria-hidden="true" /> : <Planet size={24} weight="fill" aria-hidden="true" />}
+              <span>{brand?.name ?? "Lorem"}</span>
             </a>,
           )}
 
@@ -144,6 +156,7 @@ export function SiteHeader({
                         <NavigationMenuItem key={m.label} data-item={m.label === current ? spots?.current : undefined}>
                           <NavigationMenuLink href={m.href} current={here(m.label)}>
                             {m.label}
+                            {m.outside && <ArrowSquareOut className="kit-link-out" size={14} aria-hidden="true" />}
                           </NavigationMenuLink>
                         </NavigationMenuItem>
                       ),
@@ -154,7 +167,8 @@ export function SiteHeader({
               </nav>,
             )}
 
-          <div className="kit-hd-end">
+          {product && <div className="kit-hd-end" />}
+          {!product && <div className="kit-hd-end">
             {full && (
               <div className="kit-search">
                 {P("search", <Button kind="quiet" size="sm" icon={<MagnifyingGlass size={18} aria-hidden="true" />} label="Search" />)}
@@ -184,7 +198,7 @@ export function SiteHeader({
                   Start free
                 </Button>,
               )}
-          </div>
+          </div>}
 
           {canFold && (
             <div className="kit-menu-btn" data-item={spots?.menubtn}>
@@ -208,7 +222,7 @@ export function SiteHeader({
             <ul className="kit-panel">
               {panelLinks.map((m) => (
                 <li key={m.label}>
-                  <Link href={m.href} standalone aria-current={here(m.label) ? "page" : undefined}>
+                  <Link href={m.href} standalone hard={product} outside={m.outside} aria-current={here(m.label) ? "page" : undefined}>
                     {m.label}
                   </Link>
                 </li>
