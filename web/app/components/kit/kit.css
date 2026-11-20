@@ -3,6 +3,7 @@
 @import "./kit-field.css";
 @import "./kit-nav.css";
 @import "./kit-footer.css";
+@import "./kit-modal.css";
 
 /* Shared kit: link, reveal, part. Colours come from the tokens in globals.css. */
 :root {

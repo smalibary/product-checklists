@@ -29,8 +29,8 @@ see why the item matters.
 | Flows | [Resetting a password](https://smalibary.github.io/product-checklists/examples/resetting-password/) | Live |
 | Web app | [Dashboard](https://smalibary.github.io/product-checklists/examples/dashboard/) | Live |
 | Mobile | [Login](https://smalibary.github.io/product-checklists/examples/mobile-login/) | Live |
-| Design system | Modal | Being built |
-| API | API docs | Planned |
+| Design system | [Modal](https://smalibary.github.io/product-checklists/examples/modal/) | Live |
+| API | API docs | Next |
 | Backend | Search | Planned |
 | Code | Readme and docs | Planned |
 | Growth | Blog | Planned |
@@ -48,7 +48,8 @@ Every example uses one standard set of parts, each built to its own checklist an
 [button and button group](https://smalibary.github.io/product-checklists/parts/button/) ·
 [link](https://smalibary.github.io/product-checklists/parts/link/) ·
 [input field and form](https://smalibary.github.io/product-checklists/parts/field/) ·
-[motion](https://smalibary.github.io/product-checklists/parts/motion/).
+[motion](https://smalibary.github.io/product-checklists/parts/motion/) ·
+[dialog](https://smalibary.github.io/product-checklists/parts/dialog/).
 No example makes its own buttons, links, fields, header or footer.
 
 ## The 14 groups

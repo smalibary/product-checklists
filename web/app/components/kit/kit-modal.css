@@ -1,0 +1,224 @@
+/* Dialog (modal): the card, the real dialog, and the stage that shows one inside an example page. */
+:root {
+  --scrim: rgb(15 23 42 / 0.45);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --scrim: rgb(0 0 0 / 0.62);
+  }
+}
+
+/* The card. Used by the real dialog (ui-sdk, top layer) and by the stage below. */
+.kit-mcard {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 100%;
+  min-height: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--fg);
+  box-shadow: var(--shadow);
+}
+.kit-mhead {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+}
+.kit-mhead > :first-child {
+  flex: 1;
+  min-width: 0;
+}
+.kit-mtitle {
+  margin: 0;
+  font-size: 1.1875rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.kit-mtitle:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+.kit-mx {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  margin: -6px -8px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--muted);
+  transition: background-color var(--dur-quick) var(--ease-move), color var(--dur-quick) var(--ease-move);
+}
+.kit-mx:hover {
+  background: var(--accent-soft);
+  color: var(--fg);
+}
+.kit-mx:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+@media (pointer: coarse) {
+  .kit-mx {
+    width: var(--tap);
+    height: var(--tap);
+  }
+}
+.kit-mx-bare {
+  display: inline-block;
+  padding-inline: 6px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.kit-mbody {
+  --cl-gap: 12px;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  min-height: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.kit-mbody[data-scroll] {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  margin-inline: -4px;
+  padding-inline: 4px;
+}
+.kit-mbody > p {
+  margin: 0;
+}
+.kit-mbody strong {
+  color: var(--fg);
+}
+
+/* The real dialog (ui-sdk, in the browser top layer): centred, with a dimmed backdrop. */
+.kit-mdialog[data-slot="dialog-content"] {
+  width: min(30rem, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  transition:
+    opacity var(--dur-base) var(--ease-enter),
+    translate var(--dur-base) var(--ease-enter);
+}
+.kit-mdialog[data-starting-style],
+.kit-mdialog[data-ending-style] {
+  opacity: 0;
+  translate: 0 var(--move);
+}
+.kit-mdialog[data-ending-style] {
+  transition-duration: var(--dur-leave);
+}
+.kit-mdialog::backdrop,
+[data-slot="dialog-backdrop"].kit-mback-real {
+  background: var(--scrim);
+}
+[data-slot="dialog-backdrop"].kit-mback-real {
+  transition: opacity var(--dur-base) var(--ease-enter);
+}
+[data-slot="dialog-backdrop"].kit-mback-real:is([data-starting-style], [data-ending-style]) {
+  opacity: 0;
+}
+
+/* The stage: a made-up page with the dialog open over it, drawn inside the example (no top layer,
+   so the numbered spots stay visible). */
+.kit-mstage {
+  position: relative;
+  height: 32rem;
+  overflow: hidden;
+  background: var(--bg);
+  isolation: isolate;
+}
+.kit-mstage[data-tall] {
+  height: 36rem;
+}
+.kit-mpage {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.kit-mpage[data-scrolls] {
+  overflow-y: auto;
+}
+.kit-mback {
+  position: absolute;
+  inset: 0;
+  background: var(--scrim);
+  transition: opacity var(--dur-base) var(--ease-enter), visibility 0s;
+}
+.kit-mback[data-dim="false"] {
+  background: transparent;
+}
+.kit-mback[data-open="false"] {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--dur-leave) var(--ease-leave), visibility 0s linear var(--dur-leave);
+}
+.kit-mpos {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  pointer-events: none;
+  transition: opacity var(--dur-base) var(--ease-enter), transform var(--dur-base) var(--ease-enter), padding var(--dur-base) var(--ease-move), visibility 0s;
+}
+.kit-mpos[data-open="false"] {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(var(--move));
+  transition: opacity var(--dur-leave) var(--ease-leave), transform var(--dur-leave) var(--ease-leave), visibility 0s linear var(--dur-leave);
+}
+.kit-mpos[data-place="corner"] {
+  place-items: start;
+}
+.kit-mpos[data-place="wide"],
+.kit-mpos[data-place="sheet"] {
+  padding: 0;
+}
+.kit-mpos[data-place="sheet"] {
+  place-items: end center;
+}
+.kit-mslot {
+  --kit-mmax: 100%;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  width: min(30rem, 100%);
+  max-height: var(--kit-mmax);
+  min-height: 0;
+  pointer-events: auto;
+  transition: max-height var(--dur-base) var(--ease-move), width var(--dur-base) var(--ease-move);
+}
+.kit-mslot[data-unbounded] {
+  --kit-mmax: 60rem;
+}
+.kit-mpos[data-open="false"] .kit-mslot {
+  pointer-events: none;
+}
+.kit-mpos[data-place="wide"] .kit-mslot,
+.kit-mpos[data-place="sheet"] .kit-mslot {
+  width: 100%;
+}
+.kit-mpos[data-place="wide"] .kit-mcard {
+  border-radius: 0;
+  border-inline: 0;
+}
+.kit-mpos[data-place="sheet"] .kit-mcard {
+  padding-bottom: 28px;
+  border-radius: calc(var(--radius) + 6px) calc(var(--radius) + 6px) 0 0;
+  border-bottom: 0;
+}

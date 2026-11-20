@@ -1,0 +1,66 @@
+@import "../../components/kit/motion.css";
+/* The made-up page behind the modal. Everything else comes from the shared kit. */
+.mx-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: var(--bg);
+}
+.mx-main {
+  flex: 1;
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  padding: 28px 24px 32px;
+}
+.mx-main h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: -0.015em;
+}
+.mx-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mx-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.mx-row span {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.mx-row small {
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.mx-appbar {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.mx-phone-page .mx-list {
+  padding: 16px;
+}
+.mx-phone {
+  display: grid;
+  justify-items: center;
+  padding: 24px 16px 28px;
+}
+.mx-phone .kit-mstage {
+  height: 30rem;
+}
+/* Page-scroll behind the window (item 17 unticked) needs a page taller than the stage. */
+.kit-mpage[data-scrolls] .mx-page {
+  min-height: 140%;
+}

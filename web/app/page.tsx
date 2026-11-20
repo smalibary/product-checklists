@@ -28,6 +28,10 @@ export default function Home() {
           Mobile login example
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
+        <Link className="home-link" href="/examples/modal">
+          Modal example
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
       </div>
       <h2 className="home-sub">Shared parts</h2>
       <p className="home-lead">
@@ -57,6 +61,10 @@ export default function Home() {
         </Link>
         <Link className="home-link" href="/parts/motion">
           Motion
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+        <Link className="home-link" href="/parts/dialog">
+          Dialog (modal)
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
       </div>
