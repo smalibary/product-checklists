@@ -167,7 +167,6 @@ export function SiteHeader({
               </nav>,
             )}
 
-          {product && <div className="kit-hd-end" />}
           {!product && <div className="kit-hd-end">
             {full && (
               <div className="kit-search">

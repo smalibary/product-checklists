@@ -188,3 +188,10 @@
 .kit-header[data-variant="product"] {
   border-top: 4px solid var(--accent);
 }
+/* The links sit at the content's end edge, the brand at its start edge. */
+.kit-header[data-variant="product"] .kit-nav ul {
+  justify-content: flex-end;
+}
+.kit-header[data-variant="product"] .kit-menu-btn {
+  margin-inline-start: auto;
+}
