@@ -29,3 +29,6 @@
 | 2026-11-20 | The app is the Product Checklists page only; the recorder, its library page and all recordings are deleted (code kept as git tag recorder-last). D1 to D4 no longer apply. | Salem: "i want this app to be this artifact, delete all the rest" | Salem |
 | 2026-11-20 | Project and folder renamed from agentscreen to product-checklists | Matches the page title and covers every group, not only code | Salem |
 | 2026-11-20 | General accessibility items live only in the Accessibility checklist; other lists keep only access items special to them, plus an 'Also meets' link | Salem chose it (ask 33): 123 repeats across 150 lists | Salem |
+| 2026-11-20 | Live examples are built in a Next.js app (`web/`) with ui-sdk, not shadcn | Salem: "using ui sdk ?? Dont use shadncn"; picked React + Next.js | Salem |
+| 2026-11-20 | The app sits in `web/` beside `note/`, not in the root | Root already holds the content and agent files; keeps the build separate | Claude |
+| 2026-11-20 | Examples are built one at a time by a Sonnet helper and checked by the main session | Salem: "build one by one using sonnet subagent (1 at a time) you eval" | Salem |
