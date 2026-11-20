@@ -30,8 +30,8 @@ see why the item matters.
 | Web app | [Dashboard](https://smalibary.github.io/product-checklists/examples/dashboard/) | Live |
 | Mobile | [Login](https://smalibary.github.io/product-checklists/examples/mobile-login/) | Live |
 | Design system | [Modal](https://smalibary.github.io/product-checklists/examples/modal/) | Live |
-| API | API docs | Next |
-| Backend | Search | Planned |
+| API | [API docs](https://smalibary.github.io/product-checklists/examples/api-docs/) | Live |
+| Backend | Search | Next |
 | Code | Readme and docs | Planned |
 | Growth | Blog | Planned |
 | Launch | Legal pages | Planned |
