@@ -58,7 +58,7 @@
   border-radius: var(--radius);
   background: var(--surface);
 }
-.rd-readme .rd-code {
+.rd-readme .kit-code {
   background: var(--bg);
 }
 .rd-lead {

@@ -33,8 +33,8 @@ see why the item matters.
 | API | [API docs](https://smalibary.github.io/product-checklists/examples/api-docs/) | Live |
 | Backend | [Search](https://smalibary.github.io/product-checklists/examples/search/) | Live |
 | Code | [Readme and docs](https://smalibary.github.io/product-checklists/examples/readme-docs/) | Live |
-| Growth | Blog | Next |
-| Launch | Legal pages | Planned |
+| Growth | [Blog](https://smalibary.github.io/product-checklists/examples/blog/) | Live |
+| Launch | Legal pages | Next |
 | Motion | Micro-interactions | Planned |
 | Operations | Monitoring and alerts | Planned |
 | Product | Release announcements | Planned |
@@ -49,7 +49,8 @@ Every example uses one standard set of parts, each built to its own checklist an
 [link](https://smalibary.github.io/product-checklists/parts/link/) ·
 [input field and form](https://smalibary.github.io/product-checklists/parts/field/) ·
 [motion](https://smalibary.github.io/product-checklists/parts/motion/) ·
-[dialog](https://smalibary.github.io/product-checklists/parts/dialog/).
+[dialog](https://smalibary.github.io/product-checklists/parts/dialog/) ·
+[code block](https://smalibary.github.io/product-checklists/parts/code/).
 No example makes its own buttons, links, fields, header or footer.
 
 ## The 14 groups

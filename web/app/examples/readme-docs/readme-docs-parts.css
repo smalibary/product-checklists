@@ -1,35 +1,4 @@
-/* Commands and code */
-.rd-install {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 6px;
-}
-.rd-install-foot {
-  display: flex;
-  justify-content: flex-end;
-}
-.rd-code {
-  margin: 0;
-  padding: 14px 16px;
-  overflow-x: auto;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  background: var(--surface);
-  font-family: var(--font-code);
-  font-size: 0.8125rem;
-  line-height: 1.6;
-  color: var(--fg);
-  tab-size: 2;
-}
-.rd-code code {
-  font-size: inherit;
-  overflow-wrap: normal;
-}
-.rd-code:focus-visible {
-  outline: none;
-  box-shadow: var(--focus);
-}
-
+/* Settings and links */
 /* Settings table */
 .rd-table {
   width: 100%;

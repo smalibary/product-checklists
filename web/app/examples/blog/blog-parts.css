@@ -1,0 +1,129 @@
+/* Lists of posts, sharing, comments and the archive */
+.bl-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+.bl-rows {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bl-row,
+.bl-comment {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.bl-row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.bl-row-sum {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.bl-tag {
+  padding: 1px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: var(--fg);
+}
+.bl-pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.bl-related {
+  display: grid;
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+/* Sharing and following */
+.bl-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.bl-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+.bl-card-text {
+  display: grid;
+  gap: 2px;
+  padding: 10px 14px 12px;
+}
+.bl-card-text small,
+.bl-card-text span {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+@container bl (min-width: 34rem) {
+  .bl-card {
+    grid-template-columns: 12rem minmax(0, 1fr);
+  }
+  .bl-card img {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+}
+.bl-bare {
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  overflow-wrap: anywhere;
+}
+.bl-feed {
+  display: grid;
+  gap: 2px;
+}
+.bl-feed small {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+/* Archive and comments */
+.bl-old,
+.bl-comments {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+.bl-note {
+  padding: 10px 14px;
+  border: 1px solid var(--line-strong);
+  border-left-width: 4px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  font-size: 0.875rem;
+}
+.bl-steps {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: decimal;
+  display: grid;
+  gap: 4px;
+}

@@ -1,48 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { Check, Copy } from "@phosphor-icons/react/dist/ssr";
 import { useMet } from "../../components/checklist-layer/met-context";
 import { Collapse, Swap } from "../../components/checklist-layer/swap";
-import { Button } from "../../components/kit/button";
+import { CodeBlock } from "../../components/kit/code";
 import { Link } from "../../components/kit/link";
 import { COMMANDS, SETTINGS } from "./data";
-
-// A block of commands people can copy, and reach by keyboard so long lines can be scrolled.
-export function Code({ label, code }: { label: string; code: string }) {
-  return (
-    <pre className="rd-code" tabIndex={0} role="region" aria-label={label}>
-      <code>{code}</code>
-    </pre>
-  );
-}
-
-function CopyButton({ text }: { text: string }) {
-  const [done, setDone] = useState(false);
-  const timer = useRef(0);
-  useEffect(() => () => window.clearTimeout(timer.current), []);
-  const copy = async () => {
-    try {
-      await navigator.clipboard.writeText(text);
-    } catch {
-      // Copying can be blocked in a preview; the commands are still on the page to select.
-    }
-    setDone(true);
-    window.clearTimeout(timer.current);
-    timer.current = window.setTimeout(() => setDone(false), 2000);
-  };
-  return (
-    <>
-      <Button kind="quiet" size="sm" icon={done ? <Check size={16} aria-hidden="true" /> : <Copy size={16} aria-hidden="true" />} onClick={copy}>
-        {done ? "Copied" : "Copy"}
-        <span className="sr"> the commands</span>
-      </Button>
-      <span className="sr" role="status">
-        {done ? "Commands copied to the clipboard" : ""}
-      </span>
-    </>
-  );
-}
 
 // Item 1: the first lines say what it is and who it is for.
 export function Intro() {
@@ -65,12 +27,7 @@ export function Intro() {
 // Item 2: install, run and test as copyable commands.
 export function Install() {
   const good = (
-    <div className="rd-install">
-      <Code label="Install, run and test" code={COMMANDS} />
-      <div className="rd-install-foot">
-        <CopyButton text={COMMANDS} />
-      </div>
-    </div>
+    <CodeBlock label="Install, run and test" code={COMMANDS} copy="the commands" />
   );
   const broken = <p>Install it the usual way, start it, then run the tests.</p>;
   return (

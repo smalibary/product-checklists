@@ -15,7 +15,7 @@ type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & {
 
 // The one link of the site. Underlined (never colour alone), a different look once visited,
 // same tab unless there is a strong reason. For actions, use Button.
-export function Link({ href, external, file, standalone, className, children, ...rest }: Props) {
+export function Link({ href, external, file, standalone, className, children, rel, ...rest }: Props) {
   const cls = ["kit-link", className].filter(Boolean).join(" ");
   const inner = (
     <>
@@ -31,20 +31,20 @@ export function Link({ href, external, file, standalone, className, children, ..
   );
   if (external) {
     return (
-      <a {...rest} className={cls} data-standalone={standalone || undefined} href={href} target="_blank" rel="noopener noreferrer">
+      <a {...rest} className={cls} data-standalone={standalone || undefined} href={href} target="_blank" rel={rel ? `${rel} noopener noreferrer` : "noopener noreferrer"}>
         {inner}
       </a>
     );
   }
   if (href.startsWith("/")) {
     return (
-      <NextLink {...rest} className={cls} data-standalone={standalone || undefined} href={href}>
+      <NextLink {...rest} rel={rel} className={cls} data-standalone={standalone || undefined} href={href}>
         {inner}
       </NextLink>
     );
   }
   return (
-    <a {...rest} className={cls} data-standalone={standalone || undefined} href={href}>
+    <a {...rest} rel={rel} className={cls} data-standalone={standalone || undefined} href={href}>
       {inner}
     </a>
   );

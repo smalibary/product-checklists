@@ -3,7 +3,7 @@
 import { Swap } from "../../components/checklist-layer/swap";
 import { Link } from "../../components/kit/link";
 import { COMMITS, DECISIONS, GOOD_CODE, KINDS, WEAK_CODE } from "./data";
-import { Code } from "./readme";
+import { CodeBlock } from "../../components/kit/code";
 
 const slug = (s: string) => `#${s.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 
@@ -57,8 +57,8 @@ export function Comments() {
   return (
     <Swap
       item={8}
-      good={<Code label="Code with a comment that says why" code={GOOD_CODE} />}
-      broken={<Code label="Code with a comment that repeats the code" code={WEAK_CODE} />}
+      good={<CodeBlock label="Code with a comment that says why" code={GOOD_CODE} wrap />}
+      broken={<CodeBlock label="Code with a comment that repeats the code" code={WEAK_CODE} wrap />}
     />
   );
 }

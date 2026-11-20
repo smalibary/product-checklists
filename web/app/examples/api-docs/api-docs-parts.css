@@ -68,39 +68,6 @@
   justify-content: space-between;
   gap: 12px;
 }
-.ad-sample-foot {
-  display: flex;
-  justify-content: flex-end;
-}
-.ad-copy {
-  min-width: 6.5rem;
-}
-.ad-code {
-  margin: 0;
-  padding: 14px 16px;
-  overflow-x: auto;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  background: var(--surface);
-  font-family: var(--font-code);
-  font-size: 0.8125rem;
-  line-height: 1.6;
-  color: var(--fg);
-  tab-size: 2;
-}
-.ad-code code {
-  font-size: inherit;
-  overflow-wrap: normal;
-}
-.ad-code:focus-visible {
-  outline: none;
-  box-shadow: var(--focus);
-}
-.ad-code[data-weak] {
-  border-color: transparent;
-  font-size: 0.6875rem;
-  color: color-mix(in srgb, var(--fg) 32%, var(--surface));
-}
 
 /* Links to the common pages, other addresses, the changelog, help */
 .ad-common {

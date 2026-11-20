@@ -1,0 +1,7 @@
+/* Broken versions for the code block part page. Plain on purpose. */
+.pc-prop {
+  font-family: system-ui, sans-serif;
+}
+.pc-clip {
+  overflow: hidden;
+}

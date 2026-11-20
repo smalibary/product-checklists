@@ -44,10 +44,14 @@ export default function Home() {
           README and docs example
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
+        <Link className="home-link" href="/examples/blog">
+          Blog example
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
       </div>
       <h2 className="home-sub">Shared parts</h2>
       <p className="home-lead">
-        The standard header, footer, buttons, links, fields and motion that every example above
+        The standard header, footer, buttons, links, fields, code blocks and motion that every example above
         uses. Each is built to its own checklists.
       </p>
       <div className="home-links">
@@ -73,6 +77,10 @@ export default function Home() {
         </Link>
         <Link className="home-link" href="/parts/motion">
           Motion
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+        <Link className="home-link" href="/parts/code">
+          Code block and Copy
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
         <Link className="home-link" href="/parts/dialog">

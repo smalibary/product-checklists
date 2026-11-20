@@ -1,0 +1,52 @@
+/* Code block and its Copy button. Colours come from the tokens in globals.css. */
+.kit-code-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 6px;
+  min-width: 0;
+}
+.kit-code {
+  margin: 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--fg);
+  tab-size: 2;
+}
+.kit-code code {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: inherit;
+  overflow-wrap: normal;
+}
+.kit-code[data-wrap] {
+  overflow-x: visible;
+  white-space: pre-wrap;
+}
+.kit-code[data-wrap] code {
+  overflow-wrap: anywhere;
+}
+.kit-code:focus-visible,
+.kit-code[data-force="focus"] {
+  outline: none;
+  box-shadow: var(--focus);
+}
+/* Broken version: small, pale, no edge, and not a place the keyboard can reach. */
+.kit-code[data-weak] {
+  border-color: transparent;
+  font-size: 0.6875rem;
+  color: color-mix(in srgb, var(--fg) 32%, var(--surface));
+}
+.kit-code-foot {
+  display: flex;
+  justify-content: flex-end;
+}
+.kit-code-copy {
+  min-width: 6.5rem;
+}
