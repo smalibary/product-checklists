@@ -20,8 +20,8 @@ export function SearchForm() {
       }}
     >
       <Field>
-        <FieldLabel className="sr">Search books and authors</FieldLabel>
-        <Input type="search" name="q" placeholder="Search books" />
+        <FieldLabel className="sr">Search this site</FieldLabel>
+        <Input type="search" name="q" placeholder="Search" />
       </Field>
       <Button type="submit" data-variant="solid">
         Search

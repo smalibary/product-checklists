@@ -3,6 +3,8 @@
 import {
   useCallback,
   useEffect,
+  useLayoutEffect,
+  useMemo,
   useRef,
   useState,
   useSyncExternalStore,
@@ -10,20 +12,30 @@ import {
 } from "react";
 import { Switch, SwitchThumb } from "@ui-sdk/react/switch";
 import { ChecklistRail } from "./checklist-rail";
+import { MetContext } from "./met-context";
+import { EMPTY_UNMET, parseUnmet, readUnmetRaw, subscribeMet, writeUnmet } from "./met-store";
 import { readShow, subscribeShow, writeShow } from "./show-store";
 import { measureSpots, type Spot } from "./spots";
 import type { ChecklistData } from "./types";
 import "./checklist-layer.css";
 
 type Props = {
+  exampleId: string;
   data: ChecklistData;
   kicker: string;
   description: string;
   children: ReactNode;
 };
 
-export function ChecklistLayer({ data, kicker, description, children }: Props) {
+export function ChecklistLayer({ exampleId, data, kicker, description, children }: Props) {
   const show = useSyncExternalStore(subscribeShow, readShow, () => true);
+  const unmetRaw = useSyncExternalStore(
+    subscribeMet,
+    () => readUnmetRaw(exampleId),
+    () => EMPTY_UNMET,
+  );
+  const unmet = useMemo(() => parseUnmet(unmetRaw), [unmetRaw]);
+  const met = useMemo(() => ({ isMet: (n: number) => !unmet.has(n) }), [unmet]);
   const [spots, setSpots] = useState<Spot[]>([]);
   const [active, setActive] = useState<number | null>(null);
   const stageRef = useRef<HTMLDivElement>(null);
@@ -36,10 +48,25 @@ export function ChecklistLayer({ data, kicker, description, children }: Props) {
     const shown = new Set(
       data.groups.flatMap((g) => g.items.filter((i) => i.shown).map((i) => i.n)),
     );
-    const next = measureSpots(stage, site, shown);
+    const next = measureSpots(stage, site, shown, unmet);
     const sig = JSON.stringify(next);
     setSpots((prev) => (JSON.stringify(prev) === sig ? prev : next));
-  }, [data]);
+  }, [data, unmet]);
+
+  // Ticking changes the page, so measure in the same frame, before the browser paints.
+  useLayoutEffect(() => {
+    if (show) measure();
+  }, [show, measure]);
+
+  const toggle = useCallback(
+    (n: number, isMet: boolean) => {
+      const next = new Set(unmet);
+      if (isMet) next.delete(n);
+      else next.add(n);
+      writeUnmet(exampleId, [...next]);
+    },
+    [exampleId, unmet],
+  );
 
   useEffect(() => {
     if (!show) return;
@@ -93,7 +120,7 @@ export function ChecklistLayer({ data, kicker, description, children }: Props) {
       <div className="cl-grid">
         <div className="cl-stage" ref={stageRef}>
           <div className="cl-site" ref={siteRef}>
-            {children}
+            <MetContext.Provider value={met}>{children}</MetContext.Provider>
           </div>
           {show && (
             <div className="cl-overlay" aria-hidden="true">
@@ -102,10 +129,16 @@ export function ChecklistLayer({ data, kicker, description, children }: Props) {
                   active === null ? "idle" : s.nums.includes(active) ? "active" : "dim";
                 return (
                   <span key={s.key}>
-                    <span className="cl-box" data-state={state} style={s.box} />
+                    <span
+                      className="cl-box"
+                      data-state={state}
+                      data-unmet={s.unmet}
+                      style={s.box}
+                    />
                     <span
                       className="cl-badge"
                       data-state={state}
+                      data-unmet={s.unmet}
                       style={{
                         left: s.badge.left,
                         top: s.badge.top,
@@ -121,7 +154,14 @@ export function ChecklistLayer({ data, kicker, description, children }: Props) {
           )}
         </div>
 
-        <ChecklistRail data={data} onReveal={reveal} onActive={setActive} />
+        <ChecklistRail
+          data={data}
+          unmet={unmet}
+          onReveal={reveal}
+          onActive={setActive}
+          onToggle={toggle}
+          onReset={() => writeUnmet(exampleId, [])}
+        />
       </div>
     </div>
   );

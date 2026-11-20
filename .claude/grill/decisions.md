@@ -34,3 +34,6 @@
 | 2026-11-20 | Examples are built one at a time by a Sonnet helper and checked by the main session | Salem: "build one by one using sonnet subagent (1 at a time) you eval" | Salem |
 | 2026-11-20 | GitHub repo is public, with a free live preview on GitHub Pages | Salem chose Public (Recommended) | Salem |
 | 2026-11-20 | First example to approve: the 404 page rebuilt with ui-sdk | Salem chose it | Salem |
+| 2026-11-20 | GitHub repo is public with its whole history (messages, notes, journal included) | Salem picked option 2 | Salem |
+| 2026-11-20 | Examples are generic: example.com, no real brand or country; lorem ipsum for filler, real words only where an item is about the words | Salem: "make it general ... use lumpsim" | Salem |
+| 2026-11-20 | Each checklist item can be ticked or unticked on the example; unticking shows the page breaking that rule | Salem: "check the list or uncheck and this effect how it looks" | Salem |

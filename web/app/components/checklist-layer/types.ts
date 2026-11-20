@@ -3,7 +3,8 @@ export type ChecklistItem = {
   text: string;
   where: string;
   shown: boolean;
-  met?: boolean;
+  // Rail line when the item is unticked: finishes "Visitors would see: ..."
+  broken?: string;
 };
 
 export type ChecklistGroup = {

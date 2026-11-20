@@ -35,7 +35,9 @@
 }
 
 .ex-main {
-  display: grid;
+  --cl-gap: 36px;
+  display: flex;
+  flex-direction: column;
   gap: 36px;
   max-width: 40rem;
   padding: 36px 20px 40px;
@@ -49,6 +51,12 @@
 .ex-message {
   display: grid;
   gap: 28px;
+}
+
+.ex-grey {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
 }
 
 .ex-main h1 {
