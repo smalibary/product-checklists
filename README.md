@@ -38,7 +38,7 @@ see why the item matters.
 | Motion | [Micro-interactions](https://smalibary.github.io/product-checklists/examples/micro-interactions/) | Live |
 | Operations | [Monitoring and alerts](https://smalibary.github.io/product-checklists/examples/monitoring-alerts/) | Live |
 | Product | [Release announcements](https://smalibary.github.io/product-checklists/examples/release-announcements/) | Live |
-| Support | Help desk | Next |
+| Support | [Help desk](https://smalibary.github.io/product-checklists/examples/help-desk/) | Live |
 
 ### Shared parts
 

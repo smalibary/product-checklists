@@ -1,0 +1,78 @@
+.hd-ways,
+.hd-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 14px 16px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.hd-ways {
+  grid-template-columns: minmax(0, 1fr);
+}
+@container hd (min-width: 40rem) {
+  .hd-ways {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.hd-way {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.hd-way > svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--accent);
+}
+.hd-way-text,
+.hd-list li {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  font-size: 0.9375rem;
+}
+.hd-box,
+.hd-facts {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.hd-facts > div {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: 8px;
+  font-size: 0.875rem;
+}
+.hd-facts dt {
+  color: var(--muted);
+}
+.hd-facts dd {
+  margin: 0;
+}
+.hd-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  font-size: 0.875rem;
+}
+.hd-table th,
+.hd-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+.hd-table thead th {
+  color: var(--muted);
+  font-weight: 600;
+}
+.hd-table tbody th {
+  font-weight: 600;
+}
