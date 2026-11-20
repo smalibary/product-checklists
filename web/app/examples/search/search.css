@@ -30,7 +30,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 4px 8px;
+  gap: 18px 20px;
+  padding-top: 8px;
   font-size: 0.875rem;
   color: var(--muted);
 }

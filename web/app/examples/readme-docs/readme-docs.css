@@ -1,0 +1,157 @@
+.rd-page {
+  --req: #b91c1c;
+  display: flex;
+  flex-direction: column;
+}
+@media (prefers-color-scheme: dark) {
+  .rd-page {
+    --req: #fca5a5;
+  }
+}
+.rd-main {
+  container: rd / inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 24px 20px 40px;
+  min-width: 0;
+}
+.rd-main h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.rd-main h2 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.rd-main h3 {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.rd-main p {
+  margin: 0;
+}
+.rd-title {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 6px;
+}
+.rd-meta {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.rd-stale {
+  color: var(--req);
+}
+
+/* The README as a document */
+.rd-readme {
+  --cl-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.rd-readme .rd-code {
+  background: var(--bg);
+}
+.rd-lead {
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+.rd-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.rd-badges span {
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.rd-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  min-width: 0;
+}
+
+/* Docs, decisions, commits */
+.rd-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  min-width: 0;
+}
+.rd-kinds {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+@container rd (max-width: 30rem) {
+  .rd-kinds {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.rd-kinds ul,
+.rd-flat,
+.rd-decisions,
+.rd-commits {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.rd-kind-title {
+  margin-bottom: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.rd-kind-title span {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+.rd-decisions li,
+.rd-commits li {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-size: 0.9375rem;
+}
+.rd-dec-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+}
+.rd-dec-top small,
+.rd-commits small {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  overflow-wrap: anywhere;
+}
+.rd-tag {
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-size: 0.75rem;
+}
+.rd-commits code {
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  color: var(--muted);
+}

@@ -1,0 +1,101 @@
+/* Commands and code */
+.rd-install {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 6px;
+}
+.rd-install-foot {
+  display: flex;
+  justify-content: flex-end;
+}
+.rd-code {
+  margin: 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--fg);
+  tab-size: 2;
+}
+.rd-code code {
+  font-size: inherit;
+  overflow-wrap: normal;
+}
+.rd-code:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+/* Settings table */
+.rd-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.rd-table th,
+.rd-table td {
+  padding: 8px 12px 8px 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  font-weight: 400;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+.rd-table thead th {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.rd-table tbody th {
+  font-weight: 500;
+}
+.rd-table code {
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+}
+.rd-req {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.rd-req[data-required] {
+  font-weight: 600;
+  color: var(--req);
+}
+@container rd (max-width: 36rem) {
+  .rd-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .rd-table tr {
+    display: grid;
+    gap: 2px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .rd-table th,
+  .rd-table td {
+    display: block;
+    padding: 0;
+    border: 0;
+  }
+}
+.rd-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+

@@ -32,8 +32,8 @@ see why the item matters.
 | Design system | [Modal](https://smalibary.github.io/product-checklists/examples/modal/) | Live |
 | API | [API docs](https://smalibary.github.io/product-checklists/examples/api-docs/) | Live |
 | Backend | [Search](https://smalibary.github.io/product-checklists/examples/search/) | Live |
-| Code | Readme and docs | Next |
-| Growth | Blog | Planned |
+| Code | [Readme and docs](https://smalibary.github.io/product-checklists/examples/readme-docs/) | Live |
+| Growth | Blog | Next |
 | Launch | Legal pages | Planned |
 | Motion | Micro-interactions | Planned |
 | Operations | Monitoring and alerts | Planned |

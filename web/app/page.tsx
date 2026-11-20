@@ -40,6 +40,10 @@ export default function Home() {
           Search example
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
+        <Link className="home-link" href="/examples/readme-docs">
+          README and docs example
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
       </div>
       <h2 className="home-sub">Shared parts</h2>
       <p className="home-lead">
