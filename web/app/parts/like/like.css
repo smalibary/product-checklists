@@ -1,0 +1,4 @@
+/* The broken look for the like part page: the ring is taken away. */
+.pl-nofocus .kit-like:focus-visible {
+  box-shadow: none;
+}

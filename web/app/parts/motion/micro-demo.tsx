@@ -1,27 +1,11 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Check, Copy, Heart } from "@phosphor-icons/react/dist/ssr";
+import { Check, Copy } from "@phosphor-icons/react/dist/ssr";
 import { Swap } from "../../components/checklist-layer/swap";
 import { Button } from "../../components/kit/button";
+import { LikeButton } from "../../components/kit/like";
 import { Toggle } from "../../components/kit/switch";
-
-function Like({ pop }: { pop: boolean }) {
-  const [on, setOn] = useState(false);
-  return (
-    <button
-      type="button"
-      className="pt-like"
-      data-on={on}
-      data-pop={pop}
-      aria-pressed={on}
-      aria-label={on ? "Remove from favourites" : "Add to favourites"}
-      onClick={() => setOn(!on)}
-    >
-      <Heart size={22} weight={on && pop ? "fill" : "regular"} aria-hidden="true" />
-    </button>
-  );
-}
 
 function CopyBtn({ tell }: { tell: boolean }) {
   const [done, setDone] = useState(false);
@@ -62,7 +46,7 @@ export function MicroDemo() {
       </div>
       <div className="pt-card">
         <p className="pt-cap">Like</p>
-        <Swap item={24} good={<Like pop />} broken={<Like pop={false} />} />
+        <Swap item={24} good={<LikeButton pop />} broken={<LikeButton pop={false} />} />
       </div>
       <div className="pt-card">
         <p className="pt-cap">Copy</p>

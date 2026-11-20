@@ -20,3 +20,4 @@
 - 2026-11-20 | Builder's preview server (port 4173) and mine (4417) kept web/out locked, so builds failed with EBUSY; fix: next.config EXPORT_DIR switch, and builders stop their servers before finishing (brief).
 - 2026-11-20 | Stopping 'npx serve' as a background task left its node children running (3 pairs on port 4417, about 600 MB) and the builder's browser test died for low memory; fix: run serve with node directly (not npx) or a small node server, and check for leftovers after stopping.
 - 2026-11-20 | The builder ran its modal test in the background, waited on it and stalled for 10 minutes (watchdog); fix: briefs say run tests in the foreground with a timeout under 4 minutes.
+- 2026-11-20 | Micro-interactions at 1280: layer spots and rail rows were caught mid-glide in a picture taken 400 ms after load (spots off by about 147px; the builder could not reproduce it). Fix in the shared layer: sizes snap until the page has settled, then glide.

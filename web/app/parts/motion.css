@@ -81,28 +81,6 @@
   display: block;
   margin-top: 8px;
 }
-.pt-like {
-  display: inline-grid;
-  place-items: center;
-  width: var(--tap);
-  height: var(--tap);
-  border: 0;
-  border-radius: 50%;
-  background: none;
-  color: var(--muted);
-  cursor: pointer;
-}
-.pt-like[data-pop="true"] {
-  transition: color var(--dur-quick) var(--ease-move), transform var(--dur-quick) var(--ease-enter);
-}
-.pt-like[data-pop="true"][data-on="true"] {
-  color: var(--bad);
-  transform: scale(1.18);
-}
-.pt-like:focus-visible {
-  outline: none;
-  box-shadow: var(--focus);
-}
 .pt-hover {
   display: block;
   padding: 16px;

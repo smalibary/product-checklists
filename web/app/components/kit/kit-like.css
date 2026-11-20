@@ -1,0 +1,36 @@
+/* The like button. Timings are the motion tokens only. */
+.kit-like {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: var(--tap);
+  min-height: var(--tap);
+  padding: 0 10px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.kit-like-count {
+  font-variant-numeric: tabular-nums;
+}
+.kit-like[data-pop="true"] {
+  transition: color var(--dur-quick) var(--ease-move);
+}
+.kit-like[data-pop="true"] svg {
+  transition: transform var(--dur-quick) var(--ease-enter);
+}
+.kit-like[data-pop="true"][data-on="true"] {
+  color: var(--bad);
+}
+.kit-like[data-pop="true"][data-on="true"] svg {
+  transform: scale(1.18);
+}
+.kit-like:focus-visible,
+.kit-like[data-force="focus"] {
+  outline: none;
+  box-shadow: var(--focus);
+}

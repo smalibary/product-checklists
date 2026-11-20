@@ -1,0 +1,70 @@
+/* Hover card, task list, keyboard row and the broken looks. Timings are motion tokens only. */
+.mi-hover {
+  display: grid;
+  gap: 4px;
+  padding: 16px;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--fg);
+  text-decoration: none;
+  transition: border-color var(--dur-quick) var(--ease-move), background-color var(--dur-quick) var(--ease-move);
+}
+.mi-hover:hover,
+.mi-hover:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.mi-hover:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+.mi-hover[data-jump] {
+  transition: none;
+}
+.mi-tasks {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mi-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 4px 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  transition: opacity var(--dur-quick) var(--ease-move);
+}
+.mi-task[data-done="true"] {
+  opacity: 0.6;
+}
+.mi-task[data-done="true"] > span {
+  text-decoration: line-through;
+}
+.mi-task[data-party="true"] {
+  animation: mi-party var(--dur-slow) var(--ease-move) 3;
+}
+@keyframes mi-party {
+  50% {
+    transform: scale(1.04) rotate(1deg);
+    background: var(--accent-soft);
+  }
+}
+.mi-keys {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.mi-noring .kit-btn,
+.mi-noring .kit-like {
+  box-shadow: none !important;
+}
+.kit-btn.mi-noanswer[data-kind="primary"]:active:not([data-disabled]) {
+  transform: none;
+  background: var(--accent);
+}

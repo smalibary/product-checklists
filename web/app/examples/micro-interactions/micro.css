@@ -1,0 +1,79 @@
+.mi-page {
+  display: flex;
+  flex-direction: column;
+}
+.mi-main {
+  container: mi / inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 24px 20px 40px;
+  min-width: 0;
+}
+.mi-main h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 650;
+}
+.mi-main h2 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.mi-main p {
+  margin: 0;
+  max-width: 65ch;
+  line-height: 1.6;
+}
+.mi-title,
+.mi-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  min-width: 0;
+  align-content: start;
+}
+.mi-meta {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.mi-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+@container mi (min-width: 40rem) {
+  .mi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.mi-spec {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.mi-spec > div {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: 8px;
+  font-size: 0.875rem;
+}
+.mi-spec dt {
+  color: var(--muted);
+}
+.mi-spec dd {
+  margin: 0;
+}
+.mi-copy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+.mi-copy code {
+  overflow-wrap: anywhere;
+}

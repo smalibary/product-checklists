@@ -52,6 +52,10 @@ export default function Home() {
           Legal pages example
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
+        <Link className="home-link" href="/examples/micro-interactions">
+          Micro-interactions example
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
       </div>
       <h2 className="home-sub">Shared parts</h2>
       <p className="home-lead">
@@ -85,6 +89,10 @@ export default function Home() {
         </Link>
         <Link className="home-link" href="/parts/code">
           Code block and Copy
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+        <Link className="home-link" href="/parts/like">
+          Like button
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
         <Link className="home-link" href="/parts/dialog">
