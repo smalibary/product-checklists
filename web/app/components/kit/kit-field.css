@@ -112,6 +112,20 @@
   font-weight: 500;
   color: var(--muted);
 }
+.kit-field [data-slot="password-input-toggle"] {
+  overflow: hidden;
+  max-width: 8rem;
+  transition:
+    max-width var(--dur-base) var(--ease-move),
+    padding var(--dur-base) var(--ease-move),
+    opacity var(--dur-base) var(--ease-move);
+}
+.kit-field [data-slot="password-input-toggle"][data-gone] {
+  max-width: 0;
+  padding-inline: 0;
+  opacity: 0;
+  pointer-events: none;
+}
 .kit-error {
   display: flex;
   align-items: flex-start;

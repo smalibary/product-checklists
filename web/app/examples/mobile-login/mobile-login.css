@@ -1,0 +1,91 @@
+/* Mobile login: the phone sits on the page with no card behind it. */
+.cl-site:has(> .ml-desk) {
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+}
+.ml-desk {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 16px 0;
+}
+.ml-mail {
+  flex: 0 1 25rem;
+  min-width: 0;
+  align-self: center;
+}
+
+.ml-screen {
+  --cl-gap: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 10px 16px 14px;
+}
+.ml-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.ml-group[data-gap="8"] {
+  --cl-gap: 8px;
+  gap: 8px;
+}
+.ml-group[data-gap="10"] {
+  --cl-gap: 10px;
+  gap: 10px;
+}
+.ml-head h2 {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+.ml-head p {
+  margin: 0;
+  color: var(--muted);
+}
+.ml-done {
+  display: grid;
+  justify-items: start;
+  gap: 4px;
+}
+.ml-done h2 {
+  margin: 0;
+}
+.ml-done svg {
+  color: var(--accent);
+}
+
+.ml-wide {
+  width: 100%;
+}
+
+.ml-or {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.ml-or::before,
+.ml-or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.ml-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.ml-code {
+  display: grid;
+  gap: 8px;
+}

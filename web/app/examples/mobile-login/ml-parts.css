@@ -1,0 +1,126 @@
+/* Message box inside the phone. */
+.ml-note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-wrap: pretty;
+}
+.ml-note > span {
+  flex: none;
+  display: flex;
+  padding-top: 1px;
+  color: var(--accent);
+}
+.ml-note > div {
+  min-width: 0;
+}
+.ml-note[data-tone="bad"] {
+  border-color: color-mix(in srgb, var(--bad) 55%, var(--line));
+  background: color-mix(in srgb, var(--bad) 9%, var(--surface));
+}
+.ml-note[data-tone="bad"] > span {
+  color: var(--bad);
+}
+
+/* The on-screen keyboard (item 18). Unticked, it slides up over the Log in button. */
+.ml-kb {
+  position: relative;
+  display: grid;
+  gap: 5px;
+  padding: 6px 6px 8px;
+  border-top: 1px solid var(--line);
+  background: color-mix(in srgb, var(--line) 55%, var(--surface));
+  transition:
+    margin-top var(--dur-base) var(--ease-move),
+    box-shadow var(--dur-base) var(--ease-move);
+}
+.ml-kb[data-covers="true"] {
+  z-index: 2;
+  margin-top: -76px;
+  box-shadow: 0 -8px 16px -8px color-mix(in srgb, var(--fg) 30%, transparent);
+}
+.ml-kb-bar {
+  display: flex;
+  gap: 6px;
+  min-height: 26px;
+  font-size: 0.75rem;
+}
+.ml-kb-bar span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  white-space: nowrap;
+}
+.ml-kb-row {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 4px;
+}
+.ml-kb-row[data-len="9"] {
+  padding-inline: 14px;
+}
+.ml-kb-row[data-bottom="true"] {
+  grid-template-columns: 1.4fr 1fr 4fr 1fr 1.6fr;
+}
+.ml-kb-row i {
+  display: block;
+  padding: 5px 0;
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow: 0 1px 0 var(--line-strong);
+  font-size: 0.8125rem;
+  font-style: normal;
+  line-height: 1.2;
+  text-align: center;
+}
+.ml-kb-row i[data-go="true"] {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+/* The messages phone. */
+.ml-sms {
+  min-height: 15rem;
+  justify-content: flex-start;
+}
+.ml-sms-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  color: var(--accent);
+}
+.ml-sms-head strong {
+  color: var(--fg);
+}
+.ml-sms-head span {
+  margin-inline-start: auto;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.ml-bubble {
+  align-self: flex-start;
+  max-width: 85%;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 16px 16px 16px 4px;
+  background: color-mix(in srgb, var(--line) 70%, var(--surface));
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+.ml-sms-time {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}

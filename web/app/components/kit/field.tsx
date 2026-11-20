@@ -44,6 +44,9 @@ export type TextFieldProps = {
   defaultValue?: string;
   // A password field with a Show / Hide button (the text is a password either way).
   reveal?: boolean;
+  // Checklist pages only: the spot on the Show button, and its broken version (the button folds away).
+  revealSpot?: number;
+  revealGone?: boolean;
   // The label is kept for screen readers only. Gliding to the new height is for the checklist pages.
   hideLabel?: boolean;
   onValueChange?: (value: string) => void;
@@ -94,6 +97,8 @@ export function TextField(p: TextFieldProps) {
             placeholder={p.placeholder}
             onValueChange={change}
             onPaste={p.onPaste}
+            spot={p.revealSpot}
+            gone={p.revealGone}
           />
         ) : (
           <Input

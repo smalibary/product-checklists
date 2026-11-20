@@ -12,6 +12,8 @@ export function RevealInput({
   placeholder,
   onValueChange,
   onPaste,
+  spot,
+  gone,
 }: {
   name: string;
   value: string;
@@ -19,11 +21,13 @@ export function RevealInput({
   placeholder?: string;
   onValueChange: (value: string) => void;
   onPaste?: (event: ClipboardEvent) => void;
+  spot?: number;
+  gone?: boolean;
 }) {
   return (
     <PasswordInput name={name} value={value} autoComplete={autoComplete} onValueChange={onValueChange}>
       <PasswordInputControl placeholder={placeholder} onPaste={onPaste} />
-      <PasswordInputToggle>
+      <PasswordInputToggle data-item={spot} data-gone={gone || undefined} tabIndex={gone ? -1 : undefined}>
         {(state) =>
           state.visible ? (
             <>
