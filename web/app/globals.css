@@ -102,12 +102,9 @@ body {
   white-space: nowrap;
 }
 
+/* Durations come from the motion tokens (components/kit/motion.css), which drop to 1ms. */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
+  * {
     scroll-behavior: auto !important;
   }
 }

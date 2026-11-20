@@ -89,7 +89,7 @@
   border: 1.5px dashed var(--layer);
   border-radius: var(--radius);
   background: transparent;
-  transition: opacity 0.15s, background-color 0.15s;
+  transition: opacity var(--dur-fade) var(--ease-move), background-color var(--dur-fade) var(--ease-move);
 }
 .cl-box[data-state="active"] {
   border-style: solid;
@@ -121,7 +121,7 @@
   text-align: center;
   white-space: nowrap;
   box-shadow: 0 0 0 2px var(--surface);
-  transition: opacity 0.15s;
+  transition: opacity var(--dur-fade) var(--ease-move);
 }
 .cl-box[data-state="dim"],
 .cl-badge[data-state="dim"] {
@@ -136,7 +136,7 @@
 }
 .cl-steps[data-slot="segmented-control"] {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--cl-steps, 4), minmax(0, 1fr));
   width: 100%;
   background: var(--surface);
   border-color: var(--line);

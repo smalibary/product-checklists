@@ -1,0 +1,76 @@
+@import "./motion.css";
+@import "./kit-button.css";
+@import "./kit-field.css";
+@import "./kit-nav.css";
+@import "./kit-footer.css";
+
+/* Shared kit: link, reveal, part. Colours come from the tokens in globals.css. */
+:root {
+  --visited: #6d28d9;
+  --tap: 44px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --visited: #c4b5fd;
+  }
+}
+
+/* A sticky header must never cover the item that has keyboard focus. */
+html {
+  scroll-padding-top: 5rem;
+}
+
+.kit-link {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  border-radius: 2px;
+  transition: color var(--dur-quick) var(--ease-move), text-decoration-thickness var(--dur-quick) var(--ease-move);
+}
+.kit-link:visited {
+  color: var(--visited);
+}
+.kit-link:hover {
+  text-decoration-thickness: 2px;
+}
+.kit-link:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+.kit-link-out {
+  display: inline-block;
+  margin-inline-start: 3px;
+  vertical-align: -2px;
+}
+.kit-link-file {
+  color: var(--muted);
+  font-weight: 400;
+  white-space: nowrap;
+}
+.kit-link[data-standalone] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+}
+@media (pointer: coarse) {
+  .kit-link[data-standalone] {
+    min-height: var(--tap);
+  }
+}
+
+.kit-reveal {
+  display: grid;
+  grid-template-rows: 0fr;
+}
+.kit-reveal[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+.kit-reveal-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+.kit-part {
+  min-width: 0;
+}

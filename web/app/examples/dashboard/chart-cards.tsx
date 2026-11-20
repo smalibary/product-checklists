@@ -9,6 +9,7 @@ import {
 import { CaretDown } from "@phosphor-icons/react/dist/ssr";
 import { useMet } from "../../components/checklist-layer/met-context";
 import { Collapse, Variants } from "../../components/checklist-layer/swap";
+import { Button } from "../../components/kit/button";
 import { Card, Foot } from "./card";
 import { BarChart, LineChart, Pie } from "./charts";
 import { fmt, services, summary, trend, type Env, type Range, type Series } from "./data";
@@ -25,10 +26,13 @@ function Summary({ s, noun, what, lead }: { s: Series; noun: string; what: strin
       <div className="db-summary">
         <p>{summary(s, noun, what)}</p>
         <Collapsible>
-          <CollapsibleTrigger className="db-more">
-            View as table
-            <CaretDown size={14} aria-hidden="true" />
-          </CollapsibleTrigger>
+          <CollapsibleTrigger
+            render={
+              <Button kind="quiet" size="sm" icon={<CaretDown size={14} aria-hidden="true" />}>
+                View as table
+              </Button>
+            }
+          />
           <CollapsiblePanel>
             <table className="db-table">
               <caption className="sr">{what}</caption>

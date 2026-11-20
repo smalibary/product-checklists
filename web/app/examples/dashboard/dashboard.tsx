@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ExampleBar } from "../../components/example-frame/example-bar";
+import { SiteHeader } from "../../components/kit/header";
 import { useMet } from "../../components/checklist-layer/met-context";
 import { useStep } from "../../components/checklist-layer/step-context";
 import { Collapse, Variants } from "../../components/checklist-layer/swap";
@@ -52,7 +53,8 @@ export function Dashboard() {
   return (
     <>
       <ExampleBar address="example.com/dashboard" />
-      <div className="db" data-uniform={isMet(11)} data-reflow={isMet(10)}>
+      <SiteHeader variant="app" current="Overview" />
+      <main id="main" className="db" data-uniform={isMet(11)} data-reflow={isMet(10)}>
         <Variants
           item={1}
           active={isMet(1) ? "good" : "broken"}
@@ -118,7 +120,7 @@ export function Dashboard() {
             filters={filters}
           />
         )}
-      </div>
+      </main>
     </>
   );
 }

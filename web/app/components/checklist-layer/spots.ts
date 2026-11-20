@@ -20,6 +20,26 @@ function overlaps(a: BadgeRect, b: BadgeRect) {
   );
 }
 
+// The part of an element's box that is actually visible: cut at every scrolling or clipping parent below the site.
+function visibleRect(el: HTMLElement, site: HTMLElement) {
+  const r = el.getBoundingClientRect();
+  let { left, right, top, bottom } = r;
+  for (let a = el.parentElement; a && a !== site; a = a.parentElement) {
+    const st = getComputedStyle(a);
+    if (st.overflowX === "visible" && st.overflowY === "visible") continue;
+    const c = a.getBoundingClientRect();
+    if (st.overflowX !== "visible") {
+      left = Math.max(left, c.left);
+      right = Math.min(right, c.right);
+    }
+    if (st.overflowY !== "visible") {
+      top = Math.max(top, c.top);
+      bottom = Math.min(bottom, c.bottom);
+    }
+  }
+  return { left, right, top, bottom, height: bottom - top, width: right - left };
+}
+
 // Measures every [data-item] element relative to the stage. Reads only; never touches the page.
 export function measureSpots(
   stage: HTMLElement,
@@ -35,7 +55,8 @@ export function measureSpots(
       .map(Number)
       .filter((n) => shown.has(n));
     if (nums.length === 0) return;
-    const r = el.getBoundingClientRect();
+    const r = visibleRect(el, site);
+    if (r.width <= 0 || r.height < 0) return;
     // A removed part leaves a zero-height marker: draw it as a thin line, not a padded box.
     const flat = r.height < 1;
     const pad = flat ? 0 : BOX_PAD;

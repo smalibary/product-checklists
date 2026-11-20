@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { Link } from "../../components/kit/link";
 import { useMet } from "../../components/checklist-layer/met-context";
 import { Collapse } from "../../components/checklist-layer/swap";
 
@@ -36,10 +37,10 @@ export function Foot({ lead, label = "View details" }: { lead?: boolean; label?:
   const { isMet } = useMet();
   return (
     <Collapse n={lead ? 4 : undefined} open={isMet(4)}>
-      <a className="db-detail" href="#details" onClick={(e) => e.preventDefault()}>
+      <Link className="db-detail" href="#details" onClick={(e) => e.preventDefault()}>
         {label}
         <ArrowRight size={14} aria-hidden="true" />
-      </a>
+      </Link>
     </Collapse>
   );
 }

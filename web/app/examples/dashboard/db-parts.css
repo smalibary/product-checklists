@@ -57,6 +57,11 @@ button.db-pt:hover,
 button.db-pt:focus-visible {
   background: var(--accent);
 }
+button.db-pt:focus-visible,
+button.db-bar:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
 .db-xaxis {
   display: flex;
   justify-content: space-between;
@@ -135,19 +140,6 @@ button.db-bar:focus-visible {
   margin: 0;
   font-size: 0.875rem;
 }
-.db-more {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 0;
-  border: 0;
-  background: none;
-  color: var(--accent);
-  font: inherit;
-  font-size: 0.875rem;
-  font-weight: 500;
-  cursor: pointer;
-}
 .db-table {
   width: 100%;
   margin-top: 8px;
@@ -195,14 +187,4 @@ button.db-bar:focus-visible {
 .db-pop-move {
   display: flex;
   gap: 4px;
-}
-.db-pop-move button {
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-}
-.db-pop-move button:disabled {
-  opacity: 0.35;
-  cursor: default;
 }

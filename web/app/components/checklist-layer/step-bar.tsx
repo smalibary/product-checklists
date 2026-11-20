@@ -1,5 +1,6 @@
 "use client";
 
+import type { CSSProperties } from "react";
 import {
   SegmentedControl,
   SegmentedControlIndicator,
@@ -16,6 +17,7 @@ export function StepBar({ steps, step, onStep }: Props) {
     <SegmentedControl
       className="cl-steps"
       aria-label="Steps of this flow"
+      style={{ "--cl-steps": steps.length } as CSSProperties}
       value={String(step)}
       onValueChange={(v) => onStep(Number(v))}
     >

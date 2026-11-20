@@ -20,6 +20,7 @@ import { EMPTY_UNMET, parseUnmet, readUnmetRaw, subscribeMet, writeUnmet } from 
 import { readShow, subscribeShow, writeShow } from "./show-store";
 import { measureSpots, type Spot } from "./spots";
 import type { ChecklistData } from "./types";
+import { isCalm } from "../kit/motion";
 import "./checklist-layer.css";
 
 type Props = {
@@ -106,7 +107,7 @@ export function ChecklistLayer({ exampleId, data, kicker, description, steps, ch
 
   const scrollTo = useCallback((n: number) => {
     const el = siteRef.current?.querySelector<HTMLElement>(`[data-item~="${n}"]`);
-    const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const calm = isCalm();
     el?.scrollIntoView({ behavior: calm ? "auto" : "smooth", block: "center" });
   }, []);
 

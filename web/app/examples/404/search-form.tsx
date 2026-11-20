@@ -1,31 +1,24 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@ui-sdk/react/button";
-import { Field, FieldLabel } from "@ui-sdk/react/field";
-import { Input } from "@ui-sdk/react/input";
+import { Button } from "../../components/kit/button";
+import { FormLayout, TextField } from "../../components/kit/field";
 
+// The kit's form: a visible label, one field, and the main button at the end.
 export function SearchForm() {
   const [message, setMessage] = useState("");
 
   return (
-    <form
-      className="ex-search"
-      role="search"
-      onSubmit={(event) => {
-        event.preventDefault();
-        const q = String(new FormData(event.currentTarget).get("q") ?? "");
-        setMessage(`On a real site this would search for: ${q || "(empty)"}`);
-      }}
-    >
-      <Field>
-        <FieldLabel className="sr">Search this site</FieldLabel>
-        <Input type="search" name="q" placeholder="Search" />
-      </Field>
-      <Button type="submit" data-variant="solid">
-        Search
-      </Button>
+    <div className="ex-search" role="search">
+      <FormLayout
+        label="Search this site"
+        summary={false}
+        actions={<Button type="submit" kind="primary">Search</Button>}
+        onSent={(data) => setMessage(`On a real site this would search for: ${String(data.get("q") ?? "") || "(empty)"}`)}
+      >
+        <TextField label="Search this site" name="q" type="search" placeholder="Search" />
+      </FormLayout>
       <output className="ex-report ex-output">{message}</output>
-    </form>
+    </div>
   );
 }

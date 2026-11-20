@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import { CheckCircle, Circle, WarningCircle, XCircle } from "@phosphor-icons/react/dist/ssr";
-import { Button } from "@ui-sdk/react/button";
 import { useMet } from "../../components/checklist-layer/met-context";
 import { Collapse, Swap } from "../../components/checklist-layer/swap";
 import { useStep } from "../../components/checklist-layer/step-context";
+import { Button } from "../../components/kit/button";
+import { FormLayout, FormMessage } from "../../components/kit/field";
 import { PasswordField, usePasteNote } from "./password-field";
 import { COMMON_REASON, hasForcedMix, isCommon, MIN_LENGTH } from "./passwords";
 
@@ -31,8 +32,7 @@ export function StepPassword() {
   const lengthState: State = pw === "" ? "idle" : long ? "ok" : "bad";
   const commonState: State = pw === "" ? "idle" : common ? "bad" : "ok";
 
-  function submit(e: React.FormEvent) {
-    e.preventDefault();
+  function submit() {
     if (!isMet(8) && pw !== again) return setProblem({ text: "The two passwords do not match." });
     if (!long) return setProblem({ text: `Use at least ${MIN_LENGTH} characters.` });
     if (!isMet(9) && !hasForcedMix(pw))
@@ -66,7 +66,16 @@ export function StepPassword() {
         }
       />
 
-      <form className="rp-form" onSubmit={submit}>
+      <FormLayout
+        label="Choose a new password"
+        summary={false}
+        onSent={submit}
+        actions={
+          <Button type="submit" kind="primary">
+            Save new password
+          </Button>
+        }
+      >
         <PasswordField
           value={pw}
           again={again}
@@ -87,9 +96,7 @@ export function StepPassword() {
               </li>
             </ul>
           ) : (
-            <p className="rp-error" role="alert">
-              <WarningCircle size={18} aria-hidden="true" /> {problem?.text}
-            </p>
+            <FormMessage>{problem?.text}</FormMessage>
           )}
         </Collapse>
 
@@ -101,17 +108,10 @@ export function StepPassword() {
         </Collapse>
 
         {paste.shown && !isMet(19) && (
-          <p className="rp-error">Pasting is switched off on this field.</p>
+          <FormMessage>Pasting is switched off on this field.</FormMessage>
         )}
-        {problem && !problem.mix && (
-          <p className="rp-error" role="alert">
-            <WarningCircle size={18} aria-hidden="true" /> {problem.text}
-          </p>
-        )}
-        <Button type="submit" data-variant="solid">
-          Save new password
-        </Button>
-      </form>
+        {problem && !problem.mix && <FormMessage>{problem.text}</FormMessage>}
+      </FormLayout>
     </div>
   );
 }

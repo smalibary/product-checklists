@@ -1,0 +1,186 @@
+/* Site header and site footer. Responsive by their own width (container queries), so the same
+   component fits a wide page, a phone and a framed demo. */
+.kit-header {
+  position: relative;
+  container-type: inline-size;
+  --cl-gap-x: 12px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  color: var(--fg);
+}
+.kit-header[data-sticky] {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.kit-hd-sentinel {
+  height: 1px;
+  margin-bottom: -1px;
+}
+.kit-hd-in {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 64px;
+  padding-inline: 20px;
+  transition: min-height var(--dur-base) var(--ease-move);
+}
+.kit-header[data-shrunk] .kit-hd-in {
+  min-height: 48px;
+}
+.kit-header[data-tall] .kit-hd-in {
+  min-height: 96px;
+}
+.kit-skip {
+  position: absolute;
+  inset-inline-start: 8px;
+  top: 8px;
+  z-index: 30;
+  /* Hidden until it gets focus, without leaving the page's edge. */
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--accent-fg);
+  font-weight: 600;
+  text-decoration: none;
+}
+.kit-skip:focus {
+  clip-path: none;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  outline: none;
+  box-shadow: var(--focus);
+}
+.kit-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--tap);
+  border-radius: var(--radius-sm);
+  color: var(--fg);
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+.kit-logo svg {
+  color: var(--accent);
+}
+.kit-logo:focus-visible,
+.kit-header [data-slot="navigation-menu-link"]:focus-visible,
+.kit-header [data-slot="navigation-menu-trigger"]:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+.kit-nav {
+  flex: 1;
+  min-width: 0;
+}
+.kit-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.kit-header [data-slot="navigation-menu-link"],
+.kit-header [data-slot="navigation-menu-trigger"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: var(--tap);
+  padding-inline: 12px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--fg);
+  font: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--dur-quick) var(--ease-move);
+}
+.kit-header [data-slot="navigation-menu-link"]:hover,
+.kit-header [data-slot="navigation-menu-trigger"]:hover {
+  background: var(--accent-soft);
+}
+.kit-header [data-slot="navigation-menu-link"][data-current],
+.kit-header [aria-current="page"] {
+  box-shadow: inset 0 -2px 0 var(--accent);
+  font-weight: 700;
+}
+.kit-hd-end {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-inline-start: auto;
+  --cl-gap-x: 8px;
+}
+.kit-utility {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  --cl-gap-x: 12px;
+}
+.kit-menu-btn {
+  display: none;
+}
+.kit-search {
+  display: flex;
+}
+.kit-panel {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 8px 20px 14px;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+.kit-panel .kit-link {
+  min-height: var(--tap);
+  text-decoration: none;
+  color: var(--fg);
+  font-weight: 500;
+}
+.kit-panel [aria-current="page"] {
+  box-shadow: inset 3px 0 0 var(--accent);
+  padding-inline-start: 10px;
+}
+.kit-reveal:has(> .kit-reveal-inner > .kit-panel) {
+  display: none;
+}
+
+/* Small headers: the menu folds into a menu button; the main action and the button stay. */
+@container (max-width: 39.99rem) {
+  .kit-header[data-fold="true"] .kit-nav,
+  .kit-header[data-fold="true"] .kit-utility,
+  .kit-header[data-fold="true"] .kit-search {
+    display: none;
+  }
+  .kit-header[data-fold="true"] .kit-menu-btn {
+    display: block;
+  }
+  .kit-header[data-fold="true"] .kit-reveal:has(> .kit-reveal-inner > .kit-panel) {
+    display: grid;
+  }
+  .kit-hd-in {
+    padding-inline: 12px;
+    gap: 8px;
+  }
+  .kit-header[data-variant="app"] .kit-hd-end {
+    margin-inline-start: auto;
+  }
+}
+@container (max-width: 25rem) {
+  .kit-header .kit-logo span {
+    font-size: 1rem;
+  }
+}

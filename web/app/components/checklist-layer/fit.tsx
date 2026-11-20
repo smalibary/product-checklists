@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { isCalm, motionMs } from "../kit/motion";
 import "./swap.css";
 
-// A box that is exactly as tall as what is inside it, and glides (200ms) when that changes,
+// A box that is exactly as tall as what is inside it, and glides (the base duration token) when that changes,
 // instead of snapping. No height is reserved: it always fits the content it shows now.
 export function Fit({
   children,
@@ -26,15 +27,14 @@ export function Fit({
   useEffect(() => {
     const el = inner.current;
     if (!el) return;
-    const still = window.matchMedia("(prefers-reduced-motion: reduce)");
     const ro = new ResizeObserver(() => {
       const next = el.getBoundingClientRect().height;
       const prev = height.current;
       height.current = next;
-      if (prev !== null && Math.abs(next - prev) > 0.5 && !still.matches) {
+      if (prev !== null && Math.abs(next - prev) > 0.5 && !isCalm()) {
         setMoving(true);
         window.clearTimeout(timer.current);
-        timer.current = window.setTimeout(() => setMoving(false), 320);
+        timer.current = window.setTimeout(() => setMoving(false), motionMs("--dur-base") + 120);
       }
       setH(next);
     });

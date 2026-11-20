@@ -1,6 +1,7 @@
 "use client";
 
 import { Clock, ListChecks, WarningCircle } from "@phosphor-icons/react/dist/ssr";
+import { Link } from "../../components/kit/link";
 import { Card, Foot } from "./card";
 import { ATTENTION } from "./data";
 
@@ -15,12 +16,12 @@ export function Attention() {
           const Icon = ICONS[a.icon];
           return (
             <li key={a.id}>
-              <a href="#details" onClick={(e) => e.preventDefault()}>
-                <Icon size={18} aria-hidden="true" />
-                <span className="db-attn-text">{a.text}</span>
-                <span className="db-attn-state">{a.state}</span>
-                <span className="db-attn-since">{a.since}</span>
-              </a>
+              <Icon size={18} aria-hidden="true" />
+              <Link className="db-attn-text" href="#details" onClick={(e) => e.preventDefault()}>
+                {a.text}
+              </Link>
+              <span className="db-attn-state">{a.state}</span>
+              <span className="db-attn-since">{a.since}</span>
             </li>
           );
         })}

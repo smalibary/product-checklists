@@ -47,12 +47,7 @@
   border: 3px solid var(--line);
   border-top-color: var(--accent);
   border-radius: 50%;
-  animation: db-spin 0.9s linear infinite;
-}
-@keyframes db-spin {
-  to {
-    transform: rotate(360deg);
-  }
+  animation: kit-spin 800ms linear infinite;
 }
 .db-empty {
   align-items: flex-start;

@@ -1,0 +1,50 @@
+/* The one set of motion tokens. Every transition in the site reads these, never its own numbers.
+   Small changes (hover, press, toggle) are quick; medium ones (a menu, a part sliding to size)
+   are base; big ones (a whole panel) are slow. Things leave faster than they arrive. */
+:root {
+  --dur-quick: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+  --dur-leave: 140ms;
+  /* A fade is allowed even when movement is turned down (reduced motion swaps movement for fades). */
+  --dur-fade: 120ms;
+
+  --ease-enter: cubic-bezier(0, 0, 0.2, 1);
+  --ease-leave: cubic-bezier(0.4, 0, 1, 1);
+  --ease-move: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* How far a thing travels when it slides in. Zero when motion is turned down. */
+  --move: 8px;
+}
+
+/* Reduced motion: the system setting, or the in-app switch (data-calm on the page root). */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-quick: 1ms;
+    --dur-base: 1ms;
+    --dur-slow: 1ms;
+    --dur-leave: 1ms;
+    --move: 0px;
+  }
+}
+:root[data-calm="true"] {
+  --dur-quick: 1ms;
+  --dur-base: 1ms;
+  --dur-slow: 1ms;
+  --dur-leave: 1ms;
+  --move: 0px;
+}
+
+/* Named transitions: one for each job. */
+.m-open {
+  transition: opacity var(--dur-base) var(--ease-enter), transform var(--dur-base) var(--ease-enter);
+}
+.m-close {
+  transition: opacity var(--dur-leave) var(--ease-leave), transform var(--dur-leave) var(--ease-leave);
+}
+.m-expand {
+  transition: grid-template-rows var(--dur-base) var(--ease-move);
+}
+.m-push {
+  transition: transform var(--dur-slow) var(--ease-move);
+}

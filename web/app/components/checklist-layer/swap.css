@@ -2,7 +2,7 @@
   display: block;
 }
 .cl-fit[data-ready="true"] {
-  transition: height 200ms ease-out;
+  transition: height var(--dur-base) var(--ease-enter);
 }
 .cl-fit[data-moving="true"] {
   overflow: hidden;
@@ -11,32 +11,38 @@
   display: flow-root;
 }
 
-.cl-collapse {
+/* A part that folds shut. Down: grid rows. Across: grid columns (parts in a row). */
+.cl-collapse,
+.cl-collapse-x {
   display: grid;
-  grid-template-rows: 1fr;
   transition:
-    grid-template-rows 200ms ease,
-    margin-top 200ms ease;
+    grid-template-rows var(--dur-base) var(--ease-move),
+    grid-template-columns var(--dur-base) var(--ease-move),
+    margin var(--dur-base) var(--ease-move);
+}
+.cl-collapse {
+  grid-template-rows: 1fr;
 }
 .cl-collapse[data-open="false"] {
   grid-template-rows: 0fr;
   margin-top: calc(-1 * var(--cl-gap, 0px));
 }
+.cl-collapse-x {
+  grid-template-columns: 1fr;
+}
+.cl-collapse-x[data-open="false"] {
+  grid-template-columns: 0fr;
+  margin-inline-start: calc(-1 * var(--cl-gap-x, 0px));
+}
 .cl-collapse-inner {
   min-height: 0;
+  min-width: 0;
   overflow: hidden;
 }
-.cl-collapse[data-open="true"] > .cl-collapse-inner {
+:is(.cl-collapse, .cl-collapse-x)[data-open="true"] > .cl-collapse-inner {
   overflow: visible;
-  transition: overflow 0s 200ms allow-discrete;
+  transition: overflow 0s var(--dur-base) allow-discrete;
 }
-.cl-collapse[data-open="false"] > .cl-collapse-inner {
+:is(.cl-collapse, .cl-collapse-x)[data-open="false"] > .cl-collapse-inner {
   pointer-events: none;
-}
-@media (prefers-reduced-motion: reduce) {
-  .cl-collapse,
-  .cl-fit[data-ready="true"],
-  .cl-collapse[data-open="true"] > .cl-collapse-inner {
-    transition: none;
-  }
 }

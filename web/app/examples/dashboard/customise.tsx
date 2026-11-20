@@ -2,6 +2,7 @@
 
 import { ArrowDown, ArrowUp, SlidersHorizontal } from "@phosphor-icons/react/dist/ssr";
 import { Checkbox, CheckboxIndicator } from "@ui-sdk/react/checkbox";
+import { Button } from "../../components/kit/button";
 import {
   Popover,
   PopoverClose,
@@ -29,10 +30,13 @@ export function Customise({ layout, onChange }: Props) {
     });
   return (
     <Popover>
-      <PopoverTrigger className="db-btn">
-        <SlidersHorizontal size={16} aria-hidden="true" />
-        Customise
-      </PopoverTrigger>
+      <PopoverTrigger
+        render={
+          <Button icon={<SlidersHorizontal size={16} aria-hidden="true" />}>
+            Customise
+          </Button>
+        }
+      />
       <PopoverContent className="db-pop">
         <PopoverTitle>Customise cards</PopoverTitle>
         <PopoverDescription>Show, hide and move cards. Remembered on this device.</PopoverDescription>
@@ -46,22 +50,27 @@ export function Customise({ layout, onChange }: Props) {
                 {label(id)}
               </label>
               <span className="db-pop-move">
-                <button type="button" aria-label={`Move ${label(id)} up`} disabled={i === 0} onClick={() => move(i, -1)}>
-                  <ArrowUp size={16} aria-hidden="true" />
-                </button>
-                <button
-                  type="button"
-                  aria-label={`Move ${label(id)} down`}
+                <Button
+                  kind="quiet"
+                  size="sm"
+                  label={`Move ${label(id)} up`}
+                  icon={<ArrowUp size={16} aria-hidden="true" />}
+                  disabled={i === 0}
+                  onClick={() => move(i, -1)}
+                />
+                <Button
+                  kind="quiet"
+                  size="sm"
+                  label={`Move ${label(id)} down`}
+                  icon={<ArrowDown size={16} aria-hidden="true" />}
                   disabled={i === layout.order.length - 1}
                   onClick={() => move(i, 1)}
-                >
-                  <ArrowDown size={16} aria-hidden="true" />
-                </button>
+                />
               </span>
             </li>
           ))}
         </ul>
-        <PopoverClose data-variant="solid">Done</PopoverClose>
+        <PopoverClose render={<Button kind="primary">Done</Button>} />
       </PopoverContent>
     </Popover>
   );

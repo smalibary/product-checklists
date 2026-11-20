@@ -25,6 +25,37 @@ export default function Home() {
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
       </div>
+      <h2 className="home-sub">Shared parts</h2>
+      <p className="home-lead">
+        The standard header, footer, buttons, links, fields and motion that every example above
+        uses. Each is built to its own checklists.
+      </p>
+      <div className="home-links">
+        <Link className="home-link" href="/parts/header">
+          Header
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+        <Link className="home-link" href="/parts/footer">
+          Footer
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+        <Link className="home-link" href="/parts/button">
+          Button and segmented control
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+        <Link className="home-link" href="/parts/link">
+          Link
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+        <Link className="home-link" href="/parts/field">
+          Input field and form
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+        <Link className="home-link" href="/parts/motion">
+          Motion
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+      </div>
     </main>
   );
 }

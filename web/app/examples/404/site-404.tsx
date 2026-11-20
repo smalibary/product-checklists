@@ -1,9 +1,11 @@
 "use client";
 
-import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { useMet } from "../../components/checklist-layer/met-context";
 import { Collapse, Variants } from "../../components/checklist-layer/swap";
 import { ExampleBar } from "../../components/example-frame/example-bar";
+import { SiteFooter } from "../../components/kit/footer";
+import { SiteHeader } from "../../components/kit/header";
+import { Link } from "../../components/kit/link";
 import { SearchForm } from "./search-form";
 
 const popular = [
@@ -36,7 +38,11 @@ export function Site404() {
   return (
     <>
       <ExampleBar address="example.com/old-page" />
-      <main className="ex-main">
+      <div className="ex-page">
+        <Collapse n={8} open={isMet(8)}>
+          <SiteHeader variant="site" markCurrent={false} />
+        </Collapse>
+      <main id="main" className="ex-main">
         <div className="ex-message">
           <Variants
             item="1 4"
@@ -66,13 +72,8 @@ export function Site404() {
             <ul>
               {popular.map((p) => (
                 <li key={p.href}>
-                  <a href={p.href}>
-                    <span className="ex-card-text">
-                      <span className="ex-card-title">{p.label}</span>
-                      <span className="ex-card-note">{p.note}</span>
-                    </span>
-                    <ArrowRight className="ex-arrow" size={16} aria-hidden="true" />
-                  </a>
+                  <Link href={p.href}>{p.label}</Link>
+                  <span className="ex-card-note">{p.note}</span>
                 </li>
               ))}
             </ul>
@@ -81,11 +82,15 @@ export function Site404() {
 
         <Collapse n={7} open={isMet(7)}>
           <p className="ex-report">
-            Followed a link from our site? <a href="#contact">Tell us it is broken</a> and we
+            Followed a link from our site? <Link href="#contact">Tell us it is broken</Link> and we
             will fix it.
           </p>
         </Collapse>
       </main>
+        <Collapse n={8} open={isMet(8)}>
+          <SiteFooter variant="full" />
+        </Collapse>
+      </div>
     </>
   );
 }

@@ -40,6 +40,17 @@ see why the item matters.
 | Product | Release announcements | Planned |
 | Support | Help desk | Planned |
 
+### Shared parts
+
+Every example uses one standard set of parts, each built to its own checklist and shown on its own page:
+[header](https://smalibary.github.io/product-checklists/parts/header/) ·
+[footer](https://smalibary.github.io/product-checklists/parts/footer/) ·
+[button and button group](https://smalibary.github.io/product-checklists/parts/button/) ·
+[link](https://smalibary.github.io/product-checklists/parts/link/) ·
+[input field and form](https://smalibary.github.io/product-checklists/parts/field/) ·
+[motion](https://smalibary.github.io/product-checklists/parts/motion/).
+No example makes its own buttons, links, fields, header or footer.
+
 ## The 14 groups
 
 Website · Web app · Mobile · Design system · Flows · API · Backend · Code · Growth · Launch · Motion ·

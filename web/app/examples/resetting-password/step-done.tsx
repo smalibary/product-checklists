@@ -2,21 +2,22 @@
 
 import { useState } from "react";
 import { CheckCircle } from "@phosphor-icons/react/dist/ssr";
-import { Button } from "@ui-sdk/react/button";
-import { Checkbox, CheckboxIndicator } from "@ui-sdk/react/checkbox";
 import { useMet } from "../../components/checklist-layer/met-context";
 import { Collapse, Swap, Variants } from "../../components/checklist-layer/swap";
-import { ExampleBar } from "../../components/example-frame/example-bar";
+import { Button } from "../../components/kit/button";
+import { Toggle } from "../../components/kit/switch";
 import { MailFrame } from "../../components/mail-frame/mail-frame";
+import { BrowserPage } from "./browser-page";
 
 export function StepDone() {
   const { isMet } = useMet();
   const [reported, setReported] = useState(false);
+  const [signOut, setSignOut] = useState(true);
 
   return (
     <div className="rp-desk">
       <div className="rp-browser">
-        <ExampleBar address="example.com/reset-password/done" />
+        <BrowserPage address="example.com/reset-password/done">
         <div className="rp-step">
           <Swap
             item={12}
@@ -36,19 +37,15 @@ export function StepDone() {
           />
 
           <Collapse n={13} open={isMet(13)}>
-            <label data-slot="label" className="rp-signout">
-              <Checkbox defaultChecked>
-                <CheckboxIndicator />
-              </Checkbox>
-              <span>
-                Sign out of other devices
-                <small>
-                  Anyone still using the old password on another phone or computer is signed out.
-                </small>
-              </span>
-            </label>
+            <Toggle
+              label="Sign out of other devices"
+              hint="Anyone still using the old password on another phone or computer is signed out."
+              checked={signOut}
+              onChange={setSignOut}
+            />
           </Collapse>
         </div>
+        </BrowserPage>
       </div>
 
       <div className="rp-mailslot">

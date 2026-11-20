@@ -1,0 +1,216 @@
+@import "./motion.css";
+/* Layout of the Shared parts pages: a captioned board per demo. Parts come from components/kit. */
+.pt {
+  --cl-gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 20px 28px;
+}
+@media (min-width: 640px) {
+  .pt {
+    padding: 28px;
+  }
+}
+.pt-box {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+}
+.pt-cap {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.pt-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.pt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 20px;
+}
+.pt-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.pt-frame {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+.pt-frame-wide {
+  overflow-x: auto;
+}
+.pt-frame-wide > * {
+  min-width: 40rem;
+}
+.pt-phone {
+  width: 20rem;
+  max-width: 100%;
+}
+.pt-scroll {
+  height: 16rem;
+  overflow-y: auto;
+}
+.pt-scroll p {
+  margin: 0;
+  padding: 10px 20px;
+}
+.pt-card {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+/* The broken versions: what the part looks like when the item is not met. Plain on purpose. */
+.nv {
+  font: inherit;
+  font-size: 0.8125rem;
+  color: var(--fg);
+}
+.nv-btn {
+  padding: 3px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  background: var(--line);
+  line-height: 1.2;
+}
+.nv-btn[data-odd="a"] {
+  background: #f5d442;
+  color: #7a1fa2;
+  border-radius: 20px;
+}
+.nv-btn[data-odd="b"] {
+  background: #2d7dd2;
+  color: #fff;
+  border: 0;
+  padding: 12px 30px;
+}
+.nv-btn[data-odd="c"] {
+  border: 2px dashed var(--muted);
+  background: none;
+}
+.nv-btn[data-pale] {
+  background: #e9e9ef;
+  border-color: #e9e9ef;
+  color: #b7b7c6;
+}
+.nv-btn[data-plain] {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+.nv-link {
+  color: var(--fg);
+  text-decoration: none;
+}
+.nv-logo {
+  font-weight: 700;
+}
+.nv-menu {
+  white-space: nowrap;
+}
+
+.pt-phone .kit-btn[data-full-phone] {
+  width: 100%;
+}
+
+/* Hold a link state still for the demos. */
+.kit-link[data-force="visited"] {
+  color: var(--visited);
+}
+.kit-link[data-force="focus"] {
+  box-shadow: var(--focus);
+}
+.nv-link[data-bare] {
+  color: var(--fg);
+  text-decoration: none;
+}
+.nv-link[data-faint] {
+  color: #b9b9c9;
+  text-decoration: none;
+}
+.nv-link[data-tiny] {
+  font-size: 0.6875rem;
+}
+.pt-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Fields */
+.pt-plain {
+  display: grid;
+  gap: 4px;
+}
+.nv-input {
+  width: 100%;
+  min-height: 28px;
+  padding: 2px 6px;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  background: var(--surface);
+  color: var(--fg);
+  font: inherit;
+}
+.nv-input[data-thin] {
+  min-height: 18px;
+  padding: 0 4px;
+  font-size: 0.75rem;
+}
+.nv-input[data-pale] {
+  border-color: var(--line);
+}
+.pt-states {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 16px;
+}
+.pt-state[data-force="hover"] .kit-field [data-slot="input"] {
+  border-color: var(--fg);
+}
+.pt-state[data-force="focus"] .kit-field [data-slot="input"] {
+  border-color: var(--accent);
+  box-shadow: var(--focus);
+}
+.pt-form .kit-form {
+  max-width: none;
+}
+.pt-form[data-cols="2"] .kit-section {
+  grid-template-columns: 1fr 1fr;
+}
+.pt-form[data-side="1"] .kit-field {
+  grid-template-columns: 7rem minmax(0, 1fr);
+  align-items: center;
+}
+.pt-actions {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.pt-actions[data-center] {
+  justify-content: center;
+}

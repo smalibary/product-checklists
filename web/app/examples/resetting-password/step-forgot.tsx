@@ -2,18 +2,17 @@
 
 import { useRef, useState } from "react";
 import { CheckCircle, LockKey, WarningCircle } from "@phosphor-icons/react/dist/ssr";
-import { Button } from "@ui-sdk/react/button";
-import { Field, FieldLabel } from "@ui-sdk/react/field";
-import { Input } from "@ui-sdk/react/input";
 import { Ghost, useMet } from "../../components/checklist-layer/met-context";
-import { Fit } from "../../components/checklist-layer/fit";
 import { Variants } from "../../components/checklist-layer/swap";
+import { Button } from "../../components/kit/button";
+import { FormLayout, TextField } from "../../components/kit/field";
+import { Link } from "../../components/kit/link";
 
 const TYPED = "name@example.com";
 
 export function StepForgot() {
   const { isMet } = useMet();
-  const formRef = useRef<HTMLFormElement>(null);
+  const formRef = useRef<HTMLDivElement>(null);
   const [sentTo, setSentTo] = useState<string | null>(null);
 
   return (
@@ -25,7 +24,7 @@ export function StepForgot() {
             <LockKey size={16} aria-hidden="true" /> Password
           </span>
           {isMet(1) && (
-            <a
+            <Link
               href="#reset"
               data-item="1"
               onClick={(e) => {
@@ -34,11 +33,11 @@ export function StepForgot() {
               }}
             >
               Forgot password?
-            </a>
+            </Link>
           )}
         </div>
         {!isMet(1) && <Ghost n={1} />}
-        <Input type="password" disabled placeholder="Password" aria-label="Password (example)" />
+        <TextField label="Password (example)" name="signin-password" type="password" placeholder="Password" disabled hideLabel />
       </section>
 
       <div className="rp-intro">
@@ -46,39 +45,33 @@ export function StepForgot() {
         <p>Enter your email and we will send you a link to choose a new one.</p>
       </div>
 
-      <form
-        ref={formRef}
-        className="rp-form"
-        id="reset"
-        onSubmit={(e) => {
-          e.preventDefault();
-          setSentTo(String(new FormData(e.currentTarget).get("email") ?? ""));
-        }}
-      >
-        <Field>
-          <Fit>
-            <FieldLabel className={isMet(18) ? undefined : "sr"}>Email</FieldLabel>
-          </Fit>
+      <div ref={formRef} id="reset" className="rp-form">
+        <FormLayout
+          label="Reset your password"
+          summary={false}
+          actions={
+            <Button type="submit" kind="primary">
+              Send reset link
+            </Button>
+          }
+          onSent={(data) => setSentTo(String(data.get("email") ?? ""))}
+        >
           <div data-item="2">
-            <Input
+            <TextField
               key={String(isMet(2))}
-              type="email"
+              label="Email"
+              hideLabel={!isMet(18)}
               name="email"
+              type="email"
               autoComplete="email"
               placeholder={isMet(18) ? "name@example.com" : "Email"}
               defaultValue={isMet(2) ? TYPED : ""}
             />
           </div>
-        </Field>
-        {!isMet(17) && (
-          <Field>
-            <FieldLabel>Security question: what was your first pet&rsquo;s name?</FieldLabel>
-            <Input name="answer" required />
-          </Field>
-        )}
-        <Button type="submit" data-variant="solid">
-          Send reset link
-        </Button>
+          {!isMet(17) && (
+            <TextField label="Security question: what was your first pet’s name?" name="answer" required />
+          )}
+        </FormLayout>
         <div role="status">
           <Variants
             item={3}
@@ -111,7 +104,7 @@ export function StepForgot() {
             }}
           />
         </div>
-      </form>
+      </div>
     </div>
   );
 }

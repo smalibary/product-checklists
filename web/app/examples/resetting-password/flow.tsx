@@ -1,6 +1,6 @@
 "use client";
 
-import { ExampleBar } from "../../components/example-frame/example-bar";
+import { BrowserPage } from "./browser-page";
 import { useStep } from "../../components/checklist-layer/step-context";
 import { StepDone } from "./step-done";
 import { StepEmail } from "./step-email";
@@ -18,10 +18,17 @@ export function ResetFlow() {
   const { step } = useStep();
   return (
     <>
-      {(step === 1 || step === 3) && <ExampleBar address={ADDRESS[step - 1]} />}
-      {step === 1 && <StepForgot />}
+      {step === 1 && (
+        <BrowserPage address={ADDRESS[0]}>
+          <StepForgot />
+        </BrowserPage>
+      )}
       {step === 2 && <StepEmail />}
-      {step === 3 && <StepPassword />}
+      {step === 3 && (
+        <BrowserPage address={ADDRESS[2]}>
+          <StepPassword />
+        </BrowserPage>
+      )}
       {step === 4 && <StepDone />}
     </>
   );

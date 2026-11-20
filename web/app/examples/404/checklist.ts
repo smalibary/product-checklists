@@ -20,7 +20,7 @@ export const checklist404: ChecklistData = {
         { n: 5, shown: true, text: "A search box", where: "Search this site", broken: "no way to search the site" },
         { n: 6, shown: true, text: "Home and most used pages", where: "Four popular pages", broken: "no popular pages to go to" },
         { n: 7, shown: true, text: "Report a broken link", where: '"Tell us it is broken"', broken: "no way to report the broken link" },
-        { n: 8, shown: false, text: "Normal header and footer", where: "Left out of this preview; on the real site the usual menu and footer wrap this page. Their own items are in the Header and Footer checklists", broken: "the page feels like a different site" },
+        { n: 8, shown: true, text: "Normal header and footer", where: "The site header on top and the site footer below; their own items are in the Header and Footer checklists", broken: "no header or footer, so the page feels like a different site" },
       ],
     },
     {

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ChartLineUp, Plugs, UserPlus, WarningCircle } from "@phosphor-icons/react/dist/ssr";
-import { Button } from "@ui-sdk/react/button";
+import { Button } from "../../components/kit/button";
 
 const bar = (w: string, h = 12) => <span className="db-sk" style={{ width: w, height: h }} />;
 
@@ -68,8 +68,8 @@ export function EmptyBody() {
           </li>
         </ol>
         <div className="db-empty-actions">
-          <Button type="button" data-variant="solid">Connect a source</Button>
-          <Button type="button">Use sample data</Button>
+          <Button kind="primary">Connect a source</Button>
+          <Button>Use sample data</Button>
         </div>
       </section>
     </div>
@@ -117,8 +117,8 @@ export function CardError() {
       <p>
         {tries === 0 ? "This card could not load." : "Still could not load. This preview keeps it failing."}
       </p>
-      <Button type="button" disabled={busy} onClick={retry}>
-        {busy ? "Retrying…" : "Retry"}
+      <Button loading={busy} onClick={retry}>
+        Retry
       </Button>
     </div>
   );

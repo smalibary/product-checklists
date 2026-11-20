@@ -1,0 +1,189 @@
+/* Input field and form layout. */
+.kit-field {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+.kit-field[data-size="short"] {
+  max-width: 8rem;
+}
+.kit-field[data-size="medium"] {
+  max-width: 16rem;
+}
+.kit-field [data-slot="field-label"] {
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.kit-field-mark {
+  color: var(--muted);
+  font-weight: 400;
+}
+.kit-field [data-slot="field-description"] {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.kit-field-row {
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+}
+.kit-field [data-slot="input"] {
+  flex: 1;
+  min-width: 0;
+  min-height: var(--tap);
+  padding-inline: 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 1rem;
+  transition: border-color var(--dur-quick) var(--ease-move), box-shadow var(--dur-quick) var(--ease-move);
+}
+.kit-field [data-slot="input"]:hover:not(:disabled, :focus) {
+  border-color: var(--fg);
+}
+.kit-field [data-slot="input"]:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--focus);
+}
+.kit-field [data-slot="input"]:read-only {
+  background: var(--accent-soft);
+  user-select: text;
+}
+.kit-field [data-slot="input"]:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.kit-field [data-slot="input"][aria-invalid="true"] {
+  border-color: var(--bad);
+  box-shadow: inset 0 0 0 1px var(--bad);
+}
+.kit-affix {
+  display: inline-flex;
+  align-items: center;
+  padding-inline: 12px;
+  border: 1px solid var(--line-strong);
+  background: var(--accent-soft);
+  color: var(--muted);
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+.kit-affix[data-side="start"] {
+  border-inline-end: 0;
+  border-start-start-radius: var(--radius-sm);
+  border-end-start-radius: var(--radius-sm);
+}
+.kit-affix[data-side="end"] {
+  border-inline-start: 0;
+  border-start-end-radius: var(--radius-sm);
+  border-end-end-radius: var(--radius-sm);
+}
+.kit-field-row[data-prefix] [data-slot="input"] {
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+}
+.kit-field-row[data-suffix] [data-slot="input"] {
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+}
+.kit-field .kit-count {
+  justify-self: end;
+  font-size: 0.8125rem;
+}
+.kit-field [data-slot="password-input"] {
+  flex: 1;
+  min-width: 0;
+  min-height: var(--tap);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+}
+.kit-field [data-slot="password-input"] [data-slot="password-input-control"]::placeholder,
+.kit-field [data-slot="input"]::placeholder {
+  color: var(--muted);
+}
+.kit-field [data-slot="password-input-toggle"] {
+  flex: none;
+  width: auto;
+  gap: 6px;
+  padding-inline: 10px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+.kit-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  color: var(--bad-strong);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.kit-error svg {
+  flex: none;
+  margin-top: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  .kit-error {
+    color: var(--bad);
+  }
+}
+
+.kit-form {
+  --cl-gap: 20px;
+  display: grid;
+  gap: 20px;
+  max-width: 28rem;
+}
+.kit-section {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.kit-section legend {
+  margin-bottom: 12px;
+  padding: 0;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+.kit-form-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+.kit-summary {
+  display: grid;
+  gap: 6px;
+  padding: 12px 14px;
+  border: 1px solid var(--bad);
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--bad) 9%, var(--surface));
+  font-size: 0.9375rem;
+}
+.kit-summary strong {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.kit-summary ul {
+  margin: 0;
+  padding-inline-start: 22px;
+}
+.kit-summary-link {
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  color: var(--fg);
+  font: inherit;
+  text-align: start;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.kit-summary-link:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}

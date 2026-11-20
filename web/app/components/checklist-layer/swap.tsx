@@ -52,3 +52,25 @@ export function Collapse({
     </div>
   );
 }
+
+// Same as Collapse, but folds sideways: for a part in a row (a header link, a footer column).
+// Needs a flex-row parent that sets --cl-gap-x to its gap.
+export function CollapseX({
+  n,
+  open,
+  style,
+  children,
+}: {
+  n?: number | string;
+  open: boolean;
+  style?: CSSProperties;
+  children: ReactNode;
+}) {
+  return (
+    <div className="cl-collapse-x" data-open={open} data-item={n} style={style}>
+      <div className="cl-collapse-inner" aria-hidden={open ? undefined : true} inert={!open}>
+        {children}
+      </div>
+    </div>
+  );
+}

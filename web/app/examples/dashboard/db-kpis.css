@@ -66,7 +66,8 @@
   padding: 0;
   list-style: none;
 }
-.db-attn-list a {
+.db-attn-list li {
+  position: relative;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   grid-template-areas: "icon text state" "icon since state";
@@ -74,11 +75,16 @@
   align-items: center;
   padding: 8px;
   border-radius: var(--radius-sm);
-  color: var(--fg);
-  text-decoration: none;
+  transition: background var(--dur-quick) var(--ease-move);
 }
-.db-attn-list a:hover {
+.db-attn-list li:hover {
   background: var(--accent-soft);
+}
+/* The whole row is the target of its link. */
+.db-attn-list .kit-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 .db-attn-list svg {
   grid-area: icon;

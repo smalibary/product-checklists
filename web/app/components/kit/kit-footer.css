@@ -1,0 +1,114 @@
+/* Footer */
+.kit-footer {
+  --cl-gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 20px 20px;
+  border-top: 1px solid var(--line);
+  background: var(--accent-soft);
+  color: var(--fg);
+  font-size: 0.9375rem;
+}
+.kit-ft-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 24px;
+}
+.kit-ft-col h2 {
+  margin: 0 0 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.kit-ft-col ul,
+.kit-ft-legal,
+.kit-ft-social {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.kit-footer .kit-link {
+  min-height: 24px;
+  padding-block: 4px;
+  color: var(--fg);
+  font-weight: 400;
+}
+.kit-footer .kit-link:visited {
+  color: var(--fg);
+}
+.kit-ft-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px 28px;
+  --cl-gap-x: 28px;
+}
+.kit-ft-contact,
+.kit-ft-company {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  font-style: normal;
+}
+.kit-ft-company {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.kit-ft-news {
+  flex: 1 1 18rem;
+  max-width: 28rem;
+  min-width: 0;
+}
+.kit-ft-news .kit-form {
+  gap: 10px;
+  max-width: none;
+}
+.kit-ft-news p {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.kit-ft-consent {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.kit-ft-legal,
+.kit-ft-social {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 16px;
+}
+.kit-ft-end {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.875rem;
+  --cl-gap-x: 24px;
+}
+.kit-ft-end .kit-ft-lang {
+  margin-inline-start: auto;
+}
+.kit-ft-lang select {
+  min-height: var(--tap);
+  padding-inline: 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--fg);
+  font: inherit;
+}
+.kit-ft-lang select:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+.kit-footer[data-variant="slim"] {
+  padding-block: 16px;
+}

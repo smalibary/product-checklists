@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Button } from "@ui-sdk/react/button";
 import { useMet } from "../../components/checklist-layer/met-context";
 import { Collapse, Variants } from "../../components/checklist-layer/swap";
 import { useStep } from "../../components/checklist-layer/step-context";
-import { ExampleBar } from "../../components/example-frame/example-bar";
+import { Button } from "../../components/kit/button";
 import { MailFrame } from "../../components/mail-frame/mail-frame";
+import { BrowserPage } from "./browser-page";
 
 const WAIT = 15;
 
@@ -23,7 +23,7 @@ export function StepEmail() {
   }, [left]);
 
   const open = (
-    <Button type="button" data-variant="solid" onClick={() => setStep(3)}>
+    <Button type="button" kind="primary" onClick={() => setStep(3)}>
       Choose a new password
     </Button>
   );
@@ -31,7 +31,7 @@ export function StepEmail() {
   return (
     <div className="rp-desk">
       <div className="rp-browser">
-        <ExampleBar address="example.com/forgot-password" />
+        <BrowserPage address="example.com/forgot-password">
         <div className="rp-step">
           <div className="rp-intro">
             <h2>Check your email</h2>
@@ -65,6 +65,7 @@ export function StepEmail() {
             </div>
           </Collapse>
         </div>
+        </BrowserPage>
       </div>
 
       <div className="rp-mailslot">

@@ -1,0 +1,225 @@
+/* Button, button group and segmented control. */
+.kit-btn[data-slot="button"] {
+  --kit-h: var(--tap);
+  position: relative;
+  min-height: var(--kit-h);
+  height: auto;
+  padding-inline: 16px;
+  gap: 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition:
+    background-color var(--dur-quick) var(--ease-move),
+    border-color var(--dur-quick) var(--ease-move),
+    box-shadow var(--dur-quick) var(--ease-move),
+    transform var(--dur-quick) var(--ease-move),
+    opacity var(--dur-fade) var(--ease-move);
+}
+.kit-btn[data-size="sm"] {
+  --kit-h: 32px;
+  padding-inline: 12px;
+  font-size: 0.875rem;
+}
+.kit-btn[data-size="lg"] {
+  --kit-h: 52px;
+  padding-inline: 22px;
+  font-size: 1rem;
+}
+.kit-btn-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.kit-btn[data-icon-only] {
+  width: var(--kit-h);
+  padding: 0;
+}
+
+/* Kinds. Text 4.5:1, edge or fill 3:1 against the page. */
+.kit-btn[data-kind="primary"] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+.kit-btn[data-kind="quiet"] {
+  border-color: transparent;
+  background: transparent;
+  color: var(--accent);
+}
+.kit-btn[data-kind="danger"] {
+  border-color: var(--bad-strong);
+  background: var(--bad-strong);
+  color: #fff;
+}
+.kit-btn[data-kind="secondary"]:hover:not([data-disabled]),
+.kit-btn[data-kind="quiet"]:hover:not([data-disabled]) {
+  background: var(--accent-soft);
+}
+.kit-btn[data-kind="primary"]:hover:not([data-disabled]) {
+  background: color-mix(in srgb, var(--accent) 85%, var(--fg));
+}
+.kit-btn[data-kind="danger"]:hover:not([data-disabled]) {
+  background: color-mix(in srgb, var(--bad-strong) 85%, #000);
+}
+/* Pressed: darker, and nudged down a little (no nudge when motion is turned down). */
+.kit-btn:active:not([data-disabled]) {
+  transform: translateY(calc(var(--move) / 8));
+  background: color-mix(in srgb, currentColor 14%, var(--surface));
+}
+.kit-btn[data-kind="primary"]:active:not([data-disabled]) {
+  background: color-mix(in srgb, var(--accent) 72%, var(--fg));
+}
+.kit-btn[data-kind="danger"]:active:not([data-disabled]) {
+  background: color-mix(in srgb, var(--bad-strong) 72%, #000);
+}
+.kit-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+.kit-btn[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.kit-btn[data-disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Loading: the spinner sits over the label, so the width does not change. */
+.kit-btn[data-loading] .kit-btn-label {
+  visibility: hidden;
+}
+.kit-btn-spin {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.kit-btn-spin svg {
+  animation: kit-spin 800ms linear infinite;
+}
+@keyframes kit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Reduced motion: a spinning arc becomes a slow fade in and out. */
+@media (prefers-reduced-motion: reduce) {
+  .kit-btn-spin svg {
+    animation: kit-pulse 1200ms ease-in-out infinite !important;
+  }
+}
+:root[data-calm="true"] .kit-btn-spin svg {
+  animation: kit-pulse 1200ms ease-in-out infinite !important;
+}
+@keyframes kit-pulse {
+  50% {
+    opacity: 0.25;
+  }
+}
+@media (max-width: 30rem) {
+  .kit-btn[data-full-phone] {
+    width: 100%;
+  }
+}
+
+.kit-bgroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.kit-bgroup[data-align="end"] {
+  justify-content: flex-end;
+}
+.kit-bgroup[data-attached] {
+  flex-wrap: nowrap;
+  gap: 0;
+}
+.kit-bgroup[data-attached] > .kit-btn:not(:first-child) {
+  margin-inline-start: -1px;
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+}
+.kit-bgroup[data-attached] > .kit-btn:not(:last-child) {
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+}
+.kit-bgroup[data-attached] > .kit-btn:focus-visible {
+  z-index: 1;
+}
+
+.kit-seg[data-slot="segmented-control"] {
+  display: grid;
+  grid-template-columns: repeat(var(--kit-seg-n, 3), minmax(0, 1fr));
+  width: 100%;
+  border-color: var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.kit-seg [data-slot="segmented-control-item"] {
+  min-height: var(--tap);
+  height: auto;
+  gap: 8px;
+  padding-inline: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color var(--dur-quick) var(--ease-move);
+}
+.kit-seg [data-slot="segmented-control-item"][data-checked] {
+  color: var(--accent-fg);
+  font-weight: 600;
+}
+.kit-seg [data-slot="segmented-control-indicator"] {
+  border-color: var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+}
+
+/* Demo helper: hold one state still (the states row on the Button page). */
+.kit-btn[data-force="hover"][data-kind="secondary"],
+.kit-btn[data-force="hover"][data-kind="quiet"] {
+  background: var(--accent-soft);
+}
+.kit-btn[data-force="hover"][data-kind="primary"] {
+  background: color-mix(in srgb, var(--accent) 85%, var(--fg));
+}
+.kit-btn[data-force="press"] {
+  transform: translateY(calc(var(--move) / 8));
+  background: color-mix(in srgb, currentColor 14%, var(--surface));
+}
+.kit-btn[data-force="press"][data-kind="primary"] {
+  background: color-mix(in srgb, var(--accent) 72%, var(--fg));
+}
+.kit-btn[data-force="focus"] {
+  box-shadow: var(--focus);
+}
+
+/* Switch */
+.kit-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: var(--tap);
+  cursor: pointer;
+}
+.kit-switch-text small {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.kit-switch [data-slot="switch"],
+.kit-switch [data-slot="switch-thumb"] {
+  transition: background-color var(--dur-quick) var(--ease-move), translate var(--dur-quick) var(--ease-move),
+    box-shadow var(--dur-quick) var(--ease-move);
+}
+.kit-switch[data-snap] [data-slot="switch"],
+.kit-switch[data-snap] [data-slot="switch-thumb"] {
+  transition: none;
+}

@@ -93,35 +93,6 @@
   font-size: 0.8125rem;
   color: var(--muted);
 }
-.rp-error {
-  display: flex;
-  gap: 8px;
-  align-items: flex-start;
-  margin: 0;
-  font-size: 0.9375rem;
-  color: var(--bad);
-}
-.rp-error svg {
-  flex: none;
-  margin-top: 2px;
-}
-
-.rp-signout {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-.rp-signout small {
-  display: block;
-  margin-top: 2px;
-  font-size: 0.8125rem;
-  font-weight: 400;
-  color: var(--muted);
-}
-
 /* Step 2: the website and the mail app are two windows, so the site's own card is dropped. */
 .cl-site:has(> .rp-desk) {
   border-color: transparent;
@@ -146,7 +117,7 @@
 }
 @media (min-width: 640px) {
   .rp-browser {
-    margin-bottom: -28px;
+    margin-bottom: -12px;
   }
   .rp-mailslot {
     align-self: flex-end;
