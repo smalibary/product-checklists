@@ -1,9 +1,9 @@
-# Builds the live examples (web/) and publishes them to GitHub Pages on every push to main.
+# Builds the live examples (web/), adds the checklists page (note/site/) and publishes them to GitHub Pages on every push to main.
 name: Publish live examples
 on:
   push:
     branches: [main]
-    paths: ["web/**", ".github/workflows/pages.yml"]
+    paths: ["web/**", "note/site/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 permissions:
   contents: read
@@ -30,6 +30,12 @@ jobs:
         env:
           PAGES_BASE_PATH: /product-checklists
       - run: touch out/.nojekyll
+      # The full checklists page (one HTML file + its data) lives at /checklists/.
+      - run: |
+          cp -r ../note/site out/checklists
+          # The page is written for the claude.ai artifact, which adds the document head; add it here too.
+          { printf '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+'; cat ../note/site/index.html; } > out/checklists/index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web/out
