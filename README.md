@@ -31,8 +31,8 @@ see why the item matters.
 | Mobile | [Login](https://smalibary.github.io/product-checklists/examples/mobile-login/) | Live |
 | Design system | [Modal](https://smalibary.github.io/product-checklists/examples/modal/) | Live |
 | API | [API docs](https://smalibary.github.io/product-checklists/examples/api-docs/) | Live |
-| Backend | Search | Next |
-| Code | Readme and docs | Planned |
+| Backend | [Search](https://smalibary.github.io/product-checklists/examples/search/) | Live |
+| Code | Readme and docs | Next |
 | Growth | Blog | Planned |
 | Launch | Legal pages | Planned |
 | Motion | Micro-interactions | Planned |

@@ -36,6 +36,10 @@ export default function Home() {
           API docs example
           <ArrowRight size={16} aria-hidden="true" />
         </Link>
+        <Link className="home-link" href="/examples/search">
+          Search example
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
       </div>
       <h2 className="home-sub">Shared parts</h2>
       <p className="home-lead">

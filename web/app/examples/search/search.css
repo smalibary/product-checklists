@@ -1,0 +1,217 @@
+.se-page {
+  display: flex;
+  flex-direction: column;
+}
+.se-main {
+  container: se / inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 20px 40px;
+  min-width: 0;
+}
+.se-main h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* The search box and its button */
+.se-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 12px;
+}
+.se-form .kit-btn {
+  align-self: end;
+}
+.se-tries {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.se-tries .kit-btn {
+  max-width: 100%;
+}
+.se-kinds {
+  max-width: 24rem;
+}
+
+/* Who is searching, and the line about this search */
+.se-who {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.se-who-bad {
+  color: var(--bad);
+}
+.se-status {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-size: 0.9375rem;
+}
+.se-status p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.se-error {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--bad);
+  font-weight: 500;
+}
+.se-note {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.se-took {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.se-took[data-slow],
+.se-ms[data-slow] {
+  color: var(--bad);
+  font-weight: 500;
+}
+
+/* Results */
+.se-hits {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.se-hit {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.se-hit p {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+.se-hit small {
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.se-hit-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+}
+.se-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--fg);
+  font-size: 0.75rem;
+}
+.se-priv {
+  background: transparent;
+  border: 1px solid var(--bad);
+  color: var(--bad);
+}
+.se-pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.se-pager-one {
+  justify-content: flex-start;
+}
+
+/* Adding a record */
+.se-add {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+}
+
+/* What the team sees */
+.se-team {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.se-team h2 {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+.se-team h3 {
+  margin: 0 0 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.se-sub {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.se-team-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+@container se (min-width: 36rem) {
+  .se-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+.se-list {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+}
+.se-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+.se-list span:first-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.se-ms {
+  flex: none;
+  font-variant-numeric: tabular-nums;
+}
+.se-quiet {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
